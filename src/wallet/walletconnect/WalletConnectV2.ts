@@ -1,9 +1,10 @@
 import SignClient from "@walletconnect/sign-client";
-import { SignDoc, StdSignDoc } from "cosmes/registry";
+import { SignDoc, StdSignDoc, StdSignature } from "cosmes/registry";
 import { debounce } from "lodash-es";
 
 import { isAndroid, isMobile } from "../utils/os";
 import { MobileAppDetails, QRCodeModal } from "./QRCodeModal";
+import { SignArbitraryResponse } from "../wallets/ConnectedWallet";
 
 /** The JSON data stored in `localStorage` to recover previous sessions. */
 type StorageSession = {
@@ -47,6 +48,7 @@ const Method = {
   GET_ACCOUNTS: "cosmos_getAccounts",
   SIGN_AMINO: "cosmos_signAmino",
   SIGN_DIRECT: "cosmos_signDirect",
+  SIGN_ARBITRARY: "keplr_signArbitrary",
 } as const;
 type Method = (typeof Method)[keyof typeof Method];
 
@@ -196,6 +198,24 @@ export class WalletConnectV2 {
     return {
       signature: signature,
       signed: signed ?? stdSignDoc, // simply return the original sign doc if `signed` is not returned
+    };
+  }
+
+  public async signArbitrary(
+    chainId: string,
+    signer: string,
+    data: string
+  ): Promise<SignArbitraryResponse> {
+    const res = await this.request<StdSignature>(chainId, Method.SIGN_ARBITRARY, {
+      chainId: chainId,
+      signer,
+      data,
+    });
+
+    return {
+      data,
+      pubKey: res.pub_key.value,
+      signature: res.signature,
     };
   }
 

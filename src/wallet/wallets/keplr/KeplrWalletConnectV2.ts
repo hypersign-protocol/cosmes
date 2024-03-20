@@ -48,9 +48,10 @@ export class KeplrWalletConnectV2 extends ConnectedWallet {
   }
 
   public async signArbitrary(_data: string): Promise<SignArbitraryResponse> {
+    return this.wc.signArbitrary(this.chainId, this.address, _data);
+
     // ! Not implemented by Keplr
     // https://github.com/chainapsis/keplr-wallet/blob/master/packages/wc-client/src/index.ts#L379
-    throw new Error("Method not implemented.");
   }
 
   public async signAndBroadcastTx(
