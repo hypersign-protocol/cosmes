@@ -11,7 +11,7 @@ import { ContractRegistrationRequest } from "./proposal_pb.js";
  *
  * @generated from message injective.wasmx.v1.MsgExecuteContractCompat
  */
-export class MsgExecuteContractCompat extends Message {
+class MsgExecuteContractCompat extends Message {
     constructor(data) {
         super();
         /**
@@ -61,12 +61,13 @@ MsgExecuteContractCompat.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "msg", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "funds", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgExecuteContractCompat };
 /**
  * MsgExecuteContractCompatResponse returns execution result data.
  *
  * @generated from message injective.wasmx.v1.MsgExecuteContractCompatResponse
  */
-export class MsgExecuteContractCompatResponse extends Message {
+class MsgExecuteContractCompatResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -95,10 +96,11 @@ MsgExecuteContractCompatResponse.typeName = "injective.wasmx.v1.MsgExecuteContra
 MsgExecuteContractCompatResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgExecuteContractCompatResponse };
 /**
  * @generated from message injective.wasmx.v1.MsgUpdateContract
  */
-export class MsgUpdateContract extends Message {
+class MsgUpdateContract extends Message {
     constructor(data) {
         super();
         /**
@@ -153,10 +155,11 @@ MsgUpdateContract.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "gas_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "admin_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateContract };
 /**
  * @generated from message injective.wasmx.v1.MsgUpdateContractResponse
  */
-export class MsgUpdateContractResponse extends Message {
+class MsgUpdateContractResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -177,10 +180,11 @@ export class MsgUpdateContractResponse extends Message {
 MsgUpdateContractResponse.runtime = proto3;
 MsgUpdateContractResponse.typeName = "injective.wasmx.v1.MsgUpdateContractResponse";
 MsgUpdateContractResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateContractResponse };
 /**
  * @generated from message injective.wasmx.v1.MsgActivateContract
  */
-export class MsgActivateContract extends Message {
+class MsgActivateContract extends Message {
     constructor(data) {
         super();
         /**
@@ -214,10 +218,11 @@ MsgActivateContract.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgActivateContract };
 /**
  * @generated from message injective.wasmx.v1.MsgActivateContractResponse
  */
-export class MsgActivateContractResponse extends Message {
+class MsgActivateContractResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -238,10 +243,11 @@ export class MsgActivateContractResponse extends Message {
 MsgActivateContractResponse.runtime = proto3;
 MsgActivateContractResponse.typeName = "injective.wasmx.v1.MsgActivateContractResponse";
 MsgActivateContractResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgActivateContractResponse };
 /**
  * @generated from message injective.wasmx.v1.MsgDeactivateContract
  */
-export class MsgDeactivateContract extends Message {
+class MsgDeactivateContract extends Message {
     constructor(data) {
         super();
         /**
@@ -275,10 +281,11 @@ MsgDeactivateContract.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgDeactivateContract };
 /**
  * @generated from message injective.wasmx.v1.MsgDeactivateContractResponse
  */
-export class MsgDeactivateContractResponse extends Message {
+class MsgDeactivateContractResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -299,10 +306,11 @@ export class MsgDeactivateContractResponse extends Message {
 MsgDeactivateContractResponse.runtime = proto3;
 MsgDeactivateContractResponse.typeName = "injective.wasmx.v1.MsgDeactivateContractResponse";
 MsgDeactivateContractResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgDeactivateContractResponse };
 /**
  * @generated from message injective.wasmx.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -332,10 +340,11 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * @generated from message injective.wasmx.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -356,10 +365,11 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "injective.wasmx.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 /**
  * @generated from message injective.wasmx.v1.MsgRegisterContract
  */
-export class MsgRegisterContract extends Message {
+class MsgRegisterContract extends Message {
     constructor(data) {
         super();
         /**
@@ -387,10 +397,11 @@ MsgRegisterContract.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "contract_registration_request", kind: "message", T: ContractRegistrationRequest },
 ]);
+export { MsgRegisterContract };
 /**
  * @generated from message injective.wasmx.v1.MsgRegisterContractResponse
  */
-export class MsgRegisterContractResponse extends Message {
+class MsgRegisterContractResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -411,4 +422,5 @@ export class MsgRegisterContractResponse extends Message {
 MsgRegisterContractResponse.runtime = proto3;
 MsgRegisterContractResponse.typeName = "injective.wasmx.v1.MsgRegisterContractResponse";
 MsgRegisterContractResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRegisterContractResponse };
 //# sourceMappingURL=tx_pb.js.map

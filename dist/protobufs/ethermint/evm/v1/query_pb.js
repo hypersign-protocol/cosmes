@@ -11,7 +11,7 @@ import { MsgEthereumTx } from "./tx_pb.js";
  *
  * @generated from message ethermint.evm.v1.QueryAccountRequest
  */
-export class QueryAccountRequest extends Message {
+class QueryAccountRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -40,12 +40,13 @@ QueryAccountRequest.typeName = "ethermint.evm.v1.QueryAccountRequest";
 QueryAccountRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAccountRequest };
 /**
  * QueryAccountResponse is the response type for the Query/Account RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryAccountResponse
  */
-export class QueryAccountResponse extends Message {
+class QueryAccountResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -88,13 +89,14 @@ QueryAccountResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "code_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryAccountResponse };
 /**
  * QueryCosmosAccountRequest is the request type for the Query/CosmosAccount RPC
  * method.
  *
  * @generated from message ethermint.evm.v1.QueryCosmosAccountRequest
  */
-export class QueryCosmosAccountRequest extends Message {
+class QueryCosmosAccountRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -123,13 +125,14 @@ QueryCosmosAccountRequest.typeName = "ethermint.evm.v1.QueryCosmosAccountRequest
 QueryCosmosAccountRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCosmosAccountRequest };
 /**
  * QueryCosmosAccountResponse is the response type for the Query/CosmosAccount
  * RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryCosmosAccountResponse
  */
-export class QueryCosmosAccountResponse extends Message {
+class QueryCosmosAccountResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -172,13 +175,14 @@ QueryCosmosAccountResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "account_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryCosmosAccountResponse };
 /**
  * QueryValidatorAccountRequest is the request type for the
  * Query/ValidatorAccount RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryValidatorAccountRequest
  */
-export class QueryValidatorAccountRequest extends Message {
+class QueryValidatorAccountRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -207,13 +211,14 @@ QueryValidatorAccountRequest.typeName = "ethermint.evm.v1.QueryValidatorAccountR
 QueryValidatorAccountRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cons_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryValidatorAccountRequest };
 /**
  * QueryValidatorAccountResponse is the response type for the
  * Query/ValidatorAccount RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryValidatorAccountResponse
  */
-export class QueryValidatorAccountResponse extends Message {
+class QueryValidatorAccountResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -256,12 +261,13 @@ QueryValidatorAccountResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "account_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryValidatorAccountResponse };
 /**
  * QueryBalanceRequest is the request type for the Query/Balance RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryBalanceRequest
  */
-export class QueryBalanceRequest extends Message {
+class QueryBalanceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -290,12 +296,13 @@ QueryBalanceRequest.typeName = "ethermint.evm.v1.QueryBalanceRequest";
 QueryBalanceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBalanceRequest };
 /**
  * QueryBalanceResponse is the response type for the Query/Balance RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryBalanceResponse
  */
-export class QueryBalanceResponse extends Message {
+class QueryBalanceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -324,12 +331,13 @@ QueryBalanceResponse.typeName = "ethermint.evm.v1.QueryBalanceResponse";
 QueryBalanceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balance", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBalanceResponse };
 /**
  * QueryStorageRequest is the request type for the Query/Storage RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryStorageRequest
  */
-export class QueryStorageRequest extends Message {
+class QueryStorageRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -365,13 +373,14 @@ QueryStorageRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryStorageRequest };
 /**
  * QueryStorageResponse is the response type for the Query/Storage RPC
  * method.
  *
  * @generated from message ethermint.evm.v1.QueryStorageResponse
  */
-export class QueryStorageResponse extends Message {
+class QueryStorageResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -400,12 +409,13 @@ QueryStorageResponse.typeName = "ethermint.evm.v1.QueryStorageResponse";
 QueryStorageResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryStorageResponse };
 /**
  * QueryCodeRequest is the request type for the Query/Code RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryCodeRequest
  */
-export class QueryCodeRequest extends Message {
+class QueryCodeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -434,13 +444,14 @@ QueryCodeRequest.typeName = "ethermint.evm.v1.QueryCodeRequest";
 QueryCodeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCodeRequest };
 /**
  * QueryCodeResponse is the response type for the Query/Code RPC
  * method.
  *
  * @generated from message ethermint.evm.v1.QueryCodeResponse
  */
-export class QueryCodeResponse extends Message {
+class QueryCodeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -469,12 +480,13 @@ QueryCodeResponse.typeName = "ethermint.evm.v1.QueryCodeResponse";
 QueryCodeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryCodeResponse };
 /**
  * QueryTxLogsRequest is the request type for the Query/TxLogs RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryTxLogsRequest
  */
-export class QueryTxLogsRequest extends Message {
+class QueryTxLogsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -504,12 +516,13 @@ QueryTxLogsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryTxLogsRequest };
 /**
  * QueryTxLogsResponse is the response type for the Query/TxLogs RPC method.
  *
  * @generated from message ethermint.evm.v1.QueryTxLogsResponse
  */
-export class QueryTxLogsResponse extends Message {
+class QueryTxLogsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -539,12 +552,13 @@ QueryTxLogsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "logs", kind: "message", T: Log, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryTxLogsResponse };
 /**
  * QueryParamsRequest defines the request type for querying x/evm parameters.
  *
  * @generated from message ethermint.evm.v1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -565,12 +579,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "ethermint.evm.v1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse defines the response type for querying x/evm parameters.
  *
  * @generated from message ethermint.evm.v1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -593,12 +608,13 @@ QueryParamsResponse.typeName = "ethermint.evm.v1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * EthCallRequest defines EthCall request
  *
  * @generated from message ethermint.evm.v1.EthCallRequest
  */
-export class EthCallRequest extends Message {
+class EthCallRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -648,12 +664,13 @@ EthCallRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "proposer_address", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "chain_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { EthCallRequest };
 /**
  * EstimateGasResponse defines EstimateGas response
  *
  * @generated from message ethermint.evm.v1.EstimateGasResponse
  */
-export class EstimateGasResponse extends Message {
+class EstimateGasResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -682,12 +699,13 @@ EstimateGasResponse.typeName = "ethermint.evm.v1.EstimateGasResponse";
 EstimateGasResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gas", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EstimateGasResponse };
 /**
  * QueryTraceTxRequest defines TraceTx request
  *
  * @generated from message ethermint.evm.v1.QueryTraceTxRequest
  */
-export class QueryTraceTxRequest extends Message {
+class QueryTraceTxRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -748,12 +766,13 @@ QueryTraceTxRequest.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "proposer_address", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 9, name: "chain_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { QueryTraceTxRequest };
 /**
  * QueryTraceTxResponse defines TraceTx response
  *
  * @generated from message ethermint.evm.v1.QueryTraceTxResponse
  */
-export class QueryTraceTxResponse extends Message {
+class QueryTraceTxResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -782,12 +801,13 @@ QueryTraceTxResponse.typeName = "ethermint.evm.v1.QueryTraceTxResponse";
 QueryTraceTxResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryTraceTxResponse };
 /**
  * QueryTraceBlockRequest defines TraceTx request
  *
  * @generated from message ethermint.evm.v1.QueryTraceBlockRequest
  */
-export class QueryTraceBlockRequest extends Message {
+class QueryTraceBlockRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -846,12 +866,13 @@ QueryTraceBlockRequest.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "proposer_address", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 9, name: "chain_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { QueryTraceBlockRequest };
 /**
  * QueryTraceBlockResponse defines TraceBlock response
  *
  * @generated from message ethermint.evm.v1.QueryTraceBlockResponse
  */
-export class QueryTraceBlockResponse extends Message {
+class QueryTraceBlockResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -880,13 +901,14 @@ QueryTraceBlockResponse.typeName = "ethermint.evm.v1.QueryTraceBlockResponse";
 QueryTraceBlockResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryTraceBlockResponse };
 /**
  * QueryBaseFeeRequest defines the request type for querying the EIP1559 base
  * fee.
  *
  * @generated from message ethermint.evm.v1.QueryBaseFeeRequest
  */
-export class QueryBaseFeeRequest extends Message {
+class QueryBaseFeeRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -907,12 +929,13 @@ export class QueryBaseFeeRequest extends Message {
 QueryBaseFeeRequest.runtime = proto3;
 QueryBaseFeeRequest.typeName = "ethermint.evm.v1.QueryBaseFeeRequest";
 QueryBaseFeeRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBaseFeeRequest };
 /**
  * QueryBaseFeeResponse returns the EIP1559 base fee.
  *
  * @generated from message ethermint.evm.v1.QueryBaseFeeResponse
  */
-export class QueryBaseFeeResponse extends Message {
+class QueryBaseFeeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -941,4 +964,5 @@ QueryBaseFeeResponse.typeName = "ethermint.evm.v1.QueryBaseFeeResponse";
 QueryBaseFeeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBaseFeeResponse };
 //# sourceMappingURL=query_pb.js.map

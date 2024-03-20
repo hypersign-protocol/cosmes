@@ -6,7 +6,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
 /**
  * @generated from message injective.peggy.v1.BlacklistEthereumAddressesProposal
  */
-export class BlacklistEthereumAddressesProposal extends Message {
+class BlacklistEthereumAddressesProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -43,10 +43,11 @@ BlacklistEthereumAddressesProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "blacklist_addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { BlacklistEthereumAddressesProposal };
 /**
  * @generated from message injective.peggy.v1.RevokeEthereumBlacklistProposal
  */
-export class RevokeEthereumBlacklistProposal extends Message {
+class RevokeEthereumBlacklistProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -83,4 +84,5 @@ RevokeEthereumBlacklistProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "blacklist_addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { RevokeEthereumBlacklistProposal };
 //# sourceMappingURL=proposal_pb.js.map

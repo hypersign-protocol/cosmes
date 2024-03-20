@@ -10,7 +10,7 @@ import { Coin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.staking.v1beta1.MsgCreateValidator
  */
-export class MsgCreateValidator extends Message {
+class MsgCreateValidator extends Message {
     constructor(data) {
         super();
         /**
@@ -51,12 +51,13 @@ MsgCreateValidator.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "pubkey", kind: "message", T: Any },
     { no: 7, name: "value", kind: "message", T: Coin },
 ]);
+export { MsgCreateValidator };
 /**
  * MsgCreateValidatorResponse defines the Msg/CreateValidator response type.
  *
  * @generated from message cosmos.staking.v1beta1.MsgCreateValidatorResponse
  */
-export class MsgCreateValidatorResponse extends Message {
+class MsgCreateValidatorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -77,12 +78,13 @@ export class MsgCreateValidatorResponse extends Message {
 MsgCreateValidatorResponse.runtime = proto3;
 MsgCreateValidatorResponse.typeName = "cosmos.staking.v1beta1.MsgCreateValidatorResponse";
 MsgCreateValidatorResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreateValidatorResponse };
 /**
  * MsgEditValidator defines a SDK message for editing an existing validator.
  *
  * @generated from message cosmos.staking.v1beta1.MsgEditValidator
  */
-export class MsgEditValidator extends Message {
+class MsgEditValidator extends Message {
     constructor(data) {
         super();
         /**
@@ -125,12 +127,13 @@ MsgEditValidator.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "commission_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "min_self_delegation", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgEditValidator };
 /**
  * MsgEditValidatorResponse defines the Msg/EditValidator response type.
  *
  * @generated from message cosmos.staking.v1beta1.MsgEditValidatorResponse
  */
-export class MsgEditValidatorResponse extends Message {
+class MsgEditValidatorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -151,13 +154,14 @@ export class MsgEditValidatorResponse extends Message {
 MsgEditValidatorResponse.runtime = proto3;
 MsgEditValidatorResponse.typeName = "cosmos.staking.v1beta1.MsgEditValidatorResponse";
 MsgEditValidatorResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgEditValidatorResponse };
 /**
  * MsgDelegate defines a SDK message for performing a delegation of coins
  * from a delegator to a validator.
  *
  * @generated from message cosmos.staking.v1beta1.MsgDelegate
  */
-export class MsgDelegate extends Message {
+class MsgDelegate extends Message {
     constructor(data) {
         super();
         /**
@@ -190,12 +194,13 @@ MsgDelegate.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgDelegate };
 /**
  * MsgDelegateResponse defines the Msg/Delegate response type.
  *
  * @generated from message cosmos.staking.v1beta1.MsgDelegateResponse
  */
-export class MsgDelegateResponse extends Message {
+class MsgDelegateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -216,13 +221,14 @@ export class MsgDelegateResponse extends Message {
 MsgDelegateResponse.runtime = proto3;
 MsgDelegateResponse.typeName = "cosmos.staking.v1beta1.MsgDelegateResponse";
 MsgDelegateResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgDelegateResponse };
 /**
  * MsgBeginRedelegate defines a SDK message for performing a redelegation
  * of coins from a delegator and source validator to a destination validator.
  *
  * @generated from message cosmos.staking.v1beta1.MsgBeginRedelegate
  */
-export class MsgBeginRedelegate extends Message {
+class MsgBeginRedelegate extends Message {
     constructor(data) {
         super();
         /**
@@ -260,12 +266,13 @@ MsgBeginRedelegate.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "validator_dst_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgBeginRedelegate };
 /**
  * MsgBeginRedelegateResponse defines the Msg/BeginRedelegate response type.
  *
  * @generated from message cosmos.staking.v1beta1.MsgBeginRedelegateResponse
  */
-export class MsgBeginRedelegateResponse extends Message {
+class MsgBeginRedelegateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -288,13 +295,14 @@ MsgBeginRedelegateResponse.typeName = "cosmos.staking.v1beta1.MsgBeginRedelegate
 MsgBeginRedelegateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "completion_time", kind: "message", T: Timestamp },
 ]);
+export { MsgBeginRedelegateResponse };
 /**
  * MsgUndelegate defines a SDK message for performing an undelegation from a
  * delegate and a validator.
  *
  * @generated from message cosmos.staking.v1beta1.MsgUndelegate
  */
-export class MsgUndelegate extends Message {
+class MsgUndelegate extends Message {
     constructor(data) {
         super();
         /**
@@ -327,12 +335,13 @@ MsgUndelegate.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgUndelegate };
 /**
  * MsgUndelegateResponse defines the Msg/Undelegate response type.
  *
  * @generated from message cosmos.staking.v1beta1.MsgUndelegateResponse
  */
-export class MsgUndelegateResponse extends Message {
+class MsgUndelegateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -355,6 +364,7 @@ MsgUndelegateResponse.typeName = "cosmos.staking.v1beta1.MsgUndelegateResponse";
 MsgUndelegateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "completion_time", kind: "message", T: Timestamp },
 ]);
+export { MsgUndelegateResponse };
 /**
  * MsgCancelUnbondingDelegation defines the SDK message for performing a cancel unbonding delegation for delegator
  *
@@ -362,7 +372,7 @@ MsgUndelegateResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.staking.v1beta1.MsgCancelUnbondingDelegation
  */
-export class MsgCancelUnbondingDelegation extends Message {
+class MsgCancelUnbondingDelegation extends Message {
     constructor(data) {
         super();
         /**
@@ -402,6 +412,7 @@ MsgCancelUnbondingDelegation.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "amount", kind: "message", T: Coin },
     { no: 4, name: "creation_height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { MsgCancelUnbondingDelegation };
 /**
  * MsgCancelUnbondingDelegationResponse
  *
@@ -409,7 +420,7 @@ MsgCancelUnbondingDelegation.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.staking.v1beta1.MsgCancelUnbondingDelegationResponse
  */
-export class MsgCancelUnbondingDelegationResponse extends Message {
+class MsgCancelUnbondingDelegationResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -430,6 +441,7 @@ export class MsgCancelUnbondingDelegationResponse extends Message {
 MsgCancelUnbondingDelegationResponse.runtime = proto3;
 MsgCancelUnbondingDelegationResponse.typeName = "cosmos.staking.v1beta1.MsgCancelUnbondingDelegationResponse";
 MsgCancelUnbondingDelegationResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCancelUnbondingDelegationResponse };
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
  *
@@ -437,7 +449,7 @@ MsgCancelUnbondingDelegationResponse.fields = proto3.util.newFieldList(() => [])
  *
  * @generated from message cosmos.staking.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -467,6 +479,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
@@ -475,7 +488,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.staking.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -496,4 +509,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "cosmos.staking.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

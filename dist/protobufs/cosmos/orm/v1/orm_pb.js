@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.orm.v1.TableDescriptor
  */
-export class TableDescriptor extends Message {
+class TableDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -47,12 +47,13 @@ TableDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "index", kind: "message", T: SecondaryIndexDescriptor, repeated: true },
     { no: 3, name: "id", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { TableDescriptor };
 /**
  * PrimaryKeyDescriptor describes a table primary key.
  *
  * @generated from message cosmos.orm.v1.PrimaryKeyDescriptor
  */
-export class PrimaryKeyDescriptor extends Message {
+class PrimaryKeyDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -119,12 +120,13 @@ PrimaryKeyDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fields", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "auto_increment", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { PrimaryKeyDescriptor };
 /**
  * PrimaryKeyDescriptor describes a table secondary index.
  *
  * @generated from message cosmos.orm.v1.SecondaryIndexDescriptor
  */
-export class SecondaryIndexDescriptor extends Message {
+class SecondaryIndexDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -177,12 +179,13 @@ SecondaryIndexDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "id", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 3, name: "unique", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { SecondaryIndexDescriptor };
 /**
  * TableDescriptor describes an ORM singleton table which has at most one instance.
  *
  * @generated from message cosmos.orm.v1.SingletonDescriptor
  */
-export class SingletonDescriptor extends Message {
+class SingletonDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -213,4 +216,5 @@ SingletonDescriptor.typeName = "cosmos.orm.v1.SingletonDescriptor";
 SingletonDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "id", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { SingletonDescriptor };
 //# sourceMappingURL=orm_pb.js.map

@@ -10,7 +10,7 @@ import { Params as Params$1 } from "../../host/v1/host_pb.js";
  *
  * @generated from message ibc.applications.interchain_accounts.genesis.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -34,12 +34,13 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "controller_genesis_state", kind: "message", T: ControllerGenesisState },
     { no: 2, name: "host_genesis_state", kind: "message", T: HostGenesisState },
 ]);
+export { GenesisState };
 /**
  * ControllerGenesisState defines the interchain accounts controller genesis state
  *
  * @generated from message ibc.applications.interchain_accounts.genesis.v1.ControllerGenesisState
  */
-export class ControllerGenesisState extends Message {
+class ControllerGenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -77,12 +78,13 @@ ControllerGenesisState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "ports", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 4, name: "params", kind: "message", T: Params },
 ]);
+export { ControllerGenesisState };
 /**
  * HostGenesisState defines the interchain accounts host genesis state
  *
  * @generated from message ibc.applications.interchain_accounts.genesis.v1.HostGenesisState
  */
-export class HostGenesisState extends Message {
+class HostGenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -120,13 +122,14 @@ HostGenesisState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "port", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "params", kind: "message", T: Params$1 },
 ]);
+export { HostGenesisState };
 /**
  * ActiveChannel contains a connection ID, port ID and associated active channel ID, as well as a boolean flag to
  * indicate if the channel is middleware enabled
  *
  * @generated from message ibc.applications.interchain_accounts.genesis.v1.ActiveChannel
  */
-export class ActiveChannel extends Message {
+class ActiveChannel extends Message {
     constructor(data) {
         super();
         /**
@@ -168,12 +171,13 @@ ActiveChannel.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "is_middleware_enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { ActiveChannel };
 /**
  * RegisteredInterchainAccount contains a connection ID, port ID and associated interchain account address
  *
  * @generated from message ibc.applications.interchain_accounts.genesis.v1.RegisteredInterchainAccount
  */
-export class RegisteredInterchainAccount extends Message {
+class RegisteredInterchainAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -210,4 +214,5 @@ RegisteredInterchainAccount.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "account_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { RegisteredInterchainAccount };
 //# sourceMappingURL=genesis_pb.js.map

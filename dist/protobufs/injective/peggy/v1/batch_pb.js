@@ -9,7 +9,7 @@ import { ERC20Token } from "./attestation_pb.js";
  *
  * @generated from message injective.peggy.v1.OutgoingTxBatch
  */
-export class OutgoingTxBatch extends Message {
+class OutgoingTxBatch extends Message {
     constructor(data) {
         super();
         /**
@@ -56,12 +56,13 @@ OutgoingTxBatch.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "token_contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "block", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { OutgoingTxBatch };
 /**
  * OutgoingTransferTx represents an individual send from Peggy to ETH
  *
  * @generated from message injective.peggy.v1.OutgoingTransferTx
  */
-export class OutgoingTransferTx extends Message {
+class OutgoingTransferTx extends Message {
     constructor(data) {
         super();
         /**
@@ -100,4 +101,5 @@ OutgoingTransferTx.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "erc20_token", kind: "message", T: ERC20Token },
     { no: 5, name: "erc20_fee", kind: "message", T: ERC20Token },
 ]);
+export { OutgoingTransferTx };
 //# sourceMappingURL=batch_pb.js.map

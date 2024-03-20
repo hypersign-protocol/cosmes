@@ -33,7 +33,7 @@ proto3.util.setEnumType(ExchangeType, "injective.exchange.v1beta1.ExchangeType",
 /**
  * @generated from message injective.exchange.v1beta1.SpotMarketParamUpdateProposal
  */
-export class SpotMarketParamUpdateProposal extends Message {
+class SpotMarketParamUpdateProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -113,10 +113,11 @@ SpotMarketParamUpdateProposal.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "status", kind: "enum", T: proto3.getEnumType(MarketStatus) },
 ]);
+export { SpotMarketParamUpdateProposal };
 /**
  * @generated from message injective.exchange.v1beta1.ExchangeEnableProposal
  */
-export class ExchangeEnableProposal extends Message {
+class ExchangeEnableProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -153,10 +154,11 @@ ExchangeEnableProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "exchangeType", kind: "enum", T: proto3.getEnumType(ExchangeType) },
 ]);
+export { ExchangeEnableProposal };
 /**
  * @generated from message injective.exchange.v1beta1.BatchExchangeModificationProposal
  */
-export class BatchExchangeModificationProposal extends Message {
+class BatchExchangeModificationProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -231,13 +233,14 @@ BatchExchangeModificationProposal.fields = proto3.util.newFieldList(() => [
     { no: 12, name: "fee_discount_proposal", kind: "message", T: FeeDiscountProposal },
     { no: 13, name: "market_forced_settlement_proposals", kind: "message", T: MarketForcedSettlementProposal, repeated: true },
 ]);
+export { BatchExchangeModificationProposal };
 /**
  * SpotMarketLaunchProposal defines a SDK message for proposing a new spot
  * market through governance
  *
  * @generated from message injective.exchange.v1beta1.SpotMarketLaunchProposal
  */
-export class SpotMarketLaunchProposal extends Message {
+class SpotMarketLaunchProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -319,13 +322,14 @@ SpotMarketLaunchProposal.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "maker_fee_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "taker_fee_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotMarketLaunchProposal };
 /**
  * PerpetualMarketLaunchProposal defines a SDK message for proposing a new
  * perpetual futures market through governance
  *
  * @generated from message injective.exchange.v1beta1.PerpetualMarketLaunchProposal
  */
-export class PerpetualMarketLaunchProposal extends Message {
+class PerpetualMarketLaunchProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -447,10 +451,11 @@ PerpetualMarketLaunchProposal.fields = proto3.util.newFieldList(() => [
     { no: 13, name: "min_price_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PerpetualMarketLaunchProposal };
 /**
  * @generated from message injective.exchange.v1beta1.BinaryOptionsMarketLaunchProposal
  */
-export class BinaryOptionsMarketLaunchProposal extends Message {
+class BinaryOptionsMarketLaunchProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -575,13 +580,14 @@ BinaryOptionsMarketLaunchProposal.fields = proto3.util.newFieldList(() => [
     { no: 14, name: "min_price_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { BinaryOptionsMarketLaunchProposal };
 /**
  * ExpiryFuturesMarketLaunchProposal defines a SDK message for proposing a new
  * expiry futures market through governance
  *
  * @generated from message injective.exchange.v1beta1.ExpiryFuturesMarketLaunchProposal
  */
-export class ExpiryFuturesMarketLaunchProposal extends Message {
+class ExpiryFuturesMarketLaunchProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -710,10 +716,11 @@ ExpiryFuturesMarketLaunchProposal.fields = proto3.util.newFieldList(() => [
     { no: 14, name: "min_price_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 15, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ExpiryFuturesMarketLaunchProposal };
 /**
  * @generated from message injective.exchange.v1beta1.DerivativeMarketParamUpdateProposal
  */
-export class DerivativeMarketParamUpdateProposal extends Message {
+class DerivativeMarketParamUpdateProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -827,10 +834,11 @@ DerivativeMarketParamUpdateProposal.fields = proto3.util.newFieldList(() => [
     { no: 13, name: "status", kind: "enum", T: proto3.getEnumType(MarketStatus) },
     { no: 14, name: "oracle_params", kind: "message", T: OracleParams },
 ]);
+export { DerivativeMarketParamUpdateProposal };
 /**
  * @generated from message injective.exchange.v1beta1.MarketForcedSettlementProposal
  */
-export class MarketForcedSettlementProposal extends Message {
+class MarketForcedSettlementProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -872,10 +880,11 @@ MarketForcedSettlementProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "settlement_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MarketForcedSettlementProposal };
 /**
  * @generated from message injective.exchange.v1beta1.UpdateDenomDecimalsProposal
  */
-export class UpdateDenomDecimalsProposal extends Message {
+class UpdateDenomDecimalsProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -912,10 +921,11 @@ UpdateDenomDecimalsProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "denom_decimals", kind: "message", T: DenomDecimals, repeated: true },
 ]);
+export { UpdateDenomDecimalsProposal };
 /**
  * @generated from message injective.exchange.v1beta1.BinaryOptionsMarketParamUpdateProposal
  */
-export class BinaryOptionsMarketParamUpdateProposal extends Message {
+class BinaryOptionsMarketParamUpdateProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -1026,10 +1036,11 @@ BinaryOptionsMarketParamUpdateProposal.fields = proto3.util.newFieldList(() => [
     { no: 13, name: "status", kind: "enum", T: proto3.getEnumType(MarketStatus) },
     { no: 14, name: "oracle_params", kind: "message", T: ProviderOracleParams },
 ]);
+export { BinaryOptionsMarketParamUpdateProposal };
 /**
  * @generated from message injective.exchange.v1beta1.ProviderOracleParams
  */
-export class ProviderOracleParams extends Message {
+class ProviderOracleParams extends Message {
     constructor(data) {
         super();
         /**
@@ -1079,10 +1090,11 @@ ProviderOracleParams.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "oracle_scale_factor", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 4, name: "oracle_type", kind: "enum", T: proto3.getEnumType(OracleType) },
 ]);
+export { ProviderOracleParams };
 /**
  * @generated from message injective.exchange.v1beta1.OracleParams
  */
-export class OracleParams extends Message {
+class OracleParams extends Message {
     constructor(data) {
         super();
         /**
@@ -1132,10 +1144,11 @@ OracleParams.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "oracle_scale_factor", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 4, name: "oracle_type", kind: "enum", T: proto3.getEnumType(OracleType) },
 ]);
+export { OracleParams };
 /**
  * @generated from message injective.exchange.v1beta1.TradingRewardCampaignLaunchProposal
  */
-export class TradingRewardCampaignLaunchProposal extends Message {
+class TradingRewardCampaignLaunchProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -1173,10 +1186,11 @@ TradingRewardCampaignLaunchProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "campaign_info", kind: "message", T: TradingRewardCampaignInfo },
     { no: 4, name: "campaign_reward_pools", kind: "message", T: CampaignRewardPool, repeated: true },
 ]);
+export { TradingRewardCampaignLaunchProposal };
 /**
  * @generated from message injective.exchange.v1beta1.TradingRewardCampaignUpdateProposal
  */
-export class TradingRewardCampaignUpdateProposal extends Message {
+class TradingRewardCampaignUpdateProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -1219,10 +1233,11 @@ TradingRewardCampaignUpdateProposal.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "campaign_reward_pools_additions", kind: "message", T: CampaignRewardPool, repeated: true },
     { no: 5, name: "campaign_reward_pools_updates", kind: "message", T: CampaignRewardPool, repeated: true },
 ]);
+export { TradingRewardCampaignUpdateProposal };
 /**
  * @generated from message injective.exchange.v1beta1.RewardPointUpdate
  */
-export class RewardPointUpdate extends Message {
+class RewardPointUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -1256,10 +1271,11 @@ RewardPointUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "new_points", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { RewardPointUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.TradingRewardPendingPointsUpdateProposal
  */
-export class TradingRewardPendingPointsUpdateProposal extends Message {
+class TradingRewardPendingPointsUpdateProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -1301,10 +1317,11 @@ TradingRewardPendingPointsUpdateProposal.fields = proto3.util.newFieldList(() =>
     { no: 3, name: "pending_pool_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 4, name: "reward_point_updates", kind: "message", T: RewardPointUpdate, repeated: true },
 ]);
+export { TradingRewardPendingPointsUpdateProposal };
 /**
  * @generated from message injective.exchange.v1beta1.FeeDiscountProposal
  */
-export class FeeDiscountProposal extends Message {
+class FeeDiscountProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -1337,10 +1354,11 @@ FeeDiscountProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "schedule", kind: "message", T: FeeDiscountSchedule },
 ]);
+export { FeeDiscountProposal };
 /**
  * @generated from message injective.exchange.v1beta1.BatchCommunityPoolSpendProposal
  */
-export class BatchCommunityPoolSpendProposal extends Message {
+class BatchCommunityPoolSpendProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -1377,13 +1395,14 @@ BatchCommunityPoolSpendProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "proposals", kind: "message", T: CommunityPoolSpendProposal, repeated: true },
 ]);
+export { BatchCommunityPoolSpendProposal };
 /**
  * AtomicMarketOrderFeeMultiplierScheduleProposal defines a SDK message for
  * proposing new atomic take fee multipliers for specified markets
  *
  * @generated from message injective.exchange.v1beta1.AtomicMarketOrderFeeMultiplierScheduleProposal
  */
-export class AtomicMarketOrderFeeMultiplierScheduleProposal extends Message {
+class AtomicMarketOrderFeeMultiplierScheduleProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -1420,4 +1439,5 @@ AtomicMarketOrderFeeMultiplierScheduleProposal.fields = proto3.util.newFieldList
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "market_fee_multipliers", kind: "message", T: MarketFeeMultiplier, repeated: true },
 ]);
+export { AtomicMarketOrderFeeMultiplierScheduleProposal };
 //# sourceMappingURL=proposal_pb.js.map

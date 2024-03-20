@@ -168,7 +168,7 @@ proto3.util.setEnumType(LengthOp, "cosmos.ics23.v1.LengthOp", [
  *
  * @generated from message cosmos.ics23.v1.ExistenceProof
  */
-export class ExistenceProof extends Message {
+class ExistenceProof extends Message {
     constructor(data) {
         super();
         /**
@@ -206,6 +206,7 @@ ExistenceProof.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "leaf", kind: "message", T: LeafOp },
     { no: 4, name: "path", kind: "message", T: InnerOp, repeated: true },
 ]);
+export { ExistenceProof };
 /**
  *
  * NonExistenceProof takes a proof of two neighbors, one left of the desired key,
@@ -214,7 +215,7 @@ ExistenceProof.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.ics23.v1.NonExistenceProof
  */
-export class NonExistenceProof extends Message {
+class NonExistenceProof extends Message {
     constructor(data) {
         super();
         /**
@@ -245,13 +246,14 @@ NonExistenceProof.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "left", kind: "message", T: ExistenceProof },
     { no: 3, name: "right", kind: "message", T: ExistenceProof },
 ]);
+export { NonExistenceProof };
 /**
  *
  * CommitmentProof is either an ExistenceProof or a NonExistenceProof, or a Batch of such messages
  *
  * @generated from message cosmos.ics23.v1.CommitmentProof
  */
-export class CommitmentProof extends Message {
+class CommitmentProof extends Message {
     constructor(data) {
         super();
         /**
@@ -281,6 +283,7 @@ CommitmentProof.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "batch", kind: "message", T: BatchProof, oneof: "proof" },
     { no: 4, name: "compressed", kind: "message", T: CompressedBatchProof, oneof: "proof" },
 ]);
+export { CommitmentProof };
 /**
  * *
  * LeafOp represents the raw key-value data we wish to prove, and
@@ -300,7 +303,7 @@ CommitmentProof.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.ics23.v1.LeafOp
  */
-export class LeafOp extends Message {
+class LeafOp extends Message {
     constructor(data) {
         super();
         /**
@@ -350,6 +353,7 @@ LeafOp.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "length", kind: "enum", T: proto3.getEnumType(LengthOp) },
     { no: 5, name: "prefix", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { LeafOp };
 /**
  * *
  * InnerOp represents a merkle-proof step that is not a leaf.
@@ -370,7 +374,7 @@ LeafOp.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.ics23.v1.InnerOp
  */
-export class InnerOp extends Message {
+class InnerOp extends Message {
     constructor(data) {
         super();
         /**
@@ -407,6 +411,7 @@ InnerOp.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "prefix", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "suffix", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { InnerOp };
 /**
  * *
  * ProofSpec defines what the expected parameters are for a given proof type.
@@ -422,7 +427,7 @@ InnerOp.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.ics23.v1.ProofSpec
  */
-export class ProofSpec extends Message {
+class ProofSpec extends Message {
     constructor(data) {
         super();
         /**
@@ -469,6 +474,7 @@ ProofSpec.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "min_depth", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
     { no: 5, name: "prehash_key_before_comparison", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { ProofSpec };
 /**
  *
  * InnerSpec contains all store-specific structure info to determine if two proofs from a
@@ -482,7 +488,7 @@ ProofSpec.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.ics23.v1.InnerSpec
  */
-export class InnerSpec extends Message {
+class InnerSpec extends Message {
     constructor(data) {
         super();
         /**
@@ -542,13 +548,14 @@ InnerSpec.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "empty_child", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 6, name: "hash", kind: "enum", T: proto3.getEnumType(HashOp) },
 ]);
+export { InnerSpec };
 /**
  *
  * BatchProof is a group of multiple proof types than can be compressed
  *
  * @generated from message cosmos.ics23.v1.BatchProof
  */
-export class BatchProof extends Message {
+class BatchProof extends Message {
     constructor(data) {
         super();
         /**
@@ -575,12 +582,13 @@ BatchProof.typeName = "cosmos.ics23.v1.BatchProof";
 BatchProof.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "entries", kind: "message", T: BatchEntry, repeated: true },
 ]);
+export { BatchProof };
 /**
  * Use BatchEntry not CommitmentProof, to avoid recursion
  *
  * @generated from message cosmos.ics23.v1.BatchEntry
  */
-export class BatchEntry extends Message {
+class BatchEntry extends Message {
     constructor(data) {
         super();
         /**
@@ -608,10 +616,11 @@ BatchEntry.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "exist", kind: "message", T: ExistenceProof, oneof: "proof" },
     { no: 2, name: "nonexist", kind: "message", T: NonExistenceProof, oneof: "proof" },
 ]);
+export { BatchEntry };
 /**
  * @generated from message cosmos.ics23.v1.CompressedBatchProof
  */
-export class CompressedBatchProof extends Message {
+class CompressedBatchProof extends Message {
     constructor(data) {
         super();
         /**
@@ -643,12 +652,13 @@ CompressedBatchProof.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "entries", kind: "message", T: CompressedBatchEntry, repeated: true },
     { no: 2, name: "lookup_inners", kind: "message", T: InnerOp, repeated: true },
 ]);
+export { CompressedBatchProof };
 /**
  * Use BatchEntry not CommitmentProof, to avoid recursion
  *
  * @generated from message cosmos.ics23.v1.CompressedBatchEntry
  */
-export class CompressedBatchEntry extends Message {
+class CompressedBatchEntry extends Message {
     constructor(data) {
         super();
         /**
@@ -676,10 +686,11 @@ CompressedBatchEntry.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "exist", kind: "message", T: CompressedExistenceProof, oneof: "proof" },
     { no: 2, name: "nonexist", kind: "message", T: CompressedNonExistenceProof, oneof: "proof" },
 ]);
+export { CompressedBatchEntry };
 /**
  * @generated from message cosmos.ics23.v1.CompressedExistenceProof
  */
-export class CompressedExistenceProof extends Message {
+class CompressedExistenceProof extends Message {
     constructor(data) {
         super();
         /**
@@ -719,10 +730,11 @@ CompressedExistenceProof.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "leaf", kind: "message", T: LeafOp },
     { no: 4, name: "path", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true },
 ]);
+export { CompressedExistenceProof };
 /**
  * @generated from message cosmos.ics23.v1.CompressedNonExistenceProof
  */
-export class CompressedNonExistenceProof extends Message {
+class CompressedNonExistenceProof extends Message {
     constructor(data) {
         super();
         /**
@@ -753,4 +765,5 @@ CompressedNonExistenceProof.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "left", kind: "message", T: CompressedExistenceProof },
     { no: 3, name: "right", kind: "message", T: CompressedExistenceProof },
 ]);
+export { CompressedNonExistenceProof };
 //# sourceMappingURL=proofs_pb.js.map

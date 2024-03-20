@@ -9,7 +9,7 @@ import { Params } from "./auth_pb.js";
  *
  * @generated from message cosmos.auth.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -39,4 +39,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
     { no: 2, name: "accounts", kind: "message", T: Any, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

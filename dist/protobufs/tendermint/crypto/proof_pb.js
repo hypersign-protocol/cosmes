@@ -6,7 +6,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 /**
  * @generated from message tendermint.crypto.Proof
  */
-export class Proof extends Message {
+class Proof extends Message {
     constructor(data) {
         super();
         /**
@@ -48,10 +48,11 @@ Proof.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "leaf_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "aunts", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { Proof };
 /**
  * @generated from message tendermint.crypto.ValueOp
  */
-export class ValueOp extends Message {
+class ValueOp extends Message {
     constructor(data) {
         super();
         /**
@@ -81,10 +82,11 @@ ValueOp.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "proof", kind: "message", T: Proof },
 ]);
+export { ValueOp };
 /**
  * @generated from message tendermint.crypto.DominoOp
  */
-export class DominoOp extends Message {
+class DominoOp extends Message {
     constructor(data) {
         super();
         /**
@@ -121,6 +123,7 @@ DominoOp.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "input", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "output", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DominoOp };
 /**
  * ProofOp defines an operation used for calculating Merkle root
  * The data could be arbitrary format, providing nessecary data
@@ -128,7 +131,7 @@ DominoOp.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message tendermint.crypto.ProofOp
  */
-export class ProofOp extends Message {
+class ProofOp extends Message {
     constructor(data) {
         super();
         /**
@@ -165,12 +168,13 @@ ProofOp.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ProofOp };
 /**
  * ProofOps is Merkle proof defined by the list of ProofOps
  *
  * @generated from message tendermint.crypto.ProofOps
  */
-export class ProofOps extends Message {
+class ProofOps extends Message {
     constructor(data) {
         super();
         /**
@@ -197,4 +201,5 @@ ProofOps.typeName = "tendermint.crypto.ProofOps";
 ProofOps.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ops", kind: "message", T: ProofOp, repeated: true },
 ]);
+export { ProofOps };
 //# sourceMappingURL=proof_pb.js.map

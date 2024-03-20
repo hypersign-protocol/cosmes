@@ -9,7 +9,7 @@ import { Delegation, Params, Redelegation, UnbondingDelegation, Validator } from
  *
  * @generated from message cosmos.staking.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -81,12 +81,13 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "redelegations", kind: "message", T: Redelegation, repeated: true },
     { no: 8, name: "exported", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { GenesisState };
 /**
  * LastValidatorPower required for validator set update logic.
  *
  * @generated from message cosmos.staking.v1beta1.LastValidatorPower
  */
-export class LastValidatorPower extends Message {
+class LastValidatorPower extends Message {
     constructor(data) {
         super();
         /**
@@ -122,4 +123,5 @@ LastValidatorPower.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { LastValidatorPower };
 //# sourceMappingURL=genesis_pb.js.map

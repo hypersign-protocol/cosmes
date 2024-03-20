@@ -9,7 +9,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ibc.applications.interchain_accounts.host.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -45,4 +45,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "host_enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 2, name: "allow_messages", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Params };
 //# sourceMappingURL=host_pb.js.map

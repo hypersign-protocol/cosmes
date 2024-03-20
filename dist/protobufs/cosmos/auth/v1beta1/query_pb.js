@@ -12,7 +12,7 @@ import { BaseAccount, Params } from "./auth_pb.js";
  *
  * @generated from message cosmos.auth.v1beta1.QueryAccountsRequest
  */
-export class QueryAccountsRequest extends Message {
+class QueryAccountsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -35,6 +35,7 @@ QueryAccountsRequest.typeName = "cosmos.auth.v1beta1.QueryAccountsRequest";
 QueryAccountsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryAccountsRequest };
 /**
  * QueryAccountsResponse is the response type for the Query/Accounts RPC method.
  *
@@ -42,7 +43,7 @@ QueryAccountsRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.QueryAccountsResponse
  */
-export class QueryAccountsResponse extends Message {
+class QueryAccountsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -72,12 +73,13 @@ QueryAccountsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "accounts", kind: "message", T: Any, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryAccountsResponse };
 /**
  * QueryAccountRequest is the request type for the Query/Account RPC method.
  *
  * @generated from message cosmos.auth.v1beta1.QueryAccountRequest
  */
-export class QueryAccountRequest extends Message {
+class QueryAccountRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -106,12 +108,13 @@ QueryAccountRequest.typeName = "cosmos.auth.v1beta1.QueryAccountRequest";
 QueryAccountRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAccountRequest };
 /**
  * QueryAccountResponse is the response type for the Query/Account RPC method.
  *
  * @generated from message cosmos.auth.v1beta1.QueryAccountResponse
  */
-export class QueryAccountResponse extends Message {
+class QueryAccountResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -134,12 +137,13 @@ QueryAccountResponse.typeName = "cosmos.auth.v1beta1.QueryAccountResponse";
 QueryAccountResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "message", T: Any },
 ]);
+export { QueryAccountResponse };
 /**
  * QueryParamsRequest is the request type for the Query/Params RPC method.
  *
  * @generated from message cosmos.auth.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -160,12 +164,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "cosmos.auth.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message cosmos.auth.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -188,6 +193,7 @@ QueryParamsResponse.typeName = "cosmos.auth.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryModuleAccountsRequest is the request type for the Query/ModuleAccounts RPC method.
  *
@@ -195,7 +201,7 @@ QueryParamsResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.QueryModuleAccountsRequest
  */
-export class QueryModuleAccountsRequest extends Message {
+class QueryModuleAccountsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -216,6 +222,7 @@ export class QueryModuleAccountsRequest extends Message {
 QueryModuleAccountsRequest.runtime = proto3;
 QueryModuleAccountsRequest.typeName = "cosmos.auth.v1beta1.QueryModuleAccountsRequest";
 QueryModuleAccountsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryModuleAccountsRequest };
 /**
  * QueryModuleAccountsResponse is the response type for the Query/ModuleAccounts RPC method.
  *
@@ -223,7 +230,7 @@ QueryModuleAccountsRequest.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.auth.v1beta1.QueryModuleAccountsResponse
  */
-export class QueryModuleAccountsResponse extends Message {
+class QueryModuleAccountsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -250,12 +257,13 @@ QueryModuleAccountsResponse.typeName = "cosmos.auth.v1beta1.QueryModuleAccountsR
 QueryModuleAccountsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "accounts", kind: "message", T: Any, repeated: true },
 ]);
+export { QueryModuleAccountsResponse };
 /**
  * QueryModuleAccountByNameRequest is the request type for the Query/ModuleAccountByName RPC method.
  *
  * @generated from message cosmos.auth.v1beta1.QueryModuleAccountByNameRequest
  */
-export class QueryModuleAccountByNameRequest extends Message {
+class QueryModuleAccountByNameRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -282,12 +290,13 @@ QueryModuleAccountByNameRequest.typeName = "cosmos.auth.v1beta1.QueryModuleAccou
 QueryModuleAccountByNameRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryModuleAccountByNameRequest };
 /**
  * QueryModuleAccountByNameResponse is the response type for the Query/ModuleAccountByName RPC method.
  *
  * @generated from message cosmos.auth.v1beta1.QueryModuleAccountByNameResponse
  */
-export class QueryModuleAccountByNameResponse extends Message {
+class QueryModuleAccountByNameResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -310,6 +319,7 @@ QueryModuleAccountByNameResponse.typeName = "cosmos.auth.v1beta1.QueryModuleAcco
 QueryModuleAccountByNameResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "message", T: Any },
 ]);
+export { QueryModuleAccountByNameResponse };
 /**
  * Bech32PrefixRequest is the request type for Bech32Prefix rpc method.
  *
@@ -317,7 +327,7 @@ QueryModuleAccountByNameResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.Bech32PrefixRequest
  */
-export class Bech32PrefixRequest extends Message {
+class Bech32PrefixRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -338,6 +348,7 @@ export class Bech32PrefixRequest extends Message {
 Bech32PrefixRequest.runtime = proto3;
 Bech32PrefixRequest.typeName = "cosmos.auth.v1beta1.Bech32PrefixRequest";
 Bech32PrefixRequest.fields = proto3.util.newFieldList(() => []);
+export { Bech32PrefixRequest };
 /**
  * Bech32PrefixResponse is the response type for Bech32Prefix rpc method.
  *
@@ -345,7 +356,7 @@ Bech32PrefixRequest.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.auth.v1beta1.Bech32PrefixResponse
  */
-export class Bech32PrefixResponse extends Message {
+class Bech32PrefixResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -372,6 +383,7 @@ Bech32PrefixResponse.typeName = "cosmos.auth.v1beta1.Bech32PrefixResponse";
 Bech32PrefixResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bech32_prefix", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Bech32PrefixResponse };
 /**
  * AddressBytesToStringRequest is the request type for AddressString rpc method.
  *
@@ -379,7 +391,7 @@ Bech32PrefixResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.AddressBytesToStringRequest
  */
-export class AddressBytesToStringRequest extends Message {
+class AddressBytesToStringRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -406,6 +418,7 @@ AddressBytesToStringRequest.typeName = "cosmos.auth.v1beta1.AddressBytesToString
 AddressBytesToStringRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { AddressBytesToStringRequest };
 /**
  * AddressBytesToStringResponse is the response type for AddressString rpc method.
  *
@@ -413,7 +426,7 @@ AddressBytesToStringRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.AddressBytesToStringResponse
  */
-export class AddressBytesToStringResponse extends Message {
+class AddressBytesToStringResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -440,6 +453,7 @@ AddressBytesToStringResponse.typeName = "cosmos.auth.v1beta1.AddressBytesToStrin
 AddressBytesToStringResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address_string", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AddressBytesToStringResponse };
 /**
  * AddressStringToBytesRequest is the request type for AccountBytes rpc method.
  *
@@ -447,7 +461,7 @@ AddressBytesToStringResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.AddressStringToBytesRequest
  */
-export class AddressStringToBytesRequest extends Message {
+class AddressStringToBytesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -474,6 +488,7 @@ AddressStringToBytesRequest.typeName = "cosmos.auth.v1beta1.AddressStringToBytes
 AddressStringToBytesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address_string", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AddressStringToBytesRequest };
 /**
  * AddressStringToBytesResponse is the response type for AddressBytes rpc method.
  *
@@ -481,7 +496,7 @@ AddressStringToBytesRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.AddressStringToBytesResponse
  */
-export class AddressStringToBytesResponse extends Message {
+class AddressStringToBytesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -508,6 +523,7 @@ AddressStringToBytesResponse.typeName = "cosmos.auth.v1beta1.AddressStringToByte
 AddressStringToBytesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { AddressStringToBytesResponse };
 /**
  * QueryAccountAddressByIDRequest is the request type for AccountAddressByID rpc method
  *
@@ -515,7 +531,7 @@ AddressStringToBytesResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.QueryAccountAddressByIDRequest
  */
-export class QueryAccountAddressByIDRequest extends Message {
+class QueryAccountAddressByIDRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -558,6 +574,7 @@ QueryAccountAddressByIDRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryAccountAddressByIDRequest };
 /**
  * QueryAccountAddressByIDResponse is the response type for AccountAddressByID rpc method
  *
@@ -565,7 +582,7 @@ QueryAccountAddressByIDRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.QueryAccountAddressByIDResponse
  */
-export class QueryAccountAddressByIDResponse extends Message {
+class QueryAccountAddressByIDResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -592,6 +609,7 @@ QueryAccountAddressByIDResponse.typeName = "cosmos.auth.v1beta1.QueryAccountAddr
 QueryAccountAddressByIDResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAccountAddressByIDResponse };
 /**
  * QueryAccountInfoRequest is the Query/AccountInfo request type.
  *
@@ -599,7 +617,7 @@ QueryAccountAddressByIDResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.QueryAccountInfoRequest
  */
-export class QueryAccountInfoRequest extends Message {
+class QueryAccountInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -628,6 +646,7 @@ QueryAccountInfoRequest.typeName = "cosmos.auth.v1beta1.QueryAccountInfoRequest"
 QueryAccountInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAccountInfoRequest };
 /**
  * QueryAccountInfoResponse is the Query/AccountInfo response type.
  *
@@ -635,7 +654,7 @@ QueryAccountInfoRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.QueryAccountInfoResponse
  */
-export class QueryAccountInfoResponse extends Message {
+class QueryAccountInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -658,4 +677,5 @@ QueryAccountInfoResponse.typeName = "cosmos.auth.v1beta1.QueryAccountInfoRespons
 QueryAccountInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "info", kind: "message", T: BaseAccount },
 ]);
+export { QueryAccountInfoResponse };
 //# sourceMappingURL=query_pb.js.map

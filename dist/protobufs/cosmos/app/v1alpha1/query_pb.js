@@ -9,7 +9,7 @@ import { Config } from "./config_pb.js";
  *
  * @generated from message cosmos.app.v1alpha1.QueryConfigRequest
  */
-export class QueryConfigRequest extends Message {
+class QueryConfigRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,12 +30,13 @@ export class QueryConfigRequest extends Message {
 QueryConfigRequest.runtime = proto3;
 QueryConfigRequest.typeName = "cosmos.app.v1alpha1.QueryConfigRequest";
 QueryConfigRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryConfigRequest };
 /**
  * QueryConfigRequest is the Query/Config response type.
  *
  * @generated from message cosmos.app.v1alpha1.QueryConfigResponse
  */
-export class QueryConfigResponse extends Message {
+class QueryConfigResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -58,4 +59,5 @@ QueryConfigResponse.typeName = "cosmos.app.v1alpha1.QueryConfigResponse";
 QueryConfigResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "config", kind: "message", T: Config },
 ]);
+export { QueryConfigResponse };
 //# sourceMappingURL=query_pb.js.map

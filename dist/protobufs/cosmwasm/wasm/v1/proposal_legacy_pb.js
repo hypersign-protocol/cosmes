@@ -14,7 +14,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  * @generated from message cosmwasm.wasm.v1.StoreCodeProposal
  * @deprecated
  */
-export class StoreCodeProposal extends Message {
+class StoreCodeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -95,6 +95,7 @@ StoreCodeProposal.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "builder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { StoreCodeProposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit InstantiateContractProposal. To instantiate a contract,
@@ -104,7 +105,7 @@ StoreCodeProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.InstantiateContractProposal
  * @deprecated
  */
-export class InstantiateContractProposal extends Message {
+class InstantiateContractProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -182,6 +183,7 @@ InstantiateContractProposal.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 8, name: "funds", kind: "message", T: Coin, repeated: true },
 ]);
+export { InstantiateContractProposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit InstantiateContract2Proposal. To instantiate contract 2,
@@ -191,7 +193,7 @@ InstantiateContractProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.InstantiateContract2Proposal
  * @deprecated
  */
-export class InstantiateContract2Proposal extends Message {
+class InstantiateContract2Proposal extends Message {
     constructor(data) {
         super();
         /**
@@ -284,6 +286,7 @@ InstantiateContract2Proposal.fields = proto3.util.newFieldList(() => [
     { no: 9, name: "salt", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 10, name: "fix_msg", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { InstantiateContract2Proposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit MigrateContractProposal. To migrate a contract,
@@ -293,7 +296,7 @@ InstantiateContract2Proposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.MigrateContractProposal
  * @deprecated
  */
-export class MigrateContractProposal extends Message {
+class MigrateContractProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -352,6 +355,7 @@ MigrateContractProposal.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 6, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MigrateContractProposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit SudoContractProposal. To call sudo on a contract,
@@ -361,7 +365,7 @@ MigrateContractProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.SudoContractProposal
  * @deprecated
  */
-export class SudoContractProposal extends Message {
+class SudoContractProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -411,6 +415,7 @@ SudoContractProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { SudoContractProposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit ExecuteContractProposal. To call execute on a contract,
@@ -420,7 +425,7 @@ SudoContractProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.ExecuteContractProposal
  * @deprecated
  */
-export class ExecuteContractProposal extends Message {
+class ExecuteContractProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -484,6 +489,7 @@ ExecuteContractProposal.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 6, name: "funds", kind: "message", T: Coin, repeated: true },
 ]);
+export { ExecuteContractProposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit UpdateAdminProposal. To set an admin for a contract,
@@ -493,7 +499,7 @@ ExecuteContractProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.UpdateAdminProposal
  * @deprecated
  */
-export class UpdateAdminProposal extends Message {
+class UpdateAdminProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -543,6 +549,7 @@ UpdateAdminProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "new_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { UpdateAdminProposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit ClearAdminProposal. To clear the admin of a contract,
@@ -552,7 +559,7 @@ UpdateAdminProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.ClearAdminProposal
  * @deprecated
  */
-export class ClearAdminProposal extends Message {
+class ClearAdminProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -595,6 +602,7 @@ ClearAdminProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ClearAdminProposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit PinCodesProposal. To pin a set of code ids in the wasmvm
@@ -604,7 +612,7 @@ ClearAdminProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.PinCodesProposal
  * @deprecated
  */
-export class PinCodesProposal extends Message {
+class PinCodesProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -647,6 +655,7 @@ PinCodesProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "code_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { PinCodesProposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit UnpinCodesProposal. To unpin a set of code ids in the wasmvm
@@ -656,7 +665,7 @@ PinCodesProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.UnpinCodesProposal
  * @deprecated
  */
-export class UnpinCodesProposal extends Message {
+class UnpinCodesProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -699,13 +708,14 @@ UnpinCodesProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "code_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { UnpinCodesProposal };
 /**
  * AccessConfigUpdate contains the code id and the access config to be
  * applied.
  *
  * @generated from message cosmwasm.wasm.v1.AccessConfigUpdate
  */
-export class AccessConfigUpdate extends Message {
+class AccessConfigUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -735,6 +745,7 @@ AccessConfigUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "instantiate_permission", kind: "message", T: AccessConfig },
 ]);
+export { AccessConfigUpdate };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit UpdateInstantiateConfigProposal. To update instantiate config
@@ -744,7 +755,7 @@ AccessConfigUpdate.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.UpdateInstantiateConfigProposal
  * @deprecated
  */
-export class UpdateInstantiateConfigProposal extends Message {
+class UpdateInstantiateConfigProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -788,6 +799,7 @@ UpdateInstantiateConfigProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "access_config_updates", kind: "message", T: AccessConfigUpdate, repeated: true },
 ]);
+export { UpdateInstantiateConfigProposal };
 /**
  * Deprecated: Do not use. Since wasmd v0.40, there is no longer a need for
  * an explicit StoreAndInstantiateContractProposal. To store and instantiate
@@ -797,7 +809,7 @@ UpdateInstantiateConfigProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmwasm.wasm.v1.StoreAndInstantiateContractProposal
  * @deprecated
  */
-export class StoreAndInstantiateContractProposal extends Message {
+class StoreAndInstantiateContractProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -906,4 +918,5 @@ StoreAndInstantiateContractProposal.fields = proto3.util.newFieldList(() => [
     { no: 12, name: "builder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "code_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { StoreAndInstantiateContractProposal };
 //# sourceMappingURL=proposal_legacy_pb.js.map

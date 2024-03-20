@@ -11,7 +11,7 @@ import { CreateGroup } from "./group_pb.js";
  *
  * @generated from message osmosis.incentives.CreateGroupsProposal
  */
-export class CreateGroupsProposal extends Message {
+class CreateGroupsProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -48,4 +48,5 @@ CreateGroupsProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "create_groups", kind: "message", T: CreateGroup, repeated: true },
 ]);
+export { CreateGroupsProposal };
 //# sourceMappingURL=gov_pb.js.map

@@ -6,7 +6,7 @@ import { ProposalExecutorResult, ProposalStatus, TallyResult } from "./types_pb.
  *
  * @generated from message cosmos.group.v1.EventCreateGroup
  */
-export class EventCreateGroup extends Message {
+class EventCreateGroup extends Message {
     constructor(data) {
         super();
         /**
@@ -35,12 +35,13 @@ EventCreateGroup.typeName = "cosmos.group.v1.EventCreateGroup";
 EventCreateGroup.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventCreateGroup };
 /**
  * EventUpdateGroup is an event emitted when a group is updated.
  *
  * @generated from message cosmos.group.v1.EventUpdateGroup
  */
-export class EventUpdateGroup extends Message {
+class EventUpdateGroup extends Message {
     constructor(data) {
         super();
         /**
@@ -69,12 +70,13 @@ EventUpdateGroup.typeName = "cosmos.group.v1.EventUpdateGroup";
 EventUpdateGroup.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventUpdateGroup };
 /**
  * EventCreateGroupPolicy is an event emitted when a group policy is created.
  *
  * @generated from message cosmos.group.v1.EventCreateGroupPolicy
  */
-export class EventCreateGroupPolicy extends Message {
+class EventCreateGroupPolicy extends Message {
     constructor(data) {
         super();
         /**
@@ -103,12 +105,13 @@ EventCreateGroupPolicy.typeName = "cosmos.group.v1.EventCreateGroupPolicy";
 EventCreateGroupPolicy.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventCreateGroupPolicy };
 /**
  * EventUpdateGroupPolicy is an event emitted when a group policy is updated.
  *
  * @generated from message cosmos.group.v1.EventUpdateGroupPolicy
  */
-export class EventUpdateGroupPolicy extends Message {
+class EventUpdateGroupPolicy extends Message {
     constructor(data) {
         super();
         /**
@@ -137,12 +140,13 @@ EventUpdateGroupPolicy.typeName = "cosmos.group.v1.EventUpdateGroupPolicy";
 EventUpdateGroupPolicy.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventUpdateGroupPolicy };
 /**
  * EventSubmitProposal is an event emitted when a proposal is created.
  *
  * @generated from message cosmos.group.v1.EventSubmitProposal
  */
-export class EventSubmitProposal extends Message {
+class EventSubmitProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -171,12 +175,13 @@ EventSubmitProposal.typeName = "cosmos.group.v1.EventSubmitProposal";
 EventSubmitProposal.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventSubmitProposal };
 /**
  * EventWithdrawProposal is an event emitted when a proposal is withdrawn.
  *
  * @generated from message cosmos.group.v1.EventWithdrawProposal
  */
-export class EventWithdrawProposal extends Message {
+class EventWithdrawProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -205,12 +210,13 @@ EventWithdrawProposal.typeName = "cosmos.group.v1.EventWithdrawProposal";
 EventWithdrawProposal.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventWithdrawProposal };
 /**
  * EventVote is an event emitted when a voter votes on a proposal.
  *
  * @generated from message cosmos.group.v1.EventVote
  */
-export class EventVote extends Message {
+class EventVote extends Message {
     constructor(data) {
         super();
         /**
@@ -239,12 +245,13 @@ EventVote.typeName = "cosmos.group.v1.EventVote";
 EventVote.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventVote };
 /**
  * EventExec is an event emitted when a proposal is executed.
  *
  * @generated from message cosmos.group.v1.EventExec
  */
-export class EventExec extends Message {
+class EventExec extends Message {
     constructor(data) {
         super();
         /**
@@ -287,12 +294,13 @@ EventExec.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "result", kind: "enum", T: proto3.getEnumType(ProposalExecutorResult) },
     { no: 3, name: "logs", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventExec };
 /**
  * EventLeaveGroup is an event emitted when group member leaves the group.
  *
  * @generated from message cosmos.group.v1.EventLeaveGroup
  */
-export class EventLeaveGroup extends Message {
+class EventLeaveGroup extends Message {
     constructor(data) {
         super();
         /**
@@ -328,12 +336,13 @@ EventLeaveGroup.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventLeaveGroup };
 /**
  * EventProposalPruned is an event emitted when a proposal is pruned.
  *
  * @generated from message cosmos.group.v1.EventProposalPruned
  */
-export class EventProposalPruned extends Message {
+class EventProposalPruned extends Message {
     constructor(data) {
         super();
         /**
@@ -370,4 +379,5 @@ EventProposalPruned.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "status", kind: "enum", T: proto3.getEnumType(ProposalStatus) },
     { no: 3, name: "tally_result", kind: "message", T: TallyResult },
 ]);
+export { EventProposalPruned };
 //# sourceMappingURL=events_pb.js.map

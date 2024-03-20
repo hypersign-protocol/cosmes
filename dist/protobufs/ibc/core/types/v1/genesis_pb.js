@@ -11,7 +11,7 @@ import { GenesisState as GenesisState$3 } from "../../channel/v1/genesis_pb.js";
  *
  * @generated from message ibc.core.types.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -36,4 +36,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "connection_genesis", kind: "message", T: GenesisState$2 },
     { no: 3, name: "channel_genesis", kind: "message", T: GenesisState$3 },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

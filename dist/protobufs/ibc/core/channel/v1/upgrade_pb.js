@@ -13,7 +13,7 @@ import { Order, Timeout } from "./channel_pb.js";
  *
  * @generated from message ibc.core.channel.v1.Upgrade
  */
-export class Upgrade extends Message {
+class Upgrade extends Message {
     constructor(data) {
         super();
         /**
@@ -42,13 +42,14 @@ Upgrade.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "timeout", kind: "message", T: Timeout },
     { no: 3, name: "next_sequence_send", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Upgrade };
 /**
  * UpgradeFields are the fields in a channel end which may be changed
  * during a channel upgrade.
  *
  * @generated from message ibc.core.channel.v1.UpgradeFields
  */
-export class UpgradeFields extends Message {
+class UpgradeFields extends Message {
     constructor(data) {
         super();
         /**
@@ -85,6 +86,7 @@ UpgradeFields.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "connection_hops", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 3, name: "version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { UpgradeFields };
 /**
  * ErrorReceipt defines a type which encapsulates the upgrade sequence and error associated with the
  * upgrade handshake failure. When a channel upgrade handshake is aborted both chains are expected to increment to the
@@ -92,7 +94,7 @@ UpgradeFields.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.ErrorReceipt
  */
-export class ErrorReceipt extends Message {
+class ErrorReceipt extends Message {
     constructor(data) {
         super();
         /**
@@ -128,4 +130,5 @@ ErrorReceipt.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "message", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ErrorReceipt };
 //# sourceMappingURL=upgrade_pb.js.map

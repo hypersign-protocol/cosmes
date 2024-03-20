@@ -8,7 +8,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.base.snapshots.v1beta1.Snapshot
  */
-export class Snapshot extends Message {
+class Snapshot extends Message {
     constructor(data) {
         super();
         /**
@@ -51,12 +51,13 @@ Snapshot.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 5, name: "metadata", kind: "message", T: Metadata },
 ]);
+export { Snapshot };
 /**
  * Metadata contains SDK-specific snapshot metadata.
  *
  * @generated from message cosmos.base.snapshots.v1beta1.Metadata
  */
-export class Metadata extends Message {
+class Metadata extends Message {
     constructor(data) {
         super();
         /**
@@ -85,6 +86,7 @@ Metadata.typeName = "cosmos.base.snapshots.v1beta1.Metadata";
 Metadata.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "chunk_hashes", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { Metadata };
 /**
  * SnapshotItem is an item contained in a rootmulti.Store snapshot.
  *
@@ -92,7 +94,7 @@ Metadata.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.snapshots.v1beta1.SnapshotItem
  */
-export class SnapshotItem extends Message {
+class SnapshotItem extends Message {
     constructor(data) {
         super();
         /**
@@ -126,6 +128,7 @@ SnapshotItem.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "kv", kind: "message", T: SnapshotKVItem, oneof: "item" },
     { no: 6, name: "schema", kind: "message", T: SnapshotSchema, oneof: "item" },
 ]);
+export { SnapshotItem };
 /**
  * SnapshotStoreItem contains metadata about a snapshotted store.
  *
@@ -133,7 +136,7 @@ SnapshotItem.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.snapshots.v1beta1.SnapshotStoreItem
  */
-export class SnapshotStoreItem extends Message {
+class SnapshotStoreItem extends Message {
     constructor(data) {
         super();
         /**
@@ -160,6 +163,7 @@ SnapshotStoreItem.typeName = "cosmos.base.snapshots.v1beta1.SnapshotStoreItem";
 SnapshotStoreItem.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SnapshotStoreItem };
 /**
  * SnapshotIAVLItem is an exported IAVL node.
  *
@@ -167,7 +171,7 @@ SnapshotStoreItem.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.snapshots.v1beta1.SnapshotIAVLItem
  */
-export class SnapshotIAVLItem extends Message {
+class SnapshotIAVLItem extends Message {
     constructor(data) {
         super();
         /**
@@ -213,6 +217,7 @@ SnapshotIAVLItem.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "version", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 4, name: "height", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
 ]);
+export { SnapshotIAVLItem };
 /**
  * SnapshotExtensionMeta contains metadata about an external snapshotter.
  *
@@ -220,7 +225,7 @@ SnapshotIAVLItem.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.snapshots.v1beta1.SnapshotExtensionMeta
  */
-export class SnapshotExtensionMeta extends Message {
+class SnapshotExtensionMeta extends Message {
     constructor(data) {
         super();
         /**
@@ -252,6 +257,7 @@ SnapshotExtensionMeta.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "format", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { SnapshotExtensionMeta };
 /**
  * SnapshotExtensionPayload contains payloads of an external snapshotter.
  *
@@ -259,7 +265,7 @@ SnapshotExtensionMeta.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.snapshots.v1beta1.SnapshotExtensionPayload
  */
-export class SnapshotExtensionPayload extends Message {
+class SnapshotExtensionPayload extends Message {
     constructor(data) {
         super();
         /**
@@ -286,6 +292,7 @@ SnapshotExtensionPayload.typeName = "cosmos.base.snapshots.v1beta1.SnapshotExten
 SnapshotExtensionPayload.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "payload", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { SnapshotExtensionPayload };
 /**
  * SnapshotKVItem is an exported Key/Value Pair
  *
@@ -295,7 +302,7 @@ SnapshotExtensionPayload.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmos.base.snapshots.v1beta1.SnapshotKVItem
  * @deprecated
  */
-export class SnapshotKVItem extends Message {
+class SnapshotKVItem extends Message {
     constructor(data) {
         super();
         /**
@@ -327,6 +334,7 @@ SnapshotKVItem.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "value", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { SnapshotKVItem };
 /**
  * SnapshotSchema is an exported schema of smt store
  *
@@ -336,7 +344,7 @@ SnapshotKVItem.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmos.base.snapshots.v1beta1.SnapshotSchema
  * @deprecated
  */
-export class SnapshotSchema extends Message {
+class SnapshotSchema extends Message {
     constructor(data) {
         super();
         /**
@@ -363,4 +371,5 @@ SnapshotSchema.typeName = "cosmos.base.snapshots.v1beta1.SnapshotSchema";
 SnapshotSchema.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "keys", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { SnapshotSchema };
 //# sourceMappingURL=snapshot_pb.js.map

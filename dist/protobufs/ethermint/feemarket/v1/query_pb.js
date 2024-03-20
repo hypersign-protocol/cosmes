@@ -9,7 +9,7 @@ import { Params } from "./feemarket_pb.js";
  *
  * @generated from message ethermint.feemarket.v1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,12 +30,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "ethermint.feemarket.v1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse defines the response type for querying x/evm parameters.
  *
  * @generated from message ethermint.feemarket.v1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -58,13 +59,14 @@ QueryParamsResponse.typeName = "ethermint.feemarket.v1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryBaseFeeRequest defines the request type for querying the EIP1559 base
  * fee.
  *
  * @generated from message ethermint.feemarket.v1.QueryBaseFeeRequest
  */
-export class QueryBaseFeeRequest extends Message {
+class QueryBaseFeeRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -85,12 +87,13 @@ export class QueryBaseFeeRequest extends Message {
 QueryBaseFeeRequest.runtime = proto3;
 QueryBaseFeeRequest.typeName = "ethermint.feemarket.v1.QueryBaseFeeRequest";
 QueryBaseFeeRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBaseFeeRequest };
 /**
  * QueryBaseFeeResponse returns the EIP1559 base fee.
  *
  * @generated from message ethermint.feemarket.v1.QueryBaseFeeResponse
  */
-export class QueryBaseFeeResponse extends Message {
+class QueryBaseFeeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -119,13 +122,14 @@ QueryBaseFeeResponse.typeName = "ethermint.feemarket.v1.QueryBaseFeeResponse";
 QueryBaseFeeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBaseFeeResponse };
 /**
  * QueryBlockGasRequest defines the request type for querying the EIP1559 base
  * fee.
  *
  * @generated from message ethermint.feemarket.v1.QueryBlockGasRequest
  */
-export class QueryBlockGasRequest extends Message {
+class QueryBlockGasRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -146,12 +150,13 @@ export class QueryBlockGasRequest extends Message {
 QueryBlockGasRequest.runtime = proto3;
 QueryBlockGasRequest.typeName = "ethermint.feemarket.v1.QueryBlockGasRequest";
 QueryBlockGasRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBlockGasRequest };
 /**
  * QueryBlockGasResponse returns block gas used for a given height.
  *
  * @generated from message ethermint.feemarket.v1.QueryBlockGasResponse
  */
-export class QueryBlockGasResponse extends Message {
+class QueryBlockGasResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -180,4 +185,5 @@ QueryBlockGasResponse.typeName = "ethermint.feemarket.v1.QueryBlockGasResponse";
 QueryBlockGasResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gas", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { QueryBlockGasResponse };
 //# sourceMappingURL=query_pb.js.map

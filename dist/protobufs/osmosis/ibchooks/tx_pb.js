@@ -6,7 +6,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 /**
  * @generated from message osmosis.ibchooks.MsgEmitIBCAck
  */
-export class MsgEmitIBCAck extends Message {
+class MsgEmitIBCAck extends Message {
     constructor(data) {
         super();
         /**
@@ -43,10 +43,11 @@ MsgEmitIBCAck.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "packet_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "channel", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgEmitIBCAck };
 /**
  * @generated from message osmosis.ibchooks.MsgEmitIBCAckResponse
  */
-export class MsgEmitIBCAckResponse extends Message {
+class MsgEmitIBCAckResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -78,4 +79,5 @@ MsgEmitIBCAckResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contract_result", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "ibc_ack", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgEmitIBCAckResponse };
 //# sourceMappingURL=tx_pb.js.map

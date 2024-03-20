@@ -10,7 +10,7 @@ import { Downtime } from "./downtime_duration_pb.js";
  *
  * @generated from message osmosis.downtimedetector.v1beta1.RecoveredSinceDowntimeOfLengthRequest
  */
-export class RecoveredSinceDowntimeOfLengthRequest extends Message {
+class RecoveredSinceDowntimeOfLengthRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -38,10 +38,11 @@ RecoveredSinceDowntimeOfLengthRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "downtime", kind: "enum", T: proto3.getEnumType(Downtime) },
     { no: 2, name: "recovery", kind: "message", T: Duration },
 ]);
+export { RecoveredSinceDowntimeOfLengthRequest };
 /**
  * @generated from message osmosis.downtimedetector.v1beta1.RecoveredSinceDowntimeOfLengthResponse
  */
-export class RecoveredSinceDowntimeOfLengthResponse extends Message {
+class RecoveredSinceDowntimeOfLengthResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -68,4 +69,5 @@ RecoveredSinceDowntimeOfLengthResponse.typeName = "osmosis.downtimedetector.v1be
 RecoveredSinceDowntimeOfLengthResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "succesfully_recovered", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { RecoveredSinceDowntimeOfLengthResponse };
 //# sourceMappingURL=query_pb.js.map

@@ -9,7 +9,7 @@ import { Message, proto3, protoInt64, Timestamp } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.base.store.v1beta1.CommitInfo
  */
-export class CommitInfo extends Message {
+class CommitInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -42,13 +42,14 @@ CommitInfo.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "store_infos", kind: "message", T: StoreInfo, repeated: true },
     { no: 3, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { CommitInfo };
 /**
  * StoreInfo defines store-specific commit information. It contains a reference
  * between a store name and the commit ID.
  *
  * @generated from message cosmos.base.store.v1beta1.StoreInfo
  */
-export class StoreInfo extends Message {
+class StoreInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -76,13 +77,14 @@ StoreInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "commit_id", kind: "message", T: CommitID },
 ]);
+export { StoreInfo };
 /**
  * CommitID defines the commitment information when a specific store is
  * committed.
  *
  * @generated from message cosmos.base.store.v1beta1.CommitID
  */
-export class CommitID extends Message {
+class CommitID extends Message {
     constructor(data) {
         super();
         /**
@@ -114,4 +116,5 @@ CommitID.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "version", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { CommitID };
 //# sourceMappingURL=commit_info_pb.js.map

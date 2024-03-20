@@ -37,7 +37,7 @@ proto3.util.setEnumType(OrderUpdateStatus, "injective.stream.v1beta1.OrderUpdate
 /**
  * @generated from message injective.stream.v1beta1.StreamRequest
  */
-export class StreamRequest extends Message {
+class StreamRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -69,10 +69,11 @@ StreamRequest.fields = proto3.util.newFieldList(() => [
     { no: 9, name: "positions_filter", kind: "message", T: PositionsFilter },
     { no: 10, name: "oracle_price_filter", kind: "message", T: OraclePriceFilter },
 ]);
+export { StreamRequest };
 /**
  * @generated from message injective.stream.v1beta1.StreamResponse
  */
-export class StreamResponse extends Message {
+class StreamResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -154,10 +155,11 @@ StreamResponse.fields = proto3.util.newFieldList(() => [
     { no: 11, name: "positions", kind: "message", T: Position, repeated: true },
     { no: 12, name: "oracle_prices", kind: "message", T: OraclePrice, repeated: true },
 ]);
+export { StreamResponse };
 /**
  * @generated from message injective.stream.v1beta1.OrderbookUpdate
  */
-export class OrderbookUpdate extends Message {
+class OrderbookUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -185,10 +187,11 @@ OrderbookUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "seq", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "orderbook", kind: "message", T: Orderbook },
 ]);
+export { OrderbookUpdate };
 /**
  * @generated from message injective.stream.v1beta1.Orderbook
  */
-export class Orderbook extends Message {
+class Orderbook extends Message {
     constructor(data) {
         super();
         /**
@@ -225,10 +228,11 @@ Orderbook.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "buy_levels", kind: "message", T: Level, repeated: true },
     { no: 3, name: "sell_levels", kind: "message", T: Level, repeated: true },
 ]);
+export { Orderbook };
 /**
  * @generated from message injective.stream.v1beta1.BankBalance
  */
-export class BankBalance extends Message {
+class BankBalance extends Message {
     constructor(data) {
         super();
         /**
@@ -260,10 +264,11 @@ BankBalance.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "balances", kind: "message", T: Coin, repeated: true },
 ]);
+export { BankBalance };
 /**
  * @generated from message injective.stream.v1beta1.SubaccountDeposits
  */
-export class SubaccountDeposits extends Message {
+class SubaccountDeposits extends Message {
     constructor(data) {
         super();
         /**
@@ -295,10 +300,11 @@ SubaccountDeposits.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "deposits", kind: "message", T: SubaccountDeposit, repeated: true },
 ]);
+export { SubaccountDeposits };
 /**
  * @generated from message injective.stream.v1beta1.SubaccountDeposit
  */
-export class SubaccountDeposit extends Message {
+class SubaccountDeposit extends Message {
     constructor(data) {
         super();
         /**
@@ -326,10 +332,11 @@ SubaccountDeposit.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "deposit", kind: "message", T: Deposit },
 ]);
+export { SubaccountDeposit };
 /**
  * @generated from message injective.stream.v1beta1.SpotOrderUpdate
  */
-export class SpotOrderUpdate extends Message {
+class SpotOrderUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -367,10 +374,11 @@ SpotOrderUpdate.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "order", kind: "message", T: SpotOrder },
 ]);
+export { SpotOrderUpdate };
 /**
  * @generated from message injective.stream.v1beta1.SpotOrder
  */
-export class SpotOrder extends Message {
+class SpotOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -398,10 +406,11 @@ SpotOrder.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "order", kind: "message", T: SpotLimitOrder },
 ]);
+export { SpotOrder };
 /**
  * @generated from message injective.stream.v1beta1.DerivativeOrderUpdate
  */
-export class DerivativeOrderUpdate extends Message {
+class DerivativeOrderUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -439,10 +448,11 @@ DerivativeOrderUpdate.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "order", kind: "message", T: DerivativeOrder },
 ]);
+export { DerivativeOrderUpdate };
 /**
  * @generated from message injective.stream.v1beta1.DerivativeOrder
  */
-export class DerivativeOrder extends Message {
+class DerivativeOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -475,10 +485,11 @@ DerivativeOrder.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "order", kind: "message", T: DerivativeLimitOrder },
     { no: 3, name: "is_market", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { DerivativeOrder };
 /**
  * @generated from message injective.stream.v1beta1.Position
  */
-export class Position extends Message {
+class Position extends Message {
     constructor(data) {
         super();
         /**
@@ -535,10 +546,11 @@ Position.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "margin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "cumulative_funding_entry", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Position };
 /**
  * @generated from message injective.stream.v1beta1.OraclePrice
  */
-export class OraclePrice extends Message {
+class OraclePrice extends Message {
     constructor(data) {
         super();
         /**
@@ -575,10 +587,11 @@ OraclePrice.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { OraclePrice };
 /**
  * @generated from message injective.stream.v1beta1.SpotTrade
  */
-export class SpotTrade extends Message {
+class SpotTrade extends Message {
     constructor(data) {
         super();
         /**
@@ -657,10 +670,11 @@ SpotTrade.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "trade_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotTrade };
 /**
  * @generated from message injective.stream.v1beta1.DerivativeTrade
  */
-export class DerivativeTrade extends Message {
+class DerivativeTrade extends Message {
     constructor(data) {
         super();
         /**
@@ -733,10 +747,11 @@ DerivativeTrade.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "trade_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DerivativeTrade };
 /**
  * @generated from message injective.stream.v1beta1.TradesFilter
  */
-export class TradesFilter extends Message {
+class TradesFilter extends Message {
     constructor(data) {
         super();
         /**
@@ -768,10 +783,11 @@ TradesFilter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { TradesFilter };
 /**
  * @generated from message injective.stream.v1beta1.PositionsFilter
  */
-export class PositionsFilter extends Message {
+class PositionsFilter extends Message {
     constructor(data) {
         super();
         /**
@@ -803,10 +819,11 @@ PositionsFilter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { PositionsFilter };
 /**
  * @generated from message injective.stream.v1beta1.OrdersFilter
  */
-export class OrdersFilter extends Message {
+class OrdersFilter extends Message {
     constructor(data) {
         super();
         /**
@@ -838,10 +855,11 @@ OrdersFilter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { OrdersFilter };
 /**
  * @generated from message injective.stream.v1beta1.OrderbookFilter
  */
-export class OrderbookFilter extends Message {
+class OrderbookFilter extends Message {
     constructor(data) {
         super();
         /**
@@ -868,10 +886,11 @@ OrderbookFilter.typeName = "injective.stream.v1beta1.OrderbookFilter";
 OrderbookFilter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { OrderbookFilter };
 /**
  * @generated from message injective.stream.v1beta1.BankBalancesFilter
  */
-export class BankBalancesFilter extends Message {
+class BankBalancesFilter extends Message {
     constructor(data) {
         super();
         /**
@@ -898,10 +917,11 @@ BankBalancesFilter.typeName = "injective.stream.v1beta1.BankBalancesFilter";
 BankBalancesFilter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "accounts", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { BankBalancesFilter };
 /**
  * @generated from message injective.stream.v1beta1.SubaccountDepositsFilter
  */
-export class SubaccountDepositsFilter extends Message {
+class SubaccountDepositsFilter extends Message {
     constructor(data) {
         super();
         /**
@@ -928,10 +948,11 @@ SubaccountDepositsFilter.typeName = "injective.stream.v1beta1.SubaccountDeposits
 SubaccountDepositsFilter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { SubaccountDepositsFilter };
 /**
  * @generated from message injective.stream.v1beta1.OraclePriceFilter
  */
-export class OraclePriceFilter extends Message {
+class OraclePriceFilter extends Message {
     constructor(data) {
         super();
         /**
@@ -958,4 +979,5 @@ OraclePriceFilter.typeName = "injective.stream.v1beta1.OraclePriceFilter";
 OraclePriceFilter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { OraclePriceFilter };
 //# sourceMappingURL=query_pb.js.map

@@ -10,7 +10,7 @@ import { Any, Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.crypto.multisig.LegacyAminoPubKey
  */
-export class LegacyAminoPubKey extends Message {
+class LegacyAminoPubKey extends Message {
     constructor(data) {
         super();
         /**
@@ -42,4 +42,5 @@ LegacyAminoPubKey.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "threshold", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 2, name: "public_keys", kind: "message", T: Any, repeated: true },
 ]);
+export { LegacyAminoPubKey };
 //# sourceMappingURL=keys_pb.js.map

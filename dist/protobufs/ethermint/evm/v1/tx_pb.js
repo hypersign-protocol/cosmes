@@ -9,7 +9,7 @@ import { AccessTuple, Log, Params } from "./evm_pb.js";
  *
  * @generated from message ethermint.evm.v1.MsgEthereumTx
  */
-export class MsgEthereumTx extends Message {
+class MsgEthereumTx extends Message {
     constructor(data) {
         super();
         /**
@@ -55,6 +55,7 @@ MsgEthereumTx.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgEthereumTx };
 /**
  * LegacyTx is the transaction data of regular Ethereum transactions.
  * NOTE: All non-protected transactions (i.e non EIP155 signed) will fail if the
@@ -62,7 +63,7 @@ MsgEthereumTx.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ethermint.evm.v1.LegacyTx
  */
-export class LegacyTx extends Message {
+class LegacyTx extends Message {
     constructor(data) {
         super();
         /**
@@ -147,12 +148,13 @@ LegacyTx.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "r", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 9, name: "s", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { LegacyTx };
 /**
  * AccessListTx is the data of EIP-2930 access list transactions.
  *
  * @generated from message ethermint.evm.v1.AccessListTx
  */
-export class AccessListTx extends Message {
+class AccessListTx extends Message {
     constructor(data) {
         super();
         /**
@@ -251,12 +253,13 @@ AccessListTx.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "r", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 11, name: "s", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { AccessListTx };
 /**
  * DynamicFeeTx is the data of EIP-1559 dinamic fee transactions.
  *
  * @generated from message ethermint.evm.v1.DynamicFeeTx
  */
-export class DynamicFeeTx extends Message {
+class DynamicFeeTx extends Message {
     constructor(data) {
         super();
         /**
@@ -362,12 +365,13 @@ DynamicFeeTx.fields = proto3.util.newFieldList(() => [
     { no: 11, name: "r", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 12, name: "s", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { DynamicFeeTx };
 /**
  * ExtensionOptionsEthereumTx is an extension option for ethereum transactions
  *
  * @generated from message ethermint.evm.v1.ExtensionOptionsEthereumTx
  */
-export class ExtensionOptionsEthereumTx extends Message {
+class ExtensionOptionsEthereumTx extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -388,12 +392,13 @@ export class ExtensionOptionsEthereumTx extends Message {
 ExtensionOptionsEthereumTx.runtime = proto3;
 ExtensionOptionsEthereumTx.typeName = "ethermint.evm.v1.ExtensionOptionsEthereumTx";
 ExtensionOptionsEthereumTx.fields = proto3.util.newFieldList(() => []);
+export { ExtensionOptionsEthereumTx };
 /**
  * MsgEthereumTxResponse defines the Msg/EthereumTx response type.
  *
  * @generated from message ethermint.evm.v1.MsgEthereumTxResponse
  */
-export class MsgEthereumTxResponse extends Message {
+class MsgEthereumTxResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -454,12 +459,13 @@ MsgEthereumTxResponse.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "vm_error", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "gas_used", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgEthereumTxResponse };
 /**
  * MsgUpdateParams defines a Msg for updating the x/evm module parameters.
  *
  * @generated from message ethermint.evm.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -489,13 +495,14 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
  *
  * @generated from message ethermint.evm.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -516,4 +523,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "ethermint.evm.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

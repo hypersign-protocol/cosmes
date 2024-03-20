@@ -11,7 +11,7 @@ import { GenesisState } from "./genesis_pb.js";
  *
  * @generated from message injective.wasmx.v1.QueryWasmxParamsRequest
  */
-export class QueryWasmxParamsRequest extends Message {
+class QueryWasmxParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,13 +32,14 @@ export class QueryWasmxParamsRequest extends Message {
 QueryWasmxParamsRequest.runtime = proto3;
 QueryWasmxParamsRequest.typeName = "injective.wasmx.v1.QueryWasmxParamsRequest";
 QueryWasmxParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryWasmxParamsRequest };
 /**
  * QueryWasmxParamsRequest is the response type for the Query/WasmxParams RPC
  * method.
  *
  * @generated from message injective.wasmx.v1.QueryWasmxParamsResponse
  */
-export class QueryWasmxParamsResponse extends Message {
+class QueryWasmxParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -61,13 +62,14 @@ QueryWasmxParamsResponse.typeName = "injective.wasmx.v1.QueryWasmxParamsResponse
 QueryWasmxParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryWasmxParamsResponse };
 /**
  * QueryModuleStateRequest is the request type for the Query/WasmxModuleState
  * RPC method.
  *
  * @generated from message injective.wasmx.v1.QueryModuleStateRequest
  */
-export class QueryModuleStateRequest extends Message {
+class QueryModuleStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -88,13 +90,14 @@ export class QueryModuleStateRequest extends Message {
 QueryModuleStateRequest.runtime = proto3;
 QueryModuleStateRequest.typeName = "injective.wasmx.v1.QueryModuleStateRequest";
 QueryModuleStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryModuleStateRequest };
 /**
  * QueryModuleStateResponse is the response type for the Query/WasmxModuleState
  * RPC method.
  *
  * @generated from message injective.wasmx.v1.QueryModuleStateResponse
  */
-export class QueryModuleStateResponse extends Message {
+class QueryModuleStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -117,12 +120,13 @@ QueryModuleStateResponse.typeName = "injective.wasmx.v1.QueryModuleStateResponse
 QueryModuleStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: GenesisState },
 ]);
+export { QueryModuleStateResponse };
 /**
  * Contract registration info
  *
  * @generated from message injective.wasmx.v1.QueryContractRegistrationInfoRequest
  */
-export class QueryContractRegistrationInfoRequest extends Message {
+class QueryContractRegistrationInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -149,10 +153,11 @@ QueryContractRegistrationInfoRequest.typeName = "injective.wasmx.v1.QueryContrac
 QueryContractRegistrationInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryContractRegistrationInfoRequest };
 /**
  * @generated from message injective.wasmx.v1.QueryContractRegistrationInfoResponse
  */
-export class QueryContractRegistrationInfoResponse extends Message {
+class QueryContractRegistrationInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -175,4 +180,5 @@ QueryContractRegistrationInfoResponse.typeName = "injective.wasmx.v1.QueryContra
 QueryContractRegistrationInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contract", kind: "message", T: RegisteredContract },
 ]);
+export { QueryContractRegistrationInfoResponse };
 //# sourceMappingURL=query_pb.js.map

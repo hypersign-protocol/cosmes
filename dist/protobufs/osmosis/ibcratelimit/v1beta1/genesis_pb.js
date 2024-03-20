@@ -9,7 +9,7 @@ import { Params } from "./params_pb.js";
  *
  * @generated from message osmosis.ibcratelimit.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,4 +32,5 @@ GenesisState.typeName = "osmosis.ibcratelimit.v1beta1.GenesisState";
 GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

@@ -10,7 +10,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ibc.applications.transfer.v2.FungibleTokenPacketData
  */
-export class FungibleTokenPacketData extends Message {
+class FungibleTokenPacketData extends Message {
     constructor(data) {
         super();
         /**
@@ -67,4 +67,5 @@ FungibleTokenPacketData.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "receiver", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "memo", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { FungibleTokenPacketData };
 //# sourceMappingURL=packet_pb.js.map

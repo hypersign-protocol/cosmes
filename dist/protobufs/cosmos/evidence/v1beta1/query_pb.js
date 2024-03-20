@@ -9,7 +9,7 @@ import { PageRequest, PageResponse } from "../../base/query/v1beta1/pagination_p
  *
  * @generated from message cosmos.evidence.v1beta1.QueryEvidenceRequest
  */
-export class QueryEvidenceRequest extends Message {
+class QueryEvidenceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -49,12 +49,13 @@ QueryEvidenceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "evidence_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryEvidenceRequest };
 /**
  * QueryEvidenceResponse is the response type for the Query/Evidence RPC method.
  *
  * @generated from message cosmos.evidence.v1beta1.QueryEvidenceResponse
  */
-export class QueryEvidenceResponse extends Message {
+class QueryEvidenceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -77,13 +78,14 @@ QueryEvidenceResponse.typeName = "cosmos.evidence.v1beta1.QueryEvidenceResponse"
 QueryEvidenceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "evidence", kind: "message", T: Any },
 ]);
+export { QueryEvidenceResponse };
 /**
  * QueryEvidenceRequest is the request type for the Query/AllEvidence RPC
  * method.
  *
  * @generated from message cosmos.evidence.v1beta1.QueryAllEvidenceRequest
  */
-export class QueryAllEvidenceRequest extends Message {
+class QueryAllEvidenceRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -106,13 +108,14 @@ QueryAllEvidenceRequest.typeName = "cosmos.evidence.v1beta1.QueryAllEvidenceRequ
 QueryAllEvidenceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryAllEvidenceRequest };
 /**
  * QueryAllEvidenceResponse is the response type for the Query/AllEvidence RPC
  * method.
  *
  * @generated from message cosmos.evidence.v1beta1.QueryAllEvidenceResponse
  */
-export class QueryAllEvidenceResponse extends Message {
+class QueryAllEvidenceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -142,4 +145,5 @@ QueryAllEvidenceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "evidence", kind: "message", T: Any, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryAllEvidenceResponse };
 //# sourceMappingURL=query_pb.js.map

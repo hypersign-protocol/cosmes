@@ -8,7 +8,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message injective.insurance.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -31,10 +31,11 @@ Params.typeName = "injective.insurance.v1beta1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "default_redemption_notice_period_duration", kind: "message", T: Duration },
 ]);
+export { Params };
 /**
  * @generated from message injective.insurance.v1beta1.InsuranceFund
  */
-export class InsuranceFund extends Message {
+class InsuranceFund extends Message {
     constructor(data) {
         super();
         /**
@@ -130,10 +131,11 @@ InsuranceFund.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "oracle_type", kind: "enum", T: proto3.getEnumType(OracleType) },
     { no: 11, name: "expiry", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { InsuranceFund };
 /**
  * @generated from message injective.insurance.v1beta1.RedemptionSchedule
  */
-export class RedemptionSchedule extends Message {
+class RedemptionSchedule extends Message {
     constructor(data) {
         super();
         /**
@@ -178,4 +180,5 @@ RedemptionSchedule.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "claimable_redemption_time", kind: "message", T: Timestamp },
     { no: 5, name: "redemption_amount", kind: "message", T: Coin },
 ]);
+export { RedemptionSchedule };
 //# sourceMappingURL=insurance_pb.js.map

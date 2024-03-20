@@ -11,7 +11,7 @@ import { Height } from "../../client/v1/client_pb.js";
  *
  * @generated from message ibc.core.connection.v1.MsgConnectionOpenInit
  */
-export class MsgConnectionOpenInit extends Message {
+class MsgConnectionOpenInit extends Message {
     constructor(data) {
         super();
         /**
@@ -50,13 +50,14 @@ MsgConnectionOpenInit.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "delay_period", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgConnectionOpenInit };
 /**
  * MsgConnectionOpenInitResponse defines the Msg/ConnectionOpenInit response
  * type.
  *
  * @generated from message ibc.core.connection.v1.MsgConnectionOpenInitResponse
  */
-export class MsgConnectionOpenInitResponse extends Message {
+class MsgConnectionOpenInitResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -77,13 +78,14 @@ export class MsgConnectionOpenInitResponse extends Message {
 MsgConnectionOpenInitResponse.runtime = proto3;
 MsgConnectionOpenInitResponse.typeName = "ibc.core.connection.v1.MsgConnectionOpenInitResponse";
 MsgConnectionOpenInitResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgConnectionOpenInitResponse };
 /**
  * MsgConnectionOpenTry defines a msg sent by a Relayer to try to open a
  * connection on Chain B.
  *
  * @generated from message ibc.core.connection.v1.MsgConnectionOpenTry
  */
-export class MsgConnectionOpenTry extends Message {
+class MsgConnectionOpenTry extends Message {
     constructor(data) {
         super();
         /**
@@ -166,12 +168,13 @@ MsgConnectionOpenTry.fields = proto3.util.newFieldList(() => [
     { no: 12, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "host_consensus_state_proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgConnectionOpenTry };
 /**
  * MsgConnectionOpenTryResponse defines the Msg/ConnectionOpenTry response type.
  *
  * @generated from message ibc.core.connection.v1.MsgConnectionOpenTryResponse
  */
-export class MsgConnectionOpenTryResponse extends Message {
+class MsgConnectionOpenTryResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -192,13 +195,14 @@ export class MsgConnectionOpenTryResponse extends Message {
 MsgConnectionOpenTryResponse.runtime = proto3;
 MsgConnectionOpenTryResponse.typeName = "ibc.core.connection.v1.MsgConnectionOpenTryResponse";
 MsgConnectionOpenTryResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgConnectionOpenTryResponse };
 /**
  * MsgConnectionOpenAck defines a msg sent by a Relayer to Chain A to
  * acknowledge the change of connection state to TRYOPEN on Chain B.
  *
  * @generated from message ibc.core.connection.v1.MsgConnectionOpenAck
  */
-export class MsgConnectionOpenAck extends Message {
+class MsgConnectionOpenAck extends Message {
     constructor(data) {
         super();
         /**
@@ -268,12 +272,13 @@ MsgConnectionOpenAck.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "host_consensus_state_proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgConnectionOpenAck };
 /**
  * MsgConnectionOpenAckResponse defines the Msg/ConnectionOpenAck response type.
  *
  * @generated from message ibc.core.connection.v1.MsgConnectionOpenAckResponse
  */
-export class MsgConnectionOpenAckResponse extends Message {
+class MsgConnectionOpenAckResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -294,13 +299,14 @@ export class MsgConnectionOpenAckResponse extends Message {
 MsgConnectionOpenAckResponse.runtime = proto3;
 MsgConnectionOpenAckResponse.typeName = "ibc.core.connection.v1.MsgConnectionOpenAckResponse";
 MsgConnectionOpenAckResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgConnectionOpenAckResponse };
 /**
  * MsgConnectionOpenConfirm defines a msg sent by a Relayer to Chain B to
  * acknowledge the change of connection state to OPEN on Chain A.
  *
  * @generated from message ibc.core.connection.v1.MsgConnectionOpenConfirm
  */
-export class MsgConnectionOpenConfirm extends Message {
+class MsgConnectionOpenConfirm extends Message {
     constructor(data) {
         super();
         /**
@@ -340,13 +346,14 @@ MsgConnectionOpenConfirm.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "proof_height", kind: "message", T: Height },
     { no: 4, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgConnectionOpenConfirm };
 /**
  * MsgConnectionOpenConfirmResponse defines the Msg/ConnectionOpenConfirm
  * response type.
  *
  * @generated from message ibc.core.connection.v1.MsgConnectionOpenConfirmResponse
  */
-export class MsgConnectionOpenConfirmResponse extends Message {
+class MsgConnectionOpenConfirmResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -367,12 +374,13 @@ export class MsgConnectionOpenConfirmResponse extends Message {
 MsgConnectionOpenConfirmResponse.runtime = proto3;
 MsgConnectionOpenConfirmResponse.typeName = "ibc.core.connection.v1.MsgConnectionOpenConfirmResponse";
 MsgConnectionOpenConfirmResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgConnectionOpenConfirmResponse };
 /**
  * MsgUpdateParams defines the sdk.Msg type to update the connection parameters.
  *
  * @generated from message ibc.core.connection.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -402,12 +410,13 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the MsgUpdateParams response type.
  *
  * @generated from message ibc.core.connection.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -428,4 +437,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "ibc.core.connection.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

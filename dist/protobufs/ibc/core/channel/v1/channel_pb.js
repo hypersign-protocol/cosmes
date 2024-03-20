@@ -107,7 +107,7 @@ proto3.util.setEnumType(Order, "ibc.core.channel.v1.Order", [
  *
  * @generated from message ibc.core.channel.v1.Channel
  */
-export class Channel extends Message {
+class Channel extends Message {
     constructor(data) {
         super();
         /**
@@ -167,13 +167,14 @@ Channel.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "upgrade_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Channel };
 /**
  * IdentifiedChannel defines a channel with additional port and channel
  * identifier fields.
  *
  * @generated from message ibc.core.channel.v1.IdentifiedChannel
  */
-export class IdentifiedChannel extends Message {
+class IdentifiedChannel extends Message {
     constructor(data) {
         super();
         /**
@@ -247,12 +248,13 @@ IdentifiedChannel.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 8, name: "upgrade_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { IdentifiedChannel };
 /**
  * Counterparty defines a channel end counterparty
  *
  * @generated from message ibc.core.channel.v1.Counterparty
  */
-export class Counterparty extends Message {
+class Counterparty extends Message {
     constructor(data) {
         super();
         /**
@@ -288,12 +290,13 @@ Counterparty.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Counterparty };
 /**
  * Packet defines a type that carries data across different chains through IBC
  *
  * @generated from message ibc.core.channel.v1.Packet
  */
-export class Packet extends Message {
+class Packet extends Message {
     constructor(data) {
         super();
         /**
@@ -367,6 +370,7 @@ Packet.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "timeout_height", kind: "message", T: Height },
     { no: 8, name: "timeout_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Packet };
 /**
  * PacketState defines the generic type necessary to retrieve and store
  * packet commitments, acknowledgements, and receipts.
@@ -375,7 +379,7 @@ Packet.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.PacketState
  */
-export class PacketState extends Message {
+class PacketState extends Message {
     constructor(data) {
         super();
         /**
@@ -425,6 +429,7 @@ PacketState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { PacketState };
 /**
  * PacketId is an identifier for a unique Packet
  * Source chains refer to packets by source port/channel
@@ -432,7 +437,7 @@ PacketState.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.PacketId
  */
-export class PacketId extends Message {
+class PacketId extends Message {
     constructor(data) {
         super();
         /**
@@ -475,6 +480,7 @@ PacketId.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PacketId };
 /**
  * Acknowledgement is the recommended acknowledgement format to be used by
  * app-specific protocols.
@@ -486,7 +492,7 @@ PacketId.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.Acknowledgement
  */
-export class Acknowledgement extends Message {
+class Acknowledgement extends Message {
     constructor(data) {
         super();
         /**
@@ -516,6 +522,7 @@ Acknowledgement.fields = proto3.util.newFieldList(() => [
     { no: 21, name: "result", kind: "scalar", T: 12 /* ScalarType.BYTES */, oneof: "response" },
     { no: 22, name: "error", kind: "scalar", T: 9 /* ScalarType.STRING */, oneof: "response" },
 ]);
+export { Acknowledgement };
 /**
  * Timeout defines an execution deadline structure for 04-channel handlers.
  * This includes packet lifecycle handlers as well as the upgrade handshake handlers.
@@ -523,7 +530,7 @@ Acknowledgement.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.Timeout
  */
-export class Timeout extends Message {
+class Timeout extends Message {
     constructor(data) {
         super();
         /**
@@ -553,12 +560,13 @@ Timeout.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "height", kind: "message", T: Height },
     { no: 2, name: "timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Timeout };
 /**
  * Params defines the set of IBC channel parameters.
  *
  * @generated from message ibc.core.channel.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -581,4 +589,5 @@ Params.typeName = "ibc.core.channel.v1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "upgrade_timeout", kind: "message", T: Timeout },
 ]);
+export { Params };
 //# sourceMappingURL=channel_pb.js.map

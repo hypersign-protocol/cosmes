@@ -19,7 +19,7 @@ import { Coin } from "../../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.SmoothWeightChangeParams
  */
-export class SmoothWeightChangeParams extends Message {
+class SmoothWeightChangeParams extends Message {
     constructor(data) {
         super();
         /**
@@ -72,6 +72,7 @@ SmoothWeightChangeParams.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "initial_pool_weights", kind: "message", T: PoolAsset, repeated: true },
     { no: 4, name: "target_pool_weights", kind: "message", T: PoolAsset, repeated: true },
 ]);
+export { SmoothWeightChangeParams };
 /**
  * PoolParams defined the parameters that will be managed by the pool
  * governance in the future. This params are not managed by the chain
@@ -80,7 +81,7 @@ SmoothWeightChangeParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.PoolParams
  */
-export class PoolParams extends Message {
+class PoolParams extends Message {
     constructor(data) {
         super();
         /**
@@ -113,6 +114,7 @@ PoolParams.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "exit_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "smooth_weight_change_params", kind: "message", T: SmoothWeightChangeParams },
 ]);
+export { PoolParams };
 /**
  * Pool asset is an internal struct that combines the amount of the
  * token in the pool, and its balancer weight.
@@ -121,7 +123,7 @@ PoolParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.PoolAsset
  */
-export class PoolAsset extends Message {
+class PoolAsset extends Message {
     constructor(data) {
         super();
         /**
@@ -151,10 +153,11 @@ PoolAsset.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token", kind: "message", T: Coin },
     { no: 2, name: "weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PoolAsset };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.Pool
  */
-export class Pool extends Message {
+class Pool extends Message {
     constructor(data) {
         super();
         /**
@@ -218,4 +221,5 @@ Pool.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "pool_assets", kind: "message", T: PoolAsset, repeated: true },
     { no: 7, name: "total_weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Pool };
 //# sourceMappingURL=balancerPool_pb.js.map

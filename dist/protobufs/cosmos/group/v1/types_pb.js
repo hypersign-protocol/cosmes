@@ -149,7 +149,7 @@ proto3.util.setEnumType(ProposalExecutorResult, "cosmos.group.v1.ProposalExecuto
  *
  * @generated from message cosmos.group.v1.Member
  */
-export class Member extends Message {
+class Member extends Message {
     constructor(data) {
         super();
         /**
@@ -193,6 +193,7 @@ Member.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "added_at", kind: "message", T: Timestamp },
 ]);
+export { Member };
 /**
  * MemberRequest represents a group member to be used in Msg server requests.
  * Contrary to `Member`, it doesn't have any `added_at` field
@@ -200,7 +201,7 @@ Member.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.group.v1.MemberRequest
  */
-export class MemberRequest extends Message {
+class MemberRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -243,6 +244,7 @@ MemberRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MemberRequest };
 /**
  * ThresholdDecisionPolicy is a decision policy where a proposal passes when it
  * satisfies the two following conditions:
@@ -253,7 +255,7 @@ MemberRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.group.v1.ThresholdDecisionPolicy
  */
-export class ThresholdDecisionPolicy extends Message {
+class ThresholdDecisionPolicy extends Message {
     constructor(data) {
         super();
         /**
@@ -284,6 +286,7 @@ ThresholdDecisionPolicy.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "threshold", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "windows", kind: "message", T: DecisionPolicyWindows },
 ]);
+export { ThresholdDecisionPolicy };
 /**
  * PercentageDecisionPolicy is a decision policy where a proposal passes when
  * it satisfies the two following conditions:
@@ -294,7 +297,7 @@ ThresholdDecisionPolicy.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.group.v1.PercentageDecisionPolicy
  */
-export class PercentageDecisionPolicy extends Message {
+class PercentageDecisionPolicy extends Message {
     constructor(data) {
         super();
         /**
@@ -325,12 +328,13 @@ PercentageDecisionPolicy.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "percentage", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "windows", kind: "message", T: DecisionPolicyWindows },
 ]);
+export { PercentageDecisionPolicy };
 /**
  * DecisionPolicyWindows defines the different windows for voting and execution.
  *
  * @generated from message cosmos.group.v1.DecisionPolicyWindows
  */
-export class DecisionPolicyWindows extends Message {
+class DecisionPolicyWindows extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -354,12 +358,13 @@ DecisionPolicyWindows.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "voting_period", kind: "message", T: Duration },
     { no: 2, name: "min_execution_period", kind: "message", T: Duration },
 ]);
+export { DecisionPolicyWindows };
 /**
  * GroupInfo represents the high-level on-chain information for a group.
  *
  * @generated from message cosmos.group.v1.GroupInfo
  */
-export class GroupInfo extends Message {
+class GroupInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -420,12 +425,13 @@ GroupInfo.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "total_weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "created_at", kind: "message", T: Timestamp },
 ]);
+export { GroupInfo };
 /**
  * GroupMember represents the relationship between a group and a member.
  *
  * @generated from message cosmos.group.v1.GroupMember
  */
-export class GroupMember extends Message {
+class GroupMember extends Message {
     constructor(data) {
         super();
         /**
@@ -455,12 +461,13 @@ GroupMember.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "member", kind: "message", T: Member },
 ]);
+export { GroupMember };
 /**
  * GroupPolicyInfo represents the high-level on-chain information for a group policy.
  *
  * @generated from message cosmos.group.v1.GroupPolicyInfo
  */
-export class GroupPolicyInfo extends Message {
+class GroupPolicyInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -522,6 +529,7 @@ GroupPolicyInfo.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "decision_policy", kind: "message", T: Any },
     { no: 7, name: "created_at", kind: "message", T: Timestamp },
 ]);
+export { GroupPolicyInfo };
 /**
  * Proposal defines a group proposal. Any member of a group can submit a proposal
  * for a group policy to decide upon.
@@ -530,7 +538,7 @@ GroupPolicyInfo.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.group.v1.Proposal
  */
-export class Proposal extends Message {
+class Proposal extends Message {
     constructor(data) {
         super();
         /**
@@ -642,12 +650,13 @@ Proposal.fields = proto3.util.newFieldList(() => [
     { no: 13, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "summary", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Proposal };
 /**
  * TallyResult represents the sum of weighted votes for each vote option.
  *
  * @generated from message cosmos.group.v1.TallyResult
  */
-export class TallyResult extends Message {
+class TallyResult extends Message {
     constructor(data) {
         super();
         /**
@@ -697,12 +706,13 @@ TallyResult.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "no_count", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "no_with_veto_count", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TallyResult };
 /**
  * Vote represents a vote for a proposal.
  *
  * @generated from message cosmos.group.v1.Vote
  */
-export class Vote extends Message {
+class Vote extends Message {
     constructor(data) {
         super();
         /**
@@ -753,4 +763,5 @@ Vote.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "submit_time", kind: "message", T: Timestamp },
 ]);
+export { Vote };
 //# sourceMappingURL=types_pb.js.map

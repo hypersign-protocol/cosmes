@@ -8,7 +8,7 @@ import { Params, VoteOption, WeightedVoteOption } from "./gov_pb.js";
  *
  * @generated from message cosmos.gov.v1.MsgSubmitProposal
  */
-export class MsgSubmitProposal extends Message {
+class MsgSubmitProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -76,12 +76,13 @@ MsgSubmitProposal.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "summary", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSubmitProposal };
 /**
  * MsgSubmitProposalResponse defines the Msg/SubmitProposal response type.
  *
  * @generated from message cosmos.gov.v1.MsgSubmitProposalResponse
  */
-export class MsgSubmitProposalResponse extends Message {
+class MsgSubmitProposalResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -110,13 +111,14 @@ MsgSubmitProposalResponse.typeName = "cosmos.gov.v1.MsgSubmitProposalResponse";
 MsgSubmitProposalResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgSubmitProposalResponse };
 /**
  * MsgExecLegacyContent is used to wrap the legacy content field into a message.
  * This ensures backwards compatibility with v1beta1.MsgSubmitProposal.
  *
  * @generated from message cosmos.gov.v1.MsgExecLegacyContent
  */
-export class MsgExecLegacyContent extends Message {
+class MsgExecLegacyContent extends Message {
     constructor(data) {
         super();
         /**
@@ -146,12 +148,13 @@ MsgExecLegacyContent.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "content", kind: "message", T: Any },
     { no: 2, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgExecLegacyContent };
 /**
  * MsgExecLegacyContentResponse defines the Msg/ExecLegacyContent response type.
  *
  * @generated from message cosmos.gov.v1.MsgExecLegacyContentResponse
  */
-export class MsgExecLegacyContentResponse extends Message {
+class MsgExecLegacyContentResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -172,12 +175,13 @@ export class MsgExecLegacyContentResponse extends Message {
 MsgExecLegacyContentResponse.runtime = proto3;
 MsgExecLegacyContentResponse.typeName = "cosmos.gov.v1.MsgExecLegacyContentResponse";
 MsgExecLegacyContentResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgExecLegacyContentResponse };
 /**
  * MsgVote defines a message to cast a vote.
  *
  * @generated from message cosmos.gov.v1.MsgVote
  */
-export class MsgVote extends Message {
+class MsgVote extends Message {
     constructor(data) {
         super();
         /**
@@ -227,12 +231,13 @@ MsgVote.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "option", kind: "enum", T: proto3.getEnumType(VoteOption) },
     { no: 4, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgVote };
 /**
  * MsgVoteResponse defines the Msg/Vote response type.
  *
  * @generated from message cosmos.gov.v1.MsgVoteResponse
  */
-export class MsgVoteResponse extends Message {
+class MsgVoteResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -253,12 +258,13 @@ export class MsgVoteResponse extends Message {
 MsgVoteResponse.runtime = proto3;
 MsgVoteResponse.typeName = "cosmos.gov.v1.MsgVoteResponse";
 MsgVoteResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgVoteResponse };
 /**
  * MsgVoteWeighted defines a message to cast a vote.
  *
  * @generated from message cosmos.gov.v1.MsgVoteWeighted
  */
-export class MsgVoteWeighted extends Message {
+class MsgVoteWeighted extends Message {
     constructor(data) {
         super();
         /**
@@ -308,12 +314,13 @@ MsgVoteWeighted.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "options", kind: "message", T: WeightedVoteOption, repeated: true },
     { no: 4, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgVoteWeighted };
 /**
  * MsgVoteWeightedResponse defines the Msg/VoteWeighted response type.
  *
  * @generated from message cosmos.gov.v1.MsgVoteWeightedResponse
  */
-export class MsgVoteWeightedResponse extends Message {
+class MsgVoteWeightedResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -334,12 +341,13 @@ export class MsgVoteWeightedResponse extends Message {
 MsgVoteWeightedResponse.runtime = proto3;
 MsgVoteWeightedResponse.typeName = "cosmos.gov.v1.MsgVoteWeightedResponse";
 MsgVoteWeightedResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgVoteWeightedResponse };
 /**
  * MsgDeposit defines a message to submit a deposit to an existing proposal.
  *
  * @generated from message cosmos.gov.v1.MsgDeposit
  */
-export class MsgDeposit extends Message {
+class MsgDeposit extends Message {
     constructor(data) {
         super();
         /**
@@ -382,12 +390,13 @@ MsgDeposit.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "depositor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgDeposit };
 /**
  * MsgDepositResponse defines the Msg/Deposit response type.
  *
  * @generated from message cosmos.gov.v1.MsgDepositResponse
  */
-export class MsgDepositResponse extends Message {
+class MsgDepositResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -408,6 +417,7 @@ export class MsgDepositResponse extends Message {
 MsgDepositResponse.runtime = proto3;
 MsgDepositResponse.typeName = "cosmos.gov.v1.MsgDepositResponse";
 MsgDepositResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgDepositResponse };
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
  *
@@ -415,7 +425,7 @@ MsgDepositResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.gov.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -445,6 +455,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
@@ -453,7 +464,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.gov.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -474,4 +485,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "cosmos.gov.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

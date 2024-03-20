@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.base.node.v1beta1.ConfigRequest
  */
-export class ConfigRequest extends Message {
+class ConfigRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -29,12 +29,13 @@ export class ConfigRequest extends Message {
 ConfigRequest.runtime = proto3;
 ConfigRequest.typeName = "cosmos.base.node.v1beta1.ConfigRequest";
 ConfigRequest.fields = proto3.util.newFieldList(() => []);
+export { ConfigRequest };
 /**
  * ConfigResponse defines the response structure for the Config gRPC query.
  *
  * @generated from message cosmos.base.node.v1beta1.ConfigResponse
  */
-export class ConfigResponse extends Message {
+class ConfigResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -61,4 +62,5 @@ ConfigResponse.typeName = "cosmos.base.node.v1beta1.ConfigResponse";
 ConfigResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "minimum_gas_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ConfigResponse };
 //# sourceMappingURL=query_pb.js.map

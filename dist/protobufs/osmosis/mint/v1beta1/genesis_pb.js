@@ -9,7 +9,7 @@ import { Minter, Params } from "./mint_pb.js";
  *
  * @generated from message osmosis.mint.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -41,4 +41,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "params", kind: "message", T: Params },
     { no: 3, name: "reduction_started_epoch", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

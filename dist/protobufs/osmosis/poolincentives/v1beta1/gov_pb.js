@@ -15,7 +15,7 @@ import { DistrRecord } from "./incentives_pb.js";
  *
  * @generated from message osmosis.poolincentives.v1beta1.ReplacePoolIncentivesProposal
  */
-export class ReplacePoolIncentivesProposal extends Message {
+class ReplacePoolIncentivesProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -52,6 +52,7 @@ ReplacePoolIncentivesProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "records", kind: "message", T: DistrRecord, repeated: true },
 ]);
+export { ReplacePoolIncentivesProposal };
 /**
  * For example: if the existing DistrRecords were:
  * [(Gauge 0, 5), (Gauge 1, 6), (Gauge 2, 6)]
@@ -63,7 +64,7 @@ ReplacePoolIncentivesProposal.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.poolincentives.v1beta1.UpdatePoolIncentivesProposal
  */
-export class UpdatePoolIncentivesProposal extends Message {
+class UpdatePoolIncentivesProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -100,4 +101,5 @@ UpdatePoolIncentivesProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "records", kind: "message", T: DistrRecord, repeated: true },
 ]);
+export { UpdatePoolIncentivesProposal };
 //# sourceMappingURL=gov_pb.js.map

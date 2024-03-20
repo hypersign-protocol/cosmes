@@ -9,7 +9,7 @@ import { Coin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.crisis.v1beta1.MsgVerifyInvariant
  */
-export class MsgVerifyInvariant extends Message {
+class MsgVerifyInvariant extends Message {
     constructor(data) {
         super();
         /**
@@ -52,12 +52,13 @@ MsgVerifyInvariant.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "invariant_module_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "invariant_route", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgVerifyInvariant };
 /**
  * MsgVerifyInvariantResponse defines the Msg/VerifyInvariant response type.
  *
  * @generated from message cosmos.crisis.v1beta1.MsgVerifyInvariantResponse
  */
-export class MsgVerifyInvariantResponse extends Message {
+class MsgVerifyInvariantResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -78,6 +79,7 @@ export class MsgVerifyInvariantResponse extends Message {
 MsgVerifyInvariantResponse.runtime = proto3;
 MsgVerifyInvariantResponse.typeName = "cosmos.crisis.v1beta1.MsgVerifyInvariantResponse";
 MsgVerifyInvariantResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgVerifyInvariantResponse };
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
  *
@@ -85,7 +87,7 @@ MsgVerifyInvariantResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.crisis.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -115,6 +117,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "constant_fee", kind: "message", T: Coin },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
@@ -123,7 +126,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.crisis.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -144,4 +147,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "cosmos.crisis.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message injective.permissions.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -29,4 +29,5 @@ export class Params extends Message {
 Params.runtime = proto3;
 Params.typeName = "injective.permissions.v1beta1.Params";
 Params.fields = proto3.util.newFieldList(() => []);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

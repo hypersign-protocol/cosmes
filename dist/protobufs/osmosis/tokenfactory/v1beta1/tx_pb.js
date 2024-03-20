@@ -18,7 +18,7 @@ import { Metadata } from "../../../cosmos/bank/v1beta1/bank_pb.js";
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgCreateDenom
  */
-export class MsgCreateDenom extends Message {
+class MsgCreateDenom extends Message {
     constructor(data) {
         super();
         /**
@@ -52,13 +52,14 @@ MsgCreateDenom.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "subdenom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateDenom };
 /**
  * MsgCreateDenomResponse is the return value of MsgCreateDenom
  * It returns the full string of the newly created denom
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgCreateDenomResponse
  */
-export class MsgCreateDenomResponse extends Message {
+class MsgCreateDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -85,6 +86,7 @@ MsgCreateDenomResponse.typeName = "osmosis.tokenfactory.v1beta1.MsgCreateDenomRe
 MsgCreateDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "new_token_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateDenomResponse };
 /**
  * MsgMint is the sdk.Msg type for allowing an admin account to mint
  * more of a token.
@@ -93,7 +95,7 @@ MsgCreateDenomResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgMint
  */
-export class MsgMint extends Message {
+class MsgMint extends Message {
     constructor(data) {
         super();
         /**
@@ -126,10 +128,11 @@ MsgMint.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "amount", kind: "message", T: Coin },
     { no: 3, name: "mintToAddress", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgMint };
 /**
  * @generated from message osmosis.tokenfactory.v1beta1.MsgMintResponse
  */
-export class MsgMintResponse extends Message {
+class MsgMintResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -150,6 +153,7 @@ export class MsgMintResponse extends Message {
 MsgMintResponse.runtime = proto3;
 MsgMintResponse.typeName = "osmosis.tokenfactory.v1beta1.MsgMintResponse";
 MsgMintResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgMintResponse };
 /**
  * MsgBurn is the sdk.Msg type for allowing an admin account to burn
  * a token.
@@ -158,7 +162,7 @@ MsgMintResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgBurn
  */
-export class MsgBurn extends Message {
+class MsgBurn extends Message {
     constructor(data) {
         super();
         /**
@@ -191,10 +195,11 @@ MsgBurn.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "amount", kind: "message", T: Coin },
     { no: 3, name: "burnFromAddress", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgBurn };
 /**
  * @generated from message osmosis.tokenfactory.v1beta1.MsgBurnResponse
  */
-export class MsgBurnResponse extends Message {
+class MsgBurnResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -215,13 +220,14 @@ export class MsgBurnResponse extends Message {
 MsgBurnResponse.runtime = proto3;
 MsgBurnResponse.typeName = "osmosis.tokenfactory.v1beta1.MsgBurnResponse";
 MsgBurnResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgBurnResponse };
 /**
  * MsgChangeAdmin is the sdk.Msg type for allowing an admin account to reassign
  * adminship of a denom to a new account
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgChangeAdmin
  */
-export class MsgChangeAdmin extends Message {
+class MsgChangeAdmin extends Message {
     constructor(data) {
         super();
         /**
@@ -258,13 +264,14 @@ MsgChangeAdmin.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "new_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChangeAdmin };
 /**
  * MsgChangeAdminResponse defines the response structure for an executed
  * MsgChangeAdmin message.
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgChangeAdminResponse
  */
-export class MsgChangeAdminResponse extends Message {
+class MsgChangeAdminResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -285,13 +292,14 @@ export class MsgChangeAdminResponse extends Message {
 MsgChangeAdminResponse.runtime = proto3;
 MsgChangeAdminResponse.typeName = "osmosis.tokenfactory.v1beta1.MsgChangeAdminResponse";
 MsgChangeAdminResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgChangeAdminResponse };
 /**
  * MsgSetBeforeSendHook is the sdk.Msg type for allowing an admin account to
  * assign a CosmWasm contract to call with a BeforeSend hook
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgSetBeforeSendHook
  */
-export class MsgSetBeforeSendHook extends Message {
+class MsgSetBeforeSendHook extends Message {
     constructor(data) {
         super();
         /**
@@ -328,13 +336,14 @@ MsgSetBeforeSendHook.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "cosmwasm_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSetBeforeSendHook };
 /**
  * MsgSetBeforeSendHookResponse defines the response structure for an executed
  * MsgSetBeforeSendHook message.
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgSetBeforeSendHookResponse
  */
-export class MsgSetBeforeSendHookResponse extends Message {
+class MsgSetBeforeSendHookResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -355,13 +364,14 @@ export class MsgSetBeforeSendHookResponse extends Message {
 MsgSetBeforeSendHookResponse.runtime = proto3;
 MsgSetBeforeSendHookResponse.typeName = "osmosis.tokenfactory.v1beta1.MsgSetBeforeSendHookResponse";
 MsgSetBeforeSendHookResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetBeforeSendHookResponse };
 /**
  * MsgSetDenomMetadata is the sdk.Msg type for allowing an admin account to set
  * the denom's bank metadata
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgSetDenomMetadata
  */
-export class MsgSetDenomMetadata extends Message {
+class MsgSetDenomMetadata extends Message {
     constructor(data) {
         super();
         /**
@@ -389,13 +399,14 @@ MsgSetDenomMetadata.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "metadata", kind: "message", T: Metadata },
 ]);
+export { MsgSetDenomMetadata };
 /**
  * MsgSetDenomMetadataResponse defines the response structure for an executed
  * MsgSetDenomMetadata message.
  *
  * @generated from message osmosis.tokenfactory.v1beta1.MsgSetDenomMetadataResponse
  */
-export class MsgSetDenomMetadataResponse extends Message {
+class MsgSetDenomMetadataResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -416,10 +427,11 @@ export class MsgSetDenomMetadataResponse extends Message {
 MsgSetDenomMetadataResponse.runtime = proto3;
 MsgSetDenomMetadataResponse.typeName = "osmosis.tokenfactory.v1beta1.MsgSetDenomMetadataResponse";
 MsgSetDenomMetadataResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetDenomMetadataResponse };
 /**
  * @generated from message osmosis.tokenfactory.v1beta1.MsgForceTransfer
  */
-export class MsgForceTransfer extends Message {
+class MsgForceTransfer extends Message {
     constructor(data) {
         super();
         /**
@@ -457,10 +469,11 @@ MsgForceTransfer.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "transferFromAddress", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "transferToAddress", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgForceTransfer };
 /**
  * @generated from message osmosis.tokenfactory.v1beta1.MsgForceTransferResponse
  */
-export class MsgForceTransferResponse extends Message {
+class MsgForceTransferResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -481,4 +494,5 @@ export class MsgForceTransferResponse extends Message {
 MsgForceTransferResponse.runtime = proto3;
 MsgForceTransferResponse.typeName = "osmosis.tokenfactory.v1beta1.MsgForceTransferResponse";
 MsgForceTransferResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgForceTransferResponse };
 //# sourceMappingURL=tx_pb.js.map

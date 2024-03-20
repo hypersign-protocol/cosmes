@@ -9,7 +9,7 @@ import { CapabilityOwners } from "./capability_pb.js";
  *
  * @generated from message capability.v1.GenesisOwners
  */
-export class GenesisOwners extends Message {
+class GenesisOwners extends Message {
     constructor(data) {
         super();
         /**
@@ -39,12 +39,13 @@ GenesisOwners.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "index", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "index_owners", kind: "message", T: CapabilityOwners },
 ]);
+export { GenesisOwners };
 /**
  * GenesisState defines the capability module's genesis state.
  *
  * @generated from message capability.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -81,4 +82,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "index", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "owners", kind: "message", T: GenesisOwners, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

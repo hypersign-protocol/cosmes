@@ -8,7 +8,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message ethermint.feemarket.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -82,4 +82,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "min_gas_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 8, name: "min_gas_multiplier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 //# sourceMappingURL=feemarket_pb.js.map

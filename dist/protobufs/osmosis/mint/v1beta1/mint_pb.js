@@ -8,7 +8,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.mint.v1beta1.Minter
  */
-export class Minter extends Message {
+class Minter extends Message {
     constructor(data) {
         super();
         /**
@@ -37,6 +37,7 @@ Minter.typeName = "osmosis.mint.v1beta1.Minter";
 Minter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "epoch_provisions", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Minter };
 /**
  * WeightedAddress represents an address with a weight assigned to it.
  * The weight is used to determine the proportion of the total minted
@@ -44,7 +45,7 @@ Minter.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.mint.v1beta1.WeightedAddress
  */
-export class WeightedAddress extends Message {
+class WeightedAddress extends Message {
     constructor(data) {
         super();
         /**
@@ -76,6 +77,7 @@ WeightedAddress.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { WeightedAddress };
 /**
  * DistributionProportions defines the distribution proportions of the minted
  * denom. In other words, defines which stakeholders will receive the minted
@@ -83,7 +85,7 @@ WeightedAddress.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.mint.v1beta1.DistributionProportions
  */
-export class DistributionProportions extends Message {
+class DistributionProportions extends Message {
     constructor(data) {
         super();
         /**
@@ -137,12 +139,13 @@ DistributionProportions.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "developer_rewards", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "community_pool", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DistributionProportions };
 /**
  * Params holds parameters for the x/mint module.
  *
  * @generated from message osmosis.mint.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -220,4 +223,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "weighted_developer_rewards_receivers", kind: "message", T: WeightedAddress, repeated: true },
     { no: 8, name: "minting_rewards_distribution_start_epoch", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { Params };
 //# sourceMappingURL=mint_pb.js.map

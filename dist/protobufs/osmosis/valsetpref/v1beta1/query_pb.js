@@ -9,7 +9,7 @@ import { ValidatorPreference } from "./state_pb.js";
  *
  * @generated from message osmosis.valsetpref.v1beta1.UserValidatorPreferencesRequest
  */
-export class UserValidatorPreferencesRequest extends Message {
+class UserValidatorPreferencesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -38,12 +38,13 @@ UserValidatorPreferencesRequest.typeName = "osmosis.valsetpref.v1beta1.UserValid
 UserValidatorPreferencesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { UserValidatorPreferencesRequest };
 /**
  * Response type the QueryUserValidatorPreferences query request
  *
  * @generated from message osmosis.valsetpref.v1beta1.UserValidatorPreferencesResponse
  */
-export class UserValidatorPreferencesResponse extends Message {
+class UserValidatorPreferencesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -70,4 +71,5 @@ UserValidatorPreferencesResponse.typeName = "osmosis.valsetpref.v1beta1.UserVali
 UserValidatorPreferencesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "preferences", kind: "message", T: ValidatorPreference, repeated: true },
 ]);
+export { UserValidatorPreferencesResponse };
 //# sourceMappingURL=query_pb.js.map

@@ -11,7 +11,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.protorev.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -109,4 +109,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 13, name: "info_by_pool_type", kind: "message", T: InfoByPoolType },
     { no: 14, name: "cyclic_arb_tracker", kind: "message", T: CyclicArbTracker },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

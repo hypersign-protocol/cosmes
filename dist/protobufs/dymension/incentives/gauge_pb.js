@@ -12,7 +12,7 @@ import { Coin } from "../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message dymensionxyz.dymension.incentives.Gauge
  */
-export class Gauge extends Message {
+class Gauge extends Message {
     constructor(data) {
         super();
         /**
@@ -85,10 +85,11 @@ Gauge.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "filled_epochs", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 8, name: "distributed_coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { Gauge };
 /**
  * @generated from message dymensionxyz.dymension.incentives.LockableDurationsInfo
  */
-export class LockableDurationsInfo extends Message {
+class LockableDurationsInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -117,4 +118,5 @@ LockableDurationsInfo.typeName = "dymensionxyz.dymension.incentives.LockableDura
 LockableDurationsInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lockable_durations", kind: "message", T: Duration, repeated: true },
 ]);
+export { LockableDurationsInfo };
 //# sourceMappingURL=gauge_pb.js.map

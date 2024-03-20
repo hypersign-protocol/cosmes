@@ -9,7 +9,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message capability.v1.Capability
  */
-export class Capability extends Message {
+class Capability extends Message {
     constructor(data) {
         super();
         /**
@@ -36,13 +36,14 @@ Capability.typeName = "capability.v1.Capability";
 Capability.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "index", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Capability };
 /**
  * Owner defines a single capability owner. An owner is defined by the name of
  * capability and the module name.
  *
  * @generated from message capability.v1.Owner
  */
-export class Owner extends Message {
+class Owner extends Message {
     constructor(data) {
         super();
         /**
@@ -74,13 +75,14 @@ Owner.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "module", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Owner };
 /**
  * CapabilityOwners defines a set of owners of a single Capability. The set of
  * owners must be unique.
  *
  * @generated from message capability.v1.CapabilityOwners
  */
-export class CapabilityOwners extends Message {
+class CapabilityOwners extends Message {
     constructor(data) {
         super();
         /**
@@ -107,4 +109,5 @@ CapabilityOwners.typeName = "capability.v1.CapabilityOwners";
 CapabilityOwners.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owners", kind: "message", T: Owner, repeated: true },
 ]);
+export { CapabilityOwners };
 //# sourceMappingURL=capability_pb.js.map

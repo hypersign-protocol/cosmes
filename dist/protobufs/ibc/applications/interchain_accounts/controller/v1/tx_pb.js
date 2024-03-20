@@ -11,7 +11,7 @@ import { Params } from "./controller_pb.js";
  *
  * @generated from message ibc.applications.interchain_accounts.controller.v1.MsgRegisterInterchainAccount
  */
-export class MsgRegisterInterchainAccount extends Message {
+class MsgRegisterInterchainAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -53,12 +53,13 @@ MsgRegisterInterchainAccount.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "ordering", kind: "enum", T: proto3.getEnumType(Order) },
 ]);
+export { MsgRegisterInterchainAccount };
 /**
  * MsgRegisterInterchainAccountResponse defines the response for Msg/RegisterAccount
  *
  * @generated from message ibc.applications.interchain_accounts.controller.v1.MsgRegisterInterchainAccountResponse
  */
-export class MsgRegisterInterchainAccountResponse extends Message {
+class MsgRegisterInterchainAccountResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -90,12 +91,13 @@ MsgRegisterInterchainAccountResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgRegisterInterchainAccountResponse };
 /**
  * MsgSendTx defines the payload for Msg/SendTx
  *
  * @generated from message ibc.applications.interchain_accounts.controller.v1.MsgSendTx
  */
-export class MsgSendTx extends Message {
+class MsgSendTx extends Message {
     constructor(data) {
         super();
         /**
@@ -136,12 +138,13 @@ MsgSendTx.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "packet_data", kind: "message", T: InterchainAccountPacketData },
     { no: 4, name: "relative_timeout", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgSendTx };
 /**
  * MsgSendTxResponse defines the response for MsgSendTx
  *
  * @generated from message ibc.applications.interchain_accounts.controller.v1.MsgSendTxResponse
  */
-export class MsgSendTxResponse extends Message {
+class MsgSendTxResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -168,12 +171,13 @@ MsgSendTxResponse.typeName = "ibc.applications.interchain_accounts.controller.v1
 MsgSendTxResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgSendTxResponse };
 /**
  * MsgUpdateParams defines the payload for Msg/UpdateParams
  *
  * @generated from message ibc.applications.interchain_accounts.controller.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -203,12 +207,13 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response for Msg/UpdateParams
  *
  * @generated from message ibc.applications.interchain_accounts.controller.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -229,4 +234,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "ibc.applications.interchain_accounts.controller.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

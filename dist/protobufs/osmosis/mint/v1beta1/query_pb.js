@@ -9,7 +9,7 @@ import { Params } from "./mint_pb.js";
  *
  * @generated from message osmosis.mint.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,12 +30,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "osmosis.mint.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message osmosis.mint.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -58,13 +59,14 @@ QueryParamsResponse.typeName = "osmosis.mint.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryEpochProvisionsRequest is the request type for the
  * Query/EpochProvisions RPC method.
  *
  * @generated from message osmosis.mint.v1beta1.QueryEpochProvisionsRequest
  */
-export class QueryEpochProvisionsRequest extends Message {
+class QueryEpochProvisionsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -85,13 +87,14 @@ export class QueryEpochProvisionsRequest extends Message {
 QueryEpochProvisionsRequest.runtime = proto3;
 QueryEpochProvisionsRequest.typeName = "osmosis.mint.v1beta1.QueryEpochProvisionsRequest";
 QueryEpochProvisionsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryEpochProvisionsRequest };
 /**
  * QueryEpochProvisionsResponse is the response type for the
  * Query/EpochProvisions RPC method.
  *
  * @generated from message osmosis.mint.v1beta1.QueryEpochProvisionsResponse
  */
-export class QueryEpochProvisionsResponse extends Message {
+class QueryEpochProvisionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -120,4 +123,5 @@ QueryEpochProvisionsResponse.typeName = "osmosis.mint.v1beta1.QueryEpochProvisio
 QueryEpochProvisionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "epoch_provisions", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryEpochProvisionsResponse };
 //# sourceMappingURL=query_pb.js.map

@@ -23,7 +23,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.CosmWasmPool
  */
-export class CosmWasmPool extends Message {
+class CosmWasmPool extends Message {
     constructor(data) {
         super();
         /**
@@ -65,4 +65,5 @@ CosmWasmPool.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "instantiate_msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { CosmWasmPool };
 //# sourceMappingURL=pool_pb.js.map

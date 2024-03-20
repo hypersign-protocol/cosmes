@@ -8,7 +8,7 @@ import { FeeToken } from "./feetoken_pb.js";
 /**
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -29,10 +29,11 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "dymensionxyz.dymension.txfees.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -55,10 +56,11 @@ QueryParamsResponse.typeName = "dymensionxyz.dymension.txfees.v1beta1.QueryParam
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryFeeTokensRequest
  */
-export class QueryFeeTokensRequest extends Message {
+class QueryFeeTokensRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -79,10 +81,11 @@ export class QueryFeeTokensRequest extends Message {
 QueryFeeTokensRequest.runtime = proto3;
 QueryFeeTokensRequest.typeName = "dymensionxyz.dymension.txfees.v1beta1.QueryFeeTokensRequest";
 QueryFeeTokensRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryFeeTokensRequest };
 /**
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryFeeTokensResponse
  */
-export class QueryFeeTokensResponse extends Message {
+class QueryFeeTokensResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -109,13 +112,14 @@ QueryFeeTokensResponse.typeName = "dymensionxyz.dymension.txfees.v1beta1.QueryFe
 QueryFeeTokensResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fee_tokens", kind: "message", T: FeeToken, repeated: true },
 ]);
+export { QueryFeeTokensResponse };
 /**
  * QueryDenomSpotPriceRequest defines grpc request structure for querying spot
  * price for the specified tx fee denom
  *
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryDenomSpotPriceRequest
  */
-export class QueryDenomSpotPriceRequest extends Message {
+class QueryDenomSpotPriceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -142,13 +146,14 @@ QueryDenomSpotPriceRequest.typeName = "dymensionxyz.dymension.txfees.v1beta1.Que
 QueryDenomSpotPriceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomSpotPriceRequest };
 /**
  * QueryDenomSpotPriceRequest defines grpc response structure for querying spot
  * price for the specified tx fee denom
  *
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryDenomSpotPriceResponse
  */
-export class QueryDenomSpotPriceResponse extends Message {
+class QueryDenomSpotPriceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -180,10 +185,11 @@ QueryDenomSpotPriceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "poolID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "spot_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomSpotPriceResponse };
 /**
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryDenomPoolIdRequest
  */
-export class QueryDenomPoolIdRequest extends Message {
+class QueryDenomPoolIdRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -210,10 +216,11 @@ QueryDenomPoolIdRequest.typeName = "dymensionxyz.dymension.txfees.v1beta1.QueryD
 QueryDenomPoolIdRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomPoolIdRequest };
 /**
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryDenomPoolIdResponse
  */
-export class QueryDenomPoolIdResponse extends Message {
+class QueryDenomPoolIdResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -240,10 +247,11 @@ QueryDenomPoolIdResponse.typeName = "dymensionxyz.dymension.txfees.v1beta1.Query
 QueryDenomPoolIdResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "poolID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryDenomPoolIdResponse };
 /**
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryBaseDenomRequest
  */
-export class QueryBaseDenomRequest extends Message {
+class QueryBaseDenomRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -264,10 +272,11 @@ export class QueryBaseDenomRequest extends Message {
 QueryBaseDenomRequest.runtime = proto3;
 QueryBaseDenomRequest.typeName = "dymensionxyz.dymension.txfees.v1beta1.QueryBaseDenomRequest";
 QueryBaseDenomRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBaseDenomRequest };
 /**
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.QueryBaseDenomResponse
  */
-export class QueryBaseDenomResponse extends Message {
+class QueryBaseDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -294,4 +303,5 @@ QueryBaseDenomResponse.typeName = "dymensionxyz.dymension.txfees.v1beta1.QueryBa
 QueryBaseDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBaseDenomResponse };
 //# sourceMappingURL=query_pb.js.map

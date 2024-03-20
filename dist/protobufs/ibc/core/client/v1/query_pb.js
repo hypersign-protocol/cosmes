@@ -12,7 +12,7 @@ import { MerklePath } from "../../commitment/v1/commitment_pb.js";
  *
  * @generated from message ibc.core.client.v1.QueryClientStateRequest
  */
-export class QueryClientStateRequest extends Message {
+class QueryClientStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -41,6 +41,7 @@ QueryClientStateRequest.typeName = "ibc.core.client.v1.QueryClientStateRequest";
 QueryClientStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryClientStateRequest };
 /**
  * QueryClientStateResponse is the response type for the Query/ClientState RPC
  * method. Besides the client state, it includes a proof and the height from
@@ -48,7 +49,7 @@ QueryClientStateRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.client.v1.QueryClientStateResponse
  */
-export class QueryClientStateResponse extends Message {
+class QueryClientStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -79,13 +80,14 @@ QueryClientStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryClientStateResponse };
 /**
  * QueryClientStatesRequest is the request type for the Query/ClientStates RPC
  * method
  *
  * @generated from message ibc.core.client.v1.QueryClientStatesRequest
  */
-export class QueryClientStatesRequest extends Message {
+class QueryClientStatesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -108,13 +110,14 @@ QueryClientStatesRequest.typeName = "ibc.core.client.v1.QueryClientStatesRequest
 QueryClientStatesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryClientStatesRequest };
 /**
  * QueryClientStatesResponse is the response type for the Query/ClientStates RPC
  * method.
  *
  * @generated from message ibc.core.client.v1.QueryClientStatesResponse
  */
-export class QueryClientStatesResponse extends Message {
+class QueryClientStatesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -144,6 +147,7 @@ QueryClientStatesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_states", kind: "message", T: IdentifiedClientState, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryClientStatesResponse };
 /**
  * QueryConsensusStateRequest is the request type for the Query/ConsensusState
  * RPC method. Besides the consensus state, it includes a proof and the height
@@ -151,7 +155,7 @@ QueryClientStatesResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.client.v1.QueryConsensusStateRequest
  */
-export class QueryConsensusStateRequest extends Message {
+class QueryConsensusStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -202,13 +206,14 @@ QueryConsensusStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "revision_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "latest_height", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryConsensusStateRequest };
 /**
  * QueryConsensusStateResponse is the response type for the Query/ConsensusState
  * RPC method
  *
  * @generated from message ibc.core.client.v1.QueryConsensusStateResponse
  */
-export class QueryConsensusStateResponse extends Message {
+class QueryConsensusStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -239,13 +244,14 @@ QueryConsensusStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryConsensusStateResponse };
 /**
  * QueryConsensusStatesRequest is the request type for the Query/ConsensusStates
  * RPC method.
  *
  * @generated from message ibc.core.client.v1.QueryConsensusStatesRequest
  */
-export class QueryConsensusStatesRequest extends Message {
+class QueryConsensusStatesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -275,13 +281,14 @@ QueryConsensusStatesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryConsensusStatesRequest };
 /**
  * QueryConsensusStatesResponse is the response type for the
  * Query/ConsensusStates RPC method
  *
  * @generated from message ibc.core.client.v1.QueryConsensusStatesResponse
  */
-export class QueryConsensusStatesResponse extends Message {
+class QueryConsensusStatesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -311,13 +318,14 @@ QueryConsensusStatesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "consensus_states", kind: "message", T: ConsensusStateWithHeight, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryConsensusStatesResponse };
 /**
  * QueryConsensusStateHeightsRequest is the request type for Query/ConsensusStateHeights
  * RPC method.
  *
  * @generated from message ibc.core.client.v1.QueryConsensusStateHeightsRequest
  */
-export class QueryConsensusStateHeightsRequest extends Message {
+class QueryConsensusStateHeightsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -347,13 +355,14 @@ QueryConsensusStateHeightsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryConsensusStateHeightsRequest };
 /**
  * QueryConsensusStateHeightsResponse is the response type for the
  * Query/ConsensusStateHeights RPC method
  *
  * @generated from message ibc.core.client.v1.QueryConsensusStateHeightsResponse
  */
-export class QueryConsensusStateHeightsResponse extends Message {
+class QueryConsensusStateHeightsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -383,13 +392,14 @@ QueryConsensusStateHeightsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "consensus_state_heights", kind: "message", T: Height, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryConsensusStateHeightsResponse };
 /**
  * QueryClientStatusRequest is the request type for the Query/ClientStatus RPC
  * method
  *
  * @generated from message ibc.core.client.v1.QueryClientStatusRequest
  */
-export class QueryClientStatusRequest extends Message {
+class QueryClientStatusRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -418,13 +428,14 @@ QueryClientStatusRequest.typeName = "ibc.core.client.v1.QueryClientStatusRequest
 QueryClientStatusRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryClientStatusRequest };
 /**
  * QueryClientStatusResponse is the response type for the Query/ClientStatus RPC
  * method. It returns the current status of the IBC client.
  *
  * @generated from message ibc.core.client.v1.QueryClientStatusResponse
  */
-export class QueryClientStatusResponse extends Message {
+class QueryClientStatusResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -451,13 +462,14 @@ QueryClientStatusResponse.typeName = "ibc.core.client.v1.QueryClientStatusRespon
 QueryClientStatusResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "status", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryClientStatusResponse };
 /**
  * QueryClientParamsRequest is the request type for the Query/ClientParams RPC
  * method.
  *
  * @generated from message ibc.core.client.v1.QueryClientParamsRequest
  */
-export class QueryClientParamsRequest extends Message {
+class QueryClientParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -478,13 +490,14 @@ export class QueryClientParamsRequest extends Message {
 QueryClientParamsRequest.runtime = proto3;
 QueryClientParamsRequest.typeName = "ibc.core.client.v1.QueryClientParamsRequest";
 QueryClientParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryClientParamsRequest };
 /**
  * QueryClientParamsResponse is the response type for the Query/ClientParams RPC
  * method.
  *
  * @generated from message ibc.core.client.v1.QueryClientParamsResponse
  */
-export class QueryClientParamsResponse extends Message {
+class QueryClientParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -507,13 +520,14 @@ QueryClientParamsResponse.typeName = "ibc.core.client.v1.QueryClientParamsRespon
 QueryClientParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryClientParamsResponse };
 /**
  * QueryUpgradedClientStateRequest is the request type for the
  * Query/UpgradedClientState RPC method
  *
  * @generated from message ibc.core.client.v1.QueryUpgradedClientStateRequest
  */
-export class QueryUpgradedClientStateRequest extends Message {
+class QueryUpgradedClientStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -534,13 +548,14 @@ export class QueryUpgradedClientStateRequest extends Message {
 QueryUpgradedClientStateRequest.runtime = proto3;
 QueryUpgradedClientStateRequest.typeName = "ibc.core.client.v1.QueryUpgradedClientStateRequest";
 QueryUpgradedClientStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryUpgradedClientStateRequest };
 /**
  * QueryUpgradedClientStateResponse is the response type for the
  * Query/UpgradedClientState RPC method.
  *
  * @generated from message ibc.core.client.v1.QueryUpgradedClientStateResponse
  */
-export class QueryUpgradedClientStateResponse extends Message {
+class QueryUpgradedClientStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -563,13 +578,14 @@ QueryUpgradedClientStateResponse.typeName = "ibc.core.client.v1.QueryUpgradedCli
 QueryUpgradedClientStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "upgraded_client_state", kind: "message", T: Any },
 ]);
+export { QueryUpgradedClientStateResponse };
 /**
  * QueryUpgradedConsensusStateRequest is the request type for the
  * Query/UpgradedConsensusState RPC method
  *
  * @generated from message ibc.core.client.v1.QueryUpgradedConsensusStateRequest
  */
-export class QueryUpgradedConsensusStateRequest extends Message {
+class QueryUpgradedConsensusStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -590,13 +606,14 @@ export class QueryUpgradedConsensusStateRequest extends Message {
 QueryUpgradedConsensusStateRequest.runtime = proto3;
 QueryUpgradedConsensusStateRequest.typeName = "ibc.core.client.v1.QueryUpgradedConsensusStateRequest";
 QueryUpgradedConsensusStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryUpgradedConsensusStateRequest };
 /**
  * QueryUpgradedConsensusStateResponse is the response type for the
  * Query/UpgradedConsensusState RPC method.
  *
  * @generated from message ibc.core.client.v1.QueryUpgradedConsensusStateResponse
  */
-export class QueryUpgradedConsensusStateResponse extends Message {
+class QueryUpgradedConsensusStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -619,12 +636,13 @@ QueryUpgradedConsensusStateResponse.typeName = "ibc.core.client.v1.QueryUpgraded
 QueryUpgradedConsensusStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "upgraded_consensus_state", kind: "message", T: Any },
 ]);
+export { QueryUpgradedConsensusStateResponse };
 /**
  * QueryVerifyMembershipRequest is the request type for the Query/VerifyMembership RPC method
  *
  * @generated from message ibc.core.client.v1.QueryVerifyMembershipRequest
  */
-export class QueryVerifyMembershipRequest extends Message {
+class QueryVerifyMembershipRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -683,12 +701,13 @@ QueryVerifyMembershipRequest.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "time_delay", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 7, name: "block_delay", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryVerifyMembershipRequest };
 /**
  * QueryVerifyMembershipResponse is the response type for the Query/VerifyMembership RPC method
  *
  * @generated from message ibc.core.client.v1.QueryVerifyMembershipResponse
  */
-export class QueryVerifyMembershipResponse extends Message {
+class QueryVerifyMembershipResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -717,4 +736,5 @@ QueryVerifyMembershipResponse.typeName = "ibc.core.client.v1.QueryVerifyMembersh
 QueryVerifyMembershipResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryVerifyMembershipResponse };
 //# sourceMappingURL=query_pb.js.map

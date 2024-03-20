@@ -9,7 +9,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgCreatePosition
  */
-export class MsgCreatePosition extends Message {
+class MsgCreatePosition extends Message {
     constructor(data) {
         super();
         /**
@@ -71,10 +71,11 @@ MsgCreatePosition.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "token_min_amount0", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "token_min_amount1", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreatePosition };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgCreatePositionResponse
  */
-export class MsgCreatePositionResponse extends Message {
+class MsgCreatePositionResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -131,12 +132,13 @@ MsgCreatePositionResponse.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "lower_tick", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 7, name: "upper_tick", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { MsgCreatePositionResponse };
 /**
  * ===================== MsgAddToPosition
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgAddToPosition
  */
-export class MsgAddToPosition extends Message {
+class MsgAddToPosition extends Message {
     constructor(data) {
         super();
         /**
@@ -202,10 +204,11 @@ MsgAddToPosition.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "token_min_amount0", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "token_min_amount1", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgAddToPosition };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgAddToPositionResponse
  */
-export class MsgAddToPositionResponse extends Message {
+class MsgAddToPositionResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -242,12 +245,13 @@ MsgAddToPositionResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "amount0", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount1", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgAddToPositionResponse };
 /**
  * ===================== MsgWithdrawPosition
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgWithdrawPosition
  */
-export class MsgWithdrawPosition extends Message {
+class MsgWithdrawPosition extends Message {
     constructor(data) {
         super();
         /**
@@ -284,10 +288,11 @@ MsgWithdrawPosition.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "liquidity_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgWithdrawPosition };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgWithdrawPositionResponse
  */
-export class MsgWithdrawPositionResponse extends Message {
+class MsgWithdrawPositionResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -319,12 +324,13 @@ MsgWithdrawPositionResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount0", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "amount1", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgWithdrawPositionResponse };
 /**
  * ===================== MsgCollectSpreadRewards
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgCollectSpreadRewards
  */
-export class MsgCollectSpreadRewards extends Message {
+class MsgCollectSpreadRewards extends Message {
     constructor(data) {
         super();
         /**
@@ -356,10 +362,11 @@ MsgCollectSpreadRewards.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 2, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCollectSpreadRewards };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgCollectSpreadRewardsResponse
  */
-export class MsgCollectSpreadRewardsResponse extends Message {
+class MsgCollectSpreadRewardsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -386,12 +393,13 @@ MsgCollectSpreadRewardsResponse.typeName = "osmosis.concentratedliquidity.v1beta
 MsgCollectSpreadRewardsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "collected_spread_rewards", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgCollectSpreadRewardsResponse };
 /**
  * ===================== MsgCollectIncentives
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgCollectIncentives
  */
-export class MsgCollectIncentives extends Message {
+class MsgCollectIncentives extends Message {
     constructor(data) {
         super();
         /**
@@ -423,10 +431,11 @@ MsgCollectIncentives.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 2, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCollectIncentives };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgCollectIncentivesResponse
  */
-export class MsgCollectIncentivesResponse extends Message {
+class MsgCollectIncentivesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -458,12 +467,13 @@ MsgCollectIncentivesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "collected_incentives", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "forfeited_incentives", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgCollectIncentivesResponse };
 /**
  * ===================== MsgFungifyChargedPositions
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgFungifyChargedPositions
  */
-export class MsgFungifyChargedPositions extends Message {
+class MsgFungifyChargedPositions extends Message {
     constructor(data) {
         super();
         /**
@@ -495,10 +505,11 @@ MsgFungifyChargedPositions.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 2, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgFungifyChargedPositions };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgFungifyChargedPositionsResponse
  */
-export class MsgFungifyChargedPositionsResponse extends Message {
+class MsgFungifyChargedPositionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -525,12 +536,13 @@ MsgFungifyChargedPositionsResponse.typeName = "osmosis.concentratedliquidity.v1b
 MsgFungifyChargedPositionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "new_position_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgFungifyChargedPositionsResponse };
 /**
  * ===================== MsgTransferPositions
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgTransferPositions
  */
-export class MsgTransferPositions extends Message {
+class MsgTransferPositions extends Message {
     constructor(data) {
         super();
         /**
@@ -567,10 +579,11 @@ MsgTransferPositions.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "new_owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgTransferPositions };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.MsgTransferPositionsResponse
  */
-export class MsgTransferPositionsResponse extends Message {
+class MsgTransferPositionsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -591,4 +604,5 @@ export class MsgTransferPositionsResponse extends Message {
 MsgTransferPositionsResponse.runtime = proto3;
 MsgTransferPositionsResponse.typeName = "osmosis.concentratedliquidity.v1beta1.MsgTransferPositionsResponse";
 MsgTransferPositionsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgTransferPositionsResponse };
 //# sourceMappingURL=tx_pb.js.map

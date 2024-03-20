@@ -14,7 +14,7 @@ import { ValidatorSet } from "../../../../tendermint/types/validator_pb.js";
  *
  * @generated from message ibc.lightclients.tendermint.v1.ClientState
  */
-export class ClientState extends Message {
+class ClientState extends Message {
     constructor(data) {
         super();
         /**
@@ -83,12 +83,13 @@ ClientState.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "allow_update_after_expiry", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 11, name: "allow_update_after_misbehaviour", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { ClientState };
 /**
  * ConsensusState defines the consensus state from Tendermint.
  *
  * @generated from message ibc.lightclients.tendermint.v1.ConsensusState
  */
-export class ConsensusState extends Message {
+class ConsensusState extends Message {
     constructor(data) {
         super();
         /**
@@ -117,13 +118,14 @@ ConsensusState.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "root", kind: "message", T: MerkleRoot },
     { no: 3, name: "next_validators_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ConsensusState };
 /**
  * Misbehaviour is a wrapper over two conflicting Headers
  * that implements Misbehaviour interface expected by ICS-02
  *
  * @generated from message ibc.lightclients.tendermint.v1.Misbehaviour
  */
-export class Misbehaviour extends Message {
+class Misbehaviour extends Message {
     constructor(data) {
         super();
         /**
@@ -155,6 +157,7 @@ Misbehaviour.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "header_1", kind: "message", T: Header },
     { no: 3, name: "header_2", kind: "message", T: Header },
 ]);
+export { Misbehaviour };
 /**
  * Header defines the Tendermint client consensus Header.
  * It encapsulates all the information necessary to update from a trusted
@@ -171,7 +174,7 @@ Misbehaviour.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.lightclients.tendermint.v1.Header
  */
-export class Header extends Message {
+class Header extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -197,13 +200,14 @@ Header.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "trusted_height", kind: "message", T: Height },
     { no: 4, name: "trusted_validators", kind: "message", T: ValidatorSet },
 ]);
+export { Header };
 /**
  * Fraction defines the protobuf message type for tmmath.Fraction that only
  * supports positive values.
  *
  * @generated from message ibc.lightclients.tendermint.v1.Fraction
  */
-export class Fraction extends Message {
+class Fraction extends Message {
     constructor(data) {
         super();
         /**
@@ -235,4 +239,5 @@ Fraction.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "numerator", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "denominator", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Fraction };
 //# sourceMappingURL=tendermint_pb.js.map

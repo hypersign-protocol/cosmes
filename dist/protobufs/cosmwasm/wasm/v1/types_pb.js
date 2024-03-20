@@ -86,7 +86,7 @@ proto3.util.setEnumType(ContractCodeHistoryOperationType, "cosmwasm.wasm.v1.Cont
  *
  * @generated from message cosmwasm.wasm.v1.AccessTypeParam
  */
-export class AccessTypeParam extends Message {
+class AccessTypeParam extends Message {
     constructor(data) {
         super();
         /**
@@ -113,12 +113,13 @@ AccessTypeParam.typeName = "cosmwasm.wasm.v1.AccessTypeParam";
 AccessTypeParam.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "value", kind: "enum", T: proto3.getEnumType(AccessType) },
 ]);
+export { AccessTypeParam };
 /**
  * AccessConfig access control type.
  *
  * @generated from message cosmwasm.wasm.v1.AccessConfig
  */
-export class AccessConfig extends Message {
+class AccessConfig extends Message {
     constructor(data) {
         super();
         /**
@@ -150,12 +151,13 @@ AccessConfig.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "permission", kind: "enum", T: proto3.getEnumType(AccessType) },
     { no: 3, name: "addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { AccessConfig };
 /**
  * Params defines the set of wasm parameters.
  *
  * @generated from message cosmwasm.wasm.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -183,12 +185,13 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_upload_access", kind: "message", T: AccessConfig },
     { no: 2, name: "instantiate_default_permission", kind: "enum", T: proto3.getEnumType(AccessType) },
 ]);
+export { Params };
 /**
  * CodeInfo is data for the uploaded contract WASM code
  *
  * @generated from message cosmwasm.wasm.v1.CodeInfo
  */
-export class CodeInfo extends Message {
+class CodeInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -225,12 +228,13 @@ CodeInfo.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "creator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "instantiate_config", kind: "message", T: AccessConfig },
 ]);
+export { CodeInfo };
 /**
  * ContractInfo stores a WASM contract instance
  *
  * @generated from message cosmwasm.wasm.v1.ContractInfo
  */
-export class ContractInfo extends Message {
+class ContractInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -287,12 +291,13 @@ ContractInfo.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "ibc_port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "extension", kind: "message", T: Any },
 ]);
+export { ContractInfo };
 /**
  * ContractCodeHistoryEntry metadata to a contract.
  *
  * @generated from message cosmwasm.wasm.v1.ContractCodeHistoryEntry
  */
-export class ContractCodeHistoryEntry extends Message {
+class ContractCodeHistoryEntry extends Message {
     constructor(data) {
         super();
         /**
@@ -332,13 +337,14 @@ ContractCodeHistoryEntry.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "updated", kind: "message", T: AbsoluteTxPosition },
     { no: 4, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ContractCodeHistoryEntry };
 /**
  * AbsoluteTxPosition is a unique transaction position that allows for global
  * ordering of transactions.
  *
  * @generated from message cosmwasm.wasm.v1.AbsoluteTxPosition
  */
-export class AbsoluteTxPosition extends Message {
+class AbsoluteTxPosition extends Message {
     constructor(data) {
         super();
         /**
@@ -375,12 +381,13 @@ AbsoluteTxPosition.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "block_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "tx_index", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { AbsoluteTxPosition };
 /**
  * Model is a struct that holds a KV pair
  *
  * @generated from message cosmwasm.wasm.v1.Model
  */
-export class Model extends Message {
+class Model extends Message {
     constructor(data) {
         super();
         /**
@@ -416,4 +423,5 @@ Model.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "value", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { Model };
 //# sourceMappingURL=types_pb.js.map

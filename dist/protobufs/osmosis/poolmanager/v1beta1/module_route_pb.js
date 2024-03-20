@@ -53,7 +53,7 @@ proto3.util.setEnumType(PoolType, "osmosis.poolmanager.v1beta1.PoolType", [
  *
  * @generated from message osmosis.poolmanager.v1beta1.ModuleRoute
  */
-export class ModuleRoute extends Message {
+class ModuleRoute extends Message {
     constructor(data) {
         super();
         /**
@@ -87,4 +87,5 @@ ModuleRoute.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_type", kind: "enum", T: proto3.getEnumType(PoolType) },
     { no: 2, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ModuleRoute };
 //# sourceMappingURL=module_route_pb.js.map

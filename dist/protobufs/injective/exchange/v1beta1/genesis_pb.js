@@ -9,7 +9,7 @@ import { AggregateSubaccountVolumeRecord, BinaryOptionsMarket, CampaignRewardPoo
  *
  * @generated from message injective.exchange.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -254,10 +254,11 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 33, name: "subaccount_volumes", kind: "message", T: AggregateSubaccountVolumeRecord, repeated: true },
     { no: 34, name: "market_volumes", kind: "message", T: MarketVolume, repeated: true },
 ]);
+export { GenesisState };
 /**
  * @generated from message injective.exchange.v1beta1.OrderbookSequence
  */
-export class OrderbookSequence extends Message {
+class OrderbookSequence extends Message {
     constructor(data) {
         super();
         /**
@@ -289,10 +290,11 @@ OrderbookSequence.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { OrderbookSequence };
 /**
  * @generated from message injective.exchange.v1beta1.FeeDiscountAccountTierTTL
  */
-export class FeeDiscountAccountTierTTL extends Message {
+class FeeDiscountAccountTierTTL extends Message {
     constructor(data) {
         super();
         /**
@@ -320,10 +322,11 @@ FeeDiscountAccountTierTTL.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "tier_ttl", kind: "message", T: FeeDiscountTierTTL },
 ]);
+export { FeeDiscountAccountTierTTL };
 /**
  * @generated from message injective.exchange.v1beta1.FeeDiscountBucketVolumeAccounts
  */
-export class FeeDiscountBucketVolumeAccounts extends Message {
+class FeeDiscountBucketVolumeAccounts extends Message {
     constructor(data) {
         super();
         /**
@@ -355,10 +358,11 @@ FeeDiscountBucketVolumeAccounts.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bucket_start_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "account_volume", kind: "message", T: AccountVolume, repeated: true },
 ]);
+export { FeeDiscountBucketVolumeAccounts };
 /**
  * @generated from message injective.exchange.v1beta1.AccountVolume
  */
-export class AccountVolume extends Message {
+class AccountVolume extends Message {
     constructor(data) {
         super();
         /**
@@ -390,10 +394,11 @@ AccountVolume.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "volume", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountVolume };
 /**
  * @generated from message injective.exchange.v1beta1.TradingRewardCampaignAccountPoints
  */
-export class TradingRewardCampaignAccountPoints extends Message {
+class TradingRewardCampaignAccountPoints extends Message {
     constructor(data) {
         super();
         /**
@@ -425,10 +430,11 @@ TradingRewardCampaignAccountPoints.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "points", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TradingRewardCampaignAccountPoints };
 /**
  * @generated from message injective.exchange.v1beta1.TradingRewardCampaignAccountPendingPoints
  */
-export class TradingRewardCampaignAccountPendingPoints extends Message {
+class TradingRewardCampaignAccountPendingPoints extends Message {
     constructor(data) {
         super();
         /**
@@ -460,12 +466,13 @@ TradingRewardCampaignAccountPendingPoints.fields = proto3.util.newFieldList(() =
     { no: 1, name: "reward_pool_start_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "account_points", kind: "message", T: TradingRewardCampaignAccountPoints, repeated: true },
 ]);
+export { TradingRewardCampaignAccountPendingPoints };
 /**
  * Spot Exchange Limit Orderbook
  *
  * @generated from message injective.exchange.v1beta1.SpotOrderBook
  */
-export class SpotOrderBook extends Message {
+class SpotOrderBook extends Message {
     constructor(data) {
         super();
         /**
@@ -502,12 +509,13 @@ SpotOrderBook.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "isBuySide", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 3, name: "orders", kind: "message", T: SpotLimitOrder, repeated: true },
 ]);
+export { SpotOrderBook };
 /**
  * Derivative Exchange Limit Orderbook
  *
  * @generated from message injective.exchange.v1beta1.DerivativeOrderBook
  */
-export class DerivativeOrderBook extends Message {
+class DerivativeOrderBook extends Message {
     constructor(data) {
         super();
         /**
@@ -544,12 +552,13 @@ DerivativeOrderBook.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "isBuySide", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 3, name: "orders", kind: "message", T: DerivativeLimitOrder, repeated: true },
 ]);
+export { DerivativeOrderBook };
 /**
  * Orderbook containing limit & market conditional orders
  *
  * @generated from message injective.exchange.v1beta1.ConditionalDerivativeOrderBook
  */
-export class ConditionalDerivativeOrderBook extends Message {
+class ConditionalDerivativeOrderBook extends Message {
     constructor(data) {
         super();
         /**
@@ -596,10 +605,11 @@ ConditionalDerivativeOrderBook.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "limit_sell_orders", kind: "message", T: DerivativeLimitOrder, repeated: true },
     { no: 5, name: "market_sell_orders", kind: "message", T: DerivativeMarketOrder, repeated: true },
 ]);
+export { ConditionalDerivativeOrderBook };
 /**
  * @generated from message injective.exchange.v1beta1.Balance
  */
-export class Balance extends Message {
+class Balance extends Message {
     constructor(data) {
         super();
         /**
@@ -632,10 +642,11 @@ Balance.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "deposits", kind: "message", T: Deposit },
 ]);
+export { Balance };
 /**
  * @generated from message injective.exchange.v1beta1.DerivativePosition
  */
-export class DerivativePosition extends Message {
+class DerivativePosition extends Message {
     constructor(data) {
         super();
         /**
@@ -668,10 +679,11 @@ DerivativePosition.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "position", kind: "message", T: Position },
 ]);
+export { DerivativePosition };
 /**
  * @generated from message injective.exchange.v1beta1.SubaccountNonce
  */
-export class SubaccountNonce extends Message {
+class SubaccountNonce extends Message {
     constructor(data) {
         super();
         /**
@@ -699,10 +711,11 @@ SubaccountNonce.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "subaccount_trade_nonce", kind: "message", T: SubaccountTradeNonce },
 ]);
+export { SubaccountNonce };
 /**
  * @generated from message injective.exchange.v1beta1.ExpiryFuturesMarketInfoState
  */
-export class ExpiryFuturesMarketInfoState extends Message {
+class ExpiryFuturesMarketInfoState extends Message {
     constructor(data) {
         super();
         /**
@@ -730,10 +743,11 @@ ExpiryFuturesMarketInfoState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_info", kind: "message", T: ExpiryFuturesMarketInfo },
 ]);
+export { ExpiryFuturesMarketInfoState };
 /**
  * @generated from message injective.exchange.v1beta1.PerpetualMarketFundingState
  */
-export class PerpetualMarketFundingState extends Message {
+class PerpetualMarketFundingState extends Message {
     constructor(data) {
         super();
         /**
@@ -761,4 +775,5 @@ PerpetualMarketFundingState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "funding", kind: "message", T: PerpetualMarketFunding },
 ]);
+export { PerpetualMarketFundingState };
 //# sourceMappingURL=genesis_pb.js.map

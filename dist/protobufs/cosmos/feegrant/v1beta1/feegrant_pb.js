@@ -7,7 +7,7 @@ import { Coin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.feegrant.v1beta1.BasicAllowance
  */
-export class BasicAllowance extends Message {
+class BasicAllowance extends Message {
     constructor(data) {
         super();
         /**
@@ -39,13 +39,14 @@ BasicAllowance.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spend_limit", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "expiration", kind: "message", T: Timestamp },
 ]);
+export { BasicAllowance };
 /**
  * PeriodicAllowance extends Allowance to allow for both a maximum cap,
  * as well as a limit per time period.
  *
  * @generated from message cosmos.feegrant.v1beta1.PeriodicAllowance
  */
-export class PeriodicAllowance extends Message {
+class PeriodicAllowance extends Message {
     constructor(data) {
         super();
         /**
@@ -85,12 +86,13 @@ PeriodicAllowance.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "period_can_spend", kind: "message", T: Coin, repeated: true },
     { no: 5, name: "period_reset", kind: "message", T: Timestamp },
 ]);
+export { PeriodicAllowance };
 /**
  * AllowedMsgAllowance creates allowance only for specified message types.
  *
  * @generated from message cosmos.feegrant.v1beta1.AllowedMsgAllowance
  */
-export class AllowedMsgAllowance extends Message {
+class AllowedMsgAllowance extends Message {
     constructor(data) {
         super();
         /**
@@ -120,12 +122,13 @@ AllowedMsgAllowance.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "allowance", kind: "message", T: Any },
     { no: 2, name: "allowed_messages", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { AllowedMsgAllowance };
 /**
  * Grant is stored in the KVStore to record a grant with full context
  *
  * @generated from message cosmos.feegrant.v1beta1.Grant
  */
-export class Grant extends Message {
+class Grant extends Message {
     constructor(data) {
         super();
         /**
@@ -162,4 +165,5 @@ Grant.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "allowance", kind: "message", T: Any },
 ]);
+export { Grant };
 //# sourceMappingURL=feegrant_pb.js.map

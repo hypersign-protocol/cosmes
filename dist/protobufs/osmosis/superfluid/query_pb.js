@@ -12,7 +12,7 @@ import { DelegationResponse } from "../../cosmos/staking/v1beta1/staking_pb.js";
 /**
  * @generated from message osmosis.superfluid.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -33,10 +33,11 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "osmosis.superfluid.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * @generated from message osmosis.superfluid.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -59,10 +60,11 @@ QueryParamsResponse.typeName = "osmosis.superfluid.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * @generated from message osmosis.superfluid.AssetTypeRequest
  */
-export class AssetTypeRequest extends Message {
+class AssetTypeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -89,10 +91,11 @@ AssetTypeRequest.typeName = "osmosis.superfluid.AssetTypeRequest";
 AssetTypeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AssetTypeRequest };
 /**
  * @generated from message osmosis.superfluid.AssetTypeResponse
  */
-export class AssetTypeResponse extends Message {
+class AssetTypeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -119,10 +122,11 @@ AssetTypeResponse.typeName = "osmosis.superfluid.AssetTypeResponse";
 AssetTypeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "asset_type", kind: "enum", T: proto3.getEnumType(SuperfluidAssetType) },
 ]);
+export { AssetTypeResponse };
 /**
  * @generated from message osmosis.superfluid.AllAssetsRequest
  */
-export class AllAssetsRequest extends Message {
+class AllAssetsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -143,10 +147,11 @@ export class AllAssetsRequest extends Message {
 AllAssetsRequest.runtime = proto3;
 AllAssetsRequest.typeName = "osmosis.superfluid.AllAssetsRequest";
 AllAssetsRequest.fields = proto3.util.newFieldList(() => []);
+export { AllAssetsRequest };
 /**
  * @generated from message osmosis.superfluid.AllAssetsResponse
  */
-export class AllAssetsResponse extends Message {
+class AllAssetsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -173,10 +178,11 @@ AllAssetsResponse.typeName = "osmosis.superfluid.AllAssetsResponse";
 AllAssetsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "assets", kind: "message", T: SuperfluidAsset, repeated: true },
 ]);
+export { AllAssetsResponse };
 /**
  * @generated from message osmosis.superfluid.AssetMultiplierRequest
  */
-export class AssetMultiplierRequest extends Message {
+class AssetMultiplierRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -203,10 +209,11 @@ AssetMultiplierRequest.typeName = "osmosis.superfluid.AssetMultiplierRequest";
 AssetMultiplierRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AssetMultiplierRequest };
 /**
  * @generated from message osmosis.superfluid.AssetMultiplierResponse
  */
-export class AssetMultiplierResponse extends Message {
+class AssetMultiplierResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -229,10 +236,11 @@ AssetMultiplierResponse.typeName = "osmosis.superfluid.AssetMultiplierResponse";
 AssetMultiplierResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "osmo_equivalent_multiplier", kind: "message", T: OsmoEquivalentMultiplierRecord },
 ]);
+export { AssetMultiplierResponse };
 /**
  * @generated from message osmosis.superfluid.SuperfluidIntermediaryAccountInfo
  */
-export class SuperfluidIntermediaryAccountInfo extends Message {
+class SuperfluidIntermediaryAccountInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -274,10 +282,11 @@ SuperfluidIntermediaryAccountInfo.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SuperfluidIntermediaryAccountInfo };
 /**
  * @generated from message osmosis.superfluid.AllIntermediaryAccountsRequest
  */
-export class AllIntermediaryAccountsRequest extends Message {
+class AllIntermediaryAccountsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -300,10 +309,11 @@ AllIntermediaryAccountsRequest.typeName = "osmosis.superfluid.AllIntermediaryAcc
 AllIntermediaryAccountsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { AllIntermediaryAccountsRequest };
 /**
  * @generated from message osmosis.superfluid.AllIntermediaryAccountsResponse
  */
-export class AllIntermediaryAccountsResponse extends Message {
+class AllIntermediaryAccountsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -331,10 +341,11 @@ AllIntermediaryAccountsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "accounts", kind: "message", T: SuperfluidIntermediaryAccountInfo, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { AllIntermediaryAccountsResponse };
 /**
  * @generated from message osmosis.superfluid.ConnectedIntermediaryAccountRequest
  */
-export class ConnectedIntermediaryAccountRequest extends Message {
+class ConnectedIntermediaryAccountRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -361,10 +372,11 @@ ConnectedIntermediaryAccountRequest.typeName = "osmosis.superfluid.ConnectedInte
 ConnectedIntermediaryAccountRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ConnectedIntermediaryAccountRequest };
 /**
  * @generated from message osmosis.superfluid.ConnectedIntermediaryAccountResponse
  */
-export class ConnectedIntermediaryAccountResponse extends Message {
+class ConnectedIntermediaryAccountResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -387,10 +399,11 @@ ConnectedIntermediaryAccountResponse.typeName = "osmosis.superfluid.ConnectedInt
 ConnectedIntermediaryAccountResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "message", T: SuperfluidIntermediaryAccountInfo },
 ]);
+export { ConnectedIntermediaryAccountResponse };
 /**
  * @generated from message osmosis.superfluid.QueryTotalDelegationByValidatorForDenomRequest
  */
-export class QueryTotalDelegationByValidatorForDenomRequest extends Message {
+class QueryTotalDelegationByValidatorForDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -417,10 +430,11 @@ QueryTotalDelegationByValidatorForDenomRequest.typeName = "osmosis.superfluid.Qu
 QueryTotalDelegationByValidatorForDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryTotalDelegationByValidatorForDenomRequest };
 /**
  * @generated from message osmosis.superfluid.QueryTotalDelegationByValidatorForDenomResponse
  */
-export class QueryTotalDelegationByValidatorForDenomResponse extends Message {
+class QueryTotalDelegationByValidatorForDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -447,10 +461,11 @@ QueryTotalDelegationByValidatorForDenomResponse.typeName = "osmosis.superfluid.Q
 QueryTotalDelegationByValidatorForDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "assets", kind: "message", T: Delegations, repeated: true },
 ]);
+export { QueryTotalDelegationByValidatorForDenomResponse };
 /**
  * @generated from message osmosis.superfluid.Delegations
  */
-export class Delegations extends Message {
+class Delegations extends Message {
     constructor(data) {
         super();
         /**
@@ -487,10 +502,11 @@ Delegations.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "amount_sfsd", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "osmo_equivalent", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Delegations };
 /**
  * @generated from message osmosis.superfluid.TotalSuperfluidDelegationsRequest
  */
-export class TotalSuperfluidDelegationsRequest extends Message {
+class TotalSuperfluidDelegationsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -511,10 +527,11 @@ export class TotalSuperfluidDelegationsRequest extends Message {
 TotalSuperfluidDelegationsRequest.runtime = proto3;
 TotalSuperfluidDelegationsRequest.typeName = "osmosis.superfluid.TotalSuperfluidDelegationsRequest";
 TotalSuperfluidDelegationsRequest.fields = proto3.util.newFieldList(() => []);
+export { TotalSuperfluidDelegationsRequest };
 /**
  * @generated from message osmosis.superfluid.TotalSuperfluidDelegationsResponse
  */
-export class TotalSuperfluidDelegationsResponse extends Message {
+class TotalSuperfluidDelegationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -541,10 +558,11 @@ TotalSuperfluidDelegationsResponse.typeName = "osmosis.superfluid.TotalSuperflui
 TotalSuperfluidDelegationsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_delegations", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TotalSuperfluidDelegationsResponse };
 /**
  * @generated from message osmosis.superfluid.SuperfluidDelegationAmountRequest
  */
-export class SuperfluidDelegationAmountRequest extends Message {
+class SuperfluidDelegationAmountRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -581,10 +599,11 @@ SuperfluidDelegationAmountRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SuperfluidDelegationAmountRequest };
 /**
  * @generated from message osmosis.superfluid.SuperfluidDelegationAmountResponse
  */
-export class SuperfluidDelegationAmountResponse extends Message {
+class SuperfluidDelegationAmountResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -611,10 +630,11 @@ SuperfluidDelegationAmountResponse.typeName = "osmosis.superfluid.SuperfluidDele
 SuperfluidDelegationAmountResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { SuperfluidDelegationAmountResponse };
 /**
  * @generated from message osmosis.superfluid.SuperfluidDelegationsByDelegatorRequest
  */
-export class SuperfluidDelegationsByDelegatorRequest extends Message {
+class SuperfluidDelegationsByDelegatorRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -641,10 +661,11 @@ SuperfluidDelegationsByDelegatorRequest.typeName = "osmosis.superfluid.Superflui
 SuperfluidDelegationsByDelegatorRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SuperfluidDelegationsByDelegatorRequest };
 /**
  * @generated from message osmosis.superfluid.SuperfluidDelegationsByDelegatorResponse
  */
-export class SuperfluidDelegationsByDelegatorResponse extends Message {
+class SuperfluidDelegationsByDelegatorResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -677,10 +698,11 @@ SuperfluidDelegationsByDelegatorResponse.fields = proto3.util.newFieldList(() =>
     { no: 2, name: "total_delegated_coins", kind: "message", T: Coin, repeated: true },
     { no: 3, name: "total_equivalent_staked_amount", kind: "message", T: Coin },
 ]);
+export { SuperfluidDelegationsByDelegatorResponse };
 /**
  * @generated from message osmosis.superfluid.SuperfluidUndelegationsByDelegatorRequest
  */
-export class SuperfluidUndelegationsByDelegatorRequest extends Message {
+class SuperfluidUndelegationsByDelegatorRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -712,10 +734,11 @@ SuperfluidUndelegationsByDelegatorRequest.fields = proto3.util.newFieldList(() =
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SuperfluidUndelegationsByDelegatorRequest };
 /**
  * @generated from message osmosis.superfluid.SuperfluidUndelegationsByDelegatorResponse
  */
-export class SuperfluidUndelegationsByDelegatorResponse extends Message {
+class SuperfluidUndelegationsByDelegatorResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -752,10 +775,11 @@ SuperfluidUndelegationsByDelegatorResponse.fields = proto3.util.newFieldList(() 
     { no: 2, name: "total_undelegated_coins", kind: "message", T: Coin, repeated: true },
     { no: 3, name: "synthetic_locks", kind: "message", T: SyntheticLock, repeated: true },
 ]);
+export { SuperfluidUndelegationsByDelegatorResponse };
 /**
  * @generated from message osmosis.superfluid.SuperfluidDelegationsByValidatorDenomRequest
  */
-export class SuperfluidDelegationsByValidatorDenomRequest extends Message {
+class SuperfluidDelegationsByValidatorDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -787,10 +811,11 @@ SuperfluidDelegationsByValidatorDenomRequest.fields = proto3.util.newFieldList((
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SuperfluidDelegationsByValidatorDenomRequest };
 /**
  * @generated from message osmosis.superfluid.SuperfluidDelegationsByValidatorDenomResponse
  */
-export class SuperfluidDelegationsByValidatorDenomResponse extends Message {
+class SuperfluidDelegationsByValidatorDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -817,10 +842,11 @@ SuperfluidDelegationsByValidatorDenomResponse.typeName = "osmosis.superfluid.Sup
 SuperfluidDelegationsByValidatorDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "superfluid_delegation_records", kind: "message", T: SuperfluidDelegationRecord, repeated: true },
 ]);
+export { SuperfluidDelegationsByValidatorDenomResponse };
 /**
  * @generated from message osmosis.superfluid.EstimateSuperfluidDelegatedAmountByValidatorDenomRequest
  */
-export class EstimateSuperfluidDelegatedAmountByValidatorDenomRequest extends Message {
+class EstimateSuperfluidDelegatedAmountByValidatorDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -852,10 +878,11 @@ EstimateSuperfluidDelegatedAmountByValidatorDenomRequest.fields = proto3.util.ne
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EstimateSuperfluidDelegatedAmountByValidatorDenomRequest };
 /**
  * @generated from message osmosis.superfluid.EstimateSuperfluidDelegatedAmountByValidatorDenomResponse
  */
-export class EstimateSuperfluidDelegatedAmountByValidatorDenomResponse extends Message {
+class EstimateSuperfluidDelegatedAmountByValidatorDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -882,10 +909,11 @@ EstimateSuperfluidDelegatedAmountByValidatorDenomResponse.typeName = "osmosis.su
 EstimateSuperfluidDelegatedAmountByValidatorDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_delegated_coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { EstimateSuperfluidDelegatedAmountByValidatorDenomResponse };
 /**
  * @generated from message osmosis.superfluid.QueryTotalDelegationByDelegatorRequest
  */
-export class QueryTotalDelegationByDelegatorRequest extends Message {
+class QueryTotalDelegationByDelegatorRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -912,10 +940,11 @@ QueryTotalDelegationByDelegatorRequest.typeName = "osmosis.superfluid.QueryTotal
 QueryTotalDelegationByDelegatorRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryTotalDelegationByDelegatorRequest };
 /**
  * @generated from message osmosis.superfluid.QueryTotalDelegationByDelegatorResponse
  */
-export class QueryTotalDelegationByDelegatorResponse extends Message {
+class QueryTotalDelegationByDelegatorResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -953,10 +982,11 @@ QueryTotalDelegationByDelegatorResponse.fields = proto3.util.newFieldList(() => 
     { no: 3, name: "total_delegated_coins", kind: "message", T: Coin, repeated: true },
     { no: 4, name: "total_equivalent_staked_amount", kind: "message", T: Coin },
 ]);
+export { QueryTotalDelegationByDelegatorResponse };
 /**
  * @generated from message osmosis.superfluid.QueryUnpoolWhitelistRequest
  */
-export class QueryUnpoolWhitelistRequest extends Message {
+class QueryUnpoolWhitelistRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -977,10 +1007,11 @@ export class QueryUnpoolWhitelistRequest extends Message {
 QueryUnpoolWhitelistRequest.runtime = proto3;
 QueryUnpoolWhitelistRequest.typeName = "osmosis.superfluid.QueryUnpoolWhitelistRequest";
 QueryUnpoolWhitelistRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryUnpoolWhitelistRequest };
 /**
  * @generated from message osmosis.superfluid.QueryUnpoolWhitelistResponse
  */
-export class QueryUnpoolWhitelistResponse extends Message {
+class QueryUnpoolWhitelistResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1007,10 +1038,11 @@ QueryUnpoolWhitelistResponse.typeName = "osmosis.superfluid.QueryUnpoolWhitelist
 QueryUnpoolWhitelistResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { QueryUnpoolWhitelistResponse };
 /**
  * @generated from message osmosis.superfluid.UserConcentratedSuperfluidPositionsDelegatedRequest
  */
-export class UserConcentratedSuperfluidPositionsDelegatedRequest extends Message {
+class UserConcentratedSuperfluidPositionsDelegatedRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1037,10 +1069,11 @@ UserConcentratedSuperfluidPositionsDelegatedRequest.typeName = "osmosis.superflu
 UserConcentratedSuperfluidPositionsDelegatedRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { UserConcentratedSuperfluidPositionsDelegatedRequest };
 /**
  * @generated from message osmosis.superfluid.UserConcentratedSuperfluidPositionsDelegatedResponse
  */
-export class UserConcentratedSuperfluidPositionsDelegatedResponse extends Message {
+class UserConcentratedSuperfluidPositionsDelegatedResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1067,10 +1100,11 @@ UserConcentratedSuperfluidPositionsDelegatedResponse.typeName = "osmosis.superfl
 UserConcentratedSuperfluidPositionsDelegatedResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cl_pool_user_position_records", kind: "message", T: ConcentratedPoolUserPositionRecord, repeated: true },
 ]);
+export { UserConcentratedSuperfluidPositionsDelegatedResponse };
 /**
  * @generated from message osmosis.superfluid.UserConcentratedSuperfluidPositionsUndelegatingRequest
  */
-export class UserConcentratedSuperfluidPositionsUndelegatingRequest extends Message {
+class UserConcentratedSuperfluidPositionsUndelegatingRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1097,10 +1131,11 @@ UserConcentratedSuperfluidPositionsUndelegatingRequest.typeName = "osmosis.super
 UserConcentratedSuperfluidPositionsUndelegatingRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { UserConcentratedSuperfluidPositionsUndelegatingRequest };
 /**
  * @generated from message osmosis.superfluid.UserConcentratedSuperfluidPositionsUndelegatingResponse
  */
-export class UserConcentratedSuperfluidPositionsUndelegatingResponse extends Message {
+class UserConcentratedSuperfluidPositionsUndelegatingResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1127,12 +1162,13 @@ UserConcentratedSuperfluidPositionsUndelegatingResponse.typeName = "osmosis.supe
 UserConcentratedSuperfluidPositionsUndelegatingResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cl_pool_user_position_records", kind: "message", T: ConcentratedPoolUserPositionRecord, repeated: true },
 ]);
+export { UserConcentratedSuperfluidPositionsUndelegatingResponse };
 /**
  * THIS QUERY IS TEMPORARY
  *
  * @generated from message osmosis.superfluid.QueryRestSupplyRequest
  */
-export class QueryRestSupplyRequest extends Message {
+class QueryRestSupplyRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1159,10 +1195,11 @@ QueryRestSupplyRequest.typeName = "osmosis.superfluid.QueryRestSupplyRequest";
 QueryRestSupplyRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryRestSupplyRequest };
 /**
  * @generated from message osmosis.superfluid.QueryRestSupplyResponse
  */
-export class QueryRestSupplyResponse extends Message {
+class QueryRestSupplyResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1185,4 +1222,5 @@ QueryRestSupplyResponse.typeName = "osmosis.superfluid.QueryRestSupplyResponse";
 QueryRestSupplyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin },
 ]);
+export { QueryRestSupplyResponse };
 //# sourceMappingURL=query_pb.js.map

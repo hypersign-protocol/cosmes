@@ -10,7 +10,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmwasm.wasm.v1.MsgStoreCode
  */
-export class MsgStoreCode extends Message {
+class MsgStoreCode extends Message {
     constructor(data) {
         super();
         /**
@@ -47,12 +47,13 @@ MsgStoreCode.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "wasm_byte_code", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 5, name: "instantiate_permission", kind: "message", T: AccessConfig },
 ]);
+export { MsgStoreCode };
 /**
  * MsgStoreCodeResponse returns store result data.
  *
  * @generated from message cosmwasm.wasm.v1.MsgStoreCodeResponse
  */
-export class MsgStoreCodeResponse extends Message {
+class MsgStoreCodeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -88,13 +89,14 @@ MsgStoreCodeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "checksum", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgStoreCodeResponse };
 /**
  * MsgInstantiateContract create a new smart contract instance for the given
  * code id.
  *
  * @generated from message cosmwasm.wasm.v1.MsgInstantiateContract
  */
-export class MsgInstantiateContract extends Message {
+class MsgInstantiateContract extends Message {
     constructor(data) {
         super();
         /**
@@ -158,12 +160,13 @@ MsgInstantiateContract.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 6, name: "funds", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgInstantiateContract };
 /**
  * MsgInstantiateContractResponse return instantiation result data
  *
  * @generated from message cosmwasm.wasm.v1.MsgInstantiateContractResponse
  */
-export class MsgInstantiateContractResponse extends Message {
+class MsgInstantiateContractResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -199,13 +202,14 @@ MsgInstantiateContractResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgInstantiateContractResponse };
 /**
  * MsgInstantiateContract2 create a new smart contract instance for the given
  * code id with a predicable address.
  *
  * @generated from message cosmwasm.wasm.v1.MsgInstantiateContract2
  */
-export class MsgInstantiateContract2 extends Message {
+class MsgInstantiateContract2 extends Message {
     constructor(data) {
         super();
         /**
@@ -284,12 +288,13 @@ MsgInstantiateContract2.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "salt", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 8, name: "fix_msg", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgInstantiateContract2 };
 /**
  * MsgInstantiateContract2Response return instantiation result data
  *
  * @generated from message cosmwasm.wasm.v1.MsgInstantiateContract2Response
  */
-export class MsgInstantiateContract2Response extends Message {
+class MsgInstantiateContract2Response extends Message {
     constructor(data) {
         super();
         /**
@@ -325,12 +330,13 @@ MsgInstantiateContract2Response.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgInstantiateContract2Response };
 /**
  * MsgExecuteContract submits the given message data to a smart contract
  *
  * @generated from message cosmwasm.wasm.v1.MsgExecuteContract
  */
-export class MsgExecuteContract extends Message {
+class MsgExecuteContract extends Message {
     constructor(data) {
         super();
         /**
@@ -380,12 +386,13 @@ MsgExecuteContract.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 5, name: "funds", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgExecuteContract };
 /**
  * MsgExecuteContractResponse returns execution result data.
  *
  * @generated from message cosmwasm.wasm.v1.MsgExecuteContractResponse
  */
-export class MsgExecuteContractResponse extends Message {
+class MsgExecuteContractResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -414,12 +421,13 @@ MsgExecuteContractResponse.typeName = "cosmwasm.wasm.v1.MsgExecuteContractRespon
 MsgExecuteContractResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgExecuteContractResponse };
 /**
  * MsgMigrateContract runs a code upgrade/ downgrade for a smart contract
  *
  * @generated from message cosmwasm.wasm.v1.MsgMigrateContract
  */
-export class MsgMigrateContract extends Message {
+class MsgMigrateContract extends Message {
     constructor(data) {
         super();
         /**
@@ -469,12 +477,13 @@ MsgMigrateContract.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgMigrateContract };
 /**
  * MsgMigrateContractResponse returns contract migration result data.
  *
  * @generated from message cosmwasm.wasm.v1.MsgMigrateContractResponse
  */
-export class MsgMigrateContractResponse extends Message {
+class MsgMigrateContractResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -504,12 +513,13 @@ MsgMigrateContractResponse.typeName = "cosmwasm.wasm.v1.MsgMigrateContractRespon
 MsgMigrateContractResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgMigrateContractResponse };
 /**
  * MsgUpdateAdmin sets a new admin for a smart contract
  *
  * @generated from message cosmwasm.wasm.v1.MsgUpdateAdmin
  */
-export class MsgUpdateAdmin extends Message {
+class MsgUpdateAdmin extends Message {
     constructor(data) {
         super();
         /**
@@ -552,12 +562,13 @@ MsgUpdateAdmin.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "new_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateAdmin };
 /**
  * MsgUpdateAdminResponse returns empty data
  *
  * @generated from message cosmwasm.wasm.v1.MsgUpdateAdminResponse
  */
-export class MsgUpdateAdminResponse extends Message {
+class MsgUpdateAdminResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -578,12 +589,13 @@ export class MsgUpdateAdminResponse extends Message {
 MsgUpdateAdminResponse.runtime = proto3;
 MsgUpdateAdminResponse.typeName = "cosmwasm.wasm.v1.MsgUpdateAdminResponse";
 MsgUpdateAdminResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateAdminResponse };
 /**
  * MsgClearAdmin removes any admin stored for a smart contract
  *
  * @generated from message cosmwasm.wasm.v1.MsgClearAdmin
  */
-export class MsgClearAdmin extends Message {
+class MsgClearAdmin extends Message {
     constructor(data) {
         super();
         /**
@@ -619,12 +631,13 @@ MsgClearAdmin.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgClearAdmin };
 /**
  * MsgClearAdminResponse returns empty data
  *
  * @generated from message cosmwasm.wasm.v1.MsgClearAdminResponse
  */
-export class MsgClearAdminResponse extends Message {
+class MsgClearAdminResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -645,12 +658,13 @@ export class MsgClearAdminResponse extends Message {
 MsgClearAdminResponse.runtime = proto3;
 MsgClearAdminResponse.typeName = "cosmwasm.wasm.v1.MsgClearAdminResponse";
 MsgClearAdminResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgClearAdminResponse };
 /**
  * MsgUpdateInstantiateConfig updates instantiate config for a smart contract
  *
  * @generated from message cosmwasm.wasm.v1.MsgUpdateInstantiateConfig
  */
-export class MsgUpdateInstantiateConfig extends Message {
+class MsgUpdateInstantiateConfig extends Message {
     constructor(data) {
         super();
         /**
@@ -687,12 +701,13 @@ MsgUpdateInstantiateConfig.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "new_instantiate_permission", kind: "message", T: AccessConfig },
 ]);
+export { MsgUpdateInstantiateConfig };
 /**
  * MsgUpdateInstantiateConfigResponse returns empty data
  *
  * @generated from message cosmwasm.wasm.v1.MsgUpdateInstantiateConfigResponse
  */
-export class MsgUpdateInstantiateConfigResponse extends Message {
+class MsgUpdateInstantiateConfigResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -713,6 +728,7 @@ export class MsgUpdateInstantiateConfigResponse extends Message {
 MsgUpdateInstantiateConfigResponse.runtime = proto3;
 MsgUpdateInstantiateConfigResponse.typeName = "cosmwasm.wasm.v1.MsgUpdateInstantiateConfigResponse";
 MsgUpdateInstantiateConfigResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateInstantiateConfigResponse };
 /**
  * MsgUpdateParams is the MsgUpdateParams request type.
  *
@@ -720,7 +736,7 @@ MsgUpdateInstantiateConfigResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmwasm.wasm.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -750,6 +766,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
@@ -758,7 +775,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -779,6 +796,7 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "cosmwasm.wasm.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 /**
  * MsgSudoContract is the MsgSudoContract request type.
  *
@@ -786,7 +804,7 @@ MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmwasm.wasm.v1.MsgSudoContract
  */
-export class MsgSudoContract extends Message {
+class MsgSudoContract extends Message {
     constructor(data) {
         super();
         /**
@@ -829,6 +847,7 @@ MsgSudoContract.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgSudoContract };
 /**
  * MsgSudoContractResponse defines the response structure for executing a
  * MsgSudoContract message.
@@ -837,7 +856,7 @@ MsgSudoContract.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.MsgSudoContractResponse
  */
-export class MsgSudoContractResponse extends Message {
+class MsgSudoContractResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -866,6 +885,7 @@ MsgSudoContractResponse.typeName = "cosmwasm.wasm.v1.MsgSudoContractResponse";
 MsgSudoContractResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgSudoContractResponse };
 /**
  * MsgPinCodes is the MsgPinCodes request type.
  *
@@ -873,7 +893,7 @@ MsgSudoContractResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.MsgPinCodes
  */
-export class MsgPinCodes extends Message {
+class MsgPinCodes extends Message {
     constructor(data) {
         super();
         /**
@@ -909,6 +929,7 @@ MsgPinCodes.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "code_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { MsgPinCodes };
 /**
  * MsgPinCodesResponse defines the response structure for executing a
  * MsgPinCodes message.
@@ -917,7 +938,7 @@ MsgPinCodes.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.MsgPinCodesResponse
  */
-export class MsgPinCodesResponse extends Message {
+class MsgPinCodesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -938,6 +959,7 @@ export class MsgPinCodesResponse extends Message {
 MsgPinCodesResponse.runtime = proto3;
 MsgPinCodesResponse.typeName = "cosmwasm.wasm.v1.MsgPinCodesResponse";
 MsgPinCodesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgPinCodesResponse };
 /**
  * MsgUnpinCodes is the MsgUnpinCodes request type.
  *
@@ -945,7 +967,7 @@ MsgPinCodesResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmwasm.wasm.v1.MsgUnpinCodes
  */
-export class MsgUnpinCodes extends Message {
+class MsgUnpinCodes extends Message {
     constructor(data) {
         super();
         /**
@@ -981,6 +1003,7 @@ MsgUnpinCodes.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "code_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { MsgUnpinCodes };
 /**
  * MsgUnpinCodesResponse defines the response structure for executing a
  * MsgUnpinCodes message.
@@ -989,7 +1012,7 @@ MsgUnpinCodes.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.MsgUnpinCodesResponse
  */
-export class MsgUnpinCodesResponse extends Message {
+class MsgUnpinCodesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1010,6 +1033,7 @@ export class MsgUnpinCodesResponse extends Message {
 MsgUnpinCodesResponse.runtime = proto3;
 MsgUnpinCodesResponse.typeName = "cosmwasm.wasm.v1.MsgUnpinCodesResponse";
 MsgUnpinCodesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUnpinCodesResponse };
 /**
  * MsgStoreAndInstantiateContract is the MsgStoreAndInstantiateContract
  * request type.
@@ -1018,7 +1042,7 @@ MsgUnpinCodesResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmwasm.wasm.v1.MsgStoreAndInstantiateContract
  */
-export class MsgStoreAndInstantiateContract extends Message {
+class MsgStoreAndInstantiateContract extends Message {
     constructor(data) {
         super();
         /**
@@ -1115,6 +1139,7 @@ MsgStoreAndInstantiateContract.fields = proto3.util.newFieldList(() => [
     { no: 11, name: "builder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "code_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgStoreAndInstantiateContract };
 /**
  * MsgStoreAndInstantiateContractResponse defines the response structure
  * for executing a MsgStoreAndInstantiateContract message.
@@ -1123,7 +1148,7 @@ MsgStoreAndInstantiateContract.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.MsgStoreAndInstantiateContractResponse
  */
-export class MsgStoreAndInstantiateContractResponse extends Message {
+class MsgStoreAndInstantiateContractResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1159,13 +1184,14 @@ MsgStoreAndInstantiateContractResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgStoreAndInstantiateContractResponse };
 /**
  * MsgAddCodeUploadParamsAddresses is the
  * MsgAddCodeUploadParamsAddresses request type.
  *
  * @generated from message cosmwasm.wasm.v1.MsgAddCodeUploadParamsAddresses
  */
-export class MsgAddCodeUploadParamsAddresses extends Message {
+class MsgAddCodeUploadParamsAddresses extends Message {
     constructor(data) {
         super();
         /**
@@ -1199,13 +1225,14 @@ MsgAddCodeUploadParamsAddresses.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgAddCodeUploadParamsAddresses };
 /**
  * MsgAddCodeUploadParamsAddressesResponse defines the response
  * structure for executing a MsgAddCodeUploadParamsAddresses message.
  *
  * @generated from message cosmwasm.wasm.v1.MsgAddCodeUploadParamsAddressesResponse
  */
-export class MsgAddCodeUploadParamsAddressesResponse extends Message {
+class MsgAddCodeUploadParamsAddressesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1226,13 +1253,14 @@ export class MsgAddCodeUploadParamsAddressesResponse extends Message {
 MsgAddCodeUploadParamsAddressesResponse.runtime = proto3;
 MsgAddCodeUploadParamsAddressesResponse.typeName = "cosmwasm.wasm.v1.MsgAddCodeUploadParamsAddressesResponse";
 MsgAddCodeUploadParamsAddressesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgAddCodeUploadParamsAddressesResponse };
 /**
  * MsgRemoveCodeUploadParamsAddresses is the
  * MsgRemoveCodeUploadParamsAddresses request type.
  *
  * @generated from message cosmwasm.wasm.v1.MsgRemoveCodeUploadParamsAddresses
  */
-export class MsgRemoveCodeUploadParamsAddresses extends Message {
+class MsgRemoveCodeUploadParamsAddresses extends Message {
     constructor(data) {
         super();
         /**
@@ -1266,13 +1294,14 @@ MsgRemoveCodeUploadParamsAddresses.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgRemoveCodeUploadParamsAddresses };
 /**
  * MsgRemoveCodeUploadParamsAddressesResponse defines the response
  * structure for executing a MsgRemoveCodeUploadParamsAddresses message.
  *
  * @generated from message cosmwasm.wasm.v1.MsgRemoveCodeUploadParamsAddressesResponse
  */
-export class MsgRemoveCodeUploadParamsAddressesResponse extends Message {
+class MsgRemoveCodeUploadParamsAddressesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1293,6 +1322,7 @@ export class MsgRemoveCodeUploadParamsAddressesResponse extends Message {
 MsgRemoveCodeUploadParamsAddressesResponse.runtime = proto3;
 MsgRemoveCodeUploadParamsAddressesResponse.typeName = "cosmwasm.wasm.v1.MsgRemoveCodeUploadParamsAddressesResponse";
 MsgRemoveCodeUploadParamsAddressesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRemoveCodeUploadParamsAddressesResponse };
 /**
  * MsgStoreAndMigrateContract is the MsgStoreAndMigrateContract
  * request type.
@@ -1301,7 +1331,7 @@ MsgRemoveCodeUploadParamsAddressesResponse.fields = proto3.util.newFieldList(() 
  *
  * @generated from message cosmwasm.wasm.v1.MsgStoreAndMigrateContract
  */
-export class MsgStoreAndMigrateContract extends Message {
+class MsgStoreAndMigrateContract extends Message {
     constructor(data) {
         super();
         /**
@@ -1352,6 +1382,7 @@ MsgStoreAndMigrateContract.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgStoreAndMigrateContract };
 /**
  * MsgStoreAndMigrateContractResponse defines the response structure
  * for executing a MsgStoreAndMigrateContract message.
@@ -1360,7 +1391,7 @@ MsgStoreAndMigrateContract.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.MsgStoreAndMigrateContractResponse
  */
-export class MsgStoreAndMigrateContractResponse extends Message {
+class MsgStoreAndMigrateContractResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1403,12 +1434,13 @@ MsgStoreAndMigrateContractResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "checksum", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgStoreAndMigrateContractResponse };
 /**
  * MsgUpdateContractLabel sets a new label for a smart contract
  *
  * @generated from message cosmwasm.wasm.v1.MsgUpdateContractLabel
  */
-export class MsgUpdateContractLabel extends Message {
+class MsgUpdateContractLabel extends Message {
     constructor(data) {
         super();
         /**
@@ -1451,12 +1483,13 @@ MsgUpdateContractLabel.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "new_label", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateContractLabel };
 /**
  * MsgUpdateContractLabelResponse returns empty data
  *
  * @generated from message cosmwasm.wasm.v1.MsgUpdateContractLabelResponse
  */
-export class MsgUpdateContractLabelResponse extends Message {
+class MsgUpdateContractLabelResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1477,4 +1510,5 @@ export class MsgUpdateContractLabelResponse extends Message {
 MsgUpdateContractLabelResponse.runtime = proto3;
 MsgUpdateContractLabelResponse.typeName = "cosmwasm.wasm.v1.MsgUpdateContractLabelResponse";
 MsgUpdateContractLabelResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateContractLabelResponse };
 //# sourceMappingURL=tx_pb.js.map

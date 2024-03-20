@@ -10,7 +10,7 @@ import { Params } from "./params_pb.js";
  *
  * @generated from message osmosis.lockup.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -48,4 +48,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "synthetic_locks", kind: "message", T: SyntheticLock, repeated: true },
     { no: 4, name: "params", kind: "message", T: Params },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

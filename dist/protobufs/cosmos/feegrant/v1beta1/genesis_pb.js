@@ -6,7 +6,7 @@ import { Grant } from "./feegrant_pb.js";
  *
  * @generated from message cosmos.feegrant.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -33,4 +33,5 @@ GenesisState.typeName = "cosmos.feegrant.v1beta1.GenesisState";
 GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "allowances", kind: "message", T: Grant, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

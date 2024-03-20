@@ -10,7 +10,7 @@ import { Params, PriceAttestation } from "./oracle_pb.js";
  *
  * @generated from message injective.oracle.v1beta1.MsgRelayProviderPrices
  */
-export class MsgRelayProviderPrices extends Message {
+class MsgRelayProviderPrices extends Message {
     constructor(data) {
         super();
         /**
@@ -52,10 +52,11 @@ MsgRelayProviderPrices.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "symbols", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 4, name: "prices", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgRelayProviderPrices };
 /**
  * @generated from message injective.oracle.v1beta1.MsgRelayProviderPricesResponse
  */
-export class MsgRelayProviderPricesResponse extends Message {
+class MsgRelayProviderPricesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -76,13 +77,14 @@ export class MsgRelayProviderPricesResponse extends Message {
 MsgRelayProviderPricesResponse.runtime = proto3;
 MsgRelayProviderPricesResponse.typeName = "injective.oracle.v1beta1.MsgRelayProviderPricesResponse";
 MsgRelayProviderPricesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRelayProviderPricesResponse };
 /**
  * MsgRelayPriceFeedPrice defines a SDK message for setting a price through the
  * pricefeed oracle.
  *
  * @generated from message injective.oracle.v1beta1.MsgRelayPriceFeedPrice
  */
-export class MsgRelayPriceFeedPrice extends Message {
+class MsgRelayPriceFeedPrice extends Message {
     constructor(data) {
         super();
         /**
@@ -126,10 +128,11 @@ MsgRelayPriceFeedPrice.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "quote", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 4, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgRelayPriceFeedPrice };
 /**
  * @generated from message injective.oracle.v1beta1.MsgRelayPriceFeedPriceResponse
  */
-export class MsgRelayPriceFeedPriceResponse extends Message {
+class MsgRelayPriceFeedPriceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -150,10 +153,11 @@ export class MsgRelayPriceFeedPriceResponse extends Message {
 MsgRelayPriceFeedPriceResponse.runtime = proto3;
 MsgRelayPriceFeedPriceResponse.typeName = "injective.oracle.v1beta1.MsgRelayPriceFeedPriceResponse";
 MsgRelayPriceFeedPriceResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRelayPriceFeedPriceResponse };
 /**
  * @generated from message injective.oracle.v1beta1.MsgRelayBandRates
  */
-export class MsgRelayBandRates extends Message {
+class MsgRelayBandRates extends Message {
     constructor(data) {
         super();
         /**
@@ -200,10 +204,11 @@ MsgRelayBandRates.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "resolve_times", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 5, name: "requestIDs", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { MsgRelayBandRates };
 /**
  * @generated from message injective.oracle.v1beta1.MsgRelayBandRatesResponse
  */
-export class MsgRelayBandRatesResponse extends Message {
+class MsgRelayBandRatesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -224,13 +229,14 @@ export class MsgRelayBandRatesResponse extends Message {
 MsgRelayBandRatesResponse.runtime = proto3;
 MsgRelayBandRatesResponse.typeName = "injective.oracle.v1beta1.MsgRelayBandRatesResponse";
 MsgRelayBandRatesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRelayBandRatesResponse };
 /**
  * MsgRelayCoinbaseMessages defines a SDK message for relaying price messages
  * from Coinbase API.
  *
  * @generated from message injective.oracle.v1beta1.MsgRelayCoinbaseMessages
  */
-export class MsgRelayCoinbaseMessages extends Message {
+class MsgRelayCoinbaseMessages extends Message {
     constructor(data) {
         super();
         /**
@@ -267,10 +273,11 @@ MsgRelayCoinbaseMessages.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "messages", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
     { no: 3, name: "signatures", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { MsgRelayCoinbaseMessages };
 /**
  * @generated from message injective.oracle.v1beta1.MsgRelayCoinbaseMessagesResponse
  */
-export class MsgRelayCoinbaseMessagesResponse extends Message {
+class MsgRelayCoinbaseMessagesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -291,13 +298,14 @@ export class MsgRelayCoinbaseMessagesResponse extends Message {
 MsgRelayCoinbaseMessagesResponse.runtime = proto3;
 MsgRelayCoinbaseMessagesResponse.typeName = "injective.oracle.v1beta1.MsgRelayCoinbaseMessagesResponse";
 MsgRelayCoinbaseMessagesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRelayCoinbaseMessagesResponse };
 /**
  * MsgRequestBandIBCRates defines a SDK message for requesting data from
  * BandChain using IBC.
  *
  * @generated from message injective.oracle.v1beta1.MsgRequestBandIBCRates
  */
-export class MsgRequestBandIBCRates extends Message {
+class MsgRequestBandIBCRates extends Message {
     constructor(data) {
         super();
         /**
@@ -329,12 +337,13 @@ MsgRequestBandIBCRates.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgRequestBandIBCRates };
 /**
  * MsgRequestDataResponse defines the Msg/RequestBandIBCRates response type.
  *
  * @generated from message injective.oracle.v1beta1.MsgRequestBandIBCRatesResponse
  */
-export class MsgRequestBandIBCRatesResponse extends Message {
+class MsgRequestBandIBCRatesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -355,12 +364,13 @@ export class MsgRequestBandIBCRatesResponse extends Message {
 MsgRequestBandIBCRatesResponse.runtime = proto3;
 MsgRequestBandIBCRatesResponse.typeName = "injective.oracle.v1beta1.MsgRequestBandIBCRatesResponse";
 MsgRequestBandIBCRatesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRequestBandIBCRatesResponse };
 /**
  * MsgRelayPythPrices defines a SDK message for updating Pyth prices
  *
  * @generated from message injective.oracle.v1beta1.MsgRelayPythPrices
  */
-export class MsgRelayPythPrices extends Message {
+class MsgRelayPythPrices extends Message {
     constructor(data) {
         super();
         /**
@@ -392,12 +402,13 @@ MsgRelayPythPrices.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "price_attestations", kind: "message", T: PriceAttestation, repeated: true },
 ]);
+export { MsgRelayPythPrices };
 /**
  * MsgRelayPythPricesResponse defines the Msg/RelayPythPrices response type.
  *
  * @generated from message injective.oracle.v1beta1.MsgRelayPythPricesResponse
  */
-export class MsgRelayPythPricesResponse extends Message {
+class MsgRelayPythPricesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -418,10 +429,11 @@ export class MsgRelayPythPricesResponse extends Message {
 MsgRelayPythPricesResponse.runtime = proto3;
 MsgRelayPythPricesResponse.typeName = "injective.oracle.v1beta1.MsgRelayPythPricesResponse";
 MsgRelayPythPricesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRelayPythPricesResponse };
 /**
  * @generated from message injective.oracle.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -451,10 +463,11 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * @generated from message injective.oracle.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -475,4 +488,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "injective.oracle.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

@@ -9,7 +9,7 @@ import { BaseAccount } from "../../../../cosmos/auth/v1beta1/auth_pb.js";
  *
  * @generated from message ibc.applications.interchain_accounts.v1.InterchainAccount
  */
-export class InterchainAccount extends Message {
+class InterchainAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -37,4 +37,5 @@ InterchainAccount.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_account", kind: "message", T: BaseAccount },
     { no: 2, name: "account_owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { InterchainAccount };
 //# sourceMappingURL=account_pb.js.map

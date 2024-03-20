@@ -10,7 +10,7 @@ import { Coin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.bank.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -64,13 +64,14 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "denom_metadata", kind: "message", T: Metadata, repeated: true },
     { no: 5, name: "send_enabled", kind: "message", T: SendEnabled, repeated: true },
 ]);
+export { GenesisState };
 /**
  * Balance defines an account address and balance pair used in the bank module's
  * genesis state.
  *
  * @generated from message cosmos.bank.v1beta1.Balance
  */
-export class Balance extends Message {
+class Balance extends Message {
     constructor(data) {
         super();
         /**
@@ -106,4 +107,5 @@ Balance.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { Balance };
 //# sourceMappingURL=genesis_pb.js.map

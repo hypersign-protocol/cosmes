@@ -6,7 +6,7 @@ import { Duration, Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 /**
  * @generated from message osmosis.poolincentives.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -38,10 +38,11 @@ Params.typeName = "osmosis.poolincentives.v1beta1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "minted_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.LockableDurationsInfo
  */
-export class LockableDurationsInfo extends Message {
+class LockableDurationsInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -68,10 +69,11 @@ LockableDurationsInfo.typeName = "osmosis.poolincentives.v1beta1.LockableDuratio
 LockableDurationsInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lockable_durations", kind: "message", T: Duration, repeated: true },
 ]);
+export { LockableDurationsInfo };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.DistrInfo
  */
-export class DistrInfo extends Message {
+class DistrInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -103,10 +105,11 @@ DistrInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "records", kind: "message", T: DistrRecord, repeated: true },
 ]);
+export { DistrInfo };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.DistrRecord
  */
-export class DistrRecord extends Message {
+class DistrRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -138,10 +141,11 @@ DistrRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DistrRecord };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.PoolToGauge
  */
-export class PoolToGauge extends Message {
+class PoolToGauge extends Message {
     constructor(data) {
         super();
         /**
@@ -174,10 +178,11 @@ PoolToGauge.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "duration", kind: "message", T: Duration },
 ]);
+export { PoolToGauge };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.AnyPoolToInternalGauges
  */
-export class AnyPoolToInternalGauges extends Message {
+class AnyPoolToInternalGauges extends Message {
     constructor(data) {
         super();
         /**
@@ -204,10 +209,11 @@ AnyPoolToInternalGauges.typeName = "osmosis.poolincentives.v1beta1.AnyPoolToInte
 AnyPoolToInternalGauges.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pool_to_gauge", kind: "message", T: PoolToGauge, repeated: true },
 ]);
+export { AnyPoolToInternalGauges };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.ConcentratedPoolToNoLockGauges
  */
-export class ConcentratedPoolToNoLockGauges extends Message {
+class ConcentratedPoolToNoLockGauges extends Message {
     constructor(data) {
         super();
         /**
@@ -234,4 +240,5 @@ ConcentratedPoolToNoLockGauges.typeName = "osmosis.poolincentives.v1beta1.Concen
 ConcentratedPoolToNoLockGauges.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_to_gauge", kind: "message", T: PoolToGauge, repeated: true },
 ]);
+export { ConcentratedPoolToNoLockGauges };
 //# sourceMappingURL=incentives_pb.js.map

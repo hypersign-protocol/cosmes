@@ -11,7 +11,7 @@ import { Coin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.vesting.v1beta1.BaseVestingAccount
  */
-export class BaseVestingAccount extends Message {
+class BaseVestingAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -56,13 +56,14 @@ BaseVestingAccount.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "delegated_vesting", kind: "message", T: Coin, repeated: true },
     { no: 5, name: "end_time", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { BaseVestingAccount };
 /**
  * ContinuousVestingAccount implements the VestingAccount interface. It
  * continuously vests by unlocking coins linearly with respect to time.
  *
  * @generated from message cosmos.vesting.v1beta1.ContinuousVestingAccount
  */
-export class ContinuousVestingAccount extends Message {
+class ContinuousVestingAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -92,6 +93,7 @@ ContinuousVestingAccount.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_vesting_account", kind: "message", T: BaseVestingAccount },
     { no: 2, name: "start_time", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { ContinuousVestingAccount };
 /**
  * DelayedVestingAccount implements the VestingAccount interface. It vests all
  * coins after a specific time, but non prior. In other words, it keeps them
@@ -99,7 +101,7 @@ ContinuousVestingAccount.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.vesting.v1beta1.DelayedVestingAccount
  */
-export class DelayedVestingAccount extends Message {
+class DelayedVestingAccount extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -122,12 +124,13 @@ DelayedVestingAccount.typeName = "cosmos.vesting.v1beta1.DelayedVestingAccount";
 DelayedVestingAccount.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_vesting_account", kind: "message", T: BaseVestingAccount },
 ]);
+export { DelayedVestingAccount };
 /**
  * Period defines a length of time and amount of coins that will vest.
  *
  * @generated from message cosmos.vesting.v1beta1.Period
  */
-export class Period extends Message {
+class Period extends Message {
     constructor(data) {
         super();
         /**
@@ -161,13 +164,14 @@ Period.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "length", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { Period };
 /**
  * PeriodicVestingAccount implements the VestingAccount interface. It
  * periodically vests by unlocking coins during each specified period.
  *
  * @generated from message cosmos.vesting.v1beta1.PeriodicVestingAccount
  */
-export class PeriodicVestingAccount extends Message {
+class PeriodicVestingAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -200,6 +204,7 @@ PeriodicVestingAccount.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "start_time", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 3, name: "vesting_periods", kind: "message", T: Period, repeated: true },
 ]);
+export { PeriodicVestingAccount };
 /**
  * PermanentLockedAccount implements the VestingAccount interface. It does
  * not ever release coins, locking them indefinitely. Coins in this account can
@@ -209,7 +214,7 @@ PeriodicVestingAccount.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.vesting.v1beta1.PermanentLockedAccount
  */
-export class PermanentLockedAccount extends Message {
+class PermanentLockedAccount extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -232,4 +237,5 @@ PermanentLockedAccount.typeName = "cosmos.vesting.v1beta1.PermanentLockedAccount
 PermanentLockedAccount.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_vesting_account", kind: "message", T: BaseVestingAccount },
 ]);
+export { PermanentLockedAccount };
 //# sourceMappingURL=vesting_pb.js.map

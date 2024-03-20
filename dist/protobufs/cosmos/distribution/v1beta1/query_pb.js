@@ -11,7 +11,7 @@ import { PageRequest, PageResponse } from "../../base/query/v1beta1/pagination_p
  *
  * @generated from message cosmos.distribution.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,12 +32,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "cosmos.distribution.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -60,12 +61,13 @@ QueryParamsResponse.typeName = "cosmos.distribution.v1beta1.QueryParamsResponse"
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryValidatorDistributionInfoRequest is the request type for the Query/ValidatorDistributionInfo RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryValidatorDistributionInfoRequest
  */
-export class QueryValidatorDistributionInfoRequest extends Message {
+class QueryValidatorDistributionInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -94,12 +96,13 @@ QueryValidatorDistributionInfoRequest.typeName = "cosmos.distribution.v1beta1.Qu
 QueryValidatorDistributionInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryValidatorDistributionInfoRequest };
 /**
  * QueryValidatorDistributionInfoResponse is the response type for the Query/ValidatorDistributionInfo RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryValidatorDistributionInfoResponse
  */
-export class QueryValidatorDistributionInfoResponse extends Message {
+class QueryValidatorDistributionInfoResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -142,13 +145,14 @@ QueryValidatorDistributionInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "self_bond_rewards", kind: "message", T: DecCoin, repeated: true },
     { no: 3, name: "commission", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { QueryValidatorDistributionInfoResponse };
 /**
  * QueryValidatorOutstandingRewardsRequest is the request type for the
  * Query/ValidatorOutstandingRewards RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsRequest
  */
-export class QueryValidatorOutstandingRewardsRequest extends Message {
+class QueryValidatorOutstandingRewardsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -177,13 +181,14 @@ QueryValidatorOutstandingRewardsRequest.typeName = "cosmos.distribution.v1beta1.
 QueryValidatorOutstandingRewardsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryValidatorOutstandingRewardsRequest };
 /**
  * QueryValidatorOutstandingRewardsResponse is the response type for the
  * Query/ValidatorOutstandingRewards RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryValidatorOutstandingRewardsResponse
  */
-export class QueryValidatorOutstandingRewardsResponse extends Message {
+class QueryValidatorOutstandingRewardsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -206,13 +211,14 @@ QueryValidatorOutstandingRewardsResponse.typeName = "cosmos.distribution.v1beta1
 QueryValidatorOutstandingRewardsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "rewards", kind: "message", T: ValidatorOutstandingRewards },
 ]);
+export { QueryValidatorOutstandingRewardsResponse };
 /**
  * QueryValidatorCommissionRequest is the request type for the
  * Query/ValidatorCommission RPC method
  *
  * @generated from message cosmos.distribution.v1beta1.QueryValidatorCommissionRequest
  */
-export class QueryValidatorCommissionRequest extends Message {
+class QueryValidatorCommissionRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -241,13 +247,14 @@ QueryValidatorCommissionRequest.typeName = "cosmos.distribution.v1beta1.QueryVal
 QueryValidatorCommissionRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryValidatorCommissionRequest };
 /**
  * QueryValidatorCommissionResponse is the response type for the
  * Query/ValidatorCommission RPC method
  *
  * @generated from message cosmos.distribution.v1beta1.QueryValidatorCommissionResponse
  */
-export class QueryValidatorCommissionResponse extends Message {
+class QueryValidatorCommissionResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -270,13 +277,14 @@ QueryValidatorCommissionResponse.typeName = "cosmos.distribution.v1beta1.QueryVa
 QueryValidatorCommissionResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "commission", kind: "message", T: ValidatorAccumulatedCommission },
 ]);
+export { QueryValidatorCommissionResponse };
 /**
  * QueryValidatorSlashesRequest is the request type for the
  * Query/ValidatorSlashes RPC method
  *
  * @generated from message cosmos.distribution.v1beta1.QueryValidatorSlashesRequest
  */
-export class QueryValidatorSlashesRequest extends Message {
+class QueryValidatorSlashesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -320,13 +328,14 @@ QueryValidatorSlashesRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "ending_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryValidatorSlashesRequest };
 /**
  * QueryValidatorSlashesResponse is the response type for the
  * Query/ValidatorSlashes RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryValidatorSlashesResponse
  */
-export class QueryValidatorSlashesResponse extends Message {
+class QueryValidatorSlashesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -356,13 +365,14 @@ QueryValidatorSlashesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "slashes", kind: "message", T: ValidatorSlashEvent, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryValidatorSlashesResponse };
 /**
  * QueryDelegationRewardsRequest is the request type for the
  * Query/DelegationRewards RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryDelegationRewardsRequest
  */
-export class QueryDelegationRewardsRequest extends Message {
+class QueryDelegationRewardsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -398,13 +408,14 @@ QueryDelegationRewardsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegationRewardsRequest };
 /**
  * QueryDelegationRewardsResponse is the response type for the
  * Query/DelegationRewards RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryDelegationRewardsResponse
  */
-export class QueryDelegationRewardsResponse extends Message {
+class QueryDelegationRewardsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -433,13 +444,14 @@ QueryDelegationRewardsResponse.typeName = "cosmos.distribution.v1beta1.QueryDele
 QueryDelegationRewardsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "rewards", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { QueryDelegationRewardsResponse };
 /**
  * QueryDelegationTotalRewardsRequest is the request type for the
  * Query/DelegationTotalRewards RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryDelegationTotalRewardsRequest
  */
-export class QueryDelegationTotalRewardsRequest extends Message {
+class QueryDelegationTotalRewardsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -468,13 +480,14 @@ QueryDelegationTotalRewardsRequest.typeName = "cosmos.distribution.v1beta1.Query
 QueryDelegationTotalRewardsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegationTotalRewardsRequest };
 /**
  * QueryDelegationTotalRewardsResponse is the response type for the
  * Query/DelegationTotalRewards RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryDelegationTotalRewardsResponse
  */
-export class QueryDelegationTotalRewardsResponse extends Message {
+class QueryDelegationTotalRewardsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -510,13 +523,14 @@ QueryDelegationTotalRewardsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "rewards", kind: "message", T: DelegationDelegatorReward, repeated: true },
     { no: 2, name: "total", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { QueryDelegationTotalRewardsResponse };
 /**
  * QueryDelegatorValidatorsRequest is the request type for the
  * Query/DelegatorValidators RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryDelegatorValidatorsRequest
  */
-export class QueryDelegatorValidatorsRequest extends Message {
+class QueryDelegatorValidatorsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -545,13 +559,14 @@ QueryDelegatorValidatorsRequest.typeName = "cosmos.distribution.v1beta1.QueryDel
 QueryDelegatorValidatorsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegatorValidatorsRequest };
 /**
  * QueryDelegatorValidatorsResponse is the response type for the
  * Query/DelegatorValidators RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse
  */
-export class QueryDelegatorValidatorsResponse extends Message {
+class QueryDelegatorValidatorsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -580,13 +595,14 @@ QueryDelegatorValidatorsResponse.typeName = "cosmos.distribution.v1beta1.QueryDe
 QueryDelegatorValidatorsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validators", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryDelegatorValidatorsResponse };
 /**
  * QueryDelegatorWithdrawAddressRequest is the request type for the
  * Query/DelegatorWithdrawAddress RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressRequest
  */
-export class QueryDelegatorWithdrawAddressRequest extends Message {
+class QueryDelegatorWithdrawAddressRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -615,13 +631,14 @@ QueryDelegatorWithdrawAddressRequest.typeName = "cosmos.distribution.v1beta1.Que
 QueryDelegatorWithdrawAddressRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegatorWithdrawAddressRequest };
 /**
  * QueryDelegatorWithdrawAddressResponse is the response type for the
  * Query/DelegatorWithdrawAddress RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse
  */
-export class QueryDelegatorWithdrawAddressResponse extends Message {
+class QueryDelegatorWithdrawAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -650,13 +667,14 @@ QueryDelegatorWithdrawAddressResponse.typeName = "cosmos.distribution.v1beta1.Qu
 QueryDelegatorWithdrawAddressResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "withdraw_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegatorWithdrawAddressResponse };
 /**
  * QueryCommunityPoolRequest is the request type for the Query/CommunityPool RPC
  * method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryCommunityPoolRequest
  */
-export class QueryCommunityPoolRequest extends Message {
+class QueryCommunityPoolRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -677,13 +695,14 @@ export class QueryCommunityPoolRequest extends Message {
 QueryCommunityPoolRequest.runtime = proto3;
 QueryCommunityPoolRequest.typeName = "cosmos.distribution.v1beta1.QueryCommunityPoolRequest";
 QueryCommunityPoolRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryCommunityPoolRequest };
 /**
  * QueryCommunityPoolResponse is the response type for the Query/CommunityPool
  * RPC method.
  *
  * @generated from message cosmos.distribution.v1beta1.QueryCommunityPoolResponse
  */
-export class QueryCommunityPoolResponse extends Message {
+class QueryCommunityPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -712,4 +731,5 @@ QueryCommunityPoolResponse.typeName = "cosmos.distribution.v1beta1.QueryCommunit
 QueryCommunityPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { QueryCommunityPoolResponse };
 //# sourceMappingURL=query_pb.js.map

@@ -7,7 +7,7 @@ import { Grant, GrantAuthorization } from "./authz_pb.js";
  *
  * @generated from message cosmos.authz.v1beta1.QueryGrantsRequest
  */
-export class QueryGrantsRequest extends Message {
+class QueryGrantsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -47,12 +47,13 @@ QueryGrantsRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "msg_type_url", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryGrantsRequest };
 /**
  * QueryGrantsResponse is the response type for the Query/Authorizations RPC method.
  *
  * @generated from message cosmos.authz.v1beta1.QueryGrantsResponse
  */
-export class QueryGrantsResponse extends Message {
+class QueryGrantsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -82,12 +83,13 @@ QueryGrantsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "grants", kind: "message", T: Grant, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryGrantsResponse };
 /**
  * QueryGranterGrantsRequest is the request type for the Query/GranterGrants RPC method.
  *
  * @generated from message cosmos.authz.v1beta1.QueryGranterGrantsRequest
  */
-export class QueryGranterGrantsRequest extends Message {
+class QueryGranterGrantsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -115,12 +117,13 @@ QueryGranterGrantsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "granter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryGranterGrantsRequest };
 /**
  * QueryGranterGrantsResponse is the response type for the Query/GranterGrants RPC method.
  *
  * @generated from message cosmos.authz.v1beta1.QueryGranterGrantsResponse
  */
-export class QueryGranterGrantsResponse extends Message {
+class QueryGranterGrantsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -150,12 +153,13 @@ QueryGranterGrantsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "grants", kind: "message", T: GrantAuthorization, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryGranterGrantsResponse };
 /**
  * QueryGranteeGrantsRequest is the request type for the Query/IssuedGrants RPC method.
  *
  * @generated from message cosmos.authz.v1beta1.QueryGranteeGrantsRequest
  */
-export class QueryGranteeGrantsRequest extends Message {
+class QueryGranteeGrantsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -183,12 +187,13 @@ QueryGranteeGrantsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryGranteeGrantsRequest };
 /**
  * QueryGranteeGrantsResponse is the response type for the Query/GranteeGrants RPC method.
  *
  * @generated from message cosmos.authz.v1beta1.QueryGranteeGrantsResponse
  */
-export class QueryGranteeGrantsResponse extends Message {
+class QueryGranteeGrantsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -218,4 +223,5 @@ QueryGranteeGrantsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "grants", kind: "message", T: GrantAuthorization, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryGranteeGrantsResponse };
 //# sourceMappingURL=query_pb.js.map

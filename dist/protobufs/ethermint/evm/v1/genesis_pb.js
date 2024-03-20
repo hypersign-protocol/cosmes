@@ -9,7 +9,7 @@ import { Params, State } from "./evm_pb.js";
  *
  * @generated from message ethermint.evm.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -39,6 +39,7 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "accounts", kind: "message", T: GenesisAccount, repeated: true },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { GenesisState };
 /**
  * GenesisAccount defines an account to be initialized in the genesis state.
  * Its main difference between with Geth's GenesisAccount is that it uses a
@@ -46,7 +47,7 @@ GenesisState.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ethermint.evm.v1.GenesisAccount
  */
-export class GenesisAccount extends Message {
+class GenesisAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -89,4 +90,5 @@ GenesisAccount.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "storage", kind: "message", T: State, repeated: true },
 ]);
+export { GenesisAccount };
 //# sourceMappingURL=genesis_pb.js.map

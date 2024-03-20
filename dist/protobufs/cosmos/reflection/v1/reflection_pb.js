@@ -8,7 +8,7 @@ import { FileDescriptorProto, Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.reflection.v1.FileDescriptorsRequest
  */
-export class FileDescriptorsRequest extends Message {
+class FileDescriptorsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -29,12 +29,13 @@ export class FileDescriptorsRequest extends Message {
 FileDescriptorsRequest.runtime = proto3;
 FileDescriptorsRequest.typeName = "cosmos.reflection.v1.FileDescriptorsRequest";
 FileDescriptorsRequest.fields = proto3.util.newFieldList(() => []);
+export { FileDescriptorsRequest };
 /**
  * FileDescriptorsResponse is the Query/FileDescriptors response type.
  *
  * @generated from message cosmos.reflection.v1.FileDescriptorsResponse
  */
-export class FileDescriptorsResponse extends Message {
+class FileDescriptorsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -63,4 +64,5 @@ FileDescriptorsResponse.typeName = "cosmos.reflection.v1.FileDescriptorsResponse
 FileDescriptorsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "files", kind: "message", T: FileDescriptorProto, repeated: true },
 ]);
+export { FileDescriptorsResponse };
 //# sourceMappingURL=reflection_pb.js.map

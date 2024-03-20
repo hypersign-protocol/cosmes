@@ -89,7 +89,7 @@ proto3.util.setEnumType(BroadcastMode, "cosmos.tx.v1beta1.BroadcastMode", [
  *
  * @generated from message cosmos.tx.v1beta1.GetTxsEventRequest
  */
-export class GetTxsEventRequest extends Message {
+class GetTxsEventRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -139,13 +139,14 @@ GetTxsEventRequest.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "page", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "limit", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GetTxsEventRequest };
 /**
  * GetTxsEventResponse is the response type for the Service.TxsByEvents
  * RPC method.
  *
  * @generated from message cosmos.tx.v1beta1.GetTxsEventResponse
  */
-export class GetTxsEventResponse extends Message {
+class GetTxsEventResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -189,13 +190,14 @@ GetTxsEventResponse.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "pagination", kind: "message", T: PageResponse },
     { no: 4, name: "total", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GetTxsEventResponse };
 /**
  * BroadcastTxRequest is the request type for the Service.BroadcastTxRequest
  * RPC method.
  *
  * @generated from message cosmos.tx.v1beta1.BroadcastTxRequest
  */
-export class BroadcastTxRequest extends Message {
+class BroadcastTxRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -229,13 +231,14 @@ BroadcastTxRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "mode", kind: "enum", T: proto3.getEnumType(BroadcastMode) },
 ]);
+export { BroadcastTxRequest };
 /**
  * BroadcastTxResponse is the response type for the
  * Service.BroadcastTx method.
  *
  * @generated from message cosmos.tx.v1beta1.BroadcastTxResponse
  */
-export class BroadcastTxResponse extends Message {
+class BroadcastTxResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -258,13 +261,14 @@ BroadcastTxResponse.typeName = "cosmos.tx.v1beta1.BroadcastTxResponse";
 BroadcastTxResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx_response", kind: "message", T: TxResponse },
 ]);
+export { BroadcastTxResponse };
 /**
  * SimulateRequest is the request type for the Service.Simulate
  * RPC method.
  *
  * @generated from message cosmos.tx.v1beta1.SimulateRequest
  */
-export class SimulateRequest extends Message {
+class SimulateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -296,13 +300,14 @@ SimulateRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx", kind: "message", T: Tx },
     { no: 2, name: "tx_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { SimulateRequest };
 /**
  * SimulateResponse is the response type for the
  * Service.SimulateRPC method.
  *
  * @generated from message cosmos.tx.v1beta1.SimulateResponse
  */
-export class SimulateResponse extends Message {
+class SimulateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -326,13 +331,14 @@ SimulateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gas_info", kind: "message", T: GasInfo },
     { no: 2, name: "result", kind: "message", T: Result },
 ]);
+export { SimulateResponse };
 /**
  * GetTxRequest is the request type for the Service.GetTx
  * RPC method.
  *
  * @generated from message cosmos.tx.v1beta1.GetTxRequest
  */
-export class GetTxRequest extends Message {
+class GetTxRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -361,12 +367,13 @@ GetTxRequest.typeName = "cosmos.tx.v1beta1.GetTxRequest";
 GetTxRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GetTxRequest };
 /**
  * GetTxResponse is the response type for the Service.GetTx method.
  *
  * @generated from message cosmos.tx.v1beta1.GetTxResponse
  */
-export class GetTxResponse extends Message {
+class GetTxResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -390,6 +397,7 @@ GetTxResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx", kind: "message", T: Tx },
     { no: 2, name: "tx_response", kind: "message", T: TxResponse },
 ]);
+export { GetTxResponse };
 /**
  * GetBlockWithTxsRequest is the request type for the Service.GetBlockWithTxs
  * RPC method.
@@ -398,7 +406,7 @@ GetTxResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.GetBlockWithTxsRequest
  */
-export class GetBlockWithTxsRequest extends Message {
+class GetBlockWithTxsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -428,6 +436,7 @@ GetBlockWithTxsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { GetBlockWithTxsRequest };
 /**
  * GetBlockWithTxsResponse is the response type for the Service.GetBlockWithTxs method.
  *
@@ -435,7 +444,7 @@ GetBlockWithTxsRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.GetBlockWithTxsResponse
  */
-export class GetBlockWithTxsResponse extends Message {
+class GetBlockWithTxsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -467,6 +476,7 @@ GetBlockWithTxsResponse.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "block", kind: "message", T: Block },
     { no: 4, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { GetBlockWithTxsResponse };
 /**
  * TxDecodeRequest is the request type for the Service.TxDecode
  * RPC method.
@@ -475,7 +485,7 @@ GetBlockWithTxsResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.TxDecodeRequest
  */
-export class TxDecodeRequest extends Message {
+class TxDecodeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -504,6 +514,7 @@ TxDecodeRequest.typeName = "cosmos.tx.v1beta1.TxDecodeRequest";
 TxDecodeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { TxDecodeRequest };
 /**
  * TxDecodeResponse is the response type for the
  * Service.TxDecode method.
@@ -512,7 +523,7 @@ TxDecodeRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.TxDecodeResponse
  */
-export class TxDecodeResponse extends Message {
+class TxDecodeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -535,6 +546,7 @@ TxDecodeResponse.typeName = "cosmos.tx.v1beta1.TxDecodeResponse";
 TxDecodeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx", kind: "message", T: Tx },
 ]);
+export { TxDecodeResponse };
 /**
  * TxEncodeRequest is the request type for the Service.TxEncode
  * RPC method.
@@ -543,7 +555,7 @@ TxDecodeResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.TxEncodeRequest
  */
-export class TxEncodeRequest extends Message {
+class TxEncodeRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -566,6 +578,7 @@ TxEncodeRequest.typeName = "cosmos.tx.v1beta1.TxEncodeRequest";
 TxEncodeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx", kind: "message", T: Tx },
 ]);
+export { TxEncodeRequest };
 /**
  * TxEncodeResponse is the response type for the
  * Service.TxEncode method.
@@ -574,7 +587,7 @@ TxEncodeRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.TxEncodeResponse
  */
-export class TxEncodeResponse extends Message {
+class TxEncodeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -603,6 +616,7 @@ TxEncodeResponse.typeName = "cosmos.tx.v1beta1.TxEncodeResponse";
 TxEncodeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { TxEncodeResponse };
 /**
  * TxEncodeAminoRequest is the request type for the Service.TxEncodeAmino
  * RPC method.
@@ -611,7 +625,7 @@ TxEncodeResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.TxEncodeAminoRequest
  */
-export class TxEncodeAminoRequest extends Message {
+class TxEncodeAminoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -638,6 +652,7 @@ TxEncodeAminoRequest.typeName = "cosmos.tx.v1beta1.TxEncodeAminoRequest";
 TxEncodeAminoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amino_json", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TxEncodeAminoRequest };
 /**
  * TxEncodeAminoResponse is the response type for the Service.TxEncodeAmino
  * RPC method.
@@ -646,7 +661,7 @@ TxEncodeAminoRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.TxEncodeAminoResponse
  */
-export class TxEncodeAminoResponse extends Message {
+class TxEncodeAminoResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -673,6 +688,7 @@ TxEncodeAminoResponse.typeName = "cosmos.tx.v1beta1.TxEncodeAminoResponse";
 TxEncodeAminoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amino_binary", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { TxEncodeAminoResponse };
 /**
  * TxDecodeAminoRequest is the request type for the Service.TxDecodeAmino
  * RPC method.
@@ -681,7 +697,7 @@ TxEncodeAminoResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.TxDecodeAminoRequest
  */
-export class TxDecodeAminoRequest extends Message {
+class TxDecodeAminoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -708,6 +724,7 @@ TxDecodeAminoRequest.typeName = "cosmos.tx.v1beta1.TxDecodeAminoRequest";
 TxDecodeAminoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amino_binary", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { TxDecodeAminoRequest };
 /**
  * TxDecodeAminoResponse is the response type for the Service.TxDecodeAmino
  * RPC method.
@@ -716,7 +733,7 @@ TxDecodeAminoRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.TxDecodeAminoResponse
  */
-export class TxDecodeAminoResponse extends Message {
+class TxDecodeAminoResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -743,4 +760,5 @@ TxDecodeAminoResponse.typeName = "cosmos.tx.v1beta1.TxDecodeAminoResponse";
 TxDecodeAminoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amino_json", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TxDecodeAminoResponse };
 //# sourceMappingURL=service_pb.js.map

@@ -7,7 +7,7 @@ import { PageRequest, PageResponse } from "../../base/query/v1beta1/pagination_p
  *
  * @generated from message cosmos.group.v1.QueryGroupInfoRequest
  */
-export class QueryGroupInfoRequest extends Message {
+class QueryGroupInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -36,12 +36,13 @@ QueryGroupInfoRequest.typeName = "cosmos.group.v1.QueryGroupInfoRequest";
 QueryGroupInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryGroupInfoRequest };
 /**
  * QueryGroupInfoResponse is the Query/GroupInfo response type.
  *
  * @generated from message cosmos.group.v1.QueryGroupInfoResponse
  */
-export class QueryGroupInfoResponse extends Message {
+class QueryGroupInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -64,12 +65,13 @@ QueryGroupInfoResponse.typeName = "cosmos.group.v1.QueryGroupInfoResponse";
 QueryGroupInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "info", kind: "message", T: GroupInfo },
 ]);
+export { QueryGroupInfoResponse };
 /**
  * QueryGroupPolicyInfoRequest is the Query/GroupPolicyInfo request type.
  *
  * @generated from message cosmos.group.v1.QueryGroupPolicyInfoRequest
  */
-export class QueryGroupPolicyInfoRequest extends Message {
+class QueryGroupPolicyInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -98,12 +100,13 @@ QueryGroupPolicyInfoRequest.typeName = "cosmos.group.v1.QueryGroupPolicyInfoRequ
 QueryGroupPolicyInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryGroupPolicyInfoRequest };
 /**
  * QueryGroupPolicyInfoResponse is the Query/GroupPolicyInfo response type.
  *
  * @generated from message cosmos.group.v1.QueryGroupPolicyInfoResponse
  */
-export class QueryGroupPolicyInfoResponse extends Message {
+class QueryGroupPolicyInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -126,12 +129,13 @@ QueryGroupPolicyInfoResponse.typeName = "cosmos.group.v1.QueryGroupPolicyInfoRes
 QueryGroupPolicyInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "info", kind: "message", T: GroupPolicyInfo },
 ]);
+export { QueryGroupPolicyInfoResponse };
 /**
  * QueryGroupMembersRequest is the Query/GroupMembers request type.
  *
  * @generated from message cosmos.group.v1.QueryGroupMembersRequest
  */
-export class QueryGroupMembersRequest extends Message {
+class QueryGroupMembersRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -161,12 +165,13 @@ QueryGroupMembersRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryGroupMembersRequest };
 /**
  * QueryGroupMembersResponse is the Query/GroupMembersResponse response type.
  *
  * @generated from message cosmos.group.v1.QueryGroupMembersResponse
  */
-export class QueryGroupMembersResponse extends Message {
+class QueryGroupMembersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -196,12 +201,13 @@ QueryGroupMembersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "members", kind: "message", T: GroupMember, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryGroupMembersResponse };
 /**
  * QueryGroupsByAdminRequest is the Query/GroupsByAdmin request type.
  *
  * @generated from message cosmos.group.v1.QueryGroupsByAdminRequest
  */
-export class QueryGroupsByAdminRequest extends Message {
+class QueryGroupsByAdminRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -231,12 +237,13 @@ QueryGroupsByAdminRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryGroupsByAdminRequest };
 /**
  * QueryGroupsByAdminResponse is the Query/GroupsByAdminResponse response type.
  *
  * @generated from message cosmos.group.v1.QueryGroupsByAdminResponse
  */
-export class QueryGroupsByAdminResponse extends Message {
+class QueryGroupsByAdminResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -266,12 +273,13 @@ QueryGroupsByAdminResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "groups", kind: "message", T: GroupInfo, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryGroupsByAdminResponse };
 /**
  * QueryGroupPoliciesByGroupRequest is the Query/GroupPoliciesByGroup request type.
  *
  * @generated from message cosmos.group.v1.QueryGroupPoliciesByGroupRequest
  */
-export class QueryGroupPoliciesByGroupRequest extends Message {
+class QueryGroupPoliciesByGroupRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -301,12 +309,13 @@ QueryGroupPoliciesByGroupRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryGroupPoliciesByGroupRequest };
 /**
  * QueryGroupPoliciesByGroupResponse is the Query/GroupPoliciesByGroup response type.
  *
  * @generated from message cosmos.group.v1.QueryGroupPoliciesByGroupResponse
  */
-export class QueryGroupPoliciesByGroupResponse extends Message {
+class QueryGroupPoliciesByGroupResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -336,12 +345,13 @@ QueryGroupPoliciesByGroupResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_policies", kind: "message", T: GroupPolicyInfo, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryGroupPoliciesByGroupResponse };
 /**
  * QueryGroupPoliciesByAdminRequest is the Query/GroupPoliciesByAdmin request type.
  *
  * @generated from message cosmos.group.v1.QueryGroupPoliciesByAdminRequest
  */
-export class QueryGroupPoliciesByAdminRequest extends Message {
+class QueryGroupPoliciesByAdminRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -371,12 +381,13 @@ QueryGroupPoliciesByAdminRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryGroupPoliciesByAdminRequest };
 /**
  * QueryGroupPoliciesByAdminResponse is the Query/GroupPoliciesByAdmin response type.
  *
  * @generated from message cosmos.group.v1.QueryGroupPoliciesByAdminResponse
  */
-export class QueryGroupPoliciesByAdminResponse extends Message {
+class QueryGroupPoliciesByAdminResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -406,12 +417,13 @@ QueryGroupPoliciesByAdminResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_policies", kind: "message", T: GroupPolicyInfo, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryGroupPoliciesByAdminResponse };
 /**
  * QueryProposalRequest is the Query/Proposal request type.
  *
  * @generated from message cosmos.group.v1.QueryProposalRequest
  */
-export class QueryProposalRequest extends Message {
+class QueryProposalRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -440,12 +452,13 @@ QueryProposalRequest.typeName = "cosmos.group.v1.QueryProposalRequest";
 QueryProposalRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryProposalRequest };
 /**
  * QueryProposalResponse is the Query/Proposal response type.
  *
  * @generated from message cosmos.group.v1.QueryProposalResponse
  */
-export class QueryProposalResponse extends Message {
+class QueryProposalResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -468,12 +481,13 @@ QueryProposalResponse.typeName = "cosmos.group.v1.QueryProposalResponse";
 QueryProposalResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal", kind: "message", T: Proposal },
 ]);
+export { QueryProposalResponse };
 /**
  * QueryProposalsByGroupPolicyRequest is the Query/ProposalByGroupPolicy request type.
  *
  * @generated from message cosmos.group.v1.QueryProposalsByGroupPolicyRequest
  */
-export class QueryProposalsByGroupPolicyRequest extends Message {
+class QueryProposalsByGroupPolicyRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -503,12 +517,13 @@ QueryProposalsByGroupPolicyRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryProposalsByGroupPolicyRequest };
 /**
  * QueryProposalsByGroupPolicyResponse is the Query/ProposalByGroupPolicy response type.
  *
  * @generated from message cosmos.group.v1.QueryProposalsByGroupPolicyResponse
  */
-export class QueryProposalsByGroupPolicyResponse extends Message {
+class QueryProposalsByGroupPolicyResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -538,12 +553,13 @@ QueryProposalsByGroupPolicyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposals", kind: "message", T: Proposal, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryProposalsByGroupPolicyResponse };
 /**
  * QueryVoteByProposalVoterRequest is the Query/VoteByProposalVoter request type.
  *
  * @generated from message cosmos.group.v1.QueryVoteByProposalVoterRequest
  */
-export class QueryVoteByProposalVoterRequest extends Message {
+class QueryVoteByProposalVoterRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -579,12 +595,13 @@ QueryVoteByProposalVoterRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "voter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryVoteByProposalVoterRequest };
 /**
  * QueryVoteByProposalVoterResponse is the Query/VoteByProposalVoter response type.
  *
  * @generated from message cosmos.group.v1.QueryVoteByProposalVoterResponse
  */
-export class QueryVoteByProposalVoterResponse extends Message {
+class QueryVoteByProposalVoterResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -607,12 +624,13 @@ QueryVoteByProposalVoterResponse.typeName = "cosmos.group.v1.QueryVoteByProposal
 QueryVoteByProposalVoterResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "vote", kind: "message", T: Vote },
 ]);
+export { QueryVoteByProposalVoterResponse };
 /**
  * QueryVotesByProposalRequest is the Query/VotesByProposal request type.
  *
  * @generated from message cosmos.group.v1.QueryVotesByProposalRequest
  */
-export class QueryVotesByProposalRequest extends Message {
+class QueryVotesByProposalRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -642,12 +660,13 @@ QueryVotesByProposalRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryVotesByProposalRequest };
 /**
  * QueryVotesByProposalResponse is the Query/VotesByProposal response type.
  *
  * @generated from message cosmos.group.v1.QueryVotesByProposalResponse
  */
-export class QueryVotesByProposalResponse extends Message {
+class QueryVotesByProposalResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -677,12 +696,13 @@ QueryVotesByProposalResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "votes", kind: "message", T: Vote, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryVotesByProposalResponse };
 /**
  * QueryVotesByVoterRequest is the Query/VotesByVoter request type.
  *
  * @generated from message cosmos.group.v1.QueryVotesByVoterRequest
  */
-export class QueryVotesByVoterRequest extends Message {
+class QueryVotesByVoterRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -712,12 +732,13 @@ QueryVotesByVoterRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "voter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryVotesByVoterRequest };
 /**
  * QueryVotesByVoterResponse is the Query/VotesByVoter response type.
  *
  * @generated from message cosmos.group.v1.QueryVotesByVoterResponse
  */
-export class QueryVotesByVoterResponse extends Message {
+class QueryVotesByVoterResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -747,12 +768,13 @@ QueryVotesByVoterResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "votes", kind: "message", T: Vote, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryVotesByVoterResponse };
 /**
  * QueryGroupsByMemberRequest is the Query/GroupsByMember request type.
  *
  * @generated from message cosmos.group.v1.QueryGroupsByMemberRequest
  */
-export class QueryGroupsByMemberRequest extends Message {
+class QueryGroupsByMemberRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -782,12 +804,13 @@ QueryGroupsByMemberRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryGroupsByMemberRequest };
 /**
  * QueryGroupsByMemberResponse is the Query/GroupsByMember response type.
  *
  * @generated from message cosmos.group.v1.QueryGroupsByMemberResponse
  */
-export class QueryGroupsByMemberResponse extends Message {
+class QueryGroupsByMemberResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -817,12 +840,13 @@ QueryGroupsByMemberResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "groups", kind: "message", T: GroupInfo, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryGroupsByMemberResponse };
 /**
  * QueryTallyResultRequest is the Query/TallyResult request type.
  *
  * @generated from message cosmos.group.v1.QueryTallyResultRequest
  */
-export class QueryTallyResultRequest extends Message {
+class QueryTallyResultRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -851,12 +875,13 @@ QueryTallyResultRequest.typeName = "cosmos.group.v1.QueryTallyResultRequest";
 QueryTallyResultRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryTallyResultRequest };
 /**
  * QueryTallyResultResponse is the Query/TallyResult response type.
  *
  * @generated from message cosmos.group.v1.QueryTallyResultResponse
  */
-export class QueryTallyResultResponse extends Message {
+class QueryTallyResultResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -879,6 +904,7 @@ QueryTallyResultResponse.typeName = "cosmos.group.v1.QueryTallyResultResponse";
 QueryTallyResultResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tally", kind: "message", T: TallyResult },
 ]);
+export { QueryTallyResultResponse };
 /**
  * QueryGroupsRequest is the Query/Groups request type.
  *
@@ -886,7 +912,7 @@ QueryTallyResultResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.group.v1.QueryGroupsRequest
  */
-export class QueryGroupsRequest extends Message {
+class QueryGroupsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -909,6 +935,7 @@ QueryGroupsRequest.typeName = "cosmos.group.v1.QueryGroupsRequest";
 QueryGroupsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryGroupsRequest };
 /**
  * QueryGroupsResponse is the Query/Groups response type.
  *
@@ -916,7 +943,7 @@ QueryGroupsRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.group.v1.QueryGroupsResponse
  */
-export class QueryGroupsResponse extends Message {
+class QueryGroupsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -946,4 +973,5 @@ QueryGroupsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "groups", kind: "message", T: GroupInfo, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryGroupsResponse };
 //# sourceMappingURL=query_pb.js.map

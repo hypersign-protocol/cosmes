@@ -11,7 +11,7 @@ import { GenesisState } from "./genesis_pb.js";
  *
  * @generated from message injective.tokenfactory.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,12 +32,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "injective.tokenfactory.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message injective.tokenfactory.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -60,13 +61,14 @@ QueryParamsResponse.typeName = "injective.tokenfactory.v1beta1.QueryParamsRespon
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryDenomAuthorityMetadataRequest defines the request structure for the
  * DenomAuthorityMetadata gRPC query.
  *
  * @generated from message injective.tokenfactory.v1beta1.QueryDenomAuthorityMetadataRequest
  */
-export class QueryDenomAuthorityMetadataRequest extends Message {
+class QueryDenomAuthorityMetadataRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -98,13 +100,14 @@ QueryDenomAuthorityMetadataRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "creator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "sub_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomAuthorityMetadataRequest };
 /**
  * QueryDenomAuthorityMetadataResponse defines the response structure for the
  * DenomAuthorityMetadata gRPC query.
  *
  * @generated from message injective.tokenfactory.v1beta1.QueryDenomAuthorityMetadataResponse
  */
-export class QueryDenomAuthorityMetadataResponse extends Message {
+class QueryDenomAuthorityMetadataResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -127,13 +130,14 @@ QueryDenomAuthorityMetadataResponse.typeName = "injective.tokenfactory.v1beta1.Q
 QueryDenomAuthorityMetadataResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority_metadata", kind: "message", T: DenomAuthorityMetadata },
 ]);
+export { QueryDenomAuthorityMetadataResponse };
 /**
  * QueryDenomsFromCreatorRequest defines the request structure for the
  * DenomsFromCreator gRPC query.
  *
  * @generated from message injective.tokenfactory.v1beta1.QueryDenomsFromCreatorRequest
  */
-export class QueryDenomsFromCreatorRequest extends Message {
+class QueryDenomsFromCreatorRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -160,13 +164,14 @@ QueryDenomsFromCreatorRequest.typeName = "injective.tokenfactory.v1beta1.QueryDe
 QueryDenomsFromCreatorRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "creator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomsFromCreatorRequest };
 /**
  * QueryDenomsFromCreatorRequest defines the response structure for the
  * DenomsFromCreator gRPC query.
  *
  * @generated from message injective.tokenfactory.v1beta1.QueryDenomsFromCreatorResponse
  */
-export class QueryDenomsFromCreatorResponse extends Message {
+class QueryDenomsFromCreatorResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -193,13 +198,14 @@ QueryDenomsFromCreatorResponse.typeName = "injective.tokenfactory.v1beta1.QueryD
 QueryDenomsFromCreatorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denoms", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryDenomsFromCreatorResponse };
 /**
  * QueryModuleStateRequest is the request type for the
  * Query/TokenfactoryModuleState RPC method.
  *
  * @generated from message injective.tokenfactory.v1beta1.QueryModuleStateRequest
  */
-export class QueryModuleStateRequest extends Message {
+class QueryModuleStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -220,13 +226,14 @@ export class QueryModuleStateRequest extends Message {
 QueryModuleStateRequest.runtime = proto3;
 QueryModuleStateRequest.typeName = "injective.tokenfactory.v1beta1.QueryModuleStateRequest";
 QueryModuleStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryModuleStateRequest };
 /**
  * QueryModuleStateResponse is the response type for the
  * Query/TokenfactoryModuleState RPC method.
  *
  * @generated from message injective.tokenfactory.v1beta1.QueryModuleStateResponse
  */
-export class QueryModuleStateResponse extends Message {
+class QueryModuleStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -249,4 +256,5 @@ QueryModuleStateResponse.typeName = "injective.tokenfactory.v1beta1.QueryModuleS
 QueryModuleStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: GenesisState },
 ]);
+export { QueryModuleStateResponse };
 //# sourceMappingURL=query_pb.js.map

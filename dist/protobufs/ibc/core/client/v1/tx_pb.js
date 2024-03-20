@@ -10,7 +10,7 @@ import { Params } from "./client_pb.js";
  *
  * @generated from message ibc.core.client.v1.MsgCreateClient
  */
-export class MsgCreateClient extends Message {
+class MsgCreateClient extends Message {
     constructor(data) {
         super();
         /**
@@ -41,12 +41,13 @@ MsgCreateClient.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "consensus_state", kind: "message", T: Any },
     { no: 3, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateClient };
 /**
  * MsgCreateClientResponse defines the Msg/CreateClient response type.
  *
  * @generated from message ibc.core.client.v1.MsgCreateClientResponse
  */
-export class MsgCreateClientResponse extends Message {
+class MsgCreateClientResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -67,13 +68,14 @@ export class MsgCreateClientResponse extends Message {
 MsgCreateClientResponse.runtime = proto3;
 MsgCreateClientResponse.typeName = "ibc.core.client.v1.MsgCreateClientResponse";
 MsgCreateClientResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreateClientResponse };
 /**
  * MsgUpdateClient defines an sdk.Msg to update a IBC client state using
  * the given client message.
  *
  * @generated from message ibc.core.client.v1.MsgUpdateClient
  */
-export class MsgUpdateClient extends Message {
+class MsgUpdateClient extends Message {
     constructor(data) {
         super();
         /**
@@ -110,12 +112,13 @@ MsgUpdateClient.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "client_message", kind: "message", T: Any },
     { no: 3, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateClient };
 /**
  * MsgUpdateClientResponse defines the Msg/UpdateClient response type.
  *
  * @generated from message ibc.core.client.v1.MsgUpdateClientResponse
  */
-export class MsgUpdateClientResponse extends Message {
+class MsgUpdateClientResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -136,13 +139,14 @@ export class MsgUpdateClientResponse extends Message {
 MsgUpdateClientResponse.runtime = proto3;
 MsgUpdateClientResponse.typeName = "ibc.core.client.v1.MsgUpdateClientResponse";
 MsgUpdateClientResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateClientResponse };
 /**
  * MsgUpgradeClient defines an sdk.Msg to upgrade an IBC client to a new client
  * state
  *
  * @generated from message ibc.core.client.v1.MsgUpgradeClient
  */
-export class MsgUpgradeClient extends Message {
+class MsgUpgradeClient extends Message {
     constructor(data) {
         super();
         /**
@@ -194,12 +198,13 @@ MsgUpgradeClient.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "proof_upgrade_consensus_state", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 6, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpgradeClient };
 /**
  * MsgUpgradeClientResponse defines the Msg/UpgradeClient response type.
  *
  * @generated from message ibc.core.client.v1.MsgUpgradeClientResponse
  */
-export class MsgUpgradeClientResponse extends Message {
+class MsgUpgradeClientResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -220,6 +225,7 @@ export class MsgUpgradeClientResponse extends Message {
 MsgUpgradeClientResponse.runtime = proto3;
 MsgUpgradeClientResponse.typeName = "ibc.core.client.v1.MsgUpgradeClientResponse";
 MsgUpgradeClientResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpgradeClientResponse };
 /**
  * MsgSubmitMisbehaviour defines an sdk.Msg type that submits Evidence for
  * light client misbehaviour.
@@ -228,7 +234,7 @@ MsgUpgradeClientResponse.fields = proto3.util.newFieldList(() => []);
  * @generated from message ibc.core.client.v1.MsgSubmitMisbehaviour
  * @deprecated
  */
-export class MsgSubmitMisbehaviour extends Message {
+class MsgSubmitMisbehaviour extends Message {
     constructor(data) {
         super();
         /**
@@ -265,13 +271,14 @@ MsgSubmitMisbehaviour.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "misbehaviour", kind: "message", T: Any },
     { no: 3, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSubmitMisbehaviour };
 /**
  * MsgSubmitMisbehaviourResponse defines the Msg/SubmitMisbehaviour response
  * type.
  *
  * @generated from message ibc.core.client.v1.MsgSubmitMisbehaviourResponse
  */
-export class MsgSubmitMisbehaviourResponse extends Message {
+class MsgSubmitMisbehaviourResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -292,12 +299,13 @@ export class MsgSubmitMisbehaviourResponse extends Message {
 MsgSubmitMisbehaviourResponse.runtime = proto3;
 MsgSubmitMisbehaviourResponse.typeName = "ibc.core.client.v1.MsgSubmitMisbehaviourResponse";
 MsgSubmitMisbehaviourResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSubmitMisbehaviourResponse };
 /**
  * MsgRecoverClient defines the message used to recover a frozen or expired client.
  *
  * @generated from message ibc.core.client.v1.MsgRecoverClient
  */
-export class MsgRecoverClient extends Message {
+class MsgRecoverClient extends Message {
     constructor(data) {
         super();
         /**
@@ -341,12 +349,13 @@ MsgRecoverClient.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "substitute_client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgRecoverClient };
 /**
  * MsgRecoverClientResponse defines the Msg/RecoverClient response type.
  *
  * @generated from message ibc.core.client.v1.MsgRecoverClientResponse
  */
-export class MsgRecoverClientResponse extends Message {
+class MsgRecoverClientResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -367,12 +376,13 @@ export class MsgRecoverClientResponse extends Message {
 MsgRecoverClientResponse.runtime = proto3;
 MsgRecoverClientResponse.typeName = "ibc.core.client.v1.MsgRecoverClientResponse";
 MsgRecoverClientResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRecoverClientResponse };
 /**
  * MsgIBCSoftwareUpgrade defines the message used to schedule an upgrade of an IBC client using a v1 governance proposal
  *
  * @generated from message ibc.core.client.v1.MsgIBCSoftwareUpgrade
  */
-export class MsgIBCSoftwareUpgrade extends Message {
+class MsgIBCSoftwareUpgrade extends Message {
     constructor(data) {
         super();
         /**
@@ -403,12 +413,13 @@ MsgIBCSoftwareUpgrade.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "upgraded_client_state", kind: "message", T: Any },
     { no: 3, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgIBCSoftwareUpgrade };
 /**
  * MsgIBCSoftwareUpgradeResponse defines the Msg/IBCSoftwareUpgrade response type.
  *
  * @generated from message ibc.core.client.v1.MsgIBCSoftwareUpgradeResponse
  */
-export class MsgIBCSoftwareUpgradeResponse extends Message {
+class MsgIBCSoftwareUpgradeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -429,12 +440,13 @@ export class MsgIBCSoftwareUpgradeResponse extends Message {
 MsgIBCSoftwareUpgradeResponse.runtime = proto3;
 MsgIBCSoftwareUpgradeResponse.typeName = "ibc.core.client.v1.MsgIBCSoftwareUpgradeResponse";
 MsgIBCSoftwareUpgradeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgIBCSoftwareUpgradeResponse };
 /**
  * MsgUpdateParams defines the sdk.Msg type to update the client parameters.
  *
  * @generated from message ibc.core.client.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -464,12 +476,13 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the MsgUpdateParams response type.
  *
  * @generated from message ibc.core.client.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -490,4 +503,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "ibc.core.client.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

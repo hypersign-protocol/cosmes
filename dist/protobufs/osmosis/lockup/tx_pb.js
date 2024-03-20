@@ -8,7 +8,7 @@ import { PeriodLock } from "./lock_pb.js";
 /**
  * @generated from message osmosis.lockup.MsgLockTokens
  */
-export class MsgLockTokens extends Message {
+class MsgLockTokens extends Message {
     constructor(data) {
         super();
         /**
@@ -41,10 +41,11 @@ MsgLockTokens.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "duration", kind: "message", T: Duration },
     { no: 3, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgLockTokens };
 /**
  * @generated from message osmosis.lockup.MsgLockTokensResponse
  */
-export class MsgLockTokensResponse extends Message {
+class MsgLockTokensResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -71,10 +72,11 @@ MsgLockTokensResponse.typeName = "osmosis.lockup.MsgLockTokensResponse";
 MsgLockTokensResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgLockTokensResponse };
 /**
  * @generated from message osmosis.lockup.MsgBeginUnlockingAll
  */
-export class MsgBeginUnlockingAll extends Message {
+class MsgBeginUnlockingAll extends Message {
     constructor(data) {
         super();
         /**
@@ -101,10 +103,11 @@ MsgBeginUnlockingAll.typeName = "osmosis.lockup.MsgBeginUnlockingAll";
 MsgBeginUnlockingAll.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgBeginUnlockingAll };
 /**
  * @generated from message osmosis.lockup.MsgBeginUnlockingAllResponse
  */
-export class MsgBeginUnlockingAllResponse extends Message {
+class MsgBeginUnlockingAllResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -131,10 +134,11 @@ MsgBeginUnlockingAllResponse.typeName = "osmosis.lockup.MsgBeginUnlockingAllResp
 MsgBeginUnlockingAllResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "unlocks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { MsgBeginUnlockingAllResponse };
 /**
  * @generated from message osmosis.lockup.MsgBeginUnlocking
  */
-export class MsgBeginUnlocking extends Message {
+class MsgBeginUnlocking extends Message {
     constructor(data) {
         super();
         /**
@@ -173,10 +177,11 @@ MsgBeginUnlocking.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgBeginUnlocking };
 /**
  * @generated from message osmosis.lockup.MsgBeginUnlockingResponse
  */
-export class MsgBeginUnlockingResponse extends Message {
+class MsgBeginUnlockingResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -208,13 +213,14 @@ MsgBeginUnlockingResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 2, name: "unlockingLockID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgBeginUnlockingResponse };
 /**
  * MsgExtendLockup extends the existing lockup's duration.
  * The new duration is longer than the original.
  *
  * @generated from message osmosis.lockup.MsgExtendLockup
  */
-export class MsgExtendLockup extends Message {
+class MsgExtendLockup extends Message {
     constructor(data) {
         super();
         /**
@@ -247,10 +253,11 @@ MsgExtendLockup.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "duration", kind: "message", T: Duration },
 ]);
+export { MsgExtendLockup };
 /**
  * @generated from message osmosis.lockup.MsgExtendLockupResponse
  */
-export class MsgExtendLockupResponse extends Message {
+class MsgExtendLockupResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -277,13 +284,14 @@ MsgExtendLockupResponse.typeName = "osmosis.lockup.MsgExtendLockupResponse";
 MsgExtendLockupResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgExtendLockupResponse };
 /**
  * MsgForceUnlock unlocks locks immediately for
  * addresses registered via governance.
  *
  * @generated from message osmosis.lockup.MsgForceUnlock
  */
-export class MsgForceUnlock extends Message {
+class MsgForceUnlock extends Message {
     constructor(data) {
         super();
         /**
@@ -322,10 +330,11 @@ MsgForceUnlock.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgForceUnlock };
 /**
  * @generated from message osmosis.lockup.MsgForceUnlockResponse
  */
-export class MsgForceUnlockResponse extends Message {
+class MsgForceUnlockResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -352,10 +361,11 @@ MsgForceUnlockResponse.typeName = "osmosis.lockup.MsgForceUnlockResponse";
 MsgForceUnlockResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgForceUnlockResponse };
 /**
  * @generated from message osmosis.lockup.MsgSetRewardReceiverAddress
  */
-export class MsgSetRewardReceiverAddress extends Message {
+class MsgSetRewardReceiverAddress extends Message {
     constructor(data) {
         super();
         /**
@@ -392,10 +402,11 @@ MsgSetRewardReceiverAddress.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "lockID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "reward_receiver", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSetRewardReceiverAddress };
 /**
  * @generated from message osmosis.lockup.MsgSetRewardReceiverAddressResponse
  */
-export class MsgSetRewardReceiverAddressResponse extends Message {
+class MsgSetRewardReceiverAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -422,4 +433,5 @@ MsgSetRewardReceiverAddressResponse.typeName = "osmosis.lockup.MsgSetRewardRecei
 MsgSetRewardReceiverAddressResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgSetRewardReceiverAddressResponse };
 //# sourceMappingURL=tx_pb.js.map

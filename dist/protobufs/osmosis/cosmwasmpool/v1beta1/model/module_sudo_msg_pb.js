@@ -9,7 +9,7 @@ import { Coin } from "../../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.SwapExactAmountIn
  */
-export class SwapExactAmountIn extends Message {
+class SwapExactAmountIn extends Message {
     constructor(data) {
         super();
         /**
@@ -59,10 +59,11 @@ SwapExactAmountIn.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "token_out_min_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "swap_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SwapExactAmountIn };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.SwapExactAmountInSudoMsg
  */
-export class SwapExactAmountInSudoMsg extends Message {
+class SwapExactAmountInSudoMsg extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -85,10 +86,11 @@ SwapExactAmountInSudoMsg.typeName = "osmosis.cosmwasmpool.v1beta1.SwapExactAmoun
 SwapExactAmountInSudoMsg.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "swap_exact_amount_in", kind: "message", T: SwapExactAmountIn },
 ]);
+export { SwapExactAmountInSudoMsg };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.SwapExactAmountInSudoMsgResponse
  */
-export class SwapExactAmountInSudoMsgResponse extends Message {
+class SwapExactAmountInSudoMsgResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -117,12 +119,13 @@ SwapExactAmountInSudoMsgResponse.typeName = "osmosis.cosmwasmpool.v1beta1.SwapEx
 SwapExactAmountInSudoMsgResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SwapExactAmountInSudoMsgResponse };
 /**
  * ===================== SwapExactAmountOut
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.SwapExactAmountOut
  */
-export class SwapExactAmountOut extends Message {
+class SwapExactAmountOut extends Message {
     constructor(data) {
         super();
         /**
@@ -172,10 +175,11 @@ SwapExactAmountOut.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "token_in_max_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "swap_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SwapExactAmountOut };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.SwapExactAmountOutSudoMsg
  */
-export class SwapExactAmountOutSudoMsg extends Message {
+class SwapExactAmountOutSudoMsg extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -198,10 +202,11 @@ SwapExactAmountOutSudoMsg.typeName = "osmosis.cosmwasmpool.v1beta1.SwapExactAmou
 SwapExactAmountOutSudoMsg.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "swap_exact_amount_out", kind: "message", T: SwapExactAmountOut },
 ]);
+export { SwapExactAmountOutSudoMsg };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.SwapExactAmountOutSudoMsgResponse
  */
-export class SwapExactAmountOutSudoMsgResponse extends Message {
+class SwapExactAmountOutSudoMsgResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -230,4 +235,5 @@ SwapExactAmountOutSudoMsgResponse.typeName = "osmosis.cosmwasmpool.v1beta1.SwapE
 SwapExactAmountOutSudoMsgResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SwapExactAmountOutSudoMsgResponse };
 //# sourceMappingURL=module_sudo_msg_pb.js.map

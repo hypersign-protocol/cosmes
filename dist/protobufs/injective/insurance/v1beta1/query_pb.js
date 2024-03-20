@@ -12,7 +12,7 @@ import { GenesisState } from "./genesis_pb.js";
  *
  * @generated from message injective.insurance.v1beta1.QueryInsuranceParamsRequest
  */
-export class QueryInsuranceParamsRequest extends Message {
+class QueryInsuranceParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -33,13 +33,14 @@ export class QueryInsuranceParamsRequest extends Message {
 QueryInsuranceParamsRequest.runtime = proto3;
 QueryInsuranceParamsRequest.typeName = "injective.insurance.v1beta1.QueryInsuranceParamsRequest";
 QueryInsuranceParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryInsuranceParamsRequest };
 /**
  * QueryInsuranceParamsRequest is the response type for the
  * Query/InsuranceParams RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryInsuranceParamsResponse
  */
-export class QueryInsuranceParamsResponse extends Message {
+class QueryInsuranceParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -62,13 +63,14 @@ QueryInsuranceParamsResponse.typeName = "injective.insurance.v1beta1.QueryInsura
 QueryInsuranceParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryInsuranceParamsResponse };
 /**
  * QueryInsuranceFundRequest is the request type for the Query/InsuranceFunds
  * RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryInsuranceFundRequest
  */
-export class QueryInsuranceFundRequest extends Message {
+class QueryInsuranceFundRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -97,13 +99,14 @@ QueryInsuranceFundRequest.typeName = "injective.insurance.v1beta1.QueryInsurance
 QueryInsuranceFundRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryInsuranceFundRequest };
 /**
  * QueryInsuranceFundResponse is the response type for the Query/InsuranceFund
  * RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryInsuranceFundResponse
  */
-export class QueryInsuranceFundResponse extends Message {
+class QueryInsuranceFundResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -126,13 +129,14 @@ QueryInsuranceFundResponse.typeName = "injective.insurance.v1beta1.QueryInsuranc
 QueryInsuranceFundResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fund", kind: "message", T: InsuranceFund },
 ]);
+export { QueryInsuranceFundResponse };
 /**
  * QueryInsuranceFundsRequest is the request type for the Query/InsuranceFunds
  * RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryInsuranceFundsRequest
  */
-export class QueryInsuranceFundsRequest extends Message {
+class QueryInsuranceFundsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -153,13 +157,14 @@ export class QueryInsuranceFundsRequest extends Message {
 QueryInsuranceFundsRequest.runtime = proto3;
 QueryInsuranceFundsRequest.typeName = "injective.insurance.v1beta1.QueryInsuranceFundsRequest";
 QueryInsuranceFundsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryInsuranceFundsRequest };
 /**
  * QueryInsuranceFundsResponse is the response type for the Query/InsuranceFunds
  * RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryInsuranceFundsResponse
  */
-export class QueryInsuranceFundsResponse extends Message {
+class QueryInsuranceFundsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -186,13 +191,14 @@ QueryInsuranceFundsResponse.typeName = "injective.insurance.v1beta1.QueryInsuran
 QueryInsuranceFundsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "funds", kind: "message", T: InsuranceFund, repeated: true },
 ]);
+export { QueryInsuranceFundsResponse };
 /**
  * QueryEstimatedRedemptionsRequest is the request type for the
  * Query/EstimatedRedemptions RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryEstimatedRedemptionsRequest
  */
-export class QueryEstimatedRedemptionsRequest extends Message {
+class QueryEstimatedRedemptionsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -224,13 +230,14 @@ QueryEstimatedRedemptionsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "marketId", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryEstimatedRedemptionsRequest };
 /**
  * QueryEstimatedRedemptionsResponse is the response type for the
  * Query/EstimatedRedemptions RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryEstimatedRedemptionsResponse
  */
-export class QueryEstimatedRedemptionsResponse extends Message {
+class QueryEstimatedRedemptionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -257,13 +264,14 @@ QueryEstimatedRedemptionsResponse.typeName = "injective.insurance.v1beta1.QueryE
 QueryEstimatedRedemptionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryEstimatedRedemptionsResponse };
 /**
  * QueryPendingRedemptionsRequest is the request type for the
  * Query/PendingRedemptions RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryPendingRedemptionsRequest
  */
-export class QueryPendingRedemptionsRequest extends Message {
+class QueryPendingRedemptionsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -295,13 +303,14 @@ QueryPendingRedemptionsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "marketId", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryPendingRedemptionsRequest };
 /**
  * QueryPendingRedemptionsResponse is the response type for the
  * Query/PendingRedemptions RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryPendingRedemptionsResponse
  */
-export class QueryPendingRedemptionsResponse extends Message {
+class QueryPendingRedemptionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -328,13 +337,14 @@ QueryPendingRedemptionsResponse.typeName = "injective.insurance.v1beta1.QueryPen
 QueryPendingRedemptionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryPendingRedemptionsResponse };
 /**
  * QueryModuleStateRequest is the request type for the
  * Query/InsuranceModuleState RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryModuleStateRequest
  */
-export class QueryModuleStateRequest extends Message {
+class QueryModuleStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -355,13 +365,14 @@ export class QueryModuleStateRequest extends Message {
 QueryModuleStateRequest.runtime = proto3;
 QueryModuleStateRequest.typeName = "injective.insurance.v1beta1.QueryModuleStateRequest";
 QueryModuleStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryModuleStateRequest };
 /**
  * QueryModuleStateResponse is the response type for the
  * Query/InsuranceModuleState RPC method.
  *
  * @generated from message injective.insurance.v1beta1.QueryModuleStateResponse
  */
-export class QueryModuleStateResponse extends Message {
+class QueryModuleStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -384,4 +395,5 @@ QueryModuleStateResponse.typeName = "injective.insurance.v1beta1.QueryModuleStat
 QueryModuleStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: GenesisState },
 ]);
+export { QueryModuleStateResponse };
 //# sourceMappingURL=query_pb.js.map

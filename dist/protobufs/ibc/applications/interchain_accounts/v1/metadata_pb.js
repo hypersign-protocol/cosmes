@@ -9,7 +9,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ibc.applications.interchain_accounts.v1.Metadata
  */
-export class Metadata extends Message {
+class Metadata extends Message {
     constructor(data) {
         super();
         /**
@@ -74,4 +74,5 @@ Metadata.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "encoding", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "tx_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Metadata };
 //# sourceMappingURL=metadata_pb.js.map

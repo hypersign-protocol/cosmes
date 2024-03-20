@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ibc.lightclients.wasm.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -37,12 +37,13 @@ GenesisState.typeName = "ibc.lightclients.wasm.v1.GenesisState";
 GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contracts", kind: "message", T: Contract, repeated: true },
 ]);
+export { GenesisState };
 /**
  * Contract stores contract code
  *
  * @generated from message ibc.lightclients.wasm.v1.Contract
  */
-export class Contract extends Message {
+class Contract extends Message {
     constructor(data) {
         super();
         /**
@@ -71,4 +72,5 @@ Contract.typeName = "ibc.lightclients.wasm.v1.Contract";
 Contract.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { Contract };
 //# sourceMappingURL=genesis_pb.js.map

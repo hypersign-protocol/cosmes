@@ -10,7 +10,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message tendermint.version.App
  */
-export class App extends Message {
+class App extends Message {
     constructor(data) {
         super();
         /**
@@ -42,6 +42,7 @@ App.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "protocol", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "software", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { App };
 /**
  * Consensus captures the consensus rules for processing a block in the blockchain,
  * including all blockchain data structures and the rules of the application's
@@ -49,7 +50,7 @@ App.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message tendermint.version.Consensus
  */
-export class Consensus extends Message {
+class Consensus extends Message {
     constructor(data) {
         super();
         /**
@@ -81,4 +82,5 @@ Consensus.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "block", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "app", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Consensus };
 //# sourceMappingURL=types_pb.js.map

@@ -10,7 +10,7 @@ import { Input, Output, Params, SendEnabled } from "./bank_pb.js";
  *
  * @generated from message cosmos.bank.v1beta1.MsgSend
  */
-export class MsgSend extends Message {
+class MsgSend extends Message {
     constructor(data) {
         super();
         /**
@@ -47,12 +47,13 @@ MsgSend.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "to_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgSend };
 /**
  * MsgSendResponse defines the Msg/Send response type.
  *
  * @generated from message cosmos.bank.v1beta1.MsgSendResponse
  */
-export class MsgSendResponse extends Message {
+class MsgSendResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -73,12 +74,13 @@ export class MsgSendResponse extends Message {
 MsgSendResponse.runtime = proto3;
 MsgSendResponse.typeName = "cosmos.bank.v1beta1.MsgSendResponse";
 MsgSendResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSendResponse };
 /**
  * MsgMultiSend represents an arbitrary multi-in, multi-out send message.
  *
  * @generated from message cosmos.bank.v1beta1.MsgMultiSend
  */
-export class MsgMultiSend extends Message {
+class MsgMultiSend extends Message {
     constructor(data) {
         super();
         /**
@@ -113,12 +115,13 @@ MsgMultiSend.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "inputs", kind: "message", T: Input, repeated: true },
     { no: 2, name: "outputs", kind: "message", T: Output, repeated: true },
 ]);
+export { MsgMultiSend };
 /**
  * MsgMultiSendResponse defines the Msg/MultiSend response type.
  *
  * @generated from message cosmos.bank.v1beta1.MsgMultiSendResponse
  */
-export class MsgMultiSendResponse extends Message {
+class MsgMultiSendResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -139,6 +142,7 @@ export class MsgMultiSendResponse extends Message {
 MsgMultiSendResponse.runtime = proto3;
 MsgMultiSendResponse.typeName = "cosmos.bank.v1beta1.MsgMultiSendResponse";
 MsgMultiSendResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgMultiSendResponse };
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
  *
@@ -146,7 +150,7 @@ MsgMultiSendResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.bank.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -176,6 +180,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
@@ -184,7 +189,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -205,6 +210,7 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "cosmos.bank.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 /**
  * MsgSetSendEnabled is the Msg/SetSendEnabled request type.
  *
@@ -216,7 +222,7 @@ MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.bank.v1beta1.MsgSetSendEnabled
  */
-export class MsgSetSendEnabled extends Message {
+class MsgSetSendEnabled extends Message {
     constructor(data) {
         super();
         /**
@@ -260,6 +266,7 @@ MsgSetSendEnabled.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "send_enabled", kind: "message", T: SendEnabled, repeated: true },
     { no: 3, name: "use_default_for", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgSetSendEnabled };
 /**
  * MsgSetSendEnabledResponse defines the Msg/SetSendEnabled response type.
  *
@@ -267,7 +274,7 @@ MsgSetSendEnabled.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.MsgSetSendEnabledResponse
  */
-export class MsgSetSendEnabledResponse extends Message {
+class MsgSetSendEnabledResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -288,4 +295,5 @@ export class MsgSetSendEnabledResponse extends Message {
 MsgSetSendEnabledResponse.runtime = proto3;
 MsgSetSendEnabledResponse.typeName = "cosmos.bank.v1beta1.MsgSetSendEnabledResponse";
 MsgSetSendEnabledResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetSendEnabledResponse };
 //# sourceMappingURL=tx_pb.js.map

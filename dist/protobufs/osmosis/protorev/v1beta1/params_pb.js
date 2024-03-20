@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.protorev.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -44,4 +44,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 2, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

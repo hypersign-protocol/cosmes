@@ -11,7 +11,7 @@ import { PeriodLock } from "../../lockup/lock_pb.js";
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.Position
  */
-export class Position extends Message {
+class Position extends Message {
     constructor(data) {
         super();
         /**
@@ -64,6 +64,7 @@ Position.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "join_time", kind: "message", T: Timestamp },
     { no: 7, name: "liquidity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Position };
 /**
  * FullPositionBreakdown returns:
  * - the position itself
@@ -75,7 +76,7 @@ Position.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.FullPositionBreakdown
  */
-export class FullPositionBreakdown extends Message {
+class FullPositionBreakdown extends Message {
     constructor(data) {
         super();
         /**
@@ -115,10 +116,11 @@ FullPositionBreakdown.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "claimable_incentives", kind: "message", T: Coin, repeated: true },
     { no: 6, name: "forfeited_incentives", kind: "message", T: Coin, repeated: true },
 ]);
+export { FullPositionBreakdown };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.PositionWithPeriodLock
  */
-export class PositionWithPeriodLock extends Message {
+class PositionWithPeriodLock extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -142,4 +144,5 @@ PositionWithPeriodLock.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position", kind: "message", T: Position },
     { no: 2, name: "locks", kind: "message", T: PeriodLock },
 ]);
+export { PositionWithPeriodLock };
 //# sourceMappingURL=position_pb.js.map

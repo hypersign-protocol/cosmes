@@ -234,7 +234,7 @@ proto3.util.setEnumType(OrderMask, "injective.exchange.v1beta1.OrderMask", [
 /**
  * @generated from message injective.exchange.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -430,10 +430,11 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 24, name: "is_instant_derivative_market_launch_enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 25, name: "post_only_mode_height_threshold", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { Params };
 /**
  * @generated from message injective.exchange.v1beta1.MarketFeeMultiplier
  */
-export class MarketFeeMultiplier extends Message {
+class MarketFeeMultiplier extends Message {
     constructor(data) {
         super();
         /**
@@ -465,12 +466,13 @@ MarketFeeMultiplier.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "fee_multiplier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MarketFeeMultiplier };
 /**
  * An object describing a derivative market in the Injective Futures Protocol.
  *
  * @generated from message injective.exchange.v1beta1.DerivativeMarket
  */
-export class DerivativeMarket extends Message {
+class DerivativeMarket extends Message {
     constructor(data) {
         super();
         /**
@@ -610,12 +612,13 @@ DerivativeMarket.fields = proto3.util.newFieldList(() => [
     { no: 15, name: "min_price_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 16, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DerivativeMarket };
 /**
  * An object describing a binary options market in Injective Protocol.
  *
  * @generated from message injective.exchange.v1beta1.BinaryOptionsMarket
  */
-export class BinaryOptionsMarket extends Message {
+class BinaryOptionsMarket extends Message {
     constructor(data) {
         super();
         /**
@@ -757,10 +760,11 @@ BinaryOptionsMarket.fields = proto3.util.newFieldList(() => [
     { no: 16, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 17, name: "settlement_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { BinaryOptionsMarket };
 /**
  * @generated from message injective.exchange.v1beta1.ExpiryFuturesMarketInfo
  */
-export class ExpiryFuturesMarketInfo extends Message {
+class ExpiryFuturesMarketInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -821,10 +825,11 @@ ExpiryFuturesMarketInfo.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "expiration_twap_start_price_cumulative", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "settlement_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ExpiryFuturesMarketInfo };
 /**
  * @generated from message injective.exchange.v1beta1.PerpetualMarketInfo
  */
-export class PerpetualMarketInfo extends Message {
+class PerpetualMarketInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -884,10 +889,11 @@ PerpetualMarketInfo.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "next_funding_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 5, name: "funding_interval", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { PerpetualMarketInfo };
 /**
  * @generated from message injective.exchange.v1beta1.PerpetualMarketFunding
  */
-export class PerpetualMarketFunding extends Message {
+class PerpetualMarketFunding extends Message {
     constructor(data) {
         super();
         /**
@@ -929,10 +935,11 @@ PerpetualMarketFunding.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "cumulative_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "last_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { PerpetualMarketFunding };
 /**
  * @generated from message injective.exchange.v1beta1.DerivativeMarketSettlementInfo
  */
-export class DerivativeMarketSettlementInfo extends Message {
+class DerivativeMarketSettlementInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -968,10 +975,11 @@ DerivativeMarketSettlementInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "settlement_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DerivativeMarketSettlementInfo };
 /**
  * @generated from message injective.exchange.v1beta1.NextFundingTimestamp
  */
-export class NextFundingTimestamp extends Message {
+class NextFundingTimestamp extends Message {
     constructor(data) {
         super();
         /**
@@ -998,10 +1006,11 @@ NextFundingTimestamp.typeName = "injective.exchange.v1beta1.NextFundingTimestamp
 NextFundingTimestamp.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "next_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { NextFundingTimestamp };
 /**
  * @generated from message injective.exchange.v1beta1.MidPriceAndTOB
  */
-export class MidPriceAndTOB extends Message {
+class MidPriceAndTOB extends Message {
     constructor(data) {
         super();
         /**
@@ -1044,12 +1053,13 @@ MidPriceAndTOB.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "best_buy_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "best_sell_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MidPriceAndTOB };
 /**
  * An object describing trade pair of two assets.
  *
  * @generated from message injective.exchange.v1beta1.SpotMarket
  */
-export class SpotMarket extends Message {
+class SpotMarket extends Message {
     constructor(data) {
         super();
         /**
@@ -1145,12 +1155,13 @@ SpotMarket.fields = proto3.util.newFieldList(() => [
     { no: 9, name: "min_price_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotMarket };
 /**
  * A subaccount's deposit for a given base currency
  *
  * @generated from message injective.exchange.v1beta1.Deposit
  */
-export class Deposit extends Message {
+class Deposit extends Message {
     constructor(data) {
         super();
         /**
@@ -1182,10 +1193,11 @@ Deposit.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "available_balance", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "total_balance", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Deposit };
 /**
  * @generated from message injective.exchange.v1beta1.SubaccountTradeNonce
  */
-export class SubaccountTradeNonce extends Message {
+class SubaccountTradeNonce extends Message {
     constructor(data) {
         super();
         /**
@@ -1212,10 +1224,11 @@ SubaccountTradeNonce.typeName = "injective.exchange.v1beta1.SubaccountTradeNonce
 SubaccountTradeNonce.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "nonce", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { SubaccountTradeNonce };
 /**
  * @generated from message injective.exchange.v1beta1.OrderInfo
  */
-export class OrderInfo extends Message {
+class OrderInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -1270,10 +1283,11 @@ OrderInfo.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "quantity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { OrderInfo };
 /**
  * @generated from message injective.exchange.v1beta1.SpotOrder
  */
-export class SpotOrder extends Message {
+class SpotOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1317,12 +1331,13 @@ SpotOrder.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "order_type", kind: "enum", T: proto3.getEnumType(OrderType) },
     { no: 4, name: "trigger_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotOrder };
 /**
  * A valid Spot limit order with Metadata.
  *
  * @generated from message injective.exchange.v1beta1.SpotLimitOrder
  */
-export class SpotLimitOrder extends Message {
+class SpotLimitOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1371,12 +1386,13 @@ SpotLimitOrder.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "trigger_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "order_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { SpotLimitOrder };
 /**
  * A valid Spot market order with Metadata.
  *
  * @generated from message injective.exchange.v1beta1.SpotMarketOrder
  */
-export class SpotMarketOrder extends Message {
+class SpotMarketOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1423,10 +1439,11 @@ SpotMarketOrder.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "order_type", kind: "enum", T: proto3.getEnumType(OrderType) },
     { no: 5, name: "trigger_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotMarketOrder };
 /**
  * @generated from message injective.exchange.v1beta1.DerivativeOrder
  */
-export class DerivativeOrder extends Message {
+class DerivativeOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1477,10 +1494,11 @@ DerivativeOrder.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "margin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "trigger_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DerivativeOrder };
 /**
  * @generated from message injective.exchange.v1beta1.SubaccountOrderbookMetadata
  */
-export class SubaccountOrderbookMetadata extends Message {
+class SubaccountOrderbookMetadata extends Message {
     constructor(data) {
         super();
         /**
@@ -1538,10 +1556,11 @@ SubaccountOrderbookMetadata.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "vanilla_conditional_order_count", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 6, name: "reduce_only_conditional_order_count", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { SubaccountOrderbookMetadata };
 /**
  * @generated from message injective.exchange.v1beta1.SubaccountOrder
  */
-export class SubaccountOrder extends Message {
+class SubaccountOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1582,10 +1601,11 @@ SubaccountOrder.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "quantity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "isReduceOnly", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { SubaccountOrder };
 /**
  * @generated from message injective.exchange.v1beta1.SubaccountOrderData
  */
-export class SubaccountOrderData extends Message {
+class SubaccountOrderData extends Message {
     constructor(data) {
         super();
         /**
@@ -1613,12 +1633,13 @@ SubaccountOrderData.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "order", kind: "message", T: SubaccountOrder },
     { no: 2, name: "order_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { SubaccountOrderData };
 /**
  * A valid Derivative limit order with Metadata.
  *
  * @generated from message injective.exchange.v1beta1.DerivativeLimitOrder
  */
-export class DerivativeLimitOrder extends Message {
+class DerivativeLimitOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1674,12 +1695,13 @@ DerivativeLimitOrder.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "trigger_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "order_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { DerivativeLimitOrder };
 /**
  * A valid Derivative market order with Metadata.
  *
  * @generated from message injective.exchange.v1beta1.DerivativeMarketOrder
  */
-export class DerivativeMarketOrder extends Message {
+class DerivativeMarketOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1731,10 +1753,11 @@ DerivativeMarketOrder.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "trigger_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "order_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { DerivativeMarketOrder };
 /**
  * @generated from message injective.exchange.v1beta1.Position
  */
-export class Position extends Message {
+class Position extends Message {
     constructor(data) {
         super();
         /**
@@ -1781,10 +1804,11 @@ Position.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "margin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "cumulative_funding_entry", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Position };
 /**
  * @generated from message injective.exchange.v1beta1.MarketOrderIndicator
  */
-export class MarketOrderIndicator extends Message {
+class MarketOrderIndicator extends Message {
     constructor(data) {
         super();
         /**
@@ -1818,10 +1842,11 @@ MarketOrderIndicator.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "isBuy", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MarketOrderIndicator };
 /**
  * @generated from message injective.exchange.v1beta1.TradeLog
  */
-export class TradeLog extends Message {
+class TradeLog extends Message {
     constructor(data) {
         super();
         /**
@@ -1880,10 +1905,11 @@ TradeLog.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "fee_recipient_address", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 7, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TradeLog };
 /**
  * @generated from message injective.exchange.v1beta1.PositionDelta
  */
-export class PositionDelta extends Message {
+class PositionDelta extends Message {
     constructor(data) {
         super();
         /**
@@ -1925,10 +1951,11 @@ PositionDelta.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "execution_margin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "execution_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PositionDelta };
 /**
  * @generated from message injective.exchange.v1beta1.DerivativeTradeLog
  */
-export class DerivativeTradeLog extends Message {
+class DerivativeTradeLog extends Message {
     constructor(data) {
         super();
         /**
@@ -1981,10 +2008,11 @@ DerivativeTradeLog.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "fee_recipient_address", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 7, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DerivativeTradeLog };
 /**
  * @generated from message injective.exchange.v1beta1.SubaccountPosition
  */
-export class SubaccountPosition extends Message {
+class SubaccountPosition extends Message {
     constructor(data) {
         super();
         /**
@@ -2012,10 +2040,11 @@ SubaccountPosition.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position", kind: "message", T: Position },
     { no: 2, name: "subaccount_id", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { SubaccountPosition };
 /**
  * @generated from message injective.exchange.v1beta1.SubaccountDeposit
  */
-export class SubaccountDeposit extends Message {
+class SubaccountDeposit extends Message {
     constructor(data) {
         super();
         /**
@@ -2043,10 +2072,11 @@ SubaccountDeposit.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "deposit", kind: "message", T: Deposit },
 ]);
+export { SubaccountDeposit };
 /**
  * @generated from message injective.exchange.v1beta1.DepositUpdate
  */
-export class DepositUpdate extends Message {
+class DepositUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -2078,10 +2108,11 @@ DepositUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "deposits", kind: "message", T: SubaccountDeposit, repeated: true },
 ]);
+export { DepositUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.PointsMultiplier
  */
-export class PointsMultiplier extends Message {
+class PointsMultiplier extends Message {
     constructor(data) {
         super();
         /**
@@ -2113,10 +2144,11 @@ PointsMultiplier.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "maker_points_multiplier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "taker_points_multiplier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PointsMultiplier };
 /**
  * @generated from message injective.exchange.v1beta1.TradingRewardCampaignBoostInfo
  */
-export class TradingRewardCampaignBoostInfo extends Message {
+class TradingRewardCampaignBoostInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -2158,10 +2190,11 @@ TradingRewardCampaignBoostInfo.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "boosted_derivative_market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 4, name: "derivative_market_multipliers", kind: "message", T: PointsMultiplier, repeated: true },
 ]);
+export { TradingRewardCampaignBoostInfo };
 /**
  * @generated from message injective.exchange.v1beta1.CampaignRewardPool
  */
-export class CampaignRewardPool extends Message {
+class CampaignRewardPool extends Message {
     constructor(data) {
         super();
         /**
@@ -2196,10 +2229,11 @@ CampaignRewardPool.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "start_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "max_campaign_rewards", kind: "message", T: Coin, repeated: true },
 ]);
+export { CampaignRewardPool };
 /**
  * @generated from message injective.exchange.v1beta1.TradingRewardCampaignInfo
  */
-export class TradingRewardCampaignInfo extends Message {
+class TradingRewardCampaignInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -2243,10 +2277,11 @@ TradingRewardCampaignInfo.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "trading_reward_boost_info", kind: "message", T: TradingRewardCampaignBoostInfo },
     { no: 4, name: "disqualified_market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { TradingRewardCampaignInfo };
 /**
  * @generated from message injective.exchange.v1beta1.FeeDiscountTierInfo
  */
-export class FeeDiscountTierInfo extends Message {
+class FeeDiscountTierInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -2288,10 +2323,11 @@ FeeDiscountTierInfo.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "staked_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "volume", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { FeeDiscountTierInfo };
 /**
  * @generated from message injective.exchange.v1beta1.FeeDiscountSchedule
  */
-export class FeeDiscountSchedule extends Message {
+class FeeDiscountSchedule extends Message {
     constructor(data) {
         super();
         /**
@@ -2346,10 +2382,11 @@ FeeDiscountSchedule.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "tier_infos", kind: "message", T: FeeDiscountTierInfo, repeated: true },
     { no: 5, name: "disqualified_market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { FeeDiscountSchedule };
 /**
  * @generated from message injective.exchange.v1beta1.FeeDiscountTierTTL
  */
-export class FeeDiscountTierTTL extends Message {
+class FeeDiscountTierTTL extends Message {
     constructor(data) {
         super();
         /**
@@ -2381,10 +2418,11 @@ FeeDiscountTierTTL.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tier", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "ttl_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { FeeDiscountTierTTL };
 /**
  * @generated from message injective.exchange.v1beta1.VolumeRecord
  */
-export class VolumeRecord extends Message {
+class VolumeRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -2416,10 +2454,11 @@ VolumeRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "maker_volume", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "taker_volume", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { VolumeRecord };
 /**
  * @generated from message injective.exchange.v1beta1.AccountRewards
  */
-export class AccountRewards extends Message {
+class AccountRewards extends Message {
     constructor(data) {
         super();
         /**
@@ -2451,10 +2490,11 @@ AccountRewards.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "rewards", kind: "message", T: Coin, repeated: true },
 ]);
+export { AccountRewards };
 /**
  * @generated from message injective.exchange.v1beta1.TradeRecords
  */
-export class TradeRecords extends Message {
+class TradeRecords extends Message {
     constructor(data) {
         super();
         /**
@@ -2486,10 +2526,11 @@ TradeRecords.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "latest_trade_records", kind: "message", T: TradeRecord, repeated: true },
 ]);
+export { TradeRecords };
 /**
  * @generated from message injective.exchange.v1beta1.SubaccountIDs
  */
-export class SubaccountIDs extends Message {
+class SubaccountIDs extends Message {
     constructor(data) {
         super();
         /**
@@ -2516,10 +2557,11 @@ SubaccountIDs.typeName = "injective.exchange.v1beta1.SubaccountIDs";
 SubaccountIDs.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_ids", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { SubaccountIDs };
 /**
  * @generated from message injective.exchange.v1beta1.TradeRecord
  */
-export class TradeRecord extends Message {
+class TradeRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -2556,10 +2598,11 @@ TradeRecord.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "quantity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TradeRecord };
 /**
  * @generated from message injective.exchange.v1beta1.Level
  */
-export class Level extends Message {
+class Level extends Message {
     constructor(data) {
         super();
         /**
@@ -2595,10 +2638,11 @@ Level.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "p", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "q", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Level };
 /**
  * @generated from message injective.exchange.v1beta1.AggregateSubaccountVolumeRecord
  */
-export class AggregateSubaccountVolumeRecord extends Message {
+class AggregateSubaccountVolumeRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -2630,10 +2674,11 @@ AggregateSubaccountVolumeRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_volumes", kind: "message", T: MarketVolume, repeated: true },
 ]);
+export { AggregateSubaccountVolumeRecord };
 /**
  * @generated from message injective.exchange.v1beta1.AggregateAccountVolumeRecord
  */
-export class AggregateAccountVolumeRecord extends Message {
+class AggregateAccountVolumeRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -2665,10 +2710,11 @@ AggregateAccountVolumeRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_volumes", kind: "message", T: MarketVolume, repeated: true },
 ]);
+export { AggregateAccountVolumeRecord };
 /**
  * @generated from message injective.exchange.v1beta1.MarketVolume
  */
-export class MarketVolume extends Message {
+class MarketVolume extends Message {
     constructor(data) {
         super();
         /**
@@ -2696,10 +2742,11 @@ MarketVolume.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "volume", kind: "message", T: VolumeRecord },
 ]);
+export { MarketVolume };
 /**
  * @generated from message injective.exchange.v1beta1.DenomDecimals
  */
-export class DenomDecimals extends Message {
+class DenomDecimals extends Message {
     constructor(data) {
         super();
         /**
@@ -2731,4 +2778,5 @@ DenomDecimals.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "decimals", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { DenomDecimals };
 //# sourceMappingURL=exchange_pb.js.map

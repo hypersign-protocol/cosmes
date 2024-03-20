@@ -9,7 +9,7 @@ import { PageRequest, PageResponse } from "../../../../cosmos/base/query/v1beta1
  *
  * @generated from message ibc.lightclients.wasm.v1.QueryChecksumsRequest
  */
-export class QueryChecksumsRequest extends Message {
+class QueryChecksumsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,12 +32,13 @@ QueryChecksumsRequest.typeName = "ibc.lightclients.wasm.v1.QueryChecksumsRequest
 QueryChecksumsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryChecksumsRequest };
 /**
  * QueryChecksumsResponse is the response type for the Query/Checksums RPC method.
  *
  * @generated from message ibc.lightclients.wasm.v1.QueryChecksumsResponse
  */
-export class QueryChecksumsResponse extends Message {
+class QueryChecksumsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -67,12 +68,13 @@ QueryChecksumsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "checksums", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryChecksumsResponse };
 /**
  * QueryCodeRequest is the request type for the Query/Code RPC method.
  *
  * @generated from message ibc.lightclients.wasm.v1.QueryCodeRequest
  */
-export class QueryCodeRequest extends Message {
+class QueryCodeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -101,12 +103,13 @@ QueryCodeRequest.typeName = "ibc.lightclients.wasm.v1.QueryCodeRequest";
 QueryCodeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "checksum", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCodeRequest };
 /**
  * QueryCodeResponse is the response type for the Query/Code RPC method.
  *
  * @generated from message ibc.lightclients.wasm.v1.QueryCodeResponse
  */
-export class QueryCodeResponse extends Message {
+class QueryCodeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -133,4 +136,5 @@ QueryCodeResponse.typeName = "ibc.lightclients.wasm.v1.QueryCodeResponse";
 QueryCodeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryCodeResponse };
 //# sourceMappingURL=query_pb.js.map

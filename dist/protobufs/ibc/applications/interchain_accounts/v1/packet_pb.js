@@ -34,7 +34,7 @@ proto3.util.setEnumType(Type, "ibc.applications.interchain_accounts.v1.Type", [
  *
  * @generated from message ibc.applications.interchain_accounts.v1.InterchainAccountPacketData
  */
-export class InterchainAccountPacketData extends Message {
+class InterchainAccountPacketData extends Message {
     constructor(data) {
         super();
         /**
@@ -71,12 +71,13 @@ InterchainAccountPacketData.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "memo", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { InterchainAccountPacketData };
 /**
  * CosmosTx contains a list of sdk.Msg's. It should be used when sending transactions to an SDK host chain.
  *
  * @generated from message ibc.applications.interchain_accounts.v1.CosmosTx
  */
-export class CosmosTx extends Message {
+class CosmosTx extends Message {
     constructor(data) {
         super();
         /**
@@ -103,4 +104,5 @@ CosmosTx.typeName = "ibc.applications.interchain_accounts.v1.CosmosTx";
 CosmosTx.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "messages", kind: "message", T: Any, repeated: true },
 ]);
+export { CosmosTx };
 //# sourceMappingURL=packet_pb.js.map

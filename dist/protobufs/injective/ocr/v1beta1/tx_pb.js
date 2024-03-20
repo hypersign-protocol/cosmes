@@ -8,7 +8,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message injective.ocr.v1beta1.MsgCreateFeed
  */
-export class MsgCreateFeed extends Message {
+class MsgCreateFeed extends Message {
     constructor(data) {
         super();
         /**
@@ -36,10 +36,11 @@ MsgCreateFeed.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "config", kind: "message", T: FeedConfig },
 ]);
+export { MsgCreateFeed };
 /**
  * @generated from message injective.ocr.v1beta1.MsgCreateFeedResponse
  */
-export class MsgCreateFeedResponse extends Message {
+class MsgCreateFeedResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -60,10 +61,11 @@ export class MsgCreateFeedResponse extends Message {
 MsgCreateFeedResponse.runtime = proto3;
 MsgCreateFeedResponse.typeName = "injective.ocr.v1beta1.MsgCreateFeedResponse";
 MsgCreateFeedResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreateFeedResponse };
 /**
  * @generated from message injective.ocr.v1beta1.MsgUpdateFeed
  */
-export class MsgUpdateFeed extends Message {
+class MsgUpdateFeed extends Message {
     constructor(data) {
         super();
         /**
@@ -147,10 +149,11 @@ MsgUpdateFeed.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "feed_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "billing_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateFeed };
 /**
  * @generated from message injective.ocr.v1beta1.MsgUpdateFeedResponse
  */
-export class MsgUpdateFeedResponse extends Message {
+class MsgUpdateFeedResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -171,10 +174,11 @@ export class MsgUpdateFeedResponse extends Message {
 MsgUpdateFeedResponse.runtime = proto3;
 MsgUpdateFeedResponse.typeName = "injective.ocr.v1beta1.MsgUpdateFeedResponse";
 MsgUpdateFeedResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateFeedResponse };
 /**
  * @generated from message injective.ocr.v1beta1.MsgTransmit
  */
-export class MsgTransmit extends Message {
+class MsgTransmit extends Message {
     constructor(data) {
         super();
         /**
@@ -234,10 +238,11 @@ MsgTransmit.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "report", kind: "message", T: Report },
     { no: 8, name: "signatures", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { MsgTransmit };
 /**
  * @generated from message injective.ocr.v1beta1.MsgTransmitResponse
  */
-export class MsgTransmitResponse extends Message {
+class MsgTransmitResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -258,10 +263,11 @@ export class MsgTransmitResponse extends Message {
 MsgTransmitResponse.runtime = proto3;
 MsgTransmitResponse.typeName = "injective.ocr.v1beta1.MsgTransmitResponse";
 MsgTransmitResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgTransmitResponse };
 /**
  * @generated from message injective.ocr.v1beta1.MsgFundFeedRewardPool
  */
-export class MsgFundFeedRewardPool extends Message {
+class MsgFundFeedRewardPool extends Message {
     constructor(data) {
         super();
         /**
@@ -294,10 +300,11 @@ MsgFundFeedRewardPool.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgFundFeedRewardPool };
 /**
  * @generated from message injective.ocr.v1beta1.MsgFundFeedRewardPoolResponse
  */
-export class MsgFundFeedRewardPoolResponse extends Message {
+class MsgFundFeedRewardPoolResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -318,10 +325,11 @@ export class MsgFundFeedRewardPoolResponse extends Message {
 MsgFundFeedRewardPoolResponse.runtime = proto3;
 MsgFundFeedRewardPoolResponse.typeName = "injective.ocr.v1beta1.MsgFundFeedRewardPoolResponse";
 MsgFundFeedRewardPoolResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgFundFeedRewardPoolResponse };
 /**
  * @generated from message injective.ocr.v1beta1.MsgWithdrawFeedRewardPool
  */
-export class MsgWithdrawFeedRewardPool extends Message {
+class MsgWithdrawFeedRewardPool extends Message {
     constructor(data) {
         super();
         /**
@@ -354,10 +362,11 @@ MsgWithdrawFeedRewardPool.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgWithdrawFeedRewardPool };
 /**
  * @generated from message injective.ocr.v1beta1.MsgWithdrawFeedRewardPoolResponse
  */
-export class MsgWithdrawFeedRewardPoolResponse extends Message {
+class MsgWithdrawFeedRewardPoolResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -378,10 +387,11 @@ export class MsgWithdrawFeedRewardPoolResponse extends Message {
 MsgWithdrawFeedRewardPoolResponse.runtime = proto3;
 MsgWithdrawFeedRewardPoolResponse.typeName = "injective.ocr.v1beta1.MsgWithdrawFeedRewardPoolResponse";
 MsgWithdrawFeedRewardPoolResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgWithdrawFeedRewardPoolResponse };
 /**
  * @generated from message injective.ocr.v1beta1.MsgSetPayees
  */
-export class MsgSetPayees extends Message {
+class MsgSetPayees extends Message {
     constructor(data) {
         super();
         /**
@@ -427,10 +437,11 @@ MsgSetPayees.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "transmitters", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 4, name: "payees", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgSetPayees };
 /**
  * @generated from message injective.ocr.v1beta1.MsgSetPayeesResponse
  */
-export class MsgSetPayeesResponse extends Message {
+class MsgSetPayeesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -451,10 +462,11 @@ export class MsgSetPayeesResponse extends Message {
 MsgSetPayeesResponse.runtime = proto3;
 MsgSetPayeesResponse.typeName = "injective.ocr.v1beta1.MsgSetPayeesResponse";
 MsgSetPayeesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetPayeesResponse };
 /**
  * @generated from message injective.ocr.v1beta1.MsgTransferPayeeship
  */
-export class MsgTransferPayeeship extends Message {
+class MsgTransferPayeeship extends Message {
     constructor(data) {
         super();
         /**
@@ -500,10 +512,11 @@ MsgTransferPayeeship.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "proposed", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgTransferPayeeship };
 /**
  * @generated from message injective.ocr.v1beta1.MsgTransferPayeeshipResponse
  */
-export class MsgTransferPayeeshipResponse extends Message {
+class MsgTransferPayeeshipResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -524,10 +537,11 @@ export class MsgTransferPayeeshipResponse extends Message {
 MsgTransferPayeeshipResponse.runtime = proto3;
 MsgTransferPayeeshipResponse.typeName = "injective.ocr.v1beta1.MsgTransferPayeeshipResponse";
 MsgTransferPayeeshipResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgTransferPayeeshipResponse };
 /**
  * @generated from message injective.ocr.v1beta1.MsgAcceptPayeeship
  */
-export class MsgAcceptPayeeship extends Message {
+class MsgAcceptPayeeship extends Message {
     constructor(data) {
         super();
         /**
@@ -568,10 +582,11 @@ MsgAcceptPayeeship.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "transmitter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgAcceptPayeeship };
 /**
  * @generated from message injective.ocr.v1beta1.MsgAcceptPayeeshipResponse
  */
-export class MsgAcceptPayeeshipResponse extends Message {
+class MsgAcceptPayeeshipResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -592,10 +607,11 @@ export class MsgAcceptPayeeshipResponse extends Message {
 MsgAcceptPayeeshipResponse.runtime = proto3;
 MsgAcceptPayeeshipResponse.typeName = "injective.ocr.v1beta1.MsgAcceptPayeeshipResponse";
 MsgAcceptPayeeshipResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgAcceptPayeeshipResponse };
 /**
  * @generated from message injective.ocr.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -625,10 +641,11 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * @generated from message injective.ocr.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -649,4 +666,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "injective.ocr.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

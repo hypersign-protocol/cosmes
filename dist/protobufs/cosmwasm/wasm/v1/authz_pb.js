@@ -11,7 +11,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmwasm.wasm.v1.StoreCodeAuthorization
  */
-export class StoreCodeAuthorization extends Message {
+class StoreCodeAuthorization extends Message {
     constructor(data) {
         super();
         /**
@@ -40,13 +40,14 @@ StoreCodeAuthorization.typeName = "cosmwasm.wasm.v1.StoreCodeAuthorization";
 StoreCodeAuthorization.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "grants", kind: "message", T: CodeGrant, repeated: true },
 ]);
+export { StoreCodeAuthorization };
 /**
  * ContractExecutionAuthorization defines authorization for wasm execute.
  * Since: wasmd 0.30
  *
  * @generated from message cosmwasm.wasm.v1.ContractExecutionAuthorization
  */
-export class ContractExecutionAuthorization extends Message {
+class ContractExecutionAuthorization extends Message {
     constructor(data) {
         super();
         /**
@@ -75,13 +76,14 @@ ContractExecutionAuthorization.typeName = "cosmwasm.wasm.v1.ContractExecutionAut
 ContractExecutionAuthorization.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "grants", kind: "message", T: ContractGrant, repeated: true },
 ]);
+export { ContractExecutionAuthorization };
 /**
  * ContractMigrationAuthorization defines authorization for wasm contract
  * migration. Since: wasmd 0.30
  *
  * @generated from message cosmwasm.wasm.v1.ContractMigrationAuthorization
  */
-export class ContractMigrationAuthorization extends Message {
+class ContractMigrationAuthorization extends Message {
     constructor(data) {
         super();
         /**
@@ -110,12 +112,13 @@ ContractMigrationAuthorization.typeName = "cosmwasm.wasm.v1.ContractMigrationAut
 ContractMigrationAuthorization.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "grants", kind: "message", T: ContractGrant, repeated: true },
 ]);
+export { ContractMigrationAuthorization };
 /**
  * CodeGrant a granted permission for a single code
  *
  * @generated from message cosmwasm.wasm.v1.CodeGrant
  */
-export class CodeGrant extends Message {
+class CodeGrant extends Message {
     constructor(data) {
         super();
         /**
@@ -146,13 +149,14 @@ CodeGrant.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "instantiate_permission", kind: "message", T: AccessConfig },
 ]);
+export { CodeGrant };
 /**
  * ContractGrant a granted permission for a single contract
  * Since: wasmd 0.30
  *
  * @generated from message cosmwasm.wasm.v1.ContractGrant
  */
-export class ContractGrant extends Message {
+class ContractGrant extends Message {
     constructor(data) {
         super();
         /**
@@ -183,13 +187,14 @@ ContractGrant.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "limit", kind: "message", T: Any },
     { no: 3, name: "filter", kind: "message", T: Any },
 ]);
+export { ContractGrant };
 /**
  * MaxCallsLimit limited number of calls to the contract. No funds transferable.
  * Since: wasmd 0.30
  *
  * @generated from message cosmwasm.wasm.v1.MaxCallsLimit
  */
-export class MaxCallsLimit extends Message {
+class MaxCallsLimit extends Message {
     constructor(data) {
         super();
         /**
@@ -218,13 +223,14 @@ MaxCallsLimit.typeName = "cosmwasm.wasm.v1.MaxCallsLimit";
 MaxCallsLimit.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "remaining", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MaxCallsLimit };
 /**
  * MaxFundsLimit defines the maximal amounts that can be sent to the contract.
  * Since: wasmd 0.30
  *
  * @generated from message cosmwasm.wasm.v1.MaxFundsLimit
  */
-export class MaxFundsLimit extends Message {
+class MaxFundsLimit extends Message {
     constructor(data) {
         super();
         /**
@@ -253,6 +259,7 @@ MaxFundsLimit.typeName = "cosmwasm.wasm.v1.MaxFundsLimit";
 MaxFundsLimit.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amounts", kind: "message", T: Coin, repeated: true },
 ]);
+export { MaxFundsLimit };
 /**
  * CombinedLimit defines the maximal amounts that can be sent to a contract and
  * the maximal number of calls executable. Both need to remain >0 to be valid.
@@ -260,7 +267,7 @@ MaxFundsLimit.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.CombinedLimit
  */
-export class CombinedLimit extends Message {
+class CombinedLimit extends Message {
     constructor(data) {
         super();
         /**
@@ -296,6 +303,7 @@ CombinedLimit.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "calls_remaining", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "amounts", kind: "message", T: Coin, repeated: true },
 ]);
+export { CombinedLimit };
 /**
  * AllowAllMessagesFilter is a wildcard to allow any type of contract payload
  * message.
@@ -303,7 +311,7 @@ CombinedLimit.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.AllowAllMessagesFilter
  */
-export class AllowAllMessagesFilter extends Message {
+class AllowAllMessagesFilter extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -324,6 +332,7 @@ export class AllowAllMessagesFilter extends Message {
 AllowAllMessagesFilter.runtime = proto3;
 AllowAllMessagesFilter.typeName = "cosmwasm.wasm.v1.AllowAllMessagesFilter";
 AllowAllMessagesFilter.fields = proto3.util.newFieldList(() => []);
+export { AllowAllMessagesFilter };
 /**
  * AcceptedMessageKeysFilter accept only the specific contract message keys in
  * the json object to be executed.
@@ -331,7 +340,7 @@ AllowAllMessagesFilter.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmwasm.wasm.v1.AcceptedMessageKeysFilter
  */
-export class AcceptedMessageKeysFilter extends Message {
+class AcceptedMessageKeysFilter extends Message {
     constructor(data) {
         super();
         /**
@@ -360,6 +369,7 @@ AcceptedMessageKeysFilter.typeName = "cosmwasm.wasm.v1.AcceptedMessageKeysFilter
 AcceptedMessageKeysFilter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "keys", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { AcceptedMessageKeysFilter };
 /**
  * AcceptedMessagesFilter accept only the specific raw contract messages to be
  * executed.
@@ -367,7 +377,7 @@ AcceptedMessageKeysFilter.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmwasm.wasm.v1.AcceptedMessagesFilter
  */
-export class AcceptedMessagesFilter extends Message {
+class AcceptedMessagesFilter extends Message {
     constructor(data) {
         super();
         /**
@@ -396,4 +406,5 @@ AcceptedMessagesFilter.typeName = "cosmwasm.wasm.v1.AcceptedMessagesFilter";
 AcceptedMessagesFilter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "messages", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { AcceptedMessagesFilter };
 //# sourceMappingURL=authz_pb.js.map

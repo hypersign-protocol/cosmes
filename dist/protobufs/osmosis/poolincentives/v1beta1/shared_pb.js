@@ -12,7 +12,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.poolincentives.v1beta1.MigrationRecords
  */
-export class MigrationRecords extends Message {
+class MigrationRecords extends Message {
     constructor(data) {
         super();
         /**
@@ -39,6 +39,7 @@ MigrationRecords.typeName = "osmosis.poolincentives.v1beta1.MigrationRecords";
 MigrationRecords.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balancer_to_concentrated_pool_links", kind: "message", T: BalancerToConcentratedPoolLink, repeated: true },
 ]);
+export { MigrationRecords };
 /**
  * BalancerToConcentratedPoolLink defines a single link between a single
  * balancer pool and a single concentrated liquidity pool. This link is used to
@@ -52,7 +53,7 @@ MigrationRecords.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.poolincentives.v1beta1.BalancerToConcentratedPoolLink
  */
-export class BalancerToConcentratedPoolLink extends Message {
+class BalancerToConcentratedPoolLink extends Message {
     constructor(data) {
         super();
         /**
@@ -84,4 +85,5 @@ BalancerToConcentratedPoolLink.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balancer_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "cl_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { BalancerToConcentratedPoolLink };
 //# sourceMappingURL=shared_pb.js.map

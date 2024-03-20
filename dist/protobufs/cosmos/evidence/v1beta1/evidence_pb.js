@@ -9,7 +9,7 @@ import { Message, proto3, protoInt64, Timestamp } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.evidence.v1beta1.Equivocation
  */
-export class Equivocation extends Message {
+class Equivocation extends Message {
     constructor(data) {
         super();
         /**
@@ -53,4 +53,5 @@ Equivocation.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 4, name: "consensus_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Equivocation };
 //# sourceMappingURL=evidence_pb.js.map

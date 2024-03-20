@@ -6,7 +6,7 @@ import { ConsensusParams } from "../../../tendermint/types/params_pb.js";
  *
  * @generated from message cosmos.consensus.v1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -27,12 +27,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "cosmos.consensus.v1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse defines the response type for querying x/consensus parameters.
  *
  * @generated from message cosmos.consensus.v1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -55,4 +56,5 @@ QueryParamsResponse.typeName = "cosmos.consensus.v1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: ConsensusParams },
 ]);
+export { QueryParamsResponse };
 //# sourceMappingURL=query_pb.js.map

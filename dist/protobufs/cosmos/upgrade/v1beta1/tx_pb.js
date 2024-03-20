@@ -8,7 +8,7 @@ import { Plan } from "./upgrade_pb.js";
  *
  * @generated from message cosmos.upgrade.v1beta1.MsgSoftwareUpgrade
  */
-export class MsgSoftwareUpgrade extends Message {
+class MsgSoftwareUpgrade extends Message {
     constructor(data) {
         super();
         /**
@@ -38,6 +38,7 @@ MsgSoftwareUpgrade.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "plan", kind: "message", T: Plan },
 ]);
+export { MsgSoftwareUpgrade };
 /**
  * MsgSoftwareUpgradeResponse is the Msg/SoftwareUpgrade response type.
  *
@@ -45,7 +46,7 @@ MsgSoftwareUpgrade.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.upgrade.v1beta1.MsgSoftwareUpgradeResponse
  */
-export class MsgSoftwareUpgradeResponse extends Message {
+class MsgSoftwareUpgradeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -66,6 +67,7 @@ export class MsgSoftwareUpgradeResponse extends Message {
 MsgSoftwareUpgradeResponse.runtime = proto3;
 MsgSoftwareUpgradeResponse.typeName = "cosmos.upgrade.v1beta1.MsgSoftwareUpgradeResponse";
 MsgSoftwareUpgradeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSoftwareUpgradeResponse };
 /**
  * MsgCancelUpgrade is the Msg/CancelUpgrade request type.
  *
@@ -73,7 +75,7 @@ MsgSoftwareUpgradeResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.upgrade.v1beta1.MsgCancelUpgrade
  */
-export class MsgCancelUpgrade extends Message {
+class MsgCancelUpgrade extends Message {
     constructor(data) {
         super();
         /**
@@ -102,6 +104,7 @@ MsgCancelUpgrade.typeName = "cosmos.upgrade.v1beta1.MsgCancelUpgrade";
 MsgCancelUpgrade.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCancelUpgrade };
 /**
  * MsgCancelUpgradeResponse is the Msg/CancelUpgrade response type.
  *
@@ -109,7 +112,7 @@ MsgCancelUpgrade.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.upgrade.v1beta1.MsgCancelUpgradeResponse
  */
-export class MsgCancelUpgradeResponse extends Message {
+class MsgCancelUpgradeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -130,4 +133,5 @@ export class MsgCancelUpgradeResponse extends Message {
 MsgCancelUpgradeResponse.runtime = proto3;
 MsgCancelUpgradeResponse.typeName = "cosmos.upgrade.v1beta1.MsgCancelUpgradeResponse";
 MsgCancelUpgradeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCancelUpgradeResponse };
 //# sourceMappingURL=tx_pb.js.map

@@ -12,7 +12,7 @@ import { Coin } from "../../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message ibc.applications.transfer.v1.QueryDenomTraceRequest
  */
-export class QueryDenomTraceRequest extends Message {
+class QueryDenomTraceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -41,13 +41,14 @@ QueryDenomTraceRequest.typeName = "ibc.applications.transfer.v1.QueryDenomTraceR
 QueryDenomTraceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomTraceRequest };
 /**
  * QueryDenomTraceResponse is the response type for the Query/DenomTrace RPC
  * method.
  *
  * @generated from message ibc.applications.transfer.v1.QueryDenomTraceResponse
  */
-export class QueryDenomTraceResponse extends Message {
+class QueryDenomTraceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -70,13 +71,14 @@ QueryDenomTraceResponse.typeName = "ibc.applications.transfer.v1.QueryDenomTrace
 QueryDenomTraceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom_trace", kind: "message", T: DenomTrace },
 ]);
+export { QueryDenomTraceResponse };
 /**
  * QueryConnectionsRequest is the request type for the Query/DenomTraces RPC
  * method
  *
  * @generated from message ibc.applications.transfer.v1.QueryDenomTracesRequest
  */
-export class QueryDenomTracesRequest extends Message {
+class QueryDenomTracesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -99,13 +101,14 @@ QueryDenomTracesRequest.typeName = "ibc.applications.transfer.v1.QueryDenomTrace
 QueryDenomTracesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryDenomTracesRequest };
 /**
  * QueryConnectionsResponse is the response type for the Query/DenomTraces RPC
  * method.
  *
  * @generated from message ibc.applications.transfer.v1.QueryDenomTracesResponse
  */
-export class QueryDenomTracesResponse extends Message {
+class QueryDenomTracesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -135,12 +138,13 @@ QueryDenomTracesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom_traces", kind: "message", T: DenomTrace, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryDenomTracesResponse };
 /**
  * QueryParamsRequest is the request type for the Query/Params RPC method.
  *
  * @generated from message ibc.applications.transfer.v1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -161,12 +165,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "ibc.applications.transfer.v1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message ibc.applications.transfer.v1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -189,13 +194,14 @@ QueryParamsResponse.typeName = "ibc.applications.transfer.v1.QueryParamsResponse
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryDenomHashRequest is the request type for the Query/DenomHash RPC
  * method
  *
  * @generated from message ibc.applications.transfer.v1.QueryDenomHashRequest
  */
-export class QueryDenomHashRequest extends Message {
+class QueryDenomHashRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -224,13 +230,14 @@ QueryDenomHashRequest.typeName = "ibc.applications.transfer.v1.QueryDenomHashReq
 QueryDenomHashRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "trace", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomHashRequest };
 /**
  * QueryDenomHashResponse is the response type for the Query/DenomHash RPC
  * method.
  *
  * @generated from message ibc.applications.transfer.v1.QueryDenomHashResponse
  */
-export class QueryDenomHashResponse extends Message {
+class QueryDenomHashResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -259,12 +266,13 @@ QueryDenomHashResponse.typeName = "ibc.applications.transfer.v1.QueryDenomHashRe
 QueryDenomHashResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomHashResponse };
 /**
  * QueryEscrowAddressRequest is the request type for the EscrowAddress RPC method.
  *
  * @generated from message ibc.applications.transfer.v1.QueryEscrowAddressRequest
  */
-export class QueryEscrowAddressRequest extends Message {
+class QueryEscrowAddressRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -300,12 +308,13 @@ QueryEscrowAddressRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryEscrowAddressRequest };
 /**
  * QueryEscrowAddressResponse is the response type of the EscrowAddress RPC method.
  *
  * @generated from message ibc.applications.transfer.v1.QueryEscrowAddressResponse
  */
-export class QueryEscrowAddressResponse extends Message {
+class QueryEscrowAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -334,12 +343,13 @@ QueryEscrowAddressResponse.typeName = "ibc.applications.transfer.v1.QueryEscrowA
 QueryEscrowAddressResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "escrow_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryEscrowAddressResponse };
 /**
  * QueryTotalEscrowForDenomRequest is the request type for TotalEscrowForDenom RPC method.
  *
  * @generated from message ibc.applications.transfer.v1.QueryTotalEscrowForDenomRequest
  */
-export class QueryTotalEscrowForDenomRequest extends Message {
+class QueryTotalEscrowForDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -366,12 +376,13 @@ QueryTotalEscrowForDenomRequest.typeName = "ibc.applications.transfer.v1.QueryTo
 QueryTotalEscrowForDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryTotalEscrowForDenomRequest };
 /**
  * QueryTotalEscrowForDenomResponse is the response type for TotalEscrowForDenom RPC method.
  *
  * @generated from message ibc.applications.transfer.v1.QueryTotalEscrowForDenomResponse
  */
-export class QueryTotalEscrowForDenomResponse extends Message {
+class QueryTotalEscrowForDenomResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -394,4 +405,5 @@ QueryTotalEscrowForDenomResponse.typeName = "ibc.applications.transfer.v1.QueryT
 QueryTotalEscrowForDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin },
 ]);
+export { QueryTotalEscrowForDenomResponse };
 //# sourceMappingURL=query_pb.js.map

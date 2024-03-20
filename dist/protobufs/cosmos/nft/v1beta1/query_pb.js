@@ -10,7 +10,7 @@ import { Class, NFT } from "./nft_pb.js";
  *
  * @generated from message cosmos.nft.v1beta1.QueryBalanceRequest
  */
-export class QueryBalanceRequest extends Message {
+class QueryBalanceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -46,12 +46,13 @@ QueryBalanceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "class_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBalanceRequest };
 /**
  * QueryBalanceResponse is the response type for the Query/Balance RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryBalanceResponse
  */
-export class QueryBalanceResponse extends Message {
+class QueryBalanceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -80,12 +81,13 @@ QueryBalanceResponse.typeName = "cosmos.nft.v1beta1.QueryBalanceResponse";
 QueryBalanceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryBalanceResponse };
 /**
  * QueryOwnerRequest is the request type for the Query/Owner RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryOwnerRequest
  */
-export class QueryOwnerRequest extends Message {
+class QueryOwnerRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -121,12 +123,13 @@ QueryOwnerRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "class_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryOwnerRequest };
 /**
  * QueryOwnerResponse is the response type for the Query/Owner RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryOwnerResponse
  */
-export class QueryOwnerResponse extends Message {
+class QueryOwnerResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -155,12 +158,13 @@ QueryOwnerResponse.typeName = "cosmos.nft.v1beta1.QueryOwnerResponse";
 QueryOwnerResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryOwnerResponse };
 /**
  * QuerySupplyRequest is the request type for the Query/Supply RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QuerySupplyRequest
  */
-export class QuerySupplyRequest extends Message {
+class QuerySupplyRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -189,12 +193,13 @@ QuerySupplyRequest.typeName = "cosmos.nft.v1beta1.QuerySupplyRequest";
 QuerySupplyRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "class_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySupplyRequest };
 /**
  * QuerySupplyResponse is the response type for the Query/Supply RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QuerySupplyResponse
  */
-export class QuerySupplyResponse extends Message {
+class QuerySupplyResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -223,12 +228,13 @@ QuerySupplyResponse.typeName = "cosmos.nft.v1beta1.QuerySupplyResponse";
 QuerySupplyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QuerySupplyResponse };
 /**
  * QueryNFTstRequest is the request type for the Query/NFTs RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryNFTsRequest
  */
-export class QueryNFTsRequest extends Message {
+class QueryNFTsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -265,12 +271,13 @@ QueryNFTsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryNFTsRequest };
 /**
  * QueryNFTsResponse is the response type for the Query/NFTs RPC methods
  *
  * @generated from message cosmos.nft.v1beta1.QueryNFTsResponse
  */
-export class QueryNFTsResponse extends Message {
+class QueryNFTsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -300,12 +307,13 @@ QueryNFTsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "nfts", kind: "message", T: NFT, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryNFTsResponse };
 /**
  * QueryNFTRequest is the request type for the Query/NFT RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryNFTRequest
  */
-export class QueryNFTRequest extends Message {
+class QueryNFTRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -341,12 +349,13 @@ QueryNFTRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "class_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryNFTRequest };
 /**
  * QueryNFTResponse is the response type for the Query/NFT RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryNFTResponse
  */
-export class QueryNFTResponse extends Message {
+class QueryNFTResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -369,12 +378,13 @@ QueryNFTResponse.typeName = "cosmos.nft.v1beta1.QueryNFTResponse";
 QueryNFTResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "nft", kind: "message", T: NFT },
 ]);
+export { QueryNFTResponse };
 /**
  * QueryClassRequest is the request type for the Query/Class RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryClassRequest
  */
-export class QueryClassRequest extends Message {
+class QueryClassRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -403,12 +413,13 @@ QueryClassRequest.typeName = "cosmos.nft.v1beta1.QueryClassRequest";
 QueryClassRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "class_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryClassRequest };
 /**
  * QueryClassResponse is the response type for the Query/Class RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryClassResponse
  */
-export class QueryClassResponse extends Message {
+class QueryClassResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -431,12 +442,13 @@ QueryClassResponse.typeName = "cosmos.nft.v1beta1.QueryClassResponse";
 QueryClassResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "class", kind: "message", T: Class },
 ]);
+export { QueryClassResponse };
 /**
  * QueryClassesRequest is the request type for the Query/Classes RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryClassesRequest
  */
-export class QueryClassesRequest extends Message {
+class QueryClassesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -459,12 +471,13 @@ QueryClassesRequest.typeName = "cosmos.nft.v1beta1.QueryClassesRequest";
 QueryClassesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryClassesRequest };
 /**
  * QueryClassesResponse is the response type for the Query/Classes RPC method
  *
  * @generated from message cosmos.nft.v1beta1.QueryClassesResponse
  */
-export class QueryClassesResponse extends Message {
+class QueryClassesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -494,4 +507,5 @@ QueryClassesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "classes", kind: "message", T: Class, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryClassesResponse };
 //# sourceMappingURL=query_pb.js.map

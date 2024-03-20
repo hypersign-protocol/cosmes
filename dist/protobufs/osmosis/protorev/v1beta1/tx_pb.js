@@ -9,7 +9,7 @@ import { BaseDenom, InfoByPoolType, TokenPairArbRoutes } from "./protorev_pb.js"
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetHotRoutes
  */
-export class MsgSetHotRoutes extends Message {
+class MsgSetHotRoutes extends Message {
     constructor(data) {
         super();
         /**
@@ -45,12 +45,13 @@ MsgSetHotRoutes.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "hot_routes", kind: "message", T: TokenPairArbRoutes, repeated: true },
 ]);
+export { MsgSetHotRoutes };
 /**
  * MsgSetHotRoutesResponse defines the Msg/SetHotRoutes response type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetHotRoutesResponse
  */
-export class MsgSetHotRoutesResponse extends Message {
+class MsgSetHotRoutesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -71,12 +72,13 @@ export class MsgSetHotRoutesResponse extends Message {
 MsgSetHotRoutesResponse.runtime = proto3;
 MsgSetHotRoutesResponse.typeName = "osmosis.protorev.v1beta1.MsgSetHotRoutesResponse";
 MsgSetHotRoutesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetHotRoutesResponse };
 /**
  * MsgSetDeveloperAccount defines the Msg/SetDeveloperAccount request type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetDeveloperAccount
  */
-export class MsgSetDeveloperAccount extends Message {
+class MsgSetDeveloperAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -113,13 +115,14 @@ MsgSetDeveloperAccount.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "developer_account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSetDeveloperAccount };
 /**
  * MsgSetDeveloperAccountResponse defines the Msg/SetDeveloperAccount response
  * type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetDeveloperAccountResponse
  */
-export class MsgSetDeveloperAccountResponse extends Message {
+class MsgSetDeveloperAccountResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -140,12 +143,13 @@ export class MsgSetDeveloperAccountResponse extends Message {
 MsgSetDeveloperAccountResponse.runtime = proto3;
 MsgSetDeveloperAccountResponse.typeName = "osmosis.protorev.v1beta1.MsgSetDeveloperAccountResponse";
 MsgSetDeveloperAccountResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetDeveloperAccountResponse };
 /**
  * MsgSetInfoByPoolType defines the Msg/SetInfoByPoolType request type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetInfoByPoolType
  */
-export class MsgSetInfoByPoolType extends Message {
+class MsgSetInfoByPoolType extends Message {
     constructor(data) {
         super();
         /**
@@ -175,12 +179,13 @@ MsgSetInfoByPoolType.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "info_by_pool_type", kind: "message", T: InfoByPoolType },
 ]);
+export { MsgSetInfoByPoolType };
 /**
  * MsgSetInfoByPoolTypeResponse defines the Msg/SetInfoByPoolType response type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetInfoByPoolTypeResponse
  */
-export class MsgSetInfoByPoolTypeResponse extends Message {
+class MsgSetInfoByPoolTypeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -201,12 +206,13 @@ export class MsgSetInfoByPoolTypeResponse extends Message {
 MsgSetInfoByPoolTypeResponse.runtime = proto3;
 MsgSetInfoByPoolTypeResponse.typeName = "osmosis.protorev.v1beta1.MsgSetInfoByPoolTypeResponse";
 MsgSetInfoByPoolTypeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetInfoByPoolTypeResponse };
 /**
  * MsgSetMaxPoolPointsPerTx defines the Msg/SetMaxPoolPointsPerTx request type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetMaxPoolPointsPerTx
  */
-export class MsgSetMaxPoolPointsPerTx extends Message {
+class MsgSetMaxPoolPointsPerTx extends Message {
     constructor(data) {
         super();
         /**
@@ -243,13 +249,14 @@ MsgSetMaxPoolPointsPerTx.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "max_pool_points_per_tx", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgSetMaxPoolPointsPerTx };
 /**
  * MsgSetMaxPoolPointsPerTxResponse defines the Msg/SetMaxPoolPointsPerTx
  * response type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetMaxPoolPointsPerTxResponse
  */
-export class MsgSetMaxPoolPointsPerTxResponse extends Message {
+class MsgSetMaxPoolPointsPerTxResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -270,13 +277,14 @@ export class MsgSetMaxPoolPointsPerTxResponse extends Message {
 MsgSetMaxPoolPointsPerTxResponse.runtime = proto3;
 MsgSetMaxPoolPointsPerTxResponse.typeName = "osmosis.protorev.v1beta1.MsgSetMaxPoolPointsPerTxResponse";
 MsgSetMaxPoolPointsPerTxResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetMaxPoolPointsPerTxResponse };
 /**
  * MsgSetMaxPoolPointsPerBlock defines the Msg/SetMaxPoolPointsPerBlock request
  * type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetMaxPoolPointsPerBlock
  */
-export class MsgSetMaxPoolPointsPerBlock extends Message {
+class MsgSetMaxPoolPointsPerBlock extends Message {
     constructor(data) {
         super();
         /**
@@ -314,13 +322,14 @@ MsgSetMaxPoolPointsPerBlock.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "max_pool_points_per_block", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgSetMaxPoolPointsPerBlock };
 /**
  * MsgSetMaxPoolPointsPerBlockResponse defines the
  * Msg/SetMaxPoolPointsPerBlock response type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetMaxPoolPointsPerBlockResponse
  */
-export class MsgSetMaxPoolPointsPerBlockResponse extends Message {
+class MsgSetMaxPoolPointsPerBlockResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -341,12 +350,13 @@ export class MsgSetMaxPoolPointsPerBlockResponse extends Message {
 MsgSetMaxPoolPointsPerBlockResponse.runtime = proto3;
 MsgSetMaxPoolPointsPerBlockResponse.typeName = "osmosis.protorev.v1beta1.MsgSetMaxPoolPointsPerBlockResponse";
 MsgSetMaxPoolPointsPerBlockResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetMaxPoolPointsPerBlockResponse };
 /**
  * MsgSetBaseDenoms defines the Msg/SetBaseDenoms request type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetBaseDenoms
  */
-export class MsgSetBaseDenoms extends Message {
+class MsgSetBaseDenoms extends Message {
     constructor(data) {
         super();
         /**
@@ -382,12 +392,13 @@ MsgSetBaseDenoms.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "base_denoms", kind: "message", T: BaseDenom, repeated: true },
 ]);
+export { MsgSetBaseDenoms };
 /**
  * MsgSetBaseDenomsResponse defines the Msg/SetBaseDenoms response type.
  *
  * @generated from message osmosis.protorev.v1beta1.MsgSetBaseDenomsResponse
  */
-export class MsgSetBaseDenomsResponse extends Message {
+class MsgSetBaseDenomsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -408,4 +419,5 @@ export class MsgSetBaseDenomsResponse extends Message {
 MsgSetBaseDenomsResponse.runtime = proto3;
 MsgSetBaseDenomsResponse.typeName = "osmosis.protorev.v1beta1.MsgSetBaseDenomsResponse";
 MsgSetBaseDenomsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetBaseDenomsResponse };
 //# sourceMappingURL=tx_pb.js.map

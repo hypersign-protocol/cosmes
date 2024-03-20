@@ -8,7 +8,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmwasm.wasm.v1.MsgIBCSend
  */
-export class MsgIBCSend extends Message {
+class MsgIBCSend extends Message {
     constructor(data) {
         super();
         /**
@@ -61,12 +61,13 @@ MsgIBCSend.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "timeout_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 6, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgIBCSend };
 /**
  * MsgIBCSendResponse
  *
  * @generated from message cosmwasm.wasm.v1.MsgIBCSendResponse
  */
-export class MsgIBCSendResponse extends Message {
+class MsgIBCSendResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -95,12 +96,13 @@ MsgIBCSendResponse.typeName = "cosmwasm.wasm.v1.MsgIBCSendResponse";
 MsgIBCSendResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgIBCSendResponse };
 /**
  * MsgIBCCloseChannel port and channel need to be owned by the contract
  *
  * @generated from message cosmwasm.wasm.v1.MsgIBCCloseChannel
  */
-export class MsgIBCCloseChannel extends Message {
+class MsgIBCCloseChannel extends Message {
     constructor(data) {
         super();
         /**
@@ -127,4 +129,5 @@ MsgIBCCloseChannel.typeName = "cosmwasm.wasm.v1.MsgIBCCloseChannel";
 MsgIBCCloseChannel.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgIBCCloseChannel };
 //# sourceMappingURL=ibc_pb.js.map

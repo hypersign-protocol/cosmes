@@ -8,7 +8,7 @@ import { EvidenceList } from "./evidence_pb.js";
 /**
  * @generated from message tendermint.types.Block
  */
-export class Block extends Message {
+class Block extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -34,4 +34,5 @@ Block.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "evidence", kind: "message", T: EvidenceList },
     { no: 4, name: "last_commit", kind: "message", T: Commit },
 ]);
+export { Block };
 //# sourceMappingURL=block_pb.js.map

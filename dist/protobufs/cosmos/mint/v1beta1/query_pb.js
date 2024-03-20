@@ -9,7 +9,7 @@ import { Params } from "./mint_pb.js";
  *
  * @generated from message cosmos.mint.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,12 +30,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "cosmos.mint.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message cosmos.mint.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -58,12 +59,13 @@ QueryParamsResponse.typeName = "cosmos.mint.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryInflationRequest is the request type for the Query/Inflation RPC method.
  *
  * @generated from message cosmos.mint.v1beta1.QueryInflationRequest
  */
-export class QueryInflationRequest extends Message {
+class QueryInflationRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -84,13 +86,14 @@ export class QueryInflationRequest extends Message {
 QueryInflationRequest.runtime = proto3;
 QueryInflationRequest.typeName = "cosmos.mint.v1beta1.QueryInflationRequest";
 QueryInflationRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryInflationRequest };
 /**
  * QueryInflationResponse is the response type for the Query/Inflation RPC
  * method.
  *
  * @generated from message cosmos.mint.v1beta1.QueryInflationResponse
  */
-export class QueryInflationResponse extends Message {
+class QueryInflationResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -119,13 +122,14 @@ QueryInflationResponse.typeName = "cosmos.mint.v1beta1.QueryInflationResponse";
 QueryInflationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "inflation", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryInflationResponse };
 /**
  * QueryAnnualProvisionsRequest is the request type for the
  * Query/AnnualProvisions RPC method.
  *
  * @generated from message cosmos.mint.v1beta1.QueryAnnualProvisionsRequest
  */
-export class QueryAnnualProvisionsRequest extends Message {
+class QueryAnnualProvisionsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -146,13 +150,14 @@ export class QueryAnnualProvisionsRequest extends Message {
 QueryAnnualProvisionsRequest.runtime = proto3;
 QueryAnnualProvisionsRequest.typeName = "cosmos.mint.v1beta1.QueryAnnualProvisionsRequest";
 QueryAnnualProvisionsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryAnnualProvisionsRequest };
 /**
  * QueryAnnualProvisionsResponse is the response type for the
  * Query/AnnualProvisions RPC method.
  *
  * @generated from message cosmos.mint.v1beta1.QueryAnnualProvisionsResponse
  */
-export class QueryAnnualProvisionsResponse extends Message {
+class QueryAnnualProvisionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -181,4 +186,5 @@ QueryAnnualProvisionsResponse.typeName = "cosmos.mint.v1beta1.QueryAnnualProvisi
 QueryAnnualProvisionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "annual_provisions", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryAnnualProvisionsResponse };
 //# sourceMappingURL=query_pb.js.map

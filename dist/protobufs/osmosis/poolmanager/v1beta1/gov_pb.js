@@ -10,7 +10,7 @@ import { DenomPairTakerFee } from "./tx_pb.js";
  *
  * @generated from message osmosis.poolmanager.v1beta1.DenomPairTakerFeeProposal
  */
-export class DenomPairTakerFeeProposal extends Message {
+class DenomPairTakerFeeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -47,4 +47,5 @@ DenomPairTakerFeeProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "denom_pair_taker_fee", kind: "message", T: DenomPairTakerFee, repeated: true },
 ]);
+export { DenomPairTakerFeeProposal };
 //# sourceMappingURL=gov_pb.js.map

@@ -39,7 +39,7 @@ proto3.util.setEnumType(SuperfluidAssetType, "osmosis.superfluid.SuperfluidAsset
  *
  * @generated from message osmosis.superfluid.SuperfluidAsset
  */
-export class SuperfluidAsset extends Message {
+class SuperfluidAsset extends Message {
     constructor(data) {
         super();
         /**
@@ -74,6 +74,7 @@ SuperfluidAsset.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "asset_type", kind: "enum", T: proto3.getEnumType(SuperfluidAssetType) },
 ]);
+export { SuperfluidAsset };
 /**
  * SuperfluidIntermediaryAccount takes the role of intermediary between LP token
  * and OSMO tokens for superfluid staking. The intermediary account is the
@@ -81,7 +82,7 @@ SuperfluidAsset.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.superfluid.SuperfluidIntermediaryAccount
  */
-export class SuperfluidIntermediaryAccount extends Message {
+class SuperfluidIntermediaryAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -122,6 +123,7 @@ SuperfluidIntermediaryAccount.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "val_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SuperfluidIntermediaryAccount };
 /**
  * The Osmo-Equivalent-Multiplier Record for epoch N refers to the osmo worth we
  * treat an LP share as having, for all of epoch N. Eventually this is intended
@@ -133,7 +135,7 @@ SuperfluidIntermediaryAccount.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.superfluid.OsmoEquivalentMultiplierRecord
  */
-export class OsmoEquivalentMultiplierRecord extends Message {
+class OsmoEquivalentMultiplierRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -172,13 +174,14 @@ OsmoEquivalentMultiplierRecord.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "multiplier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { OsmoEquivalentMultiplierRecord };
 /**
  * SuperfluidDelegationRecord is a struct used to indicate superfluid
  * delegations of an account in the state machine in a user friendly form.
  *
  * @generated from message osmosis.superfluid.SuperfluidDelegationRecord
  */
-export class SuperfluidDelegationRecord extends Message {
+class SuperfluidDelegationRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -212,6 +215,7 @@ SuperfluidDelegationRecord.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "delegation_amount", kind: "message", T: Coin },
     { no: 4, name: "equivalent_staked_amount", kind: "message", T: Coin },
 ]);
+export { SuperfluidDelegationRecord };
 /**
  * LockIdIntermediaryAccountConnection is a struct used to indicate the
  * relationship between the underlying lock id and superfluid delegation done
@@ -219,7 +223,7 @@ SuperfluidDelegationRecord.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.superfluid.LockIdIntermediaryAccountConnection
  */
-export class LockIdIntermediaryAccountConnection extends Message {
+class LockIdIntermediaryAccountConnection extends Message {
     constructor(data) {
         super();
         /**
@@ -251,10 +255,11 @@ LockIdIntermediaryAccountConnection.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "intermediary_account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { LockIdIntermediaryAccountConnection };
 /**
  * @generated from message osmosis.superfluid.UnpoolWhitelistedPools
  */
-export class UnpoolWhitelistedPools extends Message {
+class UnpoolWhitelistedPools extends Message {
     constructor(data) {
         super();
         /**
@@ -281,10 +286,11 @@ UnpoolWhitelistedPools.typeName = "osmosis.superfluid.UnpoolWhitelistedPools";
 UnpoolWhitelistedPools.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { UnpoolWhitelistedPools };
 /**
  * @generated from message osmosis.superfluid.ConcentratedPoolUserPositionRecord
  */
-export class ConcentratedPoolUserPositionRecord extends Message {
+class ConcentratedPoolUserPositionRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -324,4 +330,5 @@ ConcentratedPoolUserPositionRecord.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "delegation_amount", kind: "message", T: Coin },
     { no: 6, name: "equivalent_staked_amount", kind: "message", T: Coin },
 ]);
+export { ConcentratedPoolUserPositionRecord };
 //# sourceMappingURL=superfluid_pb.js.map

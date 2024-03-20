@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message tendermint.crypto.PublicKey
  */
-export class PublicKey extends Message {
+class PublicKey extends Message {
     constructor(data) {
         super();
         /**
@@ -36,4 +36,5 @@ PublicKey.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ed25519", kind: "scalar", T: 12 /* ScalarType.BYTES */, oneof: "sum" },
     { no: 2, name: "secp256k1", kind: "scalar", T: 12 /* ScalarType.BYTES */, oneof: "sum" },
 ]);
+export { PublicKey };
 //# sourceMappingURL=keys_pb.js.map

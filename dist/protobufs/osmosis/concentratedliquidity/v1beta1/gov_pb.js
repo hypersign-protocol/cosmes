@@ -10,7 +10,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.CreateConcentratedLiquidityPoolsProposal
  */
-export class CreateConcentratedLiquidityPoolsProposal extends Message {
+class CreateConcentratedLiquidityPoolsProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -47,6 +47,7 @@ CreateConcentratedLiquidityPoolsProposal.fields = proto3.util.newFieldList(() =>
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "pool_records", kind: "message", T: PoolRecord, repeated: true },
 ]);
+export { CreateConcentratedLiquidityPoolsProposal };
 /**
  * TickSpacingDecreaseProposal is a gov Content type for proposing a tick
  * spacing decrease for a pool. The proposal will fail if one of the pools do
@@ -55,7 +56,7 @@ CreateConcentratedLiquidityPoolsProposal.fields = proto3.util.newFieldList(() =>
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.TickSpacingDecreaseProposal
  */
-export class TickSpacingDecreaseProposal extends Message {
+class TickSpacingDecreaseProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -92,13 +93,14 @@ TickSpacingDecreaseProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "pool_id_to_tick_spacing_records", kind: "message", T: PoolIdToTickSpacingRecord, repeated: true },
 ]);
+export { TickSpacingDecreaseProposal };
 /**
  * PoolIdToTickSpacingRecord is a struct that contains a pool id to new tick
  * spacing pair.
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.PoolIdToTickSpacingRecord
  */
-export class PoolIdToTickSpacingRecord extends Message {
+class PoolIdToTickSpacingRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -130,10 +132,11 @@ PoolIdToTickSpacingRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "new_tick_spacing", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PoolIdToTickSpacingRecord };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.PoolRecord
  */
-export class PoolRecord extends Message {
+class PoolRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -175,4 +178,5 @@ PoolRecord.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "tick_spacing", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "spread_factor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PoolRecord };
 //# sourceMappingURL=gov_pb.js.map

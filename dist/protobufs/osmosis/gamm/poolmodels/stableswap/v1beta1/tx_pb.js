@@ -10,7 +10,7 @@ import { Coin } from "../../../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.gamm.poolmodels.stableswap.v1beta1.MsgCreateStableswapPool
  */
-export class MsgCreateStableswapPool extends Message {
+class MsgCreateStableswapPool extends Message {
     constructor(data) {
         super();
         /**
@@ -58,12 +58,13 @@ MsgCreateStableswapPool.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "future_pool_governor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "scaling_factor_controller", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateStableswapPool };
 /**
  * Returns a poolID with custom poolName.
  *
  * @generated from message osmosis.gamm.poolmodels.stableswap.v1beta1.MsgCreateStableswapPoolResponse
  */
-export class MsgCreateStableswapPoolResponse extends Message {
+class MsgCreateStableswapPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -90,13 +91,14 @@ MsgCreateStableswapPoolResponse.typeName = "osmosis.gamm.poolmodels.stableswap.v
 MsgCreateStableswapPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateStableswapPoolResponse };
 /**
  * Sender must be the pool's scaling_factor_governor in order for the tx to
  * succeed. Adjusts stableswap scaling factors.
  *
  * @generated from message osmosis.gamm.poolmodels.stableswap.v1beta1.MsgStableSwapAdjustScalingFactors
  */
-export class MsgStableSwapAdjustScalingFactors extends Message {
+class MsgStableSwapAdjustScalingFactors extends Message {
     constructor(data) {
         super();
         /**
@@ -133,10 +135,11 @@ MsgStableSwapAdjustScalingFactors.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "scaling_factors", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { MsgStableSwapAdjustScalingFactors };
 /**
  * @generated from message osmosis.gamm.poolmodels.stableswap.v1beta1.MsgStableSwapAdjustScalingFactorsResponse
  */
-export class MsgStableSwapAdjustScalingFactorsResponse extends Message {
+class MsgStableSwapAdjustScalingFactorsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -157,4 +160,5 @@ export class MsgStableSwapAdjustScalingFactorsResponse extends Message {
 MsgStableSwapAdjustScalingFactorsResponse.runtime = proto3;
 MsgStableSwapAdjustScalingFactorsResponse.typeName = "osmosis.gamm.poolmodels.stableswap.v1beta1.MsgStableSwapAdjustScalingFactorsResponse";
 MsgStableSwapAdjustScalingFactorsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgStableSwapAdjustScalingFactorsResponse };
 //# sourceMappingURL=tx_pb.js.map

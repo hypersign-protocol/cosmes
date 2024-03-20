@@ -9,7 +9,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ibc.applications.interchain_accounts.controller.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -38,4 +38,5 @@ Params.typeName = "ibc.applications.interchain_accounts.controller.v1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "controller_enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { Params };
 //# sourceMappingURL=controller_pb.js.map

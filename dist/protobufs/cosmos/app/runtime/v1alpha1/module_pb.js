@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.app.runtime.v1alpha1.Module
  */
-export class Module extends Message {
+class Module extends Message {
     constructor(data) {
         super();
         /**
@@ -81,13 +81,14 @@ Module.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "export_genesis", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 6, name: "override_store_keys", kind: "message", T: StoreKeyConfig, repeated: true },
 ]);
+export { Module };
 /**
  * StoreKeyConfig may be supplied to override the default module store key, which
  * is the module name.
  *
  * @generated from message cosmos.app.runtime.v1alpha1.StoreKeyConfig
  */
-export class StoreKeyConfig extends Message {
+class StoreKeyConfig extends Message {
     constructor(data) {
         super();
         /**
@@ -123,4 +124,5 @@ StoreKeyConfig.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "module_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "kv_store_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { StoreKeyConfig };
 //# sourceMappingURL=module_pb.js.map

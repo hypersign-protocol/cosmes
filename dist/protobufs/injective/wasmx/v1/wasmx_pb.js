@@ -7,7 +7,7 @@ import { FundingMode } from "./proposal_pb.js";
 /**
  * @generated from message injective.wasmx.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -61,10 +61,11 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "max_contract_gas_limit", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "min_gas_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Params };
 /**
  * @generated from message injective.wasmx.v1.RegisteredContract
  */
-export class RegisteredContract extends Message {
+class RegisteredContract extends Message {
     constructor(data) {
         super();
         /**
@@ -137,4 +138,5 @@ RegisteredContract.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "granter_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "fund_mode", kind: "enum", T: proto3.getEnumType(FundingMode) },
 ]);
+export { RegisteredContract };
 //# sourceMappingURL=wasmx_pb.js.map

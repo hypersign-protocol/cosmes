@@ -7,7 +7,7 @@ import { Grant } from "./authz_pb.js";
  *
  * @generated from message cosmos.authz.v1beta1.MsgGrant
  */
-export class MsgGrant extends Message {
+class MsgGrant extends Message {
     constructor(data) {
         super();
         /**
@@ -40,12 +40,13 @@ MsgGrant.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "grant", kind: "message", T: Grant },
 ]);
+export { MsgGrant };
 /**
  * MsgExecResponse defines the Msg/MsgExecResponse response type.
  *
  * @generated from message cosmos.authz.v1beta1.MsgExecResponse
  */
-export class MsgExecResponse extends Message {
+class MsgExecResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -72,6 +73,7 @@ MsgExecResponse.typeName = "cosmos.authz.v1beta1.MsgExecResponse";
 MsgExecResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "results", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { MsgExecResponse };
 /**
  * MsgExec attempts to execute the provided messages using
  * authorizations granted to the grantee. Each message should have only
@@ -79,7 +81,7 @@ MsgExecResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.authz.v1beta1.MsgExec
  */
-export class MsgExec extends Message {
+class MsgExec extends Message {
     constructor(data) {
         super();
         /**
@@ -115,12 +117,13 @@ MsgExec.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "msgs", kind: "message", T: Any, repeated: true },
 ]);
+export { MsgExec };
 /**
  * MsgGrantResponse defines the Msg/MsgGrant response type.
  *
  * @generated from message cosmos.authz.v1beta1.MsgGrantResponse
  */
-export class MsgGrantResponse extends Message {
+class MsgGrantResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -141,13 +144,14 @@ export class MsgGrantResponse extends Message {
 MsgGrantResponse.runtime = proto3;
 MsgGrantResponse.typeName = "cosmos.authz.v1beta1.MsgGrantResponse";
 MsgGrantResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgGrantResponse };
 /**
  * MsgRevoke revokes any authorization with the provided sdk.Msg type on the
  * granter's account with that has been granted to the grantee.
  *
  * @generated from message cosmos.authz.v1beta1.MsgRevoke
  */
-export class MsgRevoke extends Message {
+class MsgRevoke extends Message {
     constructor(data) {
         super();
         /**
@@ -184,12 +188,13 @@ MsgRevoke.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "msg_type_url", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgRevoke };
 /**
  * MsgRevokeResponse defines the Msg/MsgRevokeResponse response type.
  *
  * @generated from message cosmos.authz.v1beta1.MsgRevokeResponse
  */
-export class MsgRevokeResponse extends Message {
+class MsgRevokeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -210,4 +215,5 @@ export class MsgRevokeResponse extends Message {
 MsgRevokeResponse.runtime = proto3;
 MsgRevokeResponse.typeName = "cosmos.authz.v1beta1.MsgRevokeResponse";
 MsgRevokeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRevokeResponse };
 //# sourceMappingURL=tx_pb.js.map

@@ -8,7 +8,7 @@ import { Gauge } from "../../incentives/gauge_pb.js";
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryGaugeIdsRequest
  */
-export class QueryGaugeIdsRequest extends Message {
+class QueryGaugeIdsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -35,10 +35,11 @@ QueryGaugeIdsRequest.typeName = "osmosis.poolincentives.v1beta1.QueryGaugeIdsReq
 QueryGaugeIdsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryGaugeIdsRequest };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryGaugeIdsResponse
  */
-export class QueryGaugeIdsResponse extends Message {
+class QueryGaugeIdsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -65,10 +66,11 @@ QueryGaugeIdsResponse.typeName = "osmosis.poolincentives.v1beta1.QueryGaugeIdsRe
 QueryGaugeIdsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gauge_ids_with_duration", kind: "message", T: QueryGaugeIdsResponse_GaugeIdWithDuration, repeated: true },
 ]);
+export { QueryGaugeIdsResponse };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryGaugeIdsResponse.GaugeIdWithDuration
  */
-export class QueryGaugeIdsResponse_GaugeIdWithDuration extends Message {
+class QueryGaugeIdsResponse_GaugeIdWithDuration extends Message {
     constructor(data) {
         super();
         /**
@@ -101,10 +103,11 @@ QueryGaugeIdsResponse_GaugeIdWithDuration.fields = proto3.util.newFieldList(() =
     { no: 2, name: "duration", kind: "message", T: Duration },
     { no: 3, name: "gauge_incentive_percentage", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryGaugeIdsResponse_GaugeIdWithDuration };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryDistrInfoRequest
  */
-export class QueryDistrInfoRequest extends Message {
+class QueryDistrInfoRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -125,10 +128,11 @@ export class QueryDistrInfoRequest extends Message {
 QueryDistrInfoRequest.runtime = proto3;
 QueryDistrInfoRequest.typeName = "osmosis.poolincentives.v1beta1.QueryDistrInfoRequest";
 QueryDistrInfoRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryDistrInfoRequest };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryDistrInfoResponse
  */
-export class QueryDistrInfoResponse extends Message {
+class QueryDistrInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -151,10 +155,11 @@ QueryDistrInfoResponse.typeName = "osmosis.poolincentives.v1beta1.QueryDistrInfo
 QueryDistrInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "distr_info", kind: "message", T: DistrInfo },
 ]);
+export { QueryDistrInfoResponse };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -175,10 +180,11 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "osmosis.poolincentives.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -201,10 +207,11 @@ QueryParamsResponse.typeName = "osmosis.poolincentives.v1beta1.QueryParamsRespon
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryLockableDurationsRequest
  */
-export class QueryLockableDurationsRequest extends Message {
+class QueryLockableDurationsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -225,10 +232,11 @@ export class QueryLockableDurationsRequest extends Message {
 QueryLockableDurationsRequest.runtime = proto3;
 QueryLockableDurationsRequest.typeName = "osmosis.poolincentives.v1beta1.QueryLockableDurationsRequest";
 QueryLockableDurationsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryLockableDurationsRequest };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryLockableDurationsResponse
  */
-export class QueryLockableDurationsResponse extends Message {
+class QueryLockableDurationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -255,10 +263,11 @@ QueryLockableDurationsResponse.typeName = "osmosis.poolincentives.v1beta1.QueryL
 QueryLockableDurationsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lockable_durations", kind: "message", T: Duration, repeated: true },
 ]);
+export { QueryLockableDurationsResponse };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryIncentivizedPoolsRequest
  */
-export class QueryIncentivizedPoolsRequest extends Message {
+class QueryIncentivizedPoolsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -279,10 +288,11 @@ export class QueryIncentivizedPoolsRequest extends Message {
 QueryIncentivizedPoolsRequest.runtime = proto3;
 QueryIncentivizedPoolsRequest.typeName = "osmosis.poolincentives.v1beta1.QueryIncentivizedPoolsRequest";
 QueryIncentivizedPoolsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryIncentivizedPoolsRequest };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.IncentivizedPool
  */
-export class IncentivizedPool extends Message {
+class IncentivizedPool extends Message {
     constructor(data) {
         super();
         /**
@@ -315,10 +325,11 @@ IncentivizedPool.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "lockable_duration", kind: "message", T: Duration },
     { no: 3, name: "gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { IncentivizedPool };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryIncentivizedPoolsResponse
  */
-export class QueryIncentivizedPoolsResponse extends Message {
+class QueryIncentivizedPoolsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -345,10 +356,11 @@ QueryIncentivizedPoolsResponse.typeName = "osmosis.poolincentives.v1beta1.QueryI
 QueryIncentivizedPoolsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "incentivized_pools", kind: "message", T: IncentivizedPool, repeated: true },
 ]);
+export { QueryIncentivizedPoolsResponse };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryExternalIncentiveGaugesRequest
  */
-export class QueryExternalIncentiveGaugesRequest extends Message {
+class QueryExternalIncentiveGaugesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -369,10 +381,11 @@ export class QueryExternalIncentiveGaugesRequest extends Message {
 QueryExternalIncentiveGaugesRequest.runtime = proto3;
 QueryExternalIncentiveGaugesRequest.typeName = "osmosis.poolincentives.v1beta1.QueryExternalIncentiveGaugesRequest";
 QueryExternalIncentiveGaugesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryExternalIncentiveGaugesRequest };
 /**
  * @generated from message osmosis.poolincentives.v1beta1.QueryExternalIncentiveGaugesResponse
  */
-export class QueryExternalIncentiveGaugesResponse extends Message {
+class QueryExternalIncentiveGaugesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -399,4 +412,5 @@ QueryExternalIncentiveGaugesResponse.typeName = "osmosis.poolincentives.v1beta1.
 QueryExternalIncentiveGaugesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: Gauge, repeated: true },
 ]);
+export { QueryExternalIncentiveGaugesResponse };
 //# sourceMappingURL=query_pb.js.map

@@ -12,7 +12,7 @@ import { Coin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.bank.v1beta1.SendAuthorization
  */
-export class SendAuthorization extends Message {
+class SendAuthorization extends Message {
     constructor(data) {
         super();
         /**
@@ -49,4 +49,5 @@ SendAuthorization.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spend_limit", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "allow_list", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { SendAuthorization };
 //# sourceMappingURL=authz_pb.js.map

@@ -7,7 +7,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message injective.peggy.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -130,4 +130,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 20, name: "bridge_contract_start_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 21, name: "valset_reward", kind: "message", T: Coin },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

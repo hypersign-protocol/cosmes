@@ -7,7 +7,7 @@ import { PublicKey } from "../crypto/keys_pb.js";
 /**
  * @generated from message tendermint.types.ValidatorSet
  */
-export class ValidatorSet extends Message {
+class ValidatorSet extends Message {
     constructor(data) {
         super();
         /**
@@ -40,10 +40,11 @@ ValidatorSet.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proposer", kind: "message", T: Validator },
     { no: 3, name: "total_voting_power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { ValidatorSet };
 /**
  * @generated from message tendermint.types.Validator
  */
-export class Validator extends Message {
+class Validator extends Message {
     constructor(data) {
         super();
         /**
@@ -81,10 +82,11 @@ Validator.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "voting_power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 4, name: "proposer_priority", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { Validator };
 /**
  * @generated from message tendermint.types.SimpleValidator
  */
-export class SimpleValidator extends Message {
+class SimpleValidator extends Message {
     constructor(data) {
         super();
         /**
@@ -112,4 +114,5 @@ SimpleValidator.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pub_key", kind: "message", T: PublicKey },
     { no: 2, name: "voting_power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { SimpleValidator };
 //# sourceMappingURL=validator_pb.js.map

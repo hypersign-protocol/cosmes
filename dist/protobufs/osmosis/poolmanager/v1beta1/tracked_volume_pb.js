@@ -7,7 +7,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message osmosis.poolmanager.v1beta1.TrackedVolume
  */
-export class TrackedVolume extends Message {
+class TrackedVolume extends Message {
     constructor(data) {
         super();
         /**
@@ -34,4 +34,5 @@ TrackedVolume.typeName = "osmosis.poolmanager.v1beta1.TrackedVolume";
 TrackedVolume.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { TrackedVolume };
 //# sourceMappingURL=tracked_volume_pb.js.map

@@ -9,7 +9,7 @@ import { Any, Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message ibc.lightclients.solomachine.v3.ClientState
  */
-export class ClientState extends Message {
+class ClientState extends Message {
     constructor(data) {
         super();
         /**
@@ -46,6 +46,7 @@ ClientState.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "is_frozen", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 3, name: "consensus_state", kind: "message", T: ConsensusState },
 ]);
+export { ClientState };
 /**
  * ConsensusState defines a solo machine consensus state. The sequence of a
  * consensus state is contained in the "height" key used in storing the
@@ -53,7 +54,7 @@ ClientState.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.lightclients.solomachine.v3.ConsensusState
  */
-export class ConsensusState extends Message {
+class ConsensusState extends Message {
     constructor(data) {
         super();
         /**
@@ -90,12 +91,13 @@ ConsensusState.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "diversifier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ConsensusState };
 /**
  * Header defines a solo machine consensus header
  *
  * @generated from message ibc.lightclients.solomachine.v3.Header
  */
-export class Header extends Message {
+class Header extends Message {
     constructor(data) {
         super();
         /**
@@ -133,13 +135,14 @@ Header.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "new_public_key", kind: "message", T: Any },
     { no: 4, name: "new_diversifier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Header };
 /**
  * Misbehaviour defines misbehaviour for a solo machine which consists
  * of a sequence and two signatures over different messages at that sequence.
  *
  * @generated from message ibc.lightclients.solomachine.v3.Misbehaviour
  */
-export class Misbehaviour extends Message {
+class Misbehaviour extends Message {
     constructor(data) {
         super();
         /**
@@ -168,13 +171,14 @@ Misbehaviour.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "signature_one", kind: "message", T: SignatureAndData },
     { no: 3, name: "signature_two", kind: "message", T: SignatureAndData },
 ]);
+export { Misbehaviour };
 /**
  * SignatureAndData contains a signature and the data signed over to create that
  * signature.
  *
  * @generated from message ibc.lightclients.solomachine.v3.SignatureAndData
  */
-export class SignatureAndData extends Message {
+class SignatureAndData extends Message {
     constructor(data) {
         super();
         /**
@@ -216,13 +220,14 @@ SignatureAndData.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SignatureAndData };
 /**
  * TimestampedSignatureData contains the signature data and the timestamp of the
  * signature.
  *
  * @generated from message ibc.lightclients.solomachine.v3.TimestampedSignatureData
  */
-export class TimestampedSignatureData extends Message {
+class TimestampedSignatureData extends Message {
     constructor(data) {
         super();
         /**
@@ -254,12 +259,13 @@ TimestampedSignatureData.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signature_data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { TimestampedSignatureData };
 /**
  * SignBytes defines the signed bytes used for signature verification.
  *
  * @generated from message ibc.lightclients.solomachine.v3.SignBytes
  */
-export class SignBytes extends Message {
+class SignBytes extends Message {
     constructor(data) {
         super();
         /**
@@ -316,12 +322,13 @@ SignBytes.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "path", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 5, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { SignBytes };
 /**
  * HeaderData returns the SignBytes data for update verification.
  *
  * @generated from message ibc.lightclients.solomachine.v3.HeaderData
  */
-export class HeaderData extends Message {
+class HeaderData extends Message {
     constructor(data) {
         super();
         /**
@@ -351,4 +358,5 @@ HeaderData.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "new_pub_key", kind: "message", T: Any },
     { no: 2, name: "new_diversifier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { HeaderData };
 //# sourceMappingURL=solomachine_pb.js.map

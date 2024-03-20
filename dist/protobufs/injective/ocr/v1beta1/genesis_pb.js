@@ -10,7 +10,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message injective.ocr.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -90,10 +90,11 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "feed_transmission_counts", kind: "message", T: FeedCounts, repeated: true },
     { no: 9, name: "pending_payeeships", kind: "message", T: PendingPayeeship, repeated: true },
 ]);
+export { GenesisState };
 /**
  * @generated from message injective.ocr.v1beta1.FeedTransmission
  */
-export class FeedTransmission extends Message {
+class FeedTransmission extends Message {
     constructor(data) {
         super();
         /**
@@ -121,10 +122,11 @@ FeedTransmission.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "transmission", kind: "message", T: Transmission },
 ]);
+export { FeedTransmission };
 /**
  * @generated from message injective.ocr.v1beta1.FeedEpochAndRound
  */
-export class FeedEpochAndRound extends Message {
+class FeedEpochAndRound extends Message {
     constructor(data) {
         super();
         /**
@@ -152,10 +154,11 @@ FeedEpochAndRound.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "epoch_and_round", kind: "message", T: EpochAndRound },
 ]);
+export { FeedEpochAndRound };
 /**
  * @generated from message injective.ocr.v1beta1.FeedLatestAggregatorRoundIDs
  */
-export class FeedLatestAggregatorRoundIDs extends Message {
+class FeedLatestAggregatorRoundIDs extends Message {
     constructor(data) {
         super();
         /**
@@ -187,10 +190,11 @@ FeedLatestAggregatorRoundIDs.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "aggregator_round_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { FeedLatestAggregatorRoundIDs };
 /**
  * @generated from message injective.ocr.v1beta1.RewardPool
  */
-export class RewardPool extends Message {
+class RewardPool extends Message {
     constructor(data) {
         super();
         /**
@@ -218,10 +222,11 @@ RewardPool.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "amount", kind: "message", T: Coin },
 ]);
+export { RewardPool };
 /**
  * @generated from message injective.ocr.v1beta1.FeedCounts
  */
-export class FeedCounts extends Message {
+class FeedCounts extends Message {
     constructor(data) {
         super();
         /**
@@ -253,10 +258,11 @@ FeedCounts.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "counts", kind: "message", T: Count, repeated: true },
 ]);
+export { FeedCounts };
 /**
  * @generated from message injective.ocr.v1beta1.Count
  */
-export class Count extends Message {
+class Count extends Message {
     constructor(data) {
         super();
         /**
@@ -288,10 +294,11 @@ Count.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Count };
 /**
  * @generated from message injective.ocr.v1beta1.PendingPayeeship
  */
-export class PendingPayeeship extends Message {
+class PendingPayeeship extends Message {
     constructor(data) {
         super();
         /**
@@ -328,4 +335,5 @@ PendingPayeeship.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "transmitter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "proposed_payee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PendingPayeeship };
 //# sourceMappingURL=genesis_pb.js.map

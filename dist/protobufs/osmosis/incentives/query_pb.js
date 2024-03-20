@@ -10,7 +10,7 @@ import { Group, GroupsWithGauge } from "./group_pb.js";
 /**
  * @generated from message osmosis.incentives.ModuleToDistributeCoinsRequest
  */
-export class ModuleToDistributeCoinsRequest extends Message {
+class ModuleToDistributeCoinsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -31,10 +31,11 @@ export class ModuleToDistributeCoinsRequest extends Message {
 ModuleToDistributeCoinsRequest.runtime = proto3;
 ModuleToDistributeCoinsRequest.typeName = "osmosis.incentives.ModuleToDistributeCoinsRequest";
 ModuleToDistributeCoinsRequest.fields = proto3.util.newFieldList(() => []);
+export { ModuleToDistributeCoinsRequest };
 /**
  * @generated from message osmosis.incentives.ModuleToDistributeCoinsResponse
  */
-export class ModuleToDistributeCoinsResponse extends Message {
+class ModuleToDistributeCoinsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -63,10 +64,11 @@ ModuleToDistributeCoinsResponse.typeName = "osmosis.incentives.ModuleToDistribut
 ModuleToDistributeCoinsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { ModuleToDistributeCoinsResponse };
 /**
  * @generated from message osmosis.incentives.GaugeByIDRequest
  */
-export class GaugeByIDRequest extends Message {
+class GaugeByIDRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -95,10 +97,11 @@ GaugeByIDRequest.typeName = "osmosis.incentives.GaugeByIDRequest";
 GaugeByIDRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GaugeByIDRequest };
 /**
  * @generated from message osmosis.incentives.GaugeByIDResponse
  */
-export class GaugeByIDResponse extends Message {
+class GaugeByIDResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -121,10 +124,11 @@ GaugeByIDResponse.typeName = "osmosis.incentives.GaugeByIDResponse";
 GaugeByIDResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gauge", kind: "message", T: Gauge },
 ]);
+export { GaugeByIDResponse };
 /**
  * @generated from message osmosis.incentives.GaugesRequest
  */
-export class GaugesRequest extends Message {
+class GaugesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -147,10 +151,11 @@ GaugesRequest.typeName = "osmosis.incentives.GaugesRequest";
 GaugesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { GaugesRequest };
 /**
  * @generated from message osmosis.incentives.GaugesResponse
  */
-export class GaugesResponse extends Message {
+class GaugesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -180,10 +185,11 @@ GaugesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { GaugesResponse };
 /**
  * @generated from message osmosis.incentives.ActiveGaugesRequest
  */
-export class ActiveGaugesRequest extends Message {
+class ActiveGaugesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -206,10 +212,11 @@ ActiveGaugesRequest.typeName = "osmosis.incentives.ActiveGaugesRequest";
 ActiveGaugesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { ActiveGaugesRequest };
 /**
  * @generated from message osmosis.incentives.ActiveGaugesResponse
  */
-export class ActiveGaugesResponse extends Message {
+class ActiveGaugesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -239,10 +246,11 @@ ActiveGaugesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { ActiveGaugesResponse };
 /**
  * @generated from message osmosis.incentives.ActiveGaugesPerDenomRequest
  */
-export class ActiveGaugesPerDenomRequest extends Message {
+class ActiveGaugesPerDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -272,10 +280,11 @@ ActiveGaugesPerDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { ActiveGaugesPerDenomRequest };
 /**
  * @generated from message osmosis.incentives.ActiveGaugesPerDenomResponse
  */
-export class ActiveGaugesPerDenomResponse extends Message {
+class ActiveGaugesPerDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -305,10 +314,11 @@ ActiveGaugesPerDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { ActiveGaugesPerDenomResponse };
 /**
  * @generated from message osmosis.incentives.UpcomingGaugesRequest
  */
-export class UpcomingGaugesRequest extends Message {
+class UpcomingGaugesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -331,10 +341,11 @@ UpcomingGaugesRequest.typeName = "osmosis.incentives.UpcomingGaugesRequest";
 UpcomingGaugesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { UpcomingGaugesRequest };
 /**
  * @generated from message osmosis.incentives.UpcomingGaugesResponse
  */
-export class UpcomingGaugesResponse extends Message {
+class UpcomingGaugesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -364,10 +375,11 @@ UpcomingGaugesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { UpcomingGaugesResponse };
 /**
  * @generated from message osmosis.incentives.UpcomingGaugesPerDenomRequest
  */
-export class UpcomingGaugesPerDenomRequest extends Message {
+class UpcomingGaugesPerDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -397,10 +409,11 @@ UpcomingGaugesPerDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { UpcomingGaugesPerDenomRequest };
 /**
  * @generated from message osmosis.incentives.UpcomingGaugesPerDenomResponse
  */
-export class UpcomingGaugesPerDenomResponse extends Message {
+class UpcomingGaugesPerDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -430,10 +443,11 @@ UpcomingGaugesPerDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "upcoming_gauges", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { UpcomingGaugesPerDenomResponse };
 /**
  * @generated from message osmosis.incentives.RewardsEstRequest
  */
-export class RewardsEstRequest extends Message {
+class RewardsEstRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -477,10 +491,11 @@ RewardsEstRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "lock_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 3, name: "end_epoch", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { RewardsEstRequest };
 /**
  * @generated from message osmosis.incentives.RewardsEstResponse
  */
-export class RewardsEstResponse extends Message {
+class RewardsEstResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -510,10 +525,11 @@ RewardsEstResponse.typeName = "osmosis.incentives.RewardsEstResponse";
 RewardsEstResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { RewardsEstResponse };
 /**
  * @generated from message osmosis.incentives.QueryLockableDurationsRequest
  */
-export class QueryLockableDurationsRequest extends Message {
+class QueryLockableDurationsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -534,10 +550,11 @@ export class QueryLockableDurationsRequest extends Message {
 QueryLockableDurationsRequest.runtime = proto3;
 QueryLockableDurationsRequest.typeName = "osmosis.incentives.QueryLockableDurationsRequest";
 QueryLockableDurationsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryLockableDurationsRequest };
 /**
  * @generated from message osmosis.incentives.QueryLockableDurationsResponse
  */
-export class QueryLockableDurationsResponse extends Message {
+class QueryLockableDurationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -566,10 +583,11 @@ QueryLockableDurationsResponse.typeName = "osmosis.incentives.QueryLockableDurat
 QueryLockableDurationsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lockable_durations", kind: "message", T: Duration, repeated: true },
 ]);
+export { QueryLockableDurationsResponse };
 /**
  * @generated from message osmosis.incentives.QueryAllGroupsRequest
  */
-export class QueryAllGroupsRequest extends Message {
+class QueryAllGroupsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -590,10 +608,11 @@ export class QueryAllGroupsRequest extends Message {
 QueryAllGroupsRequest.runtime = proto3;
 QueryAllGroupsRequest.typeName = "osmosis.incentives.QueryAllGroupsRequest";
 QueryAllGroupsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryAllGroupsRequest };
 /**
  * @generated from message osmosis.incentives.QueryAllGroupsResponse
  */
-export class QueryAllGroupsResponse extends Message {
+class QueryAllGroupsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -620,10 +639,11 @@ QueryAllGroupsResponse.typeName = "osmosis.incentives.QueryAllGroupsResponse";
 QueryAllGroupsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "groups", kind: "message", T: Group, repeated: true },
 ]);
+export { QueryAllGroupsResponse };
 /**
  * @generated from message osmosis.incentives.QueryAllGroupsGaugesRequest
  */
-export class QueryAllGroupsGaugesRequest extends Message {
+class QueryAllGroupsGaugesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -644,10 +664,11 @@ export class QueryAllGroupsGaugesRequest extends Message {
 QueryAllGroupsGaugesRequest.runtime = proto3;
 QueryAllGroupsGaugesRequest.typeName = "osmosis.incentives.QueryAllGroupsGaugesRequest";
 QueryAllGroupsGaugesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryAllGroupsGaugesRequest };
 /**
  * @generated from message osmosis.incentives.QueryAllGroupsGaugesResponse
  */
-export class QueryAllGroupsGaugesResponse extends Message {
+class QueryAllGroupsGaugesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -674,10 +695,11 @@ QueryAllGroupsGaugesResponse.typeName = "osmosis.incentives.QueryAllGroupsGauges
 QueryAllGroupsGaugesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gauges", kind: "message", T: Gauge, repeated: true },
 ]);
+export { QueryAllGroupsGaugesResponse };
 /**
  * @generated from message osmosis.incentives.QueryAllGroupsWithGaugeRequest
  */
-export class QueryAllGroupsWithGaugeRequest extends Message {
+class QueryAllGroupsWithGaugeRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -698,10 +720,11 @@ export class QueryAllGroupsWithGaugeRequest extends Message {
 QueryAllGroupsWithGaugeRequest.runtime = proto3;
 QueryAllGroupsWithGaugeRequest.typeName = "osmosis.incentives.QueryAllGroupsWithGaugeRequest";
 QueryAllGroupsWithGaugeRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryAllGroupsWithGaugeRequest };
 /**
  * @generated from message osmosis.incentives.QueryAllGroupsWithGaugeResponse
  */
-export class QueryAllGroupsWithGaugeResponse extends Message {
+class QueryAllGroupsWithGaugeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -728,10 +751,11 @@ QueryAllGroupsWithGaugeResponse.typeName = "osmosis.incentives.QueryAllGroupsWit
 QueryAllGroupsWithGaugeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "groups_with_gauge", kind: "message", T: GroupsWithGauge, repeated: true },
 ]);
+export { QueryAllGroupsWithGaugeResponse };
 /**
  * @generated from message osmosis.incentives.QueryGroupByGroupGaugeIDRequest
  */
-export class QueryGroupByGroupGaugeIDRequest extends Message {
+class QueryGroupByGroupGaugeIDRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -758,10 +782,11 @@ QueryGroupByGroupGaugeIDRequest.typeName = "osmosis.incentives.QueryGroupByGroup
 QueryGroupByGroupGaugeIDRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryGroupByGroupGaugeIDRequest };
 /**
  * @generated from message osmosis.incentives.QueryGroupByGroupGaugeIDResponse
  */
-export class QueryGroupByGroupGaugeIDResponse extends Message {
+class QueryGroupByGroupGaugeIDResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -784,10 +809,11 @@ QueryGroupByGroupGaugeIDResponse.typeName = "osmosis.incentives.QueryGroupByGrou
 QueryGroupByGroupGaugeIDResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group", kind: "message", T: Group },
 ]);
+export { QueryGroupByGroupGaugeIDResponse };
 /**
  * @generated from message osmosis.incentives.QueryCurrentWeightByGroupGaugeIDRequest
  */
-export class QueryCurrentWeightByGroupGaugeIDRequest extends Message {
+class QueryCurrentWeightByGroupGaugeIDRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -814,10 +840,11 @@ QueryCurrentWeightByGroupGaugeIDRequest.typeName = "osmosis.incentives.QueryCurr
 QueryCurrentWeightByGroupGaugeIDRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryCurrentWeightByGroupGaugeIDRequest };
 /**
  * @generated from message osmosis.incentives.QueryCurrentWeightByGroupGaugeIDResponse
  */
-export class QueryCurrentWeightByGroupGaugeIDResponse extends Message {
+class QueryCurrentWeightByGroupGaugeIDResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -844,10 +871,11 @@ QueryCurrentWeightByGroupGaugeIDResponse.typeName = "osmosis.incentives.QueryCur
 QueryCurrentWeightByGroupGaugeIDResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gauge_weight", kind: "message", T: GaugeWeight, repeated: true },
 ]);
+export { QueryCurrentWeightByGroupGaugeIDResponse };
 /**
  * @generated from message osmosis.incentives.GaugeWeight
  */
-export class GaugeWeight extends Message {
+class GaugeWeight extends Message {
     constructor(data) {
         super();
         /**
@@ -879,4 +907,5 @@ GaugeWeight.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "weight_ratio", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GaugeWeight };
 //# sourceMappingURL=query_pb.js.map

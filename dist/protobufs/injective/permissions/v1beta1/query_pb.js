@@ -10,7 +10,7 @@ import { Namespace, Voucher } from "./permissions_pb.js";
  *
  * @generated from message injective.permissions.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -31,12 +31,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "injective.permissions.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message injective.permissions.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -59,13 +60,14 @@ QueryParamsResponse.typeName = "injective.permissions.v1beta1.QueryParamsRespons
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryAllNamespacesRequest is the request type for the Query/AllNamespaces RPC
  * method.
  *
  * @generated from message injective.permissions.v1beta1.QueryAllNamespacesRequest
  */
-export class QueryAllNamespacesRequest extends Message {
+class QueryAllNamespacesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -86,13 +88,14 @@ export class QueryAllNamespacesRequest extends Message {
 QueryAllNamespacesRequest.runtime = proto3;
 QueryAllNamespacesRequest.typeName = "injective.permissions.v1beta1.QueryAllNamespacesRequest";
 QueryAllNamespacesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryAllNamespacesRequest };
 /**
  * QueryAllNamespacesResponse is the response type for the Query/AllNamespaces
  * RPC method.
  *
  * @generated from message injective.permissions.v1beta1.QueryAllNamespacesResponse
  */
-export class QueryAllNamespacesResponse extends Message {
+class QueryAllNamespacesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -119,13 +122,14 @@ QueryAllNamespacesResponse.typeName = "injective.permissions.v1beta1.QueryAllNam
 QueryAllNamespacesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "namespaces", kind: "message", T: Namespace, repeated: true },
 ]);
+export { QueryAllNamespacesResponse };
 /**
  * QueryNamespaceByDenomRequest is the request type for the
  * Query/NamespaceByDenom RPC method.
  *
  * @generated from message injective.permissions.v1beta1.QueryNamespaceByDenomRequest
  */
-export class QueryNamespaceByDenomRequest extends Message {
+class QueryNamespaceByDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -157,13 +161,14 @@ QueryNamespaceByDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "include_roles", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryNamespaceByDenomRequest };
 /**
  * QueryNamespaceByDenomResponse is the response type for the
  * Query/NamespaceByDenom RPC method.
  *
  * @generated from message injective.permissions.v1beta1.QueryNamespaceByDenomResponse
  */
-export class QueryNamespaceByDenomResponse extends Message {
+class QueryNamespaceByDenomResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -186,13 +191,14 @@ QueryNamespaceByDenomResponse.typeName = "injective.permissions.v1beta1.QueryNam
 QueryNamespaceByDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "namespace", kind: "message", T: Namespace },
 ]);
+export { QueryNamespaceByDenomResponse };
 /**
  * QueryAddressesByRoleRequest is the request type for the Query/AddressesByRole
  * RPC method.
  *
  * @generated from message injective.permissions.v1beta1.QueryAddressesByRoleRequest
  */
-export class QueryAddressesByRoleRequest extends Message {
+class QueryAddressesByRoleRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -224,13 +230,14 @@ QueryAddressesByRoleRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "role", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAddressesByRoleRequest };
 /**
  * QueryAddressesByRoleResponse is the response type for the
  * Query/AddressesByRole RPC method.
  *
  * @generated from message injective.permissions.v1beta1.QueryAddressesByRoleResponse
  */
-export class QueryAddressesByRoleResponse extends Message {
+class QueryAddressesByRoleResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -257,10 +264,11 @@ QueryAddressesByRoleResponse.typeName = "injective.permissions.v1beta1.QueryAddr
 QueryAddressesByRoleResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryAddressesByRoleResponse };
 /**
  * @generated from message injective.permissions.v1beta1.QueryAddressRolesRequest
  */
-export class QueryAddressRolesRequest extends Message {
+class QueryAddressRolesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -292,10 +300,11 @@ QueryAddressRolesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAddressRolesRequest };
 /**
  * @generated from message injective.permissions.v1beta1.QueryAddressRolesResponse
  */
-export class QueryAddressRolesResponse extends Message {
+class QueryAddressRolesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -322,10 +331,11 @@ QueryAddressRolesResponse.typeName = "injective.permissions.v1beta1.QueryAddress
 QueryAddressRolesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "roles", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryAddressRolesResponse };
 /**
  * @generated from message injective.permissions.v1beta1.QueryVouchersForAddressRequest
  */
-export class QueryVouchersForAddressRequest extends Message {
+class QueryVouchersForAddressRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -352,10 +362,11 @@ QueryVouchersForAddressRequest.typeName = "injective.permissions.v1beta1.QueryVo
 QueryVouchersForAddressRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryVouchersForAddressRequest };
 /**
  * @generated from message injective.permissions.v1beta1.QueryVouchersForAddressResponse
  */
-export class QueryVouchersForAddressResponse extends Message {
+class QueryVouchersForAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -382,4 +393,5 @@ QueryVouchersForAddressResponse.typeName = "injective.permissions.v1beta1.QueryV
 QueryVouchersForAddressResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "vouchers", kind: "map", K: 9 /* ScalarType.STRING */, V: { kind: "message", T: Voucher } },
 ]);
+export { QueryVouchersForAddressResponse };
 //# sourceMappingURL=query_pb.js.map

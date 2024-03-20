@@ -10,7 +10,7 @@ import { BaseAccount } from "../../../cosmos/auth/v1beta1/auth_pb.js";
  *
  * @generated from message injective.types.v1beta1.EthAccount
  */
-export class EthAccount extends Message {
+class EthAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -38,4 +38,5 @@ EthAccount.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_account", kind: "message", T: BaseAccount },
     { no: 2, name: "code_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { EthAccount };
 //# sourceMappingURL=account_pb.js.map

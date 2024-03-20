@@ -45,7 +45,7 @@ proto3.util.setEnumType(LockQueryType, "osmosis.lockup.LockQueryType", [
  *
  * @generated from message osmosis.lockup.PeriodLock
  */
-export class PeriodLock extends Message {
+class PeriodLock extends Message {
     constructor(data) {
         super();
         /**
@@ -102,6 +102,7 @@ PeriodLock.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "coins", kind: "message", T: Coin, repeated: true },
     { no: 6, name: "reward_receiver_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PeriodLock };
 /**
  * QueryCondition is a struct used for querying locks upon different conditions.
  * Duration field and timestamp fields could be optional, depending on the
@@ -109,7 +110,7 @@ PeriodLock.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.lockup.QueryCondition
  */
-export class QueryCondition extends Message {
+class QueryCondition extends Message {
     constructor(data) {
         super();
         /**
@@ -147,6 +148,7 @@ QueryCondition.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "duration", kind: "message", T: Duration },
     { no: 4, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { QueryCondition };
 /**
  * SyntheticLock is creating virtual lockup where new denom is combination of
  * original denom and synthetic suffix. At the time of synthetic lockup creation
@@ -155,7 +157,7 @@ QueryCondition.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.lockup.SyntheticLock
  */
-export class SyntheticLock extends Message {
+class SyntheticLock extends Message {
     constructor(data) {
         super();
         /**
@@ -195,4 +197,5 @@ SyntheticLock.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "end_time", kind: "message", T: Timestamp },
     { no: 4, name: "duration", kind: "message", T: Duration },
 ]);
+export { SyntheticLock };
 //# sourceMappingURL=lock_pb.js.map

@@ -7,7 +7,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message injective.ocr.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -50,10 +50,11 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "payout_block_interval", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "module_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 /**
  * @generated from message injective.ocr.v1beta1.FeedConfig
  */
-export class FeedConfig extends Message {
+class FeedConfig extends Message {
     constructor(data) {
         super();
         /**
@@ -122,10 +123,11 @@ FeedConfig.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "offchain_config", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 7, name: "module_params", kind: "message", T: ModuleParams },
 ]);
+export { FeedConfig };
 /**
  * @generated from message injective.ocr.v1beta1.FeedConfigInfo
  */
-export class FeedConfigInfo extends Message {
+class FeedConfigInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -175,10 +177,11 @@ FeedConfigInfo.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "config_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "latest_config_block_number", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { FeedConfigInfo };
 /**
  * @generated from message injective.ocr.v1beta1.ModuleParams
  */
-export class ModuleParams extends Message {
+class ModuleParams extends Message {
     constructor(data) {
         super();
         /**
@@ -271,10 +274,11 @@ ModuleParams.fields = proto3.util.newFieldList(() => [
     { no: 9, name: "feed_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "billing_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ModuleParams };
 /**
  * @generated from message injective.ocr.v1beta1.ContractConfig
  */
-export class ContractConfig extends Message {
+class ContractConfig extends Message {
     constructor(data) {
         super();
         /**
@@ -350,10 +354,11 @@ ContractConfig.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "offchain_config_version", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 7, name: "offchain_config", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ContractConfig };
 /**
  * @generated from message injective.ocr.v1beta1.SetConfigProposal
  */
-export class SetConfigProposal extends Message {
+class SetConfigProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -386,10 +391,11 @@ SetConfigProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "config", kind: "message", T: FeedConfig },
 ]);
+export { SetConfigProposal };
 /**
  * @generated from message injective.ocr.v1beta1.FeedProperties
  */
-export class FeedProperties extends Message {
+class FeedProperties extends Message {
     constructor(data) {
         super();
         /**
@@ -492,10 +498,11 @@ FeedProperties.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "unique_reports", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { FeedProperties };
 /**
  * @generated from message injective.ocr.v1beta1.SetBatchConfigProposal
  */
-export class SetBatchConfigProposal extends Message {
+class SetBatchConfigProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -556,10 +563,11 @@ SetBatchConfigProposal.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "link_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "feed_properties", kind: "message", T: FeedProperties, repeated: true },
 ]);
+export { SetBatchConfigProposal };
 /**
  * @generated from message injective.ocr.v1beta1.OracleObservationsCounts
  */
-export class OracleObservationsCounts extends Message {
+class OracleObservationsCounts extends Message {
     constructor(data) {
         super();
         /**
@@ -586,12 +594,13 @@ OracleObservationsCounts.typeName = "injective.ocr.v1beta1.OracleObservationsCou
 OracleObservationsCounts.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "counts", kind: "scalar", T: 13 /* ScalarType.UINT32 */, repeated: true },
 ]);
+export { OracleObservationsCounts };
 /**
  * LINK-INJ-denominated reimbursements for gas used by transmitters.
  *
  * @generated from message injective.ocr.v1beta1.GasReimbursements
  */
-export class GasReimbursements extends Message {
+class GasReimbursements extends Message {
     constructor(data) {
         super();
         /**
@@ -618,10 +627,11 @@ GasReimbursements.typeName = "injective.ocr.v1beta1.GasReimbursements";
 GasReimbursements.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "reimbursements", kind: "message", T: Coin, repeated: true },
 ]);
+export { GasReimbursements };
 /**
  * @generated from message injective.ocr.v1beta1.Payee
  */
-export class Payee extends Message {
+class Payee extends Message {
     constructor(data) {
         super();
         /**
@@ -653,13 +663,14 @@ Payee.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "transmitter_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "payment_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Payee };
 /**
  * Transmission records the median answer from the transmit transaction at
  * time timestamp
  *
  * @generated from message injective.ocr.v1beta1.Transmission
  */
-export class Transmission extends Message {
+class Transmission extends Message {
     constructor(data) {
         super();
         /**
@@ -700,10 +711,11 @@ Transmission.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "observations_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 3, name: "transmission_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { Transmission };
 /**
  * @generated from message injective.ocr.v1beta1.EpochAndRound
  */
-export class EpochAndRound extends Message {
+class EpochAndRound extends Message {
     constructor(data) {
         super();
         /**
@@ -735,10 +747,11 @@ EpochAndRound.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "epoch", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "round", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EpochAndRound };
 /**
  * @generated from message injective.ocr.v1beta1.Report
  */
-export class Report extends Message {
+class Report extends Message {
     constructor(data) {
         super();
         /**
@@ -779,10 +792,11 @@ Report.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "observers", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "observations", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Report };
 /**
  * @generated from message injective.ocr.v1beta1.ReportToSign
  */
-export class ReportToSign extends Message {
+class ReportToSign extends Message {
     constructor(data) {
         super();
         /**
@@ -831,10 +845,11 @@ ReportToSign.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "extra_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 5, name: "report", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ReportToSign };
 /**
  * @generated from message injective.ocr.v1beta1.EventOraclePaid
  */
-export class EventOraclePaid extends Message {
+class EventOraclePaid extends Message {
     constructor(data) {
         super();
         /**
@@ -867,10 +882,11 @@ EventOraclePaid.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "payee_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { EventOraclePaid };
 /**
  * @generated from message injective.ocr.v1beta1.EventAnswerUpdated
  */
-export class EventAnswerUpdated extends Message {
+class EventAnswerUpdated extends Message {
     constructor(data) {
         super();
         /**
@@ -903,10 +919,11 @@ EventAnswerUpdated.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "round_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "updated_at", kind: "message", T: Timestamp },
 ]);
+export { EventAnswerUpdated };
 /**
  * @generated from message injective.ocr.v1beta1.EventNewRound
  */
-export class EventNewRound extends Message {
+class EventNewRound extends Message {
     constructor(data) {
         super();
         /**
@@ -941,10 +958,11 @@ EventNewRound.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "started_by", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "started_at", kind: "message", T: Timestamp },
 ]);
+export { EventNewRound };
 /**
  * @generated from message injective.ocr.v1beta1.EventTransmitted
  */
-export class EventTransmitted extends Message {
+class EventTransmitted extends Message {
     constructor(data) {
         super();
         /**
@@ -976,10 +994,11 @@ EventTransmitted.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "config_digest", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "epoch", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventTransmitted };
 /**
  * @generated from message injective.ocr.v1beta1.EventNewTransmission
  */
-export class EventNewTransmission extends Message {
+class EventNewTransmission extends Message {
     constructor(data) {
         super();
         /**
@@ -1042,10 +1061,11 @@ EventNewTransmission.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "config_digest", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 9, name: "epoch_and_round", kind: "message", T: EpochAndRound },
 ]);
+export { EventNewTransmission };
 /**
  * @generated from message injective.ocr.v1beta1.EventConfigSet
  */
-export class EventConfigSet extends Message {
+class EventConfigSet extends Message {
     constructor(data) {
         super();
         /**
@@ -1084,4 +1104,5 @@ EventConfigSet.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "config", kind: "message", T: FeedConfig },
     { no: 4, name: "config_info", kind: "message", T: FeedConfigInfo },
 ]);
+export { EventConfigSet };
 //# sourceMappingURL=ocr_pb.js.map

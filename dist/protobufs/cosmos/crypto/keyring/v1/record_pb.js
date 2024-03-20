@@ -6,7 +6,7 @@ import { BIP44Params } from "../../hd/v1/hd_pb.js";
  *
  * @generated from message cosmos.crypto.keyring.v1.Record
  */
-export class Record extends Message {
+class Record extends Message {
     constructor(data) {
         super();
         /**
@@ -46,13 +46,14 @@ Record.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "multi", kind: "message", T: Record_Multi, oneof: "item" },
     { no: 6, name: "offline", kind: "message", T: Record_Offline, oneof: "item" },
 ]);
+export { Record };
 /**
  * Item is a keyring item stored in a keyring backend.
  * Local item
  *
  * @generated from message cosmos.crypto.keyring.v1.Record.Local
  */
-export class Record_Local extends Message {
+class Record_Local extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -75,12 +76,13 @@ Record_Local.typeName = "cosmos.crypto.keyring.v1.Record.Local";
 Record_Local.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "priv_key", kind: "message", T: Any },
 ]);
+export { Record_Local };
 /**
  * Ledger item
  *
  * @generated from message cosmos.crypto.keyring.v1.Record.Ledger
  */
-export class Record_Ledger extends Message {
+class Record_Ledger extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -103,12 +105,13 @@ Record_Ledger.typeName = "cosmos.crypto.keyring.v1.Record.Ledger";
 Record_Ledger.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "path", kind: "message", T: BIP44Params },
 ]);
+export { Record_Ledger };
 /**
  * Multi item
  *
  * @generated from message cosmos.crypto.keyring.v1.Record.Multi
  */
-export class Record_Multi extends Message {
+class Record_Multi extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -129,12 +132,13 @@ export class Record_Multi extends Message {
 Record_Multi.runtime = proto3;
 Record_Multi.typeName = "cosmos.crypto.keyring.v1.Record.Multi";
 Record_Multi.fields = proto3.util.newFieldList(() => []);
+export { Record_Multi };
 /**
  * Offline item
  *
  * @generated from message cosmos.crypto.keyring.v1.Record.Offline
  */
-export class Record_Offline extends Message {
+class Record_Offline extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -155,4 +159,5 @@ export class Record_Offline extends Message {
 Record_Offline.runtime = proto3;
 Record_Offline.typeName = "cosmos.crypto.keyring.v1.Record.Offline";
 Record_Offline.fields = proto3.util.newFieldList(() => []);
+export { Record_Offline };
 //# sourceMappingURL=record_pb.js.map

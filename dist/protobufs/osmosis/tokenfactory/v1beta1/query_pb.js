@@ -10,7 +10,7 @@ import { DenomAuthorityMetadata } from "./authorityMetadata_pb.js";
  *
  * @generated from message osmosis.tokenfactory.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -31,12 +31,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "osmosis.tokenfactory.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message osmosis.tokenfactory.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -59,13 +60,14 @@ QueryParamsResponse.typeName = "osmosis.tokenfactory.v1beta1.QueryParamsResponse
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryDenomAuthorityMetadataRequest defines the request structure for the
  * DenomAuthorityMetadata gRPC query.
  *
  * @generated from message osmosis.tokenfactory.v1beta1.QueryDenomAuthorityMetadataRequest
  */
-export class QueryDenomAuthorityMetadataRequest extends Message {
+class QueryDenomAuthorityMetadataRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -92,13 +94,14 @@ QueryDenomAuthorityMetadataRequest.typeName = "osmosis.tokenfactory.v1beta1.Quer
 QueryDenomAuthorityMetadataRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomAuthorityMetadataRequest };
 /**
  * QueryDenomAuthorityMetadataResponse defines the response structure for the
  * DenomAuthorityMetadata gRPC query.
  *
  * @generated from message osmosis.tokenfactory.v1beta1.QueryDenomAuthorityMetadataResponse
  */
-export class QueryDenomAuthorityMetadataResponse extends Message {
+class QueryDenomAuthorityMetadataResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -121,13 +124,14 @@ QueryDenomAuthorityMetadataResponse.typeName = "osmosis.tokenfactory.v1beta1.Que
 QueryDenomAuthorityMetadataResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority_metadata", kind: "message", T: DenomAuthorityMetadata },
 ]);
+export { QueryDenomAuthorityMetadataResponse };
 /**
  * QueryDenomsFromCreatorRequest defines the request structure for the
  * DenomsFromCreator gRPC query.
  *
  * @generated from message osmosis.tokenfactory.v1beta1.QueryDenomsFromCreatorRequest
  */
-export class QueryDenomsFromCreatorRequest extends Message {
+class QueryDenomsFromCreatorRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -154,13 +158,14 @@ QueryDenomsFromCreatorRequest.typeName = "osmosis.tokenfactory.v1beta1.QueryDeno
 QueryDenomsFromCreatorRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "creator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomsFromCreatorRequest };
 /**
  * QueryDenomsFromCreatorRequest defines the response structure for the
  * DenomsFromCreator gRPC query.
  *
  * @generated from message osmosis.tokenfactory.v1beta1.QueryDenomsFromCreatorResponse
  */
-export class QueryDenomsFromCreatorResponse extends Message {
+class QueryDenomsFromCreatorResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -187,10 +192,11 @@ QueryDenomsFromCreatorResponse.typeName = "osmosis.tokenfactory.v1beta1.QueryDen
 QueryDenomsFromCreatorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denoms", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryDenomsFromCreatorResponse };
 /**
  * @generated from message osmosis.tokenfactory.v1beta1.QueryBeforeSendHookAddressRequest
  */
-export class QueryBeforeSendHookAddressRequest extends Message {
+class QueryBeforeSendHookAddressRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -217,13 +223,14 @@ QueryBeforeSendHookAddressRequest.typeName = "osmosis.tokenfactory.v1beta1.Query
 QueryBeforeSendHookAddressRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBeforeSendHookAddressRequest };
 /**
  * QueryBeforeSendHookAddressResponse defines the response structure for the
  * DenomBeforeSendHook gRPC query.
  *
  * @generated from message osmosis.tokenfactory.v1beta1.QueryBeforeSendHookAddressResponse
  */
-export class QueryBeforeSendHookAddressResponse extends Message {
+class QueryBeforeSendHookAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -250,4 +257,5 @@ QueryBeforeSendHookAddressResponse.typeName = "osmosis.tokenfactory.v1beta1.Quer
 QueryBeforeSendHookAddressResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cosmwasm_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBeforeSendHookAddressResponse };
 //# sourceMappingURL=query_pb.js.map

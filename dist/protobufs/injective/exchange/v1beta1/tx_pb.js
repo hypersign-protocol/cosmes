@@ -9,7 +9,7 @@ import { OracleType } from "../../oracle/v1beta1/oracle_pb.js";
 /**
  * @generated from message injective.exchange.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -39,10 +39,11 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * @generated from message injective.exchange.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -63,13 +64,14 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "injective.exchange.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 /**
  * MsgDeposit defines a SDK message for transferring coins from the sender's
  * bank balance into the subaccount's exchange deposits
  *
  * @generated from message injective.exchange.v1beta1.MsgDeposit
  */
-export class MsgDeposit extends Message {
+class MsgDeposit extends Message {
     constructor(data) {
         super();
         /**
@@ -105,12 +107,13 @@ MsgDeposit.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgDeposit };
 /**
  * MsgDepositResponse defines the Msg/Deposit response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgDepositResponse
  */
-export class MsgDepositResponse extends Message {
+class MsgDepositResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -131,13 +134,14 @@ export class MsgDepositResponse extends Message {
 MsgDepositResponse.runtime = proto3;
 MsgDepositResponse.typeName = "injective.exchange.v1beta1.MsgDepositResponse";
 MsgDepositResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgDepositResponse };
 /**
  * MsgWithdraw defines a SDK message for withdrawing coins from a subaccount's
  * deposits to the user's bank balance
  *
  * @generated from message injective.exchange.v1beta1.MsgWithdraw
  */
-export class MsgWithdraw extends Message {
+class MsgWithdraw extends Message {
     constructor(data) {
         super();
         /**
@@ -172,12 +176,13 @@ MsgWithdraw.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgWithdraw };
 /**
  * MsgWithdraw defines the Msg/Withdraw response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgWithdrawResponse
  */
-export class MsgWithdrawResponse extends Message {
+class MsgWithdrawResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -198,13 +203,14 @@ export class MsgWithdrawResponse extends Message {
 MsgWithdrawResponse.runtime = proto3;
 MsgWithdrawResponse.typeName = "injective.exchange.v1beta1.MsgWithdrawResponse";
 MsgWithdrawResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgWithdrawResponse };
 /**
  * MsgCreateSpotLimitOrder defines a SDK message for creating a new spot limit
  * order.
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateSpotLimitOrder
  */
-export class MsgCreateSpotLimitOrder extends Message {
+class MsgCreateSpotLimitOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -232,13 +238,14 @@ MsgCreateSpotLimitOrder.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "order", kind: "message", T: SpotOrder },
 ]);
+export { MsgCreateSpotLimitOrder };
 /**
  * MsgCreateSpotLimitOrderResponse defines the Msg/CreateSpotOrder response
  * type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateSpotLimitOrderResponse
  */
-export class MsgCreateSpotLimitOrderResponse extends Message {
+class MsgCreateSpotLimitOrderResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -265,13 +272,14 @@ MsgCreateSpotLimitOrderResponse.typeName = "injective.exchange.v1beta1.MsgCreate
 MsgCreateSpotLimitOrderResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateSpotLimitOrderResponse };
 /**
  * MsgBatchCreateSpotLimitOrders defines a SDK message for creating a new batch
  * of spot limit orders.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCreateSpotLimitOrders
  */
-export class MsgBatchCreateSpotLimitOrders extends Message {
+class MsgBatchCreateSpotLimitOrders extends Message {
     constructor(data) {
         super();
         /**
@@ -303,13 +311,14 @@ MsgBatchCreateSpotLimitOrders.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "orders", kind: "message", T: SpotOrder, repeated: true },
 ]);
+export { MsgBatchCreateSpotLimitOrders };
 /**
  * MsgBatchCreateSpotLimitOrdersResponse defines the
  * Msg/BatchCreateSpotLimitOrders response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCreateSpotLimitOrdersResponse
  */
-export class MsgBatchCreateSpotLimitOrdersResponse extends Message {
+class MsgBatchCreateSpotLimitOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -336,13 +345,14 @@ MsgBatchCreateSpotLimitOrdersResponse.typeName = "injective.exchange.v1beta1.Msg
 MsgBatchCreateSpotLimitOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "order_hashes", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgBatchCreateSpotLimitOrdersResponse };
 /**
  * MsgInstantSpotMarketLaunch defines a SDK message for creating a new spot
  * market by paying listing fee without governance
  *
  * @generated from message injective.exchange.v1beta1.MsgInstantSpotMarketLaunch
  */
-export class MsgInstantSpotMarketLaunch extends Message {
+class MsgInstantSpotMarketLaunch extends Message {
     constructor(data) {
         super();
         /**
@@ -405,13 +415,14 @@ MsgInstantSpotMarketLaunch.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "min_price_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgInstantSpotMarketLaunch };
 /**
  * MsgInstantSpotMarketLaunchResponse defines the Msg/InstantSpotMarketLaunch
  * response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgInstantSpotMarketLaunchResponse
  */
-export class MsgInstantSpotMarketLaunchResponse extends Message {
+class MsgInstantSpotMarketLaunchResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -432,13 +443,14 @@ export class MsgInstantSpotMarketLaunchResponse extends Message {
 MsgInstantSpotMarketLaunchResponse.runtime = proto3;
 MsgInstantSpotMarketLaunchResponse.typeName = "injective.exchange.v1beta1.MsgInstantSpotMarketLaunchResponse";
 MsgInstantSpotMarketLaunchResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgInstantSpotMarketLaunchResponse };
 /**
  * MsgInstantPerpetualMarketLaunch defines a SDK message for creating a new
  * perpetual futures market by paying listing fee without governance
  *
  * @generated from message injective.exchange.v1beta1.MsgInstantPerpetualMarketLaunch
  */
-export class MsgInstantPerpetualMarketLaunch extends Message {
+class MsgInstantPerpetualMarketLaunch extends Message {
     constructor(data) {
         super();
         /**
@@ -555,13 +567,14 @@ MsgInstantPerpetualMarketLaunch.fields = proto3.util.newFieldList(() => [
     { no: 12, name: "min_price_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgInstantPerpetualMarketLaunch };
 /**
  * MsgInstantPerpetualMarketLaunchResponse defines the
  * Msg/InstantPerpetualMarketLaunchResponse response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgInstantPerpetualMarketLaunchResponse
  */
-export class MsgInstantPerpetualMarketLaunchResponse extends Message {
+class MsgInstantPerpetualMarketLaunchResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -582,13 +595,14 @@ export class MsgInstantPerpetualMarketLaunchResponse extends Message {
 MsgInstantPerpetualMarketLaunchResponse.runtime = proto3;
 MsgInstantPerpetualMarketLaunchResponse.typeName = "injective.exchange.v1beta1.MsgInstantPerpetualMarketLaunchResponse";
 MsgInstantPerpetualMarketLaunchResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgInstantPerpetualMarketLaunchResponse };
 /**
  * MsgInstantBinaryOptionsMarketLaunch defines a SDK message for creating a new
  * perpetual futures market by paying listing fee without governance
  *
  * @generated from message injective.exchange.v1beta1.MsgInstantBinaryOptionsMarketLaunch
  */
-export class MsgInstantBinaryOptionsMarketLaunch extends Message {
+class MsgInstantBinaryOptionsMarketLaunch extends Message {
     constructor(data) {
         super();
         /**
@@ -710,13 +724,14 @@ MsgInstantBinaryOptionsMarketLaunch.fields = proto3.util.newFieldList(() => [
     { no: 13, name: "min_price_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgInstantBinaryOptionsMarketLaunch };
 /**
  * MsgInstantBinaryOptionsMarketLaunchResponse defines the
  * Msg/InstantBinaryOptionsMarketLaunchResponse response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgInstantBinaryOptionsMarketLaunchResponse
  */
-export class MsgInstantBinaryOptionsMarketLaunchResponse extends Message {
+class MsgInstantBinaryOptionsMarketLaunchResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -737,13 +752,14 @@ export class MsgInstantBinaryOptionsMarketLaunchResponse extends Message {
 MsgInstantBinaryOptionsMarketLaunchResponse.runtime = proto3;
 MsgInstantBinaryOptionsMarketLaunchResponse.typeName = "injective.exchange.v1beta1.MsgInstantBinaryOptionsMarketLaunchResponse";
 MsgInstantBinaryOptionsMarketLaunchResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgInstantBinaryOptionsMarketLaunchResponse };
 /**
  * MsgInstantExpiryFuturesMarketLaunch defines a SDK message for creating a new
  * expiry futures market by paying listing fee without governance
  *
  * @generated from message injective.exchange.v1beta1.MsgInstantExpiryFuturesMarketLaunch
  */
-export class MsgInstantExpiryFuturesMarketLaunch extends Message {
+class MsgInstantExpiryFuturesMarketLaunch extends Message {
     constructor(data) {
         super();
         /**
@@ -867,13 +883,14 @@ MsgInstantExpiryFuturesMarketLaunch.fields = proto3.util.newFieldList(() => [
     { no: 13, name: "min_price_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 14, name: "min_quantity_tick_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgInstantExpiryFuturesMarketLaunch };
 /**
  * MsgInstantExpiryFuturesMarketLaunchResponse defines the
  * Msg/InstantExpiryFuturesMarketLaunch response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgInstantExpiryFuturesMarketLaunchResponse
  */
-export class MsgInstantExpiryFuturesMarketLaunchResponse extends Message {
+class MsgInstantExpiryFuturesMarketLaunchResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -894,13 +911,14 @@ export class MsgInstantExpiryFuturesMarketLaunchResponse extends Message {
 MsgInstantExpiryFuturesMarketLaunchResponse.runtime = proto3;
 MsgInstantExpiryFuturesMarketLaunchResponse.typeName = "injective.exchange.v1beta1.MsgInstantExpiryFuturesMarketLaunchResponse";
 MsgInstantExpiryFuturesMarketLaunchResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgInstantExpiryFuturesMarketLaunchResponse };
 /**
  * MsgCreateSpotMarketOrder defines a SDK message for creating a new spot market
  * order.
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateSpotMarketOrder
  */
-export class MsgCreateSpotMarketOrder extends Message {
+class MsgCreateSpotMarketOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -928,13 +946,14 @@ MsgCreateSpotMarketOrder.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "order", kind: "message", T: SpotOrder },
 ]);
+export { MsgCreateSpotMarketOrder };
 /**
  * MsgCreateSpotMarketOrderResponse defines the Msg/CreateSpotMarketLimitOrder
  * response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateSpotMarketOrderResponse
  */
-export class MsgCreateSpotMarketOrderResponse extends Message {
+class MsgCreateSpotMarketOrderResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -962,10 +981,11 @@ MsgCreateSpotMarketOrderResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "results", kind: "message", T: SpotMarketOrderResults },
 ]);
+export { MsgCreateSpotMarketOrderResponse };
 /**
  * @generated from message injective.exchange.v1beta1.SpotMarketOrderResults
  */
-export class SpotMarketOrderResults extends Message {
+class SpotMarketOrderResults extends Message {
     constructor(data) {
         super();
         /**
@@ -1002,12 +1022,13 @@ SpotMarketOrderResults.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotMarketOrderResults };
 /**
  * A Cosmos-SDK MsgCreateDerivativeLimitOrder
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateDerivativeLimitOrder
  */
-export class MsgCreateDerivativeLimitOrder extends Message {
+class MsgCreateDerivativeLimitOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1035,13 +1056,14 @@ MsgCreateDerivativeLimitOrder.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "order", kind: "message", T: DerivativeOrder },
 ]);
+export { MsgCreateDerivativeLimitOrder };
 /**
  * MsgCreateDerivativeLimitOrderResponse defines the
  * Msg/CreateDerivativeMarketOrder response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateDerivativeLimitOrderResponse
  */
-export class MsgCreateDerivativeLimitOrderResponse extends Message {
+class MsgCreateDerivativeLimitOrderResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1068,12 +1090,13 @@ MsgCreateDerivativeLimitOrderResponse.typeName = "injective.exchange.v1beta1.Msg
 MsgCreateDerivativeLimitOrderResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateDerivativeLimitOrderResponse };
 /**
  * A Cosmos-SDK MsgCreateBinaryOptionsLimitOrder
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateBinaryOptionsLimitOrder
  */
-export class MsgCreateBinaryOptionsLimitOrder extends Message {
+class MsgCreateBinaryOptionsLimitOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1101,13 +1124,14 @@ MsgCreateBinaryOptionsLimitOrder.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "order", kind: "message", T: DerivativeOrder },
 ]);
+export { MsgCreateBinaryOptionsLimitOrder };
 /**
  * MsgCreateBinaryOptionsLimitOrderResponse defines the
  * Msg/CreateBinaryOptionsLimitOrder response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateBinaryOptionsLimitOrderResponse
  */
-export class MsgCreateBinaryOptionsLimitOrderResponse extends Message {
+class MsgCreateBinaryOptionsLimitOrderResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1134,12 +1158,13 @@ MsgCreateBinaryOptionsLimitOrderResponse.typeName = "injective.exchange.v1beta1.
 MsgCreateBinaryOptionsLimitOrderResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateBinaryOptionsLimitOrderResponse };
 /**
  * A Cosmos-SDK MsgBatchCreateDerivativeLimitOrders
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCreateDerivativeLimitOrders
  */
-export class MsgBatchCreateDerivativeLimitOrders extends Message {
+class MsgBatchCreateDerivativeLimitOrders extends Message {
     constructor(data) {
         super();
         /**
@@ -1171,13 +1196,14 @@ MsgBatchCreateDerivativeLimitOrders.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "orders", kind: "message", T: DerivativeOrder, repeated: true },
 ]);
+export { MsgBatchCreateDerivativeLimitOrders };
 /**
  * MsgBatchCreateDerivativeLimitOrdersResponse defines the
  * Msg/BatchCreateDerivativeLimitOrders response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCreateDerivativeLimitOrdersResponse
  */
-export class MsgBatchCreateDerivativeLimitOrdersResponse extends Message {
+class MsgBatchCreateDerivativeLimitOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1204,12 +1230,13 @@ MsgBatchCreateDerivativeLimitOrdersResponse.typeName = "injective.exchange.v1bet
 MsgBatchCreateDerivativeLimitOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "order_hashes", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgBatchCreateDerivativeLimitOrdersResponse };
 /**
  * MsgCancelSpotOrder defines the Msg/CancelSpotOrder response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCancelSpotOrder
  */
-export class MsgCancelSpotOrder extends Message {
+class MsgCancelSpotOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1256,12 +1283,13 @@ MsgCancelSpotOrder.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCancelSpotOrder };
 /**
  * MsgCancelSpotOrderResponse defines the Msg/CancelSpotOrder response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCancelSpotOrderResponse
  */
-export class MsgCancelSpotOrderResponse extends Message {
+class MsgCancelSpotOrderResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1282,12 +1310,13 @@ export class MsgCancelSpotOrderResponse extends Message {
 MsgCancelSpotOrderResponse.runtime = proto3;
 MsgCancelSpotOrderResponse.typeName = "injective.exchange.v1beta1.MsgCancelSpotOrderResponse";
 MsgCancelSpotOrderResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCancelSpotOrderResponse };
 /**
  * MsgBatchCancelSpotOrders defines the Msg/BatchCancelSpotOrders response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCancelSpotOrders
  */
-export class MsgBatchCancelSpotOrders extends Message {
+class MsgBatchCancelSpotOrders extends Message {
     constructor(data) {
         super();
         /**
@@ -1319,13 +1348,14 @@ MsgBatchCancelSpotOrders.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "data", kind: "message", T: OrderData, repeated: true },
 ]);
+export { MsgBatchCancelSpotOrders };
 /**
  * MsgBatchCancelSpotOrdersResponse defines the Msg/BatchCancelSpotOrders
  * response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCancelSpotOrdersResponse
  */
-export class MsgBatchCancelSpotOrdersResponse extends Message {
+class MsgBatchCancelSpotOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1352,13 +1382,14 @@ MsgBatchCancelSpotOrdersResponse.typeName = "injective.exchange.v1beta1.MsgBatch
 MsgBatchCancelSpotOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */, repeated: true },
 ]);
+export { MsgBatchCancelSpotOrdersResponse };
 /**
  * MsgBatchCancelBinaryOptionsOrders defines the
  * Msg/BatchCancelBinaryOptionsOrders response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCancelBinaryOptionsOrders
  */
-export class MsgBatchCancelBinaryOptionsOrders extends Message {
+class MsgBatchCancelBinaryOptionsOrders extends Message {
     constructor(data) {
         super();
         /**
@@ -1390,13 +1421,14 @@ MsgBatchCancelBinaryOptionsOrders.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "data", kind: "message", T: OrderData, repeated: true },
 ]);
+export { MsgBatchCancelBinaryOptionsOrders };
 /**
  * BatchCancelBinaryOptionsOrdersResponse defines the
  * Msg/BatchCancelBinaryOptionsOrders response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCancelBinaryOptionsOrdersResponse
  */
-export class MsgBatchCancelBinaryOptionsOrdersResponse extends Message {
+class MsgBatchCancelBinaryOptionsOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1423,12 +1455,13 @@ MsgBatchCancelBinaryOptionsOrdersResponse.typeName = "injective.exchange.v1beta1
 MsgBatchCancelBinaryOptionsOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */, repeated: true },
 ]);
+export { MsgBatchCancelBinaryOptionsOrdersResponse };
 /**
  * MsgBatchUpdateOrders defines the Msg/BatchUpdateOrders response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchUpdateOrders
  */
-export class MsgBatchUpdateOrders extends Message {
+class MsgBatchUpdateOrders extends Message {
     constructor(data) {
         super();
         /**
@@ -1508,12 +1541,13 @@ MsgBatchUpdateOrders.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "binary_options_market_ids_to_cancel_all", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 11, name: "binary_options_orders_to_create", kind: "message", T: DerivativeOrder, repeated: true },
 ]);
+export { MsgBatchUpdateOrders };
 /**
  * MsgBatchUpdateOrdersResponse defines the Msg/BatchUpdateOrders response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchUpdateOrdersResponse
  */
-export class MsgBatchUpdateOrdersResponse extends Message {
+class MsgBatchUpdateOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1565,12 +1599,13 @@ MsgBatchUpdateOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "binary_options_cancel_success", kind: "scalar", T: 8 /* ScalarType.BOOL */, repeated: true },
     { no: 6, name: "binary_options_order_hashes", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgBatchUpdateOrdersResponse };
 /**
  * A Cosmos-SDK MsgCreateDerivativeMarketOrder
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateDerivativeMarketOrder
  */
-export class MsgCreateDerivativeMarketOrder extends Message {
+class MsgCreateDerivativeMarketOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1598,13 +1633,14 @@ MsgCreateDerivativeMarketOrder.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "order", kind: "message", T: DerivativeOrder },
 ]);
+export { MsgCreateDerivativeMarketOrder };
 /**
  * MsgCreateDerivativeMarketOrderResponse defines the
  * Msg/CreateDerivativeMarketOrder response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateDerivativeMarketOrderResponse
  */
-export class MsgCreateDerivativeMarketOrderResponse extends Message {
+class MsgCreateDerivativeMarketOrderResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1632,10 +1668,11 @@ MsgCreateDerivativeMarketOrderResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "results", kind: "message", T: DerivativeMarketOrderResults },
 ]);
+export { MsgCreateDerivativeMarketOrderResponse };
 /**
  * @generated from message injective.exchange.v1beta1.DerivativeMarketOrderResults
  */
-export class DerivativeMarketOrderResults extends Message {
+class DerivativeMarketOrderResults extends Message {
     constructor(data) {
         super();
         /**
@@ -1678,12 +1715,13 @@ DerivativeMarketOrderResults.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "position_delta", kind: "message", T: PositionDelta },
     { no: 5, name: "payout", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DerivativeMarketOrderResults };
 /**
  * A Cosmos-SDK MsgCreateBinaryOptionsMarketOrder
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateBinaryOptionsMarketOrder
  */
-export class MsgCreateBinaryOptionsMarketOrder extends Message {
+class MsgCreateBinaryOptionsMarketOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1711,13 +1749,14 @@ MsgCreateBinaryOptionsMarketOrder.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "order", kind: "message", T: DerivativeOrder },
 ]);
+export { MsgCreateBinaryOptionsMarketOrder };
 /**
  * MsgCreateBinaryOptionsMarketOrderResponse defines the
  * Msg/CreateBinaryOptionsMarketOrder response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCreateBinaryOptionsMarketOrderResponse
  */
-export class MsgCreateBinaryOptionsMarketOrderResponse extends Message {
+class MsgCreateBinaryOptionsMarketOrderResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1745,12 +1784,13 @@ MsgCreateBinaryOptionsMarketOrderResponse.fields = proto3.util.newFieldList(() =
     { no: 1, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "results", kind: "message", T: DerivativeMarketOrderResults },
 ]);
+export { MsgCreateBinaryOptionsMarketOrderResponse };
 /**
  * MsgCancelDerivativeOrder defines the Msg/CancelDerivativeOrder response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCancelDerivativeOrder
  */
-export class MsgCancelDerivativeOrder extends Message {
+class MsgCancelDerivativeOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1804,13 +1844,14 @@ MsgCancelDerivativeOrder.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "order_mask", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
     { no: 6, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCancelDerivativeOrder };
 /**
  * MsgCancelDerivativeOrderResponse defines the
  * Msg/CancelDerivativeOrderResponse response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCancelDerivativeOrderResponse
  */
-export class MsgCancelDerivativeOrderResponse extends Message {
+class MsgCancelDerivativeOrderResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1831,13 +1872,14 @@ export class MsgCancelDerivativeOrderResponse extends Message {
 MsgCancelDerivativeOrderResponse.runtime = proto3;
 MsgCancelDerivativeOrderResponse.typeName = "injective.exchange.v1beta1.MsgCancelDerivativeOrderResponse";
 MsgCancelDerivativeOrderResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCancelDerivativeOrderResponse };
 /**
  * MsgCancelBinaryOptionsOrder defines the Msg/CancelBinaryOptionsOrder response
  * type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCancelBinaryOptionsOrder
  */
-export class MsgCancelBinaryOptionsOrder extends Message {
+class MsgCancelBinaryOptionsOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1891,13 +1933,14 @@ MsgCancelBinaryOptionsOrder.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "order_mask", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
     { no: 6, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCancelBinaryOptionsOrder };
 /**
  * MsgCancelBinaryOptionsOrderResponse defines the
  * Msg/CancelBinaryOptionsOrderResponse response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgCancelBinaryOptionsOrderResponse
  */
-export class MsgCancelBinaryOptionsOrderResponse extends Message {
+class MsgCancelBinaryOptionsOrderResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1918,10 +1961,11 @@ export class MsgCancelBinaryOptionsOrderResponse extends Message {
 MsgCancelBinaryOptionsOrderResponse.runtime = proto3;
 MsgCancelBinaryOptionsOrderResponse.typeName = "injective.exchange.v1beta1.MsgCancelBinaryOptionsOrderResponse";
 MsgCancelBinaryOptionsOrderResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCancelBinaryOptionsOrderResponse };
 /**
  * @generated from message injective.exchange.v1beta1.OrderData
  */
-export class OrderData extends Message {
+class OrderData extends Message {
     constructor(data) {
         super();
         /**
@@ -1970,13 +2014,14 @@ OrderData.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "order_mask", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
     { no: 5, name: "cid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { OrderData };
 /**
  * MsgBatchCancelDerivativeOrders defines the Msg/CancelDerivativeOrders
  * response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCancelDerivativeOrders
  */
-export class MsgBatchCancelDerivativeOrders extends Message {
+class MsgBatchCancelDerivativeOrders extends Message {
     constructor(data) {
         super();
         /**
@@ -2008,13 +2053,14 @@ MsgBatchCancelDerivativeOrders.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "data", kind: "message", T: OrderData, repeated: true },
 ]);
+export { MsgBatchCancelDerivativeOrders };
 /**
  * MsgBatchCancelDerivativeOrdersResponse defines the
  * Msg/CancelDerivativeOrderResponse response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgBatchCancelDerivativeOrdersResponse
  */
-export class MsgBatchCancelDerivativeOrdersResponse extends Message {
+class MsgBatchCancelDerivativeOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -2041,12 +2087,13 @@ MsgBatchCancelDerivativeOrdersResponse.typeName = "injective.exchange.v1beta1.Ms
 MsgBatchCancelDerivativeOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */, repeated: true },
 ]);
+export { MsgBatchCancelDerivativeOrdersResponse };
 /**
  * A Cosmos-SDK MsgSubaccountTransfer
  *
  * @generated from message injective.exchange.v1beta1.MsgSubaccountTransfer
  */
-export class MsgSubaccountTransfer extends Message {
+class MsgSubaccountTransfer extends Message {
     constructor(data) {
         super();
         /**
@@ -2084,13 +2131,14 @@ MsgSubaccountTransfer.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "destination_subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgSubaccountTransfer };
 /**
  * MsgSubaccountTransferResponse defines the Msg/SubaccountTransfer response
  * type.
  *
  * @generated from message injective.exchange.v1beta1.MsgSubaccountTransferResponse
  */
-export class MsgSubaccountTransferResponse extends Message {
+class MsgSubaccountTransferResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2111,12 +2159,13 @@ export class MsgSubaccountTransferResponse extends Message {
 MsgSubaccountTransferResponse.runtime = proto3;
 MsgSubaccountTransferResponse.typeName = "injective.exchange.v1beta1.MsgSubaccountTransferResponse";
 MsgSubaccountTransferResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSubaccountTransferResponse };
 /**
  * A Cosmos-SDK MsgExternalTransfer
  *
  * @generated from message injective.exchange.v1beta1.MsgExternalTransfer
  */
-export class MsgExternalTransfer extends Message {
+class MsgExternalTransfer extends Message {
     constructor(data) {
         super();
         /**
@@ -2154,12 +2203,13 @@ MsgExternalTransfer.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "destination_subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgExternalTransfer };
 /**
  * MsgExternalTransferResponse defines the Msg/ExternalTransfer response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgExternalTransferResponse
  */
-export class MsgExternalTransferResponse extends Message {
+class MsgExternalTransferResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2180,12 +2230,13 @@ export class MsgExternalTransferResponse extends Message {
 MsgExternalTransferResponse.runtime = proto3;
 MsgExternalTransferResponse.typeName = "injective.exchange.v1beta1.MsgExternalTransferResponse";
 MsgExternalTransferResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgExternalTransferResponse };
 /**
  * A Cosmos-SDK MsgLiquidatePosition
  *
  * @generated from message injective.exchange.v1beta1.MsgLiquidatePosition
  */
-export class MsgLiquidatePosition extends Message {
+class MsgLiquidatePosition extends Message {
     constructor(data) {
         super();
         /**
@@ -2223,12 +2274,13 @@ MsgLiquidatePosition.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "order", kind: "message", T: DerivativeOrder },
 ]);
+export { MsgLiquidatePosition };
 /**
  * MsgLiquidatePositionResponse defines the Msg/LiquidatePosition response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgLiquidatePositionResponse
  */
-export class MsgLiquidatePositionResponse extends Message {
+class MsgLiquidatePositionResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2249,12 +2301,13 @@ export class MsgLiquidatePositionResponse extends Message {
 MsgLiquidatePositionResponse.runtime = proto3;
 MsgLiquidatePositionResponse.typeName = "injective.exchange.v1beta1.MsgLiquidatePositionResponse";
 MsgLiquidatePositionResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgLiquidatePositionResponse };
 /**
  * A Cosmos-SDK MsgEmergencySettleMarket
  *
  * @generated from message injective.exchange.v1beta1.MsgEmergencySettleMarket
  */
-export class MsgEmergencySettleMarket extends Message {
+class MsgEmergencySettleMarket extends Message {
     constructor(data) {
         super();
         /**
@@ -2291,13 +2344,14 @@ MsgEmergencySettleMarket.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgEmergencySettleMarket };
 /**
  * MsgEmergencySettleMarketResponse defines the Msg/EmergencySettleMarket
  * response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgEmergencySettleMarketResponse
  */
-export class MsgEmergencySettleMarketResponse extends Message {
+class MsgEmergencySettleMarketResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2318,12 +2372,13 @@ export class MsgEmergencySettleMarketResponse extends Message {
 MsgEmergencySettleMarketResponse.runtime = proto3;
 MsgEmergencySettleMarketResponse.typeName = "injective.exchange.v1beta1.MsgEmergencySettleMarketResponse";
 MsgEmergencySettleMarketResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgEmergencySettleMarketResponse };
 /**
  * A Cosmos-SDK MsgIncreasePositionMargin
  *
  * @generated from message injective.exchange.v1beta1.MsgIncreasePositionMargin
  */
-export class MsgIncreasePositionMargin extends Message {
+class MsgIncreasePositionMargin extends Message {
     constructor(data) {
         super();
         /**
@@ -2372,13 +2427,14 @@ MsgIncreasePositionMargin.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgIncreasePositionMargin };
 /**
  * MsgIncreasePositionMarginResponse defines the Msg/IncreasePositionMargin
  * response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgIncreasePositionMarginResponse
  */
-export class MsgIncreasePositionMarginResponse extends Message {
+class MsgIncreasePositionMarginResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2399,12 +2455,13 @@ export class MsgIncreasePositionMarginResponse extends Message {
 MsgIncreasePositionMarginResponse.runtime = proto3;
 MsgIncreasePositionMarginResponse.typeName = "injective.exchange.v1beta1.MsgIncreasePositionMarginResponse";
 MsgIncreasePositionMarginResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgIncreasePositionMarginResponse };
 /**
  * MsgPrivilegedExecuteContract defines the Msg/Exec message type
  *
  * @generated from message injective.exchange.v1beta1.MsgPrivilegedExecuteContract
  */
-export class MsgPrivilegedExecuteContract extends Message {
+class MsgPrivilegedExecuteContract extends Message {
     constructor(data) {
         super();
         /**
@@ -2453,12 +2510,13 @@ MsgPrivilegedExecuteContract.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "data", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgPrivilegedExecuteContract };
 /**
  * MsgPrivilegedExecuteContractResponse defines the Msg/Exec response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgPrivilegedExecuteContractResponse
  */
-export class MsgPrivilegedExecuteContractResponse extends Message {
+class MsgPrivilegedExecuteContractResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -2485,12 +2543,13 @@ MsgPrivilegedExecuteContractResponse.typeName = "injective.exchange.v1beta1.MsgP
 MsgPrivilegedExecuteContractResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "funds_diff", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgPrivilegedExecuteContractResponse };
 /**
  * A Cosmos-SDK MsgRewardsOptOut
  *
  * @generated from message injective.exchange.v1beta1.MsgRewardsOptOut
  */
-export class MsgRewardsOptOut extends Message {
+class MsgRewardsOptOut extends Message {
     constructor(data) {
         super();
         /**
@@ -2517,12 +2576,13 @@ MsgRewardsOptOut.typeName = "injective.exchange.v1beta1.MsgRewardsOptOut";
 MsgRewardsOptOut.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgRewardsOptOut };
 /**
  * MsgRewardsOptOutResponse defines the Msg/RewardsOptOut response type.
  *
  * @generated from message injective.exchange.v1beta1.MsgRewardsOptOutResponse
  */
-export class MsgRewardsOptOutResponse extends Message {
+class MsgRewardsOptOutResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2543,12 +2603,13 @@ export class MsgRewardsOptOutResponse extends Message {
 MsgRewardsOptOutResponse.runtime = proto3;
 MsgRewardsOptOutResponse.typeName = "injective.exchange.v1beta1.MsgRewardsOptOutResponse";
 MsgRewardsOptOutResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRewardsOptOutResponse };
 /**
  * A Cosmos-SDK MsgReclaimLockedFunds
  *
  * @generated from message injective.exchange.v1beta1.MsgReclaimLockedFunds
  */
-export class MsgReclaimLockedFunds extends Message {
+class MsgReclaimLockedFunds extends Message {
     constructor(data) {
         super();
         /**
@@ -2585,13 +2646,14 @@ MsgReclaimLockedFunds.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "lockedAccountPubKey", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "signature", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgReclaimLockedFunds };
 /**
  * MsgReclaimLockedFundsResponse defines the Msg/ReclaimLockedFunds response
  * type.
  *
  * @generated from message injective.exchange.v1beta1.MsgReclaimLockedFundsResponse
  */
-export class MsgReclaimLockedFundsResponse extends Message {
+class MsgReclaimLockedFundsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2612,12 +2674,13 @@ export class MsgReclaimLockedFundsResponse extends Message {
 MsgReclaimLockedFundsResponse.runtime = proto3;
 MsgReclaimLockedFundsResponse.typeName = "injective.exchange.v1beta1.MsgReclaimLockedFundsResponse";
 MsgReclaimLockedFundsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgReclaimLockedFundsResponse };
 /**
  * MsgSignData defines an arbitrary, general-purpose, off-chain message
  *
  * @generated from message injective.exchange.v1beta1.MsgSignData
  */
-export class MsgSignData extends Message {
+class MsgSignData extends Message {
     constructor(data) {
         super();
         /**
@@ -2654,12 +2717,13 @@ MsgSignData.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "Signer", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "Data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgSignData };
 /**
  * MsgSignDoc defines an arbitrary, general-purpose, off-chain message
  *
  * @generated from message injective.exchange.v1beta1.MsgSignDoc
  */
-export class MsgSignDoc extends Message {
+class MsgSignDoc extends Message {
     constructor(data) {
         super();
         /**
@@ -2687,13 +2751,14 @@ MsgSignDoc.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sign_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "value", kind: "message", T: MsgSignData },
 ]);
+export { MsgSignDoc };
 /**
  * MsgAdminUpdateBinaryOptionsMarket is used by the market Admin to operate the
  * market
  *
  * @generated from message injective.exchange.v1beta1.MsgAdminUpdateBinaryOptionsMarket
  */
-export class MsgAdminUpdateBinaryOptionsMarket extends Message {
+class MsgAdminUpdateBinaryOptionsMarket extends Message {
     constructor(data) {
         super();
         /**
@@ -2753,13 +2818,14 @@ MsgAdminUpdateBinaryOptionsMarket.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "settlement_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(MarketStatus) },
 ]);
+export { MsgAdminUpdateBinaryOptionsMarket };
 /**
  * MsgAdminUpdateBinaryOptionsMarketResponse is the response for
  * AdminUpdateBinaryOptionsMarket rpc method
  *
  * @generated from message injective.exchange.v1beta1.MsgAdminUpdateBinaryOptionsMarketResponse
  */
-export class MsgAdminUpdateBinaryOptionsMarketResponse extends Message {
+class MsgAdminUpdateBinaryOptionsMarketResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2780,4 +2846,5 @@ export class MsgAdminUpdateBinaryOptionsMarketResponse extends Message {
 MsgAdminUpdateBinaryOptionsMarketResponse.runtime = proto3;
 MsgAdminUpdateBinaryOptionsMarketResponse.typeName = "injective.exchange.v1beta1.MsgAdminUpdateBinaryOptionsMarketResponse";
 MsgAdminUpdateBinaryOptionsMarketResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgAdminUpdateBinaryOptionsMarketResponse };
 //# sourceMappingURL=tx_pb.js.map

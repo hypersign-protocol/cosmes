@@ -12,7 +12,7 @@ import { GenesisState } from "./genesis_pb.js";
  *
  * @generated from message injective.auction.v1beta1.QueryAuctionParamsRequest
  */
-export class QueryAuctionParamsRequest extends Message {
+class QueryAuctionParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -33,13 +33,14 @@ export class QueryAuctionParamsRequest extends Message {
 QueryAuctionParamsRequest.runtime = proto3;
 QueryAuctionParamsRequest.typeName = "injective.auction.v1beta1.QueryAuctionParamsRequest";
 QueryAuctionParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryAuctionParamsRequest };
 /**
  * QueryAuctionParamsRequest is the response type for the Query/AuctionParams
  * RPC method.
  *
  * @generated from message injective.auction.v1beta1.QueryAuctionParamsResponse
  */
-export class QueryAuctionParamsResponse extends Message {
+class QueryAuctionParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -62,13 +63,14 @@ QueryAuctionParamsResponse.typeName = "injective.auction.v1beta1.QueryAuctionPar
 QueryAuctionParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryAuctionParamsResponse };
 /**
  * QueryCurrentAuctionBasketRequest is the request type for the
  * Query/CurrentAuctionBasket RPC method.
  *
  * @generated from message injective.auction.v1beta1.QueryCurrentAuctionBasketRequest
  */
-export class QueryCurrentAuctionBasketRequest extends Message {
+class QueryCurrentAuctionBasketRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -89,13 +91,14 @@ export class QueryCurrentAuctionBasketRequest extends Message {
 QueryCurrentAuctionBasketRequest.runtime = proto3;
 QueryCurrentAuctionBasketRequest.typeName = "injective.auction.v1beta1.QueryCurrentAuctionBasketRequest";
 QueryCurrentAuctionBasketRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryCurrentAuctionBasketRequest };
 /**
  * QueryCurrentAuctionBasketResponse is the response type for the
  * Query/CurrentAuctionBasket RPC method.
  *
  * @generated from message injective.auction.v1beta1.QueryCurrentAuctionBasketResponse
  */
-export class QueryCurrentAuctionBasketResponse extends Message {
+class QueryCurrentAuctionBasketResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -152,13 +155,14 @@ QueryCurrentAuctionBasketResponse.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "highestBidder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "highestBidAmount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCurrentAuctionBasketResponse };
 /**
  * QueryModuleStateRequest is the request type for the Query/AuctionModuleState
  * RPC method.
  *
  * @generated from message injective.auction.v1beta1.QueryModuleStateRequest
  */
-export class QueryModuleStateRequest extends Message {
+class QueryModuleStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -179,13 +183,14 @@ export class QueryModuleStateRequest extends Message {
 QueryModuleStateRequest.runtime = proto3;
 QueryModuleStateRequest.typeName = "injective.auction.v1beta1.QueryModuleStateRequest";
 QueryModuleStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryModuleStateRequest };
 /**
  * QueryModuleStateResponse is the response type for the
  * Query/AuctionModuleState RPC method.
  *
  * @generated from message injective.auction.v1beta1.QueryModuleStateResponse
  */
-export class QueryModuleStateResponse extends Message {
+class QueryModuleStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -208,4 +213,5 @@ QueryModuleStateResponse.typeName = "injective.auction.v1beta1.QueryModuleStateR
 QueryModuleStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: GenesisState },
 ]);
+export { QueryModuleStateResponse };
 //# sourceMappingURL=query_pb.js.map

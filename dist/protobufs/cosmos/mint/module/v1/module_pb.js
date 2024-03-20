@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.mint.module.v1.Module
  */
-export class Module extends Message {
+class Module extends Message {
     constructor(data) {
         super();
         /**
@@ -42,4 +42,5 @@ Module.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fee_collector_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Module };
 //# sourceMappingURL=module_pb.js.map

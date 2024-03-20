@@ -6,7 +6,7 @@ import { Deposit, DepositParams, Params, Proposal, TallyParams, Vote, VotingPara
  *
  * @generated from message cosmos.gov.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -60,4 +60,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "tally_params", kind: "message", T: TallyParams },
     { no: 8, name: "params", kind: "message", T: Params },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

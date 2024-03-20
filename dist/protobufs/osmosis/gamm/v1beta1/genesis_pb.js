@@ -10,7 +10,7 @@ import { MigrationRecords } from "./shared_pb.js";
  *
  * @generated from message osmosis.gamm.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -37,12 +37,13 @@ Params.typeName = "osmosis.gamm.v1beta1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_creation_fee", kind: "message", T: Coin, repeated: true },
 ]);
+export { Params };
 /**
  * GenesisState defines the gamm module's genesis state.
  *
  * @generated from message osmosis.gamm.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -78,4 +79,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "params", kind: "message", T: Params },
     { no: 4, name: "migration_records", kind: "message", T: MigrationRecords },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

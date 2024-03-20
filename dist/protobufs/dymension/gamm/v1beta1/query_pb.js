@@ -12,7 +12,7 @@ import { SwapAmountInRoute, SwapAmountOutRoute } from "../../poolmanager/v1beta1
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -33,10 +33,11 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -59,12 +60,13 @@ QueryParamsResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryParamsR
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * =============================== Pool
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryPoolRequest
  */
-export class QueryPoolRequest extends Message {
+class QueryPoolRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -91,10 +93,11 @@ QueryPoolRequest.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryPoolReques
 QueryPoolRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryPoolRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryPoolResponse
  */
-export class QueryPoolResponse extends Message {
+class QueryPoolResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -117,12 +120,13 @@ QueryPoolResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryPoolRespo
 QueryPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool", kind: "message", T: Any },
 ]);
+export { QueryPoolResponse };
 /**
  * =============================== Pools
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryPoolsRequest
  */
-export class QueryPoolsRequest extends Message {
+class QueryPoolsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -145,10 +149,11 @@ QueryPoolsRequest.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryPoolsRequ
 QueryPoolsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryPoolsRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryPoolsResponse
  */
-export class QueryPoolsResponse extends Message {
+class QueryPoolsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -176,13 +181,14 @@ QueryPoolsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pools", kind: "message", T: Any, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryPoolsResponse };
 /**
  * =============================== NumPools
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryNumPoolsRequest
  * @deprecated
  */
-export class QueryNumPoolsRequest extends Message {
+class QueryNumPoolsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -203,11 +209,12 @@ export class QueryNumPoolsRequest extends Message {
 QueryNumPoolsRequest.runtime = proto3;
 QueryNumPoolsRequest.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryNumPoolsRequest";
 QueryNumPoolsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryNumPoolsRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryNumPoolsResponse
  * @deprecated
  */
-export class QueryNumPoolsResponse extends Message {
+class QueryNumPoolsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -234,12 +241,13 @@ QueryNumPoolsResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryNumPo
 QueryNumPoolsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "num_pools", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryNumPoolsResponse };
 /**
  * =============================== CalcJoinPoolShares
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryCalcJoinPoolSharesRequest
  */
-export class QueryCalcJoinPoolSharesRequest extends Message {
+class QueryCalcJoinPoolSharesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -271,10 +279,11 @@ QueryCalcJoinPoolSharesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "tokens_in", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryCalcJoinPoolSharesRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryCalcJoinPoolSharesResponse
  */
-export class QueryCalcJoinPoolSharesResponse extends Message {
+class QueryCalcJoinPoolSharesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -306,12 +315,13 @@ QueryCalcJoinPoolSharesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "share_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "tokens_out", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryCalcJoinPoolSharesResponse };
 /**
  * =============================== CalcExitPoolCoinsFromShares
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryCalcExitPoolCoinsFromSharesRequest
  */
-export class QueryCalcExitPoolCoinsFromSharesRequest extends Message {
+class QueryCalcExitPoolCoinsFromSharesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -343,10 +353,11 @@ QueryCalcExitPoolCoinsFromSharesRequest.fields = proto3.util.newFieldList(() => 
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "share_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCalcExitPoolCoinsFromSharesRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryCalcExitPoolCoinsFromSharesResponse
  */
-export class QueryCalcExitPoolCoinsFromSharesResponse extends Message {
+class QueryCalcExitPoolCoinsFromSharesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -373,12 +384,13 @@ QueryCalcExitPoolCoinsFromSharesResponse.typeName = "dymensionxyz.dymension.gamm
 QueryCalcExitPoolCoinsFromSharesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tokens_out", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryCalcExitPoolCoinsFromSharesResponse };
 /**
  * =============================== PoolParams
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryPoolParamsRequest
  */
-export class QueryPoolParamsRequest extends Message {
+class QueryPoolParamsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -405,10 +417,11 @@ QueryPoolParamsRequest.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryPool
 QueryPoolParamsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryPoolParamsRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryPoolParamsResponse
  */
-export class QueryPoolParamsResponse extends Message {
+class QueryPoolParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -431,12 +444,13 @@ QueryPoolParamsResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryPoo
 QueryPoolParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Any },
 ]);
+export { QueryPoolParamsResponse };
 /**
  * =============================== PoolLiquidity
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryTotalPoolLiquidityRequest
  */
-export class QueryTotalPoolLiquidityRequest extends Message {
+class QueryTotalPoolLiquidityRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -463,10 +477,11 @@ QueryTotalPoolLiquidityRequest.typeName = "dymensionxyz.dymension.gamm.v1beta1.Q
 QueryTotalPoolLiquidityRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryTotalPoolLiquidityRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryTotalPoolLiquidityResponse
  */
-export class QueryTotalPoolLiquidityResponse extends Message {
+class QueryTotalPoolLiquidityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -493,12 +508,13 @@ QueryTotalPoolLiquidityResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.
 QueryTotalPoolLiquidityResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "liquidity", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryTotalPoolLiquidityResponse };
 /**
  * =============================== TotalShares
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryTotalSharesRequest
  */
-export class QueryTotalSharesRequest extends Message {
+class QueryTotalSharesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -525,10 +541,11 @@ QueryTotalSharesRequest.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryTot
 QueryTotalSharesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryTotalSharesRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryTotalSharesResponse
  */
-export class QueryTotalSharesResponse extends Message {
+class QueryTotalSharesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -551,12 +568,13 @@ QueryTotalSharesResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryTo
 QueryTotalSharesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_shares", kind: "message", T: Coin },
 ]);
+export { QueryTotalSharesResponse };
 /**
  * =============================== CalcJoinPoolNoSwapShares
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryCalcJoinPoolNoSwapSharesRequest
  */
-export class QueryCalcJoinPoolNoSwapSharesRequest extends Message {
+class QueryCalcJoinPoolNoSwapSharesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -588,10 +606,11 @@ QueryCalcJoinPoolNoSwapSharesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "tokens_in", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryCalcJoinPoolNoSwapSharesRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryCalcJoinPoolNoSwapSharesResponse
  */
-export class QueryCalcJoinPoolNoSwapSharesResponse extends Message {
+class QueryCalcJoinPoolNoSwapSharesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -623,6 +642,7 @@ QueryCalcJoinPoolNoSwapSharesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tokens_out", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "shares_out", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCalcJoinPoolNoSwapSharesResponse };
 /**
  * QuerySpotPriceRequest defines the gRPC request structure for a SpotPrice
  * query.
@@ -630,7 +650,7 @@ QueryCalcJoinPoolNoSwapSharesResponse.fields = proto3.util.newFieldList(() => [
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QuerySpotPriceRequest
  * @deprecated
  */
-export class QuerySpotPriceRequest extends Message {
+class QuerySpotPriceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -667,10 +687,11 @@ QuerySpotPriceRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "base_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "quote_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotPriceRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryPoolsWithFilterRequest
  */
-export class QueryPoolsWithFilterRequest extends Message {
+class QueryPoolsWithFilterRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -706,10 +727,11 @@ QueryPoolsWithFilterRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pool_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryPoolsWithFilterRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryPoolsWithFilterResponse
  */
-export class QueryPoolsWithFilterResponse extends Message {
+class QueryPoolsWithFilterResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -737,6 +759,7 @@ QueryPoolsWithFilterResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pools", kind: "message", T: Any, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryPoolsWithFilterResponse };
 /**
  * QuerySpotPriceResponse defines the gRPC response structure for a SpotPrice
  * query.
@@ -744,7 +767,7 @@ QueryPoolsWithFilterResponse.fields = proto3.util.newFieldList(() => [
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QuerySpotPriceResponse
  * @deprecated
  */
-export class QuerySpotPriceResponse extends Message {
+class QuerySpotPriceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -773,12 +796,13 @@ QuerySpotPriceResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.QuerySpot
 QuerySpotPriceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spot_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotPriceResponse };
 /**
  * =============================== EstimateSwapExactAmountIn
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QuerySwapExactAmountInRequest
  */
-export class QuerySwapExactAmountInRequest extends Message {
+class QuerySwapExactAmountInRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -820,10 +844,11 @@ QuerySwapExactAmountInRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_in", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "routes", kind: "message", T: SwapAmountInRoute, repeated: true },
 ]);
+export { QuerySwapExactAmountInRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QuerySwapExactAmountInResponse
  */
-export class QuerySwapExactAmountInResponse extends Message {
+class QuerySwapExactAmountInResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -850,12 +875,13 @@ QuerySwapExactAmountInResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.Q
 QuerySwapExactAmountInResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySwapExactAmountInResponse };
 /**
  * =============================== EstimateSwapExactAmountOut
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QuerySwapExactAmountOutRequest
  */
-export class QuerySwapExactAmountOutRequest extends Message {
+class QuerySwapExactAmountOutRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -897,10 +923,11 @@ QuerySwapExactAmountOutRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "routes", kind: "message", T: SwapAmountOutRoute, repeated: true },
     { no: 4, name: "token_out", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySwapExactAmountOutRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QuerySwapExactAmountOutResponse
  */
-export class QuerySwapExactAmountOutResponse extends Message {
+class QuerySwapExactAmountOutResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -927,10 +954,11 @@ QuerySwapExactAmountOutResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.
 QuerySwapExactAmountOutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySwapExactAmountOutResponse };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryTotalLiquidityRequest
  */
-export class QueryTotalLiquidityRequest extends Message {
+class QueryTotalLiquidityRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -951,10 +979,11 @@ export class QueryTotalLiquidityRequest extends Message {
 QueryTotalLiquidityRequest.runtime = proto3;
 QueryTotalLiquidityRequest.typeName = "dymensionxyz.dymension.gamm.v1beta1.QueryTotalLiquidityRequest";
 QueryTotalLiquidityRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryTotalLiquidityRequest };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.QueryTotalLiquidityResponse
  */
-export class QueryTotalLiquidityResponse extends Message {
+class QueryTotalLiquidityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -981,4 +1010,5 @@ QueryTotalLiquidityResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.Quer
 QueryTotalLiquidityResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "liquidity", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryTotalLiquidityResponse };
 //# sourceMappingURL=query_pb.js.map

@@ -8,7 +8,7 @@ import { Any, Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.nft.v1beta1.Class
  */
-export class Class extends Message {
+class Class extends Message {
     constructor(data) {
         super();
         /**
@@ -73,12 +73,13 @@ Class.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "uri_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "data", kind: "message", T: Any },
 ]);
+export { Class };
 /**
  * NFT defines the NFT.
  *
  * @generated from message cosmos.nft.v1beta1.NFT
  */
-export class NFT extends Message {
+class NFT extends Message {
     constructor(data) {
         super();
         /**
@@ -129,4 +130,5 @@ NFT.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "uri_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 10, name: "data", kind: "message", T: Any },
 ]);
+export { NFT };
 //# sourceMappingURL=nft_pb.js.map

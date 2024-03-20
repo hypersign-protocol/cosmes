@@ -11,7 +11,7 @@ import { AllProtocolRevenue, BaseDenom, InfoByPoolType, RouteStatistics, TokenPa
  *
  * @generated from message osmosis.protorev.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,12 +32,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "osmosis.protorev.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is response type for the Query/Params RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -60,13 +61,14 @@ QueryParamsResponse.typeName = "osmosis.protorev.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryGetProtoRevNumberOfTradesRequest is request type for the
  * Query/GetProtoRevNumberOfTrades RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevNumberOfTradesRequest
  */
-export class QueryGetProtoRevNumberOfTradesRequest extends Message {
+class QueryGetProtoRevNumberOfTradesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -87,13 +89,14 @@ export class QueryGetProtoRevNumberOfTradesRequest extends Message {
 QueryGetProtoRevNumberOfTradesRequest.runtime = proto3;
 QueryGetProtoRevNumberOfTradesRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevNumberOfTradesRequest";
 QueryGetProtoRevNumberOfTradesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevNumberOfTradesRequest };
 /**
  * QueryGetProtoRevNumberOfTradesResponse is response type for the
  * Query/GetProtoRevNumberOfTrades RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevNumberOfTradesResponse
  */
-export class QueryGetProtoRevNumberOfTradesResponse extends Message {
+class QueryGetProtoRevNumberOfTradesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -122,13 +125,14 @@ QueryGetProtoRevNumberOfTradesResponse.typeName = "osmosis.protorev.v1beta1.Quer
 QueryGetProtoRevNumberOfTradesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "number_of_trades", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryGetProtoRevNumberOfTradesResponse };
 /**
  * QueryGetProtoRevProfitsByDenomRequest is request type for the
  * Query/GetProtoRevProfitsByDenom RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevProfitsByDenomRequest
  */
-export class QueryGetProtoRevProfitsByDenomRequest extends Message {
+class QueryGetProtoRevProfitsByDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -157,13 +161,14 @@ QueryGetProtoRevProfitsByDenomRequest.typeName = "osmosis.protorev.v1beta1.Query
 QueryGetProtoRevProfitsByDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryGetProtoRevProfitsByDenomRequest };
 /**
  * QueryGetProtoRevProfitsByDenomResponse is response type for the
  * Query/GetProtoRevProfitsByDenom RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevProfitsByDenomResponse
  */
-export class QueryGetProtoRevProfitsByDenomResponse extends Message {
+class QueryGetProtoRevProfitsByDenomResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -186,13 +191,14 @@ QueryGetProtoRevProfitsByDenomResponse.typeName = "osmosis.protorev.v1beta1.Quer
 QueryGetProtoRevProfitsByDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "profit", kind: "message", T: Coin },
 ]);
+export { QueryGetProtoRevProfitsByDenomResponse };
 /**
  * QueryGetProtoRevAllProfitsRequest is request type for the
  * Query/GetProtoRevAllProfits RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevAllProfitsRequest
  */
-export class QueryGetProtoRevAllProfitsRequest extends Message {
+class QueryGetProtoRevAllProfitsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -213,13 +219,14 @@ export class QueryGetProtoRevAllProfitsRequest extends Message {
 QueryGetProtoRevAllProfitsRequest.runtime = proto3;
 QueryGetProtoRevAllProfitsRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevAllProfitsRequest";
 QueryGetProtoRevAllProfitsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevAllProfitsRequest };
 /**
  * QueryGetProtoRevAllProfitsResponse is response type for the
  * Query/GetProtoRevAllProfits RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevAllProfitsResponse
  */
-export class QueryGetProtoRevAllProfitsResponse extends Message {
+class QueryGetProtoRevAllProfitsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -248,13 +255,14 @@ QueryGetProtoRevAllProfitsResponse.typeName = "osmosis.protorev.v1beta1.QueryGet
 QueryGetProtoRevAllProfitsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "profits", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryGetProtoRevAllProfitsResponse };
 /**
  * QueryGetProtoRevStatisticsByPoolRequest is request type for the
  * Query/GetProtoRevStatisticsByRoute RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevStatisticsByRouteRequest
  */
-export class QueryGetProtoRevStatisticsByRouteRequest extends Message {
+class QueryGetProtoRevStatisticsByRouteRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -283,13 +291,14 @@ QueryGetProtoRevStatisticsByRouteRequest.typeName = "osmosis.protorev.v1beta1.Qu
 QueryGetProtoRevStatisticsByRouteRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "route", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { QueryGetProtoRevStatisticsByRouteRequest };
 /**
  * QueryGetProtoRevStatisticsByRouteResponse is response type for the
  * Query/GetProtoRevStatisticsByRoute RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevStatisticsByRouteResponse
  */
-export class QueryGetProtoRevStatisticsByRouteResponse extends Message {
+class QueryGetProtoRevStatisticsByRouteResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -312,13 +321,14 @@ QueryGetProtoRevStatisticsByRouteResponse.typeName = "osmosis.protorev.v1beta1.Q
 QueryGetProtoRevStatisticsByRouteResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "statistics", kind: "message", T: RouteStatistics },
 ]);
+export { QueryGetProtoRevStatisticsByRouteResponse };
 /**
  * QueryGetProtoRevAllRouteStatisticsRequest is request type for the
  * Query/GetProtoRevAllRouteStatistics RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevAllRouteStatisticsRequest
  */
-export class QueryGetProtoRevAllRouteStatisticsRequest extends Message {
+class QueryGetProtoRevAllRouteStatisticsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -339,13 +349,14 @@ export class QueryGetProtoRevAllRouteStatisticsRequest extends Message {
 QueryGetProtoRevAllRouteStatisticsRequest.runtime = proto3;
 QueryGetProtoRevAllRouteStatisticsRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevAllRouteStatisticsRequest";
 QueryGetProtoRevAllRouteStatisticsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevAllRouteStatisticsRequest };
 /**
  * QueryGetProtoRevAllRouteStatisticsResponse is response type for the
  * Query/GetProtoRevAllRouteStatistics RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevAllRouteStatisticsResponse
  */
-export class QueryGetProtoRevAllRouteStatisticsResponse extends Message {
+class QueryGetProtoRevAllRouteStatisticsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -375,13 +386,14 @@ QueryGetProtoRevAllRouteStatisticsResponse.typeName = "osmosis.protorev.v1beta1.
 QueryGetProtoRevAllRouteStatisticsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "statistics", kind: "message", T: RouteStatistics, repeated: true },
 ]);
+export { QueryGetProtoRevAllRouteStatisticsResponse };
 /**
  * QueryGetProtoRevTokenPairArbRoutesRequest is request type for the
  * Query/GetProtoRevTokenPairArbRoutes RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevTokenPairArbRoutesRequest
  */
-export class QueryGetProtoRevTokenPairArbRoutesRequest extends Message {
+class QueryGetProtoRevTokenPairArbRoutesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -402,13 +414,14 @@ export class QueryGetProtoRevTokenPairArbRoutesRequest extends Message {
 QueryGetProtoRevTokenPairArbRoutesRequest.runtime = proto3;
 QueryGetProtoRevTokenPairArbRoutesRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevTokenPairArbRoutesRequest";
 QueryGetProtoRevTokenPairArbRoutesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevTokenPairArbRoutesRequest };
 /**
  * QueryGetProtoRevTokenPairArbRoutesResponse is response type for the
  * Query/GetProtoRevTokenPairArbRoutes RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevTokenPairArbRoutesResponse
  */
-export class QueryGetProtoRevTokenPairArbRoutesResponse extends Message {
+class QueryGetProtoRevTokenPairArbRoutesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -438,13 +451,14 @@ QueryGetProtoRevTokenPairArbRoutesResponse.typeName = "osmosis.protorev.v1beta1.
 QueryGetProtoRevTokenPairArbRoutesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "routes", kind: "message", T: TokenPairArbRoutes, repeated: true },
 ]);
+export { QueryGetProtoRevTokenPairArbRoutesResponse };
 /**
  * QueryGetProtoRevAdminAccountRequest is request type for the
  * Query/GetProtoRevAdminAccount RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevAdminAccountRequest
  */
-export class QueryGetProtoRevAdminAccountRequest extends Message {
+class QueryGetProtoRevAdminAccountRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -465,13 +479,14 @@ export class QueryGetProtoRevAdminAccountRequest extends Message {
 QueryGetProtoRevAdminAccountRequest.runtime = proto3;
 QueryGetProtoRevAdminAccountRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevAdminAccountRequest";
 QueryGetProtoRevAdminAccountRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevAdminAccountRequest };
 /**
  * QueryGetProtoRevAdminAccountResponse is response type for the
  * Query/GetProtoRevAdminAccount RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevAdminAccountResponse
  */
-export class QueryGetProtoRevAdminAccountResponse extends Message {
+class QueryGetProtoRevAdminAccountResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -500,13 +515,14 @@ QueryGetProtoRevAdminAccountResponse.typeName = "osmosis.protorev.v1beta1.QueryG
 QueryGetProtoRevAdminAccountResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin_account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryGetProtoRevAdminAccountResponse };
 /**
  * QueryGetProtoRevDeveloperAccountRequest is request type for the
  * Query/GetProtoRevDeveloperAccount RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevDeveloperAccountRequest
  */
-export class QueryGetProtoRevDeveloperAccountRequest extends Message {
+class QueryGetProtoRevDeveloperAccountRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -527,13 +543,14 @@ export class QueryGetProtoRevDeveloperAccountRequest extends Message {
 QueryGetProtoRevDeveloperAccountRequest.runtime = proto3;
 QueryGetProtoRevDeveloperAccountRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevDeveloperAccountRequest";
 QueryGetProtoRevDeveloperAccountRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevDeveloperAccountRequest };
 /**
  * QueryGetProtoRevDeveloperAccountResponse is response type for the
  * Query/GetProtoRevDeveloperAccount RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevDeveloperAccountResponse
  */
-export class QueryGetProtoRevDeveloperAccountResponse extends Message {
+class QueryGetProtoRevDeveloperAccountResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -562,13 +579,14 @@ QueryGetProtoRevDeveloperAccountResponse.typeName = "osmosis.protorev.v1beta1.Qu
 QueryGetProtoRevDeveloperAccountResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "developer_account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryGetProtoRevDeveloperAccountResponse };
 /**
  * QueryGetProtoRevInfoByPoolTypeRequest is request type for the
  * Query/GetProtoRevInfoByPoolType RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevInfoByPoolTypeRequest
  */
-export class QueryGetProtoRevInfoByPoolTypeRequest extends Message {
+class QueryGetProtoRevInfoByPoolTypeRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -589,13 +607,14 @@ export class QueryGetProtoRevInfoByPoolTypeRequest extends Message {
 QueryGetProtoRevInfoByPoolTypeRequest.runtime = proto3;
 QueryGetProtoRevInfoByPoolTypeRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevInfoByPoolTypeRequest";
 QueryGetProtoRevInfoByPoolTypeRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevInfoByPoolTypeRequest };
 /**
  * QueryGetProtoRevInfoByPoolTypeResponse is response type for the
  * Query/GetProtoRevInfoByPoolType RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevInfoByPoolTypeResponse
  */
-export class QueryGetProtoRevInfoByPoolTypeResponse extends Message {
+class QueryGetProtoRevInfoByPoolTypeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -618,13 +637,14 @@ QueryGetProtoRevInfoByPoolTypeResponse.typeName = "osmosis.protorev.v1beta1.Quer
 QueryGetProtoRevInfoByPoolTypeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "info_by_pool_type", kind: "message", T: InfoByPoolType },
 ]);
+export { QueryGetProtoRevInfoByPoolTypeResponse };
 /**
  * QueryGetProtoRevMaxPoolPointsPerBlockRequest is request type for the
  * Query/GetProtoRevMaxPoolPointsPerBlock RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevMaxPoolPointsPerBlockRequest
  */
-export class QueryGetProtoRevMaxPoolPointsPerBlockRequest extends Message {
+class QueryGetProtoRevMaxPoolPointsPerBlockRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -645,13 +665,14 @@ export class QueryGetProtoRevMaxPoolPointsPerBlockRequest extends Message {
 QueryGetProtoRevMaxPoolPointsPerBlockRequest.runtime = proto3;
 QueryGetProtoRevMaxPoolPointsPerBlockRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevMaxPoolPointsPerBlockRequest";
 QueryGetProtoRevMaxPoolPointsPerBlockRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevMaxPoolPointsPerBlockRequest };
 /**
  * QueryGetProtoRevMaxPoolPointsPerBlockResponse is response type for the
  * Query/GetProtoRevMaxPoolPointsPerBlock RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevMaxPoolPointsPerBlockResponse
  */
-export class QueryGetProtoRevMaxPoolPointsPerBlockResponse extends Message {
+class QueryGetProtoRevMaxPoolPointsPerBlockResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -681,13 +702,14 @@ QueryGetProtoRevMaxPoolPointsPerBlockResponse.typeName = "osmosis.protorev.v1bet
 QueryGetProtoRevMaxPoolPointsPerBlockResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "max_pool_points_per_block", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryGetProtoRevMaxPoolPointsPerBlockResponse };
 /**
  * QueryGetProtoRevMaxPoolPointsPerTxRequest is request type for the
  * Query/GetProtoRevMaxPoolPointsPerTx RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevMaxPoolPointsPerTxRequest
  */
-export class QueryGetProtoRevMaxPoolPointsPerTxRequest extends Message {
+class QueryGetProtoRevMaxPoolPointsPerTxRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -708,13 +730,14 @@ export class QueryGetProtoRevMaxPoolPointsPerTxRequest extends Message {
 QueryGetProtoRevMaxPoolPointsPerTxRequest.runtime = proto3;
 QueryGetProtoRevMaxPoolPointsPerTxRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevMaxPoolPointsPerTxRequest";
 QueryGetProtoRevMaxPoolPointsPerTxRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevMaxPoolPointsPerTxRequest };
 /**
  * QueryGetProtoRevMaxPoolPointsPerTxResponse is response type for the
  * Query/GetProtoRevMaxPoolPointsPerTx RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevMaxPoolPointsPerTxResponse
  */
-export class QueryGetProtoRevMaxPoolPointsPerTxResponse extends Message {
+class QueryGetProtoRevMaxPoolPointsPerTxResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -744,13 +767,14 @@ QueryGetProtoRevMaxPoolPointsPerTxResponse.typeName = "osmosis.protorev.v1beta1.
 QueryGetProtoRevMaxPoolPointsPerTxResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "max_pool_points_per_tx", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryGetProtoRevMaxPoolPointsPerTxResponse };
 /**
  * QueryGetProtoRevBaseDenomsRequest is request type for the
  * Query/GetProtoRevBaseDenoms RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevBaseDenomsRequest
  */
-export class QueryGetProtoRevBaseDenomsRequest extends Message {
+class QueryGetProtoRevBaseDenomsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -771,13 +795,14 @@ export class QueryGetProtoRevBaseDenomsRequest extends Message {
 QueryGetProtoRevBaseDenomsRequest.runtime = proto3;
 QueryGetProtoRevBaseDenomsRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevBaseDenomsRequest";
 QueryGetProtoRevBaseDenomsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevBaseDenomsRequest };
 /**
  * QueryGetProtoRevBaseDenomsResponse is response type for the
  * Query/GetProtoRevBaseDenoms RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevBaseDenomsResponse
  */
-export class QueryGetProtoRevBaseDenomsResponse extends Message {
+class QueryGetProtoRevBaseDenomsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -806,13 +831,14 @@ QueryGetProtoRevBaseDenomsResponse.typeName = "osmosis.protorev.v1beta1.QueryGet
 QueryGetProtoRevBaseDenomsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_denoms", kind: "message", T: BaseDenom, repeated: true },
 ]);
+export { QueryGetProtoRevBaseDenomsResponse };
 /**
  * QueryGetProtoRevEnabledRequest is request type for the
  * Query/GetProtoRevEnabled RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevEnabledRequest
  */
-export class QueryGetProtoRevEnabledRequest extends Message {
+class QueryGetProtoRevEnabledRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -833,13 +859,14 @@ export class QueryGetProtoRevEnabledRequest extends Message {
 QueryGetProtoRevEnabledRequest.runtime = proto3;
 QueryGetProtoRevEnabledRequest.typeName = "osmosis.protorev.v1beta1.QueryGetProtoRevEnabledRequest";
 QueryGetProtoRevEnabledRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetProtoRevEnabledRequest };
 /**
  * QueryGetProtoRevEnabledResponse is response type for the
  * Query/GetProtoRevEnabled RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevEnabledResponse
  */
-export class QueryGetProtoRevEnabledResponse extends Message {
+class QueryGetProtoRevEnabledResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -868,13 +895,14 @@ QueryGetProtoRevEnabledResponse.typeName = "osmosis.protorev.v1beta1.QueryGetPro
 QueryGetProtoRevEnabledResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryGetProtoRevEnabledResponse };
 /**
  * QueryGetProtoRevPoolRequest is request type for the
  * Query/GetProtoRevPool RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevPoolRequest
  */
-export class QueryGetProtoRevPoolRequest extends Message {
+class QueryGetProtoRevPoolRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -911,13 +939,14 @@ QueryGetProtoRevPoolRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "other_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryGetProtoRevPoolRequest };
 /**
  * QueryGetProtoRevPoolResponse is response type for the
  * Query/GetProtoRevPool RPC method.
  *
  * @generated from message osmosis.protorev.v1beta1.QueryGetProtoRevPoolResponse
  */
-export class QueryGetProtoRevPoolResponse extends Message {
+class QueryGetProtoRevPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -946,10 +975,11 @@ QueryGetProtoRevPoolResponse.typeName = "osmosis.protorev.v1beta1.QueryGetProtoR
 QueryGetProtoRevPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryGetProtoRevPoolResponse };
 /**
  * @generated from message osmosis.protorev.v1beta1.QueryGetAllProtocolRevenueRequest
  */
-export class QueryGetAllProtocolRevenueRequest extends Message {
+class QueryGetAllProtocolRevenueRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -970,10 +1000,11 @@ export class QueryGetAllProtocolRevenueRequest extends Message {
 QueryGetAllProtocolRevenueRequest.runtime = proto3;
 QueryGetAllProtocolRevenueRequest.typeName = "osmosis.protorev.v1beta1.QueryGetAllProtocolRevenueRequest";
 QueryGetAllProtocolRevenueRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryGetAllProtocolRevenueRequest };
 /**
  * @generated from message osmosis.protorev.v1beta1.QueryGetAllProtocolRevenueResponse
  */
-export class QueryGetAllProtocolRevenueResponse extends Message {
+class QueryGetAllProtocolRevenueResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -996,4 +1027,5 @@ QueryGetAllProtocolRevenueResponse.typeName = "osmosis.protorev.v1beta1.QueryGet
 QueryGetAllProtocolRevenueResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "all_protocol_revenue", kind: "message", T: AllProtocolRevenue },
 ]);
+export { QueryGetAllProtocolRevenueResponse };
 //# sourceMappingURL=query_pb.js.map

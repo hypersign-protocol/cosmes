@@ -9,7 +9,7 @@ import { ClientConsensusStates, IdentifiedClientState, Params } from "./client_p
  *
  * @generated from message ibc.core.client.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -69,13 +69,14 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "create_localhost", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 6, name: "next_client_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GenesisState };
 /**
  * GenesisMetadata defines the genesis type for metadata that will be used
  * to export all client store keys that are not client or consensus states.
  *
  * @generated from message ibc.core.client.v1.GenesisMetadata
  */
-export class GenesisMetadata extends Message {
+class GenesisMetadata extends Message {
     constructor(data) {
         super();
         /**
@@ -111,13 +112,14 @@ GenesisMetadata.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "value", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { GenesisMetadata };
 /**
  * IdentifiedGenesisMetadata has the client metadata with the corresponding
  * client id.
  *
  * @generated from message ibc.core.client.v1.IdentifiedGenesisMetadata
  */
-export class IdentifiedGenesisMetadata extends Message {
+class IdentifiedGenesisMetadata extends Message {
     constructor(data) {
         super();
         /**
@@ -149,4 +151,5 @@ IdentifiedGenesisMetadata.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "client_metadata", kind: "message", T: GenesisMetadata, repeated: true },
 ]);
+export { IdentifiedGenesisMetadata };
 //# sourceMappingURL=genesis_pb.js.map

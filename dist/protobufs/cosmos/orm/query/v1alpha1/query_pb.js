@@ -9,7 +9,7 @@ import { PageRequest, PageResponse } from "../../../base/query/v1beta1/paginatio
  *
  * @generated from message cosmos.orm.query.v1alpha1.GetRequest
  */
-export class GetRequest extends Message {
+class GetRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -56,12 +56,13 @@ GetRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "index", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "values", kind: "message", T: IndexValue, repeated: true },
 ]);
+export { GetRequest };
 /**
  * GetResponse is the Query/Get response type.
  *
  * @generated from message cosmos.orm.query.v1alpha1.GetResponse
  */
-export class GetResponse extends Message {
+class GetResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -84,12 +85,13 @@ GetResponse.typeName = "cosmos.orm.query.v1alpha1.GetResponse";
 GetResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "result", kind: "message", T: Any },
 ]);
+export { GetResponse };
 /**
  * ListRequest is the Query/List request type.
  *
  * @generated from message cosmos.orm.query.v1alpha1.ListRequest
  */
-export class ListRequest extends Message {
+class ListRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -137,12 +139,13 @@ ListRequest.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "range", kind: "message", T: ListRequest_Range, oneof: "query" },
     { no: 5, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { ListRequest };
 /**
  * Prefix specifies the arguments to a prefix query.
  *
  * @generated from message cosmos.orm.query.v1alpha1.ListRequest.Prefix
  */
-export class ListRequest_Prefix extends Message {
+class ListRequest_Prefix extends Message {
     constructor(data) {
         super();
         /**
@@ -173,12 +176,13 @@ ListRequest_Prefix.typeName = "cosmos.orm.query.v1alpha1.ListRequest.Prefix";
 ListRequest_Prefix.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "values", kind: "message", T: IndexValue, repeated: true },
 ]);
+export { ListRequest_Prefix };
 /**
  * Range specifies the arguments to a range query.
  *
  * @generated from message cosmos.orm.query.v1alpha1.ListRequest.Range
  */
-export class ListRequest_Range extends Message {
+class ListRequest_Range extends Message {
     constructor(data) {
         super();
         /**
@@ -218,12 +222,13 @@ ListRequest_Range.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "start", kind: "message", T: IndexValue, repeated: true },
     { no: 2, name: "end", kind: "message", T: IndexValue, repeated: true },
 ]);
+export { ListRequest_Range };
 /**
  * ListResponse is the Query/List response type.
  *
  * @generated from message cosmos.orm.query.v1alpha1.ListResponse
  */
-export class ListResponse extends Message {
+class ListResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -253,12 +258,13 @@ ListResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "results", kind: "message", T: Any, repeated: true },
     { no: 5, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { ListResponse };
 /**
  * IndexValue represents the value of a field in an ORM index expression.
  *
  * @generated from message cosmos.orm.query.v1alpha1.IndexValue
  */
-export class IndexValue extends Message {
+class IndexValue extends Message {
     constructor(data) {
         super();
         /**
@@ -294,4 +300,5 @@ IndexValue.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "timestamp", kind: "message", T: Timestamp, oneof: "value" },
     { no: 8, name: "duration", kind: "message", T: Duration, oneof: "value" },
 ]);
+export { IndexValue };
 //# sourceMappingURL=query_pb.js.map

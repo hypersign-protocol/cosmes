@@ -6,7 +6,7 @@ import { Duration, Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 /**
  * @generated from message osmosis.concentratedliquidity.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -99,4 +99,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "unrestricted_pool_creator_whitelist", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 8, name: "hook_gas_limit", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

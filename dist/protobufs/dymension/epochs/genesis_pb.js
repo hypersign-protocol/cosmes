@@ -9,7 +9,7 @@ import { Duration, Message, proto3, protoInt64, Timestamp } from "@bufbuild/prot
  *
  * @generated from message dymensionxyz.dymension.epochs.v1beta1.EpochInfo
  */
-export class EpochInfo extends Message {
+class EpochInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -67,12 +67,13 @@ EpochInfo.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "epoch_counting_started", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 8, name: "current_epoch_start_height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { EpochInfo };
 /**
  * GenesisState defines the epochs module's genesis state.
  *
  * @generated from message dymensionxyz.dymension.epochs.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -99,4 +100,5 @@ GenesisState.typeName = "dymensionxyz.dymension.epochs.v1beta1.GenesisState";
 GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "epochs", kind: "message", T: EpochInfo, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

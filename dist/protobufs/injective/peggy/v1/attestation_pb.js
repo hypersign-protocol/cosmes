@@ -59,7 +59,7 @@ proto3.util.setEnumType(ClaimType, "injective.peggy.v1.ClaimType", [
  *
  * @generated from message injective.peggy.v1.Attestation
  */
-export class Attestation extends Message {
+class Attestation extends Message {
     constructor(data) {
         super();
         /**
@@ -97,6 +97,7 @@ Attestation.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "claim", kind: "message", T: Any },
 ]);
+export { Attestation };
 /**
  * ERC20Token unique identifier for an Ethereum ERC20 token.
  * CONTRACT:
@@ -107,7 +108,7 @@ Attestation.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message injective.peggy.v1.ERC20Token
  */
-export class ERC20Token extends Message {
+class ERC20Token extends Message {
     constructor(data) {
         super();
         /**
@@ -139,4 +140,5 @@ ERC20Token.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ERC20Token };
 //# sourceMappingURL=attestation_pb.js.map

@@ -12,7 +12,7 @@ import { ErrorReceipt, Upgrade } from "./upgrade_pb.js";
  *
  * @generated from message ibc.core.channel.v1.QueryChannelRequest
  */
-export class QueryChannelRequest extends Message {
+class QueryChannelRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -48,6 +48,7 @@ QueryChannelRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryChannelRequest };
 /**
  * QueryChannelResponse is the response type for the Query/Channel RPC method.
  * Besides the Channel end, it includes a proof and the height from which the
@@ -55,7 +56,7 @@ QueryChannelRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.QueryChannelResponse
  */
-export class QueryChannelResponse extends Message {
+class QueryChannelResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -86,12 +87,13 @@ QueryChannelResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryChannelResponse };
 /**
  * QueryChannelsRequest is the request type for the Query/Channels RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryChannelsRequest
  */
-export class QueryChannelsRequest extends Message {
+class QueryChannelsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -114,12 +116,13 @@ QueryChannelsRequest.typeName = "ibc.core.channel.v1.QueryChannelsRequest";
 QueryChannelsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryChannelsRequest };
 /**
  * QueryChannelsResponse is the response type for the Query/Channels RPC method.
  *
  * @generated from message ibc.core.channel.v1.QueryChannelsResponse
  */
-export class QueryChannelsResponse extends Message {
+class QueryChannelsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -150,13 +153,14 @@ QueryChannelsResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
     { no: 3, name: "height", kind: "message", T: Height },
 ]);
+export { QueryChannelsResponse };
 /**
  * QueryConnectionChannelsRequest is the request type for the
  * Query/QueryConnectionChannels RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryConnectionChannelsRequest
  */
-export class QueryConnectionChannelsRequest extends Message {
+class QueryConnectionChannelsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -186,13 +190,14 @@ QueryConnectionChannelsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "connection", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryConnectionChannelsRequest };
 /**
  * QueryConnectionChannelsResponse is the Response type for the
  * Query/QueryConnectionChannels RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryConnectionChannelsResponse
  */
-export class QueryConnectionChannelsResponse extends Message {
+class QueryConnectionChannelsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -223,13 +228,14 @@ QueryConnectionChannelsResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
     { no: 3, name: "height", kind: "message", T: Height },
 ]);
+export { QueryConnectionChannelsResponse };
 /**
  * QueryChannelClientStateRequest is the request type for the Query/ClientState
  * RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryChannelClientStateRequest
  */
-export class QueryChannelClientStateRequest extends Message {
+class QueryChannelClientStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -265,13 +271,14 @@ QueryChannelClientStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryChannelClientStateRequest };
 /**
  * QueryChannelClientStateResponse is the Response type for the
  * Query/QueryChannelClientState RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryChannelClientStateResponse
  */
-export class QueryChannelClientStateResponse extends Message {
+class QueryChannelClientStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -302,13 +309,14 @@ QueryChannelClientStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryChannelClientStateResponse };
 /**
  * QueryChannelConsensusStateRequest is the request type for the
  * Query/ConsensusState RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryChannelConsensusStateRequest
  */
-export class QueryChannelConsensusStateRequest extends Message {
+class QueryChannelConsensusStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -358,13 +366,14 @@ QueryChannelConsensusStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "revision_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "revision_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryChannelConsensusStateRequest };
 /**
  * QueryChannelClientStateResponse is the Response type for the
  * Query/QueryChannelClientState RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryChannelConsensusStateResponse
  */
-export class QueryChannelConsensusStateResponse extends Message {
+class QueryChannelConsensusStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -402,13 +411,14 @@ QueryChannelConsensusStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryChannelConsensusStateResponse };
 /**
  * QueryPacketCommitmentRequest is the request type for the
  * Query/PacketCommitment RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryPacketCommitmentRequest
  */
-export class QueryPacketCommitmentRequest extends Message {
+class QueryPacketCommitmentRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -451,6 +461,7 @@ QueryPacketCommitmentRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryPacketCommitmentRequest };
 /**
  * QueryPacketCommitmentResponse defines the client query response for a packet
  * which also includes a proof and the height from which the proof was
@@ -458,7 +469,7 @@ QueryPacketCommitmentRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.QueryPacketCommitmentResponse
  */
-export class QueryPacketCommitmentResponse extends Message {
+class QueryPacketCommitmentResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -495,13 +506,14 @@ QueryPacketCommitmentResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryPacketCommitmentResponse };
 /**
  * QueryPacketCommitmentsRequest is the request type for the
  * Query/QueryPacketCommitments RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryPacketCommitmentsRequest
  */
-export class QueryPacketCommitmentsRequest extends Message {
+class QueryPacketCommitmentsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -538,13 +550,14 @@ QueryPacketCommitmentsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryPacketCommitmentsRequest };
 /**
  * QueryPacketCommitmentsResponse is the request type for the
  * Query/QueryPacketCommitments RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryPacketCommitmentsResponse
  */
-export class QueryPacketCommitmentsResponse extends Message {
+class QueryPacketCommitmentsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -573,13 +586,14 @@ QueryPacketCommitmentsResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
     { no: 3, name: "height", kind: "message", T: Height },
 ]);
+export { QueryPacketCommitmentsResponse };
 /**
  * QueryPacketReceiptRequest is the request type for the
  * Query/PacketReceipt RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryPacketReceiptRequest
  */
-export class QueryPacketReceiptRequest extends Message {
+class QueryPacketReceiptRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -622,6 +636,7 @@ QueryPacketReceiptRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryPacketReceiptRequest };
 /**
  * QueryPacketReceiptResponse defines the client query response for a packet
  * receipt which also includes a proof, and the height from which the proof was
@@ -629,7 +644,7 @@ QueryPacketReceiptRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.QueryPacketReceiptResponse
  */
-export class QueryPacketReceiptResponse extends Message {
+class QueryPacketReceiptResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -666,13 +681,14 @@ QueryPacketReceiptResponse.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryPacketReceiptResponse };
 /**
  * QueryPacketAcknowledgementRequest is the request type for the
  * Query/PacketAcknowledgement RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryPacketAcknowledgementRequest
  */
-export class QueryPacketAcknowledgementRequest extends Message {
+class QueryPacketAcknowledgementRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -715,6 +731,7 @@ QueryPacketAcknowledgementRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryPacketAcknowledgementRequest };
 /**
  * QueryPacketAcknowledgementResponse defines the client query response for a
  * packet which also includes a proof and the height from which the
@@ -722,7 +739,7 @@ QueryPacketAcknowledgementRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.QueryPacketAcknowledgementResponse
  */
-export class QueryPacketAcknowledgementResponse extends Message {
+class QueryPacketAcknowledgementResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -759,13 +776,14 @@ QueryPacketAcknowledgementResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryPacketAcknowledgementResponse };
 /**
  * QueryPacketAcknowledgementsRequest is the request type for the
  * Query/QueryPacketCommitments RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryPacketAcknowledgementsRequest
  */
-export class QueryPacketAcknowledgementsRequest extends Message {
+class QueryPacketAcknowledgementsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -809,13 +827,14 @@ QueryPacketAcknowledgementsRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "pagination", kind: "message", T: PageRequest },
     { no: 4, name: "packet_commitment_sequences", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { QueryPacketAcknowledgementsRequest };
 /**
  * QueryPacketAcknowledgemetsResponse is the request type for the
  * Query/QueryPacketAcknowledgements RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryPacketAcknowledgementsResponse
  */
-export class QueryPacketAcknowledgementsResponse extends Message {
+class QueryPacketAcknowledgementsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -844,13 +863,14 @@ QueryPacketAcknowledgementsResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
     { no: 3, name: "height", kind: "message", T: Height },
 ]);
+export { QueryPacketAcknowledgementsResponse };
 /**
  * QueryUnreceivedPacketsRequest is the request type for the
  * Query/UnreceivedPackets RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryUnreceivedPacketsRequest
  */
-export class QueryUnreceivedPacketsRequest extends Message {
+class QueryUnreceivedPacketsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -893,13 +913,14 @@ QueryUnreceivedPacketsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "packet_commitment_sequences", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { QueryUnreceivedPacketsRequest };
 /**
  * QueryUnreceivedPacketsResponse is the response type for the
  * Query/UnreceivedPacketCommitments RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryUnreceivedPacketsResponse
  */
-export class QueryUnreceivedPacketsResponse extends Message {
+class QueryUnreceivedPacketsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -929,13 +950,14 @@ QueryUnreceivedPacketsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sequences", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 2, name: "height", kind: "message", T: Height },
 ]);
+export { QueryUnreceivedPacketsResponse };
 /**
  * QueryUnreceivedAcks is the request type for the
  * Query/UnreceivedAcks RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryUnreceivedAcksRequest
  */
-export class QueryUnreceivedAcksRequest extends Message {
+class QueryUnreceivedAcksRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -978,13 +1000,14 @@ QueryUnreceivedAcksRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "packet_ack_sequences", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { QueryUnreceivedAcksRequest };
 /**
  * QueryUnreceivedAcksResponse is the response type for the
  * Query/UnreceivedAcks RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryUnreceivedAcksResponse
  */
-export class QueryUnreceivedAcksResponse extends Message {
+class QueryUnreceivedAcksResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1014,13 +1037,14 @@ QueryUnreceivedAcksResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sequences", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 2, name: "height", kind: "message", T: Height },
 ]);
+export { QueryUnreceivedAcksResponse };
 /**
  * QueryNextSequenceReceiveRequest is the request type for the
  * Query/QueryNextSequenceReceiveRequest RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryNextSequenceReceiveRequest
  */
-export class QueryNextSequenceReceiveRequest extends Message {
+class QueryNextSequenceReceiveRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1056,13 +1080,14 @@ QueryNextSequenceReceiveRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryNextSequenceReceiveRequest };
 /**
  * QuerySequenceResponse is the response type for the
  * Query/QueryNextSequenceReceiveResponse RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryNextSequenceReceiveResponse
  */
-export class QueryNextSequenceReceiveResponse extends Message {
+class QueryNextSequenceReceiveResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1099,13 +1124,14 @@ QueryNextSequenceReceiveResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryNextSequenceReceiveResponse };
 /**
  * QueryNextSequenceSendRequest is the request type for the
  * Query/QueryNextSequenceSend RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryNextSequenceSendRequest
  */
-export class QueryNextSequenceSendRequest extends Message {
+class QueryNextSequenceSendRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1141,13 +1167,14 @@ QueryNextSequenceSendRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryNextSequenceSendRequest };
 /**
  * QueryNextSequenceSendResponse is the request type for the
  * Query/QueryNextSequenceSend RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryNextSequenceSendResponse
  */
-export class QueryNextSequenceSendResponse extends Message {
+class QueryNextSequenceSendResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1184,12 +1211,13 @@ QueryNextSequenceSendResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryNextSequenceSendResponse };
 /**
  * QueryUpgradeErrorRequest is the request type for the Query/QueryUpgradeError RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryUpgradeErrorRequest
  */
-export class QueryUpgradeErrorRequest extends Message {
+class QueryUpgradeErrorRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1221,12 +1249,13 @@ QueryUpgradeErrorRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryUpgradeErrorRequest };
 /**
  * QueryUpgradeErrorResponse is the response type for the Query/QueryUpgradeError RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryUpgradeErrorResponse
  */
-export class QueryUpgradeErrorResponse extends Message {
+class QueryUpgradeErrorResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1257,12 +1286,13 @@ QueryUpgradeErrorResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryUpgradeErrorResponse };
 /**
  * QueryUpgradeRequest is the request type for the QueryUpgradeRequest RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryUpgradeRequest
  */
-export class QueryUpgradeRequest extends Message {
+class QueryUpgradeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1294,12 +1324,13 @@ QueryUpgradeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryUpgradeRequest };
 /**
  * QueryUpgradeResponse is the response type for the QueryUpgradeResponse RPC method
  *
  * @generated from message ibc.core.channel.v1.QueryUpgradeResponse
  */
-export class QueryUpgradeResponse extends Message {
+class QueryUpgradeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1330,12 +1361,13 @@ QueryUpgradeResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryUpgradeResponse };
 /**
  * QueryChannelParamsRequest is the request type for the Query/ChannelParams RPC method.
  *
  * @generated from message ibc.core.channel.v1.QueryChannelParamsRequest
  */
-export class QueryChannelParamsRequest extends Message {
+class QueryChannelParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1356,12 +1388,13 @@ export class QueryChannelParamsRequest extends Message {
 QueryChannelParamsRequest.runtime = proto3;
 QueryChannelParamsRequest.typeName = "ibc.core.channel.v1.QueryChannelParamsRequest";
 QueryChannelParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryChannelParamsRequest };
 /**
  * QueryChannelParamsResponse is the response type for the Query/ChannelParams RPC method.
  *
  * @generated from message ibc.core.channel.v1.QueryChannelParamsResponse
  */
-export class QueryChannelParamsResponse extends Message {
+class QueryChannelParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1384,4 +1417,5 @@ QueryChannelParamsResponse.typeName = "ibc.core.channel.v1.QueryChannelParamsRes
 QueryChannelParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryChannelParamsResponse };
 //# sourceMappingURL=query_pb.js.map

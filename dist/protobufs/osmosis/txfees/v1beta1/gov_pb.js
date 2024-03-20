@@ -13,7 +13,7 @@ import { FeeToken } from "./feetoken_pb.js";
  *
  * @generated from message osmosis.txfees.v1beta1.UpdateFeeTokenProposal
  */
-export class UpdateFeeTokenProposal extends Message {
+class UpdateFeeTokenProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -50,4 +50,5 @@ UpdateFeeTokenProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "feetokens", kind: "message", T: FeeToken, repeated: true },
 ]);
+export { UpdateFeeTokenProposal };
 //# sourceMappingURL=gov_pb.js.map

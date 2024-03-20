@@ -7,7 +7,7 @@ import { PageRequest, PageResponse } from "../../base/query/v1beta1/pagination_p
  *
  * @generated from message cosmos.feegrant.v1beta1.QueryAllowanceRequest
  */
-export class QueryAllowanceRequest extends Message {
+class QueryAllowanceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -43,12 +43,13 @@ QueryAllowanceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "granter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAllowanceRequest };
 /**
  * QueryAllowanceResponse is the response type for the Query/Allowance RPC method.
  *
  * @generated from message cosmos.feegrant.v1beta1.QueryAllowanceResponse
  */
-export class QueryAllowanceResponse extends Message {
+class QueryAllowanceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -71,12 +72,13 @@ QueryAllowanceResponse.typeName = "cosmos.feegrant.v1beta1.QueryAllowanceRespons
 QueryAllowanceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "allowance", kind: "message", T: Grant },
 ]);
+export { QueryAllowanceResponse };
 /**
  * QueryAllowancesRequest is the request type for the Query/Allowances RPC method.
  *
  * @generated from message cosmos.feegrant.v1beta1.QueryAllowancesRequest
  */
-export class QueryAllowancesRequest extends Message {
+class QueryAllowancesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -104,12 +106,13 @@ QueryAllowancesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryAllowancesRequest };
 /**
  * QueryAllowancesResponse is the response type for the Query/Allowances RPC method.
  *
  * @generated from message cosmos.feegrant.v1beta1.QueryAllowancesResponse
  */
-export class QueryAllowancesResponse extends Message {
+class QueryAllowancesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -139,6 +142,7 @@ QueryAllowancesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "allowances", kind: "message", T: Grant, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryAllowancesResponse };
 /**
  * QueryAllowancesByGranterRequest is the request type for the Query/AllowancesByGranter RPC method.
  *
@@ -146,7 +150,7 @@ QueryAllowancesResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.feegrant.v1beta1.QueryAllowancesByGranterRequest
  */
-export class QueryAllowancesByGranterRequest extends Message {
+class QueryAllowancesByGranterRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -174,6 +178,7 @@ QueryAllowancesByGranterRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "granter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryAllowancesByGranterRequest };
 /**
  * QueryAllowancesByGranterResponse is the response type for the Query/AllowancesByGranter RPC method.
  *
@@ -181,7 +186,7 @@ QueryAllowancesByGranterRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.feegrant.v1beta1.QueryAllowancesByGranterResponse
  */
-export class QueryAllowancesByGranterResponse extends Message {
+class QueryAllowancesByGranterResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -211,4 +216,5 @@ QueryAllowancesByGranterResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "allowances", kind: "message", T: Grant, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryAllowancesByGranterResponse };
 //# sourceMappingURL=query_pb.js.map

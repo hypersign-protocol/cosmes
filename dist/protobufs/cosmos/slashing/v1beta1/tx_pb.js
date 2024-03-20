@@ -9,7 +9,7 @@ import { Params } from "./slashing_pb.js";
  *
  * @generated from message cosmos.slashing.v1beta1.MsgUnjail
  */
-export class MsgUnjail extends Message {
+class MsgUnjail extends Message {
     constructor(data) {
         super();
         /**
@@ -36,12 +36,13 @@ MsgUnjail.typeName = "cosmos.slashing.v1beta1.MsgUnjail";
 MsgUnjail.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUnjail };
 /**
  * MsgUnjailResponse defines the Msg/Unjail response type
  *
  * @generated from message cosmos.slashing.v1beta1.MsgUnjailResponse
  */
-export class MsgUnjailResponse extends Message {
+class MsgUnjailResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -62,6 +63,7 @@ export class MsgUnjailResponse extends Message {
 MsgUnjailResponse.runtime = proto3;
 MsgUnjailResponse.typeName = "cosmos.slashing.v1beta1.MsgUnjailResponse";
 MsgUnjailResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUnjailResponse };
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
  *
@@ -69,7 +71,7 @@ MsgUnjailResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.slashing.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -99,6 +101,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
@@ -107,7 +110,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.slashing.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -128,4 +131,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "cosmos.slashing.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

@@ -8,7 +8,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.mint.v1beta1.Minter
  */
-export class Minter extends Message {
+class Minter extends Message {
     constructor(data) {
         super();
         /**
@@ -44,12 +44,13 @@ Minter.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "inflation", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "annual_provisions", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Minter };
 /**
  * Params defines the parameters for the x/mint module.
  *
  * @generated from message cosmos.mint.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -113,4 +114,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "goal_bonded", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "blocks_per_year", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Params };
 //# sourceMappingURL=mint_pb.js.map

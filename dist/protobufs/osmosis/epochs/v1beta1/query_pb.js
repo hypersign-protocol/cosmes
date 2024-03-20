@@ -7,7 +7,7 @@ import { EpochInfo } from "./genesis_pb.js";
 /**
  * @generated from message osmosis.epochs.v1beta1.QueryEpochsInfoRequest
  */
-export class QueryEpochsInfoRequest extends Message {
+class QueryEpochsInfoRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -28,10 +28,11 @@ export class QueryEpochsInfoRequest extends Message {
 QueryEpochsInfoRequest.runtime = proto3;
 QueryEpochsInfoRequest.typeName = "osmosis.epochs.v1beta1.QueryEpochsInfoRequest";
 QueryEpochsInfoRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryEpochsInfoRequest };
 /**
  * @generated from message osmosis.epochs.v1beta1.QueryEpochsInfoResponse
  */
-export class QueryEpochsInfoResponse extends Message {
+class QueryEpochsInfoResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -58,10 +59,11 @@ QueryEpochsInfoResponse.typeName = "osmosis.epochs.v1beta1.QueryEpochsInfoRespon
 QueryEpochsInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "epochs", kind: "message", T: EpochInfo, repeated: true },
 ]);
+export { QueryEpochsInfoResponse };
 /**
  * @generated from message osmosis.epochs.v1beta1.QueryCurrentEpochRequest
  */
-export class QueryCurrentEpochRequest extends Message {
+class QueryCurrentEpochRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -88,10 +90,11 @@ QueryCurrentEpochRequest.typeName = "osmosis.epochs.v1beta1.QueryCurrentEpochReq
 QueryCurrentEpochRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "identifier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCurrentEpochRequest };
 /**
  * @generated from message osmosis.epochs.v1beta1.QueryCurrentEpochResponse
  */
-export class QueryCurrentEpochResponse extends Message {
+class QueryCurrentEpochResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -118,4 +121,5 @@ QueryCurrentEpochResponse.typeName = "osmosis.epochs.v1beta1.QueryCurrentEpochRe
 QueryCurrentEpochResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "current_epoch", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { QueryCurrentEpochResponse };
 //# sourceMappingURL=query_pb.js.map

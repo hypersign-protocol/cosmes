@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message dymensionxyz.dymension.incentives.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -38,4 +38,5 @@ Params.typeName = "dymensionxyz.dymension.incentives.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "distr_epoch_identifier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

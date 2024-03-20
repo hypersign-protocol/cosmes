@@ -9,7 +9,7 @@ import { BandIBCParams, BandOracleRequest, BandPriceState, ChainlinkPriceState, 
  *
  * @generated from message injective.oracle.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -98,10 +98,11 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 14, name: "provider_states", kind: "message", T: ProviderState, repeated: true },
     { no: 15, name: "pyth_price_states", kind: "message", T: PythPriceState, repeated: true },
 ]);
+export { GenesisState };
 /**
  * @generated from message injective.oracle.v1beta1.CalldataRecord
  */
-export class CalldataRecord extends Message {
+class CalldataRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -133,4 +134,5 @@ CalldataRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "calldata", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { CalldataRecord };
 //# sourceMappingURL=genesis_pb.js.map

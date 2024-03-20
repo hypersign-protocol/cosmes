@@ -8,7 +8,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message injective.insurance.v1beta1.EventInsuranceFundUpdate
  */
-export class EventInsuranceFundUpdate extends Message {
+class EventInsuranceFundUpdate extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -31,10 +31,11 @@ EventInsuranceFundUpdate.typeName = "injective.insurance.v1beta1.EventInsuranceF
 EventInsuranceFundUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fund", kind: "message", T: InsuranceFund },
 ]);
+export { EventInsuranceFundUpdate };
 /**
  * @generated from message injective.insurance.v1beta1.EventRequestRedemption
  */
-export class EventRequestRedemption extends Message {
+class EventRequestRedemption extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -57,10 +58,11 @@ EventRequestRedemption.typeName = "injective.insurance.v1beta1.EventRequestRedem
 EventRequestRedemption.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "schedule", kind: "message", T: RedemptionSchedule },
 ]);
+export { EventRequestRedemption };
 /**
  * @generated from message injective.insurance.v1beta1.EventWithdrawRedemption
  */
-export class EventWithdrawRedemption extends Message {
+class EventWithdrawRedemption extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -84,10 +86,11 @@ EventWithdrawRedemption.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "schedule", kind: "message", T: RedemptionSchedule },
     { no: 2, name: "redeem_coin", kind: "message", T: Coin },
 ]);
+export { EventWithdrawRedemption };
 /**
  * @generated from message injective.insurance.v1beta1.EventUnderwrite
  */
-export class EventUnderwrite extends Message {
+class EventUnderwrite extends Message {
     constructor(data) {
         super();
         /**
@@ -125,10 +128,11 @@ EventUnderwrite.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "deposit", kind: "message", T: Coin },
     { no: 4, name: "shares", kind: "message", T: Coin },
 ]);
+export { EventUnderwrite };
 /**
  * @generated from message injective.insurance.v1beta1.EventInsuranceWithdraw
  */
-export class EventInsuranceWithdraw extends Message {
+class EventInsuranceWithdraw extends Message {
     constructor(data) {
         super();
         /**
@@ -161,4 +165,5 @@ EventInsuranceWithdraw.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "market_ticker", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "withdrawal", kind: "message", T: Coin },
 ]);
+export { EventInsuranceWithdraw };
 //# sourceMappingURL=events_pb.js.map

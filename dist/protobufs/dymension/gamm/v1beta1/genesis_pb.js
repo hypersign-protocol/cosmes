@@ -9,7 +9,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -44,10 +44,11 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "next_pool_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "params", kind: "message", T: Params },
 ]);
+export { GenesisState };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -85,10 +86,11 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "global_fees", kind: "message", T: GlobalFees },
     { no: 4, name: "taker_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.GlobalFees
  */
-export class GlobalFees extends Message {
+class GlobalFees extends Message {
     constructor(data) {
         super();
         /**
@@ -120,4 +122,5 @@ GlobalFees.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "swap_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "exit_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GlobalFees };
 //# sourceMappingURL=genesis_pb.js.map

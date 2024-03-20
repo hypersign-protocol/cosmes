@@ -9,7 +9,7 @@ import { Coin } from "../../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.CalcOutAmtGivenIn
  */
-export class CalcOutAmtGivenIn extends Message {
+class CalcOutAmtGivenIn extends Message {
     constructor(data) {
         super();
         /**
@@ -46,10 +46,11 @@ CalcOutAmtGivenIn.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "token_out_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "swap_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { CalcOutAmtGivenIn };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.CalcOutAmtGivenInRequest
  */
-export class CalcOutAmtGivenInRequest extends Message {
+class CalcOutAmtGivenInRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -72,10 +73,11 @@ CalcOutAmtGivenInRequest.typeName = "osmosis.cosmwasmpool.v1beta1.CalcOutAmtGive
 CalcOutAmtGivenInRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "calc_out_amt_given_in", kind: "message", T: CalcOutAmtGivenIn },
 ]);
+export { CalcOutAmtGivenInRequest };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.CalcOutAmtGivenInResponse
  */
-export class CalcOutAmtGivenInResponse extends Message {
+class CalcOutAmtGivenInResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -98,12 +100,13 @@ CalcOutAmtGivenInResponse.typeName = "osmosis.cosmwasmpool.v1beta1.CalcOutAmtGiv
 CalcOutAmtGivenInResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out", kind: "message", T: Coin },
 ]);
+export { CalcOutAmtGivenInResponse };
 /**
  * ===================== CalcInAmtGivenOut
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.CalcInAmtGivenOut
  */
-export class CalcInAmtGivenOut extends Message {
+class CalcInAmtGivenOut extends Message {
     constructor(data) {
         super();
         /**
@@ -140,10 +143,11 @@ CalcInAmtGivenOut.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "token_in_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "swap_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { CalcInAmtGivenOut };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.CalcInAmtGivenOutRequest
  */
-export class CalcInAmtGivenOutRequest extends Message {
+class CalcInAmtGivenOutRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -166,10 +170,11 @@ CalcInAmtGivenOutRequest.typeName = "osmosis.cosmwasmpool.v1beta1.CalcInAmtGiven
 CalcInAmtGivenOutRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "calc_in_amt_given_out", kind: "message", T: CalcInAmtGivenOut },
 ]);
+export { CalcInAmtGivenOutRequest };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.CalcInAmtGivenOutResponse
  */
-export class CalcInAmtGivenOutResponse extends Message {
+class CalcInAmtGivenOutResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -192,4 +197,5 @@ CalcInAmtGivenOutResponse.typeName = "osmosis.cosmwasmpool.v1beta1.CalcInAmtGive
 CalcInAmtGivenOutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_in", kind: "message", T: Coin },
 ]);
+export { CalcInAmtGivenOutResponse };
 //# sourceMappingURL=module_query_msg_pb.js.map

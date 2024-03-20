@@ -8,7 +8,7 @@ import { Any, Message, proto3, protoInt64, Timestamp } from "@bufbuild/protobuf"
  *
  * @generated from message cosmos.upgrade.v1beta1.Plan
  */
-export class Plan extends Message {
+class Plan extends Message {
     constructor(data) {
         super();
         /**
@@ -60,6 +60,7 @@ Plan.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "info", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "upgraded_client_state", kind: "message", T: Any },
 ]);
+export { Plan };
 /**
  * SoftwareUpgradeProposal is a gov Content type for initiating a software
  * upgrade.
@@ -69,7 +70,7 @@ Plan.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmos.upgrade.v1beta1.SoftwareUpgradeProposal
  * @deprecated
  */
-export class SoftwareUpgradeProposal extends Message {
+class SoftwareUpgradeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -106,6 +107,7 @@ SoftwareUpgradeProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "plan", kind: "message", T: Plan },
 ]);
+export { SoftwareUpgradeProposal };
 /**
  * CancelSoftwareUpgradeProposal is a gov Content type for cancelling a software
  * upgrade.
@@ -115,7 +117,7 @@ SoftwareUpgradeProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmos.upgrade.v1beta1.CancelSoftwareUpgradeProposal
  * @deprecated
  */
-export class CancelSoftwareUpgradeProposal extends Message {
+class CancelSoftwareUpgradeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -151,6 +153,7 @@ CancelSoftwareUpgradeProposal.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { CancelSoftwareUpgradeProposal };
 /**
  * ModuleVersion specifies a module and its consensus version.
  *
@@ -158,7 +161,7 @@ CancelSoftwareUpgradeProposal.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.upgrade.v1beta1.ModuleVersion
  */
-export class ModuleVersion extends Message {
+class ModuleVersion extends Message {
     constructor(data) {
         super();
         /**
@@ -194,4 +197,5 @@ ModuleVersion.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "version", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ModuleVersion };
 //# sourceMappingURL=upgrade_pb.js.map

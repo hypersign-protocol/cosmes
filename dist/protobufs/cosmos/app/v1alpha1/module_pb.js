@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.app.v1alpha1.ModuleDescriptor
  */
-export class ModuleDescriptor extends Message {
+class ModuleDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -62,12 +62,13 @@ ModuleDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "use_package", kind: "message", T: PackageReference, repeated: true },
     { no: 3, name: "can_migrate_from", kind: "message", T: MigrateFromInfo, repeated: true },
 ]);
+export { ModuleDescriptor };
 /**
  * PackageReference is a reference to a protobuf package used by a module.
  *
  * @generated from message cosmos.app.v1alpha1.PackageReference
  */
-export class PackageReference extends Message {
+class PackageReference extends Message {
     constructor(data) {
         super();
         /**
@@ -137,13 +138,14 @@ PackageReference.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "revision", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { PackageReference };
 /**
  * MigrateFromInfo is information on a module version that a newer module
  * can migrate from.
  *
  * @generated from message cosmos.app.v1alpha1.MigrateFromInfo
  */
-export class MigrateFromInfo extends Message {
+class MigrateFromInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -173,4 +175,5 @@ MigrateFromInfo.typeName = "cosmos.app.v1alpha1.MigrateFromInfo";
 MigrateFromInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "module", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MigrateFromInfo };
 //# sourceMappingURL=module_pb.js.map

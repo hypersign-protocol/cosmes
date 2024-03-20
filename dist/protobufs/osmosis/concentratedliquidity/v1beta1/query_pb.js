@@ -14,7 +14,7 @@ import { IncentiveRecord } from "./incentive_record_pb.js";
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.UserPositionsRequest
  */
-export class UserPositionsRequest extends Message {
+class UserPositionsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -47,10 +47,11 @@ UserPositionsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { UserPositionsRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.UserPositionsResponse
  */
-export class UserPositionsResponse extends Message {
+class UserPositionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -78,12 +79,13 @@ UserPositionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "positions", kind: "message", T: FullPositionBreakdown, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { UserPositionsResponse };
 /**
  * =============================== PositionById
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.PositionByIdRequest
  */
-export class PositionByIdRequest extends Message {
+class PositionByIdRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -110,10 +112,11 @@ PositionByIdRequest.typeName = "osmosis.concentratedliquidity.v1beta1.PositionBy
 PositionByIdRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PositionByIdRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.PositionByIdResponse
  */
-export class PositionByIdResponse extends Message {
+class PositionByIdResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -136,10 +139,11 @@ PositionByIdResponse.typeName = "osmosis.concentratedliquidity.v1beta1.PositionB
 PositionByIdResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position", kind: "message", T: FullPositionBreakdown },
 ]);
+export { PositionByIdResponse };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.NumPoolPositionsRequest
  */
-export class NumPoolPositionsRequest extends Message {
+class NumPoolPositionsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -166,10 +170,11 @@ NumPoolPositionsRequest.typeName = "osmosis.concentratedliquidity.v1beta1.NumPoo
 NumPoolPositionsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { NumPoolPositionsRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.NumPoolPositionsResponse
  */
-export class NumPoolPositionsResponse extends Message {
+class NumPoolPositionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -196,12 +201,13 @@ NumPoolPositionsResponse.typeName = "osmosis.concentratedliquidity.v1beta1.NumPo
 NumPoolPositionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { NumPoolPositionsResponse };
 /**
  * =============================== Pools
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.PoolsRequest
  */
-export class PoolsRequest extends Message {
+class PoolsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -224,10 +230,11 @@ PoolsRequest.typeName = "osmosis.concentratedliquidity.v1beta1.PoolsRequest";
 PoolsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { PoolsRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.PoolsResponse
  */
-export class PoolsResponse extends Message {
+class PoolsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -255,12 +262,13 @@ PoolsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pools", kind: "message", T: Any, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { PoolsResponse };
 /**
  * =============================== ModuleParams
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.ParamsRequest
  */
-export class ParamsRequest extends Message {
+class ParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -281,10 +289,11 @@ export class ParamsRequest extends Message {
 ParamsRequest.runtime = proto3;
 ParamsRequest.typeName = "osmosis.concentratedliquidity.v1beta1.ParamsRequest";
 ParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { ParamsRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.ParamsResponse
  */
-export class ParamsResponse extends Message {
+class ParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -307,10 +316,11 @@ ParamsResponse.typeName = "osmosis.concentratedliquidity.v1beta1.ParamsResponse"
 ParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { ParamsResponse };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.TickLiquidityNet
  */
-export class TickLiquidityNet extends Message {
+class TickLiquidityNet extends Message {
     constructor(data) {
         super();
         /**
@@ -342,10 +352,11 @@ TickLiquidityNet.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "liquidity_net", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "tick_index", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { TickLiquidityNet };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.LiquidityDepthWithRange
  */
-export class LiquidityDepthWithRange extends Message {
+class LiquidityDepthWithRange extends Message {
     constructor(data) {
         super();
         /**
@@ -382,12 +393,13 @@ LiquidityDepthWithRange.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "lower_tick", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 3, name: "upper_tick", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { LiquidityDepthWithRange };
 /**
  * =============================== LiquidityNetInDirection
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.LiquidityNetInDirectionRequest
  */
-export class LiquidityNetInDirectionRequest extends Message {
+class LiquidityNetInDirectionRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -439,10 +451,11 @@ LiquidityNetInDirectionRequest.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "bound_tick", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 6, name: "use_no_bound", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { LiquidityNetInDirectionRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.LiquidityNetInDirectionResponse
  */
-export class LiquidityNetInDirectionResponse extends Message {
+class LiquidityNetInDirectionResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -484,12 +497,13 @@ LiquidityNetInDirectionResponse.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "current_liquidity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "current_sqrt_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { LiquidityNetInDirectionResponse };
 /**
  * =============================== LiquidityPerTickRange
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.LiquidityPerTickRangeRequest
  */
-export class LiquidityPerTickRangeRequest extends Message {
+class LiquidityPerTickRangeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -516,10 +530,11 @@ LiquidityPerTickRangeRequest.typeName = "osmosis.concentratedliquidity.v1beta1.L
 LiquidityPerTickRangeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { LiquidityPerTickRangeRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.LiquidityPerTickRangeResponse
  */
-export class LiquidityPerTickRangeResponse extends Message {
+class LiquidityPerTickRangeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -551,12 +566,13 @@ LiquidityPerTickRangeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "liquidity", kind: "message", T: LiquidityDepthWithRange, repeated: true },
     { no: 2, name: "bucket_index", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { LiquidityPerTickRangeResponse };
 /**
  * ===================== QueryClaimableSpreadRewards
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.ClaimableSpreadRewardsRequest
  */
-export class ClaimableSpreadRewardsRequest extends Message {
+class ClaimableSpreadRewardsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -583,10 +599,11 @@ ClaimableSpreadRewardsRequest.typeName = "osmosis.concentratedliquidity.v1beta1.
 ClaimableSpreadRewardsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ClaimableSpreadRewardsRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.ClaimableSpreadRewardsResponse
  */
-export class ClaimableSpreadRewardsResponse extends Message {
+class ClaimableSpreadRewardsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -613,12 +630,13 @@ ClaimableSpreadRewardsResponse.typeName = "osmosis.concentratedliquidity.v1beta1
 ClaimableSpreadRewardsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "claimable_spread_rewards", kind: "message", T: Coin, repeated: true },
 ]);
+export { ClaimableSpreadRewardsResponse };
 /**
  * ===================== QueryClaimableIncentives
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.ClaimableIncentivesRequest
  */
-export class ClaimableIncentivesRequest extends Message {
+class ClaimableIncentivesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -645,10 +663,11 @@ ClaimableIncentivesRequest.typeName = "osmosis.concentratedliquidity.v1beta1.Cla
 ClaimableIncentivesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "position_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ClaimableIncentivesRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.ClaimableIncentivesResponse
  */
-export class ClaimableIncentivesResponse extends Message {
+class ClaimableIncentivesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -680,12 +699,13 @@ ClaimableIncentivesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "claimable_incentives", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "forfeited_incentives", kind: "message", T: Coin, repeated: true },
 ]);
+export { ClaimableIncentivesResponse };
 /**
  * ===================== QueryPoolAccumulatorRewards
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.PoolAccumulatorRewardsRequest
  */
-export class PoolAccumulatorRewardsRequest extends Message {
+class PoolAccumulatorRewardsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -712,10 +732,11 @@ PoolAccumulatorRewardsRequest.typeName = "osmosis.concentratedliquidity.v1beta1.
 PoolAccumulatorRewardsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PoolAccumulatorRewardsRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.PoolAccumulatorRewardsResponse
  */
-export class PoolAccumulatorRewardsResponse extends Message {
+class PoolAccumulatorRewardsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -747,12 +768,13 @@ PoolAccumulatorRewardsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spread_reward_growth_global", kind: "message", T: DecCoin, repeated: true },
     { no: 2, name: "uptime_growth_global", kind: "message", T: UptimeTracker, repeated: true },
 ]);
+export { PoolAccumulatorRewardsResponse };
 /**
  * ===================== QueryTickAccumulatorTrackers
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.TickAccumulatorTrackersRequest
  */
-export class TickAccumulatorTrackersRequest extends Message {
+class TickAccumulatorTrackersRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -784,10 +806,11 @@ TickAccumulatorTrackersRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "tick_index", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { TickAccumulatorTrackersRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.TickAccumulatorTrackersResponse
  */
-export class TickAccumulatorTrackersResponse extends Message {
+class TickAccumulatorTrackersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -819,12 +842,13 @@ TickAccumulatorTrackersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spread_reward_growth_opposite_direction_of_last_traversal", kind: "message", T: DecCoin, repeated: true },
     { no: 2, name: "uptime_trackers", kind: "message", T: UptimeTracker, repeated: true },
 ]);
+export { TickAccumulatorTrackersResponse };
 /**
  * ===================== QueryIncentiveRecords
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.IncentiveRecordsRequest
  */
-export class IncentiveRecordsRequest extends Message {
+class IncentiveRecordsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -852,10 +876,11 @@ IncentiveRecordsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { IncentiveRecordsRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.IncentiveRecordsResponse
  */
-export class IncentiveRecordsResponse extends Message {
+class IncentiveRecordsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -883,12 +908,13 @@ IncentiveRecordsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "incentive_records", kind: "message", T: IncentiveRecord, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { IncentiveRecordsResponse };
 /**
  * =============================== CFMMPoolIdLinkFromConcentratedPoolId
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.CFMMPoolIdLinkFromConcentratedPoolIdRequest
  */
-export class CFMMPoolIdLinkFromConcentratedPoolIdRequest extends Message {
+class CFMMPoolIdLinkFromConcentratedPoolIdRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -915,10 +941,11 @@ CFMMPoolIdLinkFromConcentratedPoolIdRequest.typeName = "osmosis.concentratedliqu
 CFMMPoolIdLinkFromConcentratedPoolIdRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "concentrated_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { CFMMPoolIdLinkFromConcentratedPoolIdRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.CFMMPoolIdLinkFromConcentratedPoolIdResponse
  */
-export class CFMMPoolIdLinkFromConcentratedPoolIdResponse extends Message {
+class CFMMPoolIdLinkFromConcentratedPoolIdResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -945,12 +972,13 @@ CFMMPoolIdLinkFromConcentratedPoolIdResponse.typeName = "osmosis.concentratedliq
 CFMMPoolIdLinkFromConcentratedPoolIdResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cfmm_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { CFMMPoolIdLinkFromConcentratedPoolIdResponse };
 /**
  * =============================== UserUnbondingPositions
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.UserUnbondingPositionsRequest
  */
-export class UserUnbondingPositionsRequest extends Message {
+class UserUnbondingPositionsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -977,10 +1005,11 @@ UserUnbondingPositionsRequest.typeName = "osmosis.concentratedliquidity.v1beta1.
 UserUnbondingPositionsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { UserUnbondingPositionsRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.UserUnbondingPositionsResponse
  */
-export class UserUnbondingPositionsResponse extends Message {
+class UserUnbondingPositionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1007,12 +1036,13 @@ UserUnbondingPositionsResponse.typeName = "osmosis.concentratedliquidity.v1beta1
 UserUnbondingPositionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "positions_with_period_lock", kind: "message", T: PositionWithPeriodLock, repeated: true },
 ]);
+export { UserUnbondingPositionsResponse };
 /**
  * =============================== GetTotalLiquidity
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.GetTotalLiquidityRequest
  */
-export class GetTotalLiquidityRequest extends Message {
+class GetTotalLiquidityRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1033,10 +1063,11 @@ export class GetTotalLiquidityRequest extends Message {
 GetTotalLiquidityRequest.runtime = proto3;
 GetTotalLiquidityRequest.typeName = "osmosis.concentratedliquidity.v1beta1.GetTotalLiquidityRequest";
 GetTotalLiquidityRequest.fields = proto3.util.newFieldList(() => []);
+export { GetTotalLiquidityRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.GetTotalLiquidityResponse
  */
-export class GetTotalLiquidityResponse extends Message {
+class GetTotalLiquidityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1063,12 +1094,13 @@ GetTotalLiquidityResponse.typeName = "osmosis.concentratedliquidity.v1beta1.GetT
 GetTotalLiquidityResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_liquidity", kind: "message", T: Coin, repeated: true },
 ]);
+export { GetTotalLiquidityResponse };
 /**
  * =============================== NumNextInitializedTicks
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.NumNextInitializedTicksRequest
  */
-export class NumNextInitializedTicksRequest extends Message {
+class NumNextInitializedTicksRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1105,10 +1137,11 @@ NumNextInitializedTicksRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "token_in_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "num_next_initialized_ticks", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { NumNextInitializedTicksRequest };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.NumNextInitializedTicksResponse
  */
-export class NumNextInitializedTicksResponse extends Message {
+class NumNextInitializedTicksResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1145,4 +1178,5 @@ NumNextInitializedTicksResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "current_tick", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 3, name: "current_liquidity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { NumNextInitializedTicksResponse };
 //# sourceMappingURL=query_pb.js.map

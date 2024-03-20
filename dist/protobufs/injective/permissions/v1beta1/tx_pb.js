@@ -8,7 +8,7 @@ import { Namespace, Roles } from "./permissions_pb.js";
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -38,10 +38,11 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -62,10 +63,11 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "injective.permissions.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 /**
  * @generated from message injective.permissions.v1beta1.MsgCreateNamespace
  */
-export class MsgCreateNamespace extends Message {
+class MsgCreateNamespace extends Message {
     constructor(data) {
         super();
         /**
@@ -93,10 +95,11 @@ MsgCreateNamespace.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "namespace", kind: "message", T: Namespace },
 ]);
+export { MsgCreateNamespace };
 /**
  * @generated from message injective.permissions.v1beta1.MsgCreateNamespaceResponse
  */
-export class MsgCreateNamespaceResponse extends Message {
+class MsgCreateNamespaceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -117,10 +120,11 @@ export class MsgCreateNamespaceResponse extends Message {
 MsgCreateNamespaceResponse.runtime = proto3;
 MsgCreateNamespaceResponse.typeName = "injective.permissions.v1beta1.MsgCreateNamespaceResponse";
 MsgCreateNamespaceResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreateNamespaceResponse };
 /**
  * @generated from message injective.permissions.v1beta1.MsgDeleteNamespace
  */
-export class MsgDeleteNamespace extends Message {
+class MsgDeleteNamespace extends Message {
     constructor(data) {
         super();
         /**
@@ -152,10 +156,11 @@ MsgDeleteNamespace.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "namespace_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgDeleteNamespace };
 /**
  * @generated from message injective.permissions.v1beta1.MsgDeleteNamespaceResponse
  */
-export class MsgDeleteNamespaceResponse extends Message {
+class MsgDeleteNamespaceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -176,10 +181,11 @@ export class MsgDeleteNamespaceResponse extends Message {
 MsgDeleteNamespaceResponse.runtime = proto3;
 MsgDeleteNamespaceResponse.typeName = "injective.permissions.v1beta1.MsgDeleteNamespaceResponse";
 MsgDeleteNamespaceResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgDeleteNamespaceResponse };
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateNamespace
  */
-export class MsgUpdateNamespace extends Message {
+class MsgUpdateNamespace extends Message {
     constructor(data) {
         super();
         /**
@@ -217,10 +223,11 @@ MsgUpdateNamespace.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "sends_paused", kind: "message", T: MsgUpdateNamespace_MsgSetSendsPaused },
     { no: 6, name: "burns_paused", kind: "message", T: MsgUpdateNamespace_MsgSetBurnsPaused },
 ]);
+export { MsgUpdateNamespace };
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateNamespace.MsgSetWasmHook
  */
-export class MsgUpdateNamespace_MsgSetWasmHook extends Message {
+class MsgUpdateNamespace_MsgSetWasmHook extends Message {
     constructor(data) {
         super();
         /**
@@ -247,10 +254,11 @@ MsgUpdateNamespace_MsgSetWasmHook.typeName = "injective.permissions.v1beta1.MsgU
 MsgUpdateNamespace_MsgSetWasmHook.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "new_value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateNamespace_MsgSetWasmHook };
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateNamespace.MsgSetMintsPaused
  */
-export class MsgUpdateNamespace_MsgSetMintsPaused extends Message {
+class MsgUpdateNamespace_MsgSetMintsPaused extends Message {
     constructor(data) {
         super();
         /**
@@ -277,10 +285,11 @@ MsgUpdateNamespace_MsgSetMintsPaused.typeName = "injective.permissions.v1beta1.M
 MsgUpdateNamespace_MsgSetMintsPaused.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "new_value", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgUpdateNamespace_MsgSetMintsPaused };
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateNamespace.MsgSetSendsPaused
  */
-export class MsgUpdateNamespace_MsgSetSendsPaused extends Message {
+class MsgUpdateNamespace_MsgSetSendsPaused extends Message {
     constructor(data) {
         super();
         /**
@@ -307,10 +316,11 @@ MsgUpdateNamespace_MsgSetSendsPaused.typeName = "injective.permissions.v1beta1.M
 MsgUpdateNamespace_MsgSetSendsPaused.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "new_value", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgUpdateNamespace_MsgSetSendsPaused };
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateNamespace.MsgSetBurnsPaused
  */
-export class MsgUpdateNamespace_MsgSetBurnsPaused extends Message {
+class MsgUpdateNamespace_MsgSetBurnsPaused extends Message {
     constructor(data) {
         super();
         /**
@@ -337,10 +347,11 @@ MsgUpdateNamespace_MsgSetBurnsPaused.typeName = "injective.permissions.v1beta1.M
 MsgUpdateNamespace_MsgSetBurnsPaused.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "new_value", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgUpdateNamespace_MsgSetBurnsPaused };
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateNamespaceResponse
  */
-export class MsgUpdateNamespaceResponse extends Message {
+class MsgUpdateNamespaceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -361,10 +372,11 @@ export class MsgUpdateNamespaceResponse extends Message {
 MsgUpdateNamespaceResponse.runtime = proto3;
 MsgUpdateNamespaceResponse.typeName = "injective.permissions.v1beta1.MsgUpdateNamespaceResponse";
 MsgUpdateNamespaceResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateNamespaceResponse };
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateNamespaceRoles
  */
-export class MsgUpdateNamespaceRoles extends Message {
+class MsgUpdateNamespaceRoles extends Message {
     constructor(data) {
         super();
         /**
@@ -412,10 +424,11 @@ MsgUpdateNamespaceRoles.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "role_permissions", kind: "map", K: 9 /* ScalarType.STRING */, V: { kind: "scalar", T: 13 /* ScalarType.UINT32 */ } },
     { no: 4, name: "address_roles", kind: "map", K: 9 /* ScalarType.STRING */, V: { kind: "message", T: Roles } },
 ]);
+export { MsgUpdateNamespaceRoles };
 /**
  * @generated from message injective.permissions.v1beta1.MsgUpdateNamespaceRolesResponse
  */
-export class MsgUpdateNamespaceRolesResponse extends Message {
+class MsgUpdateNamespaceRolesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -436,10 +449,11 @@ export class MsgUpdateNamespaceRolesResponse extends Message {
 MsgUpdateNamespaceRolesResponse.runtime = proto3;
 MsgUpdateNamespaceRolesResponse.typeName = "injective.permissions.v1beta1.MsgUpdateNamespaceRolesResponse";
 MsgUpdateNamespaceRolesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateNamespaceRolesResponse };
 /**
  * @generated from message injective.permissions.v1beta1.MsgRevokeNamespaceRoles
  */
-export class MsgRevokeNamespaceRoles extends Message {
+class MsgRevokeNamespaceRoles extends Message {
     constructor(data) {
         super();
         /**
@@ -480,10 +494,11 @@ MsgRevokeNamespaceRoles.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "namespace_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "address_roles_to_revoke", kind: "map", K: 9 /* ScalarType.STRING */, V: { kind: "message", T: Roles } },
 ]);
+export { MsgRevokeNamespaceRoles };
 /**
  * @generated from message injective.permissions.v1beta1.MsgRevokeNamespaceRolesResponse
  */
-export class MsgRevokeNamespaceRolesResponse extends Message {
+class MsgRevokeNamespaceRolesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -504,10 +519,11 @@ export class MsgRevokeNamespaceRolesResponse extends Message {
 MsgRevokeNamespaceRolesResponse.runtime = proto3;
 MsgRevokeNamespaceRolesResponse.typeName = "injective.permissions.v1beta1.MsgRevokeNamespaceRolesResponse";
 MsgRevokeNamespaceRolesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRevokeNamespaceRolesResponse };
 /**
  * @generated from message injective.permissions.v1beta1.MsgClaimVoucher
  */
-export class MsgClaimVoucher extends Message {
+class MsgClaimVoucher extends Message {
     constructor(data) {
         super();
         /**
@@ -541,10 +557,11 @@ MsgClaimVoucher.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "originator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgClaimVoucher };
 /**
  * @generated from message injective.permissions.v1beta1.MsgClaimVoucherResponse
  */
-export class MsgClaimVoucherResponse extends Message {
+class MsgClaimVoucherResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -565,4 +582,5 @@ export class MsgClaimVoucherResponse extends Message {
 MsgClaimVoucherResponse.runtime = proto3;
 MsgClaimVoucherResponse.typeName = "injective.permissions.v1beta1.MsgClaimVoucherResponse";
 MsgClaimVoucherResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgClaimVoucherResponse };
 //# sourceMappingURL=tx_pb.js.map

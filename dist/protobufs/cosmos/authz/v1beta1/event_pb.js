@@ -5,7 +5,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.authz.v1beta1.EventGrant
  */
-export class EventGrant extends Message {
+class EventGrant extends Message {
     constructor(data) {
         super();
         /**
@@ -48,12 +48,13 @@ EventGrant.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "granter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventGrant };
 /**
  * EventRevoke is emitted on Msg/Revoke
  *
  * @generated from message cosmos.authz.v1beta1.EventRevoke
  */
-export class EventRevoke extends Message {
+class EventRevoke extends Message {
     constructor(data) {
         super();
         /**
@@ -96,4 +97,5 @@ EventRevoke.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "granter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventRevoke };
 //# sourceMappingURL=event_pb.js.map

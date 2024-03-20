@@ -14,7 +14,7 @@ import { Message, proto3, protoInt64, Timestamp } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.twap.v1beta1.TwapRecord
  */
-export class TwapRecord extends Message {
+class TwapRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -92,13 +92,14 @@ TwapRecord.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "geometric_twap_accumulator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "last_error_time", kind: "message", T: Timestamp },
 ]);
+export { TwapRecord };
 /**
  * PruningState allows us to spread out the pruning of TWAP records over time,
  * instead of pruning all at once at the end of the epoch.
  *
  * @generated from message osmosis.twap.v1beta1.PruningState
  */
-export class PruningState extends Message {
+class PruningState extends Message {
     constructor(data) {
         super();
         /**
@@ -148,4 +149,5 @@ PruningState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "last_key_seen", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "last_seen_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PruningState };
 //# sourceMappingURL=twap_record_pb.js.map

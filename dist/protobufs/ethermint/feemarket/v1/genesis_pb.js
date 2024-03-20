@@ -9,7 +9,7 @@ import { Params } from "./feemarket_pb.js";
  *
  * @generated from message ethermint.feemarket.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -40,4 +40,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
     { no: 3, name: "block_gas", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

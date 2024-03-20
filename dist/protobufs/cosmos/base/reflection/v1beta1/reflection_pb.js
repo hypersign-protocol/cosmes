@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.base.reflection.v1beta1.ListAllInterfacesRequest
  */
-export class ListAllInterfacesRequest extends Message {
+class ListAllInterfacesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -29,12 +29,13 @@ export class ListAllInterfacesRequest extends Message {
 ListAllInterfacesRequest.runtime = proto3;
 ListAllInterfacesRequest.typeName = "cosmos.base.reflection.v1beta1.ListAllInterfacesRequest";
 ListAllInterfacesRequest.fields = proto3.util.newFieldList(() => []);
+export { ListAllInterfacesRequest };
 /**
  * ListAllInterfacesResponse is the response type of the ListAllInterfaces RPC.
  *
  * @generated from message cosmos.base.reflection.v1beta1.ListAllInterfacesResponse
  */
-export class ListAllInterfacesResponse extends Message {
+class ListAllInterfacesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -63,13 +64,14 @@ ListAllInterfacesResponse.typeName = "cosmos.base.reflection.v1beta1.ListAllInte
 ListAllInterfacesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "interface_names", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ListAllInterfacesResponse };
 /**
  * ListImplementationsRequest is the request type of the ListImplementations
  * RPC.
  *
  * @generated from message cosmos.base.reflection.v1beta1.ListImplementationsRequest
  */
-export class ListImplementationsRequest extends Message {
+class ListImplementationsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -98,13 +100,14 @@ ListImplementationsRequest.typeName = "cosmos.base.reflection.v1beta1.ListImplem
 ListImplementationsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "interface_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ListImplementationsRequest };
 /**
  * ListImplementationsResponse is the response type of the ListImplementations
  * RPC.
  *
  * @generated from message cosmos.base.reflection.v1beta1.ListImplementationsResponse
  */
-export class ListImplementationsResponse extends Message {
+class ListImplementationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -131,4 +134,5 @@ ListImplementationsResponse.typeName = "cosmos.base.reflection.v1beta1.ListImple
 ListImplementationsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "implementation_message_names", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ListImplementationsResponse };
 //# sourceMappingURL=reflection_pb.js.map

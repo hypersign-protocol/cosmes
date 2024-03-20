@@ -8,7 +8,7 @@ import { Metadata } from "../../../cosmos/bank/v1beta1/bank_pb.js";
 /**
  * @generated from message injective.tokenfactory.v1beta1.EventCreateTFDenom
  */
-export class EventCreateTFDenom extends Message {
+class EventCreateTFDenom extends Message {
     constructor(data) {
         super();
         /**
@@ -40,10 +40,11 @@ EventCreateTFDenom.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventCreateTFDenom };
 /**
  * @generated from message injective.tokenfactory.v1beta1.EventMintTFDenom
  */
-export class EventMintTFDenom extends Message {
+class EventMintTFDenom extends Message {
     constructor(data) {
         super();
         /**
@@ -71,10 +72,11 @@ EventMintTFDenom.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "recipient_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "amount", kind: "message", T: Coin },
 ]);
+export { EventMintTFDenom };
 /**
  * @generated from message injective.tokenfactory.v1beta1.EventBurnDenom
  */
-export class EventBurnDenom extends Message {
+class EventBurnDenom extends Message {
     constructor(data) {
         super();
         /**
@@ -102,10 +104,11 @@ EventBurnDenom.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "burner_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "amount", kind: "message", T: Coin },
 ]);
+export { EventBurnDenom };
 /**
  * @generated from message injective.tokenfactory.v1beta1.EventChangeTFAdmin
  */
-export class EventChangeTFAdmin extends Message {
+class EventChangeTFAdmin extends Message {
     constructor(data) {
         super();
         /**
@@ -137,10 +140,11 @@ EventChangeTFAdmin.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "new_admin_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventChangeTFAdmin };
 /**
  * @generated from message injective.tokenfactory.v1beta1.EventSetTFDenomMetadata
  */
-export class EventSetTFDenomMetadata extends Message {
+class EventSetTFDenomMetadata extends Message {
     constructor(data) {
         super();
         /**
@@ -168,4 +172,5 @@ EventSetTFDenomMetadata.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "metadata", kind: "message", T: Metadata },
 ]);
+export { EventSetTFDenomMetadata };
 //# sourceMappingURL=events_pb.js.map

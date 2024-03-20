@@ -9,7 +9,7 @@ import { ModuleOptions } from "./options_pb.js";
  *
  * @generated from message cosmos.autocli.v1.AppOptionsRequest
  */
-export class AppOptionsRequest extends Message {
+class AppOptionsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,12 +30,13 @@ export class AppOptionsRequest extends Message {
 AppOptionsRequest.runtime = proto3;
 AppOptionsRequest.typeName = "cosmos.autocli.v1.AppOptionsRequest";
 AppOptionsRequest.fields = proto3.util.newFieldList(() => []);
+export { AppOptionsRequest };
 /**
  * AppOptionsResponse is the RemoteInfoService/AppOptions response type.
  *
  * @generated from message cosmos.autocli.v1.AppOptionsResponse
  */
-export class AppOptionsResponse extends Message {
+class AppOptionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -64,4 +65,5 @@ AppOptionsResponse.typeName = "cosmos.autocli.v1.AppOptionsResponse";
 AppOptionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "module_options", kind: "map", K: 9 /* ScalarType.STRING */, V: { kind: "message", T: ModuleOptions } },
 ]);
+export { AppOptionsResponse };
 //# sourceMappingURL=query_pb.js.map

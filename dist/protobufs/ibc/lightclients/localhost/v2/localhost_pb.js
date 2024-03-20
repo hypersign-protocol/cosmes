@@ -9,7 +9,7 @@ import { Height } from "../../../core/client/v1/client_pb.js";
  *
  * @generated from message ibc.lightclients.localhost.v2.ClientState
  */
-export class ClientState extends Message {
+class ClientState extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,4 +32,5 @@ ClientState.typeName = "ibc.lightclients.localhost.v2.ClientState";
 ClientState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "latest_height", kind: "message", T: Height },
 ]);
+export { ClientState };
 //# sourceMappingURL=localhost_pb.js.map

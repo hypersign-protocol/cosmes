@@ -10,7 +10,7 @@ import { Event } from "../../../../tendermint/abci/types_pb.js";
  *
  * @generated from message cosmos.base.abci.v1beta1.TxResponse
  */
-export class TxResponse extends Message {
+class TxResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -125,12 +125,13 @@ TxResponse.fields = proto3.util.newFieldList(() => [
     { no: 12, name: "timestamp", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "events", kind: "message", T: Event, repeated: true },
 ]);
+export { TxResponse };
 /**
  * ABCIMessageLog defines a structure containing an indexed tx ABCI message log.
  *
  * @generated from message cosmos.base.abci.v1beta1.ABCIMessageLog
  */
-export class ABCIMessageLog extends Message {
+class ABCIMessageLog extends Message {
     constructor(data) {
         super();
         /**
@@ -170,13 +171,14 @@ ABCIMessageLog.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "log", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "events", kind: "message", T: StringEvent, repeated: true },
 ]);
+export { ABCIMessageLog };
 /**
  * StringEvent defines en Event object wrapper where all the attributes
  * contain key/value pairs that are strings instead of raw bytes.
  *
  * @generated from message cosmos.base.abci.v1beta1.StringEvent
  */
-export class StringEvent extends Message {
+class StringEvent extends Message {
     constructor(data) {
         super();
         /**
@@ -208,13 +210,14 @@ StringEvent.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "attributes", kind: "message", T: Attribute, repeated: true },
 ]);
+export { StringEvent };
 /**
  * Attribute defines an attribute wrapper where the key and value are
  * strings instead of raw bytes.
  *
  * @generated from message cosmos.base.abci.v1beta1.Attribute
  */
-export class Attribute extends Message {
+class Attribute extends Message {
     constructor(data) {
         super();
         /**
@@ -246,12 +249,13 @@ Attribute.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Attribute };
 /**
  * GasInfo defines tx execution gas context.
  *
  * @generated from message cosmos.base.abci.v1beta1.GasInfo
  */
-export class GasInfo extends Message {
+class GasInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -287,12 +291,13 @@ GasInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gas_wanted", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "gas_used", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GasInfo };
 /**
  * Result is the union of ResponseFormat and ResponseCheckTx.
  *
  * @generated from message cosmos.base.abci.v1beta1.Result
  */
-export class Result extends Message {
+class Result extends Message {
     constructor(data) {
         super();
         /**
@@ -349,13 +354,14 @@ Result.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "events", kind: "message", T: Event, repeated: true },
     { no: 4, name: "msg_responses", kind: "message", T: Any, repeated: true },
 ]);
+export { Result };
 /**
  * SimulationResponse defines the response generated when a transaction is
  * successfully simulated.
  *
  * @generated from message cosmos.base.abci.v1beta1.SimulationResponse
  */
-export class SimulationResponse extends Message {
+class SimulationResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -379,6 +385,7 @@ SimulationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gas_info", kind: "message", T: GasInfo },
     { no: 2, name: "result", kind: "message", T: Result },
 ]);
+export { SimulationResponse };
 /**
  * MsgData defines the data returned in a Result object during message
  * execution.
@@ -386,7 +393,7 @@ SimulationResponse.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmos.base.abci.v1beta1.MsgData
  * @deprecated
  */
-export class MsgData extends Message {
+class MsgData extends Message {
     constructor(data) {
         super();
         /**
@@ -418,13 +425,14 @@ MsgData.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "msg_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgData };
 /**
  * TxMsgData defines a list of MsgData. A transaction will have a MsgData object
  * for each message.
  *
  * @generated from message cosmos.base.abci.v1beta1.TxMsgData
  */
-export class TxMsgData extends Message {
+class TxMsgData extends Message {
     constructor(data) {
         super();
         /**
@@ -463,12 +471,13 @@ TxMsgData.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: MsgData, repeated: true },
     { no: 2, name: "msg_responses", kind: "message", T: Any, repeated: true },
 ]);
+export { TxMsgData };
 /**
  * SearchTxsResult defines a structure for querying txs pageable
  *
  * @generated from message cosmos.base.abci.v1beta1.SearchTxsResult
  */
-export class SearchTxsResult extends Message {
+class SearchTxsResult extends Message {
     constructor(data) {
         super();
         /**
@@ -532,4 +541,5 @@ SearchTxsResult.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "limit", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 6, name: "txs", kind: "message", T: TxResponse, repeated: true },
 ]);
+export { SearchTxsResult };
 //# sourceMappingURL=abci_pb.js.map

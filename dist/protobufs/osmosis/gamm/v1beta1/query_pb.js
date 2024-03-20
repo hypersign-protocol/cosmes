@@ -14,7 +14,7 @@ import { MigrationRecords } from "./shared_pb.js";
  * @generated from message osmosis.gamm.v1beta1.QueryPoolRequest
  * @deprecated
  */
-export class QueryPoolRequest extends Message {
+class QueryPoolRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -41,13 +41,14 @@ QueryPoolRequest.typeName = "osmosis.gamm.v1beta1.QueryPoolRequest";
 QueryPoolRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryPoolRequest };
 /**
  * Deprecated: please use the alternative in x/poolmanager
  *
  * @generated from message osmosis.gamm.v1beta1.QueryPoolResponse
  * @deprecated
  */
-export class QueryPoolResponse extends Message {
+class QueryPoolResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -70,12 +71,13 @@ QueryPoolResponse.typeName = "osmosis.gamm.v1beta1.QueryPoolResponse";
 QueryPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool", kind: "message", T: Any },
 ]);
+export { QueryPoolResponse };
 /**
  * =============================== Pools
  *
  * @generated from message osmosis.gamm.v1beta1.QueryPoolsRequest
  */
-export class QueryPoolsRequest extends Message {
+class QueryPoolsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -98,10 +100,11 @@ QueryPoolsRequest.typeName = "osmosis.gamm.v1beta1.QueryPoolsRequest";
 QueryPoolsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryPoolsRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryPoolsResponse
  */
-export class QueryPoolsResponse extends Message {
+class QueryPoolsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -129,13 +132,14 @@ QueryPoolsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pools", kind: "message", T: Any, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryPoolsResponse };
 /**
  * =============================== NumPools
  *
  * @generated from message osmosis.gamm.v1beta1.QueryNumPoolsRequest
  * @deprecated
  */
-export class QueryNumPoolsRequest extends Message {
+class QueryNumPoolsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -156,11 +160,12 @@ export class QueryNumPoolsRequest extends Message {
 QueryNumPoolsRequest.runtime = proto3;
 QueryNumPoolsRequest.typeName = "osmosis.gamm.v1beta1.QueryNumPoolsRequest";
 QueryNumPoolsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryNumPoolsRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryNumPoolsResponse
  * @deprecated
  */
-export class QueryNumPoolsResponse extends Message {
+class QueryNumPoolsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -187,12 +192,13 @@ QueryNumPoolsResponse.typeName = "osmosis.gamm.v1beta1.QueryNumPoolsResponse";
 QueryNumPoolsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "num_pools", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryNumPoolsResponse };
 /**
  * =============================== PoolType
  *
  * @generated from message osmosis.gamm.v1beta1.QueryPoolTypeRequest
  */
-export class QueryPoolTypeRequest extends Message {
+class QueryPoolTypeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -219,10 +225,11 @@ QueryPoolTypeRequest.typeName = "osmosis.gamm.v1beta1.QueryPoolTypeRequest";
 QueryPoolTypeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryPoolTypeRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryPoolTypeResponse
  */
-export class QueryPoolTypeResponse extends Message {
+class QueryPoolTypeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -249,12 +256,13 @@ QueryPoolTypeResponse.typeName = "osmosis.gamm.v1beta1.QueryPoolTypeResponse";
 QueryPoolTypeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryPoolTypeResponse };
 /**
  * =============================== CalcJoinPoolShares
  *
  * @generated from message osmosis.gamm.v1beta1.QueryCalcJoinPoolSharesRequest
  */
-export class QueryCalcJoinPoolSharesRequest extends Message {
+class QueryCalcJoinPoolSharesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -286,10 +294,11 @@ QueryCalcJoinPoolSharesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "tokens_in", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryCalcJoinPoolSharesRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryCalcJoinPoolSharesResponse
  */
-export class QueryCalcJoinPoolSharesResponse extends Message {
+class QueryCalcJoinPoolSharesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -321,12 +330,13 @@ QueryCalcJoinPoolSharesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "share_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "tokens_out", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryCalcJoinPoolSharesResponse };
 /**
  * =============================== CalcExitPoolCoinsFromShares
  *
  * @generated from message osmosis.gamm.v1beta1.QueryCalcExitPoolCoinsFromSharesRequest
  */
-export class QueryCalcExitPoolCoinsFromSharesRequest extends Message {
+class QueryCalcExitPoolCoinsFromSharesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -358,10 +368,11 @@ QueryCalcExitPoolCoinsFromSharesRequest.fields = proto3.util.newFieldList(() => 
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "share_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCalcExitPoolCoinsFromSharesRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryCalcExitPoolCoinsFromSharesResponse
  */
-export class QueryCalcExitPoolCoinsFromSharesResponse extends Message {
+class QueryCalcExitPoolCoinsFromSharesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -388,12 +399,13 @@ QueryCalcExitPoolCoinsFromSharesResponse.typeName = "osmosis.gamm.v1beta1.QueryC
 QueryCalcExitPoolCoinsFromSharesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tokens_out", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryCalcExitPoolCoinsFromSharesResponse };
 /**
  * =============================== PoolParams
  *
  * @generated from message osmosis.gamm.v1beta1.QueryPoolParamsRequest
  */
-export class QueryPoolParamsRequest extends Message {
+class QueryPoolParamsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -420,10 +432,11 @@ QueryPoolParamsRequest.typeName = "osmosis.gamm.v1beta1.QueryPoolParamsRequest";
 QueryPoolParamsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryPoolParamsRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryPoolParamsResponse
  */
-export class QueryPoolParamsResponse extends Message {
+class QueryPoolParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -446,6 +459,7 @@ QueryPoolParamsResponse.typeName = "osmosis.gamm.v1beta1.QueryPoolParamsResponse
 QueryPoolParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Any },
 ]);
+export { QueryPoolParamsResponse };
 /**
  * =============================== PoolLiquidity
  * Deprecated: please use the alternative in x/poolmanager
@@ -453,7 +467,7 @@ QueryPoolParamsResponse.fields = proto3.util.newFieldList(() => [
  * @generated from message osmosis.gamm.v1beta1.QueryTotalPoolLiquidityRequest
  * @deprecated
  */
-export class QueryTotalPoolLiquidityRequest extends Message {
+class QueryTotalPoolLiquidityRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -480,13 +494,14 @@ QueryTotalPoolLiquidityRequest.typeName = "osmosis.gamm.v1beta1.QueryTotalPoolLi
 QueryTotalPoolLiquidityRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryTotalPoolLiquidityRequest };
 /**
  * Deprecated: please use the alternative in x/poolmanager
  *
  * @generated from message osmosis.gamm.v1beta1.QueryTotalPoolLiquidityResponse
  * @deprecated
  */
-export class QueryTotalPoolLiquidityResponse extends Message {
+class QueryTotalPoolLiquidityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -513,12 +528,13 @@ QueryTotalPoolLiquidityResponse.typeName = "osmosis.gamm.v1beta1.QueryTotalPoolL
 QueryTotalPoolLiquidityResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "liquidity", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryTotalPoolLiquidityResponse };
 /**
  * =============================== TotalShares
  *
  * @generated from message osmosis.gamm.v1beta1.QueryTotalSharesRequest
  */
-export class QueryTotalSharesRequest extends Message {
+class QueryTotalSharesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -545,10 +561,11 @@ QueryTotalSharesRequest.typeName = "osmosis.gamm.v1beta1.QueryTotalSharesRequest
 QueryTotalSharesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryTotalSharesRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryTotalSharesResponse
  */
-export class QueryTotalSharesResponse extends Message {
+class QueryTotalSharesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -571,12 +588,13 @@ QueryTotalSharesResponse.typeName = "osmosis.gamm.v1beta1.QueryTotalSharesRespon
 QueryTotalSharesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_shares", kind: "message", T: Coin },
 ]);
+export { QueryTotalSharesResponse };
 /**
  * =============================== CalcJoinPoolNoSwapShares
  *
  * @generated from message osmosis.gamm.v1beta1.QueryCalcJoinPoolNoSwapSharesRequest
  */
-export class QueryCalcJoinPoolNoSwapSharesRequest extends Message {
+class QueryCalcJoinPoolNoSwapSharesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -608,10 +626,11 @@ QueryCalcJoinPoolNoSwapSharesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "tokens_in", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryCalcJoinPoolNoSwapSharesRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryCalcJoinPoolNoSwapSharesResponse
  */
-export class QueryCalcJoinPoolNoSwapSharesResponse extends Message {
+class QueryCalcJoinPoolNoSwapSharesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -643,6 +662,7 @@ QueryCalcJoinPoolNoSwapSharesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tokens_out", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "shares_out", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCalcJoinPoolNoSwapSharesResponse };
 /**
  * QuerySpotPriceRequest defines the gRPC request structure for a SpotPrice
  * query.
@@ -650,7 +670,7 @@ QueryCalcJoinPoolNoSwapSharesResponse.fields = proto3.util.newFieldList(() => [
  * @generated from message osmosis.gamm.v1beta1.QuerySpotPriceRequest
  * @deprecated
  */
-export class QuerySpotPriceRequest extends Message {
+class QuerySpotPriceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -687,10 +707,11 @@ QuerySpotPriceRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "base_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "quote_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotPriceRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryPoolsWithFilterRequest
  */
-export class QueryPoolsWithFilterRequest extends Message {
+class QueryPoolsWithFilterRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -726,10 +747,11 @@ QueryPoolsWithFilterRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pool_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryPoolsWithFilterRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryPoolsWithFilterResponse
  */
-export class QueryPoolsWithFilterResponse extends Message {
+class QueryPoolsWithFilterResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -757,6 +779,7 @@ QueryPoolsWithFilterResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pools", kind: "message", T: Any, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryPoolsWithFilterResponse };
 /**
  * QuerySpotPriceResponse defines the gRPC response structure for a SpotPrice
  * query.
@@ -764,7 +787,7 @@ QueryPoolsWithFilterResponse.fields = proto3.util.newFieldList(() => [
  * @generated from message osmosis.gamm.v1beta1.QuerySpotPriceResponse
  * @deprecated
  */
-export class QuerySpotPriceResponse extends Message {
+class QuerySpotPriceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -793,13 +816,14 @@ QuerySpotPriceResponse.typeName = "osmosis.gamm.v1beta1.QuerySpotPriceResponse";
 QuerySpotPriceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spot_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotPriceResponse };
 /**
  * =============================== EstimateSwapExactAmountIn
  *
  * @generated from message osmosis.gamm.v1beta1.QuerySwapExactAmountInRequest
  * @deprecated
  */
-export class QuerySwapExactAmountInRequest extends Message {
+class QuerySwapExactAmountInRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -841,11 +865,12 @@ QuerySwapExactAmountInRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_in", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "routes", kind: "message", T: SwapAmountInRoute, repeated: true },
 ]);
+export { QuerySwapExactAmountInRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QuerySwapExactAmountInResponse
  * @deprecated
  */
-export class QuerySwapExactAmountInResponse extends Message {
+class QuerySwapExactAmountInResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -872,13 +897,14 @@ QuerySwapExactAmountInResponse.typeName = "osmosis.gamm.v1beta1.QuerySwapExactAm
 QuerySwapExactAmountInResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySwapExactAmountInResponse };
 /**
  * =============================== EstimateSwapExactAmountOut
  *
  * @generated from message osmosis.gamm.v1beta1.QuerySwapExactAmountOutRequest
  * @deprecated
  */
-export class QuerySwapExactAmountOutRequest extends Message {
+class QuerySwapExactAmountOutRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -920,11 +946,12 @@ QuerySwapExactAmountOutRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "routes", kind: "message", T: SwapAmountOutRoute, repeated: true },
     { no: 4, name: "token_out", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySwapExactAmountOutRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QuerySwapExactAmountOutResponse
  * @deprecated
  */
-export class QuerySwapExactAmountOutResponse extends Message {
+class QuerySwapExactAmountOutResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -951,10 +978,11 @@ QuerySwapExactAmountOutResponse.typeName = "osmosis.gamm.v1beta1.QuerySwapExactA
 QuerySwapExactAmountOutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySwapExactAmountOutResponse };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryTotalLiquidityRequest
  */
-export class QueryTotalLiquidityRequest extends Message {
+class QueryTotalLiquidityRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -975,10 +1003,11 @@ export class QueryTotalLiquidityRequest extends Message {
 QueryTotalLiquidityRequest.runtime = proto3;
 QueryTotalLiquidityRequest.typeName = "osmosis.gamm.v1beta1.QueryTotalLiquidityRequest";
 QueryTotalLiquidityRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryTotalLiquidityRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryTotalLiquidityResponse
  */
-export class QueryTotalLiquidityResponse extends Message {
+class QueryTotalLiquidityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1005,12 +1034,13 @@ QueryTotalLiquidityResponse.typeName = "osmosis.gamm.v1beta1.QueryTotalLiquidity
 QueryTotalLiquidityResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "liquidity", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryTotalLiquidityResponse };
 /**
  * =============================== QueryConcentratedPoolIdLinkFromCFMM
  *
  * @generated from message osmosis.gamm.v1beta1.QueryConcentratedPoolIdLinkFromCFMMRequest
  */
-export class QueryConcentratedPoolIdLinkFromCFMMRequest extends Message {
+class QueryConcentratedPoolIdLinkFromCFMMRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1037,10 +1067,11 @@ QueryConcentratedPoolIdLinkFromCFMMRequest.typeName = "osmosis.gamm.v1beta1.Quer
 QueryConcentratedPoolIdLinkFromCFMMRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cfmm_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryConcentratedPoolIdLinkFromCFMMRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryConcentratedPoolIdLinkFromCFMMResponse
  */
-export class QueryConcentratedPoolIdLinkFromCFMMResponse extends Message {
+class QueryConcentratedPoolIdLinkFromCFMMResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1067,12 +1098,13 @@ QueryConcentratedPoolIdLinkFromCFMMResponse.typeName = "osmosis.gamm.v1beta1.Que
 QueryConcentratedPoolIdLinkFromCFMMResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "concentrated_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryConcentratedPoolIdLinkFromCFMMResponse };
 /**
  * =============================== QueryCFMMConcentratedPoolLinks
  *
  * @generated from message osmosis.gamm.v1beta1.QueryCFMMConcentratedPoolLinksRequest
  */
-export class QueryCFMMConcentratedPoolLinksRequest extends Message {
+class QueryCFMMConcentratedPoolLinksRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1093,10 +1125,11 @@ export class QueryCFMMConcentratedPoolLinksRequest extends Message {
 QueryCFMMConcentratedPoolLinksRequest.runtime = proto3;
 QueryCFMMConcentratedPoolLinksRequest.typeName = "osmosis.gamm.v1beta1.QueryCFMMConcentratedPoolLinksRequest";
 QueryCFMMConcentratedPoolLinksRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryCFMMConcentratedPoolLinksRequest };
 /**
  * @generated from message osmosis.gamm.v1beta1.QueryCFMMConcentratedPoolLinksResponse
  */
-export class QueryCFMMConcentratedPoolLinksResponse extends Message {
+class QueryCFMMConcentratedPoolLinksResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1119,4 +1152,5 @@ QueryCFMMConcentratedPoolLinksResponse.typeName = "osmosis.gamm.v1beta1.QueryCFM
 QueryCFMMConcentratedPoolLinksResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "migration_records", kind: "message", T: MigrationRecords },
 ]);
+export { QueryCFMMConcentratedPoolLinksResponse };
 //# sourceMappingURL=query_pb.js.map

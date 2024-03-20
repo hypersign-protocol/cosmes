@@ -7,7 +7,7 @@ import { Coin } from "../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message osmosis.superfluid.MsgSuperfluidDelegate
  */
-export class MsgSuperfluidDelegate extends Message {
+class MsgSuperfluidDelegate extends Message {
     constructor(data) {
         super();
         /**
@@ -44,10 +44,11 @@ MsgSuperfluidDelegate.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "val_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSuperfluidDelegate };
 /**
  * @generated from message osmosis.superfluid.MsgSuperfluidDelegateResponse
  */
-export class MsgSuperfluidDelegateResponse extends Message {
+class MsgSuperfluidDelegateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -68,10 +69,11 @@ export class MsgSuperfluidDelegateResponse extends Message {
 MsgSuperfluidDelegateResponse.runtime = proto3;
 MsgSuperfluidDelegateResponse.typeName = "osmosis.superfluid.MsgSuperfluidDelegateResponse";
 MsgSuperfluidDelegateResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSuperfluidDelegateResponse };
 /**
  * @generated from message osmosis.superfluid.MsgSuperfluidUndelegate
  */
-export class MsgSuperfluidUndelegate extends Message {
+class MsgSuperfluidUndelegate extends Message {
     constructor(data) {
         super();
         /**
@@ -103,10 +105,11 @@ MsgSuperfluidUndelegate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgSuperfluidUndelegate };
 /**
  * @generated from message osmosis.superfluid.MsgSuperfluidUndelegateResponse
  */
-export class MsgSuperfluidUndelegateResponse extends Message {
+class MsgSuperfluidUndelegateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -127,10 +130,11 @@ export class MsgSuperfluidUndelegateResponse extends Message {
 MsgSuperfluidUndelegateResponse.runtime = proto3;
 MsgSuperfluidUndelegateResponse.typeName = "osmosis.superfluid.MsgSuperfluidUndelegateResponse";
 MsgSuperfluidUndelegateResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSuperfluidUndelegateResponse };
 /**
  * @generated from message osmosis.superfluid.MsgSuperfluidUnbondLock
  */
-export class MsgSuperfluidUnbondLock extends Message {
+class MsgSuperfluidUnbondLock extends Message {
     constructor(data) {
         super();
         /**
@@ -162,10 +166,11 @@ MsgSuperfluidUnbondLock.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgSuperfluidUnbondLock };
 /**
  * @generated from message osmosis.superfluid.MsgSuperfluidUnbondLockResponse
  */
-export class MsgSuperfluidUnbondLockResponse extends Message {
+class MsgSuperfluidUnbondLockResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -186,10 +191,11 @@ export class MsgSuperfluidUnbondLockResponse extends Message {
 MsgSuperfluidUnbondLockResponse.runtime = proto3;
 MsgSuperfluidUnbondLockResponse.typeName = "osmosis.superfluid.MsgSuperfluidUnbondLockResponse";
 MsgSuperfluidUnbondLockResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSuperfluidUnbondLockResponse };
 /**
  * @generated from message osmosis.superfluid.MsgSuperfluidUndelegateAndUnbondLock
  */
-export class MsgSuperfluidUndelegateAndUnbondLock extends Message {
+class MsgSuperfluidUndelegateAndUnbondLock extends Message {
     constructor(data) {
         super();
         /**
@@ -222,10 +228,11 @@ MsgSuperfluidUndelegateAndUnbondLock.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "coin", kind: "message", T: Coin },
 ]);
+export { MsgSuperfluidUndelegateAndUnbondLock };
 /**
  * @generated from message osmosis.superfluid.MsgSuperfluidUndelegateAndUnbondLockResponse
  */
-export class MsgSuperfluidUndelegateAndUnbondLockResponse extends Message {
+class MsgSuperfluidUndelegateAndUnbondLockResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -256,6 +263,7 @@ MsgSuperfluidUndelegateAndUnbondLockResponse.typeName = "osmosis.superfluid.MsgS
 MsgSuperfluidUndelegateAndUnbondLockResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgSuperfluidUndelegateAndUnbondLockResponse };
 /**
  * MsgLockAndSuperfluidDelegate locks coins with the unbonding period duration,
  * and then does a superfluid lock from the newly created lockup, to the
@@ -263,7 +271,7 @@ MsgSuperfluidUndelegateAndUnbondLockResponse.fields = proto3.util.newFieldList((
  *
  * @generated from message osmosis.superfluid.MsgLockAndSuperfluidDelegate
  */
-export class MsgLockAndSuperfluidDelegate extends Message {
+class MsgLockAndSuperfluidDelegate extends Message {
     constructor(data) {
         super();
         /**
@@ -300,10 +308,11 @@ MsgLockAndSuperfluidDelegate.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "coins", kind: "message", T: Coin, repeated: true },
     { no: 3, name: "val_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgLockAndSuperfluidDelegate };
 /**
  * @generated from message osmosis.superfluid.MsgLockAndSuperfluidDelegateResponse
  */
-export class MsgLockAndSuperfluidDelegateResponse extends Message {
+class MsgLockAndSuperfluidDelegateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -330,13 +339,14 @@ MsgLockAndSuperfluidDelegateResponse.typeName = "osmosis.superfluid.MsgLockAndSu
 MsgLockAndSuperfluidDelegateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgLockAndSuperfluidDelegateResponse };
 /**
  * MsgCreateFullRangePositionAndSuperfluidDelegate creates a full range position
  * in a concentrated liquidity pool, then superfluid delegates.
  *
  * @generated from message osmosis.superfluid.MsgCreateFullRangePositionAndSuperfluidDelegate
  */
-export class MsgCreateFullRangePositionAndSuperfluidDelegate extends Message {
+class MsgCreateFullRangePositionAndSuperfluidDelegate extends Message {
     constructor(data) {
         super();
         /**
@@ -378,10 +388,11 @@ MsgCreateFullRangePositionAndSuperfluidDelegate.fields = proto3.util.newFieldLis
     { no: 3, name: "val_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateFullRangePositionAndSuperfluidDelegate };
 /**
  * @generated from message osmosis.superfluid.MsgCreateFullRangePositionAndSuperfluidDelegateResponse
  */
-export class MsgCreateFullRangePositionAndSuperfluidDelegateResponse extends Message {
+class MsgCreateFullRangePositionAndSuperfluidDelegateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -413,6 +424,7 @@ MsgCreateFullRangePositionAndSuperfluidDelegateResponse.fields = proto3.util.new
     { no: 1, name: "lockID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "positionID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateFullRangePositionAndSuperfluidDelegateResponse };
 /**
  * MsgUnPoolWhitelistedPool Unpools every lock the sender has, that is
  * associated with pool pool_id. If pool_id is not approved for unpooling by
@@ -425,7 +437,7 @@ MsgCreateFullRangePositionAndSuperfluidDelegateResponse.fields = proto3.util.new
  *
  * @generated from message osmosis.superfluid.MsgUnPoolWhitelistedPool
  */
-export class MsgUnPoolWhitelistedPool extends Message {
+class MsgUnPoolWhitelistedPool extends Message {
     constructor(data) {
         super();
         /**
@@ -457,10 +469,11 @@ MsgUnPoolWhitelistedPool.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgUnPoolWhitelistedPool };
 /**
  * @generated from message osmosis.superfluid.MsgUnPoolWhitelistedPoolResponse
  */
-export class MsgUnPoolWhitelistedPoolResponse extends Message {
+class MsgUnPoolWhitelistedPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -487,13 +500,14 @@ MsgUnPoolWhitelistedPoolResponse.typeName = "osmosis.superfluid.MsgUnPoolWhiteli
 MsgUnPoolWhitelistedPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "exited_lock_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { MsgUnPoolWhitelistedPoolResponse };
 /**
  * =====================
  * MsgUnlockAndMigrateSharesToFullRangeConcentratedPosition
  *
  * @generated from message osmosis.superfluid.MsgUnlockAndMigrateSharesToFullRangeConcentratedPosition
  */
-export class MsgUnlockAndMigrateSharesToFullRangeConcentratedPosition extends Message {
+class MsgUnlockAndMigrateSharesToFullRangeConcentratedPosition extends Message {
     constructor(data) {
         super();
         /**
@@ -533,10 +547,11 @@ MsgUnlockAndMigrateSharesToFullRangeConcentratedPosition.fields = proto3.util.ne
     { no: 3, name: "shares_to_migrate", kind: "message", T: Coin },
     { no: 4, name: "token_out_mins", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgUnlockAndMigrateSharesToFullRangeConcentratedPosition };
 /**
  * @generated from message osmosis.superfluid.MsgUnlockAndMigrateSharesToFullRangeConcentratedPositionResponse
  */
-export class MsgUnlockAndMigrateSharesToFullRangeConcentratedPositionResponse extends Message {
+class MsgUnlockAndMigrateSharesToFullRangeConcentratedPositionResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -574,12 +589,13 @@ MsgUnlockAndMigrateSharesToFullRangeConcentratedPositionResponse.fields = proto3
     { no: 3, name: "liquidity_created", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "join_time", kind: "message", T: Timestamp },
 ]);
+export { MsgUnlockAndMigrateSharesToFullRangeConcentratedPositionResponse };
 /**
  * ===================== MsgAddToConcentratedLiquiditySuperfluidPosition
  *
  * @generated from message osmosis.superfluid.MsgAddToConcentratedLiquiditySuperfluidPosition
  */
-export class MsgAddToConcentratedLiquiditySuperfluidPosition extends Message {
+class MsgAddToConcentratedLiquiditySuperfluidPosition extends Message {
     constructor(data) {
         super();
         /**
@@ -613,10 +629,11 @@ MsgAddToConcentratedLiquiditySuperfluidPosition.fields = proto3.util.newFieldLis
     { no: 3, name: "token_desired0", kind: "message", T: Coin },
     { no: 4, name: "token_desired1", kind: "message", T: Coin },
 ]);
+export { MsgAddToConcentratedLiquiditySuperfluidPosition };
 /**
  * @generated from message osmosis.superfluid.MsgAddToConcentratedLiquiditySuperfluidPositionResponse
  */
-export class MsgAddToConcentratedLiquiditySuperfluidPositionResponse extends Message {
+class MsgAddToConcentratedLiquiditySuperfluidPositionResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -667,12 +684,13 @@ MsgAddToConcentratedLiquiditySuperfluidPositionResponse.fields = proto3.util.new
     { no: 5, name: "new_liquidity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgAddToConcentratedLiquiditySuperfluidPositionResponse };
 /**
  * ===================== MsgUnbondConvertAndStake
  *
  * @generated from message osmosis.superfluid.MsgUnbondConvertAndStake
  */
-export class MsgUnbondConvertAndStake extends Message {
+class MsgUnbondConvertAndStake extends Message {
     constructor(data) {
         super();
         /**
@@ -724,10 +742,11 @@ MsgUnbondConvertAndStake.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "min_amt_to_stake", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "shares_to_convert", kind: "message", T: Coin },
 ]);
+export { MsgUnbondConvertAndStake };
 /**
  * @generated from message osmosis.superfluid.MsgUnbondConvertAndStakeResponse
  */
-export class MsgUnbondConvertAndStakeResponse extends Message {
+class MsgUnbondConvertAndStakeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -754,4 +773,5 @@ MsgUnbondConvertAndStakeResponse.typeName = "osmosis.superfluid.MsgUnbondConvert
 MsgUnbondConvertAndStakeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_amt_staked", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUnbondConvertAndStakeResponse };
 //# sourceMappingURL=tx_pb.js.map

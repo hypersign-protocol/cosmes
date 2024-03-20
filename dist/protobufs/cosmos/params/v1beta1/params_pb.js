@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.params.v1beta1.ParameterChangeProposal
  */
-export class ParameterChangeProposal extends Message {
+class ParameterChangeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -45,13 +45,14 @@ ParameterChangeProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "changes", kind: "message", T: ParamChange, repeated: true },
 ]);
+export { ParameterChangeProposal };
 /**
  * ParamChange defines an individual parameter change, for use in
  * ParameterChangeProposal.
  *
  * @generated from message cosmos.params.v1beta1.ParamChange
  */
-export class ParamChange extends Message {
+class ParamChange extends Message {
     constructor(data) {
         super();
         /**
@@ -88,4 +89,5 @@ ParamChange.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ParamChange };
 //# sourceMappingURL=params_pb.js.map

@@ -8,7 +8,7 @@ import { Any, Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.evidence.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -37,4 +37,5 @@ GenesisState.typeName = "cosmos.evidence.v1beta1.GenesisState";
 GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "evidence", kind: "message", T: Any, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

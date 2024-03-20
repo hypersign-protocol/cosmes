@@ -10,7 +10,7 @@ import { DelegationResponse, HistoricalInfo, Params, Pool, RedelegationResponse,
  *
  * @generated from message cosmos.staking.v1beta1.QueryValidatorsRequest
  */
-export class QueryValidatorsRequest extends Message {
+class QueryValidatorsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -40,12 +40,13 @@ QueryValidatorsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "status", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryValidatorsRequest };
 /**
  * QueryValidatorsResponse is response type for the Query/Validators RPC method
  *
  * @generated from message cosmos.staking.v1beta1.QueryValidatorsResponse
  */
-export class QueryValidatorsResponse extends Message {
+class QueryValidatorsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -75,12 +76,13 @@ QueryValidatorsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validators", kind: "message", T: Validator, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryValidatorsResponse };
 /**
  * QueryValidatorRequest is response type for the Query/Validator RPC method
  *
  * @generated from message cosmos.staking.v1beta1.QueryValidatorRequest
  */
-export class QueryValidatorRequest extends Message {
+class QueryValidatorRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -109,12 +111,13 @@ QueryValidatorRequest.typeName = "cosmos.staking.v1beta1.QueryValidatorRequest";
 QueryValidatorRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryValidatorRequest };
 /**
  * QueryValidatorResponse is response type for the Query/Validator RPC method
  *
  * @generated from message cosmos.staking.v1beta1.QueryValidatorResponse
  */
-export class QueryValidatorResponse extends Message {
+class QueryValidatorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -137,13 +140,14 @@ QueryValidatorResponse.typeName = "cosmos.staking.v1beta1.QueryValidatorResponse
 QueryValidatorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator", kind: "message", T: Validator },
 ]);
+export { QueryValidatorResponse };
 /**
  * QueryValidatorDelegationsRequest is request type for the
  * Query/ValidatorDelegations RPC method
  *
  * @generated from message cosmos.staking.v1beta1.QueryValidatorDelegationsRequest
  */
-export class QueryValidatorDelegationsRequest extends Message {
+class QueryValidatorDelegationsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -173,13 +177,14 @@ QueryValidatorDelegationsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryValidatorDelegationsRequest };
 /**
  * QueryValidatorDelegationsResponse is response type for the
  * Query/ValidatorDelegations RPC method
  *
  * @generated from message cosmos.staking.v1beta1.QueryValidatorDelegationsResponse
  */
-export class QueryValidatorDelegationsResponse extends Message {
+class QueryValidatorDelegationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -207,13 +212,14 @@ QueryValidatorDelegationsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegation_responses", kind: "message", T: DelegationResponse, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryValidatorDelegationsResponse };
 /**
  * QueryValidatorUnbondingDelegationsRequest is required type for the
  * Query/ValidatorUnbondingDelegations RPC method
  *
  * @generated from message cosmos.staking.v1beta1.QueryValidatorUnbondingDelegationsRequest
  */
-export class QueryValidatorUnbondingDelegationsRequest extends Message {
+class QueryValidatorUnbondingDelegationsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -243,13 +249,14 @@ QueryValidatorUnbondingDelegationsRequest.fields = proto3.util.newFieldList(() =
     { no: 1, name: "validator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryValidatorUnbondingDelegationsRequest };
 /**
  * QueryValidatorUnbondingDelegationsResponse is response type for the
  * Query/ValidatorUnbondingDelegations RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryValidatorUnbondingDelegationsResponse
  */
-export class QueryValidatorUnbondingDelegationsResponse extends Message {
+class QueryValidatorUnbondingDelegationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -277,12 +284,13 @@ QueryValidatorUnbondingDelegationsResponse.fields = proto3.util.newFieldList(() 
     { no: 1, name: "unbonding_responses", kind: "message", T: UnbondingDelegation, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryValidatorUnbondingDelegationsResponse };
 /**
  * QueryDelegationRequest is request type for the Query/Delegation RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegationRequest
  */
-export class QueryDelegationRequest extends Message {
+class QueryDelegationRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -318,12 +326,13 @@ QueryDelegationRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "validator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegationRequest };
 /**
  * QueryDelegationResponse is response type for the Query/Delegation RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegationResponse
  */
-export class QueryDelegationResponse extends Message {
+class QueryDelegationResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -346,13 +355,14 @@ QueryDelegationResponse.typeName = "cosmos.staking.v1beta1.QueryDelegationRespon
 QueryDelegationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegation_response", kind: "message", T: DelegationResponse },
 ]);
+export { QueryDelegationResponse };
 /**
  * QueryUnbondingDelegationRequest is request type for the
  * Query/UnbondingDelegation RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryUnbondingDelegationRequest
  */
-export class QueryUnbondingDelegationRequest extends Message {
+class QueryUnbondingDelegationRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -388,13 +398,14 @@ QueryUnbondingDelegationRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "validator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryUnbondingDelegationRequest };
 /**
  * QueryDelegationResponse is response type for the Query/UnbondingDelegation
  * RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryUnbondingDelegationResponse
  */
-export class QueryUnbondingDelegationResponse extends Message {
+class QueryUnbondingDelegationResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -417,13 +428,14 @@ QueryUnbondingDelegationResponse.typeName = "cosmos.staking.v1beta1.QueryUnbondi
 QueryUnbondingDelegationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "unbond", kind: "message", T: UnbondingDelegation },
 ]);
+export { QueryUnbondingDelegationResponse };
 /**
  * QueryDelegatorDelegationsRequest is request type for the
  * Query/DelegatorDelegations RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegatorDelegationsRequest
  */
-export class QueryDelegatorDelegationsRequest extends Message {
+class QueryDelegatorDelegationsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -453,13 +465,14 @@ QueryDelegatorDelegationsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryDelegatorDelegationsRequest };
 /**
  * QueryDelegatorDelegationsResponse is response type for the
  * Query/DelegatorDelegations RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegatorDelegationsResponse
  */
-export class QueryDelegatorDelegationsResponse extends Message {
+class QueryDelegatorDelegationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -489,13 +502,14 @@ QueryDelegatorDelegationsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegation_responses", kind: "message", T: DelegationResponse, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryDelegatorDelegationsResponse };
 /**
  * QueryDelegatorUnbondingDelegationsRequest is request type for the
  * Query/DelegatorUnbondingDelegations RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegatorUnbondingDelegationsRequest
  */
-export class QueryDelegatorUnbondingDelegationsRequest extends Message {
+class QueryDelegatorUnbondingDelegationsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -525,13 +539,14 @@ QueryDelegatorUnbondingDelegationsRequest.fields = proto3.util.newFieldList(() =
     { no: 1, name: "delegator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryDelegatorUnbondingDelegationsRequest };
 /**
  * QueryUnbondingDelegatorDelegationsResponse is response type for the
  * Query/UnbondingDelegatorDelegations RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegatorUnbondingDelegationsResponse
  */
-export class QueryDelegatorUnbondingDelegationsResponse extends Message {
+class QueryDelegatorUnbondingDelegationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -559,13 +574,14 @@ QueryDelegatorUnbondingDelegationsResponse.fields = proto3.util.newFieldList(() 
     { no: 1, name: "unbonding_responses", kind: "message", T: UnbondingDelegation, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryDelegatorUnbondingDelegationsResponse };
 /**
  * QueryRedelegationsRequest is request type for the Query/Redelegations RPC
  * method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryRedelegationsRequest
  */
-export class QueryRedelegationsRequest extends Message {
+class QueryRedelegationsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -609,13 +625,14 @@ QueryRedelegationsRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "dst_validator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryRedelegationsRequest };
 /**
  * QueryRedelegationsResponse is response type for the Query/Redelegations RPC
  * method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryRedelegationsResponse
  */
-export class QueryRedelegationsResponse extends Message {
+class QueryRedelegationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -643,13 +660,14 @@ QueryRedelegationsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "redelegation_responses", kind: "message", T: RedelegationResponse, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryRedelegationsResponse };
 /**
  * QueryDelegatorValidatorsRequest is request type for the
  * Query/DelegatorValidators RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegatorValidatorsRequest
  */
-export class QueryDelegatorValidatorsRequest extends Message {
+class QueryDelegatorValidatorsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -679,13 +697,14 @@ QueryDelegatorValidatorsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryDelegatorValidatorsRequest };
 /**
  * QueryDelegatorValidatorsResponse is response type for the
  * Query/DelegatorValidators RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegatorValidatorsResponse
  */
-export class QueryDelegatorValidatorsResponse extends Message {
+class QueryDelegatorValidatorsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -715,13 +734,14 @@ QueryDelegatorValidatorsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validators", kind: "message", T: Validator, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryDelegatorValidatorsResponse };
 /**
  * QueryDelegatorValidatorRequest is request type for the
  * Query/DelegatorValidator RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegatorValidatorRequest
  */
-export class QueryDelegatorValidatorRequest extends Message {
+class QueryDelegatorValidatorRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -757,13 +777,14 @@ QueryDelegatorValidatorRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "validator_addr", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegatorValidatorRequest };
 /**
  * QueryDelegatorValidatorResponse response type for the
  * Query/DelegatorValidator RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryDelegatorValidatorResponse
  */
-export class QueryDelegatorValidatorResponse extends Message {
+class QueryDelegatorValidatorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -786,13 +807,14 @@ QueryDelegatorValidatorResponse.typeName = "cosmos.staking.v1beta1.QueryDelegato
 QueryDelegatorValidatorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator", kind: "message", T: Validator },
 ]);
+export { QueryDelegatorValidatorResponse };
 /**
  * QueryHistoricalInfoRequest is request type for the Query/HistoricalInfo RPC
  * method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryHistoricalInfoRequest
  */
-export class QueryHistoricalInfoRequest extends Message {
+class QueryHistoricalInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -821,13 +843,14 @@ QueryHistoricalInfoRequest.typeName = "cosmos.staking.v1beta1.QueryHistoricalInf
 QueryHistoricalInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { QueryHistoricalInfoRequest };
 /**
  * QueryHistoricalInfoResponse is response type for the Query/HistoricalInfo RPC
  * method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryHistoricalInfoResponse
  */
-export class QueryHistoricalInfoResponse extends Message {
+class QueryHistoricalInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -850,12 +873,13 @@ QueryHistoricalInfoResponse.typeName = "cosmos.staking.v1beta1.QueryHistoricalIn
 QueryHistoricalInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "hist", kind: "message", T: HistoricalInfo },
 ]);
+export { QueryHistoricalInfoResponse };
 /**
  * QueryPoolRequest is request type for the Query/Pool RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryPoolRequest
  */
-export class QueryPoolRequest extends Message {
+class QueryPoolRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -876,12 +900,13 @@ export class QueryPoolRequest extends Message {
 QueryPoolRequest.runtime = proto3;
 QueryPoolRequest.typeName = "cosmos.staking.v1beta1.QueryPoolRequest";
 QueryPoolRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryPoolRequest };
 /**
  * QueryPoolResponse is response type for the Query/Pool RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryPoolResponse
  */
-export class QueryPoolResponse extends Message {
+class QueryPoolResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -904,12 +929,13 @@ QueryPoolResponse.typeName = "cosmos.staking.v1beta1.QueryPoolResponse";
 QueryPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool", kind: "message", T: Pool },
 ]);
+export { QueryPoolResponse };
 /**
  * QueryParamsRequest is request type for the Query/Params RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -930,12 +956,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "cosmos.staking.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is response type for the Query/Params RPC method.
  *
  * @generated from message cosmos.staking.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -958,4 +985,5 @@ QueryParamsResponse.typeName = "cosmos.staking.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 //# sourceMappingURL=query_pb.js.map

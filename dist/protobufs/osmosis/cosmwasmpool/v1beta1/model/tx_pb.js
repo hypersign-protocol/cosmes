@@ -8,7 +8,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.MsgCreateCosmWasmPool
  */
-export class MsgCreateCosmWasmPool extends Message {
+class MsgCreateCosmWasmPool extends Message {
     constructor(data) {
         super();
         /**
@@ -45,12 +45,13 @@ MsgCreateCosmWasmPool.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "instantiate_msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateCosmWasmPool };
 /**
  * Returns a unique poolID to identify the pool with.
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.MsgCreateCosmWasmPoolResponse
  */
-export class MsgCreateCosmWasmPoolResponse extends Message {
+class MsgCreateCosmWasmPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -77,4 +78,5 @@ MsgCreateCosmWasmPoolResponse.typeName = "osmosis.cosmwasmpool.v1beta1.MsgCreate
 MsgCreateCosmWasmPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateCosmWasmPoolResponse };
 //# sourceMappingURL=tx_pb.js.map

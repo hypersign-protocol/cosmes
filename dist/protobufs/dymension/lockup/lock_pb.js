@@ -35,7 +35,7 @@ proto3.util.setEnumType(LockQueryType, "dymensionxyz.dymension.lockup.LockQueryT
  *
  * @generated from message dymensionxyz.dymension.lockup.PeriodLock
  */
-export class PeriodLock extends Message {
+class PeriodLock extends Message {
     constructor(data) {
         super();
         /**
@@ -83,6 +83,7 @@ PeriodLock.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "end_time", kind: "message", T: Timestamp },
     { no: 5, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { PeriodLock };
 /**
  * QueryCondition is a struct used for querying locks upon different conditions.
  * Duration field and timestamp fields could be optional, depending on the
@@ -90,7 +91,7 @@ PeriodLock.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message dymensionxyz.dymension.lockup.QueryCondition
  */
-export class QueryCondition extends Message {
+class QueryCondition extends Message {
     constructor(data) {
         super();
         /**
@@ -128,4 +129,5 @@ QueryCondition.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "duration", kind: "message", T: Duration },
     { no: 4, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { QueryCondition };
 //# sourceMappingURL=lock_pb.js.map

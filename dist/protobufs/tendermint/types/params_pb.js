@@ -9,7 +9,7 @@ import { Duration, Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message tendermint.types.ConsensusParams
  */
-export class ConsensusParams extends Message {
+class ConsensusParams extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -35,12 +35,13 @@ ConsensusParams.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "validator", kind: "message", T: ValidatorParams },
     { no: 4, name: "version", kind: "message", T: VersionParams },
 ]);
+export { ConsensusParams };
 /**
  * BlockParams contains limits on the block size.
  *
  * @generated from message tendermint.types.BlockParams
  */
-export class BlockParams extends Message {
+class BlockParams extends Message {
     constructor(data) {
         super();
         /**
@@ -78,12 +79,13 @@ BlockParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "max_bytes", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "max_gas", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { BlockParams };
 /**
  * EvidenceParams determine how we handle evidence of malfeasance.
  *
  * @generated from message tendermint.types.EvidenceParams
  */
-export class EvidenceParams extends Message {
+class EvidenceParams extends Message {
     constructor(data) {
         super();
         /**
@@ -125,13 +127,14 @@ EvidenceParams.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "max_age_duration", kind: "message", T: Duration },
     { no: 3, name: "max_bytes", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { EvidenceParams };
 /**
  * ValidatorParams restrict the public key types validators can use.
  * NOTE: uses ABCI pubkey naming, not Amino names.
  *
  * @generated from message tendermint.types.ValidatorParams
  */
-export class ValidatorParams extends Message {
+class ValidatorParams extends Message {
     constructor(data) {
         super();
         /**
@@ -158,12 +161,13 @@ ValidatorParams.typeName = "tendermint.types.ValidatorParams";
 ValidatorParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pub_key_types", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ValidatorParams };
 /**
  * VersionParams contains the ABCI application version.
  *
  * @generated from message tendermint.types.VersionParams
  */
-export class VersionParams extends Message {
+class VersionParams extends Message {
     constructor(data) {
         super();
         /**
@@ -190,6 +194,7 @@ VersionParams.typeName = "tendermint.types.VersionParams";
 VersionParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "app", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { VersionParams };
 /**
  * HashedParams is a subset of ConsensusParams.
  *
@@ -197,7 +202,7 @@ VersionParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message tendermint.types.HashedParams
  */
-export class HashedParams extends Message {
+class HashedParams extends Message {
     constructor(data) {
         super();
         /**
@@ -229,4 +234,5 @@ HashedParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "block_max_bytes", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "block_max_gas", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { HashedParams };
 //# sourceMappingURL=params_pb.js.map

@@ -9,7 +9,7 @@ import { Duration, Message, proto3, protoInt64, Timestamp } from "@bufbuild/prot
  *
  * @generated from message cosmos.slashing.v1beta1.ValidatorSigningInfo
  */
-export class ValidatorSigningInfo extends Message {
+class ValidatorSigningInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -69,12 +69,13 @@ ValidatorSigningInfo.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "tombstoned", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 6, name: "missed_blocks_counter", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { ValidatorSigningInfo };
 /**
  * Params represents the parameters used for by the slashing module.
  *
  * @generated from message cosmos.slashing.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -117,4 +118,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "slash_fraction_double_sign", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 5, name: "slash_fraction_downtime", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { Params };
 //# sourceMappingURL=slashing_pb.js.map

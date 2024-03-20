@@ -7,7 +7,7 @@ import { Params, RegisteredContract } from "./wasmx_pb.js";
 /**
  * @generated from message injective.wasmx.v1.RegisteredContractWithAddress
  */
-export class RegisteredContractWithAddress extends Message {
+class RegisteredContractWithAddress extends Message {
     constructor(data) {
         super();
         /**
@@ -35,12 +35,13 @@ RegisteredContractWithAddress.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "registered_contract", kind: "message", T: RegisteredContract },
 ]);
+export { RegisteredContractWithAddress };
 /**
  * GenesisState defines the wasmx module's genesis state.
  *
  * @generated from message injective.wasmx.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -71,4 +72,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
     { no: 2, name: "registered_contracts", kind: "message", T: RegisteredContractWithAddress, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

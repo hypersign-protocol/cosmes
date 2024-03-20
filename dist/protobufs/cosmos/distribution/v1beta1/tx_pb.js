@@ -11,7 +11,7 @@ import { Params } from "./distribution_pb.js";
  *
  * @generated from message cosmos.distribution.v1beta1.MsgSetWithdrawAddress
  */
-export class MsgSetWithdrawAddress extends Message {
+class MsgSetWithdrawAddress extends Message {
     constructor(data) {
         super();
         /**
@@ -43,13 +43,14 @@ MsgSetWithdrawAddress.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "withdraw_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSetWithdrawAddress };
 /**
  * MsgSetWithdrawAddressResponse defines the Msg/SetWithdrawAddress response
  * type.
  *
  * @generated from message cosmos.distribution.v1beta1.MsgSetWithdrawAddressResponse
  */
-export class MsgSetWithdrawAddressResponse extends Message {
+class MsgSetWithdrawAddressResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -70,13 +71,14 @@ export class MsgSetWithdrawAddressResponse extends Message {
 MsgSetWithdrawAddressResponse.runtime = proto3;
 MsgSetWithdrawAddressResponse.typeName = "cosmos.distribution.v1beta1.MsgSetWithdrawAddressResponse";
 MsgSetWithdrawAddressResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetWithdrawAddressResponse };
 /**
  * MsgWithdrawDelegatorReward represents delegation withdrawal to a delegator
  * from a single validator.
  *
  * @generated from message cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward
  */
-export class MsgWithdrawDelegatorReward extends Message {
+class MsgWithdrawDelegatorReward extends Message {
     constructor(data) {
         super();
         /**
@@ -108,13 +110,14 @@ MsgWithdrawDelegatorReward.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgWithdrawDelegatorReward };
 /**
  * MsgWithdrawDelegatorRewardResponse defines the Msg/WithdrawDelegatorReward
  * response type.
  *
  * @generated from message cosmos.distribution.v1beta1.MsgWithdrawDelegatorRewardResponse
  */
-export class MsgWithdrawDelegatorRewardResponse extends Message {
+class MsgWithdrawDelegatorRewardResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -143,13 +146,14 @@ MsgWithdrawDelegatorRewardResponse.typeName = "cosmos.distribution.v1beta1.MsgWi
 MsgWithdrawDelegatorRewardResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgWithdrawDelegatorRewardResponse };
 /**
  * MsgWithdrawValidatorCommission withdraws the full commission to the validator
  * address.
  *
  * @generated from message cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission
  */
-export class MsgWithdrawValidatorCommission extends Message {
+class MsgWithdrawValidatorCommission extends Message {
     constructor(data) {
         super();
         /**
@@ -176,13 +180,14 @@ MsgWithdrawValidatorCommission.typeName = "cosmos.distribution.v1beta1.MsgWithdr
 MsgWithdrawValidatorCommission.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgWithdrawValidatorCommission };
 /**
  * MsgWithdrawValidatorCommissionResponse defines the
  * Msg/WithdrawValidatorCommission response type.
  *
  * @generated from message cosmos.distribution.v1beta1.MsgWithdrawValidatorCommissionResponse
  */
-export class MsgWithdrawValidatorCommissionResponse extends Message {
+class MsgWithdrawValidatorCommissionResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -211,13 +216,14 @@ MsgWithdrawValidatorCommissionResponse.typeName = "cosmos.distribution.v1beta1.M
 MsgWithdrawValidatorCommissionResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgWithdrawValidatorCommissionResponse };
 /**
  * MsgFundCommunityPool allows an account to directly
  * fund the community pool.
  *
  * @generated from message cosmos.distribution.v1beta1.MsgFundCommunityPool
  */
-export class MsgFundCommunityPool extends Message {
+class MsgFundCommunityPool extends Message {
     constructor(data) {
         super();
         /**
@@ -249,12 +255,13 @@ MsgFundCommunityPool.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "depositor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgFundCommunityPool };
 /**
  * MsgFundCommunityPoolResponse defines the Msg/FundCommunityPool response type.
  *
  * @generated from message cosmos.distribution.v1beta1.MsgFundCommunityPoolResponse
  */
-export class MsgFundCommunityPoolResponse extends Message {
+class MsgFundCommunityPoolResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -275,6 +282,7 @@ export class MsgFundCommunityPoolResponse extends Message {
 MsgFundCommunityPoolResponse.runtime = proto3;
 MsgFundCommunityPoolResponse.typeName = "cosmos.distribution.v1beta1.MsgFundCommunityPoolResponse";
 MsgFundCommunityPoolResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgFundCommunityPoolResponse };
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
  *
@@ -282,7 +290,7 @@ MsgFundCommunityPoolResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.distribution.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -312,6 +320,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
@@ -320,7 +329,7 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.distribution.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -341,6 +350,7 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "cosmos.distribution.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 /**
  * MsgCommunityPoolSpend defines a message for sending tokens from the community
  * pool to another account. This message is typically executed via a governance
@@ -350,7 +360,7 @@ MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.distribution.v1beta1.MsgCommunityPoolSpend
  */
-export class MsgCommunityPoolSpend extends Message {
+class MsgCommunityPoolSpend extends Message {
     constructor(data) {
         super();
         /**
@@ -389,6 +399,7 @@ MsgCommunityPoolSpend.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "recipient", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgCommunityPoolSpend };
 /**
  * MsgCommunityPoolSpendResponse defines the response to executing a
  * MsgCommunityPoolSpend message.
@@ -397,7 +408,7 @@ MsgCommunityPoolSpend.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.distribution.v1beta1.MsgCommunityPoolSpendResponse
  */
-export class MsgCommunityPoolSpendResponse extends Message {
+class MsgCommunityPoolSpendResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -418,4 +429,5 @@ export class MsgCommunityPoolSpendResponse extends Message {
 MsgCommunityPoolSpendResponse.runtime = proto3;
 MsgCommunityPoolSpendResponse.typeName = "cosmos.distribution.v1beta1.MsgCommunityPoolSpendResponse";
 MsgCommunityPoolSpendResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCommunityPoolSpendResponse };
 //# sourceMappingURL=tx_pb.js.map

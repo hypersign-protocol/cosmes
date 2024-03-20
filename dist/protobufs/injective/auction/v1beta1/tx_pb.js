@@ -10,7 +10,7 @@ import { Params } from "./auction_pb.js";
  *
  * @generated from message injective.auction.v1beta1.MsgBid
  */
-export class MsgBid extends Message {
+class MsgBid extends Message {
     constructor(data) {
         super();
         /**
@@ -45,10 +45,11 @@ MsgBid.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "bid_amount", kind: "message", T: Coin },
     { no: 3, name: "round", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgBid };
 /**
  * @generated from message injective.auction.v1beta1.MsgBidResponse
  */
-export class MsgBidResponse extends Message {
+class MsgBidResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -69,10 +70,11 @@ export class MsgBidResponse extends Message {
 MsgBidResponse.runtime = proto3;
 MsgBidResponse.typeName = "injective.auction.v1beta1.MsgBidResponse";
 MsgBidResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgBidResponse };
 /**
  * @generated from message injective.auction.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -102,10 +104,11 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * @generated from message injective.auction.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -126,4 +129,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "injective.auction.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

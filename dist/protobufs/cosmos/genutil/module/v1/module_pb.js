@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.genutil.module.v1.Module
  */
-export class Module extends Message {
+class Module extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -29,4 +29,5 @@ export class Module extends Message {
 Module.runtime = proto3;
 Module.typeName = "cosmos.genutil.module.v1.Module";
 Module.fields = proto3.util.newFieldList(() => []);
+export { Module };
 //# sourceMappingURL=module_pb.js.map

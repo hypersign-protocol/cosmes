@@ -11,7 +11,7 @@ import { DenomPairTakerFee } from "./tx_pb.js";
  *
  * @generated from message osmosis.poolmanager.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -53,12 +53,13 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "taker_fee_params", kind: "message", T: TakerFeeParams },
     { no: 3, name: "authorized_quote_denoms", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Params };
 /**
  * GenesisState defines the poolmanager module's genesis state.
  *
  * @generated from message osmosis.poolmanager.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -106,12 +107,13 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "pool_volumes", kind: "message", T: PoolVolume, repeated: true },
     { no: 6, name: "denom_pair_taker_fee_store", kind: "message", T: DenomPairTakerFee, repeated: true },
 ]);
+export { GenesisState };
 /**
  * TakerFeeParams consolidates the taker fee parameters for the poolmanager.
  *
  * @generated from message osmosis.poolmanager.v1beta1.TakerFeeParams
  */
-export class TakerFeeParams extends Message {
+class TakerFeeParams extends Message {
     constructor(data) {
         super();
         /**
@@ -175,13 +177,14 @@ TakerFeeParams.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "community_pool_denom_to_swap_non_whitelisted_assets_to", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "reduced_fee_whitelist", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { TakerFeeParams };
 /**
  * TakerFeeDistributionPercentage defines what percent of the taker fee category
  * gets distributed to the available categories.
  *
  * @generated from message osmosis.poolmanager.v1beta1.TakerFeeDistributionPercentage
  */
-export class TakerFeeDistributionPercentage extends Message {
+class TakerFeeDistributionPercentage extends Message {
     constructor(data) {
         super();
         /**
@@ -213,10 +216,11 @@ TakerFeeDistributionPercentage.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "staking_rewards", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "community_pool", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TakerFeeDistributionPercentage };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.TakerFeesTracker
  */
-export class TakerFeesTracker extends Message {
+class TakerFeesTracker extends Message {
     constructor(data) {
         super();
         /**
@@ -253,13 +257,14 @@ TakerFeesTracker.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "taker_fees_to_community_pool", kind: "message", T: Coin, repeated: true },
     { no: 3, name: "height_accounting_starts_from", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { TakerFeesTracker };
 /**
  * PoolVolume stores the KVStore entries for each pool's volume, which
  * is used in export/import genesis.
  *
  * @generated from message osmosis.poolmanager.v1beta1.PoolVolume
  */
-export class PoolVolume extends Message {
+class PoolVolume extends Message {
     constructor(data) {
         super();
         /**
@@ -295,4 +300,5 @@ PoolVolume.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "pool_volume", kind: "message", T: Coin, repeated: true },
 ]);
+export { PoolVolume };
 //# sourceMappingURL=genesis_pb.js.map

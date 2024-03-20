@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.nft.v1beta1.EventSend
  */
-export class EventSend extends Message {
+class EventSend extends Message {
     constructor(data) {
         super();
         /**
@@ -58,12 +58,13 @@ EventSend.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "receiver", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventSend };
 /**
  * EventMint is emitted on Mint
  *
  * @generated from message cosmos.nft.v1beta1.EventMint
  */
-export class EventMint extends Message {
+class EventMint extends Message {
     constructor(data) {
         super();
         /**
@@ -106,12 +107,13 @@ EventMint.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventMint };
 /**
  * EventBurn is emitted on Burn
  *
  * @generated from message cosmos.nft.v1beta1.EventBurn
  */
-export class EventBurn extends Message {
+class EventBurn extends Message {
     constructor(data) {
         super();
         /**
@@ -154,4 +156,5 @@ EventBurn.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventBurn };
 //# sourceMappingURL=event_pb.js.map

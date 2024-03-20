@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.base.kv.v1beta1.Pairs
  */
-export class Pairs extends Message {
+class Pairs extends Message {
     constructor(data) {
         super();
         /**
@@ -35,12 +35,13 @@ Pairs.typeName = "cosmos.base.kv.v1beta1.Pairs";
 Pairs.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pairs", kind: "message", T: Pair, repeated: true },
 ]);
+export { Pairs };
 /**
  * Pair defines a key/value bytes tuple.
  *
  * @generated from message cosmos.base.kv.v1beta1.Pair
  */
-export class Pair extends Message {
+class Pair extends Message {
     constructor(data) {
         super();
         /**
@@ -72,4 +73,5 @@ Pair.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "value", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { Pair };
 //# sourceMappingURL=kv_pb.js.map

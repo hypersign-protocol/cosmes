@@ -9,7 +9,7 @@ import { PageRequest, PageResponse } from "../../cosmos/base/query/v1beta1/pagin
 /**
  * @generated from message dymensionxyz.dymension.incentives.ModuleToDistributeCoinsRequest
  */
-export class ModuleToDistributeCoinsRequest extends Message {
+class ModuleToDistributeCoinsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,10 +30,11 @@ export class ModuleToDistributeCoinsRequest extends Message {
 ModuleToDistributeCoinsRequest.runtime = proto3;
 ModuleToDistributeCoinsRequest.typeName = "dymensionxyz.dymension.incentives.ModuleToDistributeCoinsRequest";
 ModuleToDistributeCoinsRequest.fields = proto3.util.newFieldList(() => []);
+export { ModuleToDistributeCoinsRequest };
 /**
  * @generated from message dymensionxyz.dymension.incentives.ModuleToDistributeCoinsResponse
  */
-export class ModuleToDistributeCoinsResponse extends Message {
+class ModuleToDistributeCoinsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -62,10 +63,11 @@ ModuleToDistributeCoinsResponse.typeName = "dymensionxyz.dymension.incentives.Mo
 ModuleToDistributeCoinsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { ModuleToDistributeCoinsResponse };
 /**
  * @generated from message dymensionxyz.dymension.incentives.GaugeByIDRequest
  */
-export class GaugeByIDRequest extends Message {
+class GaugeByIDRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -94,10 +96,11 @@ GaugeByIDRequest.typeName = "dymensionxyz.dymension.incentives.GaugeByIDRequest"
 GaugeByIDRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GaugeByIDRequest };
 /**
  * @generated from message dymensionxyz.dymension.incentives.GaugeByIDResponse
  */
-export class GaugeByIDResponse extends Message {
+class GaugeByIDResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -120,10 +123,11 @@ GaugeByIDResponse.typeName = "dymensionxyz.dymension.incentives.GaugeByIDRespons
 GaugeByIDResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "gauge", kind: "message", T: Gauge },
 ]);
+export { GaugeByIDResponse };
 /**
  * @generated from message dymensionxyz.dymension.incentives.GaugesRequest
  */
-export class GaugesRequest extends Message {
+class GaugesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -146,10 +150,11 @@ GaugesRequest.typeName = "dymensionxyz.dymension.incentives.GaugesRequest";
 GaugesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { GaugesRequest };
 /**
  * @generated from message dymensionxyz.dymension.incentives.GaugesResponse
  */
-export class GaugesResponse extends Message {
+class GaugesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -179,10 +184,11 @@ GaugesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { GaugesResponse };
 /**
  * @generated from message dymensionxyz.dymension.incentives.ActiveGaugesRequest
  */
-export class ActiveGaugesRequest extends Message {
+class ActiveGaugesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -205,10 +211,11 @@ ActiveGaugesRequest.typeName = "dymensionxyz.dymension.incentives.ActiveGaugesRe
 ActiveGaugesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { ActiveGaugesRequest };
 /**
  * @generated from message dymensionxyz.dymension.incentives.ActiveGaugesResponse
  */
-export class ActiveGaugesResponse extends Message {
+class ActiveGaugesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -238,10 +245,11 @@ ActiveGaugesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { ActiveGaugesResponse };
 /**
  * @generated from message dymensionxyz.dymension.incentives.ActiveGaugesPerDenomRequest
  */
-export class ActiveGaugesPerDenomRequest extends Message {
+class ActiveGaugesPerDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -271,10 +279,11 @@ ActiveGaugesPerDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { ActiveGaugesPerDenomRequest };
 /**
  * @generated from message dymensionxyz.dymension.incentives.ActiveGaugesPerDenomResponse
  */
-export class ActiveGaugesPerDenomResponse extends Message {
+class ActiveGaugesPerDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -304,10 +313,11 @@ ActiveGaugesPerDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { ActiveGaugesPerDenomResponse };
 /**
  * @generated from message dymensionxyz.dymension.incentives.UpcomingGaugesRequest
  */
-export class UpcomingGaugesRequest extends Message {
+class UpcomingGaugesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -330,10 +340,11 @@ UpcomingGaugesRequest.typeName = "dymensionxyz.dymension.incentives.UpcomingGaug
 UpcomingGaugesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { UpcomingGaugesRequest };
 /**
  * @generated from message dymensionxyz.dymension.incentives.UpcomingGaugesResponse
  */
-export class UpcomingGaugesResponse extends Message {
+class UpcomingGaugesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -363,10 +374,11 @@ UpcomingGaugesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { UpcomingGaugesResponse };
 /**
  * @generated from message dymensionxyz.dymension.incentives.UpcomingGaugesPerDenomRequest
  */
-export class UpcomingGaugesPerDenomRequest extends Message {
+class UpcomingGaugesPerDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -396,10 +408,11 @@ UpcomingGaugesPerDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { UpcomingGaugesPerDenomRequest };
 /**
  * @generated from message dymensionxyz.dymension.incentives.UpcomingGaugesPerDenomResponse
  */
-export class UpcomingGaugesPerDenomResponse extends Message {
+class UpcomingGaugesPerDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -429,10 +442,11 @@ UpcomingGaugesPerDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "upcoming_gauges", kind: "message", T: Gauge, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { UpcomingGaugesPerDenomResponse };
 /**
  * @generated from message dymensionxyz.dymension.incentives.RewardsEstRequest
  */
-export class RewardsEstRequest extends Message {
+class RewardsEstRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -476,10 +490,11 @@ RewardsEstRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "lock_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 3, name: "end_epoch", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { RewardsEstRequest };
 /**
  * @generated from message dymensionxyz.dymension.incentives.RewardsEstResponse
  */
-export class RewardsEstResponse extends Message {
+class RewardsEstResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -509,10 +524,11 @@ RewardsEstResponse.typeName = "dymensionxyz.dymension.incentives.RewardsEstRespo
 RewardsEstResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { RewardsEstResponse };
 /**
  * @generated from message dymensionxyz.dymension.incentives.QueryLockableDurationsRequest
  */
-export class QueryLockableDurationsRequest extends Message {
+class QueryLockableDurationsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -533,10 +549,11 @@ export class QueryLockableDurationsRequest extends Message {
 QueryLockableDurationsRequest.runtime = proto3;
 QueryLockableDurationsRequest.typeName = "dymensionxyz.dymension.incentives.QueryLockableDurationsRequest";
 QueryLockableDurationsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryLockableDurationsRequest };
 /**
  * @generated from message dymensionxyz.dymension.incentives.QueryLockableDurationsResponse
  */
-export class QueryLockableDurationsResponse extends Message {
+class QueryLockableDurationsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -565,4 +582,5 @@ QueryLockableDurationsResponse.typeName = "dymensionxyz.dymension.incentives.Que
 QueryLockableDurationsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lockable_durations", kind: "message", T: Duration, repeated: true },
 ]);
+export { QueryLockableDurationsResponse };
 //# sourceMappingURL=query_pb.js.map

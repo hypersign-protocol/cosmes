@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message injective.exchange.v1beta1.CreateSpotLimitOrderAuthz
  */
-export class CreateSpotLimitOrderAuthz extends Message {
+class CreateSpotLimitOrderAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -40,10 +40,11 @@ CreateSpotLimitOrderAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { CreateSpotLimitOrderAuthz };
 /**
  * @generated from message injective.exchange.v1beta1.CreateSpotMarketOrderAuthz
  */
-export class CreateSpotMarketOrderAuthz extends Message {
+class CreateSpotMarketOrderAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -75,10 +76,11 @@ CreateSpotMarketOrderAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { CreateSpotMarketOrderAuthz };
 /**
  * @generated from message injective.exchange.v1beta1.BatchCreateSpotLimitOrdersAuthz
  */
-export class BatchCreateSpotLimitOrdersAuthz extends Message {
+class BatchCreateSpotLimitOrdersAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -110,10 +112,11 @@ BatchCreateSpotLimitOrdersAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { BatchCreateSpotLimitOrdersAuthz };
 /**
  * @generated from message injective.exchange.v1beta1.CancelSpotOrderAuthz
  */
-export class CancelSpotOrderAuthz extends Message {
+class CancelSpotOrderAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -145,10 +148,11 @@ CancelSpotOrderAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { CancelSpotOrderAuthz };
 /**
  * @generated from message injective.exchange.v1beta1.BatchCancelSpotOrdersAuthz
  */
-export class BatchCancelSpotOrdersAuthz extends Message {
+class BatchCancelSpotOrdersAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -180,12 +184,13 @@ BatchCancelSpotOrdersAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { BatchCancelSpotOrdersAuthz };
 /**
  * derivative authz messages
  *
  * @generated from message injective.exchange.v1beta1.CreateDerivativeLimitOrderAuthz
  */
-export class CreateDerivativeLimitOrderAuthz extends Message {
+class CreateDerivativeLimitOrderAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -217,10 +222,11 @@ CreateDerivativeLimitOrderAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { CreateDerivativeLimitOrderAuthz };
 /**
  * @generated from message injective.exchange.v1beta1.CreateDerivativeMarketOrderAuthz
  */
-export class CreateDerivativeMarketOrderAuthz extends Message {
+class CreateDerivativeMarketOrderAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -252,10 +258,11 @@ CreateDerivativeMarketOrderAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { CreateDerivativeMarketOrderAuthz };
 /**
  * @generated from message injective.exchange.v1beta1.BatchCreateDerivativeLimitOrdersAuthz
  */
-export class BatchCreateDerivativeLimitOrdersAuthz extends Message {
+class BatchCreateDerivativeLimitOrdersAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -287,10 +294,11 @@ BatchCreateDerivativeLimitOrdersAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { BatchCreateDerivativeLimitOrdersAuthz };
 /**
  * @generated from message injective.exchange.v1beta1.CancelDerivativeOrderAuthz
  */
-export class CancelDerivativeOrderAuthz extends Message {
+class CancelDerivativeOrderAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -322,10 +330,11 @@ CancelDerivativeOrderAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { CancelDerivativeOrderAuthz };
 /**
  * @generated from message injective.exchange.v1beta1.BatchCancelDerivativeOrdersAuthz
  */
-export class BatchCancelDerivativeOrdersAuthz extends Message {
+class BatchCancelDerivativeOrdersAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -357,12 +366,13 @@ BatchCancelDerivativeOrdersAuthz.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { BatchCancelDerivativeOrdersAuthz };
 /**
  * common authz message used in both spot & derivative markets
  *
  * @generated from message injective.exchange.v1beta1.BatchUpdateOrdersAuthz
  */
-export class BatchUpdateOrdersAuthz extends Message {
+class BatchUpdateOrdersAuthz extends Message {
     constructor(data) {
         super();
         /**
@@ -399,4 +409,5 @@ BatchUpdateOrdersAuthz.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "spot_markets", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 3, name: "derivative_markets", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { BatchUpdateOrdersAuthz };
 //# sourceMappingURL=authz_pb.js.map

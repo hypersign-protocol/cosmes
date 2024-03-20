@@ -9,7 +9,7 @@ import { ConnectionPaths, IdentifiedConnection, Params } from "./connection_pb.j
  *
  * @generated from message ibc.core.connection.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -49,4 +49,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "next_connection_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "params", kind: "message", T: Params },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

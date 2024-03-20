@@ -88,7 +88,7 @@ proto3.util.setEnumType(SignMode, "cosmos.tx.signing.v1beta1.SignMode", [
  *
  * @generated from message cosmos.tx.signing.v1beta1.SignatureDescriptors
  */
-export class SignatureDescriptors extends Message {
+class SignatureDescriptors extends Message {
     constructor(data) {
         super();
         /**
@@ -117,6 +117,7 @@ SignatureDescriptors.typeName = "cosmos.tx.signing.v1beta1.SignatureDescriptors"
 SignatureDescriptors.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signatures", kind: "message", T: SignatureDescriptor, repeated: true },
 ]);
+export { SignatureDescriptors };
 /**
  * SignatureDescriptor is a convenience type which represents the full data for
  * a signature including the public key of the signer, signing modes and the
@@ -125,7 +126,7 @@ SignatureDescriptors.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.signing.v1beta1.SignatureDescriptor
  */
-export class SignatureDescriptor extends Message {
+class SignatureDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -158,12 +159,13 @@ SignatureDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "data", kind: "message", T: SignatureDescriptor_Data },
     { no: 3, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SignatureDescriptor };
 /**
  * Data represents signature data
  *
  * @generated from message cosmos.tx.signing.v1beta1.SignatureDescriptor.Data
  */
-export class SignatureDescriptor_Data extends Message {
+class SignatureDescriptor_Data extends Message {
     constructor(data) {
         super();
         /**
@@ -193,12 +195,13 @@ SignatureDescriptor_Data.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "single", kind: "message", T: SignatureDescriptor_Data_Single, oneof: "sum" },
     { no: 2, name: "multi", kind: "message", T: SignatureDescriptor_Data_Multi, oneof: "sum" },
 ]);
+export { SignatureDescriptor_Data };
 /**
  * Single is the signature data for a single signer
  *
  * @generated from message cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.Single
  */
-export class SignatureDescriptor_Data_Single extends Message {
+class SignatureDescriptor_Data_Single extends Message {
     constructor(data) {
         super();
         /**
@@ -234,12 +237,13 @@ SignatureDescriptor_Data_Single.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "mode", kind: "enum", T: proto3.getEnumType(SignMode) },
     { no: 2, name: "signature", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { SignatureDescriptor_Data_Single };
 /**
  * Multi is the signature data for a multisig public key
  *
  * @generated from message cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.Multi
  */
-export class SignatureDescriptor_Data_Multi extends Message {
+class SignatureDescriptor_Data_Multi extends Message {
     constructor(data) {
         super();
         /**
@@ -269,4 +273,5 @@ SignatureDescriptor_Data_Multi.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bitarray", kind: "message", T: CompactBitArray },
     { no: 2, name: "signatures", kind: "message", T: SignatureDescriptor_Data, repeated: true },
 ]);
+export { SignatureDescriptor_Data_Multi };
 //# sourceMappingURL=signing_pb.js.map

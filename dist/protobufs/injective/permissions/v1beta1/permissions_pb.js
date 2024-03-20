@@ -40,7 +40,7 @@ proto3.util.setEnumType(Action, "injective.permissions.v1beta1.Action", [
  *
  * @generated from message injective.permissions.v1beta1.Namespace
  */
-export class Namespace extends Message {
+class Namespace extends Message {
     constructor(data) {
         super();
         /**
@@ -103,12 +103,13 @@ Namespace.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "role_permissions", kind: "map", K: 9 /* ScalarType.STRING */, V: { kind: "scalar", T: 13 /* ScalarType.UINT32 */ } },
     { no: 7, name: "address_roles", kind: "map", K: 9 /* ScalarType.STRING */, V: { kind: "message", T: Roles } },
 ]);
+export { Namespace };
 /**
  * Role is only used for storage
  *
  * @generated from message injective.permissions.v1beta1.Role
  */
-export class Role extends Message {
+class Role extends Message {
     constructor(data) {
         super();
         /**
@@ -140,10 +141,11 @@ Role.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "permissions", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { Role };
 /**
  * @generated from message injective.permissions.v1beta1.Roles
  */
-export class Roles extends Message {
+class Roles extends Message {
     constructor(data) {
         super();
         /**
@@ -170,12 +172,13 @@ Roles.typeName = "injective.permissions.v1beta1.Roles";
 Roles.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "roles", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Roles };
 /**
  * used in storage
  *
  * @generated from message injective.permissions.v1beta1.RoleIDs
  */
-export class RoleIDs extends Message {
+class RoleIDs extends Message {
     constructor(data) {
         super();
         /**
@@ -202,10 +205,11 @@ RoleIDs.typeName = "injective.permissions.v1beta1.RoleIDs";
 RoleIDs.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "role_ids", kind: "scalar", T: 13 /* ScalarType.UINT32 */, repeated: true },
 ]);
+export { RoleIDs };
 /**
  * @generated from message injective.permissions.v1beta1.Voucher
  */
-export class Voucher extends Message {
+class Voucher extends Message {
     constructor(data) {
         super();
         /**
@@ -232,4 +236,5 @@ Voucher.typeName = "injective.permissions.v1beta1.Voucher";
 Voucher.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { Voucher };
 //# sourceMappingURL=permissions_pb.js.map

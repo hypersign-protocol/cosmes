@@ -9,7 +9,7 @@ import { PoolAsset, PoolParams } from "../../../v1beta1/balancerPool_pb.js";
  *
  * @generated from message osmosis.gamm.poolmodels.balancer.v1beta1.MsgCreateBalancerPool
  */
-export class MsgCreateBalancerPool extends Message {
+class MsgCreateBalancerPool extends Message {
     constructor(data) {
         super();
         /**
@@ -47,12 +47,13 @@ MsgCreateBalancerPool.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "pool_assets", kind: "message", T: PoolAsset, repeated: true },
     { no: 4, name: "future_pool_governor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateBalancerPool };
 /**
  * Returns the poolID
  *
  * @generated from message osmosis.gamm.poolmodels.balancer.v1beta1.MsgCreateBalancerPoolResponse
  */
-export class MsgCreateBalancerPoolResponse extends Message {
+class MsgCreateBalancerPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -79,4 +80,5 @@ MsgCreateBalancerPoolResponse.typeName = "osmosis.gamm.poolmodels.balancer.v1bet
 MsgCreateBalancerPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateBalancerPoolResponse };
 //# sourceMappingURL=tx_pb.js.map

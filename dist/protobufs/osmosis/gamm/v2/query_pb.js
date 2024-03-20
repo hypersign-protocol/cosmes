@@ -9,7 +9,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  * @generated from message osmosis.gamm.v2.QuerySpotPriceRequest
  * @deprecated
  */
-export class QuerySpotPriceRequest extends Message {
+class QuerySpotPriceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -46,13 +46,14 @@ QuerySpotPriceRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "base_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "quote_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotPriceRequest };
 /**
  * Deprecated: please use alternate in x/poolmanager
  *
  * @generated from message osmosis.gamm.v2.QuerySpotPriceResponse
  * @deprecated
  */
-export class QuerySpotPriceResponse extends Message {
+class QuerySpotPriceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -81,4 +82,5 @@ QuerySpotPriceResponse.typeName = "osmosis.gamm.v2.QuerySpotPriceResponse";
 QuerySpotPriceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spot_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotPriceResponse };
 //# sourceMappingURL=query_pb.js.map

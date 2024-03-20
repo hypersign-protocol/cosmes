@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.EmptyRequest
  */
-export class EmptyRequest extends Message {
+class EmptyRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -29,10 +29,11 @@ export class EmptyRequest extends Message {
 EmptyRequest.runtime = proto3;
 EmptyRequest.typeName = "osmosis.cosmwasmpool.v1beta1.EmptyRequest";
 EmptyRequest.fields = proto3.util.newFieldList(() => []);
+export { EmptyRequest };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.JoinPoolExecuteMsgRequest
  */
-export class JoinPoolExecuteMsgRequest extends Message {
+class JoinPoolExecuteMsgRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -55,10 +56,11 @@ JoinPoolExecuteMsgRequest.typeName = "osmosis.cosmwasmpool.v1beta1.JoinPoolExecu
 JoinPoolExecuteMsgRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "join_pool", kind: "message", T: EmptyRequest },
 ]);
+export { JoinPoolExecuteMsgRequest };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.JoinPoolExecuteMsgResponse
  */
-export class JoinPoolExecuteMsgResponse extends Message {
+class JoinPoolExecuteMsgResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -79,12 +81,13 @@ export class JoinPoolExecuteMsgResponse extends Message {
 JoinPoolExecuteMsgResponse.runtime = proto3;
 JoinPoolExecuteMsgResponse.typeName = "osmosis.cosmwasmpool.v1beta1.JoinPoolExecuteMsgResponse";
 JoinPoolExecuteMsgResponse.fields = proto3.util.newFieldList(() => []);
+export { JoinPoolExecuteMsgResponse };
 /**
  * ===================== ExitPoolExecuteMsg
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.ExitPoolExecuteMsgRequest
  */
-export class ExitPoolExecuteMsgRequest extends Message {
+class ExitPoolExecuteMsgRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -107,10 +110,11 @@ ExitPoolExecuteMsgRequest.typeName = "osmosis.cosmwasmpool.v1beta1.ExitPoolExecu
 ExitPoolExecuteMsgRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "exit_pool", kind: "message", T: EmptyRequest },
 ]);
+export { ExitPoolExecuteMsgRequest };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.ExitPoolExecuteMsgResponse
  */
-export class ExitPoolExecuteMsgResponse extends Message {
+class ExitPoolExecuteMsgResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -131,4 +135,5 @@ export class ExitPoolExecuteMsgResponse extends Message {
 ExitPoolExecuteMsgResponse.runtime = proto3;
 ExitPoolExecuteMsgResponse.typeName = "osmosis.cosmwasmpool.v1beta1.ExitPoolExecuteMsgResponse";
 ExitPoolExecuteMsgResponse.fields = proto3.util.newFieldList(() => []);
+export { ExitPoolExecuteMsgResponse };
 //# sourceMappingURL=transmuter_msgs_pb.js.map

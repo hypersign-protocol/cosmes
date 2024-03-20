@@ -6,7 +6,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 /**
  * @generated from message injective.types.v1beta1.ExtensionOptionsWeb3Tx
  */
-export class ExtensionOptionsWeb3Tx extends Message {
+class ExtensionOptionsWeb3Tx extends Message {
     constructor(data) {
         super();
         /**
@@ -52,4 +52,5 @@ ExtensionOptionsWeb3Tx.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "feePayer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "feePayerSig", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ExtensionOptionsWeb3Tx };
 //# sourceMappingURL=tx_ext_pb.js.map

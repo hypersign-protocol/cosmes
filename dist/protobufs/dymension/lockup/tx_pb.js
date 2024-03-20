@@ -8,7 +8,7 @@ import { PeriodLock } from "./lock_pb.js";
 /**
  * @generated from message dymensionxyz.dymension.lockup.MsgLockTokens
  */
-export class MsgLockTokens extends Message {
+class MsgLockTokens extends Message {
     constructor(data) {
         super();
         /**
@@ -41,10 +41,11 @@ MsgLockTokens.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "duration", kind: "message", T: Duration },
     { no: 3, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgLockTokens };
 /**
  * @generated from message dymensionxyz.dymension.lockup.MsgLockTokensResponse
  */
-export class MsgLockTokensResponse extends Message {
+class MsgLockTokensResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -71,10 +72,11 @@ MsgLockTokensResponse.typeName = "dymensionxyz.dymension.lockup.MsgLockTokensRes
 MsgLockTokensResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgLockTokensResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.MsgBeginUnlockingAll
  */
-export class MsgBeginUnlockingAll extends Message {
+class MsgBeginUnlockingAll extends Message {
     constructor(data) {
         super();
         /**
@@ -101,10 +103,11 @@ MsgBeginUnlockingAll.typeName = "dymensionxyz.dymension.lockup.MsgBeginUnlocking
 MsgBeginUnlockingAll.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgBeginUnlockingAll };
 /**
  * @generated from message dymensionxyz.dymension.lockup.MsgBeginUnlockingAllResponse
  */
-export class MsgBeginUnlockingAllResponse extends Message {
+class MsgBeginUnlockingAllResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -131,10 +134,11 @@ MsgBeginUnlockingAllResponse.typeName = "dymensionxyz.dymension.lockup.MsgBeginU
 MsgBeginUnlockingAllResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "unlocks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { MsgBeginUnlockingAllResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.MsgBeginUnlocking
  */
-export class MsgBeginUnlocking extends Message {
+class MsgBeginUnlocking extends Message {
     constructor(data) {
         super();
         /**
@@ -173,10 +177,11 @@ MsgBeginUnlocking.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgBeginUnlocking };
 /**
  * @generated from message dymensionxyz.dymension.lockup.MsgBeginUnlockingResponse
  */
-export class MsgBeginUnlockingResponse extends Message {
+class MsgBeginUnlockingResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -208,13 +213,14 @@ MsgBeginUnlockingResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 2, name: "unlockingLockID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgBeginUnlockingResponse };
 /**
  * MsgExtendLockup extends the existing lockup's duration.
  * The new duration is longer than the original.
  *
  * @generated from message dymensionxyz.dymension.lockup.MsgExtendLockup
  */
-export class MsgExtendLockup extends Message {
+class MsgExtendLockup extends Message {
     constructor(data) {
         super();
         /**
@@ -247,10 +253,11 @@ MsgExtendLockup.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "duration", kind: "message", T: Duration },
 ]);
+export { MsgExtendLockup };
 /**
  * @generated from message dymensionxyz.dymension.lockup.MsgExtendLockupResponse
  */
-export class MsgExtendLockupResponse extends Message {
+class MsgExtendLockupResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -277,13 +284,14 @@ MsgExtendLockupResponse.typeName = "dymensionxyz.dymension.lockup.MsgExtendLocku
 MsgExtendLockupResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgExtendLockupResponse };
 /**
  * MsgForceUnlock unlocks locks immediately for
  * addresses registered via governance.
  *
  * @generated from message dymensionxyz.dymension.lockup.MsgForceUnlock
  */
-export class MsgForceUnlock extends Message {
+class MsgForceUnlock extends Message {
     constructor(data) {
         super();
         /**
@@ -322,10 +330,11 @@ MsgForceUnlock.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgForceUnlock };
 /**
  * @generated from message dymensionxyz.dymension.lockup.MsgForceUnlockResponse
  */
-export class MsgForceUnlockResponse extends Message {
+class MsgForceUnlockResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -352,4 +361,5 @@ MsgForceUnlockResponse.typeName = "dymensionxyz.dymension.lockup.MsgForceUnlockR
 MsgForceUnlockResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgForceUnlockResponse };
 //# sourceMappingURL=tx_pb.js.map

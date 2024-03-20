@@ -10,7 +10,7 @@ import { PacketId } from "../../../core/channel/v1/channel_pb.js";
  *
  * @generated from message ibc.applications.fee.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -67,12 +67,13 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "registered_counterparty_payees", kind: "message", T: RegisteredCounterpartyPayee, repeated: true },
     { no: 5, name: "forward_relayers", kind: "message", T: ForwardRelayerAddress, repeated: true },
 ]);
+export { GenesisState };
 /**
  * FeeEnabledChannel contains the PortID & ChannelID for a fee enabled channel
  *
  * @generated from message ibc.applications.fee.v1.FeeEnabledChannel
  */
-export class FeeEnabledChannel extends Message {
+class FeeEnabledChannel extends Message {
     constructor(data) {
         super();
         /**
@@ -108,12 +109,13 @@ FeeEnabledChannel.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { FeeEnabledChannel };
 /**
  * RegisteredPayee contains the relayer address and payee address for a specific channel
  *
  * @generated from message ibc.applications.fee.v1.RegisteredPayee
  */
-export class RegisteredPayee extends Message {
+class RegisteredPayee extends Message {
     constructor(data) {
         super();
         /**
@@ -156,13 +158,14 @@ RegisteredPayee.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "relayer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "payee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { RegisteredPayee };
 /**
  * RegisteredCounterpartyPayee contains the relayer address and counterparty payee address for a specific channel (used
  * for recv fee distribution)
  *
  * @generated from message ibc.applications.fee.v1.RegisteredCounterpartyPayee
  */
-export class RegisteredCounterpartyPayee extends Message {
+class RegisteredCounterpartyPayee extends Message {
     constructor(data) {
         super();
         /**
@@ -205,12 +208,13 @@ RegisteredCounterpartyPayee.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "relayer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "counterparty_payee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { RegisteredCounterpartyPayee };
 /**
  * ForwardRelayerAddress contains the forward relayer address and PacketId used for async acknowledgements
  *
  * @generated from message ibc.applications.fee.v1.ForwardRelayerAddress
  */
-export class ForwardRelayerAddress extends Message {
+class ForwardRelayerAddress extends Message {
     constructor(data) {
         super();
         /**
@@ -240,4 +244,5 @@ ForwardRelayerAddress.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "packet_id", kind: "message", T: PacketId },
 ]);
+export { ForwardRelayerAddress };
 //# sourceMappingURL=genesis_pb.js.map

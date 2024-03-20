@@ -9,7 +9,7 @@ import { Coin } from "../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.incentives.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -63,4 +63,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "unrestricted_creator_whitelist", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 4, name: "internal_uptime", kind: "message", T: Duration },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

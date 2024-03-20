@@ -9,7 +9,7 @@ import { Coin } from "../../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message ibc.applications.transfer.v1.Allocation
  */
-export class Allocation extends Message {
+class Allocation extends Message {
     constructor(data) {
         super();
         /**
@@ -67,13 +67,14 @@ Allocation.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "allow_list", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 5, name: "allowed_packet_data", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Allocation };
 /**
  * TransferAuthorization allows the grantee to spend up to spend_limit coins from
  * the granter's account for ibc transfer on a specific channel
  *
  * @generated from message ibc.applications.transfer.v1.TransferAuthorization
  */
-export class TransferAuthorization extends Message {
+class TransferAuthorization extends Message {
     constructor(data) {
         super();
         /**
@@ -102,4 +103,5 @@ TransferAuthorization.typeName = "ibc.applications.transfer.v1.TransferAuthoriza
 TransferAuthorization.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "allocations", kind: "message", T: Allocation, repeated: true },
 ]);
+export { TransferAuthorization };
 //# sourceMappingURL=authz_pb.js.map

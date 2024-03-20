@@ -6,7 +6,7 @@ import { GroupInfo, GroupMember, GroupPolicyInfo, Proposal, Vote } from "./types
  *
  * @generated from message cosmos.group.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -87,4 +87,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "proposals", kind: "message", T: Proposal, repeated: true },
     { no: 8, name: "votes", kind: "message", T: Vote, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

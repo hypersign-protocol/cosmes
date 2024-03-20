@@ -10,7 +10,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.poolmanager.v1beta1.MsgSwapExactAmountIn
  */
-export class MsgSwapExactAmountIn extends Message {
+class MsgSwapExactAmountIn extends Message {
     constructor(data) {
         super();
         /**
@@ -48,10 +48,11 @@ MsgSwapExactAmountIn.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_in", kind: "message", T: Coin },
     { no: 4, name: "token_out_min_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSwapExactAmountIn };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.MsgSwapExactAmountInResponse
  */
-export class MsgSwapExactAmountInResponse extends Message {
+class MsgSwapExactAmountInResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -78,12 +79,13 @@ MsgSwapExactAmountInResponse.typeName = "osmosis.poolmanager.v1beta1.MsgSwapExac
 MsgSwapExactAmountInResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSwapExactAmountInResponse };
 /**
  * ===================== MsgSplitRouteSwapExactAmountIn
  *
  * @generated from message osmosis.poolmanager.v1beta1.MsgSplitRouteSwapExactAmountIn
  */
-export class MsgSplitRouteSwapExactAmountIn extends Message {
+class MsgSplitRouteSwapExactAmountIn extends Message {
     constructor(data) {
         super();
         /**
@@ -125,10 +127,11 @@ MsgSplitRouteSwapExactAmountIn.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_in_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "token_out_min_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSplitRouteSwapExactAmountIn };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.MsgSplitRouteSwapExactAmountInResponse
  */
-export class MsgSplitRouteSwapExactAmountInResponse extends Message {
+class MsgSplitRouteSwapExactAmountInResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -155,12 +158,13 @@ MsgSplitRouteSwapExactAmountInResponse.typeName = "osmosis.poolmanager.v1beta1.M
 MsgSplitRouteSwapExactAmountInResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSplitRouteSwapExactAmountInResponse };
 /**
  * ===================== MsgSwapExactAmountOut
  *
  * @generated from message osmosis.poolmanager.v1beta1.MsgSwapExactAmountOut
  */
-export class MsgSwapExactAmountOut extends Message {
+class MsgSwapExactAmountOut extends Message {
     constructor(data) {
         super();
         /**
@@ -198,10 +202,11 @@ MsgSwapExactAmountOut.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_in_max_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "token_out", kind: "message", T: Coin },
 ]);
+export { MsgSwapExactAmountOut };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.MsgSwapExactAmountOutResponse
  */
-export class MsgSwapExactAmountOutResponse extends Message {
+class MsgSwapExactAmountOutResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -228,12 +233,13 @@ MsgSwapExactAmountOutResponse.typeName = "osmosis.poolmanager.v1beta1.MsgSwapExa
 MsgSwapExactAmountOutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSwapExactAmountOutResponse };
 /**
  * ===================== MsgSplitRouteSwapExactAmountOut
  *
  * @generated from message osmosis.poolmanager.v1beta1.MsgSplitRouteSwapExactAmountOut
  */
-export class MsgSplitRouteSwapExactAmountOut extends Message {
+class MsgSplitRouteSwapExactAmountOut extends Message {
     constructor(data) {
         super();
         /**
@@ -275,10 +281,11 @@ MsgSplitRouteSwapExactAmountOut.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_out_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "token_in_max_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSplitRouteSwapExactAmountOut };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.MsgSplitRouteSwapExactAmountOutResponse
  */
-export class MsgSplitRouteSwapExactAmountOutResponse extends Message {
+class MsgSplitRouteSwapExactAmountOutResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -305,12 +312,13 @@ MsgSplitRouteSwapExactAmountOutResponse.typeName = "osmosis.poolmanager.v1beta1.
 MsgSplitRouteSwapExactAmountOutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSplitRouteSwapExactAmountOutResponse };
 /**
  * ===================== MsgSetDenomPairTakerFee
  *
  * @generated from message osmosis.poolmanager.v1beta1.MsgSetDenomPairTakerFee
  */
-export class MsgSetDenomPairTakerFee extends Message {
+class MsgSetDenomPairTakerFee extends Message {
     constructor(data) {
         super();
         /**
@@ -342,10 +350,11 @@ MsgSetDenomPairTakerFee.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom_pair_taker_fee", kind: "message", T: DenomPairTakerFee, repeated: true },
 ]);
+export { MsgSetDenomPairTakerFee };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.MsgSetDenomPairTakerFeeResponse
  */
-export class MsgSetDenomPairTakerFeeResponse extends Message {
+class MsgSetDenomPairTakerFeeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -372,10 +381,11 @@ MsgSetDenomPairTakerFeeResponse.typeName = "osmosis.poolmanager.v1beta1.MsgSetDe
 MsgSetDenomPairTakerFeeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgSetDenomPairTakerFeeResponse };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.DenomPairTakerFee
  */
-export class DenomPairTakerFee extends Message {
+class DenomPairTakerFee extends Message {
     constructor(data) {
         super();
         /**
@@ -415,4 +425,5 @@ DenomPairTakerFee.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "denom1", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "taker_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DenomPairTakerFee };
 //# sourceMappingURL=tx_pb.js.map

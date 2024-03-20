@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.tx.config.v1.Config
  */
-export class Config extends Message {
+class Config extends Message {
     constructor(data) {
         super();
         /**
@@ -46,4 +46,5 @@ Config.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "skip_ante_handler", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 2, name: "skip_post_handler", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { Config };
 //# sourceMappingURL=config_pb.js.map

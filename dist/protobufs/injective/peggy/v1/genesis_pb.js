@@ -13,7 +13,7 @@ import { Attestation } from "./attestation_pb.js";
  *
  * @generated from message injective.peggy.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -102,4 +102,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 14, name: "last_observed_valset", kind: "message", T: Valset },
     { no: 15, name: "ethereum_blacklist", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

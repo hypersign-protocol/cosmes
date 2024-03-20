@@ -9,7 +9,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.tokenfactory.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -50,4 +50,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom_creation_fee", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "denom_creation_gas_consume", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

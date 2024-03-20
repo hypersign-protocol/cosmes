@@ -10,7 +10,7 @@ import { ModuleVersion, Plan } from "./upgrade_pb.js";
  *
  * @generated from message cosmos.upgrade.v1beta1.QueryCurrentPlanRequest
  */
-export class QueryCurrentPlanRequest extends Message {
+class QueryCurrentPlanRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -31,13 +31,14 @@ export class QueryCurrentPlanRequest extends Message {
 QueryCurrentPlanRequest.runtime = proto3;
 QueryCurrentPlanRequest.typeName = "cosmos.upgrade.v1beta1.QueryCurrentPlanRequest";
 QueryCurrentPlanRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryCurrentPlanRequest };
 /**
  * QueryCurrentPlanResponse is the response type for the Query/CurrentPlan RPC
  * method.
  *
  * @generated from message cosmos.upgrade.v1beta1.QueryCurrentPlanResponse
  */
-export class QueryCurrentPlanResponse extends Message {
+class QueryCurrentPlanResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -60,13 +61,14 @@ QueryCurrentPlanResponse.typeName = "cosmos.upgrade.v1beta1.QueryCurrentPlanResp
 QueryCurrentPlanResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "plan", kind: "message", T: Plan },
 ]);
+export { QueryCurrentPlanResponse };
 /**
  * QueryCurrentPlanRequest is the request type for the Query/AppliedPlan RPC
  * method.
  *
  * @generated from message cosmos.upgrade.v1beta1.QueryAppliedPlanRequest
  */
-export class QueryAppliedPlanRequest extends Message {
+class QueryAppliedPlanRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -95,13 +97,14 @@ QueryAppliedPlanRequest.typeName = "cosmos.upgrade.v1beta1.QueryAppliedPlanReque
 QueryAppliedPlanRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAppliedPlanRequest };
 /**
  * QueryAppliedPlanResponse is the response type for the Query/AppliedPlan RPC
  * method.
  *
  * @generated from message cosmos.upgrade.v1beta1.QueryAppliedPlanResponse
  */
-export class QueryAppliedPlanResponse extends Message {
+class QueryAppliedPlanResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -130,6 +133,7 @@ QueryAppliedPlanResponse.typeName = "cosmos.upgrade.v1beta1.QueryAppliedPlanResp
 QueryAppliedPlanResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { QueryAppliedPlanResponse };
 /**
  * QueryUpgradedConsensusStateRequest is the request type for the Query/UpgradedConsensusState
  * RPC method.
@@ -137,7 +141,7 @@ QueryAppliedPlanResponse.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmos.upgrade.v1beta1.QueryUpgradedConsensusStateRequest
  * @deprecated
  */
-export class QueryUpgradedConsensusStateRequest extends Message {
+class QueryUpgradedConsensusStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -167,6 +171,7 @@ QueryUpgradedConsensusStateRequest.typeName = "cosmos.upgrade.v1beta1.QueryUpgra
 QueryUpgradedConsensusStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "last_height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { QueryUpgradedConsensusStateRequest };
 /**
  * QueryUpgradedConsensusStateResponse is the response type for the Query/UpgradedConsensusState
  * RPC method.
@@ -174,7 +179,7 @@ QueryUpgradedConsensusStateRequest.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmos.upgrade.v1beta1.QueryUpgradedConsensusStateResponse
  * @deprecated
  */
-export class QueryUpgradedConsensusStateResponse extends Message {
+class QueryUpgradedConsensusStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -203,6 +208,7 @@ QueryUpgradedConsensusStateResponse.typeName = "cosmos.upgrade.v1beta1.QueryUpgr
 QueryUpgradedConsensusStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "upgraded_consensus_state", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryUpgradedConsensusStateResponse };
 /**
  * QueryModuleVersionsRequest is the request type for the Query/ModuleVersions
  * RPC method.
@@ -211,7 +217,7 @@ QueryUpgradedConsensusStateResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.upgrade.v1beta1.QueryModuleVersionsRequest
  */
-export class QueryModuleVersionsRequest extends Message {
+class QueryModuleVersionsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -242,6 +248,7 @@ QueryModuleVersionsRequest.typeName = "cosmos.upgrade.v1beta1.QueryModuleVersion
 QueryModuleVersionsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "module_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryModuleVersionsRequest };
 /**
  * QueryModuleVersionsResponse is the response type for the Query/ModuleVersions
  * RPC method.
@@ -250,7 +257,7 @@ QueryModuleVersionsRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.upgrade.v1beta1.QueryModuleVersionsResponse
  */
-export class QueryModuleVersionsResponse extends Message {
+class QueryModuleVersionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -279,6 +286,7 @@ QueryModuleVersionsResponse.typeName = "cosmos.upgrade.v1beta1.QueryModuleVersio
 QueryModuleVersionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "module_versions", kind: "message", T: ModuleVersion, repeated: true },
 ]);
+export { QueryModuleVersionsResponse };
 /**
  * QueryAuthorityRequest is the request type for Query/Authority
  *
@@ -286,7 +294,7 @@ QueryModuleVersionsResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.upgrade.v1beta1.QueryAuthorityRequest
  */
-export class QueryAuthorityRequest extends Message {
+class QueryAuthorityRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -307,6 +315,7 @@ export class QueryAuthorityRequest extends Message {
 QueryAuthorityRequest.runtime = proto3;
 QueryAuthorityRequest.typeName = "cosmos.upgrade.v1beta1.QueryAuthorityRequest";
 QueryAuthorityRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryAuthorityRequest };
 /**
  * QueryAuthorityResponse is the response type for Query/Authority
  *
@@ -314,7 +323,7 @@ QueryAuthorityRequest.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.upgrade.v1beta1.QueryAuthorityResponse
  */
-export class QueryAuthorityResponse extends Message {
+class QueryAuthorityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -341,4 +350,5 @@ QueryAuthorityResponse.typeName = "cosmos.upgrade.v1beta1.QueryAuthorityResponse
 QueryAuthorityResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAuthorityResponse };
 //# sourceMappingURL=query_pb.js.map

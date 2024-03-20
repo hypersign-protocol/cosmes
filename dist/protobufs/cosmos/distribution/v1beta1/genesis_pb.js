@@ -12,7 +12,7 @@ import { DelegatorStartingInfo, FeePool, Params, ValidatorAccumulatedCommission,
  *
  * @generated from message cosmos.distribution.v1beta1.DelegatorWithdrawInfo
  */
-export class DelegatorWithdrawInfo extends Message {
+class DelegatorWithdrawInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -48,12 +48,13 @@ DelegatorWithdrawInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "withdraw_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DelegatorWithdrawInfo };
 /**
  * ValidatorOutstandingRewardsRecord is used for import/export via genesis json.
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorOutstandingRewardsRecord
  */
-export class ValidatorOutstandingRewardsRecord extends Message {
+class ValidatorOutstandingRewardsRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -89,13 +90,14 @@ ValidatorOutstandingRewardsRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "outstanding_rewards", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { ValidatorOutstandingRewardsRecord };
 /**
  * ValidatorAccumulatedCommissionRecord is used for import / export via genesis
  * json.
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorAccumulatedCommissionRecord
  */
-export class ValidatorAccumulatedCommissionRecord extends Message {
+class ValidatorAccumulatedCommissionRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -125,13 +127,14 @@ ValidatorAccumulatedCommissionRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "accumulated", kind: "message", T: ValidatorAccumulatedCommission },
 ]);
+export { ValidatorAccumulatedCommissionRecord };
 /**
  * ValidatorHistoricalRewardsRecord is used for import / export via genesis
  * json.
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorHistoricalRewardsRecord
  */
-export class ValidatorHistoricalRewardsRecord extends Message {
+class ValidatorHistoricalRewardsRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -168,12 +171,13 @@ ValidatorHistoricalRewardsRecord.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "period", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "rewards", kind: "message", T: ValidatorHistoricalRewards },
 ]);
+export { ValidatorHistoricalRewardsRecord };
 /**
  * ValidatorCurrentRewardsRecord is used for import / export via genesis json.
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorCurrentRewardsRecord
  */
-export class ValidatorCurrentRewardsRecord extends Message {
+class ValidatorCurrentRewardsRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -203,12 +207,13 @@ ValidatorCurrentRewardsRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "rewards", kind: "message", T: ValidatorCurrentRewards },
 ]);
+export { ValidatorCurrentRewardsRecord };
 /**
  * DelegatorStartingInfoRecord used for import / export via genesis json.
  *
  * @generated from message cosmos.distribution.v1beta1.DelegatorStartingInfoRecord
  */
-export class DelegatorStartingInfoRecord extends Message {
+class DelegatorStartingInfoRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -245,12 +250,13 @@ DelegatorStartingInfoRecord.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "starting_info", kind: "message", T: DelegatorStartingInfo },
 ]);
+export { DelegatorStartingInfoRecord };
 /**
  * ValidatorSlashEventRecord is used for import / export via genesis json.
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorSlashEventRecord
  */
-export class ValidatorSlashEventRecord extends Message {
+class ValidatorSlashEventRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -294,12 +300,13 @@ ValidatorSlashEventRecord.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "period", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "validator_slash_event", kind: "message", T: ValidatorSlashEvent },
 ]);
+export { ValidatorSlashEventRecord };
 /**
  * GenesisState defines the distribution module's genesis state.
  *
  * @generated from message cosmos.distribution.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -379,4 +386,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 9, name: "delegator_starting_infos", kind: "message", T: DelegatorStartingInfoRecord, repeated: true },
     { no: 10, name: "validator_slash_events", kind: "message", T: ValidatorSlashEventRecord, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

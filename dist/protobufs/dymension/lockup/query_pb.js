@@ -9,7 +9,7 @@ import { Params } from "./params_pb.js";
 /**
  * @generated from message dymensionxyz.dymension.lockup.ModuleBalanceRequest
  */
-export class ModuleBalanceRequest extends Message {
+class ModuleBalanceRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,10 +30,11 @@ export class ModuleBalanceRequest extends Message {
 ModuleBalanceRequest.runtime = proto3;
 ModuleBalanceRequest.typeName = "dymensionxyz.dymension.lockup.ModuleBalanceRequest";
 ModuleBalanceRequest.fields = proto3.util.newFieldList(() => []);
+export { ModuleBalanceRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.ModuleBalanceResponse
  */
-export class ModuleBalanceResponse extends Message {
+class ModuleBalanceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -60,10 +61,11 @@ ModuleBalanceResponse.typeName = "dymensionxyz.dymension.lockup.ModuleBalanceRes
 ModuleBalanceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { ModuleBalanceResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.ModuleLockedAmountRequest
  */
-export class ModuleLockedAmountRequest extends Message {
+class ModuleLockedAmountRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -84,10 +86,11 @@ export class ModuleLockedAmountRequest extends Message {
 ModuleLockedAmountRequest.runtime = proto3;
 ModuleLockedAmountRequest.typeName = "dymensionxyz.dymension.lockup.ModuleLockedAmountRequest";
 ModuleLockedAmountRequest.fields = proto3.util.newFieldList(() => []);
+export { ModuleLockedAmountRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.ModuleLockedAmountResponse
  */
-export class ModuleLockedAmountResponse extends Message {
+class ModuleLockedAmountResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -114,10 +117,11 @@ ModuleLockedAmountResponse.typeName = "dymensionxyz.dymension.lockup.ModuleLocke
 ModuleLockedAmountResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { ModuleLockedAmountResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountUnlockableCoinsRequest
  */
-export class AccountUnlockableCoinsRequest extends Message {
+class AccountUnlockableCoinsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -144,10 +148,11 @@ AccountUnlockableCoinsRequest.typeName = "dymensionxyz.dymension.lockup.AccountU
 AccountUnlockableCoinsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountUnlockableCoinsRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountUnlockableCoinsResponse
  */
-export class AccountUnlockableCoinsResponse extends Message {
+class AccountUnlockableCoinsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -174,10 +179,11 @@ AccountUnlockableCoinsResponse.typeName = "dymensionxyz.dymension.lockup.Account
 AccountUnlockableCoinsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { AccountUnlockableCoinsResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountUnlockingCoinsRequest
  */
-export class AccountUnlockingCoinsRequest extends Message {
+class AccountUnlockingCoinsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -204,10 +210,11 @@ AccountUnlockingCoinsRequest.typeName = "dymensionxyz.dymension.lockup.AccountUn
 AccountUnlockingCoinsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountUnlockingCoinsRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountUnlockingCoinsResponse
  */
-export class AccountUnlockingCoinsResponse extends Message {
+class AccountUnlockingCoinsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -234,10 +241,11 @@ AccountUnlockingCoinsResponse.typeName = "dymensionxyz.dymension.lockup.AccountU
 AccountUnlockingCoinsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { AccountUnlockingCoinsResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedCoinsRequest
  */
-export class AccountLockedCoinsRequest extends Message {
+class AccountLockedCoinsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -264,10 +272,11 @@ AccountLockedCoinsRequest.typeName = "dymensionxyz.dymension.lockup.AccountLocke
 AccountLockedCoinsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountLockedCoinsRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedCoinsResponse
  */
-export class AccountLockedCoinsResponse extends Message {
+class AccountLockedCoinsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -294,10 +303,11 @@ AccountLockedCoinsResponse.typeName = "dymensionxyz.dymension.lockup.AccountLock
 AccountLockedCoinsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { AccountLockedCoinsResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedPastTimeRequest
  */
-export class AccountLockedPastTimeRequest extends Message {
+class AccountLockedPastTimeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -325,10 +335,11 @@ AccountLockedPastTimeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { AccountLockedPastTimeRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedPastTimeResponse
  */
-export class AccountLockedPastTimeResponse extends Message {
+class AccountLockedPastTimeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -355,10 +366,11 @@ AccountLockedPastTimeResponse.typeName = "dymensionxyz.dymension.lockup.AccountL
 AccountLockedPastTimeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedPastTimeResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedPastTimeNotUnlockingOnlyRequest
  */
-export class AccountLockedPastTimeNotUnlockingOnlyRequest extends Message {
+class AccountLockedPastTimeNotUnlockingOnlyRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -386,10 +398,11 @@ AccountLockedPastTimeNotUnlockingOnlyRequest.fields = proto3.util.newFieldList((
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { AccountLockedPastTimeNotUnlockingOnlyRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedPastTimeNotUnlockingOnlyResponse
  */
-export class AccountLockedPastTimeNotUnlockingOnlyResponse extends Message {
+class AccountLockedPastTimeNotUnlockingOnlyResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -416,10 +429,11 @@ AccountLockedPastTimeNotUnlockingOnlyResponse.typeName = "dymensionxyz.dymension
 AccountLockedPastTimeNotUnlockingOnlyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedPastTimeNotUnlockingOnlyResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountUnlockedBeforeTimeRequest
  */
-export class AccountUnlockedBeforeTimeRequest extends Message {
+class AccountUnlockedBeforeTimeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -447,10 +461,11 @@ AccountUnlockedBeforeTimeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { AccountUnlockedBeforeTimeRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountUnlockedBeforeTimeResponse
  */
-export class AccountUnlockedBeforeTimeResponse extends Message {
+class AccountUnlockedBeforeTimeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -477,10 +492,11 @@ AccountUnlockedBeforeTimeResponse.typeName = "dymensionxyz.dymension.lockup.Acco
 AccountUnlockedBeforeTimeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountUnlockedBeforeTimeResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedPastTimeDenomRequest
  */
-export class AccountLockedPastTimeDenomRequest extends Message {
+class AccountLockedPastTimeDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -513,10 +529,11 @@ AccountLockedPastTimeDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "timestamp", kind: "message", T: Timestamp },
     { no: 3, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountLockedPastTimeDenomRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedPastTimeDenomResponse
  */
-export class AccountLockedPastTimeDenomResponse extends Message {
+class AccountLockedPastTimeDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -543,10 +560,11 @@ AccountLockedPastTimeDenomResponse.typeName = "dymensionxyz.dymension.lockup.Acc
 AccountLockedPastTimeDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedPastTimeDenomResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.LockedDenomRequest
  */
-export class LockedDenomRequest extends Message {
+class LockedDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -574,10 +592,11 @@ LockedDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "duration", kind: "message", T: Duration },
 ]);
+export { LockedDenomRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.LockedDenomResponse
  */
-export class LockedDenomResponse extends Message {
+class LockedDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -604,10 +623,11 @@ LockedDenomResponse.typeName = "dymensionxyz.dymension.lockup.LockedDenomRespons
 LockedDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { LockedDenomResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.LockedRequest
  */
-export class LockedRequest extends Message {
+class LockedRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -634,10 +654,11 @@ LockedRequest.typeName = "dymensionxyz.dymension.lockup.LockedRequest";
 LockedRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { LockedRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.LockedResponse
  */
-export class LockedResponse extends Message {
+class LockedResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -660,10 +681,11 @@ LockedResponse.typeName = "dymensionxyz.dymension.lockup.LockedResponse";
 LockedResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock", kind: "message", T: PeriodLock },
 ]);
+export { LockedResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.NextLockIDRequest
  */
-export class NextLockIDRequest extends Message {
+class NextLockIDRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -684,10 +706,11 @@ export class NextLockIDRequest extends Message {
 NextLockIDRequest.runtime = proto3;
 NextLockIDRequest.typeName = "dymensionxyz.dymension.lockup.NextLockIDRequest";
 NextLockIDRequest.fields = proto3.util.newFieldList(() => []);
+export { NextLockIDRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.NextLockIDResponse
  */
-export class NextLockIDResponse extends Message {
+class NextLockIDResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -714,10 +737,11 @@ NextLockIDResponse.typeName = "dymensionxyz.dymension.lockup.NextLockIDResponse"
 NextLockIDResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { NextLockIDResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedLongerDurationRequest
  */
-export class AccountLockedLongerDurationRequest extends Message {
+class AccountLockedLongerDurationRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -745,10 +769,11 @@ AccountLockedLongerDurationRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "duration", kind: "message", T: Duration },
 ]);
+export { AccountLockedLongerDurationRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedLongerDurationResponse
  */
-export class AccountLockedLongerDurationResponse extends Message {
+class AccountLockedLongerDurationResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -775,10 +800,11 @@ AccountLockedLongerDurationResponse.typeName = "dymensionxyz.dymension.lockup.Ac
 AccountLockedLongerDurationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedLongerDurationResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedDurationRequest
  */
-export class AccountLockedDurationRequest extends Message {
+class AccountLockedDurationRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -806,10 +832,11 @@ AccountLockedDurationRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "duration", kind: "message", T: Duration },
 ]);
+export { AccountLockedDurationRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedDurationResponse
  */
-export class AccountLockedDurationResponse extends Message {
+class AccountLockedDurationResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -836,10 +863,11 @@ AccountLockedDurationResponse.typeName = "dymensionxyz.dymension.lockup.AccountL
 AccountLockedDurationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedDurationResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedLongerDurationNotUnlockingOnlyRequest
  */
-export class AccountLockedLongerDurationNotUnlockingOnlyRequest extends Message {
+class AccountLockedLongerDurationNotUnlockingOnlyRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -867,10 +895,11 @@ AccountLockedLongerDurationNotUnlockingOnlyRequest.fields = proto3.util.newField
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "duration", kind: "message", T: Duration },
 ]);
+export { AccountLockedLongerDurationNotUnlockingOnlyRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedLongerDurationNotUnlockingOnlyResponse
  */
-export class AccountLockedLongerDurationNotUnlockingOnlyResponse extends Message {
+class AccountLockedLongerDurationNotUnlockingOnlyResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -897,10 +926,11 @@ AccountLockedLongerDurationNotUnlockingOnlyResponse.typeName = "dymensionxyz.dym
 AccountLockedLongerDurationNotUnlockingOnlyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedLongerDurationNotUnlockingOnlyResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedLongerDurationDenomRequest
  */
-export class AccountLockedLongerDurationDenomRequest extends Message {
+class AccountLockedLongerDurationDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -933,10 +963,11 @@ AccountLockedLongerDurationDenomRequest.fields = proto3.util.newFieldList(() => 
     { no: 2, name: "duration", kind: "message", T: Duration },
     { no: 3, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountLockedLongerDurationDenomRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.AccountLockedLongerDurationDenomResponse
  */
-export class AccountLockedLongerDurationDenomResponse extends Message {
+class AccountLockedLongerDurationDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -963,10 +994,11 @@ AccountLockedLongerDurationDenomResponse.typeName = "dymensionxyz.dymension.lock
 AccountLockedLongerDurationDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedLongerDurationDenomResponse };
 /**
  * @generated from message dymensionxyz.dymension.lockup.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -987,10 +1019,11 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "dymensionxyz.dymension.lockup.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * @generated from message dymensionxyz.dymension.lockup.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1013,4 +1046,5 @@ QueryParamsResponse.typeName = "dymensionxyz.dymension.lockup.QueryParamsRespons
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 //# sourceMappingURL=query_pb.js.map

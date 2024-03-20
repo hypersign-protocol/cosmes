@@ -9,7 +9,7 @@ import { Height } from "../../../core/client/v1/client_pb.js";
  *
  * @generated from message ibc.lightclients.wasm.v1.ClientState
  */
-export class ClientState extends Message {
+class ClientState extends Message {
     constructor(data) {
         super();
         /**
@@ -45,12 +45,13 @@ ClientState.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "checksum", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "latest_height", kind: "message", T: Height },
 ]);
+export { ClientState };
 /**
  * Wasm light client's ConsensusState
  *
  * @generated from message ibc.lightclients.wasm.v1.ConsensusState
  */
-export class ConsensusState extends Message {
+class ConsensusState extends Message {
     constructor(data) {
         super();
         /**
@@ -80,12 +81,13 @@ ConsensusState.typeName = "ibc.lightclients.wasm.v1.ConsensusState";
 ConsensusState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ConsensusState };
 /**
  * Wasm light client message (either header(s) or misbehaviour)
  *
  * @generated from message ibc.lightclients.wasm.v1.ClientMessage
  */
-export class ClientMessage extends Message {
+class ClientMessage extends Message {
     constructor(data) {
         super();
         /**
@@ -112,6 +114,7 @@ ClientMessage.typeName = "ibc.lightclients.wasm.v1.ClientMessage";
 ClientMessage.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ClientMessage };
 /**
  * Checksums defines a list of all checksums that are stored
  *
@@ -121,7 +124,7 @@ ClientMessage.fields = proto3.util.newFieldList(() => [
  * @generated from message ibc.lightclients.wasm.v1.Checksums
  * @deprecated
  */
-export class Checksums extends Message {
+class Checksums extends Message {
     constructor(data) {
         super();
         /**
@@ -148,4 +151,5 @@ Checksums.typeName = "ibc.lightclients.wasm.v1.Checksums";
 Checksums.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "checksums", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { Checksums };
 //# sourceMappingURL=wasm_pb.js.map

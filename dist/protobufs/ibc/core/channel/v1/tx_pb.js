@@ -51,7 +51,7 @@ proto3.util.setEnumType(ResponseResultType, "ibc.core.channel.v1.ResponseResultT
  *
  * @generated from message ibc.core.channel.v1.MsgChannelOpenInit
  */
-export class MsgChannelOpenInit extends Message {
+class MsgChannelOpenInit extends Message {
     constructor(data) {
         super();
         /**
@@ -84,12 +84,13 @@ MsgChannelOpenInit.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel", kind: "message", T: Channel },
     { no: 3, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelOpenInit };
 /**
  * MsgChannelOpenInitResponse defines the Msg/ChannelOpenInit response type.
  *
  * @generated from message ibc.core.channel.v1.MsgChannelOpenInitResponse
  */
-export class MsgChannelOpenInitResponse extends Message {
+class MsgChannelOpenInitResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -121,6 +122,7 @@ MsgChannelOpenInitResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelOpenInitResponse };
 /**
  * MsgChannelOpenInit defines a msg sent by a Relayer to try to open a channel
  * on Chain B. The version field within the Channel field has been deprecated. Its
@@ -128,7 +130,7 @@ MsgChannelOpenInitResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.MsgChannelOpenTry
  */
-export class MsgChannelOpenTry extends Message {
+class MsgChannelOpenTry extends Message {
     constructor(data) {
         super();
         /**
@@ -180,12 +182,13 @@ MsgChannelOpenTry.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "proof_height", kind: "message", T: Height },
     { no: 7, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelOpenTry };
 /**
  * MsgChannelOpenTryResponse defines the Msg/ChannelOpenTry response type.
  *
  * @generated from message ibc.core.channel.v1.MsgChannelOpenTryResponse
  */
-export class MsgChannelOpenTryResponse extends Message {
+class MsgChannelOpenTryResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -217,6 +220,7 @@ MsgChannelOpenTryResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelOpenTryResponse };
 /**
  * MsgChannelOpenAck defines a msg sent by a Relayer to Chain A to acknowledge
  * the change of channel state to TRYOPEN on Chain B.
@@ -226,7 +230,7 @@ MsgChannelOpenTryResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.MsgChannelOpenAck
  */
-export class MsgChannelOpenAck extends Message {
+class MsgChannelOpenAck extends Message {
     constructor(data) {
         super();
         /**
@@ -279,12 +283,13 @@ MsgChannelOpenAck.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "proof_height", kind: "message", T: Height },
     { no: 7, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelOpenAck };
 /**
  * MsgChannelOpenAckResponse defines the Msg/ChannelOpenAck response type.
  *
  * @generated from message ibc.core.channel.v1.MsgChannelOpenAckResponse
  */
-export class MsgChannelOpenAckResponse extends Message {
+class MsgChannelOpenAckResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -305,13 +310,14 @@ export class MsgChannelOpenAckResponse extends Message {
 MsgChannelOpenAckResponse.runtime = proto3;
 MsgChannelOpenAckResponse.typeName = "ibc.core.channel.v1.MsgChannelOpenAckResponse";
 MsgChannelOpenAckResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgChannelOpenAckResponse };
 /**
  * MsgChannelOpenConfirm defines a msg sent by a Relayer to Chain B to
  * acknowledge the change of channel state to OPEN on Chain A.
  *
  * @generated from message ibc.core.channel.v1.MsgChannelOpenConfirm
  */
-export class MsgChannelOpenConfirm extends Message {
+class MsgChannelOpenConfirm extends Message {
     constructor(data) {
         super();
         /**
@@ -354,13 +360,14 @@ MsgChannelOpenConfirm.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "proof_height", kind: "message", T: Height },
     { no: 5, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelOpenConfirm };
 /**
  * MsgChannelOpenConfirmResponse defines the Msg/ChannelOpenConfirm response
  * type.
  *
  * @generated from message ibc.core.channel.v1.MsgChannelOpenConfirmResponse
  */
-export class MsgChannelOpenConfirmResponse extends Message {
+class MsgChannelOpenConfirmResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -381,13 +388,14 @@ export class MsgChannelOpenConfirmResponse extends Message {
 MsgChannelOpenConfirmResponse.runtime = proto3;
 MsgChannelOpenConfirmResponse.typeName = "ibc.core.channel.v1.MsgChannelOpenConfirmResponse";
 MsgChannelOpenConfirmResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgChannelOpenConfirmResponse };
 /**
  * MsgChannelCloseInit defines a msg sent by a Relayer to Chain A
  * to close a channel with Chain B.
  *
  * @generated from message ibc.core.channel.v1.MsgChannelCloseInit
  */
-export class MsgChannelCloseInit extends Message {
+class MsgChannelCloseInit extends Message {
     constructor(data) {
         super();
         /**
@@ -424,12 +432,13 @@ MsgChannelCloseInit.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelCloseInit };
 /**
  * MsgChannelCloseInitResponse defines the Msg/ChannelCloseInit response type.
  *
  * @generated from message ibc.core.channel.v1.MsgChannelCloseInitResponse
  */
-export class MsgChannelCloseInitResponse extends Message {
+class MsgChannelCloseInitResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -450,13 +459,14 @@ export class MsgChannelCloseInitResponse extends Message {
 MsgChannelCloseInitResponse.runtime = proto3;
 MsgChannelCloseInitResponse.typeName = "ibc.core.channel.v1.MsgChannelCloseInitResponse";
 MsgChannelCloseInitResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgChannelCloseInitResponse };
 /**
  * MsgChannelCloseConfirm defines a msg sent by a Relayer to Chain B
  * to acknowledge the change of channel state to CLOSED on Chain A.
  *
  * @generated from message ibc.core.channel.v1.MsgChannelCloseConfirm
  */
-export class MsgChannelCloseConfirm extends Message {
+class MsgChannelCloseConfirm extends Message {
     constructor(data) {
         super();
         /**
@@ -504,13 +514,14 @@ MsgChannelCloseConfirm.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "counterparty_upgrade_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgChannelCloseConfirm };
 /**
  * MsgChannelCloseConfirmResponse defines the Msg/ChannelCloseConfirm response
  * type.
  *
  * @generated from message ibc.core.channel.v1.MsgChannelCloseConfirmResponse
  */
-export class MsgChannelCloseConfirmResponse extends Message {
+class MsgChannelCloseConfirmResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -531,12 +542,13 @@ export class MsgChannelCloseConfirmResponse extends Message {
 MsgChannelCloseConfirmResponse.runtime = proto3;
 MsgChannelCloseConfirmResponse.typeName = "ibc.core.channel.v1.MsgChannelCloseConfirmResponse";
 MsgChannelCloseConfirmResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgChannelCloseConfirmResponse };
 /**
  * MsgRecvPacket receives incoming IBC packet
  *
  * @generated from message ibc.core.channel.v1.MsgRecvPacket
  */
-export class MsgRecvPacket extends Message {
+class MsgRecvPacket extends Message {
     constructor(data) {
         super();
         /**
@@ -570,12 +582,13 @@ MsgRecvPacket.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "proof_height", kind: "message", T: Height },
     { no: 4, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgRecvPacket };
 /**
  * MsgRecvPacketResponse defines the Msg/RecvPacket response type.
  *
  * @generated from message ibc.core.channel.v1.MsgRecvPacketResponse
  */
-export class MsgRecvPacketResponse extends Message {
+class MsgRecvPacketResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -602,12 +615,13 @@ MsgRecvPacketResponse.typeName = "ibc.core.channel.v1.MsgRecvPacketResponse";
 MsgRecvPacketResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "result", kind: "enum", T: proto3.getEnumType(ResponseResultType) },
 ]);
+export { MsgRecvPacketResponse };
 /**
  * MsgTimeout receives timed-out packet
  *
  * @generated from message ibc.core.channel.v1.MsgTimeout
  */
-export class MsgTimeout extends Message {
+class MsgTimeout extends Message {
     constructor(data) {
         super();
         /**
@@ -646,12 +660,13 @@ MsgTimeout.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "next_sequence_recv", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgTimeout };
 /**
  * MsgTimeoutResponse defines the Msg/Timeout response type.
  *
  * @generated from message ibc.core.channel.v1.MsgTimeoutResponse
  */
-export class MsgTimeoutResponse extends Message {
+class MsgTimeoutResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -678,12 +693,13 @@ MsgTimeoutResponse.typeName = "ibc.core.channel.v1.MsgTimeoutResponse";
 MsgTimeoutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "result", kind: "enum", T: proto3.getEnumType(ResponseResultType) },
 ]);
+export { MsgTimeoutResponse };
 /**
  * MsgTimeoutOnClose timed-out packet upon counterparty channel closure.
  *
  * @generated from message ibc.core.channel.v1.MsgTimeoutOnClose
  */
-export class MsgTimeoutOnClose extends Message {
+class MsgTimeoutOnClose extends Message {
     constructor(data) {
         super();
         /**
@@ -732,12 +748,13 @@ MsgTimeoutOnClose.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "counterparty_upgrade_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgTimeoutOnClose };
 /**
  * MsgTimeoutOnCloseResponse defines the Msg/TimeoutOnClose response type.
  *
  * @generated from message ibc.core.channel.v1.MsgTimeoutOnCloseResponse
  */
-export class MsgTimeoutOnCloseResponse extends Message {
+class MsgTimeoutOnCloseResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -764,12 +781,13 @@ MsgTimeoutOnCloseResponse.typeName = "ibc.core.channel.v1.MsgTimeoutOnCloseRespo
 MsgTimeoutOnCloseResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "result", kind: "enum", T: proto3.getEnumType(ResponseResultType) },
 ]);
+export { MsgTimeoutOnCloseResponse };
 /**
  * MsgAcknowledgement receives incoming IBC acknowledgement
  *
  * @generated from message ibc.core.channel.v1.MsgAcknowledgement
  */
-export class MsgAcknowledgement extends Message {
+class MsgAcknowledgement extends Message {
     constructor(data) {
         super();
         /**
@@ -808,12 +826,13 @@ MsgAcknowledgement.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "proof_height", kind: "message", T: Height },
     { no: 5, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgAcknowledgement };
 /**
  * MsgAcknowledgementResponse defines the Msg/Acknowledgement response type.
  *
  * @generated from message ibc.core.channel.v1.MsgAcknowledgementResponse
  */
-export class MsgAcknowledgementResponse extends Message {
+class MsgAcknowledgementResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -840,6 +859,7 @@ MsgAcknowledgementResponse.typeName = "ibc.core.channel.v1.MsgAcknowledgementRes
 MsgAcknowledgementResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "result", kind: "enum", T: proto3.getEnumType(ResponseResultType) },
 ]);
+export { MsgAcknowledgementResponse };
 /**
  * MsgChannelUpgradeInit defines the request type for the ChannelUpgradeInit rpc
  * WARNING: Initializing a channel upgrade in the same block as opening the channel
@@ -847,7 +867,7 @@ MsgAcknowledgementResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeInit
  */
-export class MsgChannelUpgradeInit extends Message {
+class MsgChannelUpgradeInit extends Message {
     constructor(data) {
         super();
         /**
@@ -885,12 +905,13 @@ MsgChannelUpgradeInit.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "fields", kind: "message", T: UpgradeFields },
     { no: 4, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelUpgradeInit };
 /**
  * MsgChannelUpgradeInitResponse defines the MsgChannelUpgradeInit response type
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeInitResponse
  */
-export class MsgChannelUpgradeInitResponse extends Message {
+class MsgChannelUpgradeInitResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -918,12 +939,13 @@ MsgChannelUpgradeInitResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "upgrade", kind: "message", T: Upgrade },
     { no: 2, name: "upgrade_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgChannelUpgradeInitResponse };
 /**
  * MsgChannelUpgradeTry defines the request type for the ChannelUpgradeTry rpc
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeTry
  */
-export class MsgChannelUpgradeTry extends Message {
+class MsgChannelUpgradeTry extends Message {
     constructor(data) {
         super();
         /**
@@ -982,12 +1004,13 @@ MsgChannelUpgradeTry.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "proof_height", kind: "message", T: Height },
     { no: 9, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelUpgradeTry };
 /**
  * MsgChannelUpgradeTryResponse defines the MsgChannelUpgradeTry response type
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeTryResponse
  */
-export class MsgChannelUpgradeTryResponse extends Message {
+class MsgChannelUpgradeTryResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1020,12 +1043,13 @@ MsgChannelUpgradeTryResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "upgrade_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "result", kind: "enum", T: proto3.getEnumType(ResponseResultType) },
 ]);
+export { MsgChannelUpgradeTryResponse };
 /**
  * MsgChannelUpgradeAck defines the request type for the ChannelUpgradeAck rpc
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeAck
  */
-export class MsgChannelUpgradeAck extends Message {
+class MsgChannelUpgradeAck extends Message {
     constructor(data) {
         super();
         /**
@@ -1074,12 +1098,13 @@ MsgChannelUpgradeAck.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "proof_height", kind: "message", T: Height },
     { no: 7, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelUpgradeAck };
 /**
  * MsgChannelUpgradeAckResponse defines MsgChannelUpgradeAck response type
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeAckResponse
  */
-export class MsgChannelUpgradeAckResponse extends Message {
+class MsgChannelUpgradeAckResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1106,12 +1131,13 @@ MsgChannelUpgradeAckResponse.typeName = "ibc.core.channel.v1.MsgChannelUpgradeAc
 MsgChannelUpgradeAckResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "result", kind: "enum", T: proto3.getEnumType(ResponseResultType) },
 ]);
+export { MsgChannelUpgradeAckResponse };
 /**
  * MsgChannelUpgradeConfirm defines the request type for the ChannelUpgradeConfirm rpc
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeConfirm
  */
-export class MsgChannelUpgradeConfirm extends Message {
+class MsgChannelUpgradeConfirm extends Message {
     constructor(data) {
         super();
         /**
@@ -1165,12 +1191,13 @@ MsgChannelUpgradeConfirm.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "proof_height", kind: "message", T: Height },
     { no: 8, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelUpgradeConfirm };
 /**
  * MsgChannelUpgradeConfirmResponse defines MsgChannelUpgradeConfirm response type
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeConfirmResponse
  */
-export class MsgChannelUpgradeConfirmResponse extends Message {
+class MsgChannelUpgradeConfirmResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1197,12 +1224,13 @@ MsgChannelUpgradeConfirmResponse.typeName = "ibc.core.channel.v1.MsgChannelUpgra
 MsgChannelUpgradeConfirmResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "result", kind: "enum", T: proto3.getEnumType(ResponseResultType) },
 ]);
+export { MsgChannelUpgradeConfirmResponse };
 /**
  * MsgChannelUpgradeOpen defines the request type for the ChannelUpgradeOpen rpc
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeOpen
  */
-export class MsgChannelUpgradeOpen extends Message {
+class MsgChannelUpgradeOpen extends Message {
     constructor(data) {
         super();
         /**
@@ -1255,12 +1283,13 @@ MsgChannelUpgradeOpen.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "proof_height", kind: "message", T: Height },
     { no: 7, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelUpgradeOpen };
 /**
  * MsgChannelUpgradeOpenResponse defines the MsgChannelUpgradeOpen response type
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeOpenResponse
  */
-export class MsgChannelUpgradeOpenResponse extends Message {
+class MsgChannelUpgradeOpenResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1281,12 +1310,13 @@ export class MsgChannelUpgradeOpenResponse extends Message {
 MsgChannelUpgradeOpenResponse.runtime = proto3;
 MsgChannelUpgradeOpenResponse.typeName = "ibc.core.channel.v1.MsgChannelUpgradeOpenResponse";
 MsgChannelUpgradeOpenResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgChannelUpgradeOpenResponse };
 /**
  * MsgChannelUpgradeTimeout defines the request type for the ChannelUpgradeTimeout rpc
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeTimeout
  */
-export class MsgChannelUpgradeTimeout extends Message {
+class MsgChannelUpgradeTimeout extends Message {
     constructor(data) {
         super();
         /**
@@ -1330,12 +1360,13 @@ MsgChannelUpgradeTimeout.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "proof_height", kind: "message", T: Height },
     { no: 6, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelUpgradeTimeout };
 /**
  * MsgChannelUpgradeTimeoutRepsonse defines the MsgChannelUpgradeTimeout response type
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeTimeoutResponse
  */
-export class MsgChannelUpgradeTimeoutResponse extends Message {
+class MsgChannelUpgradeTimeoutResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1356,12 +1387,13 @@ export class MsgChannelUpgradeTimeoutResponse extends Message {
 MsgChannelUpgradeTimeoutResponse.runtime = proto3;
 MsgChannelUpgradeTimeoutResponse.typeName = "ibc.core.channel.v1.MsgChannelUpgradeTimeoutResponse";
 MsgChannelUpgradeTimeoutResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgChannelUpgradeTimeoutResponse };
 /**
  * MsgChannelUpgradeCancel defines the request type for the ChannelUpgradeCancel rpc
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeCancel
  */
-export class MsgChannelUpgradeCancel extends Message {
+class MsgChannelUpgradeCancel extends Message {
     constructor(data) {
         super();
         /**
@@ -1405,12 +1437,13 @@ MsgChannelUpgradeCancel.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "proof_height", kind: "message", T: Height },
     { no: 6, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgChannelUpgradeCancel };
 /**
  * MsgChannelUpgradeCancelResponse defines the MsgChannelUpgradeCancel response type
  *
  * @generated from message ibc.core.channel.v1.MsgChannelUpgradeCancelResponse
  */
-export class MsgChannelUpgradeCancelResponse extends Message {
+class MsgChannelUpgradeCancelResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1431,12 +1464,13 @@ export class MsgChannelUpgradeCancelResponse extends Message {
 MsgChannelUpgradeCancelResponse.runtime = proto3;
 MsgChannelUpgradeCancelResponse.typeName = "ibc.core.channel.v1.MsgChannelUpgradeCancelResponse";
 MsgChannelUpgradeCancelResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgChannelUpgradeCancelResponse };
 /**
  * MsgUpdateParams is the MsgUpdateParams request type.
  *
  * @generated from message ibc.core.channel.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -1466,12 +1500,13 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the MsgUpdateParams response type.
  *
  * @generated from message ibc.core.channel.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1492,12 +1527,13 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "ibc.core.channel.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 /**
  * MsgPruneAcknowledgements defines the request type for the PruneAcknowledgements rpc.
  *
  * @generated from message ibc.core.channel.v1.MsgPruneAcknowledgements
  */
-export class MsgPruneAcknowledgements extends Message {
+class MsgPruneAcknowledgements extends Message {
     constructor(data) {
         super();
         /**
@@ -1539,12 +1575,13 @@ MsgPruneAcknowledgements.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "limit", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgPruneAcknowledgements };
 /**
  * MsgPruneAcknowledgementsResponse defines the response type for the PruneAcknowledgements rpc.
  *
  * @generated from message ibc.core.channel.v1.MsgPruneAcknowledgementsResponse
  */
-export class MsgPruneAcknowledgementsResponse extends Message {
+class MsgPruneAcknowledgementsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1580,4 +1617,5 @@ MsgPruneAcknowledgementsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_pruned_sequences", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "total_remaining_sequences", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgPruneAcknowledgementsResponse };
 //# sourceMappingURL=tx_pb.js.map

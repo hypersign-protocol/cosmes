@@ -8,7 +8,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message injective.exchange.v1beta1.EventBatchSpotExecution
  */
-export class EventBatchSpotExecution extends Message {
+class EventBatchSpotExecution extends Message {
     constructor(data) {
         super();
         /**
@@ -50,10 +50,11 @@ EventBatchSpotExecution.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "executionType", kind: "enum", T: proto3.getEnumType(ExecutionType) },
     { no: 4, name: "trades", kind: "message", T: TradeLog, repeated: true },
 ]);
+export { EventBatchSpotExecution };
 /**
  * @generated from message injective.exchange.v1beta1.EventBatchDerivativeExecution
  */
-export class EventBatchDerivativeExecution extends Message {
+class EventBatchDerivativeExecution extends Message {
     constructor(data) {
         super();
         /**
@@ -107,10 +108,11 @@ EventBatchDerivativeExecution.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "executionType", kind: "enum", T: proto3.getEnumType(ExecutionType) },
     { no: 6, name: "trades", kind: "message", T: DerivativeTradeLog, repeated: true },
 ]);
+export { EventBatchDerivativeExecution };
 /**
  * @generated from message injective.exchange.v1beta1.EventLostFundsFromLiquidation
  */
-export class EventLostFundsFromLiquidation extends Message {
+class EventLostFundsFromLiquidation extends Message {
     constructor(data) {
         super();
         /**
@@ -152,10 +154,11 @@ EventLostFundsFromLiquidation.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "lost_funds_from_available_during_payout", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "lost_funds_from_order_cancels", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventLostFundsFromLiquidation };
 /**
  * @generated from message injective.exchange.v1beta1.EventBatchDerivativePosition
  */
-export class EventBatchDerivativePosition extends Message {
+class EventBatchDerivativePosition extends Message {
     constructor(data) {
         super();
         /**
@@ -187,10 +190,11 @@ EventBatchDerivativePosition.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "positions", kind: "message", T: SubaccountPosition, repeated: true },
 ]);
+export { EventBatchDerivativePosition };
 /**
  * @generated from message injective.exchange.v1beta1.EventDerivativeMarketPaused
  */
-export class EventDerivativeMarketPaused extends Message {
+class EventDerivativeMarketPaused extends Message {
     constructor(data) {
         super();
         /**
@@ -232,10 +236,11 @@ EventDerivativeMarketPaused.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "total_missing_funds", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "missing_funds_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventDerivativeMarketPaused };
 /**
  * @generated from message injective.exchange.v1beta1.EventMarketBeyondBankruptcy
  */
-export class EventMarketBeyondBankruptcy extends Message {
+class EventMarketBeyondBankruptcy extends Message {
     constructor(data) {
         super();
         /**
@@ -272,10 +277,11 @@ EventMarketBeyondBankruptcy.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "settle_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "missing_market_funds", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventMarketBeyondBankruptcy };
 /**
  * @generated from message injective.exchange.v1beta1.EventAllPositionsHaircut
  */
-export class EventAllPositionsHaircut extends Message {
+class EventAllPositionsHaircut extends Message {
     constructor(data) {
         super();
         /**
@@ -312,10 +318,11 @@ EventAllPositionsHaircut.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "settle_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "missing_funds_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventAllPositionsHaircut };
 /**
  * @generated from message injective.exchange.v1beta1.EventBinaryOptionsMarketUpdate
  */
-export class EventBinaryOptionsMarketUpdate extends Message {
+class EventBinaryOptionsMarketUpdate extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -338,10 +345,11 @@ EventBinaryOptionsMarketUpdate.typeName = "injective.exchange.v1beta1.EventBinar
 EventBinaryOptionsMarketUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market", kind: "message", T: BinaryOptionsMarket },
 ]);
+export { EventBinaryOptionsMarketUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.EventNewSpotOrders
  */
-export class EventNewSpotOrders extends Message {
+class EventNewSpotOrders extends Message {
     constructor(data) {
         super();
         /**
@@ -378,10 +386,11 @@ EventNewSpotOrders.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "buy_orders", kind: "message", T: SpotLimitOrder, repeated: true },
     { no: 3, name: "sell_orders", kind: "message", T: SpotLimitOrder, repeated: true },
 ]);
+export { EventNewSpotOrders };
 /**
  * @generated from message injective.exchange.v1beta1.EventNewDerivativeOrders
  */
-export class EventNewDerivativeOrders extends Message {
+class EventNewDerivativeOrders extends Message {
     constructor(data) {
         super();
         /**
@@ -418,10 +427,11 @@ EventNewDerivativeOrders.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "buy_orders", kind: "message", T: DerivativeLimitOrder, repeated: true },
     { no: 3, name: "sell_orders", kind: "message", T: DerivativeLimitOrder, repeated: true },
 ]);
+export { EventNewDerivativeOrders };
 /**
  * @generated from message injective.exchange.v1beta1.EventCancelSpotOrder
  */
-export class EventCancelSpotOrder extends Message {
+class EventCancelSpotOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -449,10 +459,11 @@ EventCancelSpotOrder.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "order", kind: "message", T: SpotLimitOrder },
 ]);
+export { EventCancelSpotOrder };
 /**
  * @generated from message injective.exchange.v1beta1.EventSpotMarketUpdate
  */
-export class EventSpotMarketUpdate extends Message {
+class EventSpotMarketUpdate extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -475,10 +486,11 @@ EventSpotMarketUpdate.typeName = "injective.exchange.v1beta1.EventSpotMarketUpda
 EventSpotMarketUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market", kind: "message", T: SpotMarket },
 ]);
+export { EventSpotMarketUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.EventPerpetualMarketUpdate
  */
-export class EventPerpetualMarketUpdate extends Message {
+class EventPerpetualMarketUpdate extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -503,10 +515,11 @@ EventPerpetualMarketUpdate.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "perpetual_market_info", kind: "message", T: PerpetualMarketInfo },
     { no: 3, name: "funding", kind: "message", T: PerpetualMarketFunding },
 ]);
+export { EventPerpetualMarketUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.EventExpiryFuturesMarketUpdate
  */
-export class EventExpiryFuturesMarketUpdate extends Message {
+class EventExpiryFuturesMarketUpdate extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -530,10 +543,11 @@ EventExpiryFuturesMarketUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market", kind: "message", T: DerivativeMarket },
     { no: 3, name: "expiry_futures_market_info", kind: "message", T: ExpiryFuturesMarketInfo },
 ]);
+export { EventExpiryFuturesMarketUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.EventPerpetualMarketFundingUpdate
  */
-export class EventPerpetualMarketFundingUpdate extends Message {
+class EventPerpetualMarketFundingUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -576,10 +590,11 @@ EventPerpetualMarketFundingUpdate.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "funding_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "mark_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventPerpetualMarketFundingUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.EventSubaccountDeposit
  */
-export class EventSubaccountDeposit extends Message {
+class EventSubaccountDeposit extends Message {
     constructor(data) {
         super();
         /**
@@ -612,10 +627,11 @@ EventSubaccountDeposit.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "subaccount_id", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { EventSubaccountDeposit };
 /**
  * @generated from message injective.exchange.v1beta1.EventSubaccountWithdraw
  */
-export class EventSubaccountWithdraw extends Message {
+class EventSubaccountWithdraw extends Message {
     constructor(data) {
         super();
         /**
@@ -648,10 +664,11 @@ EventSubaccountWithdraw.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "dst_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { EventSubaccountWithdraw };
 /**
  * @generated from message injective.exchange.v1beta1.EventSubaccountBalanceTransfer
  */
-export class EventSubaccountBalanceTransfer extends Message {
+class EventSubaccountBalanceTransfer extends Message {
     constructor(data) {
         super();
         /**
@@ -684,10 +701,11 @@ EventSubaccountBalanceTransfer.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "dst_subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { EventSubaccountBalanceTransfer };
 /**
  * @generated from message injective.exchange.v1beta1.EventBatchDepositUpdate
  */
-export class EventBatchDepositUpdate extends Message {
+class EventBatchDepositUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -714,10 +732,11 @@ EventBatchDepositUpdate.typeName = "injective.exchange.v1beta1.EventBatchDeposit
 EventBatchDepositUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "deposit_updates", kind: "message", T: DepositUpdate, repeated: true },
 ]);
+export { EventBatchDepositUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.DerivativeMarketOrderCancel
  */
-export class DerivativeMarketOrderCancel extends Message {
+class DerivativeMarketOrderCancel extends Message {
     constructor(data) {
         super();
         /**
@@ -745,10 +764,11 @@ DerivativeMarketOrderCancel.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_order", kind: "message", T: DerivativeMarketOrder },
     { no: 2, name: "cancel_quantity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DerivativeMarketOrderCancel };
 /**
  * @generated from message injective.exchange.v1beta1.EventCancelDerivativeOrder
  */
-export class EventCancelDerivativeOrder extends Message {
+class EventCancelDerivativeOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -782,10 +802,11 @@ EventCancelDerivativeOrder.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "limit_order", kind: "message", T: DerivativeLimitOrder },
     { no: 4, name: "market_order_cancel", kind: "message", T: DerivativeMarketOrderCancel },
 ]);
+export { EventCancelDerivativeOrder };
 /**
  * @generated from message injective.exchange.v1beta1.EventFeeDiscountSchedule
  */
-export class EventFeeDiscountSchedule extends Message {
+class EventFeeDiscountSchedule extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -808,10 +829,11 @@ EventFeeDiscountSchedule.typeName = "injective.exchange.v1beta1.EventFeeDiscount
 EventFeeDiscountSchedule.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "schedule", kind: "message", T: FeeDiscountSchedule },
 ]);
+export { EventFeeDiscountSchedule };
 /**
  * @generated from message injective.exchange.v1beta1.EventTradingRewardCampaignUpdate
  */
-export class EventTradingRewardCampaignUpdate extends Message {
+class EventTradingRewardCampaignUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -839,10 +861,11 @@ EventTradingRewardCampaignUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "campaign_info", kind: "message", T: TradingRewardCampaignInfo },
     { no: 2, name: "campaign_reward_pools", kind: "message", T: CampaignRewardPool, repeated: true },
 ]);
+export { EventTradingRewardCampaignUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.EventTradingRewardDistribution
  */
-export class EventTradingRewardDistribution extends Message {
+class EventTradingRewardDistribution extends Message {
     constructor(data) {
         super();
         /**
@@ -869,10 +892,11 @@ EventTradingRewardDistribution.typeName = "injective.exchange.v1beta1.EventTradi
 EventTradingRewardDistribution.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account_rewards", kind: "message", T: AccountRewards, repeated: true },
 ]);
+export { EventTradingRewardDistribution };
 /**
  * @generated from message injective.exchange.v1beta1.EventNewConditionalDerivativeOrder
  */
-export class EventNewConditionalDerivativeOrder extends Message {
+class EventNewConditionalDerivativeOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -910,10 +934,11 @@ EventNewConditionalDerivativeOrder.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "is_market", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { EventNewConditionalDerivativeOrder };
 /**
  * @generated from message injective.exchange.v1beta1.EventCancelConditionalDerivativeOrder
  */
-export class EventCancelConditionalDerivativeOrder extends Message {
+class EventCancelConditionalDerivativeOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -947,10 +972,11 @@ EventCancelConditionalDerivativeOrder.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "limit_order", kind: "message", T: DerivativeLimitOrder },
     { no: 4, name: "market_order", kind: "message", T: DerivativeMarketOrder },
 ]);
+export { EventCancelConditionalDerivativeOrder };
 /**
  * @generated from message injective.exchange.v1beta1.EventConditionalDerivativeOrderTrigger
  */
-export class EventConditionalDerivativeOrderTrigger extends Message {
+class EventConditionalDerivativeOrderTrigger extends Message {
     constructor(data) {
         super();
         /**
@@ -992,10 +1018,11 @@ EventConditionalDerivativeOrderTrigger.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "triggered_order_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "placed_order_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { EventConditionalDerivativeOrderTrigger };
 /**
  * @generated from message injective.exchange.v1beta1.EventOrderFail
  */
-export class EventOrderFail extends Message {
+class EventOrderFail extends Message {
     constructor(data) {
         super();
         /**
@@ -1032,10 +1059,11 @@ EventOrderFail.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "hashes", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
     { no: 3, name: "flags", kind: "scalar", T: 13 /* ScalarType.UINT32 */, repeated: true },
 ]);
+export { EventOrderFail };
 /**
  * @generated from message injective.exchange.v1beta1.EventAtomicMarketOrderFeeMultipliersUpdated
  */
-export class EventAtomicMarketOrderFeeMultipliersUpdated extends Message {
+class EventAtomicMarketOrderFeeMultipliersUpdated extends Message {
     constructor(data) {
         super();
         /**
@@ -1062,10 +1090,11 @@ EventAtomicMarketOrderFeeMultipliersUpdated.typeName = "injective.exchange.v1bet
 EventAtomicMarketOrderFeeMultipliersUpdated.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_fee_multipliers", kind: "message", T: MarketFeeMultiplier, repeated: true },
 ]);
+export { EventAtomicMarketOrderFeeMultipliersUpdated };
 /**
  * @generated from message injective.exchange.v1beta1.EventOrderbookUpdate
  */
-export class EventOrderbookUpdate extends Message {
+class EventOrderbookUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -1097,10 +1126,11 @@ EventOrderbookUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spot_updates", kind: "message", T: OrderbookUpdate, repeated: true },
     { no: 2, name: "derivative_updates", kind: "message", T: OrderbookUpdate, repeated: true },
 ]);
+export { EventOrderbookUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.OrderbookUpdate
  */
-export class OrderbookUpdate extends Message {
+class OrderbookUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -1128,10 +1158,11 @@ OrderbookUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "seq", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "orderbook", kind: "message", T: Orderbook },
 ]);
+export { OrderbookUpdate };
 /**
  * @generated from message injective.exchange.v1beta1.Orderbook
  */
-export class Orderbook extends Message {
+class Orderbook extends Message {
     constructor(data) {
         super();
         /**
@@ -1168,4 +1199,5 @@ Orderbook.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "buy_levels", kind: "message", T: Level, repeated: true },
     { no: 3, name: "sell_levels", kind: "message", T: Level, repeated: true },
 ]);
+export { Orderbook };
 //# sourceMappingURL=events_pb.js.map

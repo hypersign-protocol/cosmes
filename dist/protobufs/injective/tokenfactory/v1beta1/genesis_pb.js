@@ -10,7 +10,7 @@ import { DenomAuthorityMetadata } from "./authorityMetadata_pb.js";
  *
  * @generated from message injective.tokenfactory.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -38,6 +38,7 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
     { no: 2, name: "factory_denoms", kind: "message", T: GenesisDenom, repeated: true },
 ]);
+export { GenesisState };
 /**
  * GenesisDenom defines a tokenfactory denom that is defined within genesis
  * state. The structure contains DenomAuthorityMetadata which defines the
@@ -45,7 +46,7 @@ GenesisState.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message injective.tokenfactory.v1beta1.GenesisDenom
  */
-export class GenesisDenom extends Message {
+class GenesisDenom extends Message {
     constructor(data) {
         super();
         /**
@@ -83,4 +84,5 @@ GenesisDenom.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GenesisDenom };
 //# sourceMappingURL=genesis_pb.js.map

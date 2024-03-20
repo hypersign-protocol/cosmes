@@ -12,7 +12,7 @@ import { DecCoin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.IncentiveRecord
  */
-export class IncentiveRecord extends Message {
+class IncentiveRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -48,13 +48,14 @@ IncentiveRecord.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "incentive_record_body", kind: "message", T: IncentiveRecordBody },
     { no: 5, name: "min_uptime", kind: "message", T: Duration },
 ]);
+export { IncentiveRecord };
 /**
  * IncentiveRecordBody represents the body stored in state for each individual
  * record.
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.IncentiveRecordBody
  */
-export class IncentiveRecordBody extends Message {
+class IncentiveRecordBody extends Message {
     constructor(data) {
         super();
         /**
@@ -85,4 +86,5 @@ IncentiveRecordBody.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "emission_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "start_time", kind: "message", T: Timestamp },
 ]);
+export { IncentiveRecordBody };
 //# sourceMappingURL=incentive_record_pb.js.map

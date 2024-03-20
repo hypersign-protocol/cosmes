@@ -7,7 +7,7 @@ import { BandIBCParams, BandOracleRequest } from "./oracle_pb.js";
 /**
  * @generated from message injective.oracle.v1beta1.GrantBandOraclePrivilegeProposal
  */
-export class GrantBandOraclePrivilegeProposal extends Message {
+class GrantBandOraclePrivilegeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -44,10 +44,11 @@ GrantBandOraclePrivilegeProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { GrantBandOraclePrivilegeProposal };
 /**
  * @generated from message injective.oracle.v1beta1.RevokeBandOraclePrivilegeProposal
  */
-export class RevokeBandOraclePrivilegeProposal extends Message {
+class RevokeBandOraclePrivilegeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -84,10 +85,11 @@ RevokeBandOraclePrivilegeProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { RevokeBandOraclePrivilegeProposal };
 /**
  * @generated from message injective.oracle.v1beta1.GrantPriceFeederPrivilegeProposal
  */
-export class GrantPriceFeederPrivilegeProposal extends Message {
+class GrantPriceFeederPrivilegeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -134,10 +136,11 @@ GrantPriceFeederPrivilegeProposal.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "quote", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { GrantPriceFeederPrivilegeProposal };
 /**
  * @generated from message injective.oracle.v1beta1.GrantProviderPrivilegeProposal
  */
-export class GrantProviderPrivilegeProposal extends Message {
+class GrantProviderPrivilegeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -179,10 +182,11 @@ GrantProviderPrivilegeProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "provider", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { GrantProviderPrivilegeProposal };
 /**
  * @generated from message injective.oracle.v1beta1.RevokeProviderPrivilegeProposal
  */
-export class RevokeProviderPrivilegeProposal extends Message {
+class RevokeProviderPrivilegeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -224,10 +228,11 @@ RevokeProviderPrivilegeProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "provider", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { RevokeProviderPrivilegeProposal };
 /**
  * @generated from message injective.oracle.v1beta1.RevokePriceFeederPrivilegeProposal
  */
-export class RevokePriceFeederPrivilegeProposal extends Message {
+class RevokePriceFeederPrivilegeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -274,10 +279,11 @@ RevokePriceFeederPrivilegeProposal.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "quote", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { RevokePriceFeederPrivilegeProposal };
 /**
  * @generated from message injective.oracle.v1beta1.AuthorizeBandOracleRequestProposal
  */
-export class AuthorizeBandOracleRequestProposal extends Message {
+class AuthorizeBandOracleRequestProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -310,10 +316,11 @@ AuthorizeBandOracleRequestProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "request", kind: "message", T: BandOracleRequest },
 ]);
+export { AuthorizeBandOracleRequestProposal };
 /**
  * @generated from message injective.oracle.v1beta1.UpdateBandOracleRequestProposal
  */
-export class UpdateBandOracleRequestProposal extends Message {
+class UpdateBandOracleRequestProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -351,10 +358,11 @@ UpdateBandOracleRequestProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "delete_request_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 4, name: "update_oracle_request", kind: "message", T: BandOracleRequest },
 ]);
+export { UpdateBandOracleRequestProposal };
 /**
  * @generated from message injective.oracle.v1beta1.EnableBandIBCProposal
  */
-export class EnableBandIBCProposal extends Message {
+class EnableBandIBCProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -387,4 +395,5 @@ EnableBandIBCProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "band_ibc_params", kind: "message", T: BandIBCParams },
 ]);
+export { EnableBandIBCProposal };
 //# sourceMappingURL=proposal_pb.js.map

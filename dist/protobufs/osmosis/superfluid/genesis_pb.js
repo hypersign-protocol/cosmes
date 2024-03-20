@@ -10,7 +10,7 @@ import { LockIdIntermediaryAccountConnection, OsmoEquivalentMultiplierRecord, Su
  *
  * @generated from message osmosis.superfluid.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -62,4 +62,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "intermediary_accounts", kind: "message", T: SuperfluidIntermediaryAccount, repeated: true },
     { no: 5, name: "intemediary_account_connections", kind: "message", T: LockIdIntermediaryAccountConnection, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

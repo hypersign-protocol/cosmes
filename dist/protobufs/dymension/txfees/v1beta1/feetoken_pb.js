@@ -11,7 +11,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message dymensionxyz.dymension.txfees.v1beta1.FeeToken
  */
-export class FeeToken extends Message {
+class FeeToken extends Message {
     constructor(data) {
         super();
         /**
@@ -43,4 +43,5 @@ FeeToken.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "poolID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { FeeToken };
 //# sourceMappingURL=feetoken_pb.js.map

@@ -30,7 +30,7 @@ proto3.util.setEnumType(SplittingPolicy, "osmosis.incentives.SplittingPolicy", [
  *
  * @generated from message osmosis.incentives.InternalGaugeInfo
  */
-export class InternalGaugeInfo extends Message {
+class InternalGaugeInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -62,10 +62,11 @@ InternalGaugeInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "gauge_records", kind: "message", T: InternalGaugeRecord, repeated: true },
 ]);
+export { InternalGaugeInfo };
 /**
  * @generated from message osmosis.incentives.InternalGaugeRecord
  */
-export class InternalGaugeRecord extends Message {
+class InternalGaugeRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -110,6 +111,7 @@ InternalGaugeRecord.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "current_weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "cumulative_weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { InternalGaugeRecord };
 /**
  * Group is an object that stores a 1:1 mapped gauge ID, a list of pool gauge
  * info, and a splitting policy. These are grouped into a single abstraction to
@@ -118,7 +120,7 @@ InternalGaugeRecord.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.incentives.Group
  */
-export class Group extends Message {
+class Group extends Message {
     constructor(data) {
         super();
         /**
@@ -151,13 +153,14 @@ Group.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "internal_gauge_info", kind: "message", T: InternalGaugeInfo },
     { no: 3, name: "splitting_policy", kind: "enum", T: proto3.getEnumType(SplittingPolicy) },
 ]);
+export { Group };
 /**
  * CreateGroup is called via governance to create a new group.
  * It takes an array of pool IDs to split the incentives across.
  *
  * @generated from message osmosis.incentives.CreateGroup
  */
-export class CreateGroup extends Message {
+class CreateGroup extends Message {
     constructor(data) {
         super();
         /**
@@ -184,13 +187,14 @@ CreateGroup.typeName = "osmosis.incentives.CreateGroup";
 CreateGroup.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { CreateGroup };
 /**
  * GroupsWithGauge is a helper struct that stores a group and its
  * associated gauge.
  *
  * @generated from message osmosis.incentives.GroupsWithGauge
  */
-export class GroupsWithGauge extends Message {
+class GroupsWithGauge extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -214,4 +218,5 @@ GroupsWithGauge.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group", kind: "message", T: Group },
     { no: 2, name: "gauge", kind: "message", T: Gauge },
 ]);
+export { GroupsWithGauge };
 //# sourceMappingURL=group_pb.js.map

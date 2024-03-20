@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ethermint.evm.v1.EventEthereumTx
  */
-export class EventEthereumTx extends Message {
+class EventEthereumTx extends Message {
     constructor(data) {
         super();
         /**
@@ -79,12 +79,13 @@ EventEthereumTx.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "recipient", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "eth_tx_failed", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventEthereumTx };
 /**
  * EventTxLog defines the event for an Ethereum transaction log
  *
  * @generated from message ethermint.evm.v1.EventTxLog
  */
-export class EventTxLog extends Message {
+class EventTxLog extends Message {
     constructor(data) {
         super();
         /**
@@ -113,12 +114,13 @@ EventTxLog.typeName = "ethermint.evm.v1.EventTxLog";
 EventTxLog.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx_logs", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { EventTxLog };
 /**
  * EventMessage
  *
  * @generated from message ethermint.evm.v1.EventMessage
  */
-export class EventMessage extends Message {
+class EventMessage extends Message {
     constructor(data) {
         super();
         /**
@@ -161,12 +163,13 @@ EventMessage.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "tx_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventMessage };
 /**
  * EventBlockBloom defines an Ethereum block bloom filter event
  *
  * @generated from message ethermint.evm.v1.EventBlockBloom
  */
-export class EventBlockBloom extends Message {
+class EventBlockBloom extends Message {
     constructor(data) {
         super();
         /**
@@ -195,4 +198,5 @@ EventBlockBloom.typeName = "ethermint.evm.v1.EventBlockBloom";
 EventBlockBloom.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bloom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventBlockBloom };
 //# sourceMappingURL=events_pb.js.map

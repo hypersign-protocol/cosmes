@@ -23,7 +23,7 @@ import { Params } from "./params_pb.js";
  *
  * @generated from message injective.peggy.v1.MsgSetOrchestratorAddresses
  */
-export class MsgSetOrchestratorAddresses extends Message {
+class MsgSetOrchestratorAddresses extends Message {
     constructor(data) {
         super();
         /**
@@ -60,10 +60,11 @@ MsgSetOrchestratorAddresses.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "orchestrator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "eth_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSetOrchestratorAddresses };
 /**
  * @generated from message injective.peggy.v1.MsgSetOrchestratorAddressesResponse
  */
-export class MsgSetOrchestratorAddressesResponse extends Message {
+class MsgSetOrchestratorAddressesResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -84,6 +85,7 @@ export class MsgSetOrchestratorAddressesResponse extends Message {
 MsgSetOrchestratorAddressesResponse.runtime = proto3;
 MsgSetOrchestratorAddressesResponse.typeName = "injective.peggy.v1.MsgSetOrchestratorAddressesResponse";
 MsgSetOrchestratorAddressesResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetOrchestratorAddressesResponse };
 /**
  * MsgValsetConfirm
  * this is the message sent by the validators when they wish to submit their
@@ -103,7 +105,7 @@ MsgSetOrchestratorAddressesResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message injective.peggy.v1.MsgValsetConfirm
  */
-export class MsgValsetConfirm extends Message {
+class MsgValsetConfirm extends Message {
     constructor(data) {
         super();
         /**
@@ -145,10 +147,11 @@ MsgValsetConfirm.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "eth_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "signature", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgValsetConfirm };
 /**
  * @generated from message injective.peggy.v1.MsgValsetConfirmResponse
  */
-export class MsgValsetConfirmResponse extends Message {
+class MsgValsetConfirmResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -169,6 +172,7 @@ export class MsgValsetConfirmResponse extends Message {
 MsgValsetConfirmResponse.runtime = proto3;
 MsgValsetConfirmResponse.typeName = "injective.peggy.v1.MsgValsetConfirmResponse";
 MsgValsetConfirmResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgValsetConfirmResponse };
 /**
  * MsgSendToEth
  * This is the message that a user calls when they want to bridge an asset
@@ -185,7 +189,7 @@ MsgValsetConfirmResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message injective.peggy.v1.MsgSendToEth
  */
-export class MsgSendToEth extends Message {
+class MsgSendToEth extends Message {
     constructor(data) {
         super();
         /**
@@ -219,10 +223,11 @@ MsgSendToEth.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "amount", kind: "message", T: Coin },
     { no: 4, name: "bridge_fee", kind: "message", T: Coin },
 ]);
+export { MsgSendToEth };
 /**
  * @generated from message injective.peggy.v1.MsgSendToEthResponse
  */
-export class MsgSendToEthResponse extends Message {
+class MsgSendToEthResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -243,6 +248,7 @@ export class MsgSendToEthResponse extends Message {
 MsgSendToEthResponse.runtime = proto3;
 MsgSendToEthResponse.typeName = "injective.peggy.v1.MsgSendToEthResponse";
 MsgSendToEthResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSendToEthResponse };
 /**
  * MsgRequestBatch
  * this is a message anyone can send that requests a batch of transactions to
@@ -256,7 +262,7 @@ MsgSendToEthResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message injective.peggy.v1.MsgRequestBatch
  */
-export class MsgRequestBatch extends Message {
+class MsgRequestBatch extends Message {
     constructor(data) {
         super();
         /**
@@ -288,10 +294,11 @@ MsgRequestBatch.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "orchestrator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgRequestBatch };
 /**
  * @generated from message injective.peggy.v1.MsgRequestBatchResponse
  */
-export class MsgRequestBatchResponse extends Message {
+class MsgRequestBatchResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -312,6 +319,7 @@ export class MsgRequestBatchResponse extends Message {
 MsgRequestBatchResponse.runtime = proto3;
 MsgRequestBatchResponse.typeName = "injective.peggy.v1.MsgRequestBatchResponse";
 MsgRequestBatchResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRequestBatchResponse };
 /**
  * MsgConfirmBatch
  * When validators observe a MsgRequestBatch they form a batch by ordering
@@ -324,7 +332,7 @@ MsgRequestBatchResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message injective.peggy.v1.MsgConfirmBatch
  */
-export class MsgConfirmBatch extends Message {
+class MsgConfirmBatch extends Message {
     constructor(data) {
         super();
         /**
@@ -371,10 +379,11 @@ MsgConfirmBatch.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "orchestrator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "signature", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgConfirmBatch };
 /**
  * @generated from message injective.peggy.v1.MsgConfirmBatchResponse
  */
-export class MsgConfirmBatchResponse extends Message {
+class MsgConfirmBatchResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -395,6 +404,7 @@ export class MsgConfirmBatchResponse extends Message {
 MsgConfirmBatchResponse.runtime = proto3;
 MsgConfirmBatchResponse.typeName = "injective.peggy.v1.MsgConfirmBatchResponse";
 MsgConfirmBatchResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgConfirmBatchResponse };
 /**
  * EthereumBridgeDepositClaim
  * When more than 66% of the active validator set has
@@ -404,7 +414,7 @@ MsgConfirmBatchResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message injective.peggy.v1.MsgDepositClaim
  */
-export class MsgDepositClaim extends Message {
+class MsgDepositClaim extends Message {
     constructor(data) {
         super();
         /**
@@ -466,10 +476,11 @@ MsgDepositClaim.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "orchestrator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 8, name: "data", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgDepositClaim };
 /**
  * @generated from message injective.peggy.v1.MsgDepositClaimResponse
  */
-export class MsgDepositClaimResponse extends Message {
+class MsgDepositClaimResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -490,13 +501,14 @@ export class MsgDepositClaimResponse extends Message {
 MsgDepositClaimResponse.runtime = proto3;
 MsgDepositClaimResponse.typeName = "injective.peggy.v1.MsgDepositClaimResponse";
 MsgDepositClaimResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgDepositClaimResponse };
 /**
  * WithdrawClaim claims that a batch of withdrawal
  * operations on the bridge contract was executed.
  *
  * @generated from message injective.peggy.v1.MsgWithdrawClaim
  */
-export class MsgWithdrawClaim extends Message {
+class MsgWithdrawClaim extends Message {
     constructor(data) {
         super();
         /**
@@ -543,10 +555,11 @@ MsgWithdrawClaim.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "token_contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "orchestrator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgWithdrawClaim };
 /**
  * @generated from message injective.peggy.v1.MsgWithdrawClaimResponse
  */
-export class MsgWithdrawClaimResponse extends Message {
+class MsgWithdrawClaimResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -567,6 +580,7 @@ export class MsgWithdrawClaimResponse extends Message {
 MsgWithdrawClaimResponse.runtime = proto3;
 MsgWithdrawClaimResponse.typeName = "injective.peggy.v1.MsgWithdrawClaimResponse";
 MsgWithdrawClaimResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgWithdrawClaimResponse };
 /**
  * ERC20DeployedClaim allows the Cosmos module
  * to learn about an ERC20 that someone deployed
@@ -574,7 +588,7 @@ MsgWithdrawClaimResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message injective.peggy.v1.MsgERC20DeployedClaim
  */
-export class MsgERC20DeployedClaim extends Message {
+class MsgERC20DeployedClaim extends Message {
     constructor(data) {
         super();
         /**
@@ -636,10 +650,11 @@ MsgERC20DeployedClaim.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "decimals", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 8, name: "orchestrator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgERC20DeployedClaim };
 /**
  * @generated from message injective.peggy.v1.MsgERC20DeployedClaimResponse
  */
-export class MsgERC20DeployedClaimResponse extends Message {
+class MsgERC20DeployedClaimResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -660,6 +675,7 @@ export class MsgERC20DeployedClaimResponse extends Message {
 MsgERC20DeployedClaimResponse.runtime = proto3;
 MsgERC20DeployedClaimResponse.typeName = "injective.peggy.v1.MsgERC20DeployedClaimResponse";
 MsgERC20DeployedClaimResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgERC20DeployedClaimResponse };
 /**
  * This call allows the sender (and only the sender)
  * to cancel a given MsgSendToEth and recieve a refund
@@ -667,7 +683,7 @@ MsgERC20DeployedClaimResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message injective.peggy.v1.MsgCancelSendToEth
  */
-export class MsgCancelSendToEth extends Message {
+class MsgCancelSendToEth extends Message {
     constructor(data) {
         super();
         /**
@@ -699,10 +715,11 @@ MsgCancelSendToEth.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "transaction_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCancelSendToEth };
 /**
  * @generated from message injective.peggy.v1.MsgCancelSendToEthResponse
  */
-export class MsgCancelSendToEthResponse extends Message {
+class MsgCancelSendToEthResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -723,6 +740,7 @@ export class MsgCancelSendToEthResponse extends Message {
 MsgCancelSendToEthResponse.runtime = proto3;
 MsgCancelSendToEthResponse.typeName = "injective.peggy.v1.MsgCancelSendToEthResponse";
 MsgCancelSendToEthResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCancelSendToEthResponse };
 /**
  * This call allows anyone to submit evidence that a
  * validator has signed a valset, batch, or logic call that never
@@ -730,7 +748,7 @@ MsgCancelSendToEthResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message injective.peggy.v1.MsgSubmitBadSignatureEvidence
  */
-export class MsgSubmitBadSignatureEvidence extends Message {
+class MsgSubmitBadSignatureEvidence extends Message {
     constructor(data) {
         super();
         /**
@@ -763,10 +781,11 @@ MsgSubmitBadSignatureEvidence.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "signature", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSubmitBadSignatureEvidence };
 /**
  * @generated from message injective.peggy.v1.MsgSubmitBadSignatureEvidenceResponse
  */
-export class MsgSubmitBadSignatureEvidenceResponse extends Message {
+class MsgSubmitBadSignatureEvidenceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -787,13 +806,14 @@ export class MsgSubmitBadSignatureEvidenceResponse extends Message {
 MsgSubmitBadSignatureEvidenceResponse.runtime = proto3;
 MsgSubmitBadSignatureEvidenceResponse.typeName = "injective.peggy.v1.MsgSubmitBadSignatureEvidenceResponse";
 MsgSubmitBadSignatureEvidenceResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSubmitBadSignatureEvidenceResponse };
 /**
  * This informs the Cosmos module that a validator
  * set has been updated.
  *
  * @generated from message injective.peggy.v1.MsgValsetUpdatedClaim
  */
-export class MsgValsetUpdatedClaim extends Message {
+class MsgValsetUpdatedClaim extends Message {
     constructor(data) {
         super();
         /**
@@ -850,10 +870,11 @@ MsgValsetUpdatedClaim.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "reward_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "orchestrator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgValsetUpdatedClaim };
 /**
  * @generated from message injective.peggy.v1.MsgValsetUpdatedClaimResponse
  */
-export class MsgValsetUpdatedClaimResponse extends Message {
+class MsgValsetUpdatedClaimResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -874,10 +895,11 @@ export class MsgValsetUpdatedClaimResponse extends Message {
 MsgValsetUpdatedClaimResponse.runtime = proto3;
 MsgValsetUpdatedClaimResponse.typeName = "injective.peggy.v1.MsgValsetUpdatedClaimResponse";
 MsgValsetUpdatedClaimResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgValsetUpdatedClaimResponse };
 /**
  * @generated from message injective.peggy.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -907,10 +929,11 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * @generated from message injective.peggy.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -931,4 +954,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "injective.peggy.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=msgs_pb.js.map

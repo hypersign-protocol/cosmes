@@ -8,7 +8,7 @@ import { Duration, Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.group.module.v1.Module
  */
-export class Module extends Message {
+class Module extends Message {
     constructor(data) {
         super();
         /**
@@ -39,4 +39,5 @@ Module.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "max_execution_period", kind: "message", T: Duration },
     { no: 2, name: "max_metadata_len", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Module };
 //# sourceMappingURL=module_pb.js.map

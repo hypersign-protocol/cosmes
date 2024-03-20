@@ -11,7 +11,7 @@ import { Coin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.tx.v1beta1.Tx
  */
-export class Tx extends Message {
+class Tx extends Message {
     constructor(data) {
         super();
         /**
@@ -44,6 +44,7 @@ Tx.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "auth_info", kind: "message", T: AuthInfo },
     { no: 3, name: "signatures", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { Tx };
 /**
  * TxRaw is a variant of Tx that pins the signer's exact binary representation
  * of body and auth_info. This is used for signing, broadcasting and
@@ -53,7 +54,7 @@ Tx.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.TxRaw
  */
-export class TxRaw extends Message {
+class TxRaw extends Message {
     constructor(data) {
         super();
         /**
@@ -100,12 +101,13 @@ TxRaw.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "auth_info_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "signatures", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { TxRaw };
 /**
  * SignDoc is the type used for generating sign bytes for SIGN_MODE_DIRECT.
  *
  * @generated from message cosmos.tx.v1beta1.SignDoc
  */
-export class SignDoc extends Message {
+class SignDoc extends Message {
     constructor(data) {
         super();
         /**
@@ -159,6 +161,7 @@ SignDoc.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "chain_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "account_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SignDoc };
 /**
  * SignDocDirectAux is the type used for generating sign bytes for
  * SIGN_MODE_DIRECT_AUX.
@@ -167,7 +170,7 @@ SignDoc.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.SignDocDirectAux
  */
-export class SignDocDirectAux extends Message {
+class SignDocDirectAux extends Message {
     constructor(data) {
         super();
         /**
@@ -222,12 +225,13 @@ SignDocDirectAux.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 6, name: "tip", kind: "message", T: Tip },
 ]);
+export { SignDocDirectAux };
 /**
  * TxBody is the body of a transaction that all signers sign over.
  *
  * @generated from message cosmos.tx.v1beta1.TxBody
  */
-export class TxBody extends Message {
+class TxBody extends Message {
     constructor(data) {
         super();
         /**
@@ -297,13 +301,14 @@ TxBody.fields = proto3.util.newFieldList(() => [
     { no: 1023, name: "extension_options", kind: "message", T: Any, repeated: true },
     { no: 2047, name: "non_critical_extension_options", kind: "message", T: Any, repeated: true },
 ]);
+export { TxBody };
 /**
  * AuthInfo describes the fee and signer modes that are used to sign a
  * transaction.
  *
  * @generated from message cosmos.tx.v1beta1.AuthInfo
  */
-export class AuthInfo extends Message {
+class AuthInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -337,13 +342,14 @@ AuthInfo.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "fee", kind: "message", T: Fee },
     { no: 3, name: "tip", kind: "message", T: Tip },
 ]);
+export { AuthInfo };
 /**
  * SignerInfo describes the public key and signing mode of a single top-level
  * signer.
  *
  * @generated from message cosmos.tx.v1beta1.SignerInfo
  */
-export class SignerInfo extends Message {
+class SignerInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -376,12 +382,13 @@ SignerInfo.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "mode_info", kind: "message", T: ModeInfo },
     { no: 3, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SignerInfo };
 /**
  * ModeInfo describes the signing mode of a single or nested multisig signer.
  *
  * @generated from message cosmos.tx.v1beta1.ModeInfo
  */
-export class ModeInfo extends Message {
+class ModeInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -412,6 +419,7 @@ ModeInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "single", kind: "message", T: ModeInfo_Single, oneof: "sum" },
     { no: 2, name: "multi", kind: "message", T: ModeInfo_Multi, oneof: "sum" },
 ]);
+export { ModeInfo };
 /**
  * Single is the mode info for a single signer. It is structured as a message
  * to allow for additional fields such as locale for SIGN_MODE_TEXTUAL in the
@@ -419,7 +427,7 @@ ModeInfo.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.ModeInfo.Single
  */
-export class ModeInfo_Single extends Message {
+class ModeInfo_Single extends Message {
     constructor(data) {
         super();
         /**
@@ -448,12 +456,13 @@ ModeInfo_Single.typeName = "cosmos.tx.v1beta1.ModeInfo.Single";
 ModeInfo_Single.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "mode", kind: "enum", T: proto3.getEnumType(SignMode) },
 ]);
+export { ModeInfo_Single };
 /**
  * Multi is the mode info for a multisig public key
  *
  * @generated from message cosmos.tx.v1beta1.ModeInfo.Multi
  */
-export class ModeInfo_Multi extends Message {
+class ModeInfo_Multi extends Message {
     constructor(data) {
         super();
         /**
@@ -484,6 +493,7 @@ ModeInfo_Multi.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bitarray", kind: "message", T: CompactBitArray },
     { no: 2, name: "mode_infos", kind: "message", T: ModeInfo, repeated: true },
 ]);
+export { ModeInfo_Multi };
 /**
  * Fee includes the amount of coins paid in fees and the maximum
  * gas to be used by the transaction. The ratio yields an effective "gasprice",
@@ -491,7 +501,7 @@ ModeInfo_Multi.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.Fee
  */
-export class Fee extends Message {
+class Fee extends Message {
     constructor(data) {
         super();
         /**
@@ -546,6 +556,7 @@ Fee.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "payer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "granter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Fee };
 /**
  * Tip is the tip used for meta-transactions.
  *
@@ -553,7 +564,7 @@ Fee.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.Tip
  */
-export class Tip extends Message {
+class Tip extends Message {
     constructor(data) {
         super();
         /**
@@ -589,6 +600,7 @@ Tip.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "tipper", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Tip };
 /**
  * AuxSignerData is the intermediary format that an auxiliary signer (e.g. a
  * tipper) builds and sends to the fee payer (who will build and broadcast the
@@ -599,7 +611,7 @@ Tip.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.tx.v1beta1.AuxSignerData
  */
-export class AuxSignerData extends Message {
+class AuxSignerData extends Message {
     constructor(data) {
         super();
         /**
@@ -645,4 +657,5 @@ AuxSignerData.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "mode", kind: "enum", T: proto3.getEnumType(SignMode) },
     { no: 4, name: "sig", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { AuxSignerData };
 //# sourceMappingURL=tx_pb.js.map

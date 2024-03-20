@@ -8,7 +8,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.concentratedliquidity.poolmodel.concentrated.v1beta1.MsgCreateConcentratedPool
  */
-export class MsgCreateConcentratedPool extends Message {
+class MsgCreateConcentratedPool extends Message {
     constructor(data) {
         super();
         /**
@@ -55,12 +55,13 @@ MsgCreateConcentratedPool.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "tick_spacing", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "spread_factor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateConcentratedPool };
 /**
  * Returns a unique poolID to identify the pool with.
  *
  * @generated from message osmosis.concentratedliquidity.poolmodel.concentrated.v1beta1.MsgCreateConcentratedPoolResponse
  */
-export class MsgCreateConcentratedPoolResponse extends Message {
+class MsgCreateConcentratedPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -87,4 +88,5 @@ MsgCreateConcentratedPoolResponse.typeName = "osmosis.concentratedliquidity.pool
 MsgCreateConcentratedPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateConcentratedPoolResponse };
 //# sourceMappingURL=tx_pb.js.map

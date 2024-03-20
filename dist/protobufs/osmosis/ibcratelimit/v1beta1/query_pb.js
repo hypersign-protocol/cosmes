@@ -9,7 +9,7 @@ import { Params } from "./params_pb.js";
  *
  * @generated from message osmosis.ibcratelimit.v1beta1.ParamsRequest
  */
-export class ParamsRequest extends Message {
+class ParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,12 +30,13 @@ export class ParamsRequest extends Message {
 ParamsRequest.runtime = proto3;
 ParamsRequest.typeName = "osmosis.ibcratelimit.v1beta1.ParamsRequest";
 ParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { ParamsRequest };
 /**
  * aramsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message osmosis.ibcratelimit.v1beta1.ParamsResponse
  */
-export class ParamsResponse extends Message {
+class ParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -58,4 +59,5 @@ ParamsResponse.typeName = "osmosis.ibcratelimit.v1beta1.ParamsResponse";
 ParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { ParamsResponse };
 //# sourceMappingURL=query_pb.js.map

@@ -11,7 +11,7 @@ import { Metadata, Params, SendEnabled } from "./bank_pb.js";
  *
  * @generated from message cosmos.bank.v1beta1.QueryBalanceRequest
  */
-export class QueryBalanceRequest extends Message {
+class QueryBalanceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -47,12 +47,13 @@ QueryBalanceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBalanceRequest };
 /**
  * QueryBalanceResponse is the response type for the Query/Balance RPC method.
  *
  * @generated from message cosmos.bank.v1beta1.QueryBalanceResponse
  */
-export class QueryBalanceResponse extends Message {
+class QueryBalanceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -75,12 +76,13 @@ QueryBalanceResponse.typeName = "cosmos.bank.v1beta1.QueryBalanceResponse";
 QueryBalanceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balance", kind: "message", T: Coin },
 ]);
+export { QueryBalanceResponse };
 /**
  * QueryBalanceRequest is the request type for the Query/AllBalances RPC method.
  *
  * @generated from message cosmos.bank.v1beta1.QueryAllBalancesRequest
  */
-export class QueryAllBalancesRequest extends Message {
+class QueryAllBalancesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -110,13 +112,14 @@ QueryAllBalancesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryAllBalancesRequest };
 /**
  * QueryAllBalancesResponse is the response type for the Query/AllBalances RPC
  * method.
  *
  * @generated from message cosmos.bank.v1beta1.QueryAllBalancesResponse
  */
-export class QueryAllBalancesResponse extends Message {
+class QueryAllBalancesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -146,6 +149,7 @@ QueryAllBalancesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balances", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryAllBalancesResponse };
 /**
  * QuerySpendableBalancesRequest defines the gRPC request structure for querying
  * an account's spendable balances.
@@ -154,7 +158,7 @@ QueryAllBalancesResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.QuerySpendableBalancesRequest
  */
-export class QuerySpendableBalancesRequest extends Message {
+class QuerySpendableBalancesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -184,6 +188,7 @@ QuerySpendableBalancesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QuerySpendableBalancesRequest };
 /**
  * QuerySpendableBalancesResponse defines the gRPC response structure for querying
  * an account's spendable balances.
@@ -192,7 +197,7 @@ QuerySpendableBalancesRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.QuerySpendableBalancesResponse
  */
-export class QuerySpendableBalancesResponse extends Message {
+class QuerySpendableBalancesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -222,6 +227,7 @@ QuerySpendableBalancesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balances", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QuerySpendableBalancesResponse };
 /**
  * QuerySpendableBalanceByDenomRequest defines the gRPC request structure for
  * querying an account's spendable balance for a specific denom.
@@ -230,7 +236,7 @@ QuerySpendableBalancesResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.QuerySpendableBalanceByDenomRequest
  */
-export class QuerySpendableBalanceByDenomRequest extends Message {
+class QuerySpendableBalanceByDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -266,6 +272,7 @@ QuerySpendableBalanceByDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpendableBalanceByDenomRequest };
 /**
  * QuerySpendableBalanceByDenomResponse defines the gRPC response structure for
  * querying an account's spendable balance for a specific denom.
@@ -274,7 +281,7 @@ QuerySpendableBalanceByDenomRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.QuerySpendableBalanceByDenomResponse
  */
-export class QuerySpendableBalanceByDenomResponse extends Message {
+class QuerySpendableBalanceByDenomResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -297,13 +304,14 @@ QuerySpendableBalanceByDenomResponse.typeName = "cosmos.bank.v1beta1.QuerySpenda
 QuerySpendableBalanceByDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balance", kind: "message", T: Coin },
 ]);
+export { QuerySpendableBalanceByDenomResponse };
 /**
  * QueryTotalSupplyRequest is the request type for the Query/TotalSupply RPC
  * method.
  *
  * @generated from message cosmos.bank.v1beta1.QueryTotalSupplyRequest
  */
-export class QueryTotalSupplyRequest extends Message {
+class QueryTotalSupplyRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -326,13 +334,14 @@ QueryTotalSupplyRequest.typeName = "cosmos.bank.v1beta1.QueryTotalSupplyRequest"
 QueryTotalSupplyRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryTotalSupplyRequest };
 /**
  * QueryTotalSupplyResponse is the response type for the Query/TotalSupply RPC
  * method
  *
  * @generated from message cosmos.bank.v1beta1.QueryTotalSupplyResponse
  */
-export class QueryTotalSupplyResponse extends Message {
+class QueryTotalSupplyResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -362,12 +371,13 @@ QueryTotalSupplyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "supply", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryTotalSupplyResponse };
 /**
  * QuerySupplyOfRequest is the request type for the Query/SupplyOf RPC method.
  *
  * @generated from message cosmos.bank.v1beta1.QuerySupplyOfRequest
  */
-export class QuerySupplyOfRequest extends Message {
+class QuerySupplyOfRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -396,12 +406,13 @@ QuerySupplyOfRequest.typeName = "cosmos.bank.v1beta1.QuerySupplyOfRequest";
 QuerySupplyOfRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySupplyOfRequest };
 /**
  * QuerySupplyOfResponse is the response type for the Query/SupplyOf RPC method.
  *
  * @generated from message cosmos.bank.v1beta1.QuerySupplyOfResponse
  */
-export class QuerySupplyOfResponse extends Message {
+class QuerySupplyOfResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -424,12 +435,13 @@ QuerySupplyOfResponse.typeName = "cosmos.bank.v1beta1.QuerySupplyOfResponse";
 QuerySupplyOfResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin },
 ]);
+export { QuerySupplyOfResponse };
 /**
  * QueryParamsRequest defines the request type for querying x/bank parameters.
  *
  * @generated from message cosmos.bank.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -450,12 +462,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "cosmos.bank.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse defines the response type for querying x/bank parameters.
  *
  * @generated from message cosmos.bank.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -478,12 +491,13 @@ QueryParamsResponse.typeName = "cosmos.bank.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryDenomsMetadataRequest is the request type for the Query/DenomsMetadata RPC method.
  *
  * @generated from message cosmos.bank.v1beta1.QueryDenomsMetadataRequest
  */
-export class QueryDenomsMetadataRequest extends Message {
+class QueryDenomsMetadataRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -506,13 +520,14 @@ QueryDenomsMetadataRequest.typeName = "cosmos.bank.v1beta1.QueryDenomsMetadataRe
 QueryDenomsMetadataRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryDenomsMetadataRequest };
 /**
  * QueryDenomsMetadataResponse is the response type for the Query/DenomsMetadata RPC
  * method.
  *
  * @generated from message cosmos.bank.v1beta1.QueryDenomsMetadataResponse
  */
-export class QueryDenomsMetadataResponse extends Message {
+class QueryDenomsMetadataResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -542,12 +557,13 @@ QueryDenomsMetadataResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "metadatas", kind: "message", T: Metadata, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryDenomsMetadataResponse };
 /**
  * QueryDenomMetadataRequest is the request type for the Query/DenomMetadata RPC method.
  *
  * @generated from message cosmos.bank.v1beta1.QueryDenomMetadataRequest
  */
-export class QueryDenomMetadataRequest extends Message {
+class QueryDenomMetadataRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -576,13 +592,14 @@ QueryDenomMetadataRequest.typeName = "cosmos.bank.v1beta1.QueryDenomMetadataRequ
 QueryDenomMetadataRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomMetadataRequest };
 /**
  * QueryDenomMetadataResponse is the response type for the Query/DenomMetadata RPC
  * method.
  *
  * @generated from message cosmos.bank.v1beta1.QueryDenomMetadataResponse
  */
-export class QueryDenomMetadataResponse extends Message {
+class QueryDenomMetadataResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -605,6 +622,7 @@ QueryDenomMetadataResponse.typeName = "cosmos.bank.v1beta1.QueryDenomMetadataRes
 QueryDenomMetadataResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "metadata", kind: "message", T: Metadata },
 ]);
+export { QueryDenomMetadataResponse };
 /**
  * QueryDenomOwnersRequest defines the request type for the DenomOwners RPC query,
  * which queries for a paginated set of all account holders of a particular
@@ -612,7 +630,7 @@ QueryDenomMetadataResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.QueryDenomOwnersRequest
  */
-export class QueryDenomOwnersRequest extends Message {
+class QueryDenomOwnersRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -642,6 +660,7 @@ QueryDenomOwnersRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryDenomOwnersRequest };
 /**
  * DenomOwner defines structure representing an account that owns or holds a
  * particular denominated token. It contains the account address and account
@@ -651,7 +670,7 @@ QueryDenomOwnersRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.DenomOwner
  */
-export class DenomOwner extends Message {
+class DenomOwner extends Message {
     constructor(data) {
         super();
         /**
@@ -681,6 +700,7 @@ DenomOwner.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "balance", kind: "message", T: Coin },
 ]);
+export { DenomOwner };
 /**
  * QueryDenomOwnersResponse defines the RPC response of a DenomOwners RPC query.
  *
@@ -688,7 +708,7 @@ DenomOwner.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.QueryDenomOwnersResponse
  */
-export class QueryDenomOwnersResponse extends Message {
+class QueryDenomOwnersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -716,6 +736,7 @@ QueryDenomOwnersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom_owners", kind: "message", T: DenomOwner, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryDenomOwnersResponse };
 /**
  * QuerySendEnabledRequest defines the RPC request for looking up SendEnabled entries.
  *
@@ -723,7 +744,7 @@ QueryDenomOwnersResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.QuerySendEnabledRequest
  */
-export class QuerySendEnabledRequest extends Message {
+class QuerySendEnabledRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -753,6 +774,7 @@ QuerySendEnabledRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denoms", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 99, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QuerySendEnabledRequest };
 /**
  * QuerySendEnabledResponse defines the RPC response of a SendEnable query.
  *
@@ -760,7 +782,7 @@ QuerySendEnabledRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.bank.v1beta1.QuerySendEnabledResponse
  */
-export class QuerySendEnabledResponse extends Message {
+class QuerySendEnabledResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -788,4 +810,5 @@ QuerySendEnabledResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "send_enabled", kind: "message", T: SendEnabled, repeated: true },
     { no: 99, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QuerySendEnabledResponse };
 //# sourceMappingURL=query_pb.js.map

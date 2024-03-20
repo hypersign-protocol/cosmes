@@ -8,7 +8,7 @@ import { GenesisState } from "./genesis_pb.js";
 /**
  * @generated from message injective.oracle.v1beta1.QueryPythPriceRequest
  */
-export class QueryPythPriceRequest extends Message {
+class QueryPythPriceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -35,10 +35,11 @@ QueryPythPriceRequest.typeName = "injective.oracle.v1beta1.QueryPythPriceRequest
 QueryPythPriceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryPythPriceRequest };
 /**
  * @generated from message injective.oracle.v1beta1.QueryPythPriceResponse
  */
-export class QueryPythPriceResponse extends Message {
+class QueryPythPriceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -61,13 +62,14 @@ QueryPythPriceResponse.typeName = "injective.oracle.v1beta1.QueryPythPriceRespon
 QueryPythPriceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_state", kind: "message", T: PythPriceState },
 ]);
+export { QueryPythPriceResponse };
 /**
  * QueryOracleParamsRequest is the request type for the Query/OracleParams RPC
  * method.
  *
  * @generated from message injective.oracle.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -88,13 +90,14 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "injective.oracle.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryOracleParamsResponse is the response type for the Query/OracleParams RPC
  * method.
  *
  * @generated from message injective.oracle.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -117,13 +120,14 @@ QueryParamsResponse.typeName = "injective.oracle.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryBandRelayersRequest is the request type for the Query/BandRelayers RPC
  * method.
  *
  * @generated from message injective.oracle.v1beta1.QueryBandRelayersRequest
  */
-export class QueryBandRelayersRequest extends Message {
+class QueryBandRelayersRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -144,13 +148,14 @@ export class QueryBandRelayersRequest extends Message {
 QueryBandRelayersRequest.runtime = proto3;
 QueryBandRelayersRequest.typeName = "injective.oracle.v1beta1.QueryBandRelayersRequest";
 QueryBandRelayersRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBandRelayersRequest };
 /**
  * QueryBandRelayersResponse is the response type for the Query/BandRelayers RPC
  * method.
  *
  * @generated from message injective.oracle.v1beta1.QueryBandRelayersResponse
  */
-export class QueryBandRelayersResponse extends Message {
+class QueryBandRelayersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -177,13 +182,14 @@ QueryBandRelayersResponse.typeName = "injective.oracle.v1beta1.QueryBandRelayers
 QueryBandRelayersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryBandRelayersResponse };
 /**
  * QueryBandPriceStatesRequest is the request type for the Query/BandPriceStates
  * RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryBandPriceStatesRequest
  */
-export class QueryBandPriceStatesRequest extends Message {
+class QueryBandPriceStatesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -204,13 +210,14 @@ export class QueryBandPriceStatesRequest extends Message {
 QueryBandPriceStatesRequest.runtime = proto3;
 QueryBandPriceStatesRequest.typeName = "injective.oracle.v1beta1.QueryBandPriceStatesRequest";
 QueryBandPriceStatesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBandPriceStatesRequest };
 /**
  * QueryBandPriceStatesResponse is the response type for the
  * Query/BandPriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryBandPriceStatesResponse
  */
-export class QueryBandPriceStatesResponse extends Message {
+class QueryBandPriceStatesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -237,13 +244,14 @@ QueryBandPriceStatesResponse.typeName = "injective.oracle.v1beta1.QueryBandPrice
 QueryBandPriceStatesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_states", kind: "message", T: BandPriceState, repeated: true },
 ]);
+export { QueryBandPriceStatesResponse };
 /**
  * QueryBandIBCPriceStatesRequest is the request type for the
  * Query/BandIBCPriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryBandIBCPriceStatesRequest
  */
-export class QueryBandIBCPriceStatesRequest extends Message {
+class QueryBandIBCPriceStatesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -264,13 +272,14 @@ export class QueryBandIBCPriceStatesRequest extends Message {
 QueryBandIBCPriceStatesRequest.runtime = proto3;
 QueryBandIBCPriceStatesRequest.typeName = "injective.oracle.v1beta1.QueryBandIBCPriceStatesRequest";
 QueryBandIBCPriceStatesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBandIBCPriceStatesRequest };
 /**
  * QueryBandIBCPriceStatesResponse is the response type for the
  * Query/BandIBCPriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryBandIBCPriceStatesResponse
  */
-export class QueryBandIBCPriceStatesResponse extends Message {
+class QueryBandIBCPriceStatesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -297,13 +306,14 @@ QueryBandIBCPriceStatesResponse.typeName = "injective.oracle.v1beta1.QueryBandIB
 QueryBandIBCPriceStatesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_states", kind: "message", T: BandPriceState, repeated: true },
 ]);
+export { QueryBandIBCPriceStatesResponse };
 /**
  * QueryPriceFeedPriceStatesRequest is the request type for the
  * Query/PriceFeedPriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryPriceFeedPriceStatesRequest
  */
-export class QueryPriceFeedPriceStatesRequest extends Message {
+class QueryPriceFeedPriceStatesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -324,13 +334,14 @@ export class QueryPriceFeedPriceStatesRequest extends Message {
 QueryPriceFeedPriceStatesRequest.runtime = proto3;
 QueryPriceFeedPriceStatesRequest.typeName = "injective.oracle.v1beta1.QueryPriceFeedPriceStatesRequest";
 QueryPriceFeedPriceStatesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryPriceFeedPriceStatesRequest };
 /**
  * QueryPriceFeedPriceStatesResponse is the response type for the
  * Query/PriceFeedPriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryPriceFeedPriceStatesResponse
  */
-export class QueryPriceFeedPriceStatesResponse extends Message {
+class QueryPriceFeedPriceStatesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -357,13 +368,14 @@ QueryPriceFeedPriceStatesResponse.typeName = "injective.oracle.v1beta1.QueryPric
 QueryPriceFeedPriceStatesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_states", kind: "message", T: PriceFeedState, repeated: true },
 ]);
+export { QueryPriceFeedPriceStatesResponse };
 /**
  * QueryCoinbasePriceStatesRequest is the request type for the
  * Query/CoinbasePriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryCoinbasePriceStatesRequest
  */
-export class QueryCoinbasePriceStatesRequest extends Message {
+class QueryCoinbasePriceStatesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -384,13 +396,14 @@ export class QueryCoinbasePriceStatesRequest extends Message {
 QueryCoinbasePriceStatesRequest.runtime = proto3;
 QueryCoinbasePriceStatesRequest.typeName = "injective.oracle.v1beta1.QueryCoinbasePriceStatesRequest";
 QueryCoinbasePriceStatesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryCoinbasePriceStatesRequest };
 /**
  * QueryCoinbasePriceStatesResponse is the response type for the
  * Query/CoinbasePriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryCoinbasePriceStatesResponse
  */
-export class QueryCoinbasePriceStatesResponse extends Message {
+class QueryCoinbasePriceStatesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -417,13 +430,14 @@ QueryCoinbasePriceStatesResponse.typeName = "injective.oracle.v1beta1.QueryCoinb
 QueryCoinbasePriceStatesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_states", kind: "message", T: CoinbasePriceState, repeated: true },
 ]);
+export { QueryCoinbasePriceStatesResponse };
 /**
  * QueryPythPriceStatesRequest is the request type for the
  * Query/CoinbasePriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryPythPriceStatesRequest
  */
-export class QueryPythPriceStatesRequest extends Message {
+class QueryPythPriceStatesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -444,13 +458,14 @@ export class QueryPythPriceStatesRequest extends Message {
 QueryPythPriceStatesRequest.runtime = proto3;
 QueryPythPriceStatesRequest.typeName = "injective.oracle.v1beta1.QueryPythPriceStatesRequest";
 QueryPythPriceStatesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryPythPriceStatesRequest };
 /**
  * QueryPythPriceStatesResponse is the response type for the
  * Query/CoinbasePriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryPythPriceStatesResponse
  */
-export class QueryPythPriceStatesResponse extends Message {
+class QueryPythPriceStatesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -477,13 +492,14 @@ QueryPythPriceStatesResponse.typeName = "injective.oracle.v1beta1.QueryPythPrice
 QueryPythPriceStatesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_states", kind: "message", T: PythPriceState, repeated: true },
 ]);
+export { QueryPythPriceStatesResponse };
 /**
  * QueryProviderPriceStateRequest is the request type for the
  * Query/ProviderPriceState RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryProviderPriceStateRequest
  */
-export class QueryProviderPriceStateRequest extends Message {
+class QueryProviderPriceStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -515,13 +531,14 @@ QueryProviderPriceStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "provider", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryProviderPriceStateRequest };
 /**
  * QueryProviderPriceStatesResponse is the response type for the
  * Query/ProviderPriceStates RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryProviderPriceStateResponse
  */
-export class QueryProviderPriceStateResponse extends Message {
+class QueryProviderPriceStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -544,13 +561,14 @@ QueryProviderPriceStateResponse.typeName = "injective.oracle.v1beta1.QueryProvid
 QueryProviderPriceStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_state", kind: "message", T: PriceState },
 ]);
+export { QueryProviderPriceStateResponse };
 /**
  * QueryModuleStateRequest is the request type for the Query/OracleModuleState
  * RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryModuleStateRequest
  */
-export class QueryModuleStateRequest extends Message {
+class QueryModuleStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -571,13 +589,14 @@ export class QueryModuleStateRequest extends Message {
 QueryModuleStateRequest.runtime = proto3;
 QueryModuleStateRequest.typeName = "injective.oracle.v1beta1.QueryModuleStateRequest";
 QueryModuleStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryModuleStateRequest };
 /**
  * QueryModuleStateResponse is the response type for the Query/OracleModuleState
  * RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryModuleStateResponse
  */
-export class QueryModuleStateResponse extends Message {
+class QueryModuleStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -600,10 +619,11 @@ QueryModuleStateResponse.typeName = "injective.oracle.v1beta1.QueryModuleStateRe
 QueryModuleStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: GenesisState },
 ]);
+export { QueryModuleStateResponse };
 /**
  * @generated from message injective.oracle.v1beta1.QueryHistoricalPriceRecordsRequest
  */
-export class QueryHistoricalPriceRecordsRequest extends Message {
+class QueryHistoricalPriceRecordsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -635,10 +655,11 @@ QueryHistoricalPriceRecordsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "oracle", kind: "enum", T: proto3.getEnumType(OracleType) },
     { no: 2, name: "symbol_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryHistoricalPriceRecordsRequest };
 /**
  * @generated from message injective.oracle.v1beta1.QueryHistoricalPriceRecordsResponse
  */
-export class QueryHistoricalPriceRecordsResponse extends Message {
+class QueryHistoricalPriceRecordsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -665,10 +686,11 @@ QueryHistoricalPriceRecordsResponse.typeName = "injective.oracle.v1beta1.QueryHi
 QueryHistoricalPriceRecordsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_records", kind: "message", T: PriceRecords, repeated: true },
 ]);
+export { QueryHistoricalPriceRecordsResponse };
 /**
  * @generated from message injective.oracle.v1beta1.OracleHistoryOptions
  */
-export class OracleHistoryOptions extends Message {
+class OracleHistoryOptions extends Message {
     constructor(data) {
         super();
         /**
@@ -715,13 +737,14 @@ OracleHistoryOptions.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "include_raw_history", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 3, name: "include_metadata", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { OracleHistoryOptions };
 /**
  * QueryOracleVolatilityRequest is the request type for Query/OracleVolatility
  * RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryOracleVolatilityRequest
  */
-export class QueryOracleVolatilityRequest extends Message {
+class QueryOracleVolatilityRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -746,13 +769,14 @@ QueryOracleVolatilityRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "quote_info", kind: "message", T: OracleInfo },
     { no: 3, name: "oracle_history_options", kind: "message", T: OracleHistoryOptions },
 ]);
+export { QueryOracleVolatilityRequest };
 /**
  * QueryOracleVolatilityResponse is the response type for Query/OracleVolatility
  * RPC method.
  *
  * @generated from message injective.oracle.v1beta1.QueryOracleVolatilityResponse
  */
-export class QueryOracleVolatilityResponse extends Message {
+class QueryOracleVolatilityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -785,10 +809,11 @@ QueryOracleVolatilityResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "history_metadata", kind: "message", T: MetadataStatistics },
     { no: 3, name: "raw_history", kind: "message", T: PriceRecord, repeated: true },
 ]);
+export { QueryOracleVolatilityResponse };
 /**
  * @generated from message injective.oracle.v1beta1.QueryOracleProvidersInfoRequest
  */
-export class QueryOracleProvidersInfoRequest extends Message {
+class QueryOracleProvidersInfoRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -809,10 +834,11 @@ export class QueryOracleProvidersInfoRequest extends Message {
 QueryOracleProvidersInfoRequest.runtime = proto3;
 QueryOracleProvidersInfoRequest.typeName = "injective.oracle.v1beta1.QueryOracleProvidersInfoRequest";
 QueryOracleProvidersInfoRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryOracleProvidersInfoRequest };
 /**
  * @generated from message injective.oracle.v1beta1.QueryOracleProvidersInfoResponse
  */
-export class QueryOracleProvidersInfoResponse extends Message {
+class QueryOracleProvidersInfoResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -839,10 +865,11 @@ QueryOracleProvidersInfoResponse.typeName = "injective.oracle.v1beta1.QueryOracl
 QueryOracleProvidersInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "providers", kind: "message", T: ProviderInfo, repeated: true },
 ]);
+export { QueryOracleProvidersInfoResponse };
 /**
  * @generated from message injective.oracle.v1beta1.QueryOracleProviderPricesRequest
  */
-export class QueryOracleProviderPricesRequest extends Message {
+class QueryOracleProviderPricesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -869,10 +896,11 @@ QueryOracleProviderPricesRequest.typeName = "injective.oracle.v1beta1.QueryOracl
 QueryOracleProviderPricesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "provider", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryOracleProviderPricesRequest };
 /**
  * @generated from message injective.oracle.v1beta1.QueryOracleProviderPricesResponse
  */
-export class QueryOracleProviderPricesResponse extends Message {
+class QueryOracleProviderPricesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -899,13 +927,14 @@ QueryOracleProviderPricesResponse.typeName = "injective.oracle.v1beta1.QueryOrac
 QueryOracleProviderPricesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "providerState", kind: "message", T: ProviderState, repeated: true },
 ]);
+export { QueryOracleProviderPricesResponse };
 /**
  * QueryOraclePriceRequest is the request type for the Query/OraclePrice RPC
  * method.
  *
  * @generated from message injective.oracle.v1beta1.QueryOraclePriceRequest
  */
-export class QueryOraclePriceRequest extends Message {
+class QueryOraclePriceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -942,10 +971,11 @@ QueryOraclePriceRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "base", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "quote", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryOraclePriceRequest };
 /**
  * @generated from message injective.oracle.v1beta1.PricePairState
  */
-export class PricePairState extends Message {
+class PricePairState extends Message {
     constructor(data) {
         super();
         /**
@@ -1002,13 +1032,14 @@ PricePairState.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "base_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 7, name: "quote_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { PricePairState };
 /**
  * QueryOraclePriceResponse is the response type for the Query/OraclePrice RPC
  * method.
  *
  * @generated from message injective.oracle.v1beta1.QueryOraclePriceResponse
  */
-export class QueryOraclePriceResponse extends Message {
+class QueryOraclePriceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1031,4 +1062,5 @@ QueryOraclePriceResponse.typeName = "injective.oracle.v1beta1.QueryOraclePriceRe
 QueryOraclePriceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price_pair_state", kind: "message", T: PricePairState },
 ]);
+export { QueryOraclePriceResponse };
 //# sourceMappingURL=query_pb.js.map

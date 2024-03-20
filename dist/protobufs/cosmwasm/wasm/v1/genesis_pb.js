@@ -9,7 +9,7 @@ import { CodeInfo, ContractCodeHistoryEntry, ContractInfo, Model, Params } from 
  *
  * @generated from message cosmwasm.wasm.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -47,12 +47,13 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "contracts", kind: "message", T: Contract, repeated: true },
     { no: 4, name: "sequences", kind: "message", T: Sequence, repeated: true },
 ]);
+export { GenesisState };
 /**
  * Code struct encompasses CodeInfo and CodeBytes
  *
  * @generated from message cosmwasm.wasm.v1.Code
  */
-export class Code extends Message {
+class Code extends Message {
     constructor(data) {
         super();
         /**
@@ -92,12 +93,13 @@ Code.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "code_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "pinned", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { Code };
 /**
  * Contract struct encompasses ContractAddress, ContractInfo, and ContractState
  *
  * @generated from message cosmwasm.wasm.v1.Contract
  */
-export class Contract extends Message {
+class Contract extends Message {
     constructor(data) {
         super();
         /**
@@ -135,12 +137,13 @@ Contract.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "contract_state", kind: "message", T: Model, repeated: true },
     { no: 4, name: "contract_code_history", kind: "message", T: ContractCodeHistoryEntry, repeated: true },
 ]);
+export { Contract };
 /**
  * Sequence key and value of an id generation counter
  *
  * @generated from message cosmwasm.wasm.v1.Sequence
  */
-export class Sequence extends Message {
+class Sequence extends Message {
     constructor(data) {
         super();
         /**
@@ -172,4 +175,5 @@ Sequence.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "id_key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "value", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Sequence };
 //# sourceMappingURL=genesis_pb.js.map

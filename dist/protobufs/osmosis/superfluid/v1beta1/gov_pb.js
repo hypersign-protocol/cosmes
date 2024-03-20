@@ -10,7 +10,7 @@ import { SuperfluidAsset } from "../superfluid_pb.js";
  *
  * @generated from message osmosis.superfluid.v1beta1.SetSuperfluidAssetsProposal
  */
-export class SetSuperfluidAssetsProposal extends Message {
+class SetSuperfluidAssetsProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -47,13 +47,14 @@ SetSuperfluidAssetsProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "assets", kind: "message", T: SuperfluidAsset, repeated: true },
 ]);
+export { SetSuperfluidAssetsProposal };
 /**
  * RemoveSuperfluidAssetsProposal is a gov Content type to remove the superfluid
  * assets by denom
  *
  * @generated from message osmosis.superfluid.v1beta1.RemoveSuperfluidAssetsProposal
  */
-export class RemoveSuperfluidAssetsProposal extends Message {
+class RemoveSuperfluidAssetsProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -90,13 +91,14 @@ RemoveSuperfluidAssetsProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "superfluid_asset_denoms", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { RemoveSuperfluidAssetsProposal };
 /**
  * UpdateUnpoolWhiteListProposal is a gov Content type to update the
  * allowed list of pool ids.
  *
  * @generated from message osmosis.superfluid.v1beta1.UpdateUnpoolWhiteListProposal
  */
-export class UpdateUnpoolWhiteListProposal extends Message {
+class UpdateUnpoolWhiteListProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -138,4 +140,5 @@ UpdateUnpoolWhiteListProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 4, name: "is_overwrite", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { UpdateUnpoolWhiteListProposal };
 //# sourceMappingURL=gov_pb.js.map

@@ -13,7 +13,7 @@ import { DefaultNodeInfo } from "../../../../tendermint/p2p/types_pb.js";
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetValidatorSetByHeightRequest
  */
-export class GetValidatorSetByHeightRequest extends Message {
+class GetValidatorSetByHeightRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -41,12 +41,13 @@ GetValidatorSetByHeightRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { GetValidatorSetByHeightRequest };
 /**
  * GetValidatorSetByHeightResponse is the response type for the Query/GetValidatorSetByHeight RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetValidatorSetByHeightResponse
  */
-export class GetValidatorSetByHeightResponse extends Message {
+class GetValidatorSetByHeightResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -79,12 +80,13 @@ GetValidatorSetByHeightResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validators", kind: "message", T: Validator, repeated: true },
     { no: 3, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { GetValidatorSetByHeightResponse };
 /**
  * GetLatestValidatorSetRequest is the request type for the Query/GetValidatorSetByHeight RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetLatestValidatorSetRequest
  */
-export class GetLatestValidatorSetRequest extends Message {
+class GetLatestValidatorSetRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -107,12 +109,13 @@ GetLatestValidatorSetRequest.typeName = "cosmos.base.tendermint.v1beta1.GetLates
 GetLatestValidatorSetRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { GetLatestValidatorSetRequest };
 /**
  * GetLatestValidatorSetResponse is the response type for the Query/GetValidatorSetByHeight RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse
  */
-export class GetLatestValidatorSetResponse extends Message {
+class GetLatestValidatorSetResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -145,12 +148,13 @@ GetLatestValidatorSetResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validators", kind: "message", T: Validator, repeated: true },
     { no: 3, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { GetLatestValidatorSetResponse };
 /**
  * Validator is the type for the validator-set.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.Validator
  */
-export class Validator extends Message {
+class Validator extends Message {
     constructor(data) {
         super();
         /**
@@ -188,12 +192,13 @@ Validator.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "voting_power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 4, name: "proposer_priority", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { Validator };
 /**
  * GetBlockByHeightRequest is the request type for the Query/GetBlockByHeight RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetBlockByHeightRequest
  */
-export class GetBlockByHeightRequest extends Message {
+class GetBlockByHeightRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -220,12 +225,13 @@ GetBlockByHeightRequest.typeName = "cosmos.base.tendermint.v1beta1.GetBlockByHei
 GetBlockByHeightRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { GetBlockByHeightRequest };
 /**
  * GetBlockByHeightResponse is the response type for the Query/GetBlockByHeight RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetBlockByHeightResponse
  */
-export class GetBlockByHeightResponse extends Message {
+class GetBlockByHeightResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -250,12 +256,13 @@ GetBlockByHeightResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "block", kind: "message", T: Block },
     { no: 3, name: "sdk_block", kind: "message", T: Block$1 },
 ]);
+export { GetBlockByHeightResponse };
 /**
  * GetLatestBlockRequest is the request type for the Query/GetLatestBlock RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetLatestBlockRequest
  */
-export class GetLatestBlockRequest extends Message {
+class GetLatestBlockRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -276,12 +283,13 @@ export class GetLatestBlockRequest extends Message {
 GetLatestBlockRequest.runtime = proto3;
 GetLatestBlockRequest.typeName = "cosmos.base.tendermint.v1beta1.GetLatestBlockRequest";
 GetLatestBlockRequest.fields = proto3.util.newFieldList(() => []);
+export { GetLatestBlockRequest };
 /**
  * GetLatestBlockResponse is the response type for the Query/GetLatestBlock RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetLatestBlockResponse
  */
-export class GetLatestBlockResponse extends Message {
+class GetLatestBlockResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -306,12 +314,13 @@ GetLatestBlockResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "block", kind: "message", T: Block },
     { no: 3, name: "sdk_block", kind: "message", T: Block$1 },
 ]);
+export { GetLatestBlockResponse };
 /**
  * GetSyncingRequest is the request type for the Query/GetSyncing RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetSyncingRequest
  */
-export class GetSyncingRequest extends Message {
+class GetSyncingRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -332,12 +341,13 @@ export class GetSyncingRequest extends Message {
 GetSyncingRequest.runtime = proto3;
 GetSyncingRequest.typeName = "cosmos.base.tendermint.v1beta1.GetSyncingRequest";
 GetSyncingRequest.fields = proto3.util.newFieldList(() => []);
+export { GetSyncingRequest };
 /**
  * GetSyncingResponse is the response type for the Query/GetSyncing RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetSyncingResponse
  */
-export class GetSyncingResponse extends Message {
+class GetSyncingResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -364,12 +374,13 @@ GetSyncingResponse.typeName = "cosmos.base.tendermint.v1beta1.GetSyncingResponse
 GetSyncingResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "syncing", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { GetSyncingResponse };
 /**
  * GetNodeInfoRequest is the request type for the Query/GetNodeInfo RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetNodeInfoRequest
  */
-export class GetNodeInfoRequest extends Message {
+class GetNodeInfoRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -390,12 +401,13 @@ export class GetNodeInfoRequest extends Message {
 GetNodeInfoRequest.runtime = proto3;
 GetNodeInfoRequest.typeName = "cosmos.base.tendermint.v1beta1.GetNodeInfoRequest";
 GetNodeInfoRequest.fields = proto3.util.newFieldList(() => []);
+export { GetNodeInfoRequest };
 /**
  * GetNodeInfoResponse is the response type for the Query/GetNodeInfo RPC method.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.GetNodeInfoResponse
  */
-export class GetNodeInfoResponse extends Message {
+class GetNodeInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -419,12 +431,13 @@ GetNodeInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "default_node_info", kind: "message", T: DefaultNodeInfo },
     { no: 2, name: "application_version", kind: "message", T: VersionInfo },
 ]);
+export { GetNodeInfoResponse };
 /**
  * VersionInfo is the type for the GetNodeInfoResponse message.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.VersionInfo
  */
-export class VersionInfo extends Message {
+class VersionInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -488,12 +501,13 @@ VersionInfo.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "build_deps", kind: "message", T: Module, repeated: true },
     { no: 8, name: "cosmos_sdk_version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { VersionInfo };
 /**
  * Module is the type for VersionInfo
  *
  * @generated from message cosmos.base.tendermint.v1beta1.Module
  */
-export class Module extends Message {
+class Module extends Message {
     constructor(data) {
         super();
         /**
@@ -536,12 +550,13 @@ Module.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "sum", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Module };
 /**
  * ABCIQueryRequest defines the request structure for the ABCIQuery gRPC query.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.ABCIQueryRequest
  */
-export class ABCIQueryRequest extends Message {
+class ABCIQueryRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -583,6 +598,7 @@ ABCIQueryRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 4, name: "prove", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { ABCIQueryRequest };
 /**
  * ABCIQueryResponse defines the response structure for the ABCIQuery gRPC query.
  *
@@ -591,7 +607,7 @@ ABCIQueryRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.tendermint.v1beta1.ABCIQueryResponse
  */
-export class ABCIQueryResponse extends Message {
+class ABCIQueryResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -658,6 +674,7 @@ ABCIQueryResponse.fields = proto3.util.newFieldList(() => [
     { no: 9, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 10, name: "codespace", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ABCIQueryResponse };
 /**
  * ProofOp defines an operation used for calculating Merkle root. The data could
  * be arbitrary format, providing necessary data for example neighbouring node
@@ -667,7 +684,7 @@ ABCIQueryResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.tendermint.v1beta1.ProofOp
  */
-export class ProofOp extends Message {
+class ProofOp extends Message {
     constructor(data) {
         super();
         /**
@@ -704,6 +721,7 @@ ProofOp.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ProofOp };
 /**
  * ProofOps is Merkle proof defined by the list of ProofOps.
  *
@@ -711,7 +729,7 @@ ProofOp.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.tendermint.v1beta1.ProofOps
  */
-export class ProofOps extends Message {
+class ProofOps extends Message {
     constructor(data) {
         super();
         /**
@@ -738,4 +756,5 @@ ProofOps.typeName = "cosmos.base.tendermint.v1beta1.ProofOps";
 ProofOps.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ops", kind: "message", T: ProofOp, repeated: true },
 ]);
+export { ProofOps };
 //# sourceMappingURL=query_pb.js.map

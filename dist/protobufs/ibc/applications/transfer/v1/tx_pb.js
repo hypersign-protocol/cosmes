@@ -13,7 +13,7 @@ import { Params } from "./transfer_pb.js";
  *
  * @generated from message ibc.applications.transfer.v1.MsgTransfer
  */
-export class MsgTransfer extends Message {
+class MsgTransfer extends Message {
     constructor(data) {
         super();
         /**
@@ -80,12 +80,13 @@ MsgTransfer.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "timeout_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 8, name: "memo", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgTransfer };
 /**
  * MsgTransferResponse defines the Msg/Transfer response type.
  *
  * @generated from message ibc.applications.transfer.v1.MsgTransferResponse
  */
-export class MsgTransferResponse extends Message {
+class MsgTransferResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -114,12 +115,13 @@ MsgTransferResponse.typeName = "ibc.applications.transfer.v1.MsgTransferResponse
 MsgTransferResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgTransferResponse };
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
  *
  * @generated from message ibc.applications.transfer.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -149,13 +151,14 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
  *
  * @generated from message ibc.applications.transfer.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -176,4 +179,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "ibc.applications.transfer.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

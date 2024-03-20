@@ -9,7 +9,7 @@ import { Coin, DecCoin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.distribution.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -59,6 +59,7 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "bonus_proposer_reward", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "withdraw_addr_enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { Params };
 /**
  * ValidatorHistoricalRewards represents historical rewards for a validator.
  * Height is implicit within the store key.
@@ -75,7 +76,7 @@ Params.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorHistoricalRewards
  */
-export class ValidatorHistoricalRewards extends Message {
+class ValidatorHistoricalRewards extends Message {
     constructor(data) {
         super();
         /**
@@ -107,6 +108,7 @@ ValidatorHistoricalRewards.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cumulative_reward_ratio", kind: "message", T: DecCoin, repeated: true },
     { no: 2, name: "reference_count", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { ValidatorHistoricalRewards };
 /**
  * ValidatorCurrentRewards represents current rewards and current
  * period for a validator kept as a running counter and incremented
@@ -114,7 +116,7 @@ ValidatorHistoricalRewards.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorCurrentRewards
  */
-export class ValidatorCurrentRewards extends Message {
+class ValidatorCurrentRewards extends Message {
     constructor(data) {
         super();
         /**
@@ -146,13 +148,14 @@ ValidatorCurrentRewards.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "rewards", kind: "message", T: DecCoin, repeated: true },
     { no: 2, name: "period", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ValidatorCurrentRewards };
 /**
  * ValidatorAccumulatedCommission represents accumulated commission
  * for a validator kept as a running counter, can be withdrawn at any time.
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorAccumulatedCommission
  */
-export class ValidatorAccumulatedCommission extends Message {
+class ValidatorAccumulatedCommission extends Message {
     constructor(data) {
         super();
         /**
@@ -179,13 +182,14 @@ ValidatorAccumulatedCommission.typeName = "cosmos.distribution.v1beta1.Validator
 ValidatorAccumulatedCommission.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "commission", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { ValidatorAccumulatedCommission };
 /**
  * ValidatorOutstandingRewards represents outstanding (un-withdrawn) rewards
  * for a validator inexpensive to track, allows simple sanity checks.
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorOutstandingRewards
  */
-export class ValidatorOutstandingRewards extends Message {
+class ValidatorOutstandingRewards extends Message {
     constructor(data) {
         super();
         /**
@@ -212,6 +216,7 @@ ValidatorOutstandingRewards.typeName = "cosmos.distribution.v1beta1.ValidatorOut
 ValidatorOutstandingRewards.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "rewards", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { ValidatorOutstandingRewards };
 /**
  * ValidatorSlashEvent represents a validator slash event.
  * Height is implicit within the store key.
@@ -220,7 +225,7 @@ ValidatorOutstandingRewards.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorSlashEvent
  */
-export class ValidatorSlashEvent extends Message {
+class ValidatorSlashEvent extends Message {
     constructor(data) {
         super();
         /**
@@ -252,12 +257,13 @@ ValidatorSlashEvent.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_period", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "fraction", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ValidatorSlashEvent };
 /**
  * ValidatorSlashEvents is a collection of ValidatorSlashEvent messages.
  *
  * @generated from message cosmos.distribution.v1beta1.ValidatorSlashEvents
  */
-export class ValidatorSlashEvents extends Message {
+class ValidatorSlashEvents extends Message {
     constructor(data) {
         super();
         /**
@@ -284,12 +290,13 @@ ValidatorSlashEvents.typeName = "cosmos.distribution.v1beta1.ValidatorSlashEvent
 ValidatorSlashEvents.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_slash_events", kind: "message", T: ValidatorSlashEvent, repeated: true },
 ]);
+export { ValidatorSlashEvents };
 /**
  * FeePool is the global fee pool for distribution.
  *
  * @generated from message cosmos.distribution.v1beta1.FeePool
  */
-export class FeePool extends Message {
+class FeePool extends Message {
     constructor(data) {
         super();
         /**
@@ -316,6 +323,7 @@ FeePool.typeName = "cosmos.distribution.v1beta1.FeePool";
 FeePool.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "community_pool", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { FeePool };
 /**
  * CommunityPoolSpendProposal details a proposal for use of community funds,
  * together with how many coins are proposed to be spent, and to which
@@ -329,7 +337,7 @@ FeePool.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmos.distribution.v1beta1.CommunityPoolSpendProposal
  * @deprecated
  */
-export class CommunityPoolSpendProposal extends Message {
+class CommunityPoolSpendProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -371,6 +379,7 @@ CommunityPoolSpendProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "recipient", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { CommunityPoolSpendProposal };
 /**
  * DelegatorStartingInfo represents the starting info for a delegator reward
  * period. It tracks the previous validator period, the delegation's amount of
@@ -381,7 +390,7 @@ CommunityPoolSpendProposal.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.distribution.v1beta1.DelegatorStartingInfo
  */
-export class DelegatorStartingInfo extends Message {
+class DelegatorStartingInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -418,13 +427,14 @@ DelegatorStartingInfo.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "stake", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { DelegatorStartingInfo };
 /**
  * DelegationDelegatorReward represents the properties
  * of a delegator's delegation reward.
  *
  * @generated from message cosmos.distribution.v1beta1.DelegationDelegatorReward
  */
-export class DelegationDelegatorReward extends Message {
+class DelegationDelegatorReward extends Message {
     constructor(data) {
         super();
         /**
@@ -456,13 +466,14 @@ DelegationDelegatorReward.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "reward", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { DelegationDelegatorReward };
 /**
  * CommunityPoolSpendProposalWithDeposit defines a CommunityPoolSpendProposal
  * with a deposit
  *
  * @generated from message cosmos.distribution.v1beta1.CommunityPoolSpendProposalWithDeposit
  */
-export class CommunityPoolSpendProposalWithDeposit extends Message {
+class CommunityPoolSpendProposalWithDeposit extends Message {
     constructor(data) {
         super();
         /**
@@ -509,4 +520,5 @@ CommunityPoolSpendProposalWithDeposit.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "deposit", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { CommunityPoolSpendProposalWithDeposit };
 //# sourceMappingURL=distribution_pb.js.map

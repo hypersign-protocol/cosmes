@@ -9,7 +9,7 @@ import { Any, Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.evidence.v1beta1.MsgSubmitEvidence
  */
-export class MsgSubmitEvidence extends Message {
+class MsgSubmitEvidence extends Message {
     constructor(data) {
         super();
         /**
@@ -39,12 +39,13 @@ MsgSubmitEvidence.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "submitter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "evidence", kind: "message", T: Any },
 ]);
+export { MsgSubmitEvidence };
 /**
  * MsgSubmitEvidenceResponse defines the Msg/SubmitEvidence response type.
  *
  * @generated from message cosmos.evidence.v1beta1.MsgSubmitEvidenceResponse
  */
-export class MsgSubmitEvidenceResponse extends Message {
+class MsgSubmitEvidenceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -73,4 +74,5 @@ MsgSubmitEvidenceResponse.typeName = "cosmos.evidence.v1beta1.MsgSubmitEvidenceR
 MsgSubmitEvidenceResponse.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgSubmitEvidenceResponse };
 //# sourceMappingURL=tx_pb.js.map

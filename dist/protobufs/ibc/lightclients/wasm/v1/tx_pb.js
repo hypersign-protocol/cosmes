@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ibc.lightclients.wasm.v1.MsgStoreCode
  */
-export class MsgStoreCode extends Message {
+class MsgStoreCode extends Message {
     constructor(data) {
         super();
         /**
@@ -44,12 +44,13 @@ MsgStoreCode.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "wasm_byte_code", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgStoreCode };
 /**
  * MsgStoreCodeResponse defines the response type for the StoreCode rpc
  *
  * @generated from message ibc.lightclients.wasm.v1.MsgStoreCodeResponse
  */
-export class MsgStoreCodeResponse extends Message {
+class MsgStoreCodeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -78,12 +79,13 @@ MsgStoreCodeResponse.typeName = "ibc.lightclients.wasm.v1.MsgStoreCodeResponse";
 MsgStoreCodeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "checksum", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgStoreCodeResponse };
 /**
  * MsgRemoveChecksum defines the request type for the MsgRemoveChecksum rpc.
  *
  * @generated from message ibc.lightclients.wasm.v1.MsgRemoveChecksum
  */
-export class MsgRemoveChecksum extends Message {
+class MsgRemoveChecksum extends Message {
     constructor(data) {
         super();
         /**
@@ -119,12 +121,13 @@ MsgRemoveChecksum.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "checksum", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgRemoveChecksum };
 /**
  * MsgStoreChecksumResponse defines the response type for the StoreCode rpc
  *
  * @generated from message ibc.lightclients.wasm.v1.MsgRemoveChecksumResponse
  */
-export class MsgRemoveChecksumResponse extends Message {
+class MsgRemoveChecksumResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -145,12 +148,13 @@ export class MsgRemoveChecksumResponse extends Message {
 MsgRemoveChecksumResponse.runtime = proto3;
 MsgRemoveChecksumResponse.typeName = "ibc.lightclients.wasm.v1.MsgRemoveChecksumResponse";
 MsgRemoveChecksumResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRemoveChecksumResponse };
 /**
  * MsgMigrateContract defines the request type for the MigrateContract rpc.
  *
  * @generated from message ibc.lightclients.wasm.v1.MsgMigrateContract
  */
-export class MsgMigrateContract extends Message {
+class MsgMigrateContract extends Message {
     constructor(data) {
         super();
         /**
@@ -200,12 +204,13 @@ MsgMigrateContract.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "checksum", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MsgMigrateContract };
 /**
  * MsgMigrateContractResponse defines the response type for the MigrateContract rpc
  *
  * @generated from message ibc.lightclients.wasm.v1.MsgMigrateContractResponse
  */
-export class MsgMigrateContractResponse extends Message {
+class MsgMigrateContractResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -226,4 +231,5 @@ export class MsgMigrateContractResponse extends Message {
 MsgMigrateContractResponse.runtime = proto3;
 MsgMigrateContractResponse.typeName = "ibc.lightclients.wasm.v1.MsgMigrateContractResponse";
 MsgMigrateContractResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgMigrateContractResponse };
 //# sourceMappingURL=tx_pb.js.map

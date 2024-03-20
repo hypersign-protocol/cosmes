@@ -9,7 +9,7 @@ import { GenesisState } from "./genesis_pb.js";
 /**
  * @generated from message injective.ocr.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,10 +30,11 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "injective.ocr.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * @generated from message injective.ocr.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -56,10 +57,11 @@ QueryParamsResponse.typeName = "injective.ocr.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * @generated from message injective.ocr.v1beta1.QueryFeedConfigRequest
  */
-export class QueryFeedConfigRequest extends Message {
+class QueryFeedConfigRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -86,10 +88,11 @@ QueryFeedConfigRequest.typeName = "injective.ocr.v1beta1.QueryFeedConfigRequest"
 QueryFeedConfigRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryFeedConfigRequest };
 /**
  * @generated from message injective.ocr.v1beta1.QueryFeedConfigResponse
  */
-export class QueryFeedConfigResponse extends Message {
+class QueryFeedConfigResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -113,10 +116,11 @@ QueryFeedConfigResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_config_info", kind: "message", T: FeedConfigInfo },
     { no: 2, name: "feed_config", kind: "message", T: FeedConfig },
 ]);
+export { QueryFeedConfigResponse };
 /**
  * @generated from message injective.ocr.v1beta1.QueryFeedConfigInfoRequest
  */
-export class QueryFeedConfigInfoRequest extends Message {
+class QueryFeedConfigInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -143,10 +147,11 @@ QueryFeedConfigInfoRequest.typeName = "injective.ocr.v1beta1.QueryFeedConfigInfo
 QueryFeedConfigInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryFeedConfigInfoRequest };
 /**
  * @generated from message injective.ocr.v1beta1.QueryFeedConfigInfoResponse
  */
-export class QueryFeedConfigInfoResponse extends Message {
+class QueryFeedConfigInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -170,10 +175,11 @@ QueryFeedConfigInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_config_info", kind: "message", T: FeedConfigInfo },
     { no: 2, name: "epoch_and_round", kind: "message", T: EpochAndRound },
 ]);
+export { QueryFeedConfigInfoResponse };
 /**
  * @generated from message injective.ocr.v1beta1.QueryLatestRoundRequest
  */
-export class QueryLatestRoundRequest extends Message {
+class QueryLatestRoundRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -200,10 +206,11 @@ QueryLatestRoundRequest.typeName = "injective.ocr.v1beta1.QueryLatestRoundReques
 QueryLatestRoundRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryLatestRoundRequest };
 /**
  * @generated from message injective.ocr.v1beta1.QueryLatestRoundResponse
  */
-export class QueryLatestRoundResponse extends Message {
+class QueryLatestRoundResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -231,10 +238,11 @@ QueryLatestRoundResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "latest_round_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "data", kind: "message", T: Transmission },
 ]);
+export { QueryLatestRoundResponse };
 /**
  * @generated from message injective.ocr.v1beta1.QueryLatestTransmissionDetailsRequest
  */
-export class QueryLatestTransmissionDetailsRequest extends Message {
+class QueryLatestTransmissionDetailsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -261,10 +269,11 @@ QueryLatestTransmissionDetailsRequest.typeName = "injective.ocr.v1beta1.QueryLat
 QueryLatestTransmissionDetailsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "feed_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryLatestTransmissionDetailsRequest };
 /**
  * @generated from message injective.ocr.v1beta1.QueryLatestTransmissionDetailsResponse
  */
-export class QueryLatestTransmissionDetailsResponse extends Message {
+class QueryLatestTransmissionDetailsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -293,10 +302,11 @@ QueryLatestTransmissionDetailsResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "epoch_and_round", kind: "message", T: EpochAndRound },
     { no: 3, name: "data", kind: "message", T: Transmission },
 ]);
+export { QueryLatestTransmissionDetailsResponse };
 /**
  * @generated from message injective.ocr.v1beta1.QueryOwedAmountRequest
  */
-export class QueryOwedAmountRequest extends Message {
+class QueryOwedAmountRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -323,10 +333,11 @@ QueryOwedAmountRequest.typeName = "injective.ocr.v1beta1.QueryOwedAmountRequest"
 QueryOwedAmountRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "transmitter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryOwedAmountRequest };
 /**
  * @generated from message injective.ocr.v1beta1.QueryOwedAmountResponse
  */
-export class QueryOwedAmountResponse extends Message {
+class QueryOwedAmountResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -349,10 +360,11 @@ QueryOwedAmountResponse.typeName = "injective.ocr.v1beta1.QueryOwedAmountRespons
 QueryOwedAmountResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "message", T: Coin },
 ]);
+export { QueryOwedAmountResponse };
 /**
  * @generated from message injective.ocr.v1beta1.QueryModuleStateRequest
  */
-export class QueryModuleStateRequest extends Message {
+class QueryModuleStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -373,10 +385,11 @@ export class QueryModuleStateRequest extends Message {
 QueryModuleStateRequest.runtime = proto3;
 QueryModuleStateRequest.typeName = "injective.ocr.v1beta1.QueryModuleStateRequest";
 QueryModuleStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryModuleStateRequest };
 /**
  * @generated from message injective.ocr.v1beta1.QueryModuleStateResponse
  */
-export class QueryModuleStateResponse extends Message {
+class QueryModuleStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -399,4 +412,5 @@ QueryModuleStateResponse.typeName = "injective.ocr.v1beta1.QueryModuleStateRespo
 QueryModuleStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: GenesisState },
 ]);
+export { QueryModuleStateResponse };
 //# sourceMappingURL=query_pb.js.map

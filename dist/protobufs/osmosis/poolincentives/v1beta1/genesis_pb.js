@@ -9,7 +9,7 @@ import { AnyPoolToInternalGauges, ConcentratedPoolToNoLockGauges, DistrInfo, Par
  *
  * @generated from message osmosis.poolincentives.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -40,4 +40,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "any_pool_to_internal_gauges", kind: "message", T: AnyPoolToInternalGauges },
     { no: 5, name: "concentrated_pool_to_no_lock_gauges", kind: "message", T: ConcentratedPoolToNoLockGauges },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

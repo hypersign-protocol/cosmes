@@ -11,7 +11,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.poolmanager.v1beta1.ParamsRequest
  */
-export class ParamsRequest extends Message {
+class ParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,10 +32,11 @@ export class ParamsRequest extends Message {
 ParamsRequest.runtime = proto3;
 ParamsRequest.typeName = "osmosis.poolmanager.v1beta1.ParamsRequest";
 ParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { ParamsRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.ParamsResponse
  */
-export class ParamsResponse extends Message {
+class ParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -58,12 +59,13 @@ ParamsResponse.typeName = "osmosis.poolmanager.v1beta1.ParamsResponse";
 ParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { ParamsResponse };
 /**
  * =============================== EstimateSwapExactAmountIn
  *
  * @generated from message osmosis.poolmanager.v1beta1.EstimateSwapExactAmountInRequest
  */
-export class EstimateSwapExactAmountInRequest extends Message {
+class EstimateSwapExactAmountInRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -101,10 +103,11 @@ EstimateSwapExactAmountInRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_in", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "routes", kind: "message", T: SwapAmountInRoute, repeated: true },
 ]);
+export { EstimateSwapExactAmountInRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.EstimateSwapExactAmountInWithPrimitiveTypesRequest
  */
-export class EstimateSwapExactAmountInWithPrimitiveTypesRequest extends Message {
+class EstimateSwapExactAmountInWithPrimitiveTypesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -147,10 +150,11 @@ EstimateSwapExactAmountInWithPrimitiveTypesRequest.fields = proto3.util.newField
     { no: 3, name: "routes_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 4, name: "routes_token_out_denom", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { EstimateSwapExactAmountInWithPrimitiveTypesRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.EstimateSinglePoolSwapExactAmountInRequest
  */
-export class EstimateSinglePoolSwapExactAmountInRequest extends Message {
+class EstimateSinglePoolSwapExactAmountInRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -187,10 +191,11 @@ EstimateSinglePoolSwapExactAmountInRequest.fields = proto3.util.newFieldList(() 
     { no: 2, name: "token_in", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "token_out_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EstimateSinglePoolSwapExactAmountInRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.EstimateSwapExactAmountInResponse
  */
-export class EstimateSwapExactAmountInResponse extends Message {
+class EstimateSwapExactAmountInResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -217,12 +222,13 @@ EstimateSwapExactAmountInResponse.typeName = "osmosis.poolmanager.v1beta1.Estima
 EstimateSwapExactAmountInResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EstimateSwapExactAmountInResponse };
 /**
  * =============================== EstimateSwapExactAmountOut
  *
  * @generated from message osmosis.poolmanager.v1beta1.EstimateSwapExactAmountOutRequest
  */
-export class EstimateSwapExactAmountOutRequest extends Message {
+class EstimateSwapExactAmountOutRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -260,10 +266,11 @@ EstimateSwapExactAmountOutRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "routes", kind: "message", T: SwapAmountOutRoute, repeated: true },
     { no: 4, name: "token_out", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EstimateSwapExactAmountOutRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.EstimateSwapExactAmountOutWithPrimitiveTypesRequest
  */
-export class EstimateSwapExactAmountOutWithPrimitiveTypesRequest extends Message {
+class EstimateSwapExactAmountOutWithPrimitiveTypesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -306,10 +313,11 @@ EstimateSwapExactAmountOutWithPrimitiveTypesRequest.fields = proto3.util.newFiel
     { no: 3, name: "routes_token_in_denom", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 4, name: "token_out", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EstimateSwapExactAmountOutWithPrimitiveTypesRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.EstimateSinglePoolSwapExactAmountOutRequest
  */
-export class EstimateSinglePoolSwapExactAmountOutRequest extends Message {
+class EstimateSinglePoolSwapExactAmountOutRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -346,10 +354,11 @@ EstimateSinglePoolSwapExactAmountOutRequest.fields = proto3.util.newFieldList(()
     { no: 2, name: "token_in_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "token_out", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EstimateSinglePoolSwapExactAmountOutRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.EstimateSwapExactAmountOutResponse
  */
-export class EstimateSwapExactAmountOutResponse extends Message {
+class EstimateSwapExactAmountOutResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -376,12 +385,13 @@ EstimateSwapExactAmountOutResponse.typeName = "osmosis.poolmanager.v1beta1.Estim
 EstimateSwapExactAmountOutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EstimateSwapExactAmountOutResponse };
 /**
  * =============================== NumPools
  *
  * @generated from message osmosis.poolmanager.v1beta1.NumPoolsRequest
  */
-export class NumPoolsRequest extends Message {
+class NumPoolsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -402,10 +412,11 @@ export class NumPoolsRequest extends Message {
 NumPoolsRequest.runtime = proto3;
 NumPoolsRequest.typeName = "osmosis.poolmanager.v1beta1.NumPoolsRequest";
 NumPoolsRequest.fields = proto3.util.newFieldList(() => []);
+export { NumPoolsRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.NumPoolsResponse
  */
-export class NumPoolsResponse extends Message {
+class NumPoolsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -432,12 +443,13 @@ NumPoolsResponse.typeName = "osmosis.poolmanager.v1beta1.NumPoolsResponse";
 NumPoolsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "num_pools", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { NumPoolsResponse };
 /**
  * =============================== Pool
  *
  * @generated from message osmosis.poolmanager.v1beta1.PoolRequest
  */
-export class PoolRequest extends Message {
+class PoolRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -464,10 +476,11 @@ PoolRequest.typeName = "osmosis.poolmanager.v1beta1.PoolRequest";
 PoolRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PoolRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.PoolResponse
  */
-export class PoolResponse extends Message {
+class PoolResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -490,12 +503,13 @@ PoolResponse.typeName = "osmosis.poolmanager.v1beta1.PoolResponse";
 PoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool", kind: "message", T: Any },
 ]);
+export { PoolResponse };
 /**
  * =============================== AllPools
  *
  * @generated from message osmosis.poolmanager.v1beta1.AllPoolsRequest
  */
-export class AllPoolsRequest extends Message {
+class AllPoolsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -516,10 +530,11 @@ export class AllPoolsRequest extends Message {
 AllPoolsRequest.runtime = proto3;
 AllPoolsRequest.typeName = "osmosis.poolmanager.v1beta1.AllPoolsRequest";
 AllPoolsRequest.fields = proto3.util.newFieldList(() => []);
+export { AllPoolsRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.AllPoolsResponse
  */
-export class AllPoolsResponse extends Message {
+class AllPoolsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -546,13 +561,14 @@ AllPoolsResponse.typeName = "osmosis.poolmanager.v1beta1.AllPoolsResponse";
 AllPoolsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pools", kind: "message", T: Any, repeated: true },
 ]);
+export { AllPoolsResponse };
 /**
  * =======================================================
  * ListPoolsByDenomRequest
  *
  * @generated from message osmosis.poolmanager.v1beta1.ListPoolsByDenomRequest
  */
-export class ListPoolsByDenomRequest extends Message {
+class ListPoolsByDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -579,10 +595,11 @@ ListPoolsByDenomRequest.typeName = "osmosis.poolmanager.v1beta1.ListPoolsByDenom
 ListPoolsByDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ListPoolsByDenomRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.ListPoolsByDenomResponse
  */
-export class ListPoolsByDenomResponse extends Message {
+class ListPoolsByDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -609,6 +626,7 @@ ListPoolsByDenomResponse.typeName = "osmosis.poolmanager.v1beta1.ListPoolsByDeno
 ListPoolsByDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pools", kind: "message", T: Any, repeated: true },
 ]);
+export { ListPoolsByDenomResponse };
 /**
  * ==========================================================
  * SpotPriceRequest defines the gRPC request structure for a SpotPrice
@@ -616,7 +634,7 @@ ListPoolsByDenomResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.poolmanager.v1beta1.SpotPriceRequest
  */
-export class SpotPriceRequest extends Message {
+class SpotPriceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -653,13 +671,14 @@ SpotPriceRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "base_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "quote_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotPriceRequest };
 /**
  * SpotPriceResponse defines the gRPC response structure for a SpotPrice
  * query.
  *
  * @generated from message osmosis.poolmanager.v1beta1.SpotPriceResponse
  */
-export class SpotPriceResponse extends Message {
+class SpotPriceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -688,12 +707,13 @@ SpotPriceResponse.typeName = "osmosis.poolmanager.v1beta1.SpotPriceResponse";
 SpotPriceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spot_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotPriceResponse };
 /**
  * =============================== TotalPoolLiquidity
  *
  * @generated from message osmosis.poolmanager.v1beta1.TotalPoolLiquidityRequest
  */
-export class TotalPoolLiquidityRequest extends Message {
+class TotalPoolLiquidityRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -720,10 +740,11 @@ TotalPoolLiquidityRequest.typeName = "osmosis.poolmanager.v1beta1.TotalPoolLiqui
 TotalPoolLiquidityRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { TotalPoolLiquidityRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.TotalPoolLiquidityResponse
  */
-export class TotalPoolLiquidityResponse extends Message {
+class TotalPoolLiquidityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -750,12 +771,13 @@ TotalPoolLiquidityResponse.typeName = "osmosis.poolmanager.v1beta1.TotalPoolLiqu
 TotalPoolLiquidityResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "liquidity", kind: "message", T: Coin, repeated: true },
 ]);
+export { TotalPoolLiquidityResponse };
 /**
  * =============================== TotalLiquidity
  *
  * @generated from message osmosis.poolmanager.v1beta1.TotalLiquidityRequest
  */
-export class TotalLiquidityRequest extends Message {
+class TotalLiquidityRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -776,10 +798,11 @@ export class TotalLiquidityRequest extends Message {
 TotalLiquidityRequest.runtime = proto3;
 TotalLiquidityRequest.typeName = "osmosis.poolmanager.v1beta1.TotalLiquidityRequest";
 TotalLiquidityRequest.fields = proto3.util.newFieldList(() => []);
+export { TotalLiquidityRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.TotalLiquidityResponse
  */
-export class TotalLiquidityResponse extends Message {
+class TotalLiquidityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -806,12 +829,13 @@ TotalLiquidityResponse.typeName = "osmosis.poolmanager.v1beta1.TotalLiquidityRes
 TotalLiquidityResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "liquidity", kind: "message", T: Coin, repeated: true },
 ]);
+export { TotalLiquidityResponse };
 /**
  * =============================== TotalVolumeForPool
  *
  * @generated from message osmosis.poolmanager.v1beta1.TotalVolumeForPoolRequest
  */
-export class TotalVolumeForPoolRequest extends Message {
+class TotalVolumeForPoolRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -838,10 +862,11 @@ TotalVolumeForPoolRequest.typeName = "osmosis.poolmanager.v1beta1.TotalVolumeFor
 TotalVolumeForPoolRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { TotalVolumeForPoolRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.TotalVolumeForPoolResponse
  */
-export class TotalVolumeForPoolResponse extends Message {
+class TotalVolumeForPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -868,12 +893,13 @@ TotalVolumeForPoolResponse.typeName = "osmosis.poolmanager.v1beta1.TotalVolumeFo
 TotalVolumeForPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "volume", kind: "message", T: Coin, repeated: true },
 ]);
+export { TotalVolumeForPoolResponse };
 /**
  * =============================== TradingPairTakerFee
  *
  * @generated from message osmosis.poolmanager.v1beta1.TradingPairTakerFeeRequest
  */
-export class TradingPairTakerFeeRequest extends Message {
+class TradingPairTakerFeeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -905,10 +931,11 @@ TradingPairTakerFeeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom_0", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom_1", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TradingPairTakerFeeRequest };
 /**
  * @generated from message osmosis.poolmanager.v1beta1.TradingPairTakerFeeResponse
  */
-export class TradingPairTakerFeeResponse extends Message {
+class TradingPairTakerFeeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -935,6 +962,7 @@ TradingPairTakerFeeResponse.typeName = "osmosis.poolmanager.v1beta1.TradingPairT
 TradingPairTakerFeeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "taker_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TradingPairTakerFeeResponse };
 /**
  * EstimateTradeBasedOnPriceImpactRequest represents a request to estimate a
  * trade for Balancer/StableSwap/Concentrated liquidity pool types based on the
@@ -942,7 +970,7 @@ TradingPairTakerFeeResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.poolmanager.v1beta1.EstimateTradeBasedOnPriceImpactRequest
  */
-export class EstimateTradeBasedOnPriceImpactRequest extends Message {
+class EstimateTradeBasedOnPriceImpactRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -998,6 +1026,7 @@ EstimateTradeBasedOnPriceImpactRequest.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "max_price_impact", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "external_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EstimateTradeBasedOnPriceImpactRequest };
 /**
  * EstimateTradeBasedOnPriceImpactResponse represents the response data
  * for an estimated trade based on price impact. If a trade fails to be
@@ -1006,7 +1035,7 @@ EstimateTradeBasedOnPriceImpactRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.poolmanager.v1beta1.EstimateTradeBasedOnPriceImpactResponse
  */
-export class EstimateTradeBasedOnPriceImpactResponse extends Message {
+class EstimateTradeBasedOnPriceImpactResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1030,4 +1059,5 @@ EstimateTradeBasedOnPriceImpactResponse.fields = proto3.util.newFieldList(() => 
     { no: 1, name: "input_coin", kind: "message", T: Coin },
     { no: 2, name: "output_coin", kind: "message", T: Coin },
 ]);
+export { EstimateTradeBasedOnPriceImpactResponse };
 //# sourceMappingURL=query_pb.js.map

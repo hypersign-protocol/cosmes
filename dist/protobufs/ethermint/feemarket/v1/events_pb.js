@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ethermint.feemarket.v1.EventFeeMarket
  */
-export class EventFeeMarket extends Message {
+class EventFeeMarket extends Message {
     constructor(data) {
         super();
         /**
@@ -37,12 +37,13 @@ EventFeeMarket.typeName = "ethermint.feemarket.v1.EventFeeMarket";
 EventFeeMarket.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventFeeMarket };
 /**
  * EventBlockGas defines an Ethereum block gas event
  *
  * @generated from message ethermint.feemarket.v1.EventBlockGas
  */
-export class EventBlockGas extends Message {
+class EventBlockGas extends Message {
     constructor(data) {
         super();
         /**
@@ -78,4 +79,5 @@ EventBlockGas.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "height", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventBlockGas };
 //# sourceMappingURL=events_pb.js.map

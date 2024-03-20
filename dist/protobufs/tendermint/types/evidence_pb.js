@@ -8,7 +8,7 @@ import { Validator } from "./validator_pb.js";
 /**
  * @generated from message tendermint.types.Evidence
  */
-export class Evidence extends Message {
+class Evidence extends Message {
     constructor(data) {
         super();
         /**
@@ -36,12 +36,13 @@ Evidence.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "duplicate_vote_evidence", kind: "message", T: DuplicateVoteEvidence, oneof: "sum" },
     { no: 2, name: "light_client_attack_evidence", kind: "message", T: LightClientAttackEvidence, oneof: "sum" },
 ]);
+export { Evidence };
 /**
  * DuplicateVoteEvidence contains evidence of a validator signed two conflicting votes.
  *
  * @generated from message tendermint.types.DuplicateVoteEvidence
  */
-export class DuplicateVoteEvidence extends Message {
+class DuplicateVoteEvidence extends Message {
     constructor(data) {
         super();
         /**
@@ -76,12 +77,13 @@ DuplicateVoteEvidence.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "validator_power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 5, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { DuplicateVoteEvidence };
 /**
  * LightClientAttackEvidence contains evidence of a set of validators attempting to mislead a light client.
  *
  * @generated from message tendermint.types.LightClientAttackEvidence
  */
-export class LightClientAttackEvidence extends Message {
+class LightClientAttackEvidence extends Message {
     constructor(data) {
         super();
         /**
@@ -120,10 +122,11 @@ LightClientAttackEvidence.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "total_voting_power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 5, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { LightClientAttackEvidence };
 /**
  * @generated from message tendermint.types.EvidenceList
  */
-export class EvidenceList extends Message {
+class EvidenceList extends Message {
     constructor(data) {
         super();
         /**
@@ -150,4 +153,5 @@ EvidenceList.typeName = "tendermint.types.EvidenceList";
 EvidenceList.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "evidence", kind: "message", T: Evidence, repeated: true },
 ]);
+export { EvidenceList };
 //# sourceMappingURL=evidence_pb.js.map

@@ -9,7 +9,7 @@ import { ParamChange } from "./params_pb.js";
  *
  * @generated from message cosmos.params.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -45,12 +45,13 @@ QueryParamsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subspace", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is response type for the Query/Params RPC method.
  *
  * @generated from message cosmos.params.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -73,6 +74,7 @@ QueryParamsResponse.typeName = "cosmos.params.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "param", kind: "message", T: ParamChange },
 ]);
+export { QueryParamsResponse };
 /**
  * QuerySubspacesRequest defines a request type for querying for all registered
  * subspaces and all keys for a subspace.
@@ -81,7 +83,7 @@ QueryParamsResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.params.v1beta1.QuerySubspacesRequest
  */
-export class QuerySubspacesRequest extends Message {
+class QuerySubspacesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -102,6 +104,7 @@ export class QuerySubspacesRequest extends Message {
 QuerySubspacesRequest.runtime = proto3;
 QuerySubspacesRequest.typeName = "cosmos.params.v1beta1.QuerySubspacesRequest";
 QuerySubspacesRequest.fields = proto3.util.newFieldList(() => []);
+export { QuerySubspacesRequest };
 /**
  * QuerySubspacesResponse defines the response types for querying for all
  * registered subspaces and all keys for a subspace.
@@ -110,7 +113,7 @@ QuerySubspacesRequest.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.params.v1beta1.QuerySubspacesResponse
  */
-export class QuerySubspacesResponse extends Message {
+class QuerySubspacesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -137,6 +140,7 @@ QuerySubspacesResponse.typeName = "cosmos.params.v1beta1.QuerySubspacesResponse"
 QuerySubspacesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subspaces", kind: "message", T: Subspace, repeated: true },
 ]);
+export { QuerySubspacesResponse };
 /**
  * Subspace defines a parameter subspace name and all the keys that exist for
  * the subspace.
@@ -145,7 +149,7 @@ QuerySubspacesResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.params.v1beta1.Subspace
  */
-export class Subspace extends Message {
+class Subspace extends Message {
     constructor(data) {
         super();
         /**
@@ -177,4 +181,5 @@ Subspace.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subspace", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "keys", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Subspace };
 //# sourceMappingURL=query_pb.js.map

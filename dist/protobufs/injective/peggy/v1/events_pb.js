@@ -8,7 +8,7 @@ import { BridgeValidator } from "./types_pb.js";
 /**
  * @generated from message injective.peggy.v1.EventAttestationObserved
  */
-export class EventAttestationObserved extends Message {
+class EventAttestationObserved extends Message {
     constructor(data) {
         super();
         /**
@@ -55,10 +55,11 @@ EventAttestationObserved.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "attestation_id", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 5, name: "nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventAttestationObserved };
 /**
  * @generated from message injective.peggy.v1.EventBridgeWithdrawCanceled
  */
-export class EventBridgeWithdrawCanceled extends Message {
+class EventBridgeWithdrawCanceled extends Message {
     constructor(data) {
         super();
         /**
@@ -90,10 +91,11 @@ EventBridgeWithdrawCanceled.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bridge_contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "bridge_chain_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventBridgeWithdrawCanceled };
 /**
  * @generated from message injective.peggy.v1.EventOutgoingBatch
  */
-export class EventOutgoingBatch extends Message {
+class EventOutgoingBatch extends Message {
     constructor(data) {
         super();
         /**
@@ -140,10 +142,11 @@ EventOutgoingBatch.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "batch_timeout", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "batch_tx_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { EventOutgoingBatch };
 /**
  * @generated from message injective.peggy.v1.EventOutgoingBatchCanceled
  */
-export class EventOutgoingBatchCanceled extends Message {
+class EventOutgoingBatchCanceled extends Message {
     constructor(data) {
         super();
         /**
@@ -185,10 +188,11 @@ EventOutgoingBatchCanceled.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "batch_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventOutgoingBatchCanceled };
 /**
  * @generated from message injective.peggy.v1.EventValsetUpdateRequest
  */
-export class EventValsetUpdateRequest extends Message {
+class EventValsetUpdateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -235,10 +239,11 @@ EventValsetUpdateRequest.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "reward_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "reward_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventValsetUpdateRequest };
 /**
  * @generated from message injective.peggy.v1.EventSetOrchestratorAddresses
  */
-export class EventSetOrchestratorAddresses extends Message {
+class EventSetOrchestratorAddresses extends Message {
     constructor(data) {
         super();
         /**
@@ -275,10 +280,11 @@ EventSetOrchestratorAddresses.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "operator_eth_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventSetOrchestratorAddresses };
 /**
  * @generated from message injective.peggy.v1.EventValsetConfirm
  */
-export class EventValsetConfirm extends Message {
+class EventValsetConfirm extends Message {
     constructor(data) {
         super();
         /**
@@ -310,10 +316,11 @@ EventValsetConfirm.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "valset_nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventValsetConfirm };
 /**
  * @generated from message injective.peggy.v1.EventSendToEth
  */
-export class EventSendToEth extends Message {
+class EventSendToEth extends Message {
     constructor(data) {
         super();
         /**
@@ -360,10 +367,11 @@ EventSendToEth.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "bridge_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventSendToEth };
 /**
  * @generated from message injective.peggy.v1.EventConfirmBatch
  */
-export class EventConfirmBatch extends Message {
+class EventConfirmBatch extends Message {
     constructor(data) {
         super();
         /**
@@ -395,10 +403,11 @@ EventConfirmBatch.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "batch_nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventConfirmBatch };
 /**
  * @generated from message injective.peggy.v1.EventAttestationVote
  */
-export class EventAttestationVote extends Message {
+class EventAttestationVote extends Message {
     constructor(data) {
         super();
         /**
@@ -435,10 +444,11 @@ EventAttestationVote.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "attestation_id", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "voter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventAttestationVote };
 /**
  * @generated from message injective.peggy.v1.EventDepositClaim
  */
-export class EventDepositClaim extends Message {
+class EventDepositClaim extends Message {
     constructor(data) {
         super();
         /**
@@ -505,10 +515,11 @@ EventDepositClaim.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "data", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventDepositClaim };
 /**
  * @generated from message injective.peggy.v1.EventWithdrawClaim
  */
-export class EventWithdrawClaim extends Message {
+class EventWithdrawClaim extends Message {
     constructor(data) {
         super();
         /**
@@ -560,10 +571,11 @@ EventWithdrawClaim.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "token_contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventWithdrawClaim };
 /**
  * @generated from message injective.peggy.v1.EventERC20DeployedClaim
  */
-export class EventERC20DeployedClaim extends Message {
+class EventERC20DeployedClaim extends Message {
     constructor(data) {
         super();
         /**
@@ -630,10 +642,11 @@ EventERC20DeployedClaim.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "decimals", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 9, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventERC20DeployedClaim };
 /**
  * @generated from message injective.peggy.v1.EventValsetUpdateClaim
  */
-export class EventValsetUpdateClaim extends Message {
+class EventValsetUpdateClaim extends Message {
     constructor(data) {
         super();
         /**
@@ -695,10 +708,11 @@ EventValsetUpdateClaim.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "reward_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 8, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventValsetUpdateClaim };
 /**
  * @generated from message injective.peggy.v1.EventCancelSendToEth
  */
-export class EventCancelSendToEth extends Message {
+class EventCancelSendToEth extends Message {
     constructor(data) {
         super();
         /**
@@ -725,10 +739,11 @@ EventCancelSendToEth.typeName = "injective.peggy.v1.EventCancelSendToEth";
 EventCancelSendToEth.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "outgoing_tx_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventCancelSendToEth };
 /**
  * @generated from message injective.peggy.v1.EventSubmitBadSignatureEvidence
  */
-export class EventSubmitBadSignatureEvidence extends Message {
+class EventSubmitBadSignatureEvidence extends Message {
     constructor(data) {
         super();
         /**
@@ -760,10 +775,11 @@ EventSubmitBadSignatureEvidence.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bad_eth_signature", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "bad_eth_signature_subject", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventSubmitBadSignatureEvidence };
 /**
  * @generated from message injective.peggy.v1.EventValidatorSlash
  */
-export class EventValidatorSlash extends Message {
+class EventValidatorSlash extends Message {
     constructor(data) {
         super();
         /**
@@ -810,4 +826,5 @@ EventValidatorSlash.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "operator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "moniker", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventValidatorSlash };
 //# sourceMappingURL=events_pb.js.map

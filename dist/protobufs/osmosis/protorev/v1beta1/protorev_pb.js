@@ -10,7 +10,7 @@ import { TakerFeesTracker } from "../../poolmanager/v1beta1/genesis_pb.js";
  *
  * @generated from message osmosis.protorev.v1beta1.TokenPairArbRoutes
  */
-export class TokenPairArbRoutes extends Message {
+class TokenPairArbRoutes extends Message {
     constructor(data) {
         super();
         /**
@@ -53,12 +53,13 @@ TokenPairArbRoutes.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "token_in", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "token_out", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TokenPairArbRoutes };
 /**
  * Route is a hot route for a given pair of tokens
  *
  * @generated from message osmosis.protorev.v1beta1.Route
  */
-export class Route extends Message {
+class Route extends Message {
     constructor(data) {
         super();
         /**
@@ -97,12 +98,13 @@ Route.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "trades", kind: "message", T: Trade, repeated: true },
     { no: 2, name: "step_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Route };
 /**
  * Trade is a single trade in a route
  *
  * @generated from message osmosis.protorev.v1beta1.Trade
  */
-export class Trade extends Message {
+class Trade extends Message {
     constructor(data) {
         super();
         /**
@@ -145,13 +147,14 @@ Trade.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "token_in", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "token_out", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Trade };
 /**
  * RouteStatistics contains the number of trades the module has executed after a
  * swap on a given route and the profits from the trades
  *
  * @generated from message osmosis.protorev.v1beta1.RouteStatistics
  */
-export class RouteStatistics extends Message {
+class RouteStatistics extends Message {
     constructor(data) {
         super();
         /**
@@ -195,6 +198,7 @@ RouteStatistics.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "number_of_trades", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "route", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { RouteStatistics };
 /**
  * PoolWeights contains the weights of all of the different pool types. This
  * distinction is made and necessary because the execution time ranges
@@ -207,7 +211,7 @@ RouteStatistics.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.protorev.v1beta1.PoolWeights
  */
-export class PoolWeights extends Message {
+class PoolWeights extends Message {
     constructor(data) {
         super();
         /**
@@ -257,6 +261,7 @@ PoolWeights.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "concentrated_weight", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "cosmwasm_weight", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PoolWeights };
 /**
  * InfoByPoolType contains information pertaining to how expensive (in terms of
  * gas and time) it is to execute a swap on a given pool type. This distinction
@@ -265,7 +270,7 @@ PoolWeights.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.protorev.v1beta1.InfoByPoolType
  */
-export class InfoByPoolType extends Message {
+class InfoByPoolType extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -291,12 +296,13 @@ InfoByPoolType.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "concentrated", kind: "message", T: ConcentratedPoolInfo },
     { no: 4, name: "cosmwasm", kind: "message", T: CosmwasmPoolInfo },
 ]);
+export { InfoByPoolType };
 /**
  * StablePoolInfo contains meta data pertaining to a stableswap pool type.
  *
  * @generated from message osmosis.protorev.v1beta1.StablePoolInfo
  */
-export class StablePoolInfo extends Message {
+class StablePoolInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -325,12 +331,13 @@ StablePoolInfo.typeName = "osmosis.protorev.v1beta1.StablePoolInfo";
 StablePoolInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "weight", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { StablePoolInfo };
 /**
  * BalancerPoolInfo contains meta data pertaining to a balancer pool type.
  *
  * @generated from message osmosis.protorev.v1beta1.BalancerPoolInfo
  */
-export class BalancerPoolInfo extends Message {
+class BalancerPoolInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -359,13 +366,14 @@ BalancerPoolInfo.typeName = "osmosis.protorev.v1beta1.BalancerPoolInfo";
 BalancerPoolInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "weight", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { BalancerPoolInfo };
 /**
  * ConcentratedPoolInfo contains meta data pertaining to a concentrated pool
  * type.
  *
  * @generated from message osmosis.protorev.v1beta1.ConcentratedPoolInfo
  */
-export class ConcentratedPoolInfo extends Message {
+class ConcentratedPoolInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -401,12 +409,13 @@ ConcentratedPoolInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "weight", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "max_ticks_crossed", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ConcentratedPoolInfo };
 /**
  * CosmwasmPoolInfo contains meta data pertaining to a cosmwasm pool type.
  *
  * @generated from message osmosis.protorev.v1beta1.CosmwasmPoolInfo
  */
-export class CosmwasmPoolInfo extends Message {
+class CosmwasmPoolInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -435,13 +444,14 @@ CosmwasmPoolInfo.typeName = "osmosis.protorev.v1beta1.CosmwasmPoolInfo";
 CosmwasmPoolInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "weight_maps", kind: "message", T: WeightMap, repeated: true },
 ]);
+export { CosmwasmPoolInfo };
 /**
  * WeightMap maps a contract address to a weight. The weight of an address
  * corresponds to the amount of ms required to execute a swap on that contract.
  *
  * @generated from message osmosis.protorev.v1beta1.WeightMap
  */
-export class WeightMap extends Message {
+class WeightMap extends Message {
     constructor(data) {
         super();
         /**
@@ -477,6 +487,7 @@ WeightMap.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "weight", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { WeightMap };
 /**
  * BaseDenom represents a single base denom that the module uses for its
  * arbitrage trades. It contains the denom name alongside the step size of the
@@ -484,7 +495,7 @@ WeightMap.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.protorev.v1beta1.BaseDenom
  */
-export class BaseDenom extends Message {
+class BaseDenom extends Message {
     constructor(data) {
         super();
         /**
@@ -521,13 +532,14 @@ BaseDenom.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "step_size", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { BaseDenom };
 /**
  * BaseDenoms represents all of the base denoms that the module uses for its
  * arbitrage trades.
  *
  * @generated from message osmosis.protorev.v1beta1.BaseDenoms
  */
-export class BaseDenoms extends Message {
+class BaseDenoms extends Message {
     constructor(data) {
         super();
         /**
@@ -554,10 +566,11 @@ BaseDenoms.typeName = "osmosis.protorev.v1beta1.BaseDenoms";
 BaseDenoms.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_denoms", kind: "message", T: BaseDenom, repeated: true },
 ]);
+export { BaseDenoms };
 /**
  * @generated from message osmosis.protorev.v1beta1.AllProtocolRevenue
  */
-export class AllProtocolRevenue extends Message {
+class AllProtocolRevenue extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -581,10 +594,11 @@ AllProtocolRevenue.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "taker_fees_tracker", kind: "message", T: TakerFeesTracker },
     { no: 3, name: "cyclic_arb_tracker", kind: "message", T: CyclicArbTracker },
 ]);
+export { AllProtocolRevenue };
 /**
  * @generated from message osmosis.protorev.v1beta1.CyclicArbTracker
  */
-export class CyclicArbTracker extends Message {
+class CyclicArbTracker extends Message {
     constructor(data) {
         super();
         /**
@@ -616,4 +630,5 @@ CyclicArbTracker.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cyclic_arb", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "height_accounting_starts_from", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { CyclicArbTracker };
 //# sourceMappingURL=protorev_pb.js.map

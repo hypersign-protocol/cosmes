@@ -10,7 +10,7 @@ import { CommitmentProof } from "../../../../cosmos/ics23/v1/proofs_pb.js";
  *
  * @generated from message ibc.core.commitment.v1.MerkleRoot
  */
-export class MerkleRoot extends Message {
+class MerkleRoot extends Message {
     constructor(data) {
         super();
         /**
@@ -37,6 +37,7 @@ MerkleRoot.typeName = "ibc.core.commitment.v1.MerkleRoot";
 MerkleRoot.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MerkleRoot };
 /**
  * MerklePrefix is merkle path prefixed to the key.
  * The constructed key from the Path and the key will be append(Path.KeyPath,
@@ -44,7 +45,7 @@ MerkleRoot.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.commitment.v1.MerklePrefix
  */
-export class MerklePrefix extends Message {
+class MerklePrefix extends Message {
     constructor(data) {
         super();
         /**
@@ -71,6 +72,7 @@ MerklePrefix.typeName = "ibc.core.commitment.v1.MerklePrefix";
 MerklePrefix.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key_prefix", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MerklePrefix };
 /**
  * MerklePath is the path used to verify commitment proofs, which can be an
  * arbitrary structured object (defined by a commitment type).
@@ -78,7 +80,7 @@ MerklePrefix.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.commitment.v1.MerklePath
  */
-export class MerklePath extends Message {
+class MerklePath extends Message {
     constructor(data) {
         super();
         /**
@@ -105,6 +107,7 @@ MerklePath.typeName = "ibc.core.commitment.v1.MerklePath";
 MerklePath.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key_path", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MerklePath };
 /**
  * MerkleProof is a wrapper type over a chain of CommitmentProofs.
  * It demonstrates membership or non-membership for an element or set of
@@ -114,7 +117,7 @@ MerklePath.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.commitment.v1.MerkleProof
  */
-export class MerkleProof extends Message {
+class MerkleProof extends Message {
     constructor(data) {
         super();
         /**
@@ -141,4 +144,5 @@ MerkleProof.typeName = "ibc.core.commitment.v1.MerkleProof";
 MerkleProof.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proofs", kind: "message", T: CommitmentProof, repeated: true },
 ]);
+export { MerkleProof };
 //# sourceMappingURL=commitment_pb.js.map

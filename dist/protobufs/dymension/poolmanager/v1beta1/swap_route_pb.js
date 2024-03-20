@@ -6,7 +6,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 /**
  * @generated from message dymensionxyz.dymension.poolmanager.v1beta1.SwapAmountInRoute
  */
-export class SwapAmountInRoute extends Message {
+class SwapAmountInRoute extends Message {
     constructor(data) {
         super();
         /**
@@ -38,10 +38,11 @@ SwapAmountInRoute.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "token_out_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SwapAmountInRoute };
 /**
  * @generated from message dymensionxyz.dymension.poolmanager.v1beta1.SwapAmountOutRoute
  */
-export class SwapAmountOutRoute extends Message {
+class SwapAmountOutRoute extends Message {
     constructor(data) {
         super();
         /**
@@ -73,4 +74,5 @@ SwapAmountOutRoute.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "token_in_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SwapAmountOutRoute };
 //# sourceMappingURL=swap_route_pb.js.map

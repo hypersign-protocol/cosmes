@@ -9,7 +9,7 @@ import { Coin } from "../../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.GetSwapFeeQueryMsg
  */
-export class GetSwapFeeQueryMsg extends Message {
+class GetSwapFeeQueryMsg extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,10 +32,11 @@ GetSwapFeeQueryMsg.typeName = "osmosis.cosmwasmpool.v1beta1.GetSwapFeeQueryMsg";
 GetSwapFeeQueryMsg.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "get_swap_fee", kind: "message", T: EmptyStruct },
 ]);
+export { GetSwapFeeQueryMsg };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.GetSwapFeeQueryMsgResponse
  */
-export class GetSwapFeeQueryMsgResponse extends Message {
+class GetSwapFeeQueryMsgResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -64,12 +65,13 @@ GetSwapFeeQueryMsgResponse.typeName = "osmosis.cosmwasmpool.v1beta1.GetSwapFeeQu
 GetSwapFeeQueryMsgResponse.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "swap_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GetSwapFeeQueryMsgResponse };
 /**
  * ===================== SpotPriceQueryMsg
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.SpotPrice
  */
-export class SpotPrice extends Message {
+class SpotPrice extends Message {
     constructor(data) {
         super();
         /**
@@ -105,10 +107,11 @@ SpotPrice.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "quote_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "base_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotPrice };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.SpotPriceQueryMsg
  */
-export class SpotPriceQueryMsg extends Message {
+class SpotPriceQueryMsg extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -131,10 +134,11 @@ SpotPriceQueryMsg.typeName = "osmosis.cosmwasmpool.v1beta1.SpotPriceQueryMsg";
 SpotPriceQueryMsg.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spot_price", kind: "message", T: SpotPrice },
 ]);
+export { SpotPriceQueryMsg };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.SpotPriceQueryMsgResponse
  */
-export class SpotPriceQueryMsgResponse extends Message {
+class SpotPriceQueryMsgResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -163,12 +167,13 @@ SpotPriceQueryMsgResponse.typeName = "osmosis.cosmwasmpool.v1beta1.SpotPriceQuer
 SpotPriceQueryMsgResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spot_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotPriceQueryMsgResponse };
 /**
  * ===================== GetTotalPoolLiquidityQueryMsg
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.EmptyStruct
  */
-export class EmptyStruct extends Message {
+class EmptyStruct extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -189,10 +194,11 @@ export class EmptyStruct extends Message {
 EmptyStruct.runtime = proto3;
 EmptyStruct.typeName = "osmosis.cosmwasmpool.v1beta1.EmptyStruct";
 EmptyStruct.fields = proto3.util.newFieldList(() => []);
+export { EmptyStruct };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.GetTotalPoolLiquidityQueryMsg
  */
-export class GetTotalPoolLiquidityQueryMsg extends Message {
+class GetTotalPoolLiquidityQueryMsg extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -215,10 +221,11 @@ GetTotalPoolLiquidityQueryMsg.typeName = "osmosis.cosmwasmpool.v1beta1.GetTotalP
 GetTotalPoolLiquidityQueryMsg.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "get_total_pool_liquidity", kind: "message", T: EmptyStruct },
 ]);
+export { GetTotalPoolLiquidityQueryMsg };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.GetTotalPoolLiquidityQueryMsgResponse
  */
-export class GetTotalPoolLiquidityQueryMsgResponse extends Message {
+class GetTotalPoolLiquidityQueryMsgResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -248,12 +255,13 @@ GetTotalPoolLiquidityQueryMsgResponse.typeName = "osmosis.cosmwasmpool.v1beta1.G
 GetTotalPoolLiquidityQueryMsgResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_pool_liquidity", kind: "message", T: Coin, repeated: true },
 ]);
+export { GetTotalPoolLiquidityQueryMsgResponse };
 /**
  * ===================== GetTotalSharesQueryMsg
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.GetTotalSharesQueryMsg
  */
-export class GetTotalSharesQueryMsg extends Message {
+class GetTotalSharesQueryMsg extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -276,10 +284,11 @@ GetTotalSharesQueryMsg.typeName = "osmosis.cosmwasmpool.v1beta1.GetTotalSharesQu
 GetTotalSharesQueryMsg.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "get_total_shares", kind: "message", T: EmptyStruct },
 ]);
+export { GetTotalSharesQueryMsg };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.GetTotalSharesQueryMsgResponse
  */
-export class GetTotalSharesQueryMsgResponse extends Message {
+class GetTotalSharesQueryMsgResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -308,4 +317,5 @@ GetTotalSharesQueryMsgResponse.typeName = "osmosis.cosmwasmpool.v1beta1.GetTotal
 GetTotalSharesQueryMsgResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total_shares", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GetTotalSharesQueryMsgResponse };
 //# sourceMappingURL=pool_query_msg_pb.js.map

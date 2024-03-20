@@ -6,7 +6,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -46,4 +46,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_id_whitelist", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 2, name: "pool_migration_limit", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

@@ -35,7 +35,7 @@ proto3.util.setEnumType(Exec, "cosmos.group.v1.Exec", [
  *
  * @generated from message cosmos.group.v1.MsgCreateGroup
  */
-export class MsgCreateGroup extends Message {
+class MsgCreateGroup extends Message {
     constructor(data) {
         super();
         /**
@@ -78,12 +78,13 @@ MsgCreateGroup.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "members", kind: "message", T: MemberRequest, repeated: true },
     { no: 3, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateGroup };
 /**
  * MsgCreateGroupResponse is the Msg/CreateGroup response type.
  *
  * @generated from message cosmos.group.v1.MsgCreateGroupResponse
  */
-export class MsgCreateGroupResponse extends Message {
+class MsgCreateGroupResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -112,12 +113,13 @@ MsgCreateGroupResponse.typeName = "cosmos.group.v1.MsgCreateGroupResponse";
 MsgCreateGroupResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateGroupResponse };
 /**
  * MsgUpdateGroupMembers is the Msg/UpdateGroupMembers request type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupMembers
  */
-export class MsgUpdateGroupMembers extends Message {
+class MsgUpdateGroupMembers extends Message {
     constructor(data) {
         super();
         /**
@@ -161,12 +163,13 @@ MsgUpdateGroupMembers.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "member_updates", kind: "message", T: MemberRequest, repeated: true },
 ]);
+export { MsgUpdateGroupMembers };
 /**
  * MsgUpdateGroupMembersResponse is the Msg/UpdateGroupMembers response type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupMembersResponse
  */
-export class MsgUpdateGroupMembersResponse extends Message {
+class MsgUpdateGroupMembersResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -187,12 +190,13 @@ export class MsgUpdateGroupMembersResponse extends Message {
 MsgUpdateGroupMembersResponse.runtime = proto3;
 MsgUpdateGroupMembersResponse.typeName = "cosmos.group.v1.MsgUpdateGroupMembersResponse";
 MsgUpdateGroupMembersResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateGroupMembersResponse };
 /**
  * MsgUpdateGroupAdmin is the Msg/UpdateGroupAdmin request type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupAdmin
  */
-export class MsgUpdateGroupAdmin extends Message {
+class MsgUpdateGroupAdmin extends Message {
     constructor(data) {
         super();
         /**
@@ -235,12 +239,13 @@ MsgUpdateGroupAdmin.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "new_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateGroupAdmin };
 /**
  * MsgUpdateGroupAdminResponse is the Msg/UpdateGroupAdmin response type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupAdminResponse
  */
-export class MsgUpdateGroupAdminResponse extends Message {
+class MsgUpdateGroupAdminResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -261,12 +266,13 @@ export class MsgUpdateGroupAdminResponse extends Message {
 MsgUpdateGroupAdminResponse.runtime = proto3;
 MsgUpdateGroupAdminResponse.typeName = "cosmos.group.v1.MsgUpdateGroupAdminResponse";
 MsgUpdateGroupAdminResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateGroupAdminResponse };
 /**
  * MsgUpdateGroupMetadata is the Msg/UpdateGroupMetadata request type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupMetadata
  */
-export class MsgUpdateGroupMetadata extends Message {
+class MsgUpdateGroupMetadata extends Message {
     constructor(data) {
         super();
         /**
@@ -309,12 +315,13 @@ MsgUpdateGroupMetadata.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateGroupMetadata };
 /**
  * MsgUpdateGroupMetadataResponse is the Msg/UpdateGroupMetadata response type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupMetadataResponse
  */
-export class MsgUpdateGroupMetadataResponse extends Message {
+class MsgUpdateGroupMetadataResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -335,12 +342,13 @@ export class MsgUpdateGroupMetadataResponse extends Message {
 MsgUpdateGroupMetadataResponse.runtime = proto3;
 MsgUpdateGroupMetadataResponse.typeName = "cosmos.group.v1.MsgUpdateGroupMetadataResponse";
 MsgUpdateGroupMetadataResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateGroupMetadataResponse };
 /**
  * MsgCreateGroupPolicy is the Msg/CreateGroupPolicy request type.
  *
  * @generated from message cosmos.group.v1.MsgCreateGroupPolicy
  */
-export class MsgCreateGroupPolicy extends Message {
+class MsgCreateGroupPolicy extends Message {
     constructor(data) {
         super();
         /**
@@ -384,12 +392,13 @@ MsgCreateGroupPolicy.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "decision_policy", kind: "message", T: Any },
 ]);
+export { MsgCreateGroupPolicy };
 /**
  * MsgCreateGroupPolicyResponse is the Msg/CreateGroupPolicy response type.
  *
  * @generated from message cosmos.group.v1.MsgCreateGroupPolicyResponse
  */
-export class MsgCreateGroupPolicyResponse extends Message {
+class MsgCreateGroupPolicyResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -418,12 +427,13 @@ MsgCreateGroupPolicyResponse.typeName = "cosmos.group.v1.MsgCreateGroupPolicyRes
 MsgCreateGroupPolicyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateGroupPolicyResponse };
 /**
  * MsgUpdateGroupPolicyAdmin is the Msg/UpdateGroupPolicyAdmin request type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupPolicyAdmin
  */
-export class MsgUpdateGroupPolicyAdmin extends Message {
+class MsgUpdateGroupPolicyAdmin extends Message {
     constructor(data) {
         super();
         /**
@@ -466,12 +476,13 @@ MsgUpdateGroupPolicyAdmin.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "group_policy_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "new_admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateGroupPolicyAdmin };
 /**
  * MsgUpdateGroupPolicyAdminResponse is the Msg/UpdateGroupPolicyAdmin response type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupPolicyAdminResponse
  */
-export class MsgUpdateGroupPolicyAdminResponse extends Message {
+class MsgUpdateGroupPolicyAdminResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -492,12 +503,13 @@ export class MsgUpdateGroupPolicyAdminResponse extends Message {
 MsgUpdateGroupPolicyAdminResponse.runtime = proto3;
 MsgUpdateGroupPolicyAdminResponse.typeName = "cosmos.group.v1.MsgUpdateGroupPolicyAdminResponse";
 MsgUpdateGroupPolicyAdminResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateGroupPolicyAdminResponse };
 /**
  * MsgCreateGroupWithPolicy is the Msg/CreateGroupWithPolicy request type.
  *
  * @generated from message cosmos.group.v1.MsgCreateGroupWithPolicy
  */
-export class MsgCreateGroupWithPolicy extends Message {
+class MsgCreateGroupWithPolicy extends Message {
     constructor(data) {
         super();
         /**
@@ -556,12 +568,13 @@ MsgCreateGroupWithPolicy.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "group_policy_as_admin", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 6, name: "decision_policy", kind: "message", T: Any },
 ]);
+export { MsgCreateGroupWithPolicy };
 /**
  * MsgCreateGroupWithPolicyResponse is the Msg/CreateGroupWithPolicy response type.
  *
  * @generated from message cosmos.group.v1.MsgCreateGroupWithPolicyResponse
  */
-export class MsgCreateGroupWithPolicyResponse extends Message {
+class MsgCreateGroupWithPolicyResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -597,12 +610,13 @@ MsgCreateGroupWithPolicyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "group_policy_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgCreateGroupWithPolicyResponse };
 /**
  * MsgUpdateGroupPolicyDecisionPolicy is the Msg/UpdateGroupPolicyDecisionPolicy request type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupPolicyDecisionPolicy
  */
-export class MsgUpdateGroupPolicyDecisionPolicy extends Message {
+class MsgUpdateGroupPolicyDecisionPolicy extends Message {
     constructor(data) {
         super();
         /**
@@ -639,12 +653,13 @@ MsgUpdateGroupPolicyDecisionPolicy.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "group_policy_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "decision_policy", kind: "message", T: Any },
 ]);
+export { MsgUpdateGroupPolicyDecisionPolicy };
 /**
  * MsgUpdateGroupPolicyDecisionPolicyResponse is the Msg/UpdateGroupPolicyDecisionPolicy response type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupPolicyDecisionPolicyResponse
  */
-export class MsgUpdateGroupPolicyDecisionPolicyResponse extends Message {
+class MsgUpdateGroupPolicyDecisionPolicyResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -665,12 +680,13 @@ export class MsgUpdateGroupPolicyDecisionPolicyResponse extends Message {
 MsgUpdateGroupPolicyDecisionPolicyResponse.runtime = proto3;
 MsgUpdateGroupPolicyDecisionPolicyResponse.typeName = "cosmos.group.v1.MsgUpdateGroupPolicyDecisionPolicyResponse";
 MsgUpdateGroupPolicyDecisionPolicyResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateGroupPolicyDecisionPolicyResponse };
 /**
  * MsgUpdateGroupPolicyMetadata is the Msg/UpdateGroupPolicyMetadata request type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupPolicyMetadata
  */
-export class MsgUpdateGroupPolicyMetadata extends Message {
+class MsgUpdateGroupPolicyMetadata extends Message {
     constructor(data) {
         super();
         /**
@@ -713,12 +729,13 @@ MsgUpdateGroupPolicyMetadata.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "group_policy_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgUpdateGroupPolicyMetadata };
 /**
  * MsgUpdateGroupPolicyMetadataResponse is the Msg/UpdateGroupPolicyMetadata response type.
  *
  * @generated from message cosmos.group.v1.MsgUpdateGroupPolicyMetadataResponse
  */
-export class MsgUpdateGroupPolicyMetadataResponse extends Message {
+class MsgUpdateGroupPolicyMetadataResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -739,12 +756,13 @@ export class MsgUpdateGroupPolicyMetadataResponse extends Message {
 MsgUpdateGroupPolicyMetadataResponse.runtime = proto3;
 MsgUpdateGroupPolicyMetadataResponse.typeName = "cosmos.group.v1.MsgUpdateGroupPolicyMetadataResponse";
 MsgUpdateGroupPolicyMetadataResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateGroupPolicyMetadataResponse };
 /**
  * MsgSubmitProposal is the Msg/SubmitProposal request type.
  *
  * @generated from message cosmos.group.v1.MsgSubmitProposal
  */
-export class MsgSubmitProposal extends Message {
+class MsgSubmitProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -822,12 +840,13 @@ MsgSubmitProposal.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "summary", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSubmitProposal };
 /**
  * MsgSubmitProposalResponse is the Msg/SubmitProposal response type.
  *
  * @generated from message cosmos.group.v1.MsgSubmitProposalResponse
  */
-export class MsgSubmitProposalResponse extends Message {
+class MsgSubmitProposalResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -856,12 +875,13 @@ MsgSubmitProposalResponse.typeName = "cosmos.group.v1.MsgSubmitProposalResponse"
 MsgSubmitProposalResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgSubmitProposalResponse };
 /**
  * MsgWithdrawProposal is the Msg/WithdrawProposal request type.
  *
  * @generated from message cosmos.group.v1.MsgWithdrawProposal
  */
-export class MsgWithdrawProposal extends Message {
+class MsgWithdrawProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -897,12 +917,13 @@ MsgWithdrawProposal.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgWithdrawProposal };
 /**
  * MsgWithdrawProposalResponse is the Msg/WithdrawProposal response type.
  *
  * @generated from message cosmos.group.v1.MsgWithdrawProposalResponse
  */
-export class MsgWithdrawProposalResponse extends Message {
+class MsgWithdrawProposalResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -923,12 +944,13 @@ export class MsgWithdrawProposalResponse extends Message {
 MsgWithdrawProposalResponse.runtime = proto3;
 MsgWithdrawProposalResponse.typeName = "cosmos.group.v1.MsgWithdrawProposalResponse";
 MsgWithdrawProposalResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgWithdrawProposalResponse };
 /**
  * MsgVote is the Msg/Vote request type.
  *
  * @generated from message cosmos.group.v1.MsgVote
  */
-export class MsgVote extends Message {
+class MsgVote extends Message {
     constructor(data) {
         super();
         /**
@@ -986,12 +1008,13 @@ MsgVote.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "metadata", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "exec", kind: "enum", T: proto3.getEnumType(Exec) },
 ]);
+export { MsgVote };
 /**
  * MsgVoteResponse is the Msg/Vote response type.
  *
  * @generated from message cosmos.group.v1.MsgVoteResponse
  */
-export class MsgVoteResponse extends Message {
+class MsgVoteResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1012,12 +1035,13 @@ export class MsgVoteResponse extends Message {
 MsgVoteResponse.runtime = proto3;
 MsgVoteResponse.typeName = "cosmos.group.v1.MsgVoteResponse";
 MsgVoteResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgVoteResponse };
 /**
  * MsgExec is the Msg/Exec request type.
  *
  * @generated from message cosmos.group.v1.MsgExec
  */
-export class MsgExec extends Message {
+class MsgExec extends Message {
     constructor(data) {
         super();
         /**
@@ -1053,12 +1077,13 @@ MsgExec.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "executor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgExec };
 /**
  * MsgExecResponse is the Msg/Exec request type.
  *
  * @generated from message cosmos.group.v1.MsgExecResponse
  */
-export class MsgExecResponse extends Message {
+class MsgExecResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1087,12 +1112,13 @@ MsgExecResponse.typeName = "cosmos.group.v1.MsgExecResponse";
 MsgExecResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "result", kind: "enum", T: proto3.getEnumType(ProposalExecutorResult) },
 ]);
+export { MsgExecResponse };
 /**
  * MsgLeaveGroup is the Msg/LeaveGroup request type.
  *
  * @generated from message cosmos.group.v1.MsgLeaveGroup
  */
-export class MsgLeaveGroup extends Message {
+class MsgLeaveGroup extends Message {
     constructor(data) {
         super();
         /**
@@ -1128,12 +1154,13 @@ MsgLeaveGroup.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgLeaveGroup };
 /**
  * MsgLeaveGroupResponse is the Msg/LeaveGroup response type.
  *
  * @generated from message cosmos.group.v1.MsgLeaveGroupResponse
  */
-export class MsgLeaveGroupResponse extends Message {
+class MsgLeaveGroupResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1154,4 +1181,5 @@ export class MsgLeaveGroupResponse extends Message {
 MsgLeaveGroupResponse.runtime = proto3;
 MsgLeaveGroupResponse.typeName = "cosmos.group.v1.MsgLeaveGroupResponse";
 MsgLeaveGroupResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgLeaveGroupResponse };
 //# sourceMappingURL=tx_pb.js.map

@@ -7,7 +7,7 @@ import { FeeToken } from "./feetoken_pb.js";
 /**
  * @generated from message osmosis.txfees.v1beta1.QueryFeeTokensRequest
  */
-export class QueryFeeTokensRequest extends Message {
+class QueryFeeTokensRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -28,10 +28,11 @@ export class QueryFeeTokensRequest extends Message {
 QueryFeeTokensRequest.runtime = proto3;
 QueryFeeTokensRequest.typeName = "osmosis.txfees.v1beta1.QueryFeeTokensRequest";
 QueryFeeTokensRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryFeeTokensRequest };
 /**
  * @generated from message osmosis.txfees.v1beta1.QueryFeeTokensResponse
  */
-export class QueryFeeTokensResponse extends Message {
+class QueryFeeTokensResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -58,13 +59,14 @@ QueryFeeTokensResponse.typeName = "osmosis.txfees.v1beta1.QueryFeeTokensResponse
 QueryFeeTokensResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fee_tokens", kind: "message", T: FeeToken, repeated: true },
 ]);
+export { QueryFeeTokensResponse };
 /**
  * QueryDenomSpotPriceRequest defines grpc request structure for querying spot
  * price for the specified tx fee denom
  *
  * @generated from message osmosis.txfees.v1beta1.QueryDenomSpotPriceRequest
  */
-export class QueryDenomSpotPriceRequest extends Message {
+class QueryDenomSpotPriceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -91,13 +93,14 @@ QueryDenomSpotPriceRequest.typeName = "osmosis.txfees.v1beta1.QueryDenomSpotPric
 QueryDenomSpotPriceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomSpotPriceRequest };
 /**
  * QueryDenomSpotPriceRequest defines grpc response structure for querying spot
  * price for the specified tx fee denom
  *
  * @generated from message osmosis.txfees.v1beta1.QueryDenomSpotPriceResponse
  */
-export class QueryDenomSpotPriceResponse extends Message {
+class QueryDenomSpotPriceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -129,10 +132,11 @@ QueryDenomSpotPriceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "poolID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "spot_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomSpotPriceResponse };
 /**
  * @generated from message osmosis.txfees.v1beta1.QueryDenomPoolIdRequest
  */
-export class QueryDenomPoolIdRequest extends Message {
+class QueryDenomPoolIdRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -159,10 +163,11 @@ QueryDenomPoolIdRequest.typeName = "osmosis.txfees.v1beta1.QueryDenomPoolIdReque
 QueryDenomPoolIdRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomPoolIdRequest };
 /**
  * @generated from message osmosis.txfees.v1beta1.QueryDenomPoolIdResponse
  */
-export class QueryDenomPoolIdResponse extends Message {
+class QueryDenomPoolIdResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -189,10 +194,11 @@ QueryDenomPoolIdResponse.typeName = "osmosis.txfees.v1beta1.QueryDenomPoolIdResp
 QueryDenomPoolIdResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "poolID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryDenomPoolIdResponse };
 /**
  * @generated from message osmosis.txfees.v1beta1.QueryBaseDenomRequest
  */
-export class QueryBaseDenomRequest extends Message {
+class QueryBaseDenomRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -213,10 +219,11 @@ export class QueryBaseDenomRequest extends Message {
 QueryBaseDenomRequest.runtime = proto3;
 QueryBaseDenomRequest.typeName = "osmosis.txfees.v1beta1.QueryBaseDenomRequest";
 QueryBaseDenomRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBaseDenomRequest };
 /**
  * @generated from message osmosis.txfees.v1beta1.QueryBaseDenomResponse
  */
-export class QueryBaseDenomResponse extends Message {
+class QueryBaseDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -243,10 +250,11 @@ QueryBaseDenomResponse.typeName = "osmosis.txfees.v1beta1.QueryBaseDenomResponse
 QueryBaseDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBaseDenomResponse };
 /**
  * @generated from message osmosis.txfees.v1beta1.QueryEipBaseFeeRequest
  */
-export class QueryEipBaseFeeRequest extends Message {
+class QueryEipBaseFeeRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -267,10 +275,11 @@ export class QueryEipBaseFeeRequest extends Message {
 QueryEipBaseFeeRequest.runtime = proto3;
 QueryEipBaseFeeRequest.typeName = "osmosis.txfees.v1beta1.QueryEipBaseFeeRequest";
 QueryEipBaseFeeRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryEipBaseFeeRequest };
 /**
  * @generated from message osmosis.txfees.v1beta1.QueryEipBaseFeeResponse
  */
-export class QueryEipBaseFeeResponse extends Message {
+class QueryEipBaseFeeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -297,4 +306,5 @@ QueryEipBaseFeeResponse.typeName = "osmosis.txfees.v1beta1.QueryEipBaseFeeRespon
 QueryEipBaseFeeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryEipBaseFeeResponse };
 //# sourceMappingURL=query_pb.js.map

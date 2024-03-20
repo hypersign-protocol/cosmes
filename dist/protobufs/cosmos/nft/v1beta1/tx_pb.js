@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.nft.v1beta1.MsgSend
  */
-export class MsgSend extends Message {
+class MsgSend extends Message {
     constructor(data) {
         super();
         /**
@@ -58,12 +58,13 @@ MsgSend.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "receiver", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSend };
 /**
  * MsgSendResponse defines the Msg/Send response type.
  *
  * @generated from message cosmos.nft.v1beta1.MsgSendResponse
  */
-export class MsgSendResponse extends Message {
+class MsgSendResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -84,4 +85,5 @@ export class MsgSendResponse extends Message {
 MsgSendResponse.runtime = proto3;
 MsgSendResponse.typeName = "cosmos.nft.v1beta1.MsgSendResponse";
 MsgSendResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSendResponse };
 //# sourceMappingURL=tx_pb.js.map

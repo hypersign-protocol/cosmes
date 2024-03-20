@@ -9,7 +9,7 @@ import { Class, NFT } from "./nft_pb.js";
  *
  * @generated from message cosmos.nft.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -45,12 +45,13 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "classes", kind: "message", T: Class, repeated: true },
     { no: 2, name: "entries", kind: "message", T: Entry, repeated: true },
 ]);
+export { GenesisState };
 /**
  * Entry Defines all nft owned by a person
  *
  * @generated from message cosmos.nft.v1beta1.Entry
  */
-export class Entry extends Message {
+class Entry extends Message {
     constructor(data) {
         super();
         /**
@@ -86,4 +87,5 @@ Entry.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "nfts", kind: "message", T: NFT, repeated: true },
 ]);
+export { Entry };
 //# sourceMappingURL=genesis_pb.js.map

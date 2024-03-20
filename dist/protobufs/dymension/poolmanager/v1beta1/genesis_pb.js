@@ -9,7 +9,7 @@ import { ModuleRoute } from "./module_route_pb.js";
  *
  * @generated from message dymensionxyz.dymension.poolmanager.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -45,4 +45,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "next_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "pool_routes", kind: "message", T: ModuleRoute, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

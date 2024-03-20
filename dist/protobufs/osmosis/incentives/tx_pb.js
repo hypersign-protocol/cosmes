@@ -10,7 +10,7 @@ import { Coin } from "../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.incentives.MsgCreateGauge
  */
-export class MsgCreateGauge extends Message {
+class MsgCreateGauge extends Message {
     constructor(data) {
         super();
         /**
@@ -80,10 +80,11 @@ MsgCreateGauge.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "num_epochs_paid_over", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 7, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateGauge };
 /**
  * @generated from message osmosis.incentives.MsgCreateGaugeResponse
  */
-export class MsgCreateGaugeResponse extends Message {
+class MsgCreateGaugeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -104,12 +105,13 @@ export class MsgCreateGaugeResponse extends Message {
 MsgCreateGaugeResponse.runtime = proto3;
 MsgCreateGaugeResponse.typeName = "osmosis.incentives.MsgCreateGaugeResponse";
 MsgCreateGaugeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreateGaugeResponse };
 /**
  * MsgAddToGauge adds coins to a previously created gauge
  *
  * @generated from message osmosis.incentives.MsgAddToGauge
  */
-export class MsgAddToGauge extends Message {
+class MsgAddToGauge extends Message {
     constructor(data) {
         super();
         /**
@@ -152,10 +154,11 @@ MsgAddToGauge.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "rewards", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgAddToGauge };
 /**
  * @generated from message osmosis.incentives.MsgAddToGaugeResponse
  */
-export class MsgAddToGaugeResponse extends Message {
+class MsgAddToGaugeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -176,12 +179,13 @@ export class MsgAddToGaugeResponse extends Message {
 MsgAddToGaugeResponse.runtime = proto3;
 MsgAddToGaugeResponse.typeName = "osmosis.incentives.MsgAddToGaugeResponse";
 MsgAddToGaugeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgAddToGaugeResponse };
 /**
  * MsgCreateGroup creates a group to distribute rewards to a group of pools
  *
  * @generated from message osmosis.incentives.MsgCreateGroup
  */
-export class MsgCreateGroup extends Message {
+class MsgCreateGroup extends Message {
     constructor(data) {
         super();
         /**
@@ -232,10 +236,11 @@ MsgCreateGroup.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "pool_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { MsgCreateGroup };
 /**
  * @generated from message osmosis.incentives.MsgCreateGroupResponse
  */
-export class MsgCreateGroupResponse extends Message {
+class MsgCreateGroupResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -264,4 +269,5 @@ MsgCreateGroupResponse.typeName = "osmosis.incentives.MsgCreateGroupResponse";
 MsgCreateGroupResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateGroupResponse };
 //# sourceMappingURL=tx_pb.js.map

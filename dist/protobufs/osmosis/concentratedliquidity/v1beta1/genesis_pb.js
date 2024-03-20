@@ -14,7 +14,7 @@ import { Params } from "../params_pb.js";
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.FullTick
  */
-export class FullTick extends Message {
+class FullTick extends Message {
     constructor(data) {
         super();
         /**
@@ -51,13 +51,14 @@ FullTick.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "tick_index", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 3, name: "info", kind: "message", T: TickInfo },
 ]);
+export { FullTick };
 /**
  * PoolData represents a serialized pool along with its ticks
  * for genesis state.
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.PoolData
  */
-export class PoolData extends Message {
+class PoolData extends Message {
     constructor(data) {
         super();
         /**
@@ -100,10 +101,11 @@ PoolData.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "incentives_accumulators", kind: "message", T: AccumObject, repeated: true },
     { no: 5, name: "incentive_records", kind: "message", T: IncentiveRecord, repeated: true },
 ]);
+export { PoolData };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.PositionData
  */
-export class PositionData extends Message {
+class PositionData extends Message {
     constructor(data) {
         super();
         /**
@@ -137,12 +139,13 @@ PositionData.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "spread_reward_accum_record", kind: "message", T: Record },
     { no: 4, name: "uptime_accum_records", kind: "message", T: Record, repeated: true },
 ]);
+export { PositionData };
 /**
  * GenesisState defines the concentrated liquidity module's genesis state.
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -192,6 +195,7 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "next_incentive_record_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 6, name: "incentives_accumulator_pool_id_migration_threshold", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GenesisState };
 /**
  * In original struct of Accum object, store.KVStore is stored together.
  * For handling genesis, we do not need to include store.KVStore since we use
@@ -199,7 +203,7 @@ GenesisState.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.concentratedliquidity.v1beta1.AccumObject
  */
-export class AccumObject extends Message {
+class AccumObject extends Message {
     constructor(data) {
         super();
         /**
@@ -229,4 +233,5 @@ AccumObject.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "accum_content", kind: "message", T: AccumulatorContent },
 ]);
+export { AccumObject };
 //# sourceMappingURL=genesis_pb.js.map

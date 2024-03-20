@@ -12,7 +12,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.crypto.ed25519.PubKey
  */
-export class PubKey extends Message {
+class PubKey extends Message {
     constructor(data) {
         super();
         /**
@@ -39,13 +39,14 @@ PubKey.typeName = "cosmos.crypto.ed25519.PubKey";
 PubKey.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { PubKey };
 /**
  * Deprecated: PrivKey defines a ed25519 private key.
  * NOTE: ed25519 keys must not be used in SDK apps except in a tendermint validator context.
  *
  * @generated from message cosmos.crypto.ed25519.PrivKey
  */
-export class PrivKey extends Message {
+class PrivKey extends Message {
     constructor(data) {
         super();
         /**
@@ -72,4 +73,5 @@ PrivKey.typeName = "cosmos.crypto.ed25519.PrivKey";
 PrivKey.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { PrivKey };
 //# sourceMappingURL=keys_pb.js.map

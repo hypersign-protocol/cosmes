@@ -7,7 +7,7 @@ import { FundingMode } from "./proposal_pb.js";
 /**
  * @generated from message injective.wasmx.v1.EventContractExecution
  */
-export class EventContractExecution extends Message {
+class EventContractExecution extends Message {
     constructor(data) {
         super();
         /**
@@ -49,10 +49,11 @@ EventContractExecution.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "other_error", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "execution_error", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventContractExecution };
 /**
  * @generated from message injective.wasmx.v1.EventContractRegistered
  */
-export class EventContractRegistered extends Message {
+class EventContractRegistered extends Message {
     constructor(data) {
         super();
         /**
@@ -114,10 +115,11 @@ EventContractRegistered.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "granter_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "funding_mode", kind: "enum", T: proto3.getEnumType(FundingMode) },
 ]);
+export { EventContractRegistered };
 /**
  * @generated from message injective.wasmx.v1.EventContractDeregistered
  */
-export class EventContractDeregistered extends Message {
+class EventContractDeregistered extends Message {
     constructor(data) {
         super();
         /**
@@ -144,4 +146,5 @@ EventContractDeregistered.typeName = "injective.wasmx.v1.EventContractDeregister
 EventContractDeregistered.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EventContractDeregistered };
 //# sourceMappingURL=events_pb.js.map

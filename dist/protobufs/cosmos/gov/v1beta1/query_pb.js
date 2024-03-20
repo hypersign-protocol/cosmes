@@ -10,7 +10,7 @@ import { PageRequest, PageResponse } from "../../base/query/v1beta1/pagination_p
  *
  * @generated from message cosmos.gov.v1beta1.QueryProposalRequest
  */
-export class QueryProposalRequest extends Message {
+class QueryProposalRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -39,12 +39,13 @@ QueryProposalRequest.typeName = "cosmos.gov.v1beta1.QueryProposalRequest";
 QueryProposalRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryProposalRequest };
 /**
  * QueryProposalResponse is the response type for the Query/Proposal RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryProposalResponse
  */
-export class QueryProposalResponse extends Message {
+class QueryProposalResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -67,12 +68,13 @@ QueryProposalResponse.typeName = "cosmos.gov.v1beta1.QueryProposalResponse";
 QueryProposalResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal", kind: "message", T: Proposal },
 ]);
+export { QueryProposalResponse };
 /**
  * QueryProposalsRequest is the request type for the Query/Proposals RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryProposalsRequest
  */
-export class QueryProposalsRequest extends Message {
+class QueryProposalsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -116,13 +118,14 @@ QueryProposalsRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "depositor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryProposalsRequest };
 /**
  * QueryProposalsResponse is the response type for the Query/Proposals RPC
  * method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryProposalsResponse
  */
-export class QueryProposalsResponse extends Message {
+class QueryProposalsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -152,12 +155,13 @@ QueryProposalsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposals", kind: "message", T: Proposal, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryProposalsResponse };
 /**
  * QueryVoteRequest is the request type for the Query/Vote RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryVoteRequest
  */
-export class QueryVoteRequest extends Message {
+class QueryVoteRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -193,12 +197,13 @@ QueryVoteRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "voter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryVoteRequest };
 /**
  * QueryVoteResponse is the response type for the Query/Vote RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryVoteResponse
  */
-export class QueryVoteResponse extends Message {
+class QueryVoteResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -221,12 +226,13 @@ QueryVoteResponse.typeName = "cosmos.gov.v1beta1.QueryVoteResponse";
 QueryVoteResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "vote", kind: "message", T: Vote },
 ]);
+export { QueryVoteResponse };
 /**
  * QueryVotesRequest is the request type for the Query/Votes RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryVotesRequest
  */
-export class QueryVotesRequest extends Message {
+class QueryVotesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -256,12 +262,13 @@ QueryVotesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryVotesRequest };
 /**
  * QueryVotesResponse is the response type for the Query/Votes RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryVotesResponse
  */
-export class QueryVotesResponse extends Message {
+class QueryVotesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -291,12 +298,13 @@ QueryVotesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "votes", kind: "message", T: Vote, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryVotesResponse };
 /**
  * QueryParamsRequest is the request type for the Query/Params RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -326,12 +334,13 @@ QueryParamsRequest.typeName = "cosmos.gov.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -356,12 +365,13 @@ QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "deposit_params", kind: "message", T: DepositParams },
     { no: 3, name: "tally_params", kind: "message", T: TallyParams },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryDepositRequest is the request type for the Query/Deposit RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryDepositRequest
  */
-export class QueryDepositRequest extends Message {
+class QueryDepositRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -397,12 +407,13 @@ QueryDepositRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "depositor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDepositRequest };
 /**
  * QueryDepositResponse is the response type for the Query/Deposit RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryDepositResponse
  */
-export class QueryDepositResponse extends Message {
+class QueryDepositResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -425,12 +436,13 @@ QueryDepositResponse.typeName = "cosmos.gov.v1beta1.QueryDepositResponse";
 QueryDepositResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "deposit", kind: "message", T: Deposit },
 ]);
+export { QueryDepositResponse };
 /**
  * QueryDepositsRequest is the request type for the Query/Deposits RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryDepositsRequest
  */
-export class QueryDepositsRequest extends Message {
+class QueryDepositsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -460,12 +472,13 @@ QueryDepositsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryDepositsRequest };
 /**
  * QueryDepositsResponse is the response type for the Query/Deposits RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryDepositsResponse
  */
-export class QueryDepositsResponse extends Message {
+class QueryDepositsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -495,12 +508,13 @@ QueryDepositsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "deposits", kind: "message", T: Deposit, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryDepositsResponse };
 /**
  * QueryTallyResultRequest is the request type for the Query/Tally RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryTallyResultRequest
  */
-export class QueryTallyResultRequest extends Message {
+class QueryTallyResultRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -529,12 +543,13 @@ QueryTallyResultRequest.typeName = "cosmos.gov.v1beta1.QueryTallyResultRequest";
 QueryTallyResultRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proposal_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryTallyResultRequest };
 /**
  * QueryTallyResultResponse is the response type for the Query/Tally RPC method.
  *
  * @generated from message cosmos.gov.v1beta1.QueryTallyResultResponse
  */
-export class QueryTallyResultResponse extends Message {
+class QueryTallyResultResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -557,4 +572,5 @@ QueryTallyResultResponse.typeName = "cosmos.gov.v1beta1.QueryTallyResultResponse
 QueryTallyResultResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tally", kind: "message", T: TallyResult },
 ]);
+export { QueryTallyResultResponse };
 //# sourceMappingURL=query_pb.js.map

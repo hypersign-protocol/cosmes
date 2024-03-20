@@ -9,7 +9,7 @@ import { Coin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.crisis.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,4 +32,5 @@ GenesisState.typeName = "cosmos.crisis.v1beta1.GenesisState";
 GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "constant_fee", kind: "message", T: Coin },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

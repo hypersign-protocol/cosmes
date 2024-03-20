@@ -8,7 +8,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message ethermint.types.v1.TxResult
  */
-export class TxResult extends Message {
+class TxResult extends Message {
     constructor(data) {
         super();
         /**
@@ -82,4 +82,5 @@ TxResult.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "gas_used", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 7, name: "cumulative_gas_used", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { TxResult };
 //# sourceMappingURL=indexer_pb.js.map

@@ -10,7 +10,7 @@ import { Coin } from "../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message dymensionxyz.dymension.incentives.MsgCreateGauge
  */
-export class MsgCreateGauge extends Message {
+class MsgCreateGauge extends Message {
     constructor(data) {
         super();
         /**
@@ -67,10 +67,11 @@ MsgCreateGauge.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "start_time", kind: "message", T: Timestamp },
     { no: 6, name: "num_epochs_paid_over", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgCreateGauge };
 /**
  * @generated from message dymensionxyz.dymension.incentives.MsgCreateGaugeResponse
  */
-export class MsgCreateGaugeResponse extends Message {
+class MsgCreateGaugeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -91,12 +92,13 @@ export class MsgCreateGaugeResponse extends Message {
 MsgCreateGaugeResponse.runtime = proto3;
 MsgCreateGaugeResponse.typeName = "dymensionxyz.dymension.incentives.MsgCreateGaugeResponse";
 MsgCreateGaugeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreateGaugeResponse };
 /**
  * MsgAddToGauge adds coins to a previously created gauge
  *
  * @generated from message dymensionxyz.dymension.incentives.MsgAddToGauge
  */
-export class MsgAddToGauge extends Message {
+class MsgAddToGauge extends Message {
     constructor(data) {
         super();
         /**
@@ -139,10 +141,11 @@ MsgAddToGauge.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "rewards", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgAddToGauge };
 /**
  * @generated from message dymensionxyz.dymension.incentives.MsgAddToGaugeResponse
  */
-export class MsgAddToGaugeResponse extends Message {
+class MsgAddToGaugeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -163,4 +166,5 @@ export class MsgAddToGaugeResponse extends Message {
 MsgAddToGaugeResponse.runtime = proto3;
 MsgAddToGaugeResponse.typeName = "dymensionxyz.dymension.incentives.MsgAddToGaugeResponse";
 MsgAddToGaugeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgAddToGaugeResponse };
 //# sourceMappingURL=tx_pb.js.map

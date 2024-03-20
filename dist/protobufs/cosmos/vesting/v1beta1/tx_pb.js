@@ -11,7 +11,7 @@ import { Period } from "./vesting_pb.js";
  *
  * @generated from message cosmos.vesting.v1beta1.MsgCreateVestingAccount
  */
-export class MsgCreateVestingAccount extends Message {
+class MsgCreateVestingAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -60,12 +60,13 @@ MsgCreateVestingAccount.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "end_time", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 5, name: "delayed", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MsgCreateVestingAccount };
 /**
  * MsgCreateVestingAccountResponse defines the Msg/CreateVestingAccount response type.
  *
  * @generated from message cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse
  */
-export class MsgCreateVestingAccountResponse extends Message {
+class MsgCreateVestingAccountResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -86,6 +87,7 @@ export class MsgCreateVestingAccountResponse extends Message {
 MsgCreateVestingAccountResponse.runtime = proto3;
 MsgCreateVestingAccountResponse.typeName = "cosmos.vesting.v1beta1.MsgCreateVestingAccountResponse";
 MsgCreateVestingAccountResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreateVestingAccountResponse };
 /**
  * MsgCreatePermanentLockedAccount defines a message that enables creating a permanent
  * locked account.
@@ -94,7 +96,7 @@ MsgCreateVestingAccountResponse.fields = proto3.util.newFieldList(() => []);
  *
  * @generated from message cosmos.vesting.v1beta1.MsgCreatePermanentLockedAccount
  */
-export class MsgCreatePermanentLockedAccount extends Message {
+class MsgCreatePermanentLockedAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -131,6 +133,7 @@ MsgCreatePermanentLockedAccount.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "to_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgCreatePermanentLockedAccount };
 /**
  * MsgCreatePermanentLockedAccountResponse defines the Msg/CreatePermanentLockedAccount response type.
  *
@@ -138,7 +141,7 @@ MsgCreatePermanentLockedAccount.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.vesting.v1beta1.MsgCreatePermanentLockedAccountResponse
  */
-export class MsgCreatePermanentLockedAccountResponse extends Message {
+class MsgCreatePermanentLockedAccountResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -159,6 +162,7 @@ export class MsgCreatePermanentLockedAccountResponse extends Message {
 MsgCreatePermanentLockedAccountResponse.runtime = proto3;
 MsgCreatePermanentLockedAccountResponse.typeName = "cosmos.vesting.v1beta1.MsgCreatePermanentLockedAccountResponse";
 MsgCreatePermanentLockedAccountResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreatePermanentLockedAccountResponse };
 /**
  * MsgCreateVestingAccount defines a message that enables creating a vesting
  * account.
@@ -167,7 +171,7 @@ MsgCreatePermanentLockedAccountResponse.fields = proto3.util.newFieldList(() => 
  *
  * @generated from message cosmos.vesting.v1beta1.MsgCreatePeriodicVestingAccount
  */
-export class MsgCreatePeriodicVestingAccount extends Message {
+class MsgCreatePeriodicVestingAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -211,6 +215,7 @@ MsgCreatePeriodicVestingAccount.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "start_time", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 4, name: "vesting_periods", kind: "message", T: Period, repeated: true },
 ]);
+export { MsgCreatePeriodicVestingAccount };
 /**
  * MsgCreateVestingAccountResponse defines the Msg/CreatePeriodicVestingAccount
  * response type.
@@ -219,7 +224,7 @@ MsgCreatePeriodicVestingAccount.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.vesting.v1beta1.MsgCreatePeriodicVestingAccountResponse
  */
-export class MsgCreatePeriodicVestingAccountResponse extends Message {
+class MsgCreatePeriodicVestingAccountResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -240,4 +245,5 @@ export class MsgCreatePeriodicVestingAccountResponse extends Message {
 MsgCreatePeriodicVestingAccountResponse.runtime = proto3;
 MsgCreatePeriodicVestingAccountResponse.typeName = "cosmos.vesting.v1beta1.MsgCreatePeriodicVestingAccountResponse";
 MsgCreatePeriodicVestingAccountResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreatePeriodicVestingAccountResponse };
 //# sourceMappingURL=tx_pb.js.map

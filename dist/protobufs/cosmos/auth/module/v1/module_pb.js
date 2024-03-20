@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.auth.module.v1.Module
  */
-export class Module extends Message {
+class Module extends Message {
     constructor(data) {
         super();
         /**
@@ -51,12 +51,13 @@ Module.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "module_account_permissions", kind: "message", T: ModuleAccountPermission, repeated: true },
     { no: 3, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Module };
 /**
  * ModuleAccountPermission represents permissions for a module account.
  *
  * @generated from message cosmos.auth.module.v1.ModuleAccountPermission
  */
-export class ModuleAccountPermission extends Message {
+class ModuleAccountPermission extends Message {
     constructor(data) {
         super();
         /**
@@ -93,4 +94,5 @@ ModuleAccountPermission.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "permissions", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ModuleAccountPermission };
 //# sourceMappingURL=module_pb.js.map

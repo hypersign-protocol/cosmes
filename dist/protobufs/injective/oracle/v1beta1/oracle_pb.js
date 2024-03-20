@@ -76,7 +76,7 @@ proto3.util.setEnumType(OracleType, "injective.oracle.v1beta1.OracleType", [
 /**
  * @generated from message injective.oracle.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -103,10 +103,11 @@ Params.typeName = "injective.oracle.v1beta1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pyth_contract", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 /**
  * @generated from message injective.oracle.v1beta1.OracleInfo
  */
-export class OracleInfo extends Message {
+class OracleInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -138,10 +139,11 @@ OracleInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "oracle_type", kind: "enum", T: proto3.getEnumType(OracleType) },
 ]);
+export { OracleInfo };
 /**
  * @generated from message injective.oracle.v1beta1.ChainlinkPriceState
  */
-export class ChainlinkPriceState extends Message {
+class ChainlinkPriceState extends Message {
     constructor(data) {
         super();
         /**
@@ -179,10 +181,11 @@ ChainlinkPriceState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "price_state", kind: "message", T: PriceState },
 ]);
+export { ChainlinkPriceState };
 /**
  * @generated from message injective.oracle.v1beta1.BandPriceState
  */
-export class BandPriceState extends Message {
+class BandPriceState extends Message {
     constructor(data) {
         super();
         /**
@@ -225,10 +228,11 @@ BandPriceState.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "request_ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "price_state", kind: "message", T: PriceState },
 ]);
+export { BandPriceState };
 /**
  * @generated from message injective.oracle.v1beta1.PriceFeedState
  */
-export class PriceFeedState extends Message {
+class PriceFeedState extends Message {
     constructor(data) {
         super();
         /**
@@ -266,10 +270,11 @@ PriceFeedState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "price_state", kind: "message", T: PriceState },
     { no: 4, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { PriceFeedState };
 /**
  * @generated from message injective.oracle.v1beta1.ProviderInfo
  */
-export class ProviderInfo extends Message {
+class ProviderInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -301,10 +306,11 @@ ProviderInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "provider", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ProviderInfo };
 /**
  * @generated from message injective.oracle.v1beta1.ProviderState
  */
-export class ProviderState extends Message {
+class ProviderState extends Message {
     constructor(data) {
         super();
         /**
@@ -332,10 +338,11 @@ ProviderState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "provider_info", kind: "message", T: ProviderInfo },
     { no: 2, name: "provider_price_states", kind: "message", T: ProviderPriceState, repeated: true },
 ]);
+export { ProviderState };
 /**
  * @generated from message injective.oracle.v1beta1.ProviderPriceState
  */
-export class ProviderPriceState extends Message {
+class ProviderPriceState extends Message {
     constructor(data) {
         super();
         /**
@@ -363,10 +370,11 @@ ProviderPriceState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "state", kind: "message", T: PriceState },
 ]);
+export { ProviderPriceState };
 /**
  * @generated from message injective.oracle.v1beta1.PriceFeedInfo
  */
-export class PriceFeedInfo extends Message {
+class PriceFeedInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -398,10 +406,11 @@ PriceFeedInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "base", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "quote", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PriceFeedInfo };
 /**
  * @generated from message injective.oracle.v1beta1.PriceFeedPrice
  */
-export class PriceFeedPrice extends Message {
+class PriceFeedPrice extends Message {
     constructor(data) {
         super();
         /**
@@ -428,10 +437,11 @@ PriceFeedPrice.typeName = "injective.oracle.v1beta1.PriceFeedPrice";
 PriceFeedPrice.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PriceFeedPrice };
 /**
  * @generated from message injective.oracle.v1beta1.CoinbasePriceState
  */
-export class CoinbasePriceState extends Message {
+class CoinbasePriceState extends Message {
     constructor(data) {
         super();
         /**
@@ -482,10 +492,11 @@ CoinbasePriceState.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "value", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "price_state", kind: "message", T: PriceState },
 ]);
+export { CoinbasePriceState };
 /**
  * @generated from message injective.oracle.v1beta1.PriceState
  */
-export class PriceState extends Message {
+class PriceState extends Message {
     constructor(data) {
         super();
         /**
@@ -522,10 +533,11 @@ PriceState.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "cumulative_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { PriceState };
 /**
  * @generated from message injective.oracle.v1beta1.PythPriceState
  */
-export class PythPriceState extends Message {
+class PythPriceState extends Message {
     constructor(data) {
         super();
         /**
@@ -573,10 +585,11 @@ PythPriceState.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "publish_time", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 6, name: "price_state", kind: "message", T: PriceState },
 ]);
+export { PythPriceState };
 /**
  * @generated from message injective.oracle.v1beta1.BandOracleRequest
  */
-export class BandOracleRequest extends Message {
+class BandOracleRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -667,10 +680,11 @@ BandOracleRequest.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "execute_gas", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 9, name: "min_source_count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { BandOracleRequest };
 /**
  * @generated from message injective.oracle.v1beta1.BandIBCParams
  */
-export class BandIBCParams extends Message {
+class BandIBCParams extends Message {
     constructor(data) {
         super();
         /**
@@ -734,10 +748,11 @@ BandIBCParams.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "ibc_port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "legacy_oracle_ids", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true },
 ]);
+export { BandIBCParams };
 /**
  * @generated from message injective.oracle.v1beta1.SymbolPriceTimestamp
  */
-export class SymbolPriceTimestamp extends Message {
+class SymbolPriceTimestamp extends Message {
     constructor(data) {
         super();
         /**
@@ -774,10 +789,11 @@ SymbolPriceTimestamp.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "symbol_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { SymbolPriceTimestamp };
 /**
  * @generated from message injective.oracle.v1beta1.LastPriceTimestamps
  */
-export class LastPriceTimestamps extends Message {
+class LastPriceTimestamps extends Message {
     constructor(data) {
         super();
         /**
@@ -804,10 +820,11 @@ LastPriceTimestamps.typeName = "injective.oracle.v1beta1.LastPriceTimestamps";
 LastPriceTimestamps.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "last_price_timestamps", kind: "message", T: SymbolPriceTimestamp, repeated: true },
 ]);
+export { LastPriceTimestamps };
 /**
  * @generated from message injective.oracle.v1beta1.PriceRecords
  */
-export class PriceRecords extends Message {
+class PriceRecords extends Message {
     constructor(data) {
         super();
         /**
@@ -844,10 +861,11 @@ PriceRecords.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "symbol_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "latest_price_records", kind: "message", T: PriceRecord, repeated: true },
 ]);
+export { PriceRecords };
 /**
  * @generated from message injective.oracle.v1beta1.PriceRecord
  */
-export class PriceRecord extends Message {
+class PriceRecord extends Message {
     constructor(data) {
         super();
         /**
@@ -879,13 +897,14 @@ PriceRecord.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PriceRecord };
 /**
  * MetadataStatistics refers to the metadata summary statistics of the
  * historical sample considered
  *
  * @generated from message injective.oracle.v1beta1.MetadataStatistics
  */
-export class MetadataStatistics extends Message {
+class MetadataStatistics extends Message {
     constructor(data) {
         super();
         /**
@@ -975,10 +994,11 @@ MetadataStatistics.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "max_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "median_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MetadataStatistics };
 /**
  * @generated from message injective.oracle.v1beta1.PriceAttestation
  */
-export class PriceAttestation extends Message {
+class PriceAttestation extends Message {
     constructor(data) {
         super();
         /**
@@ -1042,4 +1062,5 @@ PriceAttestation.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "ema_expo", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
     { no: 8, name: "publish_time", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { PriceAttestation };
 //# sourceMappingURL=oracle_pb.js.map

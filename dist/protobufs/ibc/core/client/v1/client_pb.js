@@ -10,7 +10,7 @@ import { Plan } from "../../../../cosmos/upgrade/v1beta1/upgrade_pb.js";
  *
  * @generated from message ibc.core.client.v1.IdentifiedClientState
  */
-export class IdentifiedClientState extends Message {
+class IdentifiedClientState extends Message {
     constructor(data) {
         super();
         /**
@@ -40,13 +40,14 @@ IdentifiedClientState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "client_state", kind: "message", T: Any },
 ]);
+export { IdentifiedClientState };
 /**
  * ConsensusStateWithHeight defines a consensus state with an additional height
  * field.
  *
  * @generated from message ibc.core.client.v1.ConsensusStateWithHeight
  */
-export class ConsensusStateWithHeight extends Message {
+class ConsensusStateWithHeight extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -70,13 +71,14 @@ ConsensusStateWithHeight.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "height", kind: "message", T: Height },
     { no: 2, name: "consensus_state", kind: "message", T: Any },
 ]);
+export { ConsensusStateWithHeight };
 /**
  * ClientConsensusStates defines all the stored consensus states for a given
  * client.
  *
  * @generated from message ibc.core.client.v1.ClientConsensusStates
  */
-export class ClientConsensusStates extends Message {
+class ClientConsensusStates extends Message {
     constructor(data) {
         super();
         /**
@@ -112,6 +114,7 @@ ClientConsensusStates.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "consensus_states", kind: "message", T: ConsensusStateWithHeight, repeated: true },
 ]);
+export { ClientConsensusStates };
 /**
  * Height is a monotonically increasing data type
  * that can be compared against another Height for the purposes of updating and
@@ -126,7 +129,7 @@ ClientConsensusStates.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.client.v1.Height
  */
-export class Height extends Message {
+class Height extends Message {
     constructor(data) {
         super();
         /**
@@ -162,12 +165,13 @@ Height.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "revision_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "revision_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Height };
 /**
  * Params defines the set of IBC light client parameters.
  *
  * @generated from message ibc.core.client.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -198,6 +202,7 @@ Params.typeName = "ibc.core.client.v1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "allowed_clients", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Params };
 /**
  * ClientUpdateProposal is a legacy governance proposal. If it passes, the substitute
  * client's latest consensus state is copied over to the subject client. The proposal
@@ -209,7 +214,7 @@ Params.fields = proto3.util.newFieldList(() => [
  * @generated from message ibc.core.client.v1.ClientUpdateProposal
  * @deprecated
  */
-export class ClientUpdateProposal extends Message {
+class ClientUpdateProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -260,6 +265,7 @@ ClientUpdateProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "subject_client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "substitute_client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ClientUpdateProposal };
 /**
  * UpgradeProposal is a gov Content type for initiating an IBC breaking
  * upgrade.
@@ -269,7 +275,7 @@ ClientUpdateProposal.fields = proto3.util.newFieldList(() => [
  * @generated from message ibc.core.client.v1.UpgradeProposal
  * @deprecated
  */
-export class UpgradeProposal extends Message {
+class UpgradeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -303,4 +309,5 @@ UpgradeProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "plan", kind: "message", T: Plan },
     { no: 4, name: "upgraded_client_state", kind: "message", T: Any },
 ]);
+export { UpgradeProposal };
 //# sourceMappingURL=client_pb.js.map

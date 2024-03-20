@@ -6,7 +6,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
 /**
  * @generated from message osmosis.store.v1beta1.Node
  */
-export class Node extends Message {
+class Node extends Message {
     constructor(data) {
         super();
         /**
@@ -33,10 +33,11 @@ Node.typeName = "osmosis.store.v1beta1.Node";
 Node.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "children", kind: "message", T: Child, repeated: true },
 ]);
+export { Node };
 /**
  * @generated from message osmosis.store.v1beta1.Child
  */
-export class Child extends Message {
+class Child extends Message {
     constructor(data) {
         super();
         /**
@@ -68,10 +69,11 @@ Child.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "index", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "accumulation", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Child };
 /**
  * @generated from message osmosis.store.v1beta1.Leaf
  */
-export class Leaf extends Message {
+class Leaf extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -94,4 +96,5 @@ Leaf.typeName = "osmosis.store.v1beta1.Leaf";
 Leaf.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "leaf", kind: "message", T: Child },
 ]);
+export { Leaf };
 //# sourceMappingURL=tree_pb.js.map

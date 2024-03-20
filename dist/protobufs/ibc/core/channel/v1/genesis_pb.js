@@ -9,7 +9,7 @@ import { IdentifiedChannel, PacketState, Params } from "./channel_pb.js";
  *
  * @generated from message ibc.core.channel.v1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -74,13 +74,14 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "next_channel_sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 9, name: "params", kind: "message", T: Params },
 ]);
+export { GenesisState };
 /**
  * PacketSequence defines the genesis type necessary to retrieve and store
  * next send and receive sequences.
  *
  * @generated from message ibc.core.channel.v1.PacketSequence
  */
-export class PacketSequence extends Message {
+class PacketSequence extends Message {
     constructor(data) {
         super();
         /**
@@ -117,4 +118,5 @@ PacketSequence.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PacketSequence };
 //# sourceMappingURL=genesis_pb.js.map

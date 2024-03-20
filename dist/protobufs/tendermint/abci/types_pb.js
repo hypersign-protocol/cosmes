@@ -53,7 +53,7 @@ proto3.util.setEnumType(MisbehaviorType, "tendermint.abci.MisbehaviorType", [
 /**
  * @generated from message tendermint.abci.Request
  */
-export class Request extends Message {
+class Request extends Message {
     constructor(data) {
         super();
         /**
@@ -95,10 +95,11 @@ Request.fields = proto3.util.newFieldList(() => [
     { no: 16, name: "prepare_proposal", kind: "message", T: RequestPrepareProposal, oneof: "value" },
     { no: 17, name: "process_proposal", kind: "message", T: RequestProcessProposal, oneof: "value" },
 ]);
+export { Request };
 /**
  * @generated from message tendermint.abci.RequestEcho
  */
-export class RequestEcho extends Message {
+class RequestEcho extends Message {
     constructor(data) {
         super();
         /**
@@ -125,10 +126,11 @@ RequestEcho.typeName = "tendermint.abci.RequestEcho";
 RequestEcho.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "message", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { RequestEcho };
 /**
  * @generated from message tendermint.abci.RequestFlush
  */
-export class RequestFlush extends Message {
+class RequestFlush extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -149,10 +151,11 @@ export class RequestFlush extends Message {
 RequestFlush.runtime = proto3;
 RequestFlush.typeName = "tendermint.abci.RequestFlush";
 RequestFlush.fields = proto3.util.newFieldList(() => []);
+export { RequestFlush };
 /**
  * @generated from message tendermint.abci.RequestInfo
  */
-export class RequestInfo extends Message {
+class RequestInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -194,10 +197,11 @@ RequestInfo.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "p2p_version", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "abci_version", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { RequestInfo };
 /**
  * @generated from message tendermint.abci.RequestInitChain
  */
-export class RequestInitChain extends Message {
+class RequestInitChain extends Message {
     constructor(data) {
         super();
         /**
@@ -241,10 +245,11 @@ RequestInitChain.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "app_state_bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 6, name: "initial_height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { RequestInitChain };
 /**
  * @generated from message tendermint.abci.RequestQuery
  */
-export class RequestQuery extends Message {
+class RequestQuery extends Message {
     constructor(data) {
         super();
         /**
@@ -286,10 +291,11 @@ RequestQuery.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 4, name: "prove", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { RequestQuery };
 /**
  * @generated from message tendermint.abci.RequestBeginBlock
  */
-export class RequestBeginBlock extends Message {
+class RequestBeginBlock extends Message {
     constructor(data) {
         super();
         /**
@@ -323,10 +329,11 @@ RequestBeginBlock.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "last_commit_info", kind: "message", T: CommitInfo },
     { no: 4, name: "byzantine_validators", kind: "message", T: Misbehavior, repeated: true },
 ]);
+export { RequestBeginBlock };
 /**
  * @generated from message tendermint.abci.RequestCheckTx
  */
-export class RequestCheckTx extends Message {
+class RequestCheckTx extends Message {
     constructor(data) {
         super();
         /**
@@ -358,10 +365,11 @@ RequestCheckTx.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "type", kind: "enum", T: proto3.getEnumType(CheckTxType) },
 ]);
+export { RequestCheckTx };
 /**
  * @generated from message tendermint.abci.RequestDeliverTx
  */
-export class RequestDeliverTx extends Message {
+class RequestDeliverTx extends Message {
     constructor(data) {
         super();
         /**
@@ -388,10 +396,11 @@ RequestDeliverTx.typeName = "tendermint.abci.RequestDeliverTx";
 RequestDeliverTx.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { RequestDeliverTx };
 /**
  * @generated from message tendermint.abci.RequestEndBlock
  */
-export class RequestEndBlock extends Message {
+class RequestEndBlock extends Message {
     constructor(data) {
         super();
         /**
@@ -418,10 +427,11 @@ RequestEndBlock.typeName = "tendermint.abci.RequestEndBlock";
 RequestEndBlock.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { RequestEndBlock };
 /**
  * @generated from message tendermint.abci.RequestCommit
  */
-export class RequestCommit extends Message {
+class RequestCommit extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -442,12 +452,13 @@ export class RequestCommit extends Message {
 RequestCommit.runtime = proto3;
 RequestCommit.typeName = "tendermint.abci.RequestCommit";
 RequestCommit.fields = proto3.util.newFieldList(() => []);
+export { RequestCommit };
 /**
  * lists available snapshots
  *
  * @generated from message tendermint.abci.RequestListSnapshots
  */
-export class RequestListSnapshots extends Message {
+class RequestListSnapshots extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -468,12 +479,13 @@ export class RequestListSnapshots extends Message {
 RequestListSnapshots.runtime = proto3;
 RequestListSnapshots.typeName = "tendermint.abci.RequestListSnapshots";
 RequestListSnapshots.fields = proto3.util.newFieldList(() => []);
+export { RequestListSnapshots };
 /**
  * offers a snapshot to the application
  *
  * @generated from message tendermint.abci.RequestOfferSnapshot
  */
-export class RequestOfferSnapshot extends Message {
+class RequestOfferSnapshot extends Message {
     constructor(data) {
         super();
         /**
@@ -503,12 +515,13 @@ RequestOfferSnapshot.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "snapshot", kind: "message", T: Snapshot },
     { no: 2, name: "app_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { RequestOfferSnapshot };
 /**
  * loads a snapshot chunk
  *
  * @generated from message tendermint.abci.RequestLoadSnapshotChunk
  */
-export class RequestLoadSnapshotChunk extends Message {
+class RequestLoadSnapshotChunk extends Message {
     constructor(data) {
         super();
         /**
@@ -545,12 +558,13 @@ RequestLoadSnapshotChunk.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "format", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 3, name: "chunk", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { RequestLoadSnapshotChunk };
 /**
  * Applies a snapshot chunk
  *
  * @generated from message tendermint.abci.RequestApplySnapshotChunk
  */
-export class RequestApplySnapshotChunk extends Message {
+class RequestApplySnapshotChunk extends Message {
     constructor(data) {
         super();
         /**
@@ -587,10 +601,11 @@ RequestApplySnapshotChunk.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "chunk", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "sender", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { RequestApplySnapshotChunk };
 /**
  * @generated from message tendermint.abci.RequestPrepareProposal
  */
-export class RequestPrepareProposal extends Message {
+class RequestPrepareProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -651,10 +666,11 @@ RequestPrepareProposal.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "next_validators_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 8, name: "proposer_address", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { RequestPrepareProposal };
 /**
  * @generated from message tendermint.abci.RequestProcessProposal
  */
-export class RequestProcessProposal extends Message {
+class RequestProcessProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -712,10 +728,11 @@ RequestProcessProposal.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "next_validators_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 8, name: "proposer_address", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { RequestProcessProposal };
 /**
  * @generated from message tendermint.abci.Response
  */
-export class Response extends Message {
+class Response extends Message {
     constructor(data) {
         super();
         /**
@@ -758,12 +775,13 @@ Response.fields = proto3.util.newFieldList(() => [
     { no: 17, name: "prepare_proposal", kind: "message", T: ResponsePrepareProposal, oneof: "value" },
     { no: 18, name: "process_proposal", kind: "message", T: ResponseProcessProposal, oneof: "value" },
 ]);
+export { Response };
 /**
  * nondeterministic
  *
  * @generated from message tendermint.abci.ResponseException
  */
-export class ResponseException extends Message {
+class ResponseException extends Message {
     constructor(data) {
         super();
         /**
@@ -790,10 +808,11 @@ ResponseException.typeName = "tendermint.abci.ResponseException";
 ResponseException.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "error", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ResponseException };
 /**
  * @generated from message tendermint.abci.ResponseEcho
  */
-export class ResponseEcho extends Message {
+class ResponseEcho extends Message {
     constructor(data) {
         super();
         /**
@@ -820,10 +839,11 @@ ResponseEcho.typeName = "tendermint.abci.ResponseEcho";
 ResponseEcho.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "message", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ResponseEcho };
 /**
  * @generated from message tendermint.abci.ResponseFlush
  */
-export class ResponseFlush extends Message {
+class ResponseFlush extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -844,10 +864,11 @@ export class ResponseFlush extends Message {
 ResponseFlush.runtime = proto3;
 ResponseFlush.typeName = "tendermint.abci.ResponseFlush";
 ResponseFlush.fields = proto3.util.newFieldList(() => []);
+export { ResponseFlush };
 /**
  * @generated from message tendermint.abci.ResponseInfo
  */
-export class ResponseInfo extends Message {
+class ResponseInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -894,10 +915,11 @@ ResponseInfo.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "last_block_height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 5, name: "last_block_app_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ResponseInfo };
 /**
  * @generated from message tendermint.abci.ResponseInitChain
  */
-export class ResponseInitChain extends Message {
+class ResponseInitChain extends Message {
     constructor(data) {
         super();
         /**
@@ -930,10 +952,11 @@ ResponseInitChain.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validators", kind: "message", T: ValidatorUpdate, repeated: true },
     { no: 3, name: "app_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ResponseInitChain };
 /**
  * @generated from message tendermint.abci.ResponseQuery
  */
-export class ResponseQuery extends Message {
+class ResponseQuery extends Message {
     constructor(data) {
         super();
         /**
@@ -1002,10 +1025,11 @@ ResponseQuery.fields = proto3.util.newFieldList(() => [
     { no: 9, name: "height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 10, name: "codespace", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ResponseQuery };
 /**
  * @generated from message tendermint.abci.ResponseBeginBlock
  */
-export class ResponseBeginBlock extends Message {
+class ResponseBeginBlock extends Message {
     constructor(data) {
         super();
         /**
@@ -1032,10 +1056,11 @@ ResponseBeginBlock.typeName = "tendermint.abci.ResponseBeginBlock";
 ResponseBeginBlock.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "events", kind: "message", T: Event, repeated: true },
 ]);
+export { ResponseBeginBlock };
 /**
  * @generated from message tendermint.abci.ResponseCheckTx
  */
-export class ResponseCheckTx extends Message {
+class ResponseCheckTx extends Message {
     constructor(data) {
         super();
         /**
@@ -1119,10 +1144,11 @@ ResponseCheckTx.fields = proto3.util.newFieldList(() => [
     { no: 10, name: "priority", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 11, name: "mempool_error", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ResponseCheckTx };
 /**
  * @generated from message tendermint.abci.ResponseDeliverTx
  */
-export class ResponseDeliverTx extends Message {
+class ResponseDeliverTx extends Message {
     constructor(data) {
         super();
         /**
@@ -1190,10 +1216,11 @@ ResponseDeliverTx.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "events", kind: "message", T: Event, repeated: true },
     { no: 8, name: "codespace", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ResponseDeliverTx };
 /**
  * @generated from message tendermint.abci.ResponseEndBlock
  */
-export class ResponseEndBlock extends Message {
+class ResponseEndBlock extends Message {
     constructor(data) {
         super();
         /**
@@ -1226,10 +1253,11 @@ ResponseEndBlock.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "consensus_param_updates", kind: "message", T: ConsensusParams },
     { no: 3, name: "events", kind: "message", T: Event, repeated: true },
 ]);
+export { ResponseEndBlock };
 /**
  * @generated from message tendermint.abci.ResponseCommit
  */
-export class ResponseCommit extends Message {
+class ResponseCommit extends Message {
     constructor(data) {
         super();
         /**
@@ -1263,10 +1291,11 @@ ResponseCommit.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "retain_height", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { ResponseCommit };
 /**
  * @generated from message tendermint.abci.ResponseListSnapshots
  */
-export class ResponseListSnapshots extends Message {
+class ResponseListSnapshots extends Message {
     constructor(data) {
         super();
         /**
@@ -1293,10 +1322,11 @@ ResponseListSnapshots.typeName = "tendermint.abci.ResponseListSnapshots";
 ResponseListSnapshots.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "snapshots", kind: "message", T: Snapshot, repeated: true },
 ]);
+export { ResponseListSnapshots };
 /**
  * @generated from message tendermint.abci.ResponseOfferSnapshot
  */
-export class ResponseOfferSnapshot extends Message {
+class ResponseOfferSnapshot extends Message {
     constructor(data) {
         super();
         /**
@@ -1323,6 +1353,7 @@ ResponseOfferSnapshot.typeName = "tendermint.abci.ResponseOfferSnapshot";
 ResponseOfferSnapshot.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "result", kind: "enum", T: proto3.getEnumType(ResponseOfferSnapshot_Result) },
 ]);
+export { ResponseOfferSnapshot };
 /**
  * @generated from enum tendermint.abci.ResponseOfferSnapshot.Result
  */
@@ -1377,7 +1408,7 @@ proto3.util.setEnumType(ResponseOfferSnapshot_Result, "tendermint.abci.ResponseO
 /**
  * @generated from message tendermint.abci.ResponseLoadSnapshotChunk
  */
-export class ResponseLoadSnapshotChunk extends Message {
+class ResponseLoadSnapshotChunk extends Message {
     constructor(data) {
         super();
         /**
@@ -1404,10 +1435,11 @@ ResponseLoadSnapshotChunk.typeName = "tendermint.abci.ResponseLoadSnapshotChunk"
 ResponseLoadSnapshotChunk.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "chunk", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ResponseLoadSnapshotChunk };
 /**
  * @generated from message tendermint.abci.ResponseApplySnapshotChunk
  */
-export class ResponseApplySnapshotChunk extends Message {
+class ResponseApplySnapshotChunk extends Message {
     constructor(data) {
         super();
         /**
@@ -1448,6 +1480,7 @@ ResponseApplySnapshotChunk.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "refetch_chunks", kind: "scalar", T: 13 /* ScalarType.UINT32 */, repeated: true },
     { no: 3, name: "reject_senders", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ResponseApplySnapshotChunk };
 /**
  * @generated from enum tendermint.abci.ResponseApplySnapshotChunk.Result
  */
@@ -1502,7 +1535,7 @@ proto3.util.setEnumType(ResponseApplySnapshotChunk_Result, "tendermint.abci.Resp
 /**
  * @generated from message tendermint.abci.ResponsePrepareProposal
  */
-export class ResponsePrepareProposal extends Message {
+class ResponsePrepareProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -1529,10 +1562,11 @@ ResponsePrepareProposal.typeName = "tendermint.abci.ResponsePrepareProposal";
 ResponsePrepareProposal.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "txs", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { ResponsePrepareProposal };
 /**
  * @generated from message tendermint.abci.ResponseProcessProposal
  */
-export class ResponseProcessProposal extends Message {
+class ResponseProcessProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -1559,6 +1593,7 @@ ResponseProcessProposal.typeName = "tendermint.abci.ResponseProcessProposal";
 ResponseProcessProposal.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "status", kind: "enum", T: proto3.getEnumType(ResponseProcessProposal_ProposalStatus) },
 ]);
+export { ResponseProcessProposal };
 /**
  * @generated from enum tendermint.abci.ResponseProcessProposal.ProposalStatus
  */
@@ -1586,7 +1621,7 @@ proto3.util.setEnumType(ResponseProcessProposal_ProposalStatus, "tendermint.abci
 /**
  * @generated from message tendermint.abci.CommitInfo
  */
-export class CommitInfo extends Message {
+class CommitInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -1618,10 +1653,11 @@ CommitInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "round", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
     { no: 2, name: "votes", kind: "message", T: VoteInfo, repeated: true },
 ]);
+export { CommitInfo };
 /**
  * @generated from message tendermint.abci.ExtendedCommitInfo
  */
-export class ExtendedCommitInfo extends Message {
+class ExtendedCommitInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -1658,6 +1694,7 @@ ExtendedCommitInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "round", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
     { no: 2, name: "votes", kind: "message", T: ExtendedVoteInfo, repeated: true },
 ]);
+export { ExtendedCommitInfo };
 /**
  * Event allows application developers to attach additional information to
  * ResponseBeginBlock, ResponseEndBlock, ResponseCheckTx and ResponseDeliverTx.
@@ -1665,7 +1702,7 @@ ExtendedCommitInfo.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message tendermint.abci.Event
  */
-export class Event extends Message {
+class Event extends Message {
     constructor(data) {
         super();
         /**
@@ -1697,12 +1734,13 @@ Event.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "attributes", kind: "message", T: EventAttribute, repeated: true },
 ]);
+export { Event };
 /**
  * EventAttribute is a single key-value pair, associated with an event.
  *
  * @generated from message tendermint.abci.EventAttribute
  */
-export class EventAttribute extends Message {
+class EventAttribute extends Message {
     constructor(data) {
         super();
         /**
@@ -1741,6 +1779,7 @@ EventAttribute.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "index", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { EventAttribute };
 /**
  * TxResult contains results of executing the transaction.
  *
@@ -1748,7 +1787,7 @@ EventAttribute.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message tendermint.abci.TxResult
  */
-export class TxResult extends Message {
+class TxResult extends Message {
     constructor(data) {
         super();
         /**
@@ -1786,12 +1825,13 @@ TxResult.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "tx", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "result", kind: "message", T: ResponseDeliverTx },
 ]);
+export { TxResult };
 /**
  * Validator
  *
  * @generated from message tendermint.abci.Validator
  */
-export class Validator extends Message {
+class Validator extends Message {
     constructor(data) {
         super();
         /**
@@ -1829,12 +1869,13 @@ Validator.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { Validator };
 /**
  * ValidatorUpdate
  *
  * @generated from message tendermint.abci.ValidatorUpdate
  */
-export class ValidatorUpdate extends Message {
+class ValidatorUpdate extends Message {
     constructor(data) {
         super();
         /**
@@ -1862,12 +1903,13 @@ ValidatorUpdate.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pub_key", kind: "message", T: PublicKey },
     { no: 2, name: "power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { ValidatorUpdate };
 /**
  * VoteInfo
  *
  * @generated from message tendermint.abci.VoteInfo
  */
-export class VoteInfo extends Message {
+class VoteInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -1895,10 +1937,11 @@ VoteInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator", kind: "message", T: Validator },
     { no: 2, name: "signed_last_block", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { VoteInfo };
 /**
  * @generated from message tendermint.abci.ExtendedVoteInfo
  */
-export class ExtendedVoteInfo extends Message {
+class ExtendedVoteInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -1933,10 +1976,11 @@ ExtendedVoteInfo.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "signed_last_block", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 3, name: "vote_extension", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ExtendedVoteInfo };
 /**
  * @generated from message tendermint.abci.Misbehavior
  */
-export class Misbehavior extends Message {
+class Misbehavior extends Message {
     constructor(data) {
         super();
         /**
@@ -1981,10 +2025,11 @@ Misbehavior.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "time", kind: "message", T: Timestamp },
     { no: 5, name: "total_voting_power", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { Misbehavior };
 /**
  * @generated from message tendermint.abci.Snapshot
  */
-export class Snapshot extends Message {
+class Snapshot extends Message {
     constructor(data) {
         super();
         /**
@@ -2041,4 +2086,5 @@ Snapshot.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 5, name: "metadata", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { Snapshot };
 //# sourceMappingURL=types_pb.js.map

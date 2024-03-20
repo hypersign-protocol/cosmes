@@ -13,7 +13,7 @@ import { FeeEnabledChannel } from "./genesis_pb.js";
  *
  * @generated from message ibc.applications.fee.v1.QueryIncentivizedPacketsRequest
  */
-export class QueryIncentivizedPacketsRequest extends Message {
+class QueryIncentivizedPacketsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -43,12 +43,13 @@ QueryIncentivizedPacketsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
     { no: 2, name: "query_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryIncentivizedPacketsRequest };
 /**
  * QueryIncentivizedPacketsResponse defines the response type for the IncentivizedPackets rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryIncentivizedPacketsResponse
  */
-export class QueryIncentivizedPacketsResponse extends Message {
+class QueryIncentivizedPacketsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -78,12 +79,13 @@ QueryIncentivizedPacketsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "incentivized_packets", kind: "message", T: IdentifiedPacketFees, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryIncentivizedPacketsResponse };
 /**
  * QueryIncentivizedPacketRequest defines the request type for the IncentivizedPacket rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryIncentivizedPacketRequest
  */
-export class QueryIncentivizedPacketRequest extends Message {
+class QueryIncentivizedPacketRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -113,12 +115,13 @@ QueryIncentivizedPacketRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "packet_id", kind: "message", T: PacketId },
     { no: 2, name: "query_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryIncentivizedPacketRequest };
 /**
  * QueryIncentivizedPacketsResponse defines the response type for the IncentivizedPacket rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryIncentivizedPacketResponse
  */
-export class QueryIncentivizedPacketResponse extends Message {
+class QueryIncentivizedPacketResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -141,13 +144,14 @@ QueryIncentivizedPacketResponse.typeName = "ibc.applications.fee.v1.QueryIncenti
 QueryIncentivizedPacketResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "incentivized_packet", kind: "message", T: IdentifiedPacketFees },
 ]);
+export { QueryIncentivizedPacketResponse };
 /**
  * QueryIncentivizedPacketsForChannelRequest defines the request type for querying for all incentivized packets
  * for a specific channel
  *
  * @generated from message ibc.applications.fee.v1.QueryIncentivizedPacketsForChannelRequest
  */
-export class QueryIncentivizedPacketsForChannelRequest extends Message {
+class QueryIncentivizedPacketsForChannelRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -187,12 +191,13 @@ QueryIncentivizedPacketsForChannelRequest.fields = proto3.util.newFieldList(() =
     { no: 3, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "query_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryIncentivizedPacketsForChannelRequest };
 /**
  * QueryIncentivizedPacketsResponse defines the response type for the incentivized packets RPC
  *
  * @generated from message ibc.applications.fee.v1.QueryIncentivizedPacketsForChannelResponse
  */
-export class QueryIncentivizedPacketsForChannelResponse extends Message {
+class QueryIncentivizedPacketsForChannelResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -222,12 +227,13 @@ QueryIncentivizedPacketsForChannelResponse.fields = proto3.util.newFieldList(() 
     { no: 1, name: "incentivized_packets", kind: "message", T: IdentifiedPacketFees, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryIncentivizedPacketsForChannelResponse };
 /**
  * QueryTotalRecvFeesRequest defines the request type for the TotalRecvFees rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryTotalRecvFeesRequest
  */
-export class QueryTotalRecvFeesRequest extends Message {
+class QueryTotalRecvFeesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -250,12 +256,13 @@ QueryTotalRecvFeesRequest.typeName = "ibc.applications.fee.v1.QueryTotalRecvFees
 QueryTotalRecvFeesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "packet_id", kind: "message", T: PacketId },
 ]);
+export { QueryTotalRecvFeesRequest };
 /**
  * QueryTotalRecvFeesResponse defines the response type for the TotalRecvFees rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryTotalRecvFeesResponse
  */
-export class QueryTotalRecvFeesResponse extends Message {
+class QueryTotalRecvFeesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -284,12 +291,13 @@ QueryTotalRecvFeesResponse.typeName = "ibc.applications.fee.v1.QueryTotalRecvFee
 QueryTotalRecvFeesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "recv_fees", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryTotalRecvFeesResponse };
 /**
  * QueryTotalAckFeesRequest defines the request type for the TotalAckFees rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryTotalAckFeesRequest
  */
-export class QueryTotalAckFeesRequest extends Message {
+class QueryTotalAckFeesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -312,12 +320,13 @@ QueryTotalAckFeesRequest.typeName = "ibc.applications.fee.v1.QueryTotalAckFeesRe
 QueryTotalAckFeesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "packet_id", kind: "message", T: PacketId },
 ]);
+export { QueryTotalAckFeesRequest };
 /**
  * QueryTotalAckFeesResponse defines the response type for the TotalAckFees rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryTotalAckFeesResponse
  */
-export class QueryTotalAckFeesResponse extends Message {
+class QueryTotalAckFeesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -346,12 +355,13 @@ QueryTotalAckFeesResponse.typeName = "ibc.applications.fee.v1.QueryTotalAckFeesR
 QueryTotalAckFeesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ack_fees", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryTotalAckFeesResponse };
 /**
  * QueryTotalTimeoutFeesRequest defines the request type for the TotalTimeoutFees rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryTotalTimeoutFeesRequest
  */
-export class QueryTotalTimeoutFeesRequest extends Message {
+class QueryTotalTimeoutFeesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -374,12 +384,13 @@ QueryTotalTimeoutFeesRequest.typeName = "ibc.applications.fee.v1.QueryTotalTimeo
 QueryTotalTimeoutFeesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "packet_id", kind: "message", T: PacketId },
 ]);
+export { QueryTotalTimeoutFeesRequest };
 /**
  * QueryTotalTimeoutFeesResponse defines the response type for the TotalTimeoutFees rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryTotalTimeoutFeesResponse
  */
-export class QueryTotalTimeoutFeesResponse extends Message {
+class QueryTotalTimeoutFeesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -408,12 +419,13 @@ QueryTotalTimeoutFeesResponse.typeName = "ibc.applications.fee.v1.QueryTotalTime
 QueryTotalTimeoutFeesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "timeout_fees", kind: "message", T: Coin, repeated: true },
 ]);
+export { QueryTotalTimeoutFeesResponse };
 /**
  * QueryPayeeRequest defines the request type for the Payee rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryPayeeRequest
  */
-export class QueryPayeeRequest extends Message {
+class QueryPayeeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -449,12 +461,13 @@ QueryPayeeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "relayer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryPayeeRequest };
 /**
  * QueryPayeeResponse defines the response type for the Payee rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryPayeeResponse
  */
-export class QueryPayeeResponse extends Message {
+class QueryPayeeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -483,12 +496,13 @@ QueryPayeeResponse.typeName = "ibc.applications.fee.v1.QueryPayeeResponse";
 QueryPayeeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "payee_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryPayeeResponse };
 /**
  * QueryCounterpartyPayeeRequest defines the request type for the CounterpartyPayee rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryCounterpartyPayeeRequest
  */
-export class QueryCounterpartyPayeeRequest extends Message {
+class QueryCounterpartyPayeeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -524,12 +538,13 @@ QueryCounterpartyPayeeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "relayer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCounterpartyPayeeRequest };
 /**
  * QueryCounterpartyPayeeResponse defines the response type for the CounterpartyPayee rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryCounterpartyPayeeResponse
  */
-export class QueryCounterpartyPayeeResponse extends Message {
+class QueryCounterpartyPayeeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -558,12 +573,13 @@ QueryCounterpartyPayeeResponse.typeName = "ibc.applications.fee.v1.QueryCounterp
 QueryCounterpartyPayeeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "counterparty_payee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryCounterpartyPayeeResponse };
 /**
  * QueryFeeEnabledChannelsRequest defines the request type for the FeeEnabledChannels rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryFeeEnabledChannelsRequest
  */
-export class QueryFeeEnabledChannelsRequest extends Message {
+class QueryFeeEnabledChannelsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -593,12 +609,13 @@ QueryFeeEnabledChannelsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
     { no: 2, name: "query_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryFeeEnabledChannelsRequest };
 /**
  * QueryFeeEnabledChannelsResponse defines the response type for the FeeEnabledChannels rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryFeeEnabledChannelsResponse
  */
-export class QueryFeeEnabledChannelsResponse extends Message {
+class QueryFeeEnabledChannelsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -628,12 +645,13 @@ QueryFeeEnabledChannelsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fee_enabled_channels", kind: "message", T: FeeEnabledChannel, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryFeeEnabledChannelsResponse };
 /**
  * QueryFeeEnabledChannelRequest defines the request type for the FeeEnabledChannel rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryFeeEnabledChannelRequest
  */
-export class QueryFeeEnabledChannelRequest extends Message {
+class QueryFeeEnabledChannelRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -669,12 +687,13 @@ QueryFeeEnabledChannelRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "port_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "channel_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryFeeEnabledChannelRequest };
 /**
  * QueryFeeEnabledChannelResponse defines the response type for the FeeEnabledChannel rpc
  *
  * @generated from message ibc.applications.fee.v1.QueryFeeEnabledChannelResponse
  */
-export class QueryFeeEnabledChannelResponse extends Message {
+class QueryFeeEnabledChannelResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -703,4 +722,5 @@ QueryFeeEnabledChannelResponse.typeName = "ibc.applications.fee.v1.QueryFeeEnabl
 QueryFeeEnabledChannelResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fee_enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryFeeEnabledChannelResponse };
 //# sourceMappingURL=query_pb.js.map

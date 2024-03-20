@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.capability.module.v1.Module
  */
-export class Module extends Message {
+class Module extends Message {
     constructor(data) {
         super();
         /**
@@ -38,4 +38,5 @@ Module.typeName = "cosmos.capability.module.v1.Module";
 Module.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "seal_keeper", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { Module };
 //# sourceMappingURL=module_pb.js.map

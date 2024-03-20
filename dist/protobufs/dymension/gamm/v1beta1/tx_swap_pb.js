@@ -10,7 +10,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgSwapExactAmountIn
  */
-export class MsgSwapExactAmountIn extends Message {
+class MsgSwapExactAmountIn extends Message {
     constructor(data) {
         super();
         /**
@@ -48,10 +48,11 @@ MsgSwapExactAmountIn.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_in", kind: "message", T: Coin },
     { no: 4, name: "token_out_min_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSwapExactAmountIn };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgSwapExactAmountInResponse
  */
-export class MsgSwapExactAmountInResponse extends Message {
+class MsgSwapExactAmountInResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -78,10 +79,11 @@ MsgSwapExactAmountInResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.Msg
 MsgSwapExactAmountInResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSwapExactAmountInResponse };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgSwapExactAmountOut
  */
-export class MsgSwapExactAmountOut extends Message {
+class MsgSwapExactAmountOut extends Message {
     constructor(data) {
         super();
         /**
@@ -119,10 +121,11 @@ MsgSwapExactAmountOut.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_in_max_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "token_out", kind: "message", T: Coin },
 ]);
+export { MsgSwapExactAmountOut };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgSwapExactAmountOutResponse
  */
-export class MsgSwapExactAmountOutResponse extends Message {
+class MsgSwapExactAmountOutResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -149,4 +152,5 @@ MsgSwapExactAmountOutResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.Ms
 MsgSwapExactAmountOutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgSwapExactAmountOutResponse };
 //# sourceMappingURL=tx_swap_pb.js.map

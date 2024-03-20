@@ -9,7 +9,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.protorev.v1beta1.SetProtoRevEnabledProposal
  */
-export class SetProtoRevEnabledProposal extends Message {
+class SetProtoRevEnabledProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -46,6 +46,7 @@ SetProtoRevEnabledProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { SetProtoRevEnabledProposal };
 /**
  * SetProtoRevAdminAccountProposal is a gov Content type to set the admin
  * account that will receive permissions to alter hot routes and set the
@@ -53,7 +54,7 @@ SetProtoRevEnabledProposal.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.protorev.v1beta1.SetProtoRevAdminAccountProposal
  */
-export class SetProtoRevAdminAccountProposal extends Message {
+class SetProtoRevAdminAccountProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -90,4 +91,5 @@ SetProtoRevAdminAccountProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SetProtoRevAdminAccountProposal };
 //# sourceMappingURL=gov_pb.js.map

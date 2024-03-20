@@ -6,7 +6,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
 /**
  * @generated from message osmosis.ibchooks.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -33,4 +33,5 @@ Params.typeName = "osmosis.ibchooks.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "allowed_async_ack_contracts", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

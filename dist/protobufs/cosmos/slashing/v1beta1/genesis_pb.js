@@ -9,7 +9,7 @@ import { Params, ValidatorSigningInfo } from "./slashing_pb.js";
  *
  * @generated from message cosmos.slashing.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -48,12 +48,13 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "signing_infos", kind: "message", T: SigningInfo, repeated: true },
     { no: 3, name: "missed_blocks", kind: "message", T: ValidatorMissedBlocks, repeated: true },
 ]);
+export { GenesisState };
 /**
  * SigningInfo stores validator signing info of corresponding address.
  *
  * @generated from message cosmos.slashing.v1beta1.SigningInfo
  */
-export class SigningInfo extends Message {
+class SigningInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -83,13 +84,14 @@ SigningInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "validator_signing_info", kind: "message", T: ValidatorSigningInfo },
 ]);
+export { SigningInfo };
 /**
  * ValidatorMissedBlocks contains array of missed blocks of corresponding
  * address.
  *
  * @generated from message cosmos.slashing.v1beta1.ValidatorMissedBlocks
  */
-export class ValidatorMissedBlocks extends Message {
+class ValidatorMissedBlocks extends Message {
     constructor(data) {
         super();
         /**
@@ -125,12 +127,13 @@ ValidatorMissedBlocks.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "missed_blocks", kind: "message", T: MissedBlock, repeated: true },
 ]);
+export { ValidatorMissedBlocks };
 /**
  * MissedBlock contains height and missed status as boolean.
  *
  * @generated from message cosmos.slashing.v1beta1.MissedBlock
  */
-export class MissedBlock extends Message {
+class MissedBlock extends Message {
     constructor(data) {
         super();
         /**
@@ -166,4 +169,5 @@ MissedBlock.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "index", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "missed", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { MissedBlock };
 //# sourceMappingURL=genesis_pb.js.map

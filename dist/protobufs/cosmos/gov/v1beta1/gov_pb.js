@@ -115,7 +115,7 @@ proto3.util.setEnumType(ProposalStatus, "cosmos.gov.v1beta1.ProposalStatus", [
  *
  * @generated from message cosmos.gov.v1beta1.WeightedVoteOption
  */
-export class WeightedVoteOption extends Message {
+class WeightedVoteOption extends Message {
     constructor(data) {
         super();
         /**
@@ -151,13 +151,14 @@ WeightedVoteOption.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "option", kind: "enum", T: proto3.getEnumType(VoteOption) },
     { no: 2, name: "weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { WeightedVoteOption };
 /**
  * TextProposal defines a standard text proposal whose changes need to be
  * manually updated in case of approval.
  *
  * @generated from message cosmos.gov.v1beta1.TextProposal
  */
-export class TextProposal extends Message {
+class TextProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -193,13 +194,14 @@ TextProposal.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TextProposal };
 /**
  * Deposit defines an amount deposited by an account address to an active
  * proposal.
  *
  * @generated from message cosmos.gov.v1beta1.Deposit
  */
-export class Deposit extends Message {
+class Deposit extends Message {
     constructor(data) {
         super();
         /**
@@ -242,12 +244,13 @@ Deposit.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "depositor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin, repeated: true },
 ]);
+export { Deposit };
 /**
  * Proposal defines the core field members of a governance proposal.
  *
  * @generated from message cosmos.gov.v1beta1.Proposal
  */
-export class Proposal extends Message {
+class Proposal extends Message {
     constructor(data) {
         super();
         /**
@@ -296,12 +299,13 @@ Proposal.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "voting_start_time", kind: "message", T: Timestamp },
     { no: 9, name: "voting_end_time", kind: "message", T: Timestamp },
 ]);
+export { Proposal };
 /**
  * TallyResult defines a standard tally for a governance proposal.
  *
  * @generated from message cosmos.gov.v1beta1.TallyResult
  */
-export class TallyResult extends Message {
+class TallyResult extends Message {
     constructor(data) {
         super();
         /**
@@ -351,13 +355,14 @@ TallyResult.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "no", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "no_with_veto", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TallyResult };
 /**
  * Vote defines a vote on a governance proposal.
  * A Vote consists of a proposal ID, the voter, and the vote option.
  *
  * @generated from message cosmos.gov.v1beta1.Vote
  */
-export class Vote extends Message {
+class Vote extends Message {
     constructor(data) {
         super();
         /**
@@ -412,12 +417,13 @@ Vote.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "option", kind: "enum", T: proto3.getEnumType(VoteOption) },
     { no: 4, name: "options", kind: "message", T: WeightedVoteOption, repeated: true },
 ]);
+export { Vote };
 /**
  * DepositParams defines the params for deposits on governance proposals.
  *
  * @generated from message cosmos.gov.v1beta1.DepositParams
  */
-export class DepositParams extends Message {
+class DepositParams extends Message {
     constructor(data) {
         super();
         /**
@@ -447,12 +453,13 @@ DepositParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "min_deposit", kind: "message", T: Coin, repeated: true },
     { no: 2, name: "max_deposit_period", kind: "message", T: Duration },
 ]);
+export { DepositParams };
 /**
  * VotingParams defines the params for voting on governance proposals.
  *
  * @generated from message cosmos.gov.v1beta1.VotingParams
  */
-export class VotingParams extends Message {
+class VotingParams extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -475,12 +482,13 @@ VotingParams.typeName = "cosmos.gov.v1beta1.VotingParams";
 VotingParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "voting_period", kind: "message", T: Duration },
 ]);
+export { VotingParams };
 /**
  * TallyParams defines the params for tallying votes on governance proposals.
  *
  * @generated from message cosmos.gov.v1beta1.TallyParams
  */
-export class TallyParams extends Message {
+class TallyParams extends Message {
     constructor(data) {
         super();
         /**
@@ -525,4 +533,5 @@ TallyParams.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "threshold", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "veto_threshold", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { TallyParams };
 //# sourceMappingURL=gov_pb.js.map

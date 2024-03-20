@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message injective.peggy.v1.IDSet
  */
-export class IDSet extends Message {
+class IDSet extends Message {
     constructor(data) {
         super();
         /**
@@ -35,10 +35,11 @@ IDSet.typeName = "injective.peggy.v1.IDSet";
 IDSet.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { IDSet };
 /**
  * @generated from message injective.peggy.v1.BatchFees
  */
-export class BatchFees extends Message {
+class BatchFees extends Message {
     constructor(data) {
         super();
         /**
@@ -70,4 +71,5 @@ BatchFees.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "total_fees", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { BatchFees };
 //# sourceMappingURL=pool_pb.js.map

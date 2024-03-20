@@ -10,7 +10,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ethermint.crypto.v1.ethsecp256k1.PubKey
  */
-export class PubKey extends Message {
+class PubKey extends Message {
     constructor(data) {
         super();
         /**
@@ -39,13 +39,14 @@ PubKey.typeName = "ethermint.crypto.v1.ethsecp256k1.PubKey";
 PubKey.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { PubKey };
 /**
  * PrivKey defines a type alias for an ecdsa.PrivateKey that implements
  * Tendermint's PrivateKey interface.
  *
  * @generated from message ethermint.crypto.v1.ethsecp256k1.PrivKey
  */
-export class PrivKey extends Message {
+class PrivKey extends Message {
     constructor(data) {
         super();
         /**
@@ -74,4 +75,5 @@ PrivKey.typeName = "ethermint.crypto.v1.ethsecp256k1.PrivKey";
 PrivKey.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { PrivKey };
 //# sourceMappingURL=keys_pb.js.map

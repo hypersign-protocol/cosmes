@@ -9,7 +9,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.poolmanager.v2.SpotPriceRequest
  */
-export class SpotPriceRequest extends Message {
+class SpotPriceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -46,13 +46,14 @@ SpotPriceRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "base_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "quote_asset_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotPriceRequest };
 /**
  * SpotPriceResponse defines the gRPC response structure for a SpotPrice
  * query.
  *
  * @generated from message osmosis.poolmanager.v2.SpotPriceResponse
  */
-export class SpotPriceResponse extends Message {
+class SpotPriceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -81,4 +82,5 @@ SpotPriceResponse.typeName = "osmosis.poolmanager.v2.SpotPriceResponse";
 SpotPriceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "spot_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SpotPriceResponse };
 //# sourceMappingURL=query_pb.js.map

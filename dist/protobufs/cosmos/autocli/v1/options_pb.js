@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.autocli.v1.ModuleOptions
  */
-export class ModuleOptions extends Message {
+class ModuleOptions extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -32,12 +32,13 @@ ModuleOptions.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx", kind: "message", T: ServiceCommandDescriptor },
     { no: 2, name: "query", kind: "message", T: ServiceCommandDescriptor },
 ]);
+export { ModuleOptions };
 /**
  * ServiceCommandDescriptor describes a CLI command based on a protobuf service.
  *
  * @generated from message cosmos.autocli.v1.ServiceCommandDescriptor
  */
-export class ServiceCommandDescriptor extends Message {
+class ServiceCommandDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -86,13 +87,14 @@ ServiceCommandDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "rpc_command_options", kind: "message", T: RpcCommandOptions, repeated: true },
     { no: 3, name: "sub_commands", kind: "map", K: 9 /* ScalarType.STRING */, V: { kind: "message", T: ServiceCommandDescriptor } },
 ]);
+export { ServiceCommandDescriptor };
 /**
  * RpcCommandOptions specifies options for commands generated from protobuf
  * rpc methods.
  *
  * @generated from message cosmos.autocli.v1.RpcCommandOptions
  */
-export class RpcCommandOptions extends Message {
+class RpcCommandOptions extends Message {
     constructor(data) {
         super();
         /**
@@ -209,6 +211,7 @@ RpcCommandOptions.fields = proto3.util.newFieldList(() => [
     { no: 11, name: "positional_args", kind: "message", T: PositionalArgDescriptor, repeated: true },
     { no: 12, name: "skip", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { RpcCommandOptions };
 /**
  * FlagOptions are options for flags generated from rpc request fields.
  * By default, all request fields are configured as flags based on the
@@ -217,7 +220,7 @@ RpcCommandOptions.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.autocli.v1.FlagOptions
  */
-export class FlagOptions extends Message {
+class FlagOptions extends Message {
     constructor(data) {
         super();
         /**
@@ -295,12 +298,13 @@ FlagOptions.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "shorthand_deprecated", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 8, name: "hidden", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { FlagOptions };
 /**
  * PositionalArgDescriptor describes a positional argument.
  *
  * @generated from message cosmos.autocli.v1.PositionalArgDescriptor
  */
-export class PositionalArgDescriptor extends Message {
+class PositionalArgDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -339,4 +343,5 @@ PositionalArgDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "proto_field", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "varargs", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { PositionalArgDescriptor };
 //# sourceMappingURL=options_pb.js.map

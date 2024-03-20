@@ -7,7 +7,7 @@ import { DecCoin } from "../../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.TickInfo
  */
-export class TickInfo extends Message {
+class TickInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -61,10 +61,11 @@ TickInfo.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "spread_reward_growth_opposite_direction_of_last_traversal", kind: "message", T: DecCoin, repeated: true },
     { no: 4, name: "uptime_trackers", kind: "message", T: UptimeTrackers },
 ]);
+export { TickInfo };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.UptimeTrackers
  */
-export class UptimeTrackers extends Message {
+class UptimeTrackers extends Message {
     constructor(data) {
         super();
         /**
@@ -91,10 +92,11 @@ UptimeTrackers.typeName = "osmosis.concentratedliquidity.v1beta1.UptimeTrackers"
 UptimeTrackers.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "list", kind: "message", T: UptimeTracker, repeated: true },
 ]);
+export { UptimeTrackers };
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.UptimeTracker
  */
-export class UptimeTracker extends Message {
+class UptimeTracker extends Message {
     constructor(data) {
         super();
         /**
@@ -121,4 +123,5 @@ UptimeTracker.typeName = "osmosis.concentratedliquidity.v1beta1.UptimeTracker";
 UptimeTracker.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "uptime_growth_outside", kind: "message", T: DecCoin, repeated: true },
 ]);
+export { UptimeTracker };
 //# sourceMappingURL=tickInfo_pb.js.map

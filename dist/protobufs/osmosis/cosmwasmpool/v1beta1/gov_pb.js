@@ -10,7 +10,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.UploadCosmWasmPoolCodeAndWhiteListProposal
  */
-export class UploadCosmWasmPoolCodeAndWhiteListProposal extends Message {
+class UploadCosmWasmPoolCodeAndWhiteListProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -49,6 +49,7 @@ UploadCosmWasmPoolCodeAndWhiteListProposal.fields = proto3.util.newFieldList(() 
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "wasm_byte_code", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { UploadCosmWasmPoolCodeAndWhiteListProposal };
 /**
  * MigratePoolContractsProposal is a gov Content type for
  * migrating  given pools to the new contract code and adding to internal
@@ -79,7 +80,7 @@ UploadCosmWasmPoolCodeAndWhiteListProposal.fields = proto3.util.newFieldList(() 
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.MigratePoolContractsProposal
  */
-export class MigratePoolContractsProposal extends Message {
+class MigratePoolContractsProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -145,4 +146,5 @@ MigratePoolContractsProposal.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "wasm_byte_code", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 6, name: "migrate_msg", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { MigratePoolContractsProposal };
 //# sourceMappingURL=gov_pb.js.map

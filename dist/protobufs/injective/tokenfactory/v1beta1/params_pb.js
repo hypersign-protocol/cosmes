@@ -9,7 +9,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message injective.tokenfactory.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -36,4 +36,5 @@ Params.typeName = "injective.tokenfactory.v1beta1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom_creation_fee", kind: "message", T: Coin, repeated: true },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

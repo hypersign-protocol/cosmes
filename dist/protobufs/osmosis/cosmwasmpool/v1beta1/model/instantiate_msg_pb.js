@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.InstantiateMsg
  */
-export class InstantiateMsg extends Message {
+class InstantiateMsg extends Message {
     constructor(data) {
         super();
         /**
@@ -38,4 +38,5 @@ InstantiateMsg.typeName = "osmosis.cosmwasmpool.v1beta1.InstantiateMsg";
 InstantiateMsg.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_asset_denoms", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { InstantiateMsg };
 //# sourceMappingURL=instantiate_msg_pb.js.map

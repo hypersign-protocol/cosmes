@@ -10,7 +10,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message injective.tokenfactory.v1beta1.DenomAuthorityMetadata
  */
-export class DenomAuthorityMetadata extends Message {
+class DenomAuthorityMetadata extends Message {
     constructor(data) {
         super();
         /**
@@ -39,4 +39,5 @@ DenomAuthorityMetadata.typeName = "injective.tokenfactory.v1beta1.DenomAuthority
 DenomAuthorityMetadata.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "admin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DenomAuthorityMetadata };
 //# sourceMappingURL=authorityMetadata_pb.js.map

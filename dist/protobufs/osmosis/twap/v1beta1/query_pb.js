@@ -7,7 +7,7 @@ import { Params } from "./genesis_pb.js";
 /**
  * @generated from message osmosis.twap.v1beta1.ArithmeticTwapRequest
  */
-export class ArithmeticTwapRequest extends Message {
+class ArithmeticTwapRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -46,10 +46,11 @@ ArithmeticTwapRequest.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "start_time", kind: "message", T: Timestamp },
     { no: 5, name: "end_time", kind: "message", T: Timestamp },
 ]);
+export { ArithmeticTwapRequest };
 /**
  * @generated from message osmosis.twap.v1beta1.ArithmeticTwapResponse
  */
-export class ArithmeticTwapResponse extends Message {
+class ArithmeticTwapResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -76,10 +77,11 @@ ArithmeticTwapResponse.typeName = "osmosis.twap.v1beta1.ArithmeticTwapResponse";
 ArithmeticTwapResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "arithmetic_twap", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ArithmeticTwapResponse };
 /**
  * @generated from message osmosis.twap.v1beta1.ArithmeticTwapToNowRequest
  */
-export class ArithmeticTwapToNowRequest extends Message {
+class ArithmeticTwapToNowRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -117,10 +119,11 @@ ArithmeticTwapToNowRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "quote_asset", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "start_time", kind: "message", T: Timestamp },
 ]);
+export { ArithmeticTwapToNowRequest };
 /**
  * @generated from message osmosis.twap.v1beta1.ArithmeticTwapToNowResponse
  */
-export class ArithmeticTwapToNowResponse extends Message {
+class ArithmeticTwapToNowResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -147,10 +150,11 @@ ArithmeticTwapToNowResponse.typeName = "osmosis.twap.v1beta1.ArithmeticTwapToNow
 ArithmeticTwapToNowResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "arithmetic_twap", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ArithmeticTwapToNowResponse };
 /**
  * @generated from message osmosis.twap.v1beta1.GeometricTwapRequest
  */
-export class GeometricTwapRequest extends Message {
+class GeometricTwapRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -189,10 +193,11 @@ GeometricTwapRequest.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "start_time", kind: "message", T: Timestamp },
     { no: 5, name: "end_time", kind: "message", T: Timestamp },
 ]);
+export { GeometricTwapRequest };
 /**
  * @generated from message osmosis.twap.v1beta1.GeometricTwapResponse
  */
-export class GeometricTwapResponse extends Message {
+class GeometricTwapResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -219,10 +224,11 @@ GeometricTwapResponse.typeName = "osmosis.twap.v1beta1.GeometricTwapResponse";
 GeometricTwapResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "geometric_twap", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GeometricTwapResponse };
 /**
  * @generated from message osmosis.twap.v1beta1.GeometricTwapToNowRequest
  */
-export class GeometricTwapToNowRequest extends Message {
+class GeometricTwapToNowRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -260,10 +266,11 @@ GeometricTwapToNowRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "quote_asset", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "start_time", kind: "message", T: Timestamp },
 ]);
+export { GeometricTwapToNowRequest };
 /**
  * @generated from message osmosis.twap.v1beta1.GeometricTwapToNowResponse
  */
-export class GeometricTwapToNowResponse extends Message {
+class GeometricTwapToNowResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -290,10 +297,11 @@ GeometricTwapToNowResponse.typeName = "osmosis.twap.v1beta1.GeometricTwapToNowRe
 GeometricTwapToNowResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "geometric_twap", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GeometricTwapToNowResponse };
 /**
  * @generated from message osmosis.twap.v1beta1.ParamsRequest
  */
-export class ParamsRequest extends Message {
+class ParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -314,10 +322,11 @@ export class ParamsRequest extends Message {
 ParamsRequest.runtime = proto3;
 ParamsRequest.typeName = "osmosis.twap.v1beta1.ParamsRequest";
 ParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { ParamsRequest };
 /**
  * @generated from message osmosis.twap.v1beta1.ParamsResponse
  */
-export class ParamsResponse extends Message {
+class ParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -340,4 +349,5 @@ ParamsResponse.typeName = "osmosis.twap.v1beta1.ParamsResponse";
 ParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { ParamsResponse };
 //# sourceMappingURL=query_pb.js.map

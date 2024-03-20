@@ -13,7 +13,7 @@ import { RequestBeginBlock, RequestDeliverTx, RequestEndBlock, ResponseBeginBloc
  *
  * @generated from message cosmos.base.store.v1beta1.StoreKVPair
  */
-export class StoreKVPair extends Message {
+class StoreKVPair extends Message {
     constructor(data) {
         super();
         /**
@@ -59,13 +59,14 @@ StoreKVPair.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "value", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { StoreKVPair };
 /**
  * BlockMetadata contains all the abci event data of a block
  * the file streamer dump them into files together with the state changes.
  *
  * @generated from message cosmos.base.store.v1beta1.BlockMetadata
  */
-export class BlockMetadata extends Message {
+class BlockMetadata extends Message {
     constructor(data) {
         super();
         /**
@@ -97,12 +98,13 @@ BlockMetadata.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "response_end_block", kind: "message", T: ResponseEndBlock },
     { no: 6, name: "response_commit", kind: "message", T: ResponseCommit },
 ]);
+export { BlockMetadata };
 /**
  * DeliverTx encapulate deliver tx request and response.
  *
  * @generated from message cosmos.base.store.v1beta1.BlockMetadata.DeliverTx
  */
-export class BlockMetadata_DeliverTx extends Message {
+class BlockMetadata_DeliverTx extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -126,4 +128,5 @@ BlockMetadata_DeliverTx.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "request", kind: "message", T: RequestDeliverTx },
     { no: 2, name: "response", kind: "message", T: ResponseDeliverTx },
 ]);
+export { BlockMetadata_DeliverTx };
 //# sourceMappingURL=listening_pb.js.map

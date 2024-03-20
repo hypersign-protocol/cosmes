@@ -18,7 +18,7 @@ describe("sortObjectByKey", () => {
         const expected = {
             aaa: 1,
             bbb: {
-                ddd: [4, 8, 3, undefined, 4, 5, 7, 8], // arrays are not sorted
+                ddd: [4, 8, 3, undefined, 4, 5, 7, 8],
                 ttt: {
                     iii: undefined,
                     lll: "1",

@@ -7,7 +7,7 @@ import { PythPriceState } from "./oracle_pb.js";
 /**
  * @generated from message injective.oracle.v1beta1.SetChainlinkPriceEvent
  */
-export class SetChainlinkPriceEvent extends Message {
+class SetChainlinkPriceEvent extends Message {
     constructor(data) {
         super();
         /**
@@ -44,12 +44,13 @@ SetChainlinkPriceEvent.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "answer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SetChainlinkPriceEvent };
 /**
  * Event type upon set ref
  *
  * @generated from message injective.oracle.v1beta1.SetBandPriceEvent
  */
-export class SetBandPriceEvent extends Message {
+class SetBandPriceEvent extends Message {
     constructor(data) {
         super();
         /**
@@ -96,10 +97,11 @@ SetBandPriceEvent.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "resolve_time", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SetBandPriceEvent };
 /**
  * @generated from message injective.oracle.v1beta1.SetBandIBCPriceEvent
  */
-export class SetBandIBCPriceEvent extends Message {
+class SetBandIBCPriceEvent extends Message {
     constructor(data) {
         super();
         /**
@@ -151,10 +153,11 @@ SetBandIBCPriceEvent.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 6, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { SetBandIBCPriceEvent };
 /**
  * @generated from message injective.oracle.v1beta1.EventBandIBCAckSuccess
  */
-export class EventBandIBCAckSuccess extends Message {
+class EventBandIBCAckSuccess extends Message {
     constructor(data) {
         super();
         /**
@@ -186,10 +189,11 @@ EventBandIBCAckSuccess.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ack_result", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { EventBandIBCAckSuccess };
 /**
  * @generated from message injective.oracle.v1beta1.EventBandIBCAckError
  */
-export class EventBandIBCAckError extends Message {
+class EventBandIBCAckError extends Message {
     constructor(data) {
         super();
         /**
@@ -221,10 +225,11 @@ EventBandIBCAckError.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ack_error", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { EventBandIBCAckError };
 /**
  * @generated from message injective.oracle.v1beta1.EventBandIBCResponseTimeout
  */
-export class EventBandIBCResponseTimeout extends Message {
+class EventBandIBCResponseTimeout extends Message {
     constructor(data) {
         super();
         /**
@@ -251,10 +256,11 @@ EventBandIBCResponseTimeout.typeName = "injective.oracle.v1beta1.EventBandIBCRes
 EventBandIBCResponseTimeout.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { EventBandIBCResponseTimeout };
 /**
  * @generated from message injective.oracle.v1beta1.SetPriceFeedPriceEvent
  */
-export class SetPriceFeedPriceEvent extends Message {
+class SetPriceFeedPriceEvent extends Message {
     constructor(data) {
         super();
         /**
@@ -298,10 +304,11 @@ SetPriceFeedPriceEvent.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "quote", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SetPriceFeedPriceEvent };
 /**
  * @generated from message injective.oracle.v1beta1.SetProviderPriceEvent
  */
-export class SetProviderPriceEvent extends Message {
+class SetProviderPriceEvent extends Message {
     constructor(data) {
         super();
         /**
@@ -343,10 +350,11 @@ SetProviderPriceEvent.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SetProviderPriceEvent };
 /**
  * @generated from message injective.oracle.v1beta1.SetCoinbasePriceEvent
  */
-export class SetCoinbasePriceEvent extends Message {
+class SetCoinbasePriceEvent extends Message {
     constructor(data) {
         super();
         /**
@@ -383,10 +391,11 @@ SetCoinbasePriceEvent.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SetCoinbasePriceEvent };
 /**
  * @generated from message injective.oracle.v1beta1.EventSetPythPrices
  */
-export class EventSetPythPrices extends Message {
+class EventSetPythPrices extends Message {
     constructor(data) {
         super();
         /**
@@ -413,4 +422,5 @@ EventSetPythPrices.typeName = "injective.oracle.v1beta1.EventSetPythPrices";
 EventSetPythPrices.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "prices", kind: "message", T: PythPriceState, repeated: true },
 ]);
+export { EventSetPythPrices };
 //# sourceMappingURL=events_pb.js.map

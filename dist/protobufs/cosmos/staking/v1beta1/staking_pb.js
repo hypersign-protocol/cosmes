@@ -85,7 +85,7 @@ proto3.util.setEnumType(Infraction, "cosmos.staking.v1beta1.Infraction", [
  *
  * @generated from message cosmos.staking.v1beta1.HistoricalInfo
  */
-export class HistoricalInfo extends Message {
+class HistoricalInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -113,13 +113,14 @@ HistoricalInfo.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "header", kind: "message", T: Header },
     { no: 2, name: "valset", kind: "message", T: Validator, repeated: true },
 ]);
+export { HistoricalInfo };
 /**
  * CommissionRates defines the initial commission rates to be used for creating
  * a validator.
  *
  * @generated from message cosmos.staking.v1beta1.CommissionRates
  */
-export class CommissionRates extends Message {
+class CommissionRates extends Message {
     constructor(data) {
         super();
         /**
@@ -162,12 +163,13 @@ CommissionRates.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "max_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "max_change_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { CommissionRates };
 /**
  * Commission defines commission parameters for a given validator.
  *
  * @generated from message cosmos.staking.v1beta1.Commission
  */
-export class Commission extends Message {
+class Commission extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -191,12 +193,13 @@ Commission.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "commission_rates", kind: "message", T: CommissionRates },
     { no: 2, name: "update_time", kind: "message", T: Timestamp },
 ]);
+export { Commission };
 /**
  * Description defines a validator description.
  *
  * @generated from message cosmos.staking.v1beta1.Description
  */
-export class Description extends Message {
+class Description extends Message {
     constructor(data) {
         super();
         /**
@@ -253,6 +256,7 @@ Description.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "security_contact", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "details", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Description };
 /**
  * Validator defines a validator, together with the total amount of the
  * Validator's bond shares and their exchange rate to coins. Slashing results in
@@ -265,7 +269,7 @@ Description.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.staking.v1beta1.Validator
  */
-export class Validator extends Message {
+class Validator extends Message {
     constructor(data) {
         super();
         /**
@@ -356,12 +360,13 @@ Validator.fields = proto3.util.newFieldList(() => [
     { no: 12, name: "unbonding_on_hold_ref_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 13, name: "unbonding_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { Validator };
 /**
  * ValAddresses defines a repeated set of validator addresses.
  *
  * @generated from message cosmos.staking.v1beta1.ValAddresses
  */
-export class ValAddresses extends Message {
+class ValAddresses extends Message {
     constructor(data) {
         super();
         /**
@@ -388,6 +393,7 @@ ValAddresses.typeName = "cosmos.staking.v1beta1.ValAddresses";
 ValAddresses.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ValAddresses };
 /**
  * DVPair is struct that just has a delegator-validator pair with no other data.
  * It is intended to be used as a marshalable pointer. For example, a DVPair can
@@ -395,7 +401,7 @@ ValAddresses.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.staking.v1beta1.DVPair
  */
-export class DVPair extends Message {
+class DVPair extends Message {
     constructor(data) {
         super();
         /**
@@ -427,12 +433,13 @@ DVPair.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DVPair };
 /**
  * DVPairs defines an array of DVPair objects.
  *
  * @generated from message cosmos.staking.v1beta1.DVPairs
  */
-export class DVPairs extends Message {
+class DVPairs extends Message {
     constructor(data) {
         super();
         /**
@@ -459,6 +466,7 @@ DVPairs.typeName = "cosmos.staking.v1beta1.DVPairs";
 DVPairs.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pairs", kind: "message", T: DVPair, repeated: true },
 ]);
+export { DVPairs };
 /**
  * DVVTriplet is struct that just has a delegator-validator-validator triplet
  * with no other data. It is intended to be used as a marshalable pointer. For
@@ -467,7 +475,7 @@ DVPairs.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.staking.v1beta1.DVVTriplet
  */
-export class DVVTriplet extends Message {
+class DVVTriplet extends Message {
     constructor(data) {
         super();
         /**
@@ -504,12 +512,13 @@ DVVTriplet.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validator_src_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "validator_dst_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DVVTriplet };
 /**
  * DVVTriplets defines an array of DVVTriplet objects.
  *
  * @generated from message cosmos.staking.v1beta1.DVVTriplets
  */
-export class DVVTriplets extends Message {
+class DVVTriplets extends Message {
     constructor(data) {
         super();
         /**
@@ -536,6 +545,7 @@ DVVTriplets.typeName = "cosmos.staking.v1beta1.DVVTriplets";
 DVVTriplets.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "triplets", kind: "message", T: DVVTriplet, repeated: true },
 ]);
+export { DVVTriplets };
 /**
  * Delegation represents the bond with tokens held by an account. It is
  * owned by one delegator, and is associated with the voting power of one
@@ -543,7 +553,7 @@ DVVTriplets.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.staking.v1beta1.Delegation
  */
-export class Delegation extends Message {
+class Delegation extends Message {
     constructor(data) {
         super();
         /**
@@ -586,13 +596,14 @@ Delegation.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "shares", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Delegation };
 /**
  * UnbondingDelegation stores all of a single delegator's unbonding bonds
  * for a single validator in an time-ordered list.
  *
  * @generated from message cosmos.staking.v1beta1.UnbondingDelegation
  */
-export class UnbondingDelegation extends Message {
+class UnbondingDelegation extends Message {
     constructor(data) {
         super();
         /**
@@ -637,12 +648,13 @@ UnbondingDelegation.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "entries", kind: "message", T: UnbondingDelegationEntry, repeated: true },
 ]);
+export { UnbondingDelegation };
 /**
  * UnbondingDelegationEntry defines an unbonding object with relevant metadata.
  *
  * @generated from message cosmos.staking.v1beta1.UnbondingDelegationEntry
  */
-export class UnbondingDelegationEntry extends Message {
+class UnbondingDelegationEntry extends Message {
     constructor(data) {
         super();
         /**
@@ -700,12 +712,13 @@ UnbondingDelegationEntry.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "unbonding_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 6, name: "unbonding_on_hold_ref_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { UnbondingDelegationEntry };
 /**
  * RedelegationEntry defines a redelegation object with relevant metadata.
  *
  * @generated from message cosmos.staking.v1beta1.RedelegationEntry
  */
-export class RedelegationEntry extends Message {
+class RedelegationEntry extends Message {
     constructor(data) {
         super();
         /**
@@ -763,13 +776,14 @@ RedelegationEntry.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "unbonding_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 6, name: "unbonding_on_hold_ref_count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { RedelegationEntry };
 /**
  * Redelegation contains the list of a particular delegator's redelegating bonds
  * from a particular source validator to a particular destination validator.
  *
  * @generated from message cosmos.staking.v1beta1.Redelegation
  */
-export class Redelegation extends Message {
+class Redelegation extends Message {
     constructor(data) {
         super();
         /**
@@ -821,12 +835,13 @@ Redelegation.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "validator_dst_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "entries", kind: "message", T: RedelegationEntry, repeated: true },
 ]);
+export { Redelegation };
 /**
  * Params defines the parameters for the x/staking module.
  *
  * @generated from message cosmos.staking.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -884,13 +899,14 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "bond_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "min_commission_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 /**
  * DelegationResponse is equivalent to Delegation except that it contains a
  * balance in addition to shares which is more suitable for client responses.
  *
  * @generated from message cosmos.staking.v1beta1.DelegationResponse
  */
-export class DelegationResponse extends Message {
+class DelegationResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -914,6 +930,7 @@ DelegationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegation", kind: "message", T: Delegation },
     { no: 2, name: "balance", kind: "message", T: Coin },
 ]);
+export { DelegationResponse };
 /**
  * RedelegationEntryResponse is equivalent to a RedelegationEntry except that it
  * contains a balance in addition to shares which is more suitable for client
@@ -921,7 +938,7 @@ DelegationResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.staking.v1beta1.RedelegationEntryResponse
  */
-export class RedelegationEntryResponse extends Message {
+class RedelegationEntryResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -949,6 +966,7 @@ RedelegationEntryResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "redelegation_entry", kind: "message", T: RedelegationEntry },
     { no: 4, name: "balance", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { RedelegationEntryResponse };
 /**
  * RedelegationResponse is equivalent to a Redelegation except that its entries
  * contain a balance in addition to shares which is more suitable for client
@@ -956,7 +974,7 @@ RedelegationEntryResponse.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.staking.v1beta1.RedelegationResponse
  */
-export class RedelegationResponse extends Message {
+class RedelegationResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -984,13 +1002,14 @@ RedelegationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "redelegation", kind: "message", T: Redelegation },
     { no: 2, name: "entries", kind: "message", T: RedelegationEntryResponse, repeated: true },
 ]);
+export { RedelegationResponse };
 /**
  * Pool is used for tracking bonded and not-bonded token supply of the bond
  * denomination.
  *
  * @generated from message cosmos.staking.v1beta1.Pool
  */
-export class Pool extends Message {
+class Pool extends Message {
     constructor(data) {
         super();
         /**
@@ -1022,13 +1041,14 @@ Pool.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "not_bonded_tokens", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "bonded_tokens", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Pool };
 /**
  * ValidatorUpdates defines an array of abci.ValidatorUpdate objects.
  * TODO: explore moving this to proto/cosmos/base to separate modules from tendermint dependence
  *
  * @generated from message cosmos.staking.v1beta1.ValidatorUpdates
  */
-export class ValidatorUpdates extends Message {
+class ValidatorUpdates extends Message {
     constructor(data) {
         super();
         /**
@@ -1055,4 +1075,5 @@ ValidatorUpdates.typeName = "cosmos.staking.v1beta1.ValidatorUpdates";
 ValidatorUpdates.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "updates", kind: "message", T: ValidatorUpdate, repeated: true },
 ]);
+export { ValidatorUpdates };
 //# sourceMappingURL=staking_pb.js.map

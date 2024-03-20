@@ -10,7 +10,7 @@ import { Any, Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.auth.v1beta1.BaseAccount
  */
-export class BaseAccount extends Message {
+class BaseAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -48,12 +48,13 @@ BaseAccount.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "account_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "sequence", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { BaseAccount };
 /**
  * ModuleAccount defines an account for modules that holds coins on a pool.
  *
  * @generated from message cosmos.auth.v1beta1.ModuleAccount
  */
-export class ModuleAccount extends Message {
+class ModuleAccount extends Message {
     constructor(data) {
         super();
         /**
@@ -86,6 +87,7 @@ ModuleAccount.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "permissions", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ModuleAccount };
 /**
  * ModuleCredential represents a unclaimable pubkey for base accounts controlled by modules.
  *
@@ -93,7 +95,7 @@ ModuleAccount.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.auth.v1beta1.ModuleCredential
  */
-export class ModuleCredential extends Message {
+class ModuleCredential extends Message {
     constructor(data) {
         super();
         /**
@@ -130,12 +132,13 @@ ModuleCredential.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "module_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "derivation_keys", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { ModuleCredential };
 /**
  * Params defines the parameters for the auth module.
  *
  * @generated from message cosmos.auth.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -182,4 +185,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "sig_verify_cost_ed25519", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "sig_verify_cost_secp256k1", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Params };
 //# sourceMappingURL=auth_pb.js.map

@@ -6,7 +6,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
 /**
  * @generated from message dymensionxyz.dymension.lockup.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -33,4 +33,5 @@ Params.typeName = "dymensionxyz.dymension.lockup.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "force_unlock_allowed_addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

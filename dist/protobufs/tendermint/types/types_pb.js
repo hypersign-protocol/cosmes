@@ -77,7 +77,7 @@ proto3.util.setEnumType(SignedMsgType, "tendermint.types.SignedMsgType", [
  *
  * @generated from message tendermint.types.PartSetHeader
  */
-export class PartSetHeader extends Message {
+class PartSetHeader extends Message {
     constructor(data) {
         super();
         /**
@@ -109,10 +109,11 @@ PartSetHeader.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 2, name: "hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { PartSetHeader };
 /**
  * @generated from message tendermint.types.Part
  */
-export class Part extends Message {
+class Part extends Message {
     constructor(data) {
         super();
         /**
@@ -145,12 +146,13 @@ Part.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "bytes", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof", kind: "message", T: Proof },
 ]);
+export { Part };
 /**
  * BlockID
  *
  * @generated from message tendermint.types.BlockID
  */
-export class BlockID extends Message {
+class BlockID extends Message {
     constructor(data) {
         super();
         /**
@@ -178,12 +180,13 @@ BlockID.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "part_set_header", kind: "message", T: PartSetHeader },
 ]);
+export { BlockID };
 /**
  * Header defines the structure of a block header.
  *
  * @generated from message tendermint.types.Header
  */
-export class Header extends Message {
+class Header extends Message {
     constructor(data) {
         super();
         /**
@@ -287,12 +290,13 @@ Header.fields = proto3.util.newFieldList(() => [
     { no: 13, name: "evidence_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 14, name: "proposer_address", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { Header };
 /**
  * Data contains the set of transactions included in the block
  *
  * @generated from message tendermint.types.Data
  */
-export class Data extends Message {
+class Data extends Message {
     constructor(data) {
         super();
         /**
@@ -323,13 +327,14 @@ Data.typeName = "tendermint.types.Data";
 Data.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "txs", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { Data };
 /**
  * Vote represents a prevote, precommit, or commit vote from validators for
  * consensus.
  *
  * @generated from message tendermint.types.Vote
  */
-export class Vote extends Message {
+class Vote extends Message {
     constructor(data) {
         super();
         /**
@@ -383,12 +388,13 @@ Vote.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "validator_index", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
     { no: 8, name: "signature", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { Vote };
 /**
  * Commit contains the evidence that a block was committed by a set of validators.
  *
  * @generated from message tendermint.types.Commit
  */
-export class Commit extends Message {
+class Commit extends Message {
     constructor(data) {
         super();
         /**
@@ -426,12 +432,13 @@ Commit.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "block_id", kind: "message", T: BlockID },
     { no: 4, name: "signatures", kind: "message", T: CommitSig, repeated: true },
 ]);
+export { Commit };
 /**
  * CommitSig is a part of the Vote included in a Commit.
  *
  * @generated from message tendermint.types.CommitSig
  */
-export class CommitSig extends Message {
+class CommitSig extends Message {
     constructor(data) {
         super();
         /**
@@ -469,10 +476,11 @@ CommitSig.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "timestamp", kind: "message", T: Timestamp },
     { no: 4, name: "signature", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { CommitSig };
 /**
  * @generated from message tendermint.types.Proposal
  */
-export class Proposal extends Message {
+class Proposal extends Message {
     constructor(data) {
         super();
         /**
@@ -521,10 +529,11 @@ Proposal.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "timestamp", kind: "message", T: Timestamp },
     { no: 7, name: "signature", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { Proposal };
 /**
  * @generated from message tendermint.types.SignedHeader
  */
-export class SignedHeader extends Message {
+class SignedHeader extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -548,10 +557,11 @@ SignedHeader.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "header", kind: "message", T: Header },
     { no: 2, name: "commit", kind: "message", T: Commit },
 ]);
+export { SignedHeader };
 /**
  * @generated from message tendermint.types.LightBlock
  */
-export class LightBlock extends Message {
+class LightBlock extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -575,10 +585,11 @@ LightBlock.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signed_header", kind: "message", T: SignedHeader },
     { no: 2, name: "validator_set", kind: "message", T: ValidatorSet },
 ]);
+export { LightBlock };
 /**
  * @generated from message tendermint.types.BlockMeta
  */
-export class BlockMeta extends Message {
+class BlockMeta extends Message {
     constructor(data) {
         super();
         /**
@@ -612,12 +623,13 @@ BlockMeta.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "header", kind: "message", T: Header },
     { no: 4, name: "num_txs", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { BlockMeta };
 /**
  * TxProof represents a Merkle proof of the presence of a transaction in the Merkle tree.
  *
  * @generated from message tendermint.types.TxProof
  */
-export class TxProof extends Message {
+class TxProof extends Message {
     constructor(data) {
         super();
         /**
@@ -650,4 +662,5 @@ TxProof.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof", kind: "message", T: Proof },
 ]);
+export { TxProof };
 //# sourceMappingURL=types_pb.js.map

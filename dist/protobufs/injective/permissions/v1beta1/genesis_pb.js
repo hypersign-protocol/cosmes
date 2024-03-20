@@ -10,7 +10,7 @@ import { Namespace } from "./permissions_pb.js";
  *
  * @generated from message injective.permissions.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -38,4 +38,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
     { no: 2, name: "namespaces", kind: "message", T: Namespace, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

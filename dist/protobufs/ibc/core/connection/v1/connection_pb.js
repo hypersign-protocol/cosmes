@@ -53,7 +53,7 @@ proto3.util.setEnumType(State, "ibc.core.connection.v1.State", [
  *
  * @generated from message ibc.core.connection.v1.ConnectionEnd
  */
-export class ConnectionEnd extends Message {
+class ConnectionEnd extends Message {
     constructor(data) {
         super();
         /**
@@ -107,13 +107,14 @@ ConnectionEnd.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "counterparty", kind: "message", T: Counterparty },
     { no: 5, name: "delay_period", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ConnectionEnd };
 /**
  * IdentifiedConnection defines a connection with additional connection
  * identifier field.
  *
  * @generated from message ibc.core.connection.v1.IdentifiedConnection
  */
-export class IdentifiedConnection extends Message {
+class IdentifiedConnection extends Message {
     constructor(data) {
         super();
         /**
@@ -172,12 +173,13 @@ IdentifiedConnection.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "counterparty", kind: "message", T: Counterparty },
     { no: 6, name: "delay_period", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { IdentifiedConnection };
 /**
  * Counterparty defines the counterparty chain associated with a connection end.
  *
  * @generated from message ibc.core.connection.v1.Counterparty
  */
-export class Counterparty extends Message {
+class Counterparty extends Message {
     constructor(data) {
         super();
         /**
@@ -216,12 +218,13 @@ Counterparty.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "connection_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "prefix", kind: "message", T: MerklePrefix },
 ]);
+export { Counterparty };
 /**
  * ClientPaths define all the connection paths for a client state.
  *
  * @generated from message ibc.core.connection.v1.ClientPaths
  */
-export class ClientPaths extends Message {
+class ClientPaths extends Message {
     constructor(data) {
         super();
         /**
@@ -250,12 +253,13 @@ ClientPaths.typeName = "ibc.core.connection.v1.ClientPaths";
 ClientPaths.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "paths", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ClientPaths };
 /**
  * ConnectionPaths define all the connection paths for a given client state.
  *
  * @generated from message ibc.core.connection.v1.ConnectionPaths
  */
-export class ConnectionPaths extends Message {
+class ConnectionPaths extends Message {
     constructor(data) {
         super();
         /**
@@ -291,13 +295,14 @@ ConnectionPaths.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "paths", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { ConnectionPaths };
 /**
  * Version defines the versioning scheme used to negotiate the IBC version in
  * the connection handshake.
  *
  * @generated from message ibc.core.connection.v1.Version
  */
-export class Version extends Message {
+class Version extends Message {
     constructor(data) {
         super();
         /**
@@ -333,12 +338,13 @@ Version.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "identifier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "features", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { Version };
 /**
  * Params defines the set of Connection parameters.
  *
  * @generated from message ibc.core.connection.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -369,4 +375,5 @@ Params.typeName = "ibc.core.connection.v1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "max_expected_time_per_block", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { Params };
 //# sourceMappingURL=connection_pb.js.map

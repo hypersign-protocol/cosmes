@@ -9,7 +9,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ibc.applications.transfer.v1.DenomTrace
  */
-export class DenomTrace extends Message {
+class DenomTrace extends Message {
     constructor(data) {
         super();
         /**
@@ -46,6 +46,7 @@ DenomTrace.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "path", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "base_denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DenomTrace };
 /**
  * Params defines the set of IBC transfer parameters.
  * NOTE: To prevent a single token from being transferred, set the
@@ -54,7 +55,7 @@ DenomTrace.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.applications.transfer.v1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -92,4 +93,5 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "send_enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 2, name: "receive_enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { Params };
 //# sourceMappingURL=transfer_pb.js.map

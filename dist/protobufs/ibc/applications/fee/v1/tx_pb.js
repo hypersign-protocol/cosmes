@@ -10,7 +10,7 @@ import { PacketId } from "../../../core/channel/v1/channel_pb.js";
  *
  * @generated from message ibc.applications.fee.v1.MsgRegisterPayee
  */
-export class MsgRegisterPayee extends Message {
+class MsgRegisterPayee extends Message {
     constructor(data) {
         super();
         /**
@@ -60,12 +60,13 @@ MsgRegisterPayee.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "relayer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "payee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgRegisterPayee };
 /**
  * MsgRegisterPayeeResponse defines the response type for the RegisterPayee rpc
  *
  * @generated from message ibc.applications.fee.v1.MsgRegisterPayeeResponse
  */
-export class MsgRegisterPayeeResponse extends Message {
+class MsgRegisterPayeeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -86,12 +87,13 @@ export class MsgRegisterPayeeResponse extends Message {
 MsgRegisterPayeeResponse.runtime = proto3;
 MsgRegisterPayeeResponse.typeName = "ibc.applications.fee.v1.MsgRegisterPayeeResponse";
 MsgRegisterPayeeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRegisterPayeeResponse };
 /**
  * MsgRegisterCounterpartyPayee defines the request type for the RegisterCounterpartyPayee rpc
  *
  * @generated from message ibc.applications.fee.v1.MsgRegisterCounterpartyPayee
  */
-export class MsgRegisterCounterpartyPayee extends Message {
+class MsgRegisterCounterpartyPayee extends Message {
     constructor(data) {
         super();
         /**
@@ -141,12 +143,13 @@ MsgRegisterCounterpartyPayee.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "relayer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "counterparty_payee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgRegisterCounterpartyPayee };
 /**
  * MsgRegisterCounterpartyPayeeResponse defines the response type for the RegisterCounterpartyPayee rpc
  *
  * @generated from message ibc.applications.fee.v1.MsgRegisterCounterpartyPayeeResponse
  */
-export class MsgRegisterCounterpartyPayeeResponse extends Message {
+class MsgRegisterCounterpartyPayeeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -167,6 +170,7 @@ export class MsgRegisterCounterpartyPayeeResponse extends Message {
 MsgRegisterCounterpartyPayeeResponse.runtime = proto3;
 MsgRegisterCounterpartyPayeeResponse.typeName = "ibc.applications.fee.v1.MsgRegisterCounterpartyPayeeResponse";
 MsgRegisterCounterpartyPayeeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRegisterCounterpartyPayeeResponse };
 /**
  * MsgPayPacketFee defines the request type for the PayPacketFee rpc
  * This Msg can be used to pay for a packet at the next sequence send & should be combined with the Msg that will be
@@ -174,7 +178,7 @@ MsgRegisterCounterpartyPayeeResponse.fields = proto3.util.newFieldList(() => [])
  *
  * @generated from message ibc.applications.fee.v1.MsgPayPacketFee
  */
-export class MsgPayPacketFee extends Message {
+class MsgPayPacketFee extends Message {
     constructor(data) {
         super();
         /**
@@ -225,12 +229,13 @@ MsgPayPacketFee.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "signer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "relayers", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MsgPayPacketFee };
 /**
  * MsgPayPacketFeeResponse defines the response type for the PayPacketFee rpc
  *
  * @generated from message ibc.applications.fee.v1.MsgPayPacketFeeResponse
  */
-export class MsgPayPacketFeeResponse extends Message {
+class MsgPayPacketFeeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -251,13 +256,14 @@ export class MsgPayPacketFeeResponse extends Message {
 MsgPayPacketFeeResponse.runtime = proto3;
 MsgPayPacketFeeResponse.typeName = "ibc.applications.fee.v1.MsgPayPacketFeeResponse";
 MsgPayPacketFeeResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgPayPacketFeeResponse };
 /**
  * MsgPayPacketFeeAsync defines the request type for the PayPacketFeeAsync rpc
  * This Msg can be used to pay for a packet at a specified sequence (instead of the next sequence send)
  *
  * @generated from message ibc.applications.fee.v1.MsgPayPacketFeeAsync
  */
-export class MsgPayPacketFeeAsync extends Message {
+class MsgPayPacketFeeAsync extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -281,12 +287,13 @@ MsgPayPacketFeeAsync.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "packet_id", kind: "message", T: PacketId },
     { no: 2, name: "packet_fee", kind: "message", T: PacketFee },
 ]);
+export { MsgPayPacketFeeAsync };
 /**
  * MsgPayPacketFeeAsyncResponse defines the response type for the PayPacketFeeAsync rpc
  *
  * @generated from message ibc.applications.fee.v1.MsgPayPacketFeeAsyncResponse
  */
-export class MsgPayPacketFeeAsyncResponse extends Message {
+class MsgPayPacketFeeAsyncResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -307,4 +314,5 @@ export class MsgPayPacketFeeAsyncResponse extends Message {
 MsgPayPacketFeeAsyncResponse.runtime = proto3;
 MsgPayPacketFeeAsyncResponse.typeName = "ibc.applications.fee.v1.MsgPayPacketFeeAsyncResponse";
 MsgPayPacketFeeAsyncResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgPayPacketFeeAsyncResponse };
 //# sourceMappingURL=tx_pb.js.map

@@ -52,7 +52,7 @@ proto3.util.setEnumType(AuthorizationType, "cosmos.staking.v1beta1.Authorization
  *
  * @generated from message cosmos.staking.v1beta1.StakeAuthorization
  */
-export class StakeAuthorization extends Message {
+class StakeAuthorization extends Message {
     constructor(data) {
         super();
         /**
@@ -90,12 +90,13 @@ StakeAuthorization.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "deny_list", kind: "message", T: StakeAuthorization_Validators, oneof: "validators" },
     { no: 4, name: "authorization_type", kind: "enum", T: proto3.getEnumType(AuthorizationType) },
 ]);
+export { StakeAuthorization };
 /**
  * Validators defines list of validator addresses.
  *
  * @generated from message cosmos.staking.v1beta1.StakeAuthorization.Validators
  */
-export class StakeAuthorization_Validators extends Message {
+class StakeAuthorization_Validators extends Message {
     constructor(data) {
         super();
         /**
@@ -122,4 +123,5 @@ StakeAuthorization_Validators.typeName = "cosmos.staking.v1beta1.StakeAuthorizat
 StakeAuthorization_Validators.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { StakeAuthorization_Validators };
 //# sourceMappingURL=authz_pb.js.map

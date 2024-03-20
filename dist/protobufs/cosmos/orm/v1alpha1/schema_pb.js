@@ -73,7 +73,7 @@ proto3.util.setEnumType(StorageType, "cosmos.orm.v1alpha1.StorageType", [
  *
  * @generated from message cosmos.orm.v1alpha1.ModuleSchemaDescriptor
  */
-export class ModuleSchemaDescriptor extends Message {
+class ModuleSchemaDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -108,12 +108,13 @@ ModuleSchemaDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "schema_file", kind: "message", T: ModuleSchemaDescriptor_FileEntry, repeated: true },
     { no: 2, name: "prefix", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { ModuleSchemaDescriptor };
 /**
  * FileEntry describes an ORM file used in a module.
  *
  * @generated from message cosmos.orm.v1alpha1.ModuleSchemaDescriptor.FileEntry
  */
-export class ModuleSchemaDescriptor_FileEntry extends Message {
+class ModuleSchemaDescriptor_FileEntry extends Message {
     constructor(data) {
         super();
         /**
@@ -161,4 +162,5 @@ ModuleSchemaDescriptor_FileEntry.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proto_file_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "storage_type", kind: "enum", T: proto3.getEnumType(StorageType) },
 ]);
+export { ModuleSchemaDescriptor_FileEntry };
 //# sourceMappingURL=schema_pb.js.map

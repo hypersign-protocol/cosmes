@@ -12,7 +12,7 @@ import { Group } from "./group_pb.js";
  *
  * @generated from message osmosis.incentives.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -73,4 +73,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "group_gauges", kind: "message", T: Gauge, repeated: true },
     { no: 6, name: "groups", kind: "message", T: Group, repeated: true },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

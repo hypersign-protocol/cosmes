@@ -6,7 +6,7 @@ import { BlockParams, EvidenceParams, ValidatorParams } from "../../../tendermin
  *
  * @generated from message cosmos.consensus.v1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -38,13 +38,14 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "evidence", kind: "message", T: EvidenceParams },
     { no: 4, name: "validator", kind: "message", T: ValidatorParams },
 ]);
+export { MsgUpdateParams };
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
  * MsgUpdateParams message.
  *
  * @generated from message cosmos.consensus.v1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -65,4 +66,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "cosmos.consensus.v1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

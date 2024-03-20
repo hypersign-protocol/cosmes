@@ -12,7 +12,7 @@ import { PageRequest, PageResponse } from "../../../../cosmos/base/query/v1beta1
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionRequest
  */
-export class QueryConnectionRequest extends Message {
+class QueryConnectionRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -41,6 +41,7 @@ QueryConnectionRequest.typeName = "ibc.core.connection.v1.QueryConnectionRequest
 QueryConnectionRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "connection_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryConnectionRequest };
 /**
  * QueryConnectionResponse is the response type for the Query/Connection RPC
  * method. Besides the connection end, it includes a proof and the height from
@@ -48,7 +49,7 @@ QueryConnectionRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionResponse
  */
-export class QueryConnectionResponse extends Message {
+class QueryConnectionResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -79,13 +80,14 @@ QueryConnectionResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryConnectionResponse };
 /**
  * QueryConnectionsRequest is the request type for the Query/Connections RPC
  * method
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionsRequest
  */
-export class QueryConnectionsRequest extends Message {
+class QueryConnectionsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -108,13 +110,14 @@ QueryConnectionsRequest.typeName = "ibc.core.connection.v1.QueryConnectionsReque
 QueryConnectionsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryConnectionsRequest };
 /**
  * QueryConnectionsResponse is the response type for the Query/Connections RPC
  * method.
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionsResponse
  */
-export class QueryConnectionsResponse extends Message {
+class QueryConnectionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -145,13 +148,14 @@ QueryConnectionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
     { no: 3, name: "height", kind: "message", T: Height },
 ]);
+export { QueryConnectionsResponse };
 /**
  * QueryClientConnectionsRequest is the request type for the
  * Query/ClientConnections RPC method
  *
  * @generated from message ibc.core.connection.v1.QueryClientConnectionsRequest
  */
-export class QueryClientConnectionsRequest extends Message {
+class QueryClientConnectionsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -180,13 +184,14 @@ QueryClientConnectionsRequest.typeName = "ibc.core.connection.v1.QueryClientConn
 QueryClientConnectionsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "client_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryClientConnectionsRequest };
 /**
  * QueryClientConnectionsResponse is the response type for the
  * Query/ClientConnections RPC method
  *
  * @generated from message ibc.core.connection.v1.QueryClientConnectionsResponse
  */
-export class QueryClientConnectionsResponse extends Message {
+class QueryClientConnectionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -223,13 +228,14 @@ QueryClientConnectionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryClientConnectionsResponse };
 /**
  * QueryConnectionClientStateRequest is the request type for the
  * Query/ConnectionClientState RPC method
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionClientStateRequest
  */
-export class QueryConnectionClientStateRequest extends Message {
+class QueryConnectionClientStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -258,13 +264,14 @@ QueryConnectionClientStateRequest.typeName = "ibc.core.connection.v1.QueryConnec
 QueryConnectionClientStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "connection_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryConnectionClientStateRequest };
 /**
  * QueryConnectionClientStateResponse is the response type for the
  * Query/ConnectionClientState RPC method
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionClientStateResponse
  */
-export class QueryConnectionClientStateResponse extends Message {
+class QueryConnectionClientStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -295,13 +302,14 @@ QueryConnectionClientStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 3, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryConnectionClientStateResponse };
 /**
  * QueryConnectionConsensusStateRequest is the request type for the
  * Query/ConnectionConsensusState RPC method
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionConsensusStateRequest
  */
-export class QueryConnectionConsensusStateRequest extends Message {
+class QueryConnectionConsensusStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -340,13 +348,14 @@ QueryConnectionConsensusStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "revision_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "revision_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryConnectionConsensusStateRequest };
 /**
  * QueryConnectionConsensusStateResponse is the response type for the
  * Query/ConnectionConsensusState RPC method
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionConsensusStateResponse
  */
-export class QueryConnectionConsensusStateResponse extends Message {
+class QueryConnectionConsensusStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -384,12 +393,13 @@ QueryConnectionConsensusStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "proof", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 4, name: "proof_height", kind: "message", T: Height },
 ]);
+export { QueryConnectionConsensusStateResponse };
 /**
  * QueryConnectionParamsRequest is the request type for the Query/ConnectionParams RPC method.
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionParamsRequest
  */
-export class QueryConnectionParamsRequest extends Message {
+class QueryConnectionParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -410,12 +420,13 @@ export class QueryConnectionParamsRequest extends Message {
 QueryConnectionParamsRequest.runtime = proto3;
 QueryConnectionParamsRequest.typeName = "ibc.core.connection.v1.QueryConnectionParamsRequest";
 QueryConnectionParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryConnectionParamsRequest };
 /**
  * QueryConnectionParamsResponse is the response type for the Query/ConnectionParams RPC method.
  *
  * @generated from message ibc.core.connection.v1.QueryConnectionParamsResponse
  */
-export class QueryConnectionParamsResponse extends Message {
+class QueryConnectionParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -438,4 +449,5 @@ QueryConnectionParamsResponse.typeName = "ibc.core.connection.v1.QueryConnection
 QueryConnectionParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryConnectionParamsResponse };
 //# sourceMappingURL=query_pb.js.map

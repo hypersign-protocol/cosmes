@@ -10,7 +10,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.valsetpref.v1beta1.MsgSetValidatorSetPreference
  */
-export class MsgSetValidatorSetPreference extends Message {
+class MsgSetValidatorSetPreference extends Message {
     constructor(data) {
         super();
         /**
@@ -46,10 +46,11 @@ MsgSetValidatorSetPreference.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "preferences", kind: "message", T: ValidatorPreference, repeated: true },
 ]);
+export { MsgSetValidatorSetPreference };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgSetValidatorSetPreferenceResponse
  */
-export class MsgSetValidatorSetPreferenceResponse extends Message {
+class MsgSetValidatorSetPreferenceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -70,13 +71,14 @@ export class MsgSetValidatorSetPreferenceResponse extends Message {
 MsgSetValidatorSetPreferenceResponse.runtime = proto3;
 MsgSetValidatorSetPreferenceResponse.typeName = "osmosis.valsetpref.v1beta1.MsgSetValidatorSetPreferenceResponse";
 MsgSetValidatorSetPreferenceResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgSetValidatorSetPreferenceResponse };
 /**
  * MsgDelegateToValidatorSet allows users to delegate to an existing
  * validator-set
  *
  * @generated from message osmosis.valsetpref.v1beta1.MsgDelegateToValidatorSet
  */
-export class MsgDelegateToValidatorSet extends Message {
+class MsgDelegateToValidatorSet extends Message {
     constructor(data) {
         super();
         /**
@@ -106,10 +108,11 @@ MsgDelegateToValidatorSet.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "coin", kind: "message", T: Coin },
 ]);
+export { MsgDelegateToValidatorSet };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgDelegateToValidatorSetResponse
  */
-export class MsgDelegateToValidatorSetResponse extends Message {
+class MsgDelegateToValidatorSetResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -130,10 +133,11 @@ export class MsgDelegateToValidatorSetResponse extends Message {
 MsgDelegateToValidatorSetResponse.runtime = proto3;
 MsgDelegateToValidatorSetResponse.typeName = "osmosis.valsetpref.v1beta1.MsgDelegateToValidatorSetResponse";
 MsgDelegateToValidatorSetResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgDelegateToValidatorSetResponse };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgUndelegateFromValidatorSet
  */
-export class MsgUndelegateFromValidatorSet extends Message {
+class MsgUndelegateFromValidatorSet extends Message {
     constructor(data) {
         super();
         /**
@@ -163,10 +167,11 @@ MsgUndelegateFromValidatorSet.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "coin", kind: "message", T: Coin },
 ]);
+export { MsgUndelegateFromValidatorSet };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgUndelegateFromValidatorSetResponse
  */
-export class MsgUndelegateFromValidatorSetResponse extends Message {
+class MsgUndelegateFromValidatorSetResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -187,10 +192,11 @@ export class MsgUndelegateFromValidatorSetResponse extends Message {
 MsgUndelegateFromValidatorSetResponse.runtime = proto3;
 MsgUndelegateFromValidatorSetResponse.typeName = "osmosis.valsetpref.v1beta1.MsgUndelegateFromValidatorSetResponse";
 MsgUndelegateFromValidatorSetResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUndelegateFromValidatorSetResponse };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgUndelegateFromRebalancedValidatorSet
  */
-export class MsgUndelegateFromRebalancedValidatorSet extends Message {
+class MsgUndelegateFromRebalancedValidatorSet extends Message {
     constructor(data) {
         super();
         /**
@@ -220,10 +226,11 @@ MsgUndelegateFromRebalancedValidatorSet.fields = proto3.util.newFieldList(() => 
     { no: 1, name: "delegator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "coin", kind: "message", T: Coin },
 ]);
+export { MsgUndelegateFromRebalancedValidatorSet };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgUndelegateFromRebalancedValidatorSetResponse
  */
-export class MsgUndelegateFromRebalancedValidatorSetResponse extends Message {
+class MsgUndelegateFromRebalancedValidatorSetResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -244,10 +251,11 @@ export class MsgUndelegateFromRebalancedValidatorSetResponse extends Message {
 MsgUndelegateFromRebalancedValidatorSetResponse.runtime = proto3;
 MsgUndelegateFromRebalancedValidatorSetResponse.typeName = "osmosis.valsetpref.v1beta1.MsgUndelegateFromRebalancedValidatorSetResponse";
 MsgUndelegateFromRebalancedValidatorSetResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUndelegateFromRebalancedValidatorSetResponse };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgRedelegateValidatorSet
  */
-export class MsgRedelegateValidatorSet extends Message {
+class MsgRedelegateValidatorSet extends Message {
     constructor(data) {
         super();
         /**
@@ -283,10 +291,11 @@ MsgRedelegateValidatorSet.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "preferences", kind: "message", T: ValidatorPreference, repeated: true },
 ]);
+export { MsgRedelegateValidatorSet };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgRedelegateValidatorSetResponse
  */
-export class MsgRedelegateValidatorSetResponse extends Message {
+class MsgRedelegateValidatorSetResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -307,13 +316,14 @@ export class MsgRedelegateValidatorSetResponse extends Message {
 MsgRedelegateValidatorSetResponse.runtime = proto3;
 MsgRedelegateValidatorSetResponse.typeName = "osmosis.valsetpref.v1beta1.MsgRedelegateValidatorSetResponse";
 MsgRedelegateValidatorSetResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRedelegateValidatorSetResponse };
 /**
  * MsgWithdrawDelegationRewards allows user to claim staking rewards from the
  * validator set.
  *
  * @generated from message osmosis.valsetpref.v1beta1.MsgWithdrawDelegationRewards
  */
-export class MsgWithdrawDelegationRewards extends Message {
+class MsgWithdrawDelegationRewards extends Message {
     constructor(data) {
         super();
         /**
@@ -342,10 +352,11 @@ MsgWithdrawDelegationRewards.typeName = "osmosis.valsetpref.v1beta1.MsgWithdrawD
 MsgWithdrawDelegationRewards.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgWithdrawDelegationRewards };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgWithdrawDelegationRewardsResponse
  */
-export class MsgWithdrawDelegationRewardsResponse extends Message {
+class MsgWithdrawDelegationRewardsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -366,6 +377,7 @@ export class MsgWithdrawDelegationRewardsResponse extends Message {
 MsgWithdrawDelegationRewardsResponse.runtime = proto3;
 MsgWithdrawDelegationRewardsResponse.typeName = "osmosis.valsetpref.v1beta1.MsgWithdrawDelegationRewardsResponse";
 MsgWithdrawDelegationRewardsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgWithdrawDelegationRewardsResponse };
 /**
  * MsgDelegateBondedTokens breaks bonded lockup (by ID) of osmo, of
  * length <= 2 weeks and takes all that osmo and delegates according to
@@ -373,7 +385,7 @@ MsgWithdrawDelegationRewardsResponse.fields = proto3.util.newFieldList(() => [])
  *
  * @generated from message osmosis.valsetpref.v1beta1.MsgDelegateBondedTokens
  */
-export class MsgDelegateBondedTokens extends Message {
+class MsgDelegateBondedTokens extends Message {
     constructor(data) {
         super();
         /**
@@ -409,10 +421,11 @@ MsgDelegateBondedTokens.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "delegator", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "lockID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { MsgDelegateBondedTokens };
 /**
  * @generated from message osmosis.valsetpref.v1beta1.MsgDelegateBondedTokensResponse
  */
-export class MsgDelegateBondedTokensResponse extends Message {
+class MsgDelegateBondedTokensResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -433,4 +446,5 @@ export class MsgDelegateBondedTokensResponse extends Message {
 MsgDelegateBondedTokensResponse.runtime = proto3;
 MsgDelegateBondedTokensResponse.typeName = "osmosis.valsetpref.v1beta1.MsgDelegateBondedTokensResponse";
 MsgDelegateBondedTokensResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgDelegateBondedTokensResponse };
 //# sourceMappingURL=tx_pb.js.map

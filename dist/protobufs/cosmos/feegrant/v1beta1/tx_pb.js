@@ -6,7 +6,7 @@ import { Any, Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.feegrant.v1beta1.MsgGrantAllowance
  */
-export class MsgGrantAllowance extends Message {
+class MsgGrantAllowance extends Message {
     constructor(data) {
         super();
         /**
@@ -43,12 +43,13 @@ MsgGrantAllowance.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "allowance", kind: "message", T: Any },
 ]);
+export { MsgGrantAllowance };
 /**
  * MsgGrantAllowanceResponse defines the Msg/GrantAllowanceResponse response type.
  *
  * @generated from message cosmos.feegrant.v1beta1.MsgGrantAllowanceResponse
  */
-export class MsgGrantAllowanceResponse extends Message {
+class MsgGrantAllowanceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -69,12 +70,13 @@ export class MsgGrantAllowanceResponse extends Message {
 MsgGrantAllowanceResponse.runtime = proto3;
 MsgGrantAllowanceResponse.typeName = "cosmos.feegrant.v1beta1.MsgGrantAllowanceResponse";
 MsgGrantAllowanceResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgGrantAllowanceResponse };
 /**
  * MsgRevokeAllowance removes any existing Allowance from Granter to Grantee.
  *
  * @generated from message cosmos.feegrant.v1beta1.MsgRevokeAllowance
  */
-export class MsgRevokeAllowance extends Message {
+class MsgRevokeAllowance extends Message {
     constructor(data) {
         super();
         /**
@@ -110,12 +112,13 @@ MsgRevokeAllowance.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "granter", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "grantee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgRevokeAllowance };
 /**
  * MsgRevokeAllowanceResponse defines the Msg/RevokeAllowanceResponse response type.
  *
  * @generated from message cosmos.feegrant.v1beta1.MsgRevokeAllowanceResponse
  */
-export class MsgRevokeAllowanceResponse extends Message {
+class MsgRevokeAllowanceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -136,4 +139,5 @@ export class MsgRevokeAllowanceResponse extends Message {
 MsgRevokeAllowanceResponse.runtime = proto3;
 MsgRevokeAllowanceResponse.typeName = "cosmos.feegrant.v1beta1.MsgRevokeAllowanceResponse";
 MsgRevokeAllowanceResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRevokeAllowanceResponse };
 //# sourceMappingURL=tx_pb.js.map

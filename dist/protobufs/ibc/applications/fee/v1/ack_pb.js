@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ibc.applications.fee.v1.IncentivizedAcknowledgement
  */
-export class IncentivizedAcknowledgement extends Message {
+class IncentivizedAcknowledgement extends Message {
     constructor(data) {
         super();
         /**
@@ -51,4 +51,5 @@ IncentivizedAcknowledgement.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "forward_relayer_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "underlying_app_success", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { IncentivizedAcknowledgement };
 //# sourceMappingURL=ack_pb.js.map

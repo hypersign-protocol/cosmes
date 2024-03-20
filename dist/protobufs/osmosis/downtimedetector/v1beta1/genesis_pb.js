@@ -7,7 +7,7 @@ import { Downtime } from "./downtime_duration_pb.js";
 /**
  * @generated from message osmosis.downtimedetector.v1beta1.GenesisDowntimeEntry
  */
-export class GenesisDowntimeEntry extends Message {
+class GenesisDowntimeEntry extends Message {
     constructor(data) {
         super();
         /**
@@ -35,12 +35,13 @@ GenesisDowntimeEntry.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "duration", kind: "enum", T: proto3.getEnumType(Downtime) },
     { no: 2, name: "last_downtime", kind: "message", T: Timestamp },
 ]);
+export { GenesisDowntimeEntry };
 /**
  * GenesisState defines the twap module's genesis state.
  *
  * @generated from message osmosis.downtimedetector.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -68,4 +69,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "downtimes", kind: "message", T: GenesisDowntimeEntry, repeated: true },
     { no: 2, name: "last_block_time", kind: "message", T: Timestamp },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

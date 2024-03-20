@@ -6,7 +6,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 /**
  * @generated from message tendermint.p2p.NetAddress
  */
-export class NetAddress extends Message {
+class NetAddress extends Message {
     constructor(data) {
         super();
         /**
@@ -43,10 +43,11 @@ NetAddress.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "ip", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "port", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { NetAddress };
 /**
  * @generated from message tendermint.p2p.ProtocolVersion
  */
-export class ProtocolVersion extends Message {
+class ProtocolVersion extends Message {
     constructor(data) {
         super();
         /**
@@ -83,10 +84,11 @@ ProtocolVersion.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "block", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "app", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ProtocolVersion };
 /**
  * @generated from message tendermint.p2p.DefaultNodeInfo
  */
-export class DefaultNodeInfo extends Message {
+class DefaultNodeInfo extends Message {
     constructor(data) {
         super();
         /**
@@ -140,10 +142,11 @@ DefaultNodeInfo.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "moniker", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 8, name: "other", kind: "message", T: DefaultNodeInfoOther },
 ]);
+export { DefaultNodeInfo };
 /**
  * @generated from message tendermint.p2p.DefaultNodeInfoOther
  */
-export class DefaultNodeInfoOther extends Message {
+class DefaultNodeInfoOther extends Message {
     constructor(data) {
         super();
         /**
@@ -175,4 +178,5 @@ DefaultNodeInfoOther.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx_index", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "rpc_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DefaultNodeInfoOther };
 //# sourceMappingURL=types_pb.js.map

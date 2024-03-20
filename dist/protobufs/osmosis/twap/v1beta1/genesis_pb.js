@@ -9,7 +9,7 @@ import { TwapRecord } from "./twap_record_pb.js";
  *
  * @generated from message osmosis.twap.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -37,12 +37,13 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "prune_epoch_identifier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "record_history_keep_period", kind: "message", T: Duration },
 ]);
+export { Params };
 /**
  * GenesisState defines the twap module's genesis state.
  *
  * @generated from message osmosis.twap.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -72,4 +73,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "twaps", kind: "message", T: TwapRecord, repeated: true },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

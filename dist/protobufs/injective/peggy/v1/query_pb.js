@@ -12,7 +12,7 @@ import { GenesisState } from "./genesis_pb.js";
 /**
  * @generated from message injective.peggy.v1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -33,10 +33,11 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "injective.peggy.v1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * @generated from message injective.peggy.v1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -59,10 +60,11 @@ QueryParamsResponse.typeName = "injective.peggy.v1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * @generated from message injective.peggy.v1.QueryCurrentValsetRequest
  */
-export class QueryCurrentValsetRequest extends Message {
+class QueryCurrentValsetRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -83,10 +85,11 @@ export class QueryCurrentValsetRequest extends Message {
 QueryCurrentValsetRequest.runtime = proto3;
 QueryCurrentValsetRequest.typeName = "injective.peggy.v1.QueryCurrentValsetRequest";
 QueryCurrentValsetRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryCurrentValsetRequest };
 /**
  * @generated from message injective.peggy.v1.QueryCurrentValsetResponse
  */
-export class QueryCurrentValsetResponse extends Message {
+class QueryCurrentValsetResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -109,10 +112,11 @@ QueryCurrentValsetResponse.typeName = "injective.peggy.v1.QueryCurrentValsetResp
 QueryCurrentValsetResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "valset", kind: "message", T: Valset },
 ]);
+export { QueryCurrentValsetResponse };
 /**
  * @generated from message injective.peggy.v1.QueryValsetRequestRequest
  */
-export class QueryValsetRequestRequest extends Message {
+class QueryValsetRequestRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -139,10 +143,11 @@ QueryValsetRequestRequest.typeName = "injective.peggy.v1.QueryValsetRequestReque
 QueryValsetRequestRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryValsetRequestRequest };
 /**
  * @generated from message injective.peggy.v1.QueryValsetRequestResponse
  */
-export class QueryValsetRequestResponse extends Message {
+class QueryValsetRequestResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -165,10 +170,11 @@ QueryValsetRequestResponse.typeName = "injective.peggy.v1.QueryValsetRequestResp
 QueryValsetRequestResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "valset", kind: "message", T: Valset },
 ]);
+export { QueryValsetRequestResponse };
 /**
  * @generated from message injective.peggy.v1.QueryValsetConfirmRequest
  */
-export class QueryValsetConfirmRequest extends Message {
+class QueryValsetConfirmRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -200,10 +206,11 @@ QueryValsetConfirmRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryValsetConfirmRequest };
 /**
  * @generated from message injective.peggy.v1.QueryValsetConfirmResponse
  */
-export class QueryValsetConfirmResponse extends Message {
+class QueryValsetConfirmResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -226,10 +233,11 @@ QueryValsetConfirmResponse.typeName = "injective.peggy.v1.QueryValsetConfirmResp
 QueryValsetConfirmResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "confirm", kind: "message", T: MsgValsetConfirm },
 ]);
+export { QueryValsetConfirmResponse };
 /**
  * @generated from message injective.peggy.v1.QueryValsetConfirmsByNonceRequest
  */
-export class QueryValsetConfirmsByNonceRequest extends Message {
+class QueryValsetConfirmsByNonceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -256,10 +264,11 @@ QueryValsetConfirmsByNonceRequest.typeName = "injective.peggy.v1.QueryValsetConf
 QueryValsetConfirmsByNonceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryValsetConfirmsByNonceRequest };
 /**
  * @generated from message injective.peggy.v1.QueryValsetConfirmsByNonceResponse
  */
-export class QueryValsetConfirmsByNonceResponse extends Message {
+class QueryValsetConfirmsByNonceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -286,10 +295,11 @@ QueryValsetConfirmsByNonceResponse.typeName = "injective.peggy.v1.QueryValsetCon
 QueryValsetConfirmsByNonceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "confirms", kind: "message", T: MsgValsetConfirm, repeated: true },
 ]);
+export { QueryValsetConfirmsByNonceResponse };
 /**
  * @generated from message injective.peggy.v1.QueryLastValsetRequestsRequest
  */
-export class QueryLastValsetRequestsRequest extends Message {
+class QueryLastValsetRequestsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -310,10 +320,11 @@ export class QueryLastValsetRequestsRequest extends Message {
 QueryLastValsetRequestsRequest.runtime = proto3;
 QueryLastValsetRequestsRequest.typeName = "injective.peggy.v1.QueryLastValsetRequestsRequest";
 QueryLastValsetRequestsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryLastValsetRequestsRequest };
 /**
  * @generated from message injective.peggy.v1.QueryLastValsetRequestsResponse
  */
-export class QueryLastValsetRequestsResponse extends Message {
+class QueryLastValsetRequestsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -340,10 +351,11 @@ QueryLastValsetRequestsResponse.typeName = "injective.peggy.v1.QueryLastValsetRe
 QueryLastValsetRequestsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "valsets", kind: "message", T: Valset, repeated: true },
 ]);
+export { QueryLastValsetRequestsResponse };
 /**
  * @generated from message injective.peggy.v1.QueryLastPendingValsetRequestByAddrRequest
  */
-export class QueryLastPendingValsetRequestByAddrRequest extends Message {
+class QueryLastPendingValsetRequestByAddrRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -370,10 +382,11 @@ QueryLastPendingValsetRequestByAddrRequest.typeName = "injective.peggy.v1.QueryL
 QueryLastPendingValsetRequestByAddrRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryLastPendingValsetRequestByAddrRequest };
 /**
  * @generated from message injective.peggy.v1.QueryLastPendingValsetRequestByAddrResponse
  */
-export class QueryLastPendingValsetRequestByAddrResponse extends Message {
+class QueryLastPendingValsetRequestByAddrResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -400,10 +413,11 @@ QueryLastPendingValsetRequestByAddrResponse.typeName = "injective.peggy.v1.Query
 QueryLastPendingValsetRequestByAddrResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "valsets", kind: "message", T: Valset, repeated: true },
 ]);
+export { QueryLastPendingValsetRequestByAddrResponse };
 /**
  * @generated from message injective.peggy.v1.QueryBatchFeeRequest
  */
-export class QueryBatchFeeRequest extends Message {
+class QueryBatchFeeRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -424,10 +438,11 @@ export class QueryBatchFeeRequest extends Message {
 QueryBatchFeeRequest.runtime = proto3;
 QueryBatchFeeRequest.typeName = "injective.peggy.v1.QueryBatchFeeRequest";
 QueryBatchFeeRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBatchFeeRequest };
 /**
  * @generated from message injective.peggy.v1.QueryBatchFeeResponse
  */
-export class QueryBatchFeeResponse extends Message {
+class QueryBatchFeeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -454,10 +469,11 @@ QueryBatchFeeResponse.typeName = "injective.peggy.v1.QueryBatchFeeResponse";
 QueryBatchFeeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "batchFees", kind: "message", T: BatchFees, repeated: true },
 ]);
+export { QueryBatchFeeResponse };
 /**
  * @generated from message injective.peggy.v1.QueryLastPendingBatchRequestByAddrRequest
  */
-export class QueryLastPendingBatchRequestByAddrRequest extends Message {
+class QueryLastPendingBatchRequestByAddrRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -484,10 +500,11 @@ QueryLastPendingBatchRequestByAddrRequest.typeName = "injective.peggy.v1.QueryLa
 QueryLastPendingBatchRequestByAddrRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryLastPendingBatchRequestByAddrRequest };
 /**
  * @generated from message injective.peggy.v1.QueryLastPendingBatchRequestByAddrResponse
  */
-export class QueryLastPendingBatchRequestByAddrResponse extends Message {
+class QueryLastPendingBatchRequestByAddrResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -510,10 +527,11 @@ QueryLastPendingBatchRequestByAddrResponse.typeName = "injective.peggy.v1.QueryL
 QueryLastPendingBatchRequestByAddrResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "batch", kind: "message", T: OutgoingTxBatch },
 ]);
+export { QueryLastPendingBatchRequestByAddrResponse };
 /**
  * @generated from message injective.peggy.v1.QueryOutgoingTxBatchesRequest
  */
-export class QueryOutgoingTxBatchesRequest extends Message {
+class QueryOutgoingTxBatchesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -534,10 +552,11 @@ export class QueryOutgoingTxBatchesRequest extends Message {
 QueryOutgoingTxBatchesRequest.runtime = proto3;
 QueryOutgoingTxBatchesRequest.typeName = "injective.peggy.v1.QueryOutgoingTxBatchesRequest";
 QueryOutgoingTxBatchesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryOutgoingTxBatchesRequest };
 /**
  * @generated from message injective.peggy.v1.QueryOutgoingTxBatchesResponse
  */
-export class QueryOutgoingTxBatchesResponse extends Message {
+class QueryOutgoingTxBatchesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -564,10 +583,11 @@ QueryOutgoingTxBatchesResponse.typeName = "injective.peggy.v1.QueryOutgoingTxBat
 QueryOutgoingTxBatchesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "batches", kind: "message", T: OutgoingTxBatch, repeated: true },
 ]);
+export { QueryOutgoingTxBatchesResponse };
 /**
  * @generated from message injective.peggy.v1.QueryBatchRequestByNonceRequest
  */
-export class QueryBatchRequestByNonceRequest extends Message {
+class QueryBatchRequestByNonceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -599,10 +619,11 @@ QueryBatchRequestByNonceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBatchRequestByNonceRequest };
 /**
  * @generated from message injective.peggy.v1.QueryBatchRequestByNonceResponse
  */
-export class QueryBatchRequestByNonceResponse extends Message {
+class QueryBatchRequestByNonceResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -625,10 +646,11 @@ QueryBatchRequestByNonceResponse.typeName = "injective.peggy.v1.QueryBatchReques
 QueryBatchRequestByNonceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "batch", kind: "message", T: OutgoingTxBatch },
 ]);
+export { QueryBatchRequestByNonceResponse };
 /**
  * @generated from message injective.peggy.v1.QueryBatchConfirmsRequest
  */
-export class QueryBatchConfirmsRequest extends Message {
+class QueryBatchConfirmsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -660,10 +682,11 @@ QueryBatchConfirmsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBatchConfirmsRequest };
 /**
  * @generated from message injective.peggy.v1.QueryBatchConfirmsResponse
  */
-export class QueryBatchConfirmsResponse extends Message {
+class QueryBatchConfirmsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -690,10 +713,11 @@ QueryBatchConfirmsResponse.typeName = "injective.peggy.v1.QueryBatchConfirmsResp
 QueryBatchConfirmsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "confirms", kind: "message", T: MsgConfirmBatch, repeated: true },
 ]);
+export { QueryBatchConfirmsResponse };
 /**
  * @generated from message injective.peggy.v1.QueryLastEventByAddrRequest
  */
-export class QueryLastEventByAddrRequest extends Message {
+class QueryLastEventByAddrRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -720,10 +744,11 @@ QueryLastEventByAddrRequest.typeName = "injective.peggy.v1.QueryLastEventByAddrR
 QueryLastEventByAddrRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryLastEventByAddrRequest };
 /**
  * @generated from message injective.peggy.v1.QueryLastEventByAddrResponse
  */
-export class QueryLastEventByAddrResponse extends Message {
+class QueryLastEventByAddrResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -746,10 +771,11 @@ QueryLastEventByAddrResponse.typeName = "injective.peggy.v1.QueryLastEventByAddr
 QueryLastEventByAddrResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "last_claim_event", kind: "message", T: LastClaimEvent },
 ]);
+export { QueryLastEventByAddrResponse };
 /**
  * @generated from message injective.peggy.v1.QueryERC20ToDenomRequest
  */
-export class QueryERC20ToDenomRequest extends Message {
+class QueryERC20ToDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -776,10 +802,11 @@ QueryERC20ToDenomRequest.typeName = "injective.peggy.v1.QueryERC20ToDenomRequest
 QueryERC20ToDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "erc20", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryERC20ToDenomRequest };
 /**
  * @generated from message injective.peggy.v1.QueryERC20ToDenomResponse
  */
-export class QueryERC20ToDenomResponse extends Message {
+class QueryERC20ToDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -811,10 +838,11 @@ QueryERC20ToDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "cosmos_originated", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryERC20ToDenomResponse };
 /**
  * @generated from message injective.peggy.v1.QueryDenomToERC20Request
  */
-export class QueryDenomToERC20Request extends Message {
+class QueryDenomToERC20Request extends Message {
     constructor(data) {
         super();
         /**
@@ -841,10 +869,11 @@ QueryDenomToERC20Request.typeName = "injective.peggy.v1.QueryDenomToERC20Request
 QueryDenomToERC20Request.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomToERC20Request };
 /**
  * @generated from message injective.peggy.v1.QueryDenomToERC20Response
  */
-export class QueryDenomToERC20Response extends Message {
+class QueryDenomToERC20Response extends Message {
     constructor(data) {
         super();
         /**
@@ -876,10 +905,11 @@ QueryDenomToERC20Response.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "erc20", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "cosmos_originated", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryDenomToERC20Response };
 /**
  * @generated from message injective.peggy.v1.QueryDelegateKeysByValidatorAddress
  */
-export class QueryDelegateKeysByValidatorAddress extends Message {
+class QueryDelegateKeysByValidatorAddress extends Message {
     constructor(data) {
         super();
         /**
@@ -906,10 +936,11 @@ QueryDelegateKeysByValidatorAddress.typeName = "injective.peggy.v1.QueryDelegate
 QueryDelegateKeysByValidatorAddress.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegateKeysByValidatorAddress };
 /**
  * @generated from message injective.peggy.v1.QueryDelegateKeysByValidatorAddressResponse
  */
-export class QueryDelegateKeysByValidatorAddressResponse extends Message {
+class QueryDelegateKeysByValidatorAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -941,10 +972,11 @@ QueryDelegateKeysByValidatorAddressResponse.fields = proto3.util.newFieldList(()
     { no: 1, name: "eth_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegateKeysByValidatorAddressResponse };
 /**
  * @generated from message injective.peggy.v1.QueryDelegateKeysByEthAddress
  */
-export class QueryDelegateKeysByEthAddress extends Message {
+class QueryDelegateKeysByEthAddress extends Message {
     constructor(data) {
         super();
         /**
@@ -971,10 +1003,11 @@ QueryDelegateKeysByEthAddress.typeName = "injective.peggy.v1.QueryDelegateKeysBy
 QueryDelegateKeysByEthAddress.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "eth_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegateKeysByEthAddress };
 /**
  * @generated from message injective.peggy.v1.QueryDelegateKeysByEthAddressResponse
  */
-export class QueryDelegateKeysByEthAddressResponse extends Message {
+class QueryDelegateKeysByEthAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1006,10 +1039,11 @@ QueryDelegateKeysByEthAddressResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegateKeysByEthAddressResponse };
 /**
  * @generated from message injective.peggy.v1.QueryDelegateKeysByOrchestratorAddress
  */
-export class QueryDelegateKeysByOrchestratorAddress extends Message {
+class QueryDelegateKeysByOrchestratorAddress extends Message {
     constructor(data) {
         super();
         /**
@@ -1036,10 +1070,11 @@ QueryDelegateKeysByOrchestratorAddress.typeName = "injective.peggy.v1.QueryDeleg
 QueryDelegateKeysByOrchestratorAddress.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "orchestrator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegateKeysByOrchestratorAddress };
 /**
  * @generated from message injective.peggy.v1.QueryDelegateKeysByOrchestratorAddressResponse
  */
-export class QueryDelegateKeysByOrchestratorAddressResponse extends Message {
+class QueryDelegateKeysByOrchestratorAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1071,10 +1106,11 @@ QueryDelegateKeysByOrchestratorAddressResponse.fields = proto3.util.newFieldList
     { no: 1, name: "validator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "eth_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDelegateKeysByOrchestratorAddressResponse };
 /**
  * @generated from message injective.peggy.v1.QueryPendingSendToEth
  */
-export class QueryPendingSendToEth extends Message {
+class QueryPendingSendToEth extends Message {
     constructor(data) {
         super();
         /**
@@ -1101,10 +1137,11 @@ QueryPendingSendToEth.typeName = "injective.peggy.v1.QueryPendingSendToEth";
 QueryPendingSendToEth.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sender_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryPendingSendToEth };
 /**
  * @generated from message injective.peggy.v1.QueryPendingSendToEthResponse
  */
-export class QueryPendingSendToEthResponse extends Message {
+class QueryPendingSendToEthResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1136,13 +1173,14 @@ QueryPendingSendToEthResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "transfers_in_batches", kind: "message", T: OutgoingTransferTx, repeated: true },
     { no: 2, name: "unbatched_transfers", kind: "message", T: OutgoingTransferTx, repeated: true },
 ]);
+export { QueryPendingSendToEthResponse };
 /**
  * QueryModuleStateRequest is the request type for the Query/PeggyModuleState
  * RPC method.
  *
  * @generated from message injective.peggy.v1.QueryModuleStateRequest
  */
-export class QueryModuleStateRequest extends Message {
+class QueryModuleStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1163,13 +1201,14 @@ export class QueryModuleStateRequest extends Message {
 QueryModuleStateRequest.runtime = proto3;
 QueryModuleStateRequest.typeName = "injective.peggy.v1.QueryModuleStateRequest";
 QueryModuleStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryModuleStateRequest };
 /**
  * QueryModuleStateResponse is the response type for the Query/PeggyModuleState
  * RPC method.
  *
  * @generated from message injective.peggy.v1.QueryModuleStateResponse
  */
-export class QueryModuleStateResponse extends Message {
+class QueryModuleStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1192,10 +1231,11 @@ QueryModuleStateResponse.typeName = "injective.peggy.v1.QueryModuleStateResponse
 QueryModuleStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: GenesisState },
 ]);
+export { QueryModuleStateResponse };
 /**
  * @generated from message injective.peggy.v1.MissingNoncesRequest
  */
-export class MissingNoncesRequest extends Message {
+class MissingNoncesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1216,10 +1256,11 @@ export class MissingNoncesRequest extends Message {
 MissingNoncesRequest.runtime = proto3;
 MissingNoncesRequest.typeName = "injective.peggy.v1.MissingNoncesRequest";
 MissingNoncesRequest.fields = proto3.util.newFieldList(() => []);
+export { MissingNoncesRequest };
 /**
  * @generated from message injective.peggy.v1.MissingNoncesResponse
  */
-export class MissingNoncesResponse extends Message {
+class MissingNoncesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1246,4 +1287,5 @@ MissingNoncesResponse.typeName = "injective.peggy.v1.MissingNoncesResponse";
 MissingNoncesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "operator_addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MissingNoncesResponse };
 //# sourceMappingURL=query_pb.js.map

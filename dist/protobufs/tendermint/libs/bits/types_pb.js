@@ -6,7 +6,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 /**
  * @generated from message tendermint.libs.bits.BitArray
  */
-export class BitArray extends Message {
+class BitArray extends Message {
     constructor(data) {
         super();
         /**
@@ -38,4 +38,5 @@ BitArray.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bits", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "elems", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
 ]);
+export { BitArray };
 //# sourceMappingURL=types_pb.js.map

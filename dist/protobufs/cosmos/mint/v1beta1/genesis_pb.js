@@ -9,7 +9,7 @@ import { Minter, Params } from "./mint_pb.js";
  *
  * @generated from message cosmos.mint.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -33,4 +33,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "minter", kind: "message", T: Minter },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

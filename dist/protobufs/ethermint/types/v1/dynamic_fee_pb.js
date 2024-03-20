@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message ethermint.types.v1.ExtensionOptionDynamicFeeTx
  */
-export class ExtensionOptionDynamicFeeTx extends Message {
+class ExtensionOptionDynamicFeeTx extends Message {
     constructor(data) {
         super();
         /**
@@ -37,4 +37,5 @@ ExtensionOptionDynamicFeeTx.typeName = "ethermint.types.v1.ExtensionOptionDynami
 ExtensionOptionDynamicFeeTx.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "max_priority_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ExtensionOptionDynamicFeeTx };
 //# sourceMappingURL=dynamic_fee_pb.js.map

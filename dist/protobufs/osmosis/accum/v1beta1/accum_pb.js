@@ -11,7 +11,7 @@ import { DecCoin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.accum.v1beta1.AccumulatorContent
  */
-export class AccumulatorContent extends Message {
+class AccumulatorContent extends Message {
     constructor(data) {
         super();
         /**
@@ -43,10 +43,11 @@ AccumulatorContent.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "accum_value", kind: "message", T: DecCoin, repeated: true },
     { no: 2, name: "total_shares", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccumulatorContent };
 /**
  * @generated from message osmosis.accum.v1beta1.Options
  */
-export class Options extends Message {
+class Options extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -67,13 +68,14 @@ export class Options extends Message {
 Options.runtime = proto3;
 Options.typeName = "osmosis.accum.v1beta1.Options";
 Options.fields = proto3.util.newFieldList(() => []);
+export { Options };
 /**
  * Record corresponds to an individual position value belonging to the
  * global accumulator.
  *
  * @generated from message osmosis.accum.v1beta1.Record
  */
-export class Record extends Message {
+class Record extends Message {
     constructor(data) {
         super();
         /**
@@ -138,4 +140,5 @@ Record.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "unclaimed_rewards_total", kind: "message", T: DecCoin, repeated: true },
     { no: 4, name: "options", kind: "message", T: Options },
 ]);
+export { Record };
 //# sourceMappingURL=accum_pb.js.map

@@ -11,7 +11,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.base.v1beta1.Coin
  */
-export class Coin extends Message {
+class Coin extends Message {
     constructor(data) {
         super();
         /**
@@ -43,6 +43,7 @@ Coin.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Coin };
 /**
  * DecCoin defines a token with a denomination and a decimal amount.
  *
@@ -51,7 +52,7 @@ Coin.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.v1beta1.DecCoin
  */
-export class DecCoin extends Message {
+class DecCoin extends Message {
     constructor(data) {
         super();
         /**
@@ -83,12 +84,13 @@ DecCoin.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DecCoin };
 /**
  * IntProto defines a Protobuf wrapper around an Int object.
  *
  * @generated from message cosmos.base.v1beta1.IntProto
  */
-export class IntProto extends Message {
+class IntProto extends Message {
     constructor(data) {
         super();
         /**
@@ -115,12 +117,13 @@ IntProto.typeName = "cosmos.base.v1beta1.IntProto";
 IntProto.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "int", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { IntProto };
 /**
  * DecProto defines a Protobuf wrapper around a Dec object.
  *
  * @generated from message cosmos.base.v1beta1.DecProto
  */
-export class DecProto extends Message {
+class DecProto extends Message {
     constructor(data) {
         super();
         /**
@@ -147,4 +150,5 @@ DecProto.typeName = "cosmos.base.v1beta1.DecProto";
 DecProto.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "dec", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { DecProto };
 //# sourceMappingURL=coin_pb.js.map

@@ -14,7 +14,7 @@ import { Any, Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.app.v1alpha1.Config
  */
-export class Config extends Message {
+class Config extends Message {
     constructor(data) {
         super();
         /**
@@ -52,12 +52,13 @@ Config.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "modules", kind: "message", T: ModuleConfig, repeated: true },
     { no: 2, name: "golang_bindings", kind: "message", T: GolangBinding, repeated: true },
 ]);
+export { Config };
 /**
  * ModuleConfig is a module configuration for an app.
  *
  * @generated from message cosmos.app.v1alpha1.ModuleConfig
  */
-export class ModuleConfig extends Message {
+class ModuleConfig extends Message {
     constructor(data) {
         super();
         /**
@@ -105,12 +106,13 @@ ModuleConfig.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "config", kind: "message", T: Any },
     { no: 3, name: "golang_bindings", kind: "message", T: GolangBinding, repeated: true },
 ]);
+export { ModuleConfig };
 /**
  * GolangBinding is an explicit interface type to implementing type binding for dependency injection.
  *
  * @generated from message cosmos.app.v1alpha1.GolangBinding
  */
-export class GolangBinding extends Message {
+class GolangBinding extends Message {
     constructor(data) {
         super();
         /**
@@ -146,4 +148,5 @@ GolangBinding.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "interface_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "implementation", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GolangBinding };
 //# sourceMappingURL=config_pb.js.map

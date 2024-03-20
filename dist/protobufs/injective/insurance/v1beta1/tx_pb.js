@@ -12,7 +12,7 @@ import { Params } from "./insurance_pb.js";
  *
  * @generated from message injective.insurance.v1beta1.MsgCreateInsuranceFund
  */
-export class MsgCreateInsuranceFund extends Message {
+class MsgCreateInsuranceFund extends Message {
     constructor(data) {
         super();
         /**
@@ -87,10 +87,11 @@ MsgCreateInsuranceFund.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "expiry", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 8, name: "initial_deposit", kind: "message", T: Coin },
 ]);
+export { MsgCreateInsuranceFund };
 /**
  * @generated from message injective.insurance.v1beta1.MsgCreateInsuranceFundResponse
  */
-export class MsgCreateInsuranceFundResponse extends Message {
+class MsgCreateInsuranceFundResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -111,13 +112,14 @@ export class MsgCreateInsuranceFundResponse extends Message {
 MsgCreateInsuranceFundResponse.runtime = proto3;
 MsgCreateInsuranceFundResponse.typeName = "injective.insurance.v1beta1.MsgCreateInsuranceFundResponse";
 MsgCreateInsuranceFundResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgCreateInsuranceFundResponse };
 /**
  * MsgUnderwrite defines a message for depositing coins to underwrite an
  * insurance fund
  *
  * @generated from message injective.insurance.v1beta1.MsgUnderwrite
  */
-export class MsgUnderwrite extends Message {
+class MsgUnderwrite extends Message {
     constructor(data) {
         super();
         /**
@@ -154,10 +156,11 @@ MsgUnderwrite.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "deposit", kind: "message", T: Coin },
 ]);
+export { MsgUnderwrite };
 /**
  * @generated from message injective.insurance.v1beta1.MsgUnderwriteResponse
  */
-export class MsgUnderwriteResponse extends Message {
+class MsgUnderwriteResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -178,13 +181,14 @@ export class MsgUnderwriteResponse extends Message {
 MsgUnderwriteResponse.runtime = proto3;
 MsgUnderwriteResponse.typeName = "injective.insurance.v1beta1.MsgUnderwriteResponse";
 MsgUnderwriteResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUnderwriteResponse };
 /**
  * MsgRequestRedemption defines a message for requesting a redemption of the
  * sender's insurance fund tokens
  *
  * @generated from message injective.insurance.v1beta1.MsgRequestRedemption
  */
-export class MsgRequestRedemption extends Message {
+class MsgRequestRedemption extends Message {
     constructor(data) {
         super();
         /**
@@ -221,10 +225,11 @@ MsgRequestRedemption.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "amount", kind: "message", T: Coin },
 ]);
+export { MsgRequestRedemption };
 /**
  * @generated from message injective.insurance.v1beta1.MsgRequestRedemptionResponse
  */
-export class MsgRequestRedemptionResponse extends Message {
+class MsgRequestRedemptionResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -245,10 +250,11 @@ export class MsgRequestRedemptionResponse extends Message {
 MsgRequestRedemptionResponse.runtime = proto3;
 MsgRequestRedemptionResponse.typeName = "injective.insurance.v1beta1.MsgRequestRedemptionResponse";
 MsgRequestRedemptionResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgRequestRedemptionResponse };
 /**
  * @generated from message injective.insurance.v1beta1.MsgUpdateParams
  */
-export class MsgUpdateParams extends Message {
+class MsgUpdateParams extends Message {
     constructor(data) {
         super();
         /**
@@ -278,10 +284,11 @@ MsgUpdateParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "params", kind: "message", T: Params },
 ]);
+export { MsgUpdateParams };
 /**
  * @generated from message injective.insurance.v1beta1.MsgUpdateParamsResponse
  */
-export class MsgUpdateParamsResponse extends Message {
+class MsgUpdateParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -302,4 +309,5 @@ export class MsgUpdateParamsResponse extends Message {
 MsgUpdateParamsResponse.runtime = proto3;
 MsgUpdateParamsResponse.typeName = "injective.insurance.v1beta1.MsgUpdateParamsResponse";
 MsgUpdateParamsResponse.fields = proto3.util.newFieldList(() => []);
+export { MsgUpdateParamsResponse };
 //# sourceMappingURL=tx_pb.js.map

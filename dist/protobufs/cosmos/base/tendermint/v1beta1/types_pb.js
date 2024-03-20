@@ -12,7 +12,7 @@ import { Consensus } from "../../../../tendermint/version/types_pb.js";
  *
  * @generated from message cosmos.base.tendermint.v1beta1.Block
  */
-export class Block extends Message {
+class Block extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -38,12 +38,13 @@ Block.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "evidence", kind: "message", T: EvidenceList },
     { no: 4, name: "last_commit", kind: "message", T: Commit },
 ]);
+export { Block };
 /**
  * Header defines the structure of a Tendermint block header.
  *
  * @generated from message cosmos.base.tendermint.v1beta1.Header
  */
-export class Header extends Message {
+class Header extends Message {
     constructor(data) {
         super();
         /**
@@ -151,4 +152,5 @@ Header.fields = proto3.util.newFieldList(() => [
     { no: 13, name: "evidence_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 14, name: "proposer_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Header };
 //# sourceMappingURL=types_pb.js.map

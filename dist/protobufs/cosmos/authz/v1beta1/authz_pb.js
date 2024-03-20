@@ -6,7 +6,7 @@ import { Any, Message, proto3, Timestamp } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.authz.v1beta1.GenericAuthorization
  */
-export class GenericAuthorization extends Message {
+class GenericAuthorization extends Message {
     constructor(data) {
         super();
         /**
@@ -35,13 +35,14 @@ GenericAuthorization.typeName = "cosmos.authz.v1beta1.GenericAuthorization";
 GenericAuthorization.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "msg", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { GenericAuthorization };
 /**
  * Grant gives permissions to execute
  * the provide method with expiration time.
  *
  * @generated from message cosmos.authz.v1beta1.Grant
  */
-export class Grant extends Message {
+class Grant extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -65,13 +66,14 @@ Grant.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authorization", kind: "message", T: Any },
     { no: 2, name: "expiration", kind: "message", T: Timestamp },
 ]);
+export { Grant };
 /**
  * GrantAuthorization extends a grant with both the addresses of the grantee and granter.
  * It is used in genesis.proto and query.proto
  *
  * @generated from message cosmos.authz.v1beta1.GrantAuthorization
  */
-export class GrantAuthorization extends Message {
+class GrantAuthorization extends Message {
     constructor(data) {
         super();
         /**
@@ -105,12 +107,13 @@ GrantAuthorization.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "authorization", kind: "message", T: Any },
     { no: 4, name: "expiration", kind: "message", T: Timestamp },
 ]);
+export { GrantAuthorization };
 /**
  * GrantQueueItem contains the list of TypeURL of a sdk.Msg.
  *
  * @generated from message cosmos.authz.v1beta1.GrantQueueItem
  */
-export class GrantQueueItem extends Message {
+class GrantQueueItem extends Message {
     constructor(data) {
         super();
         /**
@@ -139,4 +142,5 @@ GrantQueueItem.typeName = "cosmos.authz.v1beta1.GrantQueueItem";
 GrantQueueItem.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "msg_type_urls", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { GrantQueueItem };
 //# sourceMappingURL=authz_pb.js.map

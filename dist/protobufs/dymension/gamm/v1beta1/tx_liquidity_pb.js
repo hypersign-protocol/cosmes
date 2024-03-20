@@ -10,7 +10,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgJoinPool
  */
-export class MsgJoinPool extends Message {
+class MsgJoinPool extends Message {
     constructor(data) {
         super();
         /**
@@ -52,10 +52,11 @@ MsgJoinPool.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "share_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "token_in_maxs", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgJoinPool };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgJoinPoolResponse
  */
-export class MsgJoinPoolResponse extends Message {
+class MsgJoinPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -87,12 +88,13 @@ MsgJoinPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "share_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "token_in", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgJoinPoolResponse };
 /**
  * ===================== MsgExitPool
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgExitPool
  */
-export class MsgExitPool extends Message {
+class MsgExitPool extends Message {
     constructor(data) {
         super();
         /**
@@ -134,10 +136,11 @@ MsgExitPool.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "share_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "token_out_mins", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgExitPool };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgExitPoolResponse
  */
-export class MsgExitPoolResponse extends Message {
+class MsgExitPoolResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -164,13 +167,14 @@ MsgExitPoolResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1.MsgExitPoolR
 MsgExitPoolResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out", kind: "message", T: Coin, repeated: true },
 ]);
+export { MsgExitPoolResponse };
 /**
  * ===================== MsgJoinSwapExternAmountIn
  * TODO: Rename to MsgJoinSwapExactAmountIn
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgJoinSwapExternAmountIn
  */
-export class MsgJoinSwapExternAmountIn extends Message {
+class MsgJoinSwapExternAmountIn extends Message {
     constructor(data) {
         super();
         /**
@@ -213,10 +217,11 @@ MsgJoinSwapExternAmountIn.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_in", kind: "message", T: Coin },
     { no: 4, name: "share_out_min_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgJoinSwapExternAmountIn };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgJoinSwapExternAmountInResponse
  */
-export class MsgJoinSwapExternAmountInResponse extends Message {
+class MsgJoinSwapExternAmountInResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -243,12 +248,13 @@ MsgJoinSwapExternAmountInResponse.typeName = "dymensionxyz.dymension.gamm.v1beta
 MsgJoinSwapExternAmountInResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "share_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgJoinSwapExternAmountInResponse };
 /**
  * ===================== MsgJoinSwapShareAmountOut
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgJoinSwapShareAmountOut
  */
-export class MsgJoinSwapShareAmountOut extends Message {
+class MsgJoinSwapShareAmountOut extends Message {
     constructor(data) {
         super();
         /**
@@ -295,10 +301,11 @@ MsgJoinSwapShareAmountOut.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "share_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "token_in_max_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgJoinSwapShareAmountOut };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgJoinSwapShareAmountOutResponse
  */
-export class MsgJoinSwapShareAmountOutResponse extends Message {
+class MsgJoinSwapShareAmountOutResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -325,12 +332,13 @@ MsgJoinSwapShareAmountOutResponse.typeName = "dymensionxyz.dymension.gamm.v1beta
 MsgJoinSwapShareAmountOutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgJoinSwapShareAmountOutResponse };
 /**
  * ===================== MsgExitSwapShareAmountIn
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgExitSwapShareAmountIn
  */
-export class MsgExitSwapShareAmountIn extends Message {
+class MsgExitSwapShareAmountIn extends Message {
     constructor(data) {
         super();
         /**
@@ -377,10 +385,11 @@ MsgExitSwapShareAmountIn.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "share_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "token_out_min_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgExitSwapShareAmountIn };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgExitSwapShareAmountInResponse
  */
-export class MsgExitSwapShareAmountInResponse extends Message {
+class MsgExitSwapShareAmountInResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -407,12 +416,13 @@ MsgExitSwapShareAmountInResponse.typeName = "dymensionxyz.dymension.gamm.v1beta1
 MsgExitSwapShareAmountInResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "token_out_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgExitSwapShareAmountInResponse };
 /**
  * ===================== MsgExitSwapExternAmountOut
  *
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgExitSwapExternAmountOut
  */
-export class MsgExitSwapExternAmountOut extends Message {
+class MsgExitSwapExternAmountOut extends Message {
     constructor(data) {
         super();
         /**
@@ -450,10 +460,11 @@ MsgExitSwapExternAmountOut.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "token_out", kind: "message", T: Coin },
     { no: 4, name: "share_in_max_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgExitSwapExternAmountOut };
 /**
  * @generated from message dymensionxyz.dymension.gamm.v1beta1.MsgExitSwapExternAmountOutResponse
  */
-export class MsgExitSwapExternAmountOutResponse extends Message {
+class MsgExitSwapExternAmountOutResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -480,4 +491,5 @@ MsgExitSwapExternAmountOutResponse.typeName = "dymensionxyz.dymension.gamm.v1bet
 MsgExitSwapExternAmountOutResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "share_in_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgExitSwapExternAmountOutResponse };
 //# sourceMappingURL=tx_liquidity_pb.js.map

@@ -8,7 +8,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message injective.peggy.v1.BridgeValidator
  */
-export class BridgeValidator extends Message {
+class BridgeValidator extends Message {
     constructor(data) {
         super();
         /**
@@ -40,6 +40,7 @@ BridgeValidator.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "power", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "ethereum_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { BridgeValidator };
 /**
  * Valset is the Ethereum Bridge Multsig Set, each peggy validator also
  * maintains an ETH key to sign messages, these are used to check signatures on
@@ -47,7 +48,7 @@ BridgeValidator.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message injective.peggy.v1.Valset
  */
-export class Valset extends Message {
+class Valset extends Message {
     constructor(data) {
         super();
         /**
@@ -96,6 +97,7 @@ Valset.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "reward_amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "reward_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Valset };
 /**
  * LastObservedEthereumBlockHeight stores the last observed
  * Ethereum block height along with the Cosmos block height that
@@ -105,7 +107,7 @@ Valset.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message injective.peggy.v1.LastObservedEthereumBlockHeight
  */
-export class LastObservedEthereumBlockHeight extends Message {
+class LastObservedEthereumBlockHeight extends Message {
     constructor(data) {
         super();
         /**
@@ -137,12 +139,13 @@ LastObservedEthereumBlockHeight.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cosmos_block_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "ethereum_block_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { LastObservedEthereumBlockHeight };
 /**
  * LastClaimEvent stores last claim event details of validator.
  *
  * @generated from message injective.peggy.v1.LastClaimEvent
  */
-export class LastClaimEvent extends Message {
+class LastClaimEvent extends Message {
     constructor(data) {
         super();
         /**
@@ -174,13 +177,14 @@ LastClaimEvent.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "ethereum_event_nonce", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "ethereum_event_height", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { LastClaimEvent };
 /**
  * This records the relationship between an ERC20 token and the denom
  * of the corresponding Cosmos originated asset
  *
  * @generated from message injective.peggy.v1.ERC20ToDenom
  */
-export class ERC20ToDenom extends Message {
+class ERC20ToDenom extends Message {
     constructor(data) {
         super();
         /**
@@ -212,4 +216,5 @@ ERC20ToDenom.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "erc20", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ERC20ToDenom };
 //# sourceMappingURL=types_pb.js.map

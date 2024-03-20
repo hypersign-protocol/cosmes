@@ -14,7 +14,7 @@ import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.base.query.v1beta1.PageRequest
  */
-export class PageRequest extends Message {
+class PageRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -81,6 +81,7 @@ PageRequest.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "count_total", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 5, name: "reverse", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { PageRequest };
 /**
  * PageResponse is to be embedded in gRPC response messages where the
  * corresponding request message has used PageRequest.
@@ -92,7 +93,7 @@ PageRequest.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.query.v1beta1.PageResponse
  */
-export class PageResponse extends Message {
+class PageResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -131,4 +132,5 @@ PageResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "next_key", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 2, name: "total", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PageResponse };
 //# sourceMappingURL=pagination_pb.js.map

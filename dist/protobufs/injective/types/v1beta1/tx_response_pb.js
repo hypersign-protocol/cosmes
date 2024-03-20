@@ -9,7 +9,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message injective.types.v1beta1.TxResponseGenericMessage
  */
-export class TxResponseGenericMessage extends Message {
+class TxResponseGenericMessage extends Message {
     constructor(data) {
         super();
         /**
@@ -41,12 +41,13 @@ TxResponseGenericMessage.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "header", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { TxResponseGenericMessage };
 /**
  * improvised message to unpack length prefixed messages in tx response data
  *
  * @generated from message injective.types.v1beta1.TxResponseData
  */
-export class TxResponseData extends Message {
+class TxResponseData extends Message {
     constructor(data) {
         super();
         /**
@@ -73,4 +74,5 @@ TxResponseData.typeName = "injective.types.v1beta1.TxResponseData";
 TxResponseData.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "messages", kind: "message", T: TxResponseGenericMessage, repeated: true },
 ]);
+export { TxResponseData };
 //# sourceMappingURL=tx_response_pb.js.map

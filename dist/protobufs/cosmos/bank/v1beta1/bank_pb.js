@@ -9,7 +9,7 @@ import { Coin } from "../../base/v1beta1/coin_pb.js";
  *
  * @generated from message cosmos.bank.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -48,13 +48,14 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "send_enabled", kind: "message", T: SendEnabled, repeated: true },
     { no: 2, name: "default_send_enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { Params };
 /**
  * SendEnabled maps coin denom to a send_enabled status (whether a denom is
  * sendable).
  *
  * @generated from message cosmos.bank.v1beta1.SendEnabled
  */
-export class SendEnabled extends Message {
+class SendEnabled extends Message {
     constructor(data) {
         super();
         /**
@@ -86,12 +87,13 @@ SendEnabled.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "enabled", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { SendEnabled };
 /**
  * Input models transaction input.
  *
  * @generated from message cosmos.bank.v1beta1.Input
  */
-export class Input extends Message {
+class Input extends Message {
     constructor(data) {
         super();
         /**
@@ -123,12 +125,13 @@ Input.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { Input };
 /**
  * Output models transaction outputs.
  *
  * @generated from message cosmos.bank.v1beta1.Output
  */
-export class Output extends Message {
+class Output extends Message {
     constructor(data) {
         super();
         /**
@@ -160,6 +163,7 @@ Output.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { Output };
 /**
  * Supply represents a struct that passively keeps track of the total supply
  * amounts in the network.
@@ -168,7 +172,7 @@ Output.fields = proto3.util.newFieldList(() => [
  * @generated from message cosmos.bank.v1beta1.Supply
  * @deprecated
  */
-export class Supply extends Message {
+class Supply extends Message {
     constructor(data) {
         super();
         /**
@@ -195,13 +199,14 @@ Supply.typeName = "cosmos.bank.v1beta1.Supply";
 Supply.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "total", kind: "message", T: Coin, repeated: true },
 ]);
+export { Supply };
 /**
  * DenomUnit represents a struct that describes a given
  * denomination unit of the basic token.
  *
  * @generated from message cosmos.bank.v1beta1.DenomUnit
  */
-export class DenomUnit extends Message {
+class DenomUnit extends Message {
     constructor(data) {
         super();
         /**
@@ -248,13 +253,14 @@ DenomUnit.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "exponent", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 3, name: "aliases", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { DenomUnit };
 /**
  * Metadata represents a struct that describes
  * a basic token.
  *
  * @generated from message cosmos.bank.v1beta1.Metadata
  */
-export class Metadata extends Message {
+class Metadata extends Message {
     constructor(data) {
         super();
         /**
@@ -341,4 +347,5 @@ Metadata.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "uri", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 8, name: "uri_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Metadata };
 //# sourceMappingURL=bank_pb.js.map

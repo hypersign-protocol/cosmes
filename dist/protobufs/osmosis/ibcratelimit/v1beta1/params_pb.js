@@ -8,7 +8,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.ibcratelimit.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -35,4 +35,5 @@ Params.typeName = "osmosis.ibcratelimit.v1beta1.Params";
 Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 //# sourceMappingURL=params_pb.js.map

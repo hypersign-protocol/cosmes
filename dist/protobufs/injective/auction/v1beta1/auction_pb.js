@@ -7,7 +7,7 @@ import { Coin } from "../../../cosmos/base/v1beta1/coin_pb.js";
 /**
  * @generated from message injective.auction.v1beta1.Params
  */
-export class Params extends Message {
+class Params extends Message {
     constructor(data) {
         super();
         /**
@@ -43,10 +43,11 @@ Params.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "auction_period", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 2, name: "min_next_bid_increment_rate", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Params };
 /**
  * @generated from message injective.auction.v1beta1.Bid
  */
-export class Bid extends Message {
+class Bid extends Message {
     constructor(data) {
         super();
         /**
@@ -78,10 +79,11 @@ Bid.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bidder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Bid };
 /**
  * @generated from message injective.auction.v1beta1.EventBid
  */
-export class EventBid extends Message {
+class EventBid extends Message {
     constructor(data) {
         super();
         /**
@@ -124,10 +126,11 @@ EventBid.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "round", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventBid };
 /**
  * @generated from message injective.auction.v1beta1.EventAuctionResult
  */
-export class EventAuctionResult extends Message {
+class EventAuctionResult extends Message {
     constructor(data) {
         super();
         /**
@@ -170,10 +173,11 @@ EventAuctionResult.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "round", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { EventAuctionResult };
 /**
  * @generated from message injective.auction.v1beta1.EventAuctionStart
  */
-export class EventAuctionStart extends Message {
+class EventAuctionStart extends Message {
     constructor(data) {
         super();
         /**
@@ -217,4 +221,5 @@ EventAuctionStart.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "ending_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
     { no: 3, name: "new_basket", kind: "message", T: Coin, repeated: true },
 ]);
+export { EventAuctionStart };
 //# sourceMappingURL=auction_pb.js.map

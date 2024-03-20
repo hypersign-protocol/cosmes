@@ -10,7 +10,7 @@ import { PageRequest, PageResponse } from "../../../cosmos/base/query/v1beta1/pa
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.ParamsRequest
  */
-export class ParamsRequest extends Message {
+class ParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -31,10 +31,11 @@ export class ParamsRequest extends Message {
 ParamsRequest.runtime = proto3;
 ParamsRequest.typeName = "osmosis.cosmwasmpool.v1beta1.ParamsRequest";
 ParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { ParamsRequest };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.ParamsResponse
  */
-export class ParamsResponse extends Message {
+class ParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -57,12 +58,13 @@ ParamsResponse.typeName = "osmosis.cosmwasmpool.v1beta1.ParamsResponse";
 ParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { ParamsResponse };
 /**
  * =============================== Pools
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.PoolsRequest
  */
-export class PoolsRequest extends Message {
+class PoolsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -85,10 +87,11 @@ PoolsRequest.typeName = "osmosis.cosmwasmpool.v1beta1.PoolsRequest";
 PoolsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { PoolsRequest };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.PoolsResponse
  */
-export class PoolsResponse extends Message {
+class PoolsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -116,12 +119,13 @@ PoolsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pools", kind: "message", T: Any, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { PoolsResponse };
 /**
  * =============================== ContractInfoByPoolId
  *
  * @generated from message osmosis.cosmwasmpool.v1beta1.ContractInfoByPoolIdRequest
  */
-export class ContractInfoByPoolIdRequest extends Message {
+class ContractInfoByPoolIdRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -150,10 +154,11 @@ ContractInfoByPoolIdRequest.typeName = "osmosis.cosmwasmpool.v1beta1.ContractInf
 ContractInfoByPoolIdRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ContractInfoByPoolIdRequest };
 /**
  * @generated from message osmosis.cosmwasmpool.v1beta1.ContractInfoByPoolIdResponse
  */
-export class ContractInfoByPoolIdResponse extends Message {
+class ContractInfoByPoolIdResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -190,4 +195,5 @@ ContractInfoByPoolIdResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contract_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { ContractInfoByPoolIdResponse };
 //# sourceMappingURL=query_pb.js.map

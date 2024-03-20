@@ -5,7 +5,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.base.reflection.v2alpha1.AppDescriptor
  */
-export class AppDescriptor extends Message {
+class AppDescriptor extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -33,12 +33,13 @@ AppDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "query_services", kind: "message", T: QueryServicesDescriptor },
     { no: 6, name: "tx", kind: "message", T: TxDescriptor },
 ]);
+export { AppDescriptor };
 /**
  * TxDescriptor describes the accepted transaction type
  *
  * @generated from message cosmos.base.reflection.v2alpha1.TxDescriptor
  */
-export class TxDescriptor extends Message {
+class TxDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -76,13 +77,14 @@ TxDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fullname", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "msgs", kind: "message", T: MsgDescriptor, repeated: true },
 ]);
+export { TxDescriptor };
 /**
  * AuthnDescriptor provides information on how to sign transactions without relying
  * on the online RPCs GetTxMetadata and CombineUnsignedTxAndSignatures
  *
  * @generated from message cosmos.base.reflection.v2alpha1.AuthnDescriptor
  */
-export class AuthnDescriptor extends Message {
+class AuthnDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -111,6 +113,7 @@ AuthnDescriptor.typeName = "cosmos.base.reflection.v2alpha1.AuthnDescriptor";
 AuthnDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "sign_modes", kind: "message", T: SigningModeDescriptor, repeated: true },
 ]);
+export { AuthnDescriptor };
 /**
  * SigningModeDescriptor provides information on a signing flow of the application
  * NOTE(fdymylja): here we could go as far as providing an entire flow on how
@@ -119,7 +122,7 @@ AuthnDescriptor.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.reflection.v2alpha1.SigningModeDescriptor
  */
-export class SigningModeDescriptor extends Message {
+class SigningModeDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -163,12 +166,13 @@ SigningModeDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "number", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
     { no: 3, name: "authn_info_provider_method_fullname", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SigningModeDescriptor };
 /**
  * ChainDescriptor describes chain information of the application
  *
  * @generated from message cosmos.base.reflection.v2alpha1.ChainDescriptor
  */
-export class ChainDescriptor extends Message {
+class ChainDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -197,12 +201,13 @@ ChainDescriptor.typeName = "cosmos.base.reflection.v2alpha1.ChainDescriptor";
 ChainDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ChainDescriptor };
 /**
  * CodecDescriptor describes the registered interfaces and provides metadata information on the types
  *
  * @generated from message cosmos.base.reflection.v2alpha1.CodecDescriptor
  */
-export class CodecDescriptor extends Message {
+class CodecDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -231,12 +236,13 @@ CodecDescriptor.typeName = "cosmos.base.reflection.v2alpha1.CodecDescriptor";
 CodecDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "interfaces", kind: "message", T: InterfaceDescriptor, repeated: true },
 ]);
+export { CodecDescriptor };
 /**
  * InterfaceDescriptor describes the implementation of an interface
  *
  * @generated from message cosmos.base.reflection.v2alpha1.InterfaceDescriptor
  */
-export class InterfaceDescriptor extends Message {
+class InterfaceDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -280,12 +286,13 @@ InterfaceDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "interface_accepting_messages", kind: "message", T: InterfaceAcceptingMessageDescriptor, repeated: true },
     { no: 3, name: "interface_implementers", kind: "message", T: InterfaceImplementerDescriptor, repeated: true },
 ]);
+export { InterfaceDescriptor };
 /**
  * InterfaceImplementerDescriptor describes an interface implementer
  *
  * @generated from message cosmos.base.reflection.v2alpha1.InterfaceImplementerDescriptor
  */
-export class InterfaceImplementerDescriptor extends Message {
+class InterfaceImplementerDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -324,13 +331,14 @@ InterfaceImplementerDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fullname", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "type_url", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { InterfaceImplementerDescriptor };
 /**
  * InterfaceAcceptingMessageDescriptor describes a protobuf message which contains
  * an interface represented as a google.protobuf.Any
  *
  * @generated from message cosmos.base.reflection.v2alpha1.InterfaceAcceptingMessageDescriptor
  */
-export class InterfaceAcceptingMessageDescriptor extends Message {
+class InterfaceAcceptingMessageDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -368,12 +376,13 @@ InterfaceAcceptingMessageDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fullname", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "field_descriptor_names", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { InterfaceAcceptingMessageDescriptor };
 /**
  * ConfigurationDescriptor contains metadata information on the sdk.Config
  *
  * @generated from message cosmos.base.reflection.v2alpha1.ConfigurationDescriptor
  */
-export class ConfigurationDescriptor extends Message {
+class ConfigurationDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -402,12 +411,13 @@ ConfigurationDescriptor.typeName = "cosmos.base.reflection.v2alpha1.Configuratio
 ConfigurationDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "bech32_account_address_prefix", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ConfigurationDescriptor };
 /**
  * MsgDescriptor describes a cosmos-sdk message that can be delivered with a transaction
  *
  * @generated from message cosmos.base.reflection.v2alpha1.MsgDescriptor
  */
-export class MsgDescriptor extends Message {
+class MsgDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -436,12 +446,13 @@ MsgDescriptor.typeName = "cosmos.base.reflection.v2alpha1.MsgDescriptor";
 MsgDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "msg_type_url", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { MsgDescriptor };
 /**
  * GetAuthnDescriptorRequest is the request used for the GetAuthnDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetAuthnDescriptorRequest
  */
-export class GetAuthnDescriptorRequest extends Message {
+class GetAuthnDescriptorRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -462,12 +473,13 @@ export class GetAuthnDescriptorRequest extends Message {
 GetAuthnDescriptorRequest.runtime = proto3;
 GetAuthnDescriptorRequest.typeName = "cosmos.base.reflection.v2alpha1.GetAuthnDescriptorRequest";
 GetAuthnDescriptorRequest.fields = proto3.util.newFieldList(() => []);
+export { GetAuthnDescriptorRequest };
 /**
  * GetAuthnDescriptorResponse is the response returned by the GetAuthnDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetAuthnDescriptorResponse
  */
-export class GetAuthnDescriptorResponse extends Message {
+class GetAuthnDescriptorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -490,12 +502,13 @@ GetAuthnDescriptorResponse.typeName = "cosmos.base.reflection.v2alpha1.GetAuthnD
 GetAuthnDescriptorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "authn", kind: "message", T: AuthnDescriptor },
 ]);
+export { GetAuthnDescriptorResponse };
 /**
  * GetChainDescriptorRequest is the request used for the GetChainDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetChainDescriptorRequest
  */
-export class GetChainDescriptorRequest extends Message {
+class GetChainDescriptorRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -516,12 +529,13 @@ export class GetChainDescriptorRequest extends Message {
 GetChainDescriptorRequest.runtime = proto3;
 GetChainDescriptorRequest.typeName = "cosmos.base.reflection.v2alpha1.GetChainDescriptorRequest";
 GetChainDescriptorRequest.fields = proto3.util.newFieldList(() => []);
+export { GetChainDescriptorRequest };
 /**
  * GetChainDescriptorResponse is the response returned by the GetChainDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetChainDescriptorResponse
  */
-export class GetChainDescriptorResponse extends Message {
+class GetChainDescriptorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -544,12 +558,13 @@ GetChainDescriptorResponse.typeName = "cosmos.base.reflection.v2alpha1.GetChainD
 GetChainDescriptorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "chain", kind: "message", T: ChainDescriptor },
 ]);
+export { GetChainDescriptorResponse };
 /**
  * GetCodecDescriptorRequest is the request used for the GetCodecDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetCodecDescriptorRequest
  */
-export class GetCodecDescriptorRequest extends Message {
+class GetCodecDescriptorRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -570,12 +585,13 @@ export class GetCodecDescriptorRequest extends Message {
 GetCodecDescriptorRequest.runtime = proto3;
 GetCodecDescriptorRequest.typeName = "cosmos.base.reflection.v2alpha1.GetCodecDescriptorRequest";
 GetCodecDescriptorRequest.fields = proto3.util.newFieldList(() => []);
+export { GetCodecDescriptorRequest };
 /**
  * GetCodecDescriptorResponse is the response returned by the GetCodecDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetCodecDescriptorResponse
  */
-export class GetCodecDescriptorResponse extends Message {
+class GetCodecDescriptorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -598,12 +614,13 @@ GetCodecDescriptorResponse.typeName = "cosmos.base.reflection.v2alpha1.GetCodecD
 GetCodecDescriptorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "codec", kind: "message", T: CodecDescriptor },
 ]);
+export { GetCodecDescriptorResponse };
 /**
  * GetConfigurationDescriptorRequest is the request used for the GetConfigurationDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorRequest
  */
-export class GetConfigurationDescriptorRequest extends Message {
+class GetConfigurationDescriptorRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -624,12 +641,13 @@ export class GetConfigurationDescriptorRequest extends Message {
 GetConfigurationDescriptorRequest.runtime = proto3;
 GetConfigurationDescriptorRequest.typeName = "cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorRequest";
 GetConfigurationDescriptorRequest.fields = proto3.util.newFieldList(() => []);
+export { GetConfigurationDescriptorRequest };
 /**
  * GetConfigurationDescriptorResponse is the response returned by the GetConfigurationDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetConfigurationDescriptorResponse
  */
-export class GetConfigurationDescriptorResponse extends Message {
+class GetConfigurationDescriptorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -652,12 +670,13 @@ GetConfigurationDescriptorResponse.typeName = "cosmos.base.reflection.v2alpha1.G
 GetConfigurationDescriptorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "config", kind: "message", T: ConfigurationDescriptor },
 ]);
+export { GetConfigurationDescriptorResponse };
 /**
  * GetQueryServicesDescriptorRequest is the request used for the GetQueryServicesDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetQueryServicesDescriptorRequest
  */
-export class GetQueryServicesDescriptorRequest extends Message {
+class GetQueryServicesDescriptorRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -678,12 +697,13 @@ export class GetQueryServicesDescriptorRequest extends Message {
 GetQueryServicesDescriptorRequest.runtime = proto3;
 GetQueryServicesDescriptorRequest.typeName = "cosmos.base.reflection.v2alpha1.GetQueryServicesDescriptorRequest";
 GetQueryServicesDescriptorRequest.fields = proto3.util.newFieldList(() => []);
+export { GetQueryServicesDescriptorRequest };
 /**
  * GetQueryServicesDescriptorResponse is the response returned by the GetQueryServicesDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetQueryServicesDescriptorResponse
  */
-export class GetQueryServicesDescriptorResponse extends Message {
+class GetQueryServicesDescriptorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -706,12 +726,13 @@ GetQueryServicesDescriptorResponse.typeName = "cosmos.base.reflection.v2alpha1.G
 GetQueryServicesDescriptorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "queries", kind: "message", T: QueryServicesDescriptor },
 ]);
+export { GetQueryServicesDescriptorResponse };
 /**
  * GetTxDescriptorRequest is the request used for the GetTxDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetTxDescriptorRequest
  */
-export class GetTxDescriptorRequest extends Message {
+class GetTxDescriptorRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -732,12 +753,13 @@ export class GetTxDescriptorRequest extends Message {
 GetTxDescriptorRequest.runtime = proto3;
 GetTxDescriptorRequest.typeName = "cosmos.base.reflection.v2alpha1.GetTxDescriptorRequest";
 GetTxDescriptorRequest.fields = proto3.util.newFieldList(() => []);
+export { GetTxDescriptorRequest };
 /**
  * GetTxDescriptorResponse is the response returned by the GetTxDescriptor RPC
  *
  * @generated from message cosmos.base.reflection.v2alpha1.GetTxDescriptorResponse
  */
-export class GetTxDescriptorResponse extends Message {
+class GetTxDescriptorResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -760,12 +782,13 @@ GetTxDescriptorResponse.typeName = "cosmos.base.reflection.v2alpha1.GetTxDescrip
 GetTxDescriptorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tx", kind: "message", T: TxDescriptor },
 ]);
+export { GetTxDescriptorResponse };
 /**
  * QueryServicesDescriptor contains the list of cosmos-sdk queriable services
  *
  * @generated from message cosmos.base.reflection.v2alpha1.QueryServicesDescriptor
  */
-export class QueryServicesDescriptor extends Message {
+class QueryServicesDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -794,12 +817,13 @@ QueryServicesDescriptor.typeName = "cosmos.base.reflection.v2alpha1.QueryService
 QueryServicesDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "query_services", kind: "message", T: QueryServiceDescriptor, repeated: true },
 ]);
+export { QueryServicesDescriptor };
 /**
  * QueryServiceDescriptor describes a cosmos-sdk queryable service
  *
  * @generated from message cosmos.base.reflection.v2alpha1.QueryServiceDescriptor
  */
-export class QueryServiceDescriptor extends Message {
+class QueryServiceDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -842,6 +866,7 @@ QueryServiceDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "is_module", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 3, name: "methods", kind: "message", T: QueryMethodDescriptor, repeated: true },
 ]);
+export { QueryServiceDescriptor };
 /**
  * QueryMethodDescriptor describes a queryable method of a query service
  * no other info is provided beside method name and tendermint queryable path
@@ -849,7 +874,7 @@ QueryServiceDescriptor.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.base.reflection.v2alpha1.QueryMethodDescriptor
  */
-export class QueryMethodDescriptor extends Message {
+class QueryMethodDescriptor extends Message {
     constructor(data) {
         super();
         /**
@@ -886,4 +911,5 @@ QueryMethodDescriptor.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "full_query_path", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryMethodDescriptor };
 //# sourceMappingURL=reflection_pb.js.map

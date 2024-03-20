@@ -12,7 +12,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message osmosis.valsetpref.v1beta1.ValidatorPreference
  */
-export class ValidatorPreference extends Message {
+class ValidatorPreference extends Message {
     constructor(data) {
         super();
         /**
@@ -49,6 +49,7 @@ ValidatorPreference.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "val_oper_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "weight", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { ValidatorPreference };
 /**
  * ValidatorSetPreferences defines a delegator's validator set preference.
  * It contains a list of (validator, percent_allocation) pairs.
@@ -57,7 +58,7 @@ ValidatorPreference.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.valsetpref.v1beta1.ValidatorSetPreferences
  */
-export class ValidatorSetPreferences extends Message {
+class ValidatorSetPreferences extends Message {
     constructor(data) {
         super();
         /**
@@ -86,4 +87,5 @@ ValidatorSetPreferences.typeName = "osmosis.valsetpref.v1beta1.ValidatorSetPrefe
 ValidatorSetPreferences.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "preferences", kind: "message", T: ValidatorPreference, repeated: true },
 ]);
+export { ValidatorSetPreferences };
 //# sourceMappingURL=state_pb.js.map

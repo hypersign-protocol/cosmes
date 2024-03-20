@@ -9,7 +9,7 @@ import { Params } from "./params_pb.js";
 /**
  * @generated from message osmosis.lockup.ModuleBalanceRequest
  */
-export class ModuleBalanceRequest extends Message {
+class ModuleBalanceRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -30,10 +30,11 @@ export class ModuleBalanceRequest extends Message {
 ModuleBalanceRequest.runtime = proto3;
 ModuleBalanceRequest.typeName = "osmosis.lockup.ModuleBalanceRequest";
 ModuleBalanceRequest.fields = proto3.util.newFieldList(() => []);
+export { ModuleBalanceRequest };
 /**
  * @generated from message osmosis.lockup.ModuleBalanceResponse
  */
-export class ModuleBalanceResponse extends Message {
+class ModuleBalanceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -60,10 +61,11 @@ ModuleBalanceResponse.typeName = "osmosis.lockup.ModuleBalanceResponse";
 ModuleBalanceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { ModuleBalanceResponse };
 /**
  * @generated from message osmosis.lockup.ModuleLockedAmountRequest
  */
-export class ModuleLockedAmountRequest extends Message {
+class ModuleLockedAmountRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -84,10 +86,11 @@ export class ModuleLockedAmountRequest extends Message {
 ModuleLockedAmountRequest.runtime = proto3;
 ModuleLockedAmountRequest.typeName = "osmosis.lockup.ModuleLockedAmountRequest";
 ModuleLockedAmountRequest.fields = proto3.util.newFieldList(() => []);
+export { ModuleLockedAmountRequest };
 /**
  * @generated from message osmosis.lockup.ModuleLockedAmountResponse
  */
-export class ModuleLockedAmountResponse extends Message {
+class ModuleLockedAmountResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -114,10 +117,11 @@ ModuleLockedAmountResponse.typeName = "osmosis.lockup.ModuleLockedAmountResponse
 ModuleLockedAmountResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { ModuleLockedAmountResponse };
 /**
  * @generated from message osmosis.lockup.AccountUnlockableCoinsRequest
  */
-export class AccountUnlockableCoinsRequest extends Message {
+class AccountUnlockableCoinsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -144,10 +148,11 @@ AccountUnlockableCoinsRequest.typeName = "osmosis.lockup.AccountUnlockableCoinsR
 AccountUnlockableCoinsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountUnlockableCoinsRequest };
 /**
  * @generated from message osmosis.lockup.AccountUnlockableCoinsResponse
  */
-export class AccountUnlockableCoinsResponse extends Message {
+class AccountUnlockableCoinsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -174,10 +179,11 @@ AccountUnlockableCoinsResponse.typeName = "osmosis.lockup.AccountUnlockableCoins
 AccountUnlockableCoinsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { AccountUnlockableCoinsResponse };
 /**
  * @generated from message osmosis.lockup.AccountUnlockingCoinsRequest
  */
-export class AccountUnlockingCoinsRequest extends Message {
+class AccountUnlockingCoinsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -204,10 +210,11 @@ AccountUnlockingCoinsRequest.typeName = "osmosis.lockup.AccountUnlockingCoinsReq
 AccountUnlockingCoinsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountUnlockingCoinsRequest };
 /**
  * @generated from message osmosis.lockup.AccountUnlockingCoinsResponse
  */
-export class AccountUnlockingCoinsResponse extends Message {
+class AccountUnlockingCoinsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -234,10 +241,11 @@ AccountUnlockingCoinsResponse.typeName = "osmosis.lockup.AccountUnlockingCoinsRe
 AccountUnlockingCoinsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { AccountUnlockingCoinsResponse };
 /**
  * @generated from message osmosis.lockup.AccountLockedCoinsRequest
  */
-export class AccountLockedCoinsRequest extends Message {
+class AccountLockedCoinsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -264,10 +272,11 @@ AccountLockedCoinsRequest.typeName = "osmosis.lockup.AccountLockedCoinsRequest";
 AccountLockedCoinsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountLockedCoinsRequest };
 /**
  * @generated from message osmosis.lockup.AccountLockedCoinsResponse
  */
-export class AccountLockedCoinsResponse extends Message {
+class AccountLockedCoinsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -294,10 +303,11 @@ AccountLockedCoinsResponse.typeName = "osmosis.lockup.AccountLockedCoinsResponse
 AccountLockedCoinsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "coins", kind: "message", T: Coin, repeated: true },
 ]);
+export { AccountLockedCoinsResponse };
 /**
  * @generated from message osmosis.lockup.AccountLockedPastTimeRequest
  */
-export class AccountLockedPastTimeRequest extends Message {
+class AccountLockedPastTimeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -325,10 +335,11 @@ AccountLockedPastTimeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { AccountLockedPastTimeRequest };
 /**
  * @generated from message osmosis.lockup.AccountLockedPastTimeResponse
  */
-export class AccountLockedPastTimeResponse extends Message {
+class AccountLockedPastTimeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -355,10 +366,11 @@ AccountLockedPastTimeResponse.typeName = "osmosis.lockup.AccountLockedPastTimeRe
 AccountLockedPastTimeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedPastTimeResponse };
 /**
  * @generated from message osmosis.lockup.AccountLockedPastTimeNotUnlockingOnlyRequest
  */
-export class AccountLockedPastTimeNotUnlockingOnlyRequest extends Message {
+class AccountLockedPastTimeNotUnlockingOnlyRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -386,10 +398,11 @@ AccountLockedPastTimeNotUnlockingOnlyRequest.fields = proto3.util.newFieldList((
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { AccountLockedPastTimeNotUnlockingOnlyRequest };
 /**
  * @generated from message osmosis.lockup.AccountLockedPastTimeNotUnlockingOnlyResponse
  */
-export class AccountLockedPastTimeNotUnlockingOnlyResponse extends Message {
+class AccountLockedPastTimeNotUnlockingOnlyResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -416,10 +429,11 @@ AccountLockedPastTimeNotUnlockingOnlyResponse.typeName = "osmosis.lockup.Account
 AccountLockedPastTimeNotUnlockingOnlyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedPastTimeNotUnlockingOnlyResponse };
 /**
  * @generated from message osmosis.lockup.AccountUnlockedBeforeTimeRequest
  */
-export class AccountUnlockedBeforeTimeRequest extends Message {
+class AccountUnlockedBeforeTimeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -447,10 +461,11 @@ AccountUnlockedBeforeTimeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "timestamp", kind: "message", T: Timestamp },
 ]);
+export { AccountUnlockedBeforeTimeRequest };
 /**
  * @generated from message osmosis.lockup.AccountUnlockedBeforeTimeResponse
  */
-export class AccountUnlockedBeforeTimeResponse extends Message {
+class AccountUnlockedBeforeTimeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -477,10 +492,11 @@ AccountUnlockedBeforeTimeResponse.typeName = "osmosis.lockup.AccountUnlockedBefo
 AccountUnlockedBeforeTimeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountUnlockedBeforeTimeResponse };
 /**
  * @generated from message osmosis.lockup.AccountLockedPastTimeDenomRequest
  */
-export class AccountLockedPastTimeDenomRequest extends Message {
+class AccountLockedPastTimeDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -513,10 +529,11 @@ AccountLockedPastTimeDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "timestamp", kind: "message", T: Timestamp },
     { no: 3, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountLockedPastTimeDenomRequest };
 /**
  * @generated from message osmosis.lockup.AccountLockedPastTimeDenomResponse
  */
-export class AccountLockedPastTimeDenomResponse extends Message {
+class AccountLockedPastTimeDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -543,10 +560,11 @@ AccountLockedPastTimeDenomResponse.typeName = "osmosis.lockup.AccountLockedPastT
 AccountLockedPastTimeDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedPastTimeDenomResponse };
 /**
  * @generated from message osmosis.lockup.LockedDenomRequest
  */
-export class LockedDenomRequest extends Message {
+class LockedDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -574,10 +592,11 @@ LockedDenomRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "duration", kind: "message", T: Duration },
 ]);
+export { LockedDenomRequest };
 /**
  * @generated from message osmosis.lockup.LockedDenomResponse
  */
-export class LockedDenomResponse extends Message {
+class LockedDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -604,10 +623,11 @@ LockedDenomResponse.typeName = "osmosis.lockup.LockedDenomResponse";
 LockedDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "amount", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { LockedDenomResponse };
 /**
  * @generated from message osmosis.lockup.LockedRequest
  */
-export class LockedRequest extends Message {
+class LockedRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -634,10 +654,11 @@ LockedRequest.typeName = "osmosis.lockup.LockedRequest";
 LockedRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { LockedRequest };
 /**
  * @generated from message osmosis.lockup.LockedResponse
  */
-export class LockedResponse extends Message {
+class LockedResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -660,10 +681,11 @@ LockedResponse.typeName = "osmosis.lockup.LockedResponse";
 LockedResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock", kind: "message", T: PeriodLock },
 ]);
+export { LockedResponse };
 /**
  * @generated from message osmosis.lockup.LockRewardReceiverRequest
  */
-export class LockRewardReceiverRequest extends Message {
+class LockRewardReceiverRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -690,10 +712,11 @@ LockRewardReceiverRequest.typeName = "osmosis.lockup.LockRewardReceiverRequest";
 LockRewardReceiverRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { LockRewardReceiverRequest };
 /**
  * @generated from message osmosis.lockup.LockRewardReceiverResponse
  */
-export class LockRewardReceiverResponse extends Message {
+class LockRewardReceiverResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -720,10 +743,11 @@ LockRewardReceiverResponse.typeName = "osmosis.lockup.LockRewardReceiverResponse
 LockRewardReceiverResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "reward_receiver", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { LockRewardReceiverResponse };
 /**
  * @generated from message osmosis.lockup.NextLockIDRequest
  */
-export class NextLockIDRequest extends Message {
+class NextLockIDRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -744,10 +768,11 @@ export class NextLockIDRequest extends Message {
 NextLockIDRequest.runtime = proto3;
 NextLockIDRequest.typeName = "osmosis.lockup.NextLockIDRequest";
 NextLockIDRequest.fields = proto3.util.newFieldList(() => []);
+export { NextLockIDRequest };
 /**
  * @generated from message osmosis.lockup.NextLockIDResponse
  */
-export class NextLockIDResponse extends Message {
+class NextLockIDResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -774,11 +799,12 @@ NextLockIDResponse.typeName = "osmosis.lockup.NextLockIDResponse";
 NextLockIDResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { NextLockIDResponse };
 /**
  * @generated from message osmosis.lockup.SyntheticLockupsByLockupIDRequest
  * @deprecated
  */
-export class SyntheticLockupsByLockupIDRequest extends Message {
+class SyntheticLockupsByLockupIDRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -805,11 +831,12 @@ SyntheticLockupsByLockupIDRequest.typeName = "osmosis.lockup.SyntheticLockupsByL
 SyntheticLockupsByLockupIDRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SyntheticLockupsByLockupIDRequest };
 /**
  * @generated from message osmosis.lockup.SyntheticLockupsByLockupIDResponse
  * @deprecated
  */
-export class SyntheticLockupsByLockupIDResponse extends Message {
+class SyntheticLockupsByLockupIDResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -836,10 +863,11 @@ SyntheticLockupsByLockupIDResponse.typeName = "osmosis.lockup.SyntheticLockupsBy
 SyntheticLockupsByLockupIDResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "synthetic_locks", kind: "message", T: SyntheticLock, repeated: true },
 ]);
+export { SyntheticLockupsByLockupIDResponse };
 /**
  * @generated from message osmosis.lockup.SyntheticLockupByLockupIDRequest
  */
-export class SyntheticLockupByLockupIDRequest extends Message {
+class SyntheticLockupByLockupIDRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -866,10 +894,11 @@ SyntheticLockupByLockupIDRequest.typeName = "osmosis.lockup.SyntheticLockupByLoc
 SyntheticLockupByLockupIDRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "lock_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { SyntheticLockupByLockupIDRequest };
 /**
  * @generated from message osmosis.lockup.SyntheticLockupByLockupIDResponse
  */
-export class SyntheticLockupByLockupIDResponse extends Message {
+class SyntheticLockupByLockupIDResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -892,10 +921,11 @@ SyntheticLockupByLockupIDResponse.typeName = "osmosis.lockup.SyntheticLockupByLo
 SyntheticLockupByLockupIDResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "synthetic_lock", kind: "message", T: SyntheticLock },
 ]);
+export { SyntheticLockupByLockupIDResponse };
 /**
  * @generated from message osmosis.lockup.AccountLockedLongerDurationRequest
  */
-export class AccountLockedLongerDurationRequest extends Message {
+class AccountLockedLongerDurationRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -923,10 +953,11 @@ AccountLockedLongerDurationRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "duration", kind: "message", T: Duration },
 ]);
+export { AccountLockedLongerDurationRequest };
 /**
  * @generated from message osmosis.lockup.AccountLockedLongerDurationResponse
  */
-export class AccountLockedLongerDurationResponse extends Message {
+class AccountLockedLongerDurationResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -953,10 +984,11 @@ AccountLockedLongerDurationResponse.typeName = "osmosis.lockup.AccountLockedLong
 AccountLockedLongerDurationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedLongerDurationResponse };
 /**
  * @generated from message osmosis.lockup.AccountLockedDurationRequest
  */
-export class AccountLockedDurationRequest extends Message {
+class AccountLockedDurationRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -984,10 +1016,11 @@ AccountLockedDurationRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "duration", kind: "message", T: Duration },
 ]);
+export { AccountLockedDurationRequest };
 /**
  * @generated from message osmosis.lockup.AccountLockedDurationResponse
  */
-export class AccountLockedDurationResponse extends Message {
+class AccountLockedDurationResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1014,10 +1047,11 @@ AccountLockedDurationResponse.typeName = "osmosis.lockup.AccountLockedDurationRe
 AccountLockedDurationResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedDurationResponse };
 /**
  * @generated from message osmosis.lockup.AccountLockedLongerDurationNotUnlockingOnlyRequest
  */
-export class AccountLockedLongerDurationNotUnlockingOnlyRequest extends Message {
+class AccountLockedLongerDurationNotUnlockingOnlyRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1045,10 +1079,11 @@ AccountLockedLongerDurationNotUnlockingOnlyRequest.fields = proto3.util.newField
     { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "duration", kind: "message", T: Duration },
 ]);
+export { AccountLockedLongerDurationNotUnlockingOnlyRequest };
 /**
  * @generated from message osmosis.lockup.AccountLockedLongerDurationNotUnlockingOnlyResponse
  */
-export class AccountLockedLongerDurationNotUnlockingOnlyResponse extends Message {
+class AccountLockedLongerDurationNotUnlockingOnlyResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1075,10 +1110,11 @@ AccountLockedLongerDurationNotUnlockingOnlyResponse.typeName = "osmosis.lockup.A
 AccountLockedLongerDurationNotUnlockingOnlyResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedLongerDurationNotUnlockingOnlyResponse };
 /**
  * @generated from message osmosis.lockup.AccountLockedLongerDurationDenomRequest
  */
-export class AccountLockedLongerDurationDenomRequest extends Message {
+class AccountLockedLongerDurationDenomRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1111,10 +1147,11 @@ AccountLockedLongerDurationDenomRequest.fields = proto3.util.newFieldList(() => 
     { no: 2, name: "duration", kind: "message", T: Duration },
     { no: 3, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { AccountLockedLongerDurationDenomRequest };
 /**
  * @generated from message osmosis.lockup.AccountLockedLongerDurationDenomResponse
  */
-export class AccountLockedLongerDurationDenomResponse extends Message {
+class AccountLockedLongerDurationDenomResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1141,10 +1178,11 @@ AccountLockedLongerDurationDenomResponse.typeName = "osmosis.lockup.AccountLocke
 AccountLockedLongerDurationDenomResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "locks", kind: "message", T: PeriodLock, repeated: true },
 ]);
+export { AccountLockedLongerDurationDenomResponse };
 /**
  * @generated from message osmosis.lockup.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1165,10 +1203,11 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "osmosis.lockup.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * @generated from message osmosis.lockup.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1191,4 +1230,5 @@ QueryParamsResponse.typeName = "osmosis.lockup.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 //# sourceMappingURL=query_pb.js.map

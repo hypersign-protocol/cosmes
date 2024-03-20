@@ -13,7 +13,7 @@ import { BalancerToConcentratedPoolLink } from "./shared_pb.js";
  *
  * @generated from message osmosis.gamm.v1beta1.ReplaceMigrationRecordsProposal
  */
-export class ReplaceMigrationRecordsProposal extends Message {
+class ReplaceMigrationRecordsProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -50,6 +50,7 @@ ReplaceMigrationRecordsProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "records", kind: "message", T: BalancerToConcentratedPoolLink, repeated: true },
 ]);
+export { ReplaceMigrationRecordsProposal };
 /**
  * For example: if the existing DistrRecords were:
  * [(Balancer 1, CL 5), (Balancer 2, CL 6), (Balancer 3, CL 7)]
@@ -62,7 +63,7 @@ ReplaceMigrationRecordsProposal.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message osmosis.gamm.v1beta1.UpdateMigrationRecordsProposal
  */
-export class UpdateMigrationRecordsProposal extends Message {
+class UpdateMigrationRecordsProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -99,10 +100,11 @@ UpdateMigrationRecordsProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "records", kind: "message", T: BalancerToConcentratedPoolLink, repeated: true },
 ]);
+export { UpdateMigrationRecordsProposal };
 /**
  * @generated from message osmosis.gamm.v1beta1.PoolRecordWithCFMMLink
  */
-export class PoolRecordWithCFMMLink extends Message {
+class PoolRecordWithCFMMLink extends Message {
     constructor(data) {
         super();
         /**
@@ -154,13 +156,14 @@ PoolRecordWithCFMMLink.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "spread_factor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 6, name: "balancer_pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { PoolRecordWithCFMMLink };
 /**
  * CreateConcentratedLiquidityPoolsAndLinktoCFMMProposal is a gov Content type
  * for creating concentrated liquidity pools and linking it to a CFMM pool.
  *
  * @generated from message osmosis.gamm.v1beta1.CreateConcentratedLiquidityPoolsAndLinktoCFMMProposal
  */
-export class CreateConcentratedLiquidityPoolsAndLinktoCFMMProposal extends Message {
+class CreateConcentratedLiquidityPoolsAndLinktoCFMMProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -197,13 +200,14 @@ CreateConcentratedLiquidityPoolsAndLinktoCFMMProposal.fields = proto3.util.newFi
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "pool_records_with_cfmm_link", kind: "message", T: PoolRecordWithCFMMLink, repeated: true },
 ]);
+export { CreateConcentratedLiquidityPoolsAndLinktoCFMMProposal };
 /**
  * SetScalingFactorControllerProposal is a gov Content type for updating the
  * scaling factor controller address of a stableswap pool
  *
  * @generated from message osmosis.gamm.v1beta1.SetScalingFactorControllerProposal
  */
-export class SetScalingFactorControllerProposal extends Message {
+class SetScalingFactorControllerProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -245,4 +249,5 @@ SetScalingFactorControllerProposal.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "pool_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 4, name: "controller_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { SetScalingFactorControllerProposal };
 //# sourceMappingURL=gov_pb.js.map

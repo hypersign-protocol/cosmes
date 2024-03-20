@@ -67,7 +67,7 @@ proto3.util.setEnumType(CancellationStrategy, "injective.exchange.v1beta1.Cancel
 /**
  * @generated from message injective.exchange.v1beta1.Subaccount
  */
-export class Subaccount extends Message {
+class Subaccount extends Message {
     constructor(data) {
         super();
         /**
@@ -99,10 +99,11 @@ Subaccount.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "trader", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "subaccount_nonce", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { Subaccount };
 /**
  * @generated from message injective.exchange.v1beta1.QuerySubaccountOrdersRequest
  */
-export class QuerySubaccountOrdersRequest extends Message {
+class QuerySubaccountOrdersRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -134,10 +135,11 @@ QuerySubaccountOrdersRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySubaccountOrdersRequest };
 /**
  * @generated from message injective.exchange.v1beta1.QuerySubaccountOrdersResponse
  */
-export class QuerySubaccountOrdersResponse extends Message {
+class QuerySubaccountOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -169,10 +171,11 @@ QuerySubaccountOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "buy_orders", kind: "message", T: SubaccountOrderData, repeated: true },
     { no: 2, name: "sell_orders", kind: "message", T: SubaccountOrderData, repeated: true },
 ]);
+export { QuerySubaccountOrdersResponse };
 /**
  * @generated from message injective.exchange.v1beta1.SubaccountOrderbookMetadataWithMarket
  */
-export class SubaccountOrderbookMetadataWithMarket extends Message {
+class SubaccountOrderbookMetadataWithMarket extends Message {
     constructor(data) {
         super();
         /**
@@ -205,13 +208,14 @@ SubaccountOrderbookMetadataWithMarket.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "isBuy", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { SubaccountOrderbookMetadataWithMarket };
 /**
  * QueryExchangeParamsRequest is the request type for the Query/ExchangeParams
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryExchangeParamsRequest
  */
-export class QueryExchangeParamsRequest extends Message {
+class QueryExchangeParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -232,13 +236,14 @@ export class QueryExchangeParamsRequest extends Message {
 QueryExchangeParamsRequest.runtime = proto3;
 QueryExchangeParamsRequest.typeName = "injective.exchange.v1beta1.QueryExchangeParamsRequest";
 QueryExchangeParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryExchangeParamsRequest };
 /**
  * QueryExchangeParamsRequest is the response type for the Query/ExchangeParams
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryExchangeParamsResponse
  */
-export class QueryExchangeParamsResponse extends Message {
+class QueryExchangeParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -261,13 +266,14 @@ QueryExchangeParamsResponse.typeName = "injective.exchange.v1beta1.QueryExchange
 QueryExchangeParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryExchangeParamsResponse };
 /**
  * QuerySubaccountDepositsRequest is the request type for the
  * Query/SubaccountDeposits RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountDepositsRequest
  */
-export class QuerySubaccountDepositsRequest extends Message {
+class QuerySubaccountDepositsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -295,13 +301,14 @@ QuerySubaccountDepositsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "subaccount", kind: "message", T: Subaccount },
 ]);
+export { QuerySubaccountDepositsRequest };
 /**
  * QuerySubaccountDepositsResponse is the response type for the
  * Query/SubaccountDeposits RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountDepositsResponse
  */
-export class QuerySubaccountDepositsResponse extends Message {
+class QuerySubaccountDepositsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -328,13 +335,14 @@ QuerySubaccountDepositsResponse.typeName = "injective.exchange.v1beta1.QuerySuba
 QuerySubaccountDepositsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "deposits", kind: "map", K: 9 /* ScalarType.STRING */, V: { kind: "message", T: Deposit } },
 ]);
+export { QuerySubaccountDepositsResponse };
 /**
  * QueryExchangeBalancesRequest is the request type for the
  * Query/ExchangeBalances RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryExchangeBalancesRequest
  */
-export class QueryExchangeBalancesRequest extends Message {
+class QueryExchangeBalancesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -355,13 +363,14 @@ export class QueryExchangeBalancesRequest extends Message {
 QueryExchangeBalancesRequest.runtime = proto3;
 QueryExchangeBalancesRequest.typeName = "injective.exchange.v1beta1.QueryExchangeBalancesRequest";
 QueryExchangeBalancesRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryExchangeBalancesRequest };
 /**
  * QuerySubaccountDepositsResponse is the response type for the
  * Query/SubaccountDeposits RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryExchangeBalancesResponse
  */
-export class QueryExchangeBalancesResponse extends Message {
+class QueryExchangeBalancesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -388,13 +397,14 @@ QueryExchangeBalancesResponse.typeName = "injective.exchange.v1beta1.QueryExchan
 QueryExchangeBalancesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balances", kind: "message", T: Balance, repeated: true },
 ]);
+export { QueryExchangeBalancesResponse };
 /**
  * QueryAggregateVolumeRequest is the request type for the Query/AggregateVolume
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAggregateVolumeRequest
  */
-export class QueryAggregateVolumeRequest extends Message {
+class QueryAggregateVolumeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -423,13 +433,14 @@ QueryAggregateVolumeRequest.typeName = "injective.exchange.v1beta1.QueryAggregat
 QueryAggregateVolumeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAggregateVolumeRequest };
 /**
  * QueryAggregateVolumeResponse is the response type for the
  * Query/AggregateVolume RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAggregateVolumeResponse
  */
-export class QueryAggregateVolumeResponse extends Message {
+class QueryAggregateVolumeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -459,13 +470,14 @@ QueryAggregateVolumeResponse.typeName = "injective.exchange.v1beta1.QueryAggrega
 QueryAggregateVolumeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "aggregate_volumes", kind: "message", T: MarketVolume, repeated: true },
 ]);
+export { QueryAggregateVolumeResponse };
 /**
  * QueryAggregateVolumesRequest is the request type for the
  * Query/AggregateVolumes RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAggregateVolumesRequest
  */
-export class QueryAggregateVolumesRequest extends Message {
+class QueryAggregateVolumesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -497,13 +509,14 @@ QueryAggregateVolumesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "accounts", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryAggregateVolumesRequest };
 /**
  * QueryAggregateVolumesResponse is the response type for the
  * Query/AggregateVolumes RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAggregateVolumesResponse
  */
-export class QueryAggregateVolumesResponse extends Message {
+class QueryAggregateVolumesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -539,13 +552,14 @@ QueryAggregateVolumesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "aggregate_account_volumes", kind: "message", T: AggregateAccountVolumeRecord, repeated: true },
     { no: 2, name: "aggregate_market_volumes", kind: "message", T: MarketVolume, repeated: true },
 ]);
+export { QueryAggregateVolumesResponse };
 /**
  * QueryAggregateMarketVolumeRequest is the request type for the
  * Query/AggregateMarketVolume RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAggregateMarketVolumeRequest
  */
-export class QueryAggregateMarketVolumeRequest extends Message {
+class QueryAggregateMarketVolumeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -572,13 +586,14 @@ QueryAggregateMarketVolumeRequest.typeName = "injective.exchange.v1beta1.QueryAg
 QueryAggregateMarketVolumeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAggregateMarketVolumeRequest };
 /**
  * QueryAggregateMarketVolumeResponse is the response type for the
  * Query/AggregateMarketVolume RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAggregateMarketVolumeResponse
  */
-export class QueryAggregateMarketVolumeResponse extends Message {
+class QueryAggregateMarketVolumeResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -601,13 +616,14 @@ QueryAggregateMarketVolumeResponse.typeName = "injective.exchange.v1beta1.QueryA
 QueryAggregateMarketVolumeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "volume", kind: "message", T: VolumeRecord },
 ]);
+export { QueryAggregateMarketVolumeResponse };
 /**
  * QueryDenomDecimalRequest is the request type for the Query/DenomDecimal RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDenomDecimalRequest
  */
-export class QueryDenomDecimalRequest extends Message {
+class QueryDenomDecimalRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -634,13 +650,14 @@ QueryDenomDecimalRequest.typeName = "injective.exchange.v1beta1.QueryDenomDecima
 QueryDenomDecimalRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDenomDecimalRequest };
 /**
  * QueryDenomDecimalResponse is the response type for the Query/DenomDecimal RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDenomDecimalResponse
  */
-export class QueryDenomDecimalResponse extends Message {
+class QueryDenomDecimalResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -667,13 +684,14 @@ QueryDenomDecimalResponse.typeName = "injective.exchange.v1beta1.QueryDenomDecim
 QueryDenomDecimalResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "decimal", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryDenomDecimalResponse };
 /**
  * QueryDenomDecimalsRequest is the request type for the Query/DenomDecimals RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDenomDecimalsRequest
  */
-export class QueryDenomDecimalsRequest extends Message {
+class QueryDenomDecimalsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -702,13 +720,14 @@ QueryDenomDecimalsRequest.typeName = "injective.exchange.v1beta1.QueryDenomDecim
 QueryDenomDecimalsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denoms", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryDenomDecimalsRequest };
 /**
  * QueryDenomDecimalsRequest is the response type for the Query/DenomDecimals
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDenomDecimalsResponse
  */
-export class QueryDenomDecimalsResponse extends Message {
+class QueryDenomDecimalsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -735,13 +754,14 @@ QueryDenomDecimalsResponse.typeName = "injective.exchange.v1beta1.QueryDenomDeci
 QueryDenomDecimalsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "denom_decimals", kind: "message", T: DenomDecimals, repeated: true },
 ]);
+export { QueryDenomDecimalsResponse };
 /**
  * QueryAggregateMarketVolumesRequest is the request type for the
  * Query/AggregateMarketVolumes RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAggregateMarketVolumesRequest
  */
-export class QueryAggregateMarketVolumesRequest extends Message {
+class QueryAggregateMarketVolumesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -768,13 +788,14 @@ QueryAggregateMarketVolumesRequest.typeName = "injective.exchange.v1beta1.QueryA
 QueryAggregateMarketVolumesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryAggregateMarketVolumesRequest };
 /**
  * QueryAggregateMarketVolumesResponse is the response type for the
  * Query/AggregateMarketVolumes RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAggregateMarketVolumesResponse
  */
-export class QueryAggregateMarketVolumesResponse extends Message {
+class QueryAggregateMarketVolumesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -803,13 +824,14 @@ QueryAggregateMarketVolumesResponse.typeName = "injective.exchange.v1beta1.Query
 QueryAggregateMarketVolumesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "volumes", kind: "message", T: MarketVolume, repeated: true },
 ]);
+export { QueryAggregateMarketVolumesResponse };
 /**
  * QuerySubaccountDepositsRequest is the request type for the
  * Query/SubaccountDeposits RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountDepositRequest
  */
-export class QuerySubaccountDepositRequest extends Message {
+class QuerySubaccountDepositRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -841,13 +863,14 @@ QuerySubaccountDepositRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "denom", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySubaccountDepositRequest };
 /**
  * QuerySubaccountDepositsResponse is the response type for the
  * Query/SubaccountDeposits RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountDepositResponse
  */
-export class QuerySubaccountDepositResponse extends Message {
+class QuerySubaccountDepositResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -870,13 +893,14 @@ QuerySubaccountDepositResponse.typeName = "injective.exchange.v1beta1.QuerySubac
 QuerySubaccountDepositResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "deposits", kind: "message", T: Deposit },
 ]);
+export { QuerySubaccountDepositResponse };
 /**
  * QuerySpotMarketsRequest is the request type for the Query/SpotMarkets RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotMarketsRequest
  */
-export class QuerySpotMarketsRequest extends Message {
+class QuerySpotMarketsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -912,13 +936,14 @@ QuerySpotMarketsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "status", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QuerySpotMarketsRequest };
 /**
  * QuerySpotMarketsResponse is the response type for the Query/SpotMarkets RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotMarketsResponse
  */
-export class QuerySpotMarketsResponse extends Message {
+class QuerySpotMarketsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -945,13 +970,14 @@ QuerySpotMarketsResponse.typeName = "injective.exchange.v1beta1.QuerySpotMarkets
 QuerySpotMarketsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "markets", kind: "message", T: SpotMarket, repeated: true },
 ]);
+export { QuerySpotMarketsResponse };
 /**
  * QuerySpotMarketRequest is the request type for the Query/SpotMarket RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotMarketRequest
  */
-export class QuerySpotMarketRequest extends Message {
+class QuerySpotMarketRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -980,13 +1006,14 @@ QuerySpotMarketRequest.typeName = "injective.exchange.v1beta1.QuerySpotMarketReq
 QuerySpotMarketRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotMarketRequest };
 /**
  * QuerySpotMarketResponse is the response type for the Query/SpotMarket RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotMarketResponse
  */
-export class QuerySpotMarketResponse extends Message {
+class QuerySpotMarketResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1009,13 +1036,14 @@ QuerySpotMarketResponse.typeName = "injective.exchange.v1beta1.QuerySpotMarketRe
 QuerySpotMarketResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market", kind: "message", T: SpotMarket },
 ]);
+export { QuerySpotMarketResponse };
 /**
  * QuerySpotOrderbookRequest is the request type for the Query/SpotOrderbook RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotOrderbookRequest
  */
-export class QuerySpotOrderbookRequest extends Message {
+class QuerySpotOrderbookRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1064,13 +1092,14 @@ QuerySpotOrderbookRequest.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "limit_cumulative_notional", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "limit_cumulative_quantity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotOrderbookRequest };
 /**
  * QuerySpotOrderbookResponse is the response type for the Query/SpotOrderbook
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotOrderbookResponse
  */
-export class QuerySpotOrderbookResponse extends Message {
+class QuerySpotOrderbookResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1102,10 +1131,11 @@ QuerySpotOrderbookResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "buys_price_level", kind: "message", T: Level, repeated: true },
     { no: 2, name: "sells_price_level", kind: "message", T: Level, repeated: true },
 ]);
+export { QuerySpotOrderbookResponse };
 /**
  * @generated from message injective.exchange.v1beta1.FullSpotMarket
  */
-export class FullSpotMarket extends Message {
+class FullSpotMarket extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1129,13 +1159,14 @@ FullSpotMarket.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market", kind: "message", T: SpotMarket },
     { no: 2, name: "mid_price_and_tob", kind: "message", T: MidPriceAndTOB },
 ]);
+export { FullSpotMarket };
 /**
  * QueryFullSpotMarketsRequest is the request type for the Query/FullSpotMarkets
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFullSpotMarketsRequest
  */
-export class QueryFullSpotMarketsRequest extends Message {
+class QueryFullSpotMarketsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1179,13 +1210,14 @@ QueryFullSpotMarketsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 3, name: "with_mid_price_and_tob", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryFullSpotMarketsRequest };
 /**
  * QueryFullSpotMarketsResponse is the response type for the
  * Query/FullSpotMarkets RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFullSpotMarketsResponse
  */
-export class QueryFullSpotMarketsResponse extends Message {
+class QueryFullSpotMarketsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1212,13 +1244,14 @@ QueryFullSpotMarketsResponse.typeName = "injective.exchange.v1beta1.QueryFullSpo
 QueryFullSpotMarketsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "markets", kind: "message", T: FullSpotMarket, repeated: true },
 ]);
+export { QueryFullSpotMarketsResponse };
 /**
  * QuerySpotMarketRequest is the request type for the Query/SpotMarket RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFullSpotMarketRequest
  */
-export class QueryFullSpotMarketRequest extends Message {
+class QueryFullSpotMarketRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1255,13 +1288,14 @@ QueryFullSpotMarketRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "with_mid_price_and_tob", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryFullSpotMarketRequest };
 /**
  * QuerySpotMarketResponse is the response type for the Query/SpotMarket RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFullSpotMarketResponse
  */
-export class QueryFullSpotMarketResponse extends Message {
+class QueryFullSpotMarketResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -1284,13 +1318,14 @@ QueryFullSpotMarketResponse.typeName = "injective.exchange.v1beta1.QueryFullSpot
 QueryFullSpotMarketResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market", kind: "message", T: FullSpotMarket },
 ]);
+export { QueryFullSpotMarketResponse };
 /**
  * QuerySpotOrdersByHashesRequest is the request type for the
  * Query/SpotOrdersByHashes RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotOrdersByHashesRequest
  */
-export class QuerySpotOrdersByHashesRequest extends Message {
+class QuerySpotOrdersByHashesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1333,13 +1368,14 @@ QuerySpotOrdersByHashesRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "order_hashes", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QuerySpotOrdersByHashesRequest };
 /**
  * QuerySpotOrdersByHashesResponse is the response type for the
  * Query/SpotOrdersByHashes RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotOrdersByHashesResponse
  */
-export class QuerySpotOrdersByHashesResponse extends Message {
+class QuerySpotOrdersByHashesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1366,13 +1402,14 @@ QuerySpotOrdersByHashesResponse.typeName = "injective.exchange.v1beta1.QuerySpot
 QuerySpotOrdersByHashesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "orders", kind: "message", T: TrimmedSpotLimitOrder, repeated: true },
 ]);
+export { QuerySpotOrdersByHashesResponse };
 /**
  * QueryTraderSpotOrdersRequest is the request type for the
  * Query/TraderSpotOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTraderSpotOrdersRequest
  */
-export class QueryTraderSpotOrdersRequest extends Message {
+class QueryTraderSpotOrdersRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1408,13 +1445,14 @@ QueryTraderSpotOrdersRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryTraderSpotOrdersRequest };
 /**
  * QueryAccountAddressSpotOrdersRequest is the request type for the
  * Query/AccountAddressSpotOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAccountAddressSpotOrdersRequest
  */
-export class QueryAccountAddressSpotOrdersRequest extends Message {
+class QueryAccountAddressSpotOrdersRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1450,10 +1488,11 @@ QueryAccountAddressSpotOrdersRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "account_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAccountAddressSpotOrdersRequest };
 /**
  * @generated from message injective.exchange.v1beta1.TrimmedSpotLimitOrder
  */
-export class TrimmedSpotLimitOrder extends Message {
+class TrimmedSpotLimitOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -1508,13 +1547,14 @@ TrimmedSpotLimitOrder.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "isBuy", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 5, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TrimmedSpotLimitOrder };
 /**
  * QueryTraderSpotOrdersResponse is the response type for the
  * Query/TraderSpotOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTraderSpotOrdersResponse
  */
-export class QueryTraderSpotOrdersResponse extends Message {
+class QueryTraderSpotOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1541,13 +1581,14 @@ QueryTraderSpotOrdersResponse.typeName = "injective.exchange.v1beta1.QueryTrader
 QueryTraderSpotOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "orders", kind: "message", T: TrimmedSpotLimitOrder, repeated: true },
 ]);
+export { QueryTraderSpotOrdersResponse };
 /**
  * QueryAccountAddressSpotOrdersResponse is the response type for the
  * Query/AccountAddressSpotOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAccountAddressSpotOrdersResponse
  */
-export class QueryAccountAddressSpotOrdersResponse extends Message {
+class QueryAccountAddressSpotOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1574,13 +1615,14 @@ QueryAccountAddressSpotOrdersResponse.typeName = "injective.exchange.v1beta1.Que
 QueryAccountAddressSpotOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "orders", kind: "message", T: TrimmedSpotLimitOrder, repeated: true },
 ]);
+export { QueryAccountAddressSpotOrdersResponse };
 /**
  * QuerySpotMidPriceAndTOBRequest is the request type for the
  * Query/SpotMidPriceAndTOB RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotMidPriceAndTOBRequest
  */
-export class QuerySpotMidPriceAndTOBRequest extends Message {
+class QuerySpotMidPriceAndTOBRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1609,13 +1651,14 @@ QuerySpotMidPriceAndTOBRequest.typeName = "injective.exchange.v1beta1.QuerySpotM
 QuerySpotMidPriceAndTOBRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotMidPriceAndTOBRequest };
 /**
  * QuerySpotMidPriceAndTOBResponse is the response type for the
  * Query/SpotMidPriceAndTOB RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySpotMidPriceAndTOBResponse
  */
-export class QuerySpotMidPriceAndTOBResponse extends Message {
+class QuerySpotMidPriceAndTOBResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1658,13 +1701,14 @@ QuerySpotMidPriceAndTOBResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "best_buy_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "best_sell_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySpotMidPriceAndTOBResponse };
 /**
  * QueryDerivativeMidPriceAndTOBRequest is the request type for the
  * Query/GetDerivativeMidPriceAndTOB RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeMidPriceAndTOBRequest
  */
-export class QueryDerivativeMidPriceAndTOBRequest extends Message {
+class QueryDerivativeMidPriceAndTOBRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1693,13 +1737,14 @@ QueryDerivativeMidPriceAndTOBRequest.typeName = "injective.exchange.v1beta1.Quer
 QueryDerivativeMidPriceAndTOBRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDerivativeMidPriceAndTOBRequest };
 /**
  * QueryDerivativeMidPriceAndTOBResponse is the response type for the
  * Query/GetDerivativeMidPriceAndTOB RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeMidPriceAndTOBResponse
  */
-export class QueryDerivativeMidPriceAndTOBResponse extends Message {
+class QueryDerivativeMidPriceAndTOBResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1742,13 +1787,14 @@ QueryDerivativeMidPriceAndTOBResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "best_buy_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "best_sell_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDerivativeMidPriceAndTOBResponse };
 /**
  * QueryDerivativeOrderbookRequest is the request type for the
  * Query/DerivativeOrderbook RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeOrderbookRequest
  */
-export class QueryDerivativeOrderbookRequest extends Message {
+class QueryDerivativeOrderbookRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1787,13 +1833,14 @@ QueryDerivativeOrderbookRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "limit", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "limit_cumulative_notional", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDerivativeOrderbookRequest };
 /**
  * QueryDerivativeOrderbookResponse is the response type for the
  * Query/DerivativeOrderbook RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeOrderbookResponse
  */
-export class QueryDerivativeOrderbookResponse extends Message {
+class QueryDerivativeOrderbookResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -1825,13 +1872,14 @@ QueryDerivativeOrderbookResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "buys_price_level", kind: "message", T: Level, repeated: true },
     { no: 2, name: "sells_price_level", kind: "message", T: Level, repeated: true },
 ]);
+export { QueryDerivativeOrderbookResponse };
 /**
  * QueryTraderSpotOrdersToCancelUpToAmountRequest is the request type for the
  * Query/TraderSpotOrdersToCancelUpToAmountRequest RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTraderSpotOrdersToCancelUpToAmountRequest
  */
-export class QueryTraderSpotOrdersToCancelUpToAmountRequest extends Message {
+class QueryTraderSpotOrdersToCancelUpToAmountRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1896,13 +1944,14 @@ QueryTraderSpotOrdersToCancelUpToAmountRequest.fields = proto3.util.newFieldList
     { no: 5, name: "strategy", kind: "enum", T: proto3.getEnumType(CancellationStrategy) },
     { no: 6, name: "reference_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryTraderSpotOrdersToCancelUpToAmountRequest };
 /**
  * QueryTraderDerivativeOrdersToCancelUpToAmountRequest is the request type for
  * the Query/TraderDerivativeOrdersToCancelUpToAmountRequest RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTraderDerivativeOrdersToCancelUpToAmountRequest
  */
-export class QueryTraderDerivativeOrdersToCancelUpToAmountRequest extends Message {
+class QueryTraderDerivativeOrdersToCancelUpToAmountRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -1960,13 +2009,14 @@ QueryTraderDerivativeOrdersToCancelUpToAmountRequest.fields = proto3.util.newFie
     { no: 4, name: "strategy", kind: "enum", T: proto3.getEnumType(CancellationStrategy) },
     { no: 5, name: "reference_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryTraderDerivativeOrdersToCancelUpToAmountRequest };
 /**
  * QueryTraderDerivativeOrdersRequest is the request type for the
  * Query/TraderDerivativeOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTraderDerivativeOrdersRequest
  */
-export class QueryTraderDerivativeOrdersRequest extends Message {
+class QueryTraderDerivativeOrdersRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2002,13 +2052,14 @@ QueryTraderDerivativeOrdersRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryTraderDerivativeOrdersRequest };
 /**
  * QueryAccountAddressSpotOrdersRequest is the request type for the
  * Query/AccountAddressDerivativeOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAccountAddressDerivativeOrdersRequest
  */
-export class QueryAccountAddressDerivativeOrdersRequest extends Message {
+class QueryAccountAddressDerivativeOrdersRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2044,10 +2095,11 @@ QueryAccountAddressDerivativeOrdersRequest.fields = proto3.util.newFieldList(() 
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "account_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryAccountAddressDerivativeOrdersRequest };
 /**
  * @generated from message injective.exchange.v1beta1.TrimmedDerivativeLimitOrder
  */
-export class TrimmedDerivativeLimitOrder extends Message {
+class TrimmedDerivativeLimitOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -2111,13 +2163,14 @@ TrimmedDerivativeLimitOrder.fields = proto3.util.newFieldList(() => [
     { no: 5, name: "isBuy", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 6, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TrimmedDerivativeLimitOrder };
 /**
  * QueryTraderDerivativeOrdersResponse is the response type for the
  * Query/TraderDerivativeOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTraderDerivativeOrdersResponse
  */
-export class QueryTraderDerivativeOrdersResponse extends Message {
+class QueryTraderDerivativeOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -2144,13 +2197,14 @@ QueryTraderDerivativeOrdersResponse.typeName = "injective.exchange.v1beta1.Query
 QueryTraderDerivativeOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "orders", kind: "message", T: TrimmedDerivativeLimitOrder, repeated: true },
 ]);
+export { QueryTraderDerivativeOrdersResponse };
 /**
  * QueryAccountAddressDerivativeOrdersResponse is the response type for the
  * Query/AccountAddressDerivativeOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryAccountAddressDerivativeOrdersResponse
  */
-export class QueryAccountAddressDerivativeOrdersResponse extends Message {
+class QueryAccountAddressDerivativeOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -2177,13 +2231,14 @@ QueryAccountAddressDerivativeOrdersResponse.typeName = "injective.exchange.v1bet
 QueryAccountAddressDerivativeOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "orders", kind: "message", T: TrimmedDerivativeLimitOrder, repeated: true },
 ]);
+export { QueryAccountAddressDerivativeOrdersResponse };
 /**
  * QueryTraderDerivativeOrdersRequest is the request type for the
  * Query/TraderDerivativeOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeOrdersByHashesRequest
  */
-export class QueryDerivativeOrdersByHashesRequest extends Message {
+class QueryDerivativeOrdersByHashesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2226,13 +2281,14 @@ QueryDerivativeOrdersByHashesRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "order_hashes", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryDerivativeOrdersByHashesRequest };
 /**
  * QueryDerivativeOrdersByHashesResponse is the response type for the
  * Query/DerivativeOrdersByHashes RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeOrdersByHashesResponse
  */
-export class QueryDerivativeOrdersByHashesResponse extends Message {
+class QueryDerivativeOrdersByHashesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -2259,13 +2315,14 @@ QueryDerivativeOrdersByHashesResponse.typeName = "injective.exchange.v1beta1.Que
 QueryDerivativeOrdersByHashesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "orders", kind: "message", T: TrimmedDerivativeLimitOrder, repeated: true },
 ]);
+export { QueryDerivativeOrdersByHashesResponse };
 /**
  * QueryDerivativeMarketsRequest is the request type for the
  * Query/DerivativeMarkets RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeMarketsRequest
  */
-export class QueryDerivativeMarketsRequest extends Message {
+class QueryDerivativeMarketsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2309,10 +2366,11 @@ QueryDerivativeMarketsRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "market_ids", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 3, name: "with_mid_price_and_tob", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryDerivativeMarketsRequest };
 /**
  * @generated from message injective.exchange.v1beta1.PriceLevel
  */
-export class PriceLevel extends Message {
+class PriceLevel extends Message {
     constructor(data) {
         super();
         /**
@@ -2346,10 +2404,11 @@ PriceLevel.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "quantity", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PriceLevel };
 /**
  * @generated from message injective.exchange.v1beta1.PerpetualMarketState
  */
-export class PerpetualMarketState extends Message {
+class PerpetualMarketState extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2373,10 +2432,11 @@ PerpetualMarketState.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_info", kind: "message", T: PerpetualMarketInfo },
     { no: 2, name: "funding_info", kind: "message", T: PerpetualMarketFunding },
 ]);
+export { PerpetualMarketState };
 /**
  * @generated from message injective.exchange.v1beta1.FullDerivativeMarket
  */
-export class FullDerivativeMarket extends Message {
+class FullDerivativeMarket extends Message {
     constructor(data) {
         super();
         /**
@@ -2411,13 +2471,14 @@ FullDerivativeMarket.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "mark_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "mid_price_and_tob", kind: "message", T: MidPriceAndTOB },
 ]);
+export { FullDerivativeMarket };
 /**
  * QueryDerivativeMarketsResponse is the response type for the
  * Query/DerivativeMarkets RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeMarketsResponse
  */
-export class QueryDerivativeMarketsResponse extends Message {
+class QueryDerivativeMarketsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -2444,13 +2505,14 @@ QueryDerivativeMarketsResponse.typeName = "injective.exchange.v1beta1.QueryDeriv
 QueryDerivativeMarketsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "markets", kind: "message", T: FullDerivativeMarket, repeated: true },
 ]);
+export { QueryDerivativeMarketsResponse };
 /**
  * QueryDerivativeMarketRequest is the request type for the
  * Query/DerivativeMarket RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeMarketRequest
  */
-export class QueryDerivativeMarketRequest extends Message {
+class QueryDerivativeMarketRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2479,13 +2541,14 @@ QueryDerivativeMarketRequest.typeName = "injective.exchange.v1beta1.QueryDerivat
 QueryDerivativeMarketRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDerivativeMarketRequest };
 /**
  * QueryDerivativeMarketResponse is the response type for the
  * Query/DerivativeMarket RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeMarketResponse
  */
-export class QueryDerivativeMarketResponse extends Message {
+class QueryDerivativeMarketResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2508,13 +2571,14 @@ QueryDerivativeMarketResponse.typeName = "injective.exchange.v1beta1.QueryDeriva
 QueryDerivativeMarketResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market", kind: "message", T: FullDerivativeMarket },
 ]);
+export { QueryDerivativeMarketResponse };
 /**
  * QueryDerivativeMarketAddressRequest is the request type for the
  * Query/DerivativeMarketAddress RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeMarketAddressRequest
  */
-export class QueryDerivativeMarketAddressRequest extends Message {
+class QueryDerivativeMarketAddressRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2543,13 +2607,14 @@ QueryDerivativeMarketAddressRequest.typeName = "injective.exchange.v1beta1.Query
 QueryDerivativeMarketAddressRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDerivativeMarketAddressRequest };
 /**
  * QueryDerivativeMarketAddressResponse is the response type for the
  * Query/DerivativeMarketAddress RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryDerivativeMarketAddressResponse
  */
-export class QueryDerivativeMarketAddressResponse extends Message {
+class QueryDerivativeMarketAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -2585,13 +2650,14 @@ QueryDerivativeMarketAddressResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryDerivativeMarketAddressResponse };
 /**
  * QuerySubaccountTradeNonceRequest is the request type for the
  * Query/SubaccountTradeNonce RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountTradeNonceRequest
  */
-export class QuerySubaccountTradeNonceRequest extends Message {
+class QuerySubaccountTradeNonceRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2618,13 +2684,14 @@ QuerySubaccountTradeNonceRequest.typeName = "injective.exchange.v1beta1.QuerySub
 QuerySubaccountTradeNonceRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySubaccountTradeNonceRequest };
 /**
  * QuerySubaccountPositionsRequest is the request type for the
  * Query/SubaccountPositions RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountPositionsRequest
  */
-export class QuerySubaccountPositionsRequest extends Message {
+class QuerySubaccountPositionsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2651,13 +2718,14 @@ QuerySubaccountPositionsRequest.typeName = "injective.exchange.v1beta1.QuerySuba
 QuerySubaccountPositionsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySubaccountPositionsRequest };
 /**
  * QuerySubaccountPositionInMarketRequest is the request type for the
  * Query/SubaccountPositionInMarket RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountPositionInMarketRequest
  */
-export class QuerySubaccountPositionInMarketRequest extends Message {
+class QuerySubaccountPositionInMarketRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2689,13 +2757,14 @@ QuerySubaccountPositionInMarketRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySubaccountPositionInMarketRequest };
 /**
  * QuerySubaccountEffectivePositionInMarketRequest is the request type for the
  * Query/SubaccountEffectivePositionInMarket RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountEffectivePositionInMarketRequest
  */
-export class QuerySubaccountEffectivePositionInMarketRequest extends Message {
+class QuerySubaccountEffectivePositionInMarketRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2727,13 +2796,14 @@ QuerySubaccountEffectivePositionInMarketRequest.fields = proto3.util.newFieldLis
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySubaccountEffectivePositionInMarketRequest };
 /**
  * QuerySubaccountOrderMetadataRequest is the request type for the
  * Query/SubaccountOrderMetadata RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountOrderMetadataRequest
  */
-export class QuerySubaccountOrderMetadataRequest extends Message {
+class QuerySubaccountOrderMetadataRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2760,13 +2830,14 @@ QuerySubaccountOrderMetadataRequest.typeName = "injective.exchange.v1beta1.Query
 QuerySubaccountOrderMetadataRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySubaccountOrderMetadataRequest };
 /**
  * QuerySubaccountPositionsResponse is the response type for the
  * Query/SubaccountPositions RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountPositionsResponse
  */
-export class QuerySubaccountPositionsResponse extends Message {
+class QuerySubaccountPositionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -2793,13 +2864,14 @@ QuerySubaccountPositionsResponse.typeName = "injective.exchange.v1beta1.QuerySub
 QuerySubaccountPositionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: DerivativePosition, repeated: true },
 ]);
+export { QuerySubaccountPositionsResponse };
 /**
  * QuerySubaccountPositionInMarketResponse is the response type for the
  * Query/SubaccountPositionInMarket RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountPositionInMarketResponse
  */
-export class QuerySubaccountPositionInMarketResponse extends Message {
+class QuerySubaccountPositionInMarketResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2822,10 +2894,11 @@ QuerySubaccountPositionInMarketResponse.typeName = "injective.exchange.v1beta1.Q
 QuerySubaccountPositionInMarketResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: Position },
 ]);
+export { QuerySubaccountPositionInMarketResponse };
 /**
  * @generated from message injective.exchange.v1beta1.EffectivePosition
  */
-export class EffectivePosition extends Message {
+class EffectivePosition extends Message {
     constructor(data) {
         super();
         /**
@@ -2867,13 +2940,14 @@ EffectivePosition.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "entry_price", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "effective_margin", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { EffectivePosition };
 /**
  * QuerySubaccountEffectivePositionInMarketResponse is the response type for the
  * Query/SubaccountEffectivePositionInMarket RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountEffectivePositionInMarketResponse
  */
-export class QuerySubaccountEffectivePositionInMarketResponse extends Message {
+class QuerySubaccountEffectivePositionInMarketResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2896,13 +2970,14 @@ QuerySubaccountEffectivePositionInMarketResponse.typeName = "injective.exchange.
 QuerySubaccountEffectivePositionInMarketResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: EffectivePosition },
 ]);
+export { QuerySubaccountEffectivePositionInMarketResponse };
 /**
  * QueryPerpetualMarketInfoRequest is the request type for the
  * Query/PerpetualMarketInfo RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryPerpetualMarketInfoRequest
  */
-export class QueryPerpetualMarketInfoRequest extends Message {
+class QueryPerpetualMarketInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2929,13 +3004,14 @@ QueryPerpetualMarketInfoRequest.typeName = "injective.exchange.v1beta1.QueryPerp
 QueryPerpetualMarketInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryPerpetualMarketInfoRequest };
 /**
  * QueryPerpetualMarketInfoResponse is the response type for the
  * Query/PerpetualMarketInfo RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryPerpetualMarketInfoResponse
  */
-export class QueryPerpetualMarketInfoResponse extends Message {
+class QueryPerpetualMarketInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -2958,13 +3034,14 @@ QueryPerpetualMarketInfoResponse.typeName = "injective.exchange.v1beta1.QueryPer
 QueryPerpetualMarketInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "info", kind: "message", T: PerpetualMarketInfo },
 ]);
+export { QueryPerpetualMarketInfoResponse };
 /**
  * QueryExpiryFuturesMarketInfoRequest is the request type for the Query/
  * ExpiryFuturesMarketInfo RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryExpiryFuturesMarketInfoRequest
  */
-export class QueryExpiryFuturesMarketInfoRequest extends Message {
+class QueryExpiryFuturesMarketInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -2991,13 +3068,14 @@ QueryExpiryFuturesMarketInfoRequest.typeName = "injective.exchange.v1beta1.Query
 QueryExpiryFuturesMarketInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryExpiryFuturesMarketInfoRequest };
 /**
  * QueryExpiryFuturesMarketInfoResponse is the response type for the Query/
  * ExpiryFuturesMarketInfo RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryExpiryFuturesMarketInfoResponse
  */
-export class QueryExpiryFuturesMarketInfoResponse extends Message {
+class QueryExpiryFuturesMarketInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3020,13 +3098,14 @@ QueryExpiryFuturesMarketInfoResponse.typeName = "injective.exchange.v1beta1.Quer
 QueryExpiryFuturesMarketInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "info", kind: "message", T: ExpiryFuturesMarketInfo },
 ]);
+export { QueryExpiryFuturesMarketInfoResponse };
 /**
  * QueryPerpetualMarketFundingRequest is the request type for the
  * Query/PerpetualMarketFunding RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryPerpetualMarketFundingRequest
  */
-export class QueryPerpetualMarketFundingRequest extends Message {
+class QueryPerpetualMarketFundingRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -3053,13 +3132,14 @@ QueryPerpetualMarketFundingRequest.typeName = "injective.exchange.v1beta1.QueryP
 QueryPerpetualMarketFundingRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryPerpetualMarketFundingRequest };
 /**
  * QueryPerpetualMarketFundingResponse is the response type for the
  * Query/PerpetualMarketFunding RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryPerpetualMarketFundingResponse
  */
-export class QueryPerpetualMarketFundingResponse extends Message {
+class QueryPerpetualMarketFundingResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3082,13 +3162,14 @@ QueryPerpetualMarketFundingResponse.typeName = "injective.exchange.v1beta1.Query
 QueryPerpetualMarketFundingResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: PerpetualMarketFunding },
 ]);
+export { QueryPerpetualMarketFundingResponse };
 /**
  * QuerySubaccountOrderMetadataResponse is the response type for the
  * Query/SubaccountOrderMetadata RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountOrderMetadataResponse
  */
-export class QuerySubaccountOrderMetadataResponse extends Message {
+class QuerySubaccountOrderMetadataResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3115,13 +3196,14 @@ QuerySubaccountOrderMetadataResponse.typeName = "injective.exchange.v1beta1.Quer
 QuerySubaccountOrderMetadataResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "metadata", kind: "message", T: SubaccountOrderbookMetadataWithMarket, repeated: true },
 ]);
+export { QuerySubaccountOrderMetadataResponse };
 /**
  * QuerySubaccountTradeNonceResponse is the response type for the
  * Query/SubaccountTradeNonce RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QuerySubaccountTradeNonceResponse
  */
-export class QuerySubaccountTradeNonceResponse extends Message {
+class QuerySubaccountTradeNonceResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3148,13 +3230,14 @@ QuerySubaccountTradeNonceResponse.typeName = "injective.exchange.v1beta1.QuerySu
 QuerySubaccountTradeNonceResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "nonce", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { QuerySubaccountTradeNonceResponse };
 /**
  * QueryModuleStateRequest is the request type for the Query/ExchangeModuleState
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryModuleStateRequest
  */
-export class QueryModuleStateRequest extends Message {
+class QueryModuleStateRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3175,13 +3258,14 @@ export class QueryModuleStateRequest extends Message {
 QueryModuleStateRequest.runtime = proto3;
 QueryModuleStateRequest.typeName = "injective.exchange.v1beta1.QueryModuleStateRequest";
 QueryModuleStateRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryModuleStateRequest };
 /**
  * QueryModuleStateResponse is the response type for the
  * Query/ExchangeModuleState RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryModuleStateResponse
  */
-export class QueryModuleStateResponse extends Message {
+class QueryModuleStateResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3204,12 +3288,13 @@ QueryModuleStateResponse.typeName = "injective.exchange.v1beta1.QueryModuleState
 QueryModuleStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: GenesisState },
 ]);
+export { QueryModuleStateResponse };
 /**
  * QueryPositionsRequest is the request type for the Query/Positions RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryPositionsRequest
  */
-export class QueryPositionsRequest extends Message {
+class QueryPositionsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3230,13 +3315,14 @@ export class QueryPositionsRequest extends Message {
 QueryPositionsRequest.runtime = proto3;
 QueryPositionsRequest.typeName = "injective.exchange.v1beta1.QueryPositionsRequest";
 QueryPositionsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryPositionsRequest };
 /**
  * QueryPositionsResponse is the response type for the Query/Positions RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QueryPositionsResponse
  */
-export class QueryPositionsResponse extends Message {
+class QueryPositionsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3263,13 +3349,14 @@ QueryPositionsResponse.typeName = "injective.exchange.v1beta1.QueryPositionsResp
 QueryPositionsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "state", kind: "message", T: DerivativePosition, repeated: true },
 ]);
+export { QueryPositionsResponse };
 /**
  * QueryTradeRewardPointsRequest is the request type for the
  * Query/TradeRewardPoints RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTradeRewardPointsRequest
  */
-export class QueryTradeRewardPointsRequest extends Message {
+class QueryTradeRewardPointsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -3301,13 +3388,14 @@ QueryTradeRewardPointsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "accounts", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 2, name: "pending_pool_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { QueryTradeRewardPointsRequest };
 /**
  * QueryTradeRewardPointsResponse is the response type for the
  * Query/TradeRewardPoints RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTradeRewardPointsResponse
  */
-export class QueryTradeRewardPointsResponse extends Message {
+class QueryTradeRewardPointsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3334,13 +3422,14 @@ QueryTradeRewardPointsResponse.typeName = "injective.exchange.v1beta1.QueryTrade
 QueryTradeRewardPointsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account_trade_reward_points", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryTradeRewardPointsResponse };
 /**
  * QueryTradeRewardCampaignRequest is the request type for the
  * Query/TradeRewardCampaign RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTradeRewardCampaignRequest
  */
-export class QueryTradeRewardCampaignRequest extends Message {
+class QueryTradeRewardCampaignRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3361,13 +3450,14 @@ export class QueryTradeRewardCampaignRequest extends Message {
 QueryTradeRewardCampaignRequest.runtime = proto3;
 QueryTradeRewardCampaignRequest.typeName = "injective.exchange.v1beta1.QueryTradeRewardCampaignRequest";
 QueryTradeRewardCampaignRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryTradeRewardCampaignRequest };
 /**
  * QueryTradeRewardCampaignResponse is the response type for the
  * Query/TradeRewardCampaign RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTradeRewardCampaignResponse
  */
-export class QueryTradeRewardCampaignResponse extends Message {
+class QueryTradeRewardCampaignResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3410,13 +3500,14 @@ QueryTradeRewardCampaignResponse.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "pending_trading_reward_pool_campaign_schedule", kind: "message", T: CampaignRewardPool, repeated: true },
     { no: 5, name: "pending_total_trade_reward_points", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryTradeRewardCampaignResponse };
 /**
  * QueryIsRegisteredDMMRequest is the request type for the Query/IsRegisteredDMM
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryIsOptedOutOfRewardsRequest
  */
-export class QueryIsOptedOutOfRewardsRequest extends Message {
+class QueryIsOptedOutOfRewardsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -3443,13 +3534,14 @@ QueryIsOptedOutOfRewardsRequest.typeName = "injective.exchange.v1beta1.QueryIsOp
 QueryIsOptedOutOfRewardsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryIsOptedOutOfRewardsRequest };
 /**
  * QueryIsRegisteredDMMResponse is the response type for the
  * Query/IsRegisteredDMM RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryIsOptedOutOfRewardsResponse
  */
-export class QueryIsOptedOutOfRewardsResponse extends Message {
+class QueryIsOptedOutOfRewardsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3476,13 +3568,14 @@ QueryIsOptedOutOfRewardsResponse.typeName = "injective.exchange.v1beta1.QueryIsO
 QueryIsOptedOutOfRewardsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "is_opted_out", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { QueryIsOptedOutOfRewardsResponse };
 /**
  * QueryRegisteredDMMsRequest is the request type for the Query/RegisteredDMMs
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryOptedOutOfRewardsAccountsRequest
  */
-export class QueryOptedOutOfRewardsAccountsRequest extends Message {
+class QueryOptedOutOfRewardsAccountsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3503,13 +3596,14 @@ export class QueryOptedOutOfRewardsAccountsRequest extends Message {
 QueryOptedOutOfRewardsAccountsRequest.runtime = proto3;
 QueryOptedOutOfRewardsAccountsRequest.typeName = "injective.exchange.v1beta1.QueryOptedOutOfRewardsAccountsRequest";
 QueryOptedOutOfRewardsAccountsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryOptedOutOfRewardsAccountsRequest };
 /**
  * QueryRegisteredDMMsResponse is the response type for the Query/RegisteredDMMs
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryOptedOutOfRewardsAccountsResponse
  */
-export class QueryOptedOutOfRewardsAccountsResponse extends Message {
+class QueryOptedOutOfRewardsAccountsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3536,13 +3630,14 @@ QueryOptedOutOfRewardsAccountsResponse.typeName = "injective.exchange.v1beta1.Qu
 QueryOptedOutOfRewardsAccountsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "accounts", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { QueryOptedOutOfRewardsAccountsResponse };
 /**
  * QueryFeeDiscountAccountInfoRequest is the request type for the
  * Query/FeeDiscountAccountInfo RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFeeDiscountAccountInfoRequest
  */
-export class QueryFeeDiscountAccountInfoRequest extends Message {
+class QueryFeeDiscountAccountInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -3569,13 +3664,14 @@ QueryFeeDiscountAccountInfoRequest.typeName = "injective.exchange.v1beta1.QueryF
 QueryFeeDiscountAccountInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "account", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryFeeDiscountAccountInfoRequest };
 /**
  * QueryFeeDiscountAccountInfoResponse is the response type for the
  * Query/FeeDiscountAccountInfo RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFeeDiscountAccountInfoResponse
  */
-export class QueryFeeDiscountAccountInfoResponse extends Message {
+class QueryFeeDiscountAccountInfoResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3604,13 +3700,14 @@ QueryFeeDiscountAccountInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "account_info", kind: "message", T: FeeDiscountTierInfo },
     { no: 3, name: "account_ttl", kind: "message", T: FeeDiscountTierTTL },
 ]);
+export { QueryFeeDiscountAccountInfoResponse };
 /**
  * QueryFeeDiscountScheduleRequest is the request type for the
  * Query/FeeDiscountSchedule RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFeeDiscountScheduleRequest
  */
-export class QueryFeeDiscountScheduleRequest extends Message {
+class QueryFeeDiscountScheduleRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3631,13 +3728,14 @@ export class QueryFeeDiscountScheduleRequest extends Message {
 QueryFeeDiscountScheduleRequest.runtime = proto3;
 QueryFeeDiscountScheduleRequest.typeName = "injective.exchange.v1beta1.QueryFeeDiscountScheduleRequest";
 QueryFeeDiscountScheduleRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryFeeDiscountScheduleRequest };
 /**
  * QueryFeeDiscountScheduleResponse is the response type for the
  * Query/FeeDiscountSchedule RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFeeDiscountScheduleResponse
  */
-export class QueryFeeDiscountScheduleResponse extends Message {
+class QueryFeeDiscountScheduleResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3660,13 +3758,14 @@ QueryFeeDiscountScheduleResponse.typeName = "injective.exchange.v1beta1.QueryFee
 QueryFeeDiscountScheduleResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "fee_discount_schedule", kind: "message", T: FeeDiscountSchedule },
 ]);
+export { QueryFeeDiscountScheduleResponse };
 /**
  * QueryBalanceMismatchesRequest is the request type for the
  * Query/QueryBalanceMismatches RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryBalanceMismatchesRequest
  */
-export class QueryBalanceMismatchesRequest extends Message {
+class QueryBalanceMismatchesRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -3693,10 +3792,11 @@ QueryBalanceMismatchesRequest.typeName = "injective.exchange.v1beta1.QueryBalanc
 QueryBalanceMismatchesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "dust_factor", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
 ]);
+export { QueryBalanceMismatchesRequest };
 /**
  * @generated from message injective.exchange.v1beta1.BalanceMismatch
  */
-export class BalanceMismatch extends Message {
+class BalanceMismatch extends Message {
     constructor(data) {
         super();
         /**
@@ -3753,13 +3853,14 @@ BalanceMismatch.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "expected_total", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 7, name: "difference", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { BalanceMismatch };
 /**
  * QueryBalanceMismatchesResponse is the response type for the
  * Query/QueryBalanceMismatches RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryBalanceMismatchesResponse
  */
-export class QueryBalanceMismatchesResponse extends Message {
+class QueryBalanceMismatchesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3786,13 +3887,14 @@ QueryBalanceMismatchesResponse.typeName = "injective.exchange.v1beta1.QueryBalan
 QueryBalanceMismatchesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balance_mismatches", kind: "message", T: BalanceMismatch, repeated: true },
 ]);
+export { QueryBalanceMismatchesResponse };
 /**
  * QueryBalanceWithBalanceHoldsRequest is the request type for the
  * Query/QueryBalanceWithBalanceHolds RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryBalanceWithBalanceHoldsRequest
  */
-export class QueryBalanceWithBalanceHoldsRequest extends Message {
+class QueryBalanceWithBalanceHoldsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3813,10 +3915,11 @@ export class QueryBalanceWithBalanceHoldsRequest extends Message {
 QueryBalanceWithBalanceHoldsRequest.runtime = proto3;
 QueryBalanceWithBalanceHoldsRequest.typeName = "injective.exchange.v1beta1.QueryBalanceWithBalanceHoldsRequest";
 QueryBalanceWithBalanceHoldsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryBalanceWithBalanceHoldsRequest };
 /**
  * @generated from message injective.exchange.v1beta1.BalanceWithMarginHold
  */
-export class BalanceWithMarginHold extends Message {
+class BalanceWithMarginHold extends Message {
     constructor(data) {
         super();
         /**
@@ -3863,13 +3966,14 @@ BalanceWithMarginHold.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "total", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 5, name: "balance_hold", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { BalanceWithMarginHold };
 /**
  * QueryBalanceWithBalanceHoldsResponse is the response type for the
  * Query/QueryBalanceWithBalanceHolds RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryBalanceWithBalanceHoldsResponse
  */
-export class QueryBalanceWithBalanceHoldsResponse extends Message {
+class QueryBalanceWithBalanceHoldsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3896,13 +4000,14 @@ QueryBalanceWithBalanceHoldsResponse.typeName = "injective.exchange.v1beta1.Quer
 QueryBalanceWithBalanceHoldsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "balance_with_balance_holds", kind: "message", T: BalanceWithMarginHold, repeated: true },
 ]);
+export { QueryBalanceWithBalanceHoldsResponse };
 /**
  * QueryFeeDiscountTierStatisticsRequest is the request type for the
  * Query/QueryFeeDiscountTierStatistics RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFeeDiscountTierStatisticsRequest
  */
-export class QueryFeeDiscountTierStatisticsRequest extends Message {
+class QueryFeeDiscountTierStatisticsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -3923,10 +4028,11 @@ export class QueryFeeDiscountTierStatisticsRequest extends Message {
 QueryFeeDiscountTierStatisticsRequest.runtime = proto3;
 QueryFeeDiscountTierStatisticsRequest.typeName = "injective.exchange.v1beta1.QueryFeeDiscountTierStatisticsRequest";
 QueryFeeDiscountTierStatisticsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryFeeDiscountTierStatisticsRequest };
 /**
  * @generated from message injective.exchange.v1beta1.TierStatistic
  */
-export class TierStatistic extends Message {
+class TierStatistic extends Message {
     constructor(data) {
         super();
         /**
@@ -3958,13 +4064,14 @@ TierStatistic.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "tier", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { TierStatistic };
 /**
  * QueryFeeDiscountTierStatisticsResponse is the response type for the
  * Query/QueryFeeDiscountTierStatistics RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryFeeDiscountTierStatisticsResponse
  */
-export class QueryFeeDiscountTierStatisticsResponse extends Message {
+class QueryFeeDiscountTierStatisticsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -3991,13 +4098,14 @@ QueryFeeDiscountTierStatisticsResponse.typeName = "injective.exchange.v1beta1.Qu
 QueryFeeDiscountTierStatisticsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "statistics", kind: "message", T: TierStatistic, repeated: true },
 ]);
+export { QueryFeeDiscountTierStatisticsResponse };
 /**
  * MitoVaultInfosRequest is the request type for the Query/MitoVaultInfos RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.MitoVaultInfosRequest
  */
-export class MitoVaultInfosRequest extends Message {
+class MitoVaultInfosRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -4018,13 +4126,14 @@ export class MitoVaultInfosRequest extends Message {
 MitoVaultInfosRequest.runtime = proto3;
 MitoVaultInfosRequest.typeName = "injective.exchange.v1beta1.MitoVaultInfosRequest";
 MitoVaultInfosRequest.fields = proto3.util.newFieldList(() => []);
+export { MitoVaultInfosRequest };
 /**
  * MitoVaultInfosResponse is the response type for the Query/MitoVaultInfos RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.MitoVaultInfosResponse
  */
-export class MitoVaultInfosResponse extends Message {
+class MitoVaultInfosResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -4066,13 +4175,14 @@ MitoVaultInfosResponse.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "spot_addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 4, name: "cw20_addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { MitoVaultInfosResponse };
 /**
  * QueryMarketIDFromVaultRequest is the request type for the
  * Query/QueryMarketIDFromVault RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryMarketIDFromVaultRequest
  */
-export class QueryMarketIDFromVaultRequest extends Message {
+class QueryMarketIDFromVaultRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -4099,13 +4209,14 @@ QueryMarketIDFromVaultRequest.typeName = "injective.exchange.v1beta1.QueryMarket
 QueryMarketIDFromVaultRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "vault_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryMarketIDFromVaultRequest };
 /**
  * QueryMarketIDFromVaultResponse is the response type for the
  * Query/QueryMarketIDFromVault RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryMarketIDFromVaultResponse
  */
-export class QueryMarketIDFromVaultResponse extends Message {
+class QueryMarketIDFromVaultResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -4132,10 +4243,11 @@ QueryMarketIDFromVaultResponse.typeName = "injective.exchange.v1beta1.QueryMarke
 QueryMarketIDFromVaultResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryMarketIDFromVaultResponse };
 /**
  * @generated from message injective.exchange.v1beta1.QueryHistoricalTradeRecordsRequest
  */
-export class QueryHistoricalTradeRecordsRequest extends Message {
+class QueryHistoricalTradeRecordsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -4162,10 +4274,11 @@ QueryHistoricalTradeRecordsRequest.typeName = "injective.exchange.v1beta1.QueryH
 QueryHistoricalTradeRecordsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryHistoricalTradeRecordsRequest };
 /**
  * @generated from message injective.exchange.v1beta1.QueryHistoricalTradeRecordsResponse
  */
-export class QueryHistoricalTradeRecordsResponse extends Message {
+class QueryHistoricalTradeRecordsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -4192,13 +4305,14 @@ QueryHistoricalTradeRecordsResponse.typeName = "injective.exchange.v1beta1.Query
 QueryHistoricalTradeRecordsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "trade_records", kind: "message", T: TradeRecords, repeated: true },
 ]);
+export { QueryHistoricalTradeRecordsResponse };
 /**
  * TradeHistoryOptions are the optional params for Query/MarketVolatility RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.TradeHistoryOptions
  */
-export class TradeHistoryOptions extends Message {
+class TradeHistoryOptions extends Message {
     constructor(data) {
         super();
         /**
@@ -4252,13 +4366,14 @@ TradeHistoryOptions.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "include_raw_history", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 5, name: "include_metadata", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
 ]);
+export { TradeHistoryOptions };
 /**
  * QueryMarketVolatilityRequest are the request params for the
  * Query/MarketVolatility RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryMarketVolatilityRequest
  */
-export class QueryMarketVolatilityRequest extends Message {
+class QueryMarketVolatilityRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -4286,13 +4401,14 @@ QueryMarketVolatilityRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "trade_history_options", kind: "message", T: TradeHistoryOptions },
 ]);
+export { QueryMarketVolatilityRequest };
 /**
  * QueryMarketVolatilityResponse is the response type for the
  * Query/MarketVolatility RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryMarketVolatilityResponse
  */
-export class QueryMarketVolatilityResponse extends Message {
+class QueryMarketVolatilityResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -4325,13 +4441,14 @@ QueryMarketVolatilityResponse.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "history_metadata", kind: "message", T: MetadataStatistics },
     { no: 3, name: "raw_history", kind: "message", T: TradeRecord, repeated: true },
 ]);
+export { QueryMarketVolatilityResponse };
 /**
  * QuerBinaryMarketsRequest is the request type for the Query/BinaryMarkets RPC
  * method.
  *
  * @generated from message injective.exchange.v1beta1.QueryBinaryMarketsRequest
  */
-export class QueryBinaryMarketsRequest extends Message {
+class QueryBinaryMarketsRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -4360,13 +4477,14 @@ QueryBinaryMarketsRequest.typeName = "injective.exchange.v1beta1.QueryBinaryMark
 QueryBinaryMarketsRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "status", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBinaryMarketsRequest };
 /**
  * QueryBinaryMarketsResponse is the response type for the Query/BinaryMarkets
  * RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryBinaryMarketsResponse
  */
-export class QueryBinaryMarketsResponse extends Message {
+class QueryBinaryMarketsResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -4393,13 +4511,14 @@ QueryBinaryMarketsResponse.typeName = "injective.exchange.v1beta1.QueryBinaryMar
 QueryBinaryMarketsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "markets", kind: "message", T: BinaryOptionsMarket, repeated: true },
 ]);
+export { QueryBinaryMarketsResponse };
 /**
  * QueryConditionalOrdersRequest is the request type for the
  * Query/ConditionalOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTraderDerivativeConditionalOrdersRequest
  */
-export class QueryTraderDerivativeConditionalOrdersRequest extends Message {
+class QueryTraderDerivativeConditionalOrdersRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -4431,10 +4550,11 @@ QueryTraderDerivativeConditionalOrdersRequest.fields = proto3.util.newFieldList(
     { no: 1, name: "subaccount_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryTraderDerivativeConditionalOrdersRequest };
 /**
  * @generated from message injective.exchange.v1beta1.TrimmedDerivativeConditionalOrder
  */
-export class TrimmedDerivativeConditionalOrder extends Message {
+class TrimmedDerivativeConditionalOrder extends Message {
     constructor(data) {
         super();
         /**
@@ -4503,13 +4623,14 @@ TrimmedDerivativeConditionalOrder.fields = proto3.util.newFieldList(() => [
     { no: 6, name: "isLimit", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 7, name: "order_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { TrimmedDerivativeConditionalOrder };
 /**
  * QueryTraderDerivativeOrdersResponse is the response type for the
  * Query/TraderDerivativeOrders RPC method.
  *
  * @generated from message injective.exchange.v1beta1.QueryTraderDerivativeConditionalOrdersResponse
  */
-export class QueryTraderDerivativeConditionalOrdersResponse extends Message {
+class QueryTraderDerivativeConditionalOrdersResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -4536,10 +4657,11 @@ QueryTraderDerivativeConditionalOrdersResponse.typeName = "injective.exchange.v1
 QueryTraderDerivativeConditionalOrdersResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "orders", kind: "message", T: TrimmedDerivativeConditionalOrder, repeated: true },
 ]);
+export { QueryTraderDerivativeConditionalOrdersResponse };
 /**
  * @generated from message injective.exchange.v1beta1.QueryMarketAtomicExecutionFeeMultiplierRequest
  */
-export class QueryMarketAtomicExecutionFeeMultiplierRequest extends Message {
+class QueryMarketAtomicExecutionFeeMultiplierRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -4566,10 +4688,11 @@ QueryMarketAtomicExecutionFeeMultiplierRequest.typeName = "injective.exchange.v1
 QueryMarketAtomicExecutionFeeMultiplierRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "market_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryMarketAtomicExecutionFeeMultiplierRequest };
 /**
  * @generated from message injective.exchange.v1beta1.QueryMarketAtomicExecutionFeeMultiplierResponse
  */
-export class QueryMarketAtomicExecutionFeeMultiplierResponse extends Message {
+class QueryMarketAtomicExecutionFeeMultiplierResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -4596,4 +4719,5 @@ QueryMarketAtomicExecutionFeeMultiplierResponse.typeName = "injective.exchange.v
 QueryMarketAtomicExecutionFeeMultiplierResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "multiplier", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryMarketAtomicExecutionFeeMultiplierResponse };
 //# sourceMappingURL=query_pb.js.map

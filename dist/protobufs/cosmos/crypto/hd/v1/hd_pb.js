@@ -5,7 +5,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.crypto.hd.v1.BIP44Params
  */
-export class BIP44Params extends Message {
+class BIP44Params extends Message {
     constructor(data) {
         super();
         /**
@@ -63,4 +63,5 @@ BIP44Params.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "change", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 5, name: "address_index", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
 ]);
+export { BIP44Params };
 //# sourceMappingURL=hd_pb.js.map

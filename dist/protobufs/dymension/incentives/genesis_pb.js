@@ -11,7 +11,7 @@ import { Gauge } from "./gauge_pb.js";
  *
  * @generated from message dymensionxyz.dymension.incentives.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -57,4 +57,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "lockable_durations", kind: "message", T: Duration, repeated: true },
     { no: 4, name: "last_gauge_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

@@ -12,7 +12,7 @@ import { Coin } from "../../../../../cosmos/base/v1beta1/coin_pb.js";
  *
  * @generated from message osmosis.gamm.poolmodels.stableswap.v1beta1.PoolParams
  */
-export class PoolParams extends Message {
+class PoolParams extends Message {
     constructor(data) {
         super();
         /**
@@ -48,12 +48,13 @@ PoolParams.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "swap_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "exit_fee", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { PoolParams };
 /**
  * Pool is the stableswap Pool struct
  *
  * @generated from message osmosis.gamm.poolmodels.stableswap.v1beta1.Pool
  */
-export class Pool extends Message {
+class Pool extends Message {
     constructor(data) {
         super();
         /**
@@ -122,4 +123,5 @@ Pool.fields = proto3.util.newFieldList(() => [
     { no: 7, name: "scaling_factors", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 8, name: "scaling_factor_controller", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { Pool };
 //# sourceMappingURL=stableswap_pool_pb.js.map

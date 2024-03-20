@@ -36,7 +36,7 @@ proto3.util.setEnumType(FundingMode, "injective.wasmx.v1.FundingMode", [
 /**
  * @generated from message injective.wasmx.v1.ContractRegistrationRequestProposal
  */
-export class ContractRegistrationRequestProposal extends Message {
+class ContractRegistrationRequestProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -69,10 +69,11 @@ ContractRegistrationRequestProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "contract_registration_request", kind: "message", T: ContractRegistrationRequest },
 ]);
+export { ContractRegistrationRequestProposal };
 /**
  * @generated from message injective.wasmx.v1.BatchContractRegistrationRequestProposal
  */
-export class BatchContractRegistrationRequestProposal extends Message {
+class BatchContractRegistrationRequestProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -109,10 +110,11 @@ BatchContractRegistrationRequestProposal.fields = proto3.util.newFieldList(() =>
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "contract_registration_requests", kind: "message", T: ContractRegistrationRequest, repeated: true },
 ]);
+export { BatchContractRegistrationRequestProposal };
 /**
  * @generated from message injective.wasmx.v1.BatchContractDeregistrationProposal
  */
-export class BatchContractDeregistrationProposal extends Message {
+class BatchContractDeregistrationProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -149,10 +151,11 @@ BatchContractDeregistrationProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "contracts", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
 ]);
+export { BatchContractDeregistrationProposal };
 /**
  * @generated from message injective.wasmx.v1.ContractRegistrationRequest
  */
-export class ContractRegistrationRequest extends Message {
+class ContractRegistrationRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -239,10 +242,11 @@ ContractRegistrationRequest.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "granter_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 9, name: "funding_mode", kind: "enum", T: proto3.getEnumType(FundingMode) },
 ]);
+export { ContractRegistrationRequest };
 /**
  * @generated from message injective.wasmx.v1.BatchStoreCodeProposal
  */
-export class BatchStoreCodeProposal extends Message {
+class BatchStoreCodeProposal extends Message {
     constructor(data) {
         super();
         /**
@@ -279,4 +283,5 @@ BatchStoreCodeProposal.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "proposals", kind: "message", T: StoreCodeProposal, repeated: true },
 ]);
+export { BatchStoreCodeProposal };
 //# sourceMappingURL=proposal_pb.js.map

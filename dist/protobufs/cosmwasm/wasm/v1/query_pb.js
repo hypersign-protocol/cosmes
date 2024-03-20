@@ -11,7 +11,7 @@ import { PageRequest, PageResponse } from "../../../cosmos/base/query/v1beta1/pa
  *
  * @generated from message cosmwasm.wasm.v1.QueryContractInfoRequest
  */
-export class QueryContractInfoRequest extends Message {
+class QueryContractInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -40,13 +40,14 @@ QueryContractInfoRequest.typeName = "cosmwasm.wasm.v1.QueryContractInfoRequest";
 QueryContractInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryContractInfoRequest };
 /**
  * QueryContractInfoResponse is the response type for the Query/ContractInfo RPC
  * method
  *
  * @generated from message cosmwasm.wasm.v1.QueryContractInfoResponse
  */
-export class QueryContractInfoResponse extends Message {
+class QueryContractInfoResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -76,13 +77,14 @@ QueryContractInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "contract_info", kind: "message", T: ContractInfo },
 ]);
+export { QueryContractInfoResponse };
 /**
  * QueryContractHistoryRequest is the request type for the Query/ContractHistory
  * RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryContractHistoryRequest
  */
-export class QueryContractHistoryRequest extends Message {
+class QueryContractHistoryRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -112,13 +114,14 @@ QueryContractHistoryRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryContractHistoryRequest };
 /**
  * QueryContractHistoryResponse is the response type for the
  * Query/ContractHistory RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryContractHistoryResponse
  */
-export class QueryContractHistoryResponse extends Message {
+class QueryContractHistoryResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -146,13 +149,14 @@ QueryContractHistoryResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "entries", kind: "message", T: ContractCodeHistoryEntry, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryContractHistoryResponse };
 /**
  * QueryContractsByCodeRequest is the request type for the Query/ContractsByCode
  * RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryContractsByCodeRequest
  */
-export class QueryContractsByCodeRequest extends Message {
+class QueryContractsByCodeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -182,13 +186,14 @@ QueryContractsByCodeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryContractsByCodeRequest };
 /**
  * QueryContractsByCodeResponse is the response type for the
  * Query/ContractsByCode RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryContractsByCodeResponse
  */
-export class QueryContractsByCodeResponse extends Message {
+class QueryContractsByCodeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -218,13 +223,14 @@ QueryContractsByCodeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contracts", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryContractsByCodeResponse };
 /**
  * QueryAllContractStateRequest is the request type for the
  * Query/AllContractState RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryAllContractStateRequest
  */
-export class QueryAllContractStateRequest extends Message {
+class QueryAllContractStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -254,13 +260,14 @@ QueryAllContractStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryAllContractStateRequest };
 /**
  * QueryAllContractStateResponse is the response type for the
  * Query/AllContractState RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryAllContractStateResponse
  */
-export class QueryAllContractStateResponse extends Message {
+class QueryAllContractStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -288,13 +295,14 @@ QueryAllContractStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "models", kind: "message", T: Model, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryAllContractStateResponse };
 /**
  * QueryRawContractStateRequest is the request type for the
  * Query/RawContractState RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryRawContractStateRequest
  */
-export class QueryRawContractStateRequest extends Message {
+class QueryRawContractStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -328,13 +336,14 @@ QueryRawContractStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "query_data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryRawContractStateRequest };
 /**
  * QueryRawContractStateResponse is the response type for the
  * Query/RawContractState RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryRawContractStateResponse
  */
-export class QueryRawContractStateResponse extends Message {
+class QueryRawContractStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -363,13 +372,14 @@ QueryRawContractStateResponse.typeName = "cosmwasm.wasm.v1.QueryRawContractState
 QueryRawContractStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryRawContractStateResponse };
 /**
  * QuerySmartContractStateRequest is the request type for the
  * Query/SmartContractState RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QuerySmartContractStateRequest
  */
-export class QuerySmartContractStateRequest extends Message {
+class QuerySmartContractStateRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -405,13 +415,14 @@ QuerySmartContractStateRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "query_data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QuerySmartContractStateRequest };
 /**
  * QuerySmartContractStateResponse is the response type for the
  * Query/SmartContractState RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QuerySmartContractStateResponse
  */
-export class QuerySmartContractStateResponse extends Message {
+class QuerySmartContractStateResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -440,12 +451,13 @@ QuerySmartContractStateResponse.typeName = "cosmwasm.wasm.v1.QuerySmartContractS
 QuerySmartContractStateResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QuerySmartContractStateResponse };
 /**
  * QueryCodeRequest is the request type for the Query/Code RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryCodeRequest
  */
-export class QueryCodeRequest extends Message {
+class QueryCodeRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -474,12 +486,13 @@ QueryCodeRequest.typeName = "cosmwasm.wasm.v1.QueryCodeRequest";
 QueryCodeRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { QueryCodeRequest };
 /**
  * CodeInfoResponse contains code meta data from CodeInfo
  *
  * @generated from message cosmwasm.wasm.v1.CodeInfoResponse
  */
-export class CodeInfoResponse extends Message {
+class CodeInfoResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -519,12 +532,13 @@ CodeInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "data_hash", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
     { no: 6, name: "instantiate_permission", kind: "message", T: AccessConfig },
 ]);
+export { CodeInfoResponse };
 /**
  * QueryCodeResponse is the response type for the Query/Code RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryCodeResponse
  */
-export class QueryCodeResponse extends Message {
+class QueryCodeResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -552,12 +566,13 @@ QueryCodeResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_info", kind: "message", T: CodeInfoResponse },
     { no: 2, name: "data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryCodeResponse };
 /**
  * QueryCodesRequest is the request type for the Query/Codes RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryCodesRequest
  */
-export class QueryCodesRequest extends Message {
+class QueryCodesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -580,12 +595,13 @@ QueryCodesRequest.typeName = "cosmwasm.wasm.v1.QueryCodesRequest";
 QueryCodesRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryCodesRequest };
 /**
  * QueryCodesResponse is the response type for the Query/Codes RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryCodesResponse
  */
-export class QueryCodesResponse extends Message {
+class QueryCodesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -613,13 +629,14 @@ QueryCodesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_infos", kind: "message", T: CodeInfoResponse, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryCodesResponse };
 /**
  * QueryPinnedCodesRequest is the request type for the Query/PinnedCodes
  * RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryPinnedCodesRequest
  */
-export class QueryPinnedCodesRequest extends Message {
+class QueryPinnedCodesRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -642,13 +659,14 @@ QueryPinnedCodesRequest.typeName = "cosmwasm.wasm.v1.QueryPinnedCodesRequest";
 QueryPinnedCodesRequest.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryPinnedCodesRequest };
 /**
  * QueryPinnedCodesResponse is the response type for the
  * Query/PinnedCodes RPC method
  *
  * @generated from message cosmwasm.wasm.v1.QueryPinnedCodesResponse
  */
-export class QueryPinnedCodesResponse extends Message {
+class QueryPinnedCodesResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -676,12 +694,13 @@ QueryPinnedCodesResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "code_ids", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryPinnedCodesResponse };
 /**
  * QueryParamsRequest is the request type for the Query/Params RPC method.
  *
  * @generated from message cosmwasm.wasm.v1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -702,12 +721,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "cosmwasm.wasm.v1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method.
  *
  * @generated from message cosmwasm.wasm.v1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -730,13 +750,14 @@ QueryParamsResponse.typeName = "cosmwasm.wasm.v1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QueryContractsByCreatorRequest is the request type for the
  * Query/ContractsByCreator RPC method.
  *
  * @generated from message cosmwasm.wasm.v1.QueryContractsByCreatorRequest
  */
-export class QueryContractsByCreatorRequest extends Message {
+class QueryContractsByCreatorRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -766,13 +787,14 @@ QueryContractsByCreatorRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "creator_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QueryContractsByCreatorRequest };
 /**
  * QueryContractsByCreatorResponse is the response type for the
  * Query/ContractsByCreator RPC method.
  *
  * @generated from message cosmwasm.wasm.v1.QueryContractsByCreatorResponse
  */
-export class QueryContractsByCreatorResponse extends Message {
+class QueryContractsByCreatorResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -802,13 +824,14 @@ QueryContractsByCreatorResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "contract_addresses", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QueryContractsByCreatorResponse };
 /**
  * QueryBuildAddressRequest is the request type for the Query/BuildAddress RPC
  * method.
  *
  * @generated from message cosmwasm.wasm.v1.QueryBuildAddressRequest
  */
-export class QueryBuildAddressRequest extends Message {
+class QueryBuildAddressRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -859,13 +882,14 @@ QueryBuildAddressRequest.fields = proto3.util.newFieldList(() => [
     { no: 3, name: "salt", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 4, name: "init_args", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { QueryBuildAddressRequest };
 /**
  * QueryBuildAddressResponse is the response type for the Query/BuildAddress RPC
  * method.
  *
  * @generated from message cosmwasm.wasm.v1.QueryBuildAddressResponse
  */
-export class QueryBuildAddressResponse extends Message {
+class QueryBuildAddressResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -894,4 +918,5 @@ QueryBuildAddressResponse.typeName = "cosmwasm.wasm.v1.QueryBuildAddressResponse
 QueryBuildAddressResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QueryBuildAddressResponse };
 //# sourceMappingURL=query_pb.js.map

@@ -10,7 +10,7 @@ import { PageRequest, PageResponse } from "../../base/query/v1beta1/pagination_p
  *
  * @generated from message cosmos.slashing.v1beta1.QueryParamsRequest
  */
-export class QueryParamsRequest extends Message {
+class QueryParamsRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -31,12 +31,13 @@ export class QueryParamsRequest extends Message {
 QueryParamsRequest.runtime = proto3;
 QueryParamsRequest.typeName = "cosmos.slashing.v1beta1.QueryParamsRequest";
 QueryParamsRequest.fields = proto3.util.newFieldList(() => []);
+export { QueryParamsRequest };
 /**
  * QueryParamsResponse is the response type for the Query/Params RPC method
  *
  * @generated from message cosmos.slashing.v1beta1.QueryParamsResponse
  */
-export class QueryParamsResponse extends Message {
+class QueryParamsResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -59,13 +60,14 @@ QueryParamsResponse.typeName = "cosmos.slashing.v1beta1.QueryParamsResponse";
 QueryParamsResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "params", kind: "message", T: Params },
 ]);
+export { QueryParamsResponse };
 /**
  * QuerySigningInfoRequest is the request type for the Query/SigningInfo RPC
  * method
  *
  * @generated from message cosmos.slashing.v1beta1.QuerySigningInfoRequest
  */
-export class QuerySigningInfoRequest extends Message {
+class QuerySigningInfoRequest extends Message {
     constructor(data) {
         super();
         /**
@@ -94,13 +96,14 @@ QuerySigningInfoRequest.typeName = "cosmos.slashing.v1beta1.QuerySigningInfoRequ
 QuerySigningInfoRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "cons_address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
+export { QuerySigningInfoRequest };
 /**
  * QuerySigningInfoResponse is the response type for the Query/SigningInfo RPC
  * method
  *
  * @generated from message cosmos.slashing.v1beta1.QuerySigningInfoResponse
  */
-export class QuerySigningInfoResponse extends Message {
+class QuerySigningInfoResponse extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -123,13 +126,14 @@ QuerySigningInfoResponse.typeName = "cosmos.slashing.v1beta1.QuerySigningInfoRes
 QuerySigningInfoResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "val_signing_info", kind: "message", T: ValidatorSigningInfo },
 ]);
+export { QuerySigningInfoResponse };
 /**
  * QuerySigningInfosRequest is the request type for the Query/SigningInfos RPC
  * method
  *
  * @generated from message cosmos.slashing.v1beta1.QuerySigningInfosRequest
  */
-export class QuerySigningInfosRequest extends Message {
+class QuerySigningInfosRequest extends Message {
     constructor(data) {
         super();
         proto3.util.initPartial(data, this);
@@ -152,13 +156,14 @@ QuerySigningInfosRequest.typeName = "cosmos.slashing.v1beta1.QuerySigningInfosRe
 QuerySigningInfosRequest.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "pagination", kind: "message", T: PageRequest },
 ]);
+export { QuerySigningInfosRequest };
 /**
  * QuerySigningInfosResponse is the response type for the Query/SigningInfos RPC
  * method
  *
  * @generated from message cosmos.slashing.v1beta1.QuerySigningInfosResponse
  */
-export class QuerySigningInfosResponse extends Message {
+class QuerySigningInfosResponse extends Message {
     constructor(data) {
         super();
         /**
@@ -188,4 +193,5 @@ QuerySigningInfosResponse.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "info", kind: "message", T: ValidatorSigningInfo, repeated: true },
     { no: 2, name: "pagination", kind: "message", T: PageResponse },
 ]);
+export { QuerySigningInfosResponse };
 //# sourceMappingURL=query_pb.js.map

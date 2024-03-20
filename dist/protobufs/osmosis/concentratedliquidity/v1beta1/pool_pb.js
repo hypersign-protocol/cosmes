@@ -6,7 +6,7 @@ import { Message, proto3, protoInt64, Timestamp } from "@bufbuild/protobuf";
 /**
  * @generated from message osmosis.concentratedliquidity.v1beta1.Pool
  */
-export class Pool extends Message {
+class Pool extends Message {
     constructor(data) {
         super();
         /**
@@ -102,4 +102,5 @@ Pool.fields = proto3.util.newFieldList(() => [
     { no: 12, name: "spread_factor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "last_liquidity_update", kind: "message", T: Timestamp },
 ]);
+export { Pool };
 //# sourceMappingURL=pool_pb.js.map

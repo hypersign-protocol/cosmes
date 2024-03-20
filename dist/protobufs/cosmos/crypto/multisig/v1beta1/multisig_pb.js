@@ -10,7 +10,7 @@ import { Message, proto3 } from "@bufbuild/protobuf";
  *
  * @generated from message cosmos.crypto.multisig.v1beta1.MultiSignature
  */
-export class MultiSignature extends Message {
+class MultiSignature extends Message {
     constructor(data) {
         super();
         /**
@@ -37,6 +37,7 @@ MultiSignature.typeName = "cosmos.crypto.multisig.v1beta1.MultiSignature";
 MultiSignature.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "signatures", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
 ]);
+export { MultiSignature };
 /**
  * CompactBitArray is an implementation of a space efficient bit array.
  * This is used to ensure that the encoded data takes up a minimal amount of
@@ -45,7 +46,7 @@ MultiSignature.fields = proto3.util.newFieldList(() => [
  *
  * @generated from message cosmos.crypto.multisig.v1beta1.CompactBitArray
  */
-export class CompactBitArray extends Message {
+class CompactBitArray extends Message {
     constructor(data) {
         super();
         /**
@@ -77,4 +78,5 @@ CompactBitArray.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "extra_bits_stored", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 2, name: "elems", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
 ]);
+export { CompactBitArray };
 //# sourceMappingURL=multisig_pb.js.map

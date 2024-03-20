@@ -9,7 +9,7 @@ import { InsuranceFund, Params, RedemptionSchedule } from "./insurance_pb.js";
  *
  * @generated from message injective.insurance.v1beta1.GenesisState
  */
-export class GenesisState extends Message {
+class GenesisState extends Message {
     constructor(data) {
         super();
         /**
@@ -63,4 +63,5 @@ GenesisState.fields = proto3.util.newFieldList(() => [
     { no: 4, name: "next_share_denom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 5, name: "next_redemption_schedule_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
 ]);
+export { GenesisState };
 //# sourceMappingURL=genesis_pb.js.map

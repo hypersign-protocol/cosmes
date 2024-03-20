@@ -66,7 +66,7 @@ export class MetamaskInjectiveExtension extends ConnectedWallet {
         const domain = {
             name: "Injective Web3",
             version: "1.0.0",
-            chainId: "0x1", // hardcoded to mainnet
+            chainId: "0x1",
             salt: "0",
             verifyingContract: "cosmos",
         };
