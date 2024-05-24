@@ -1,0 +1,45 @@
+{
+    "chainId": "prajna",
+    "chainName": "Hypersign-Localnet",
+    "rpc": "https://rpc.prajna.hypersign.id",
+    "rest": "https://api.prajna.hypersign.id",
+    "stakeCurrency": {
+        "coinDenom": "HID",
+        "coinMinimalDenom": "uhid",
+        "coinDecimals": 6,
+        "coinGeckoId": "hypersign-identity-token"
+    },
+    "bip44": {
+        "coinType": 118
+    },
+    "bech32Config": {
+        "bech32PrefixAccAddr": "hid",
+        "bech32PrefixAccPub": "hidpub",
+        "bech32PrefixValAddr": "hidosmovaloper",
+        "bech32PrefixValPub": "hidvaloperpub",
+        "bech32PrefixConsAddr": "hidvalcons",
+        "bech32PrefixConsPub": "hidvalconspub"
+    },
+    "currencies": [
+        {
+            "coinDenom": "HID",
+            "coinMinimalDenom": "uhid",
+            "coinDecimals": 6,
+            "coinGeckoId": "hypersign-identity-token"
+        }
+    ],
+    "feeCurrencies": [
+        {
+            "coinDenom": "HID",
+            "coinMinimalDenom": "uhid",
+            "coinDecimals": 6,
+            "coinGeckoId": "hypersign-identity-token"
+        }
+    ],
+    "coinType": 118,
+    "gasPriceStep": {
+        "low": 0.01,
+        "average": 0.025,
+        "high": 0.04
+    }
+}

@@ -7,6 +7,7 @@ import { WalletConnectV2 } from "../../walletconnect/WalletConnectV2.js";
 import { WalletController } from "../WalletController.js";
 import { KeplrExtension } from "./KeplrExtension.js";
 import { KeplrWalletConnectV2 } from "./KeplrWalletConnectV2.js";
+import { Chains } from "../cosmos/index.js";
 export class KeplrController extends WalletController {
     constructor(wcProjectId) {
         super(WalletName.KEPLR);
@@ -42,7 +43,16 @@ export class KeplrController extends WalletController {
         if (!ext) {
             throw new Error("Keplr extension is not installed");
         }
-        await ext.enable(chains.map(({ chainId }) => chainId));
+        try {
+            const chainIds = chains.map(({ chainId }) => chainId);
+            await ext.enable(chainIds);
+        }
+        catch (error) {
+            const chainIds = chains.map(({ chainId }) => chainId);
+            for (let i = 0; i < chainIds.length; i++) {
+                await ext.experimentalSuggestChain(Chains[chainIds[i]]);
+            }
+        }
         for (const { chainId, rpc, gasPrice } of Object.values(chains)) {
             const { bech32Address, pubKey, isNanoLedger } = await ext.getKey(chainId);
             const key = new Secp256k1PubKey({

@@ -11,7 +11,7 @@ import {
   CosmosTxV1beta1Fee as Fee,
   CosmosTxV1beta1TxRaw as TxRaw,
 } from "cosmes/protobufs";
-import type { BroadcastMode, Keplr } from "cosmes/registry";
+import type { BroadcastMode, ChainInfo, Keplr } from "cosmes/registry";
 
 import { WalletName } from "../../constants/WalletName";
 import { WalletType } from "../../constants/WalletType";
@@ -61,6 +61,11 @@ export class KeplrExtension extends ConnectedWallet {
       pubKey: res.pub_key.value,
       signature: res.signature,
     };
+  }
+
+  public async experimentalSuggestChain(chainInfo: ChainInfo) {
+    const res = await this.ext.experimentalSuggestChain(chainInfo);
+    return res;
   }
 
   protected async signAndBroadcastTx(

@@ -22,6 +22,10 @@ export class KeplrExtension extends ConnectedWallet {
             signature: res.signature,
         };
     }
+    async experimentalSuggestChain(chainInfo) {
+        const res = await this.ext.experimentalSuggestChain(chainInfo);
+        return res;
+    }
     async signAndBroadcastTx({ msgs, memo, timeoutHeight }, fee, accountNumber, sequence) {
         const tx = new Tx({
             chainId: this.chainId,
